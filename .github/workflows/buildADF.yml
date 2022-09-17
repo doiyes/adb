@@ -1,10 +1,10 @@
 name: Build adblock rules files
 on:
   schedule:
-    - cron: 1 * * * *
+    - cron: 30 8 * * *
   push:
     branches:
-      - "master"
+      - "main"
 jobs:
   build:
     name: Build
