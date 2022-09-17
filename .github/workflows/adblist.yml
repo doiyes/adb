@@ -1,0 +1,161 @@
+name: Build adblock rules files
+on:
+  schedule:
+    - cron: "20 * * * *"
+  push:
+    branches:
+      - "master"
+  workflow_dispatch:
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: "^1.14"
+
+      - name: Set $GOPATH and more variables
+        run: |
+          echo "RELEASE_NAME=Released on $(date -d "8 hour" -u +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "TAG_NAME=$(date -d "8 hour" -u +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "MODIFIED_TIME=$(date -d "8 hour" -u "+%Y年%m月%d日 %H:%M")" >> $GITHUB_ENV
+          echo "EASYLIST_URL=https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt" >> $GITHUB_ENV
+          echo "EASYLISTCHINA_URL=https://filters.adtidy.org/extension/ublock/filters/104_optimized.txt" >> $GITHUB_ENV
+          echo "EASYPRIVACY_URL=https://easylist-downloads.adblockplus.org/easyprivacy.txt" >> $GITHUB_ENV
+          echo "CJXLIST_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" >> $GITHUB_ENV
+          echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
+          echo "ANTI_ADBLOCK_KILLER_FILTERS_URL=https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt" >> $GITHUB_ENV
+          echo "ANTIADBLOCKFILTERS_URL=https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" >> $GITHUB_ENV
+          echo "ABP_FILTERS_ANTI_CV_URL=https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt" >> $GITHUB_ENV
+          echo "XINGGSF_MV_URL=https://fastly.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/mv.txt" >> $GITHUB_ENV
+          echo "DMZ_URL=https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" >> $GITHUB_ENV
+          echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
+          echo "ADGCN_URL=https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt" >> $GITHUB_ENV
+          echo "GOPATH=$(dirname $GITHUB_WORKSPACE)" >> $GITHUB_ENV
+          echo "$(dirname $GITHUB_WORKSPACE)/bin" >> $GITHUB_PATH
+        shell: bash
+
+      - name: Checkout the "master" branch
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Get every files
+        id: download
+        run: |
+          rm -rf tmp *.txt
+          mkdir -p ./download/
+          cd ./download
+          curl -sSL $EASYLIST_URL | sed -e '/^! /d' -e '1c ! EasyList' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylist.txt
+          curl -sSL $EASYLISTCHINA_URL | sed -e '/^! /d' -e '1c ! EasyList China' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylistchina.txt
+          curl -sSL $EASYPRIVACY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./easyprivacy.txt
+          curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
+          curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
+          sed -i '/!#include cjx-ublock.txt/c !#include https://gitee.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt' ./cjx-annoyance.txt
+          curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
+          curl -sSL $ADGK_URL | grep -v "^!"> ./adgk.txt
+          curl -sSL $DMZ_URL | grep -v "^!" > ./dmz.txt
+          curl -sSL $ADGCN_URL | grep -v "^!" > ./adgcn.txt
+          curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
+          curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
+          curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
+      - name: Generate adblock files
+        run: |
+          mkdir -p ./new/
+          cd ./download
+          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt cjxlist.txt xinggsf-mv.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-pc.txt
+          cat ../mod/GeneralBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-mo.txt
+          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt adgcn.txt cjxlist.txt cjx-annoyance.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp.txt
+          cat adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -ur | uniq -u | awk '!a[$0]++' > ../new/adp2.txt
+          cat xinggsf-mv.txt dmz.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt easyprivacy.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp3.txt
+          cat antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-edentw.txt
+          num=`cat *.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$"  |sort -n |uniq |wc -l`
+          echo -e "! Title: AdRules DNS Filter Lite\n! Last update: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）\n! Total count: $num \n" >> ../dns.txt
+          cat *.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$"  |sort -n |uniq >> ../dns.txt
+          for i in $(ls ../new/*.txt); do
+            sed -i '/^$/d' $i
+          done
+          cd ../
+          #mv ./new/* ../ 
+      - name: Diff and addChecksum
+        run: |
+          cd ./new/
+          python .././mod/rules.py
+          cd ../
+      - name: Diff and addChecksum
+        run: |
+          mkdir -p ./old_no_title/
+          chmod +x ./mod/addChecksum.pl
+          for i in $(ls adp*.txt); do
+            sed '1,/^!$/d' $i > ./old_no_title/$i
+          done
+          diffFile="$(diff -q new/ old_no_title/ |grep -o '[a-zA-Z0-9-]\+.txt' |sort -u)"
+          if [ -n "$diffFile" ]; then
+            for i in $diffFile ; do
+              titleName=$(echo "$i" |sed 's#.txt#-title.txt#')
+              n=`cat ./new/$i | wc -l`
+              echo "! Total count: $n" > $i-tpdate.txt
+              cat ./mod/$titleName ./$i-tpdate.txt ./new/$i > ./$i
+              sed -i -e "s#201412030951#$TAG_NAME#" -e "s#201412030952#$MODIFIED_TIME#" ./$i
+              perl ./mod/addChecksum.pl ./$i
+              rm $i-tpdate.txt
+            done
+          else
+            echo "NOPASS"
+          fi
+      - name: Deliver download Dir
+        uses: actions/upload-artifact@v2
+        with:
+          name: AllFiles
+          path: |
+            ./download/
+      - name: Deliver new and old_no_title Di
+        uses: actions/upload-artifact@v2
+        with:
+          name: AllFiles
+          path: |
+            *
+            !./.git/
+      - name: Updata AdGuardFilter
+        run: |
+            cd filter/adguard
+            rm *
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/2.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/11.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/3.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/224.txt 
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/14.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/5.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/4.txt
+            cd ../
+      - name: Updata HostsFilter
+        run: |
+            sudo update-alternatives --set php /usr/bin/php7.4
+            cd filter/hosts
+            rm *
+            php ../.././mod/hosts.php
+      - name: Git push assets to github
+        run: |
+          rm -rf new old*
+          mkdir -p ./tmp/
+          cd tmp
+          touch $RANDOM
+          cd ../
+          git init
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
+          git branch -m master
+          git add .
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+          git push -f -u
+      - name: Purge jsdelivr cache
+        run: |
+          result=$(curl -s https://purge.jsdelivr.net/gh/hacamer/adblist@master/)
+          if echo $result |grep -q 'success.*true'; then
+            echo "jsdelivr缓存更新成功"
+          else
+            echo $result
+          fi         
+     
