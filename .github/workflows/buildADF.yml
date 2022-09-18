@@ -47,11 +47,11 @@ jobs:
         id: download
         run: |
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad-more.txt
-          <!- curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad-mo.txt -->
-          <!- curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad-pc.txt -->
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad-mo.txt
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad-pc.txt
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad.txt
-          <!- curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad2.txt -->
-          <!- curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad3.txt -->
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad2.txt
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad3.txt
           mkdir -p ./download/
           cd ./download
           curl -sSL $EASYLIST_URL | sed -e '/^! /d' -e '1c ! EasyList' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylist.txt
