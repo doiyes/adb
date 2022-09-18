@@ -13,7 +13,8 @@ EasyList / EasyPrivacy / Fanboy Lists:https://github.com/easylist/easylist  OR  
 Easylistchina: https://github.com/easylist/easylistchina    
 cjxlist: https://github.com/cjx82630/cjxlist  
 uBlock Origin乘风广告过滤规则: https://github.com/xinggsf/Adblock-Plus-Rule  
-ADgk手机去广告规则: https://github.com/banbendalao/ADgk
+ADgk手机去广告规则: https://github.com/banbendalao/ADgk  
+几十KB的轻量规则: https://github.com/damengzhu/banad
 
 参考：   
 https://github.com/lychichem/list  
