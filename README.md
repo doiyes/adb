@@ -12,6 +12,14 @@
 EasyList,EasyPrivacy,EasyList Cookie List,Fanboy's Social Blocking List,Fanboy's Annoyance List  
 https://github.com/easylist/easylist  OR  https://easylist.to/
 
+easylistchina  
+https://github.com/easylist/easylistchina
+  
+
+cjxlist  
+https://github.com/cjx82630/cjxlist
+
+
 参考：   
 https://github.com/lychichem/list  
 https://github.com/hacamer/Adblist  
