@@ -101,7 +101,7 @@ jobs:
             for i in $diffFile ; do
               titleName=$(echo "$i" |sed 's#.txt#-title.txt#')
               cat ./mod/$titleName ./new/$i > ./$i
-              sed -i -e "s#201412030951#$TAG_NAME#" -e "s#201412030951#$MODIFIED_TIME#" ./$i
+              sed -i -e "s#202010240521#$TAG_NAME#" -e "s#202010240521#$MODIFIED_TIME#" ./$i
               perl ./mod/addChecksum.pl ./$i
               echo "::set-output name=status::success"
             done
