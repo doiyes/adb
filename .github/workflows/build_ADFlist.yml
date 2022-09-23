@@ -108,6 +108,27 @@ jobs:
           else
             echo "::set-output name=status::failed"
           fi
+
+      - name: Deliver new and old_no_title Di
+        uses: actions/upload-artifact@v3
+        if: steps.diffResult.outputs.status == 'failed'
+        with:
+          name: AllFiles
+          path: |
+            *
+            !./.git/
+
+      - name: Git push assets to github & coding
+        if: steps.diffResult.outputs.status == 'success'
+        run: |
+          rm -rf .git/ download/ new/ old_no_title/
+          git init
+          git checkout -b master
+          git add --all
+          git commit -m "${{ env.RELEASE_NAME }}"
+          git remote add origin "https://${{ github.actor }}:${{ secrets.WORKFLOW_TOKEN }}@github.com/${{ github.repository }}"
+          git push -u -f origin master
+
       - name: Release and upload assets
         uses: softprops/action-gh-release@v0.1.6
         with:
