@@ -16,7 +16,8 @@ uBlock Origin乘风广告过滤规则: https://github.com/xinggsf/Adblock-Plus-R
 ADgk手机去广告规则: https://github.com/banbendalao/ADgk  
 几十KB的轻量规则: https://github.com/damengzhu/banad  
 屏蔽Cookie警告: https://www.i-dont-care-about-cookies.eu/abp/  
-anti-AD: https://github.com/privacy-protection-tools/anti-AD  
+anti-AD: https://github.com/privacy-protection-tools/anti-AD 
+NoCoin adblock list: https://github.com/hoshsadiq/adblock-nocoin-list
 规则加速: https://github.com/Silentely/AdBlock-Acceleration
 
 参考：   
