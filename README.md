@@ -14,6 +14,7 @@ Easylistchina: https://github.com/easylist/easylistchina
 cjxlist: https://github.com/cjx82630/cjxlist  
 uBlock Origin乘风广告过滤规则: https://github.com/xinggsf/Adblock-Plus-Rule  
 ADgk手机去广告规则: https://github.com/banbendalao/ADgk  
+AdGuard 移动广告规则: https://filters.adtidy.org/android/filters/11_optimized.txt
 几十KB的轻量规则: https://github.com/damengzhu/banad  
 屏蔽Cookie警告: https://www.i-dont-care-about-cookies.eu/abp/  
 anti-AD: https://github.com/privacy-protection-tools/anti-AD 
