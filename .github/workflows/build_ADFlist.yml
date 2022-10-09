@@ -1,7 +1,7 @@
 name: Build adblock rules files
 on:
   schedule:
-    - cron: 0 2/6 * * *
+    - cron: 30 0/6 * * *
   push:
     branches:
       - "master"
@@ -24,8 +24,8 @@ jobs:
           echo "EASYLISTCHINA_URL=https://easylist-downloads.adblockplus.org/easylistchina.txt" >> $GITHUB_ENV
           echo "EASYPRIVACY_URL=https://easylist-downloads.adblockplus.org/easyprivacy.txt" >> $GITHUB_ENV
           echo "CJXLIST_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" >> $GITHUB_ENV
-          echo "GENERALBLOCK_URL=https://github.com/lychichem/list/raw/master/mod/GeneralBlock.txt" >> $GITHUB_ENV
-          echo "TIEBABLOCK_URL=https://github.com/lychichem/list/raw/master/mod/TiebaBlock.txt" >> $GITHUB_ENV
+          echo "GENERALBLOCK_URL=https://github.com/o0HalfLife0o/list/raw/master/mod/GeneralBlock.txt" >> $GITHUB_ENV
+          echo "TIEBABLOCK_URL=https://github.com/o0HalfLife0o/list/raw/master/mod/TiebaBlock.txt" >> $GITHUB_ENV
           echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
           echo "ANTI_ADBLOCK_KILLER_FILTERS_URL=https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt" >> $GITHUB_ENV
           echo "ANTIADBLOCKFILTERS_URL=https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" >> $GITHUB_ENV
