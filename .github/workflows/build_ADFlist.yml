@@ -68,7 +68,7 @@ jobs:
           curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
           curl -sSL $GENERALBLOCK_URL | grep -v "哈"> ./generalblock.txt
           curl -sSL $TIEBABLOCK_URL | grep -v "哈"> ./tiebablock.txt
-          curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! IMBALIST' -e '/^!$/d' > ./imbalist.txt
+          curl -sSL $IMBALIST_URL | sed '1,6d' -e '1c ! IMBALIST' > ./imbalist.txt
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           curl -sSL $ADGK_BAIDU_URL | sed -e '/^! /d' -e '1c ! ADgk 百度搜索结果极限净化' -e '/^!$/d' > ./adgk-baidu.txt
           curl -sSL $XINGGSF_RULE_URL | sed -e '/^! /d' -e '1c ! 乘风 广告过滤规则' -e '/^!$/d' > ./xinggsf-rule.txt
