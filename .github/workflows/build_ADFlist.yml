@@ -77,9 +77,9 @@ jobs:
           curl -sSL $NOCOIN_FILTER_URL | sed -e '/^! /d' -e '1c ! NoCoin_Filter' -e '/^!$/d' > ./nocoin.txt
           curl -sSL $ADGUARD_MOBILE_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' > ./adguardmoblie.txt
           curl -sSL $HACAMER_URL | sed -e '/^! /d' -e '1c ! hacamer移除一些烦人的元素' -e '/^!$/d' > ./hacamer.txt
-          curl -sSL $ADGK_URL | sed -e '/^! /d' -e '1c ! ADgk手机规则' -e '/^!$/d' > ./adgk.txt
+          curl -sSL $ADGK_URL | grep -v "^!"> ./adgk.txt
           curl -sSL $HACAMER_URLF_URL | sed -e '/^! /d' -e '1c ! 杏梢的URL过滤器' -e '/^!$/d' > ./hacamer-url.txt
-          curl -sSL $BANAD_URL | sed -e '/^! /d' -e '1c ! 酷安大萌主几十KB的轻量规则' -e '/^!$/d' > ./jiekouad.txt
+          curl -sSL $BANAD_URL | grep -v "^!" > ./jiekouad.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
@@ -135,3 +135,26 @@ jobs:
             ./*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Git push assets to github
+        run: |
+          rm -rf new old*
+          mkdir -p ./tmp/
+          cd tmp
+          touch $RANDOM
+          cd ../
+          git init
+          git config --local user.name "doiyes"
+          git config --local user.email "qudou@live.com"
+          git branch -m master
+          git add .
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+          git push -f -u
+      - name: Purge jsdelivr cache
+        run: |
+          result=$(curl -s https://purge.jsdelivr.net/gh/doiyes/ADFlist@master/)
+          if echo $result |grep -q 'success.*true'; then
+            echo "jsdelivr缓存更新成功"
+          else
+            echo $result
+          fi
