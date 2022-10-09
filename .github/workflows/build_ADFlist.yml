@@ -26,6 +26,7 @@ jobs:
           echo "CJXLIST_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" >> $GITHUB_ENV
           echo "GENERALBLOCK_URL=https://github.com/o0HalfLife0o/list/raw/master/mod/GeneralBlock.txt" >> $GITHUB_ENV
           echo "TIEBABLOCK_URL=https://github.com/o0HalfLife0o/list/raw/master/mod/TiebaBlock.txt" >> $GITHUB_ENV
+          echo "IMBALIST_URL=https://gist.githubusercontent.com/imba-tjd/2c9817233ac6798d4f2bfe057f781ca5/raw/IMBALIST.TXT" >> $GITHUB_ENV
           echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
           echo "ANTI_ADBLOCK_KILLER_FILTERS_URL=https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt" >> $GITHUB_ENV
           echo "ANTIADBLOCKFILTERS_URL=https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" >> $GITHUB_ENV
@@ -67,6 +68,7 @@ jobs:
           curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
           curl -sSL $GENERALBLOCK_URL | sed -e '/^! /d' -e '1c ! GeneralBlock' -e '/^!$/d' -e '/^$/d' > ./generalblock.txt
           curl -sSL $TIEBABLOCK_URL | sed -e '/^! /d' -e '1c ! TiebaBlock' -e '/^!$/d' -e '/^$/d' > ./tiebablock.txt
+          curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! TiebaBlock' -e '/^!$/d' -e '/^$/d' > ./imbalist.txt
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           sed -i '/!#include cjx-ublock.txt/c !#include https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt' ./cjx-annoyance.txt
           curl -sSL $ADGK_BAIDU_URL | sed -e '/^! /d' -e '1c ! ADgk 百度搜索结果极限净化' -e '/^!$/d' -e '/^$/d' > ./adgk-baidu.txt
@@ -96,7 +98,7 @@ jobs:
         run: |
           mkdir -p ./new/
           cd ./download
-          cat generalblock.txt tiebablock.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt adgk-baidu.txt nocoin.txt > ../new/ADFlist.txt
+          cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt adgk-baidu.txt nocoin.txt > ../new/ADFlist.txt
           cat adguardmoblie.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt > ../new/ADFlist-m.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
