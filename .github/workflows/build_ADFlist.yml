@@ -68,7 +68,7 @@ jobs:
           curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
           curl -sSL $GENERALBLOCK_URL | sed -e '/^! /d' -e '1c ! GeneralBlock' -e '/^!$/d' -e '/^$/d' > ./generalblock.txt
           curl -sSL $TIEBABLOCK_URL | sed -e '/^! /d' -e '1c ! TiebaBlock' -e '/^!$/d' -e '/^$/d' > ./tiebablock.txt
-          curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! TiebaBlock' -e '/^!$/d' -e '/^$/d' > ./imbalist.txt
+          curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! IMBALIST' -e '/^!$/d' -e '/^$/d' > ./imbalist.txt
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           sed -i '/!#include cjx-ublock.txt/c !#include https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt' ./cjx-annoyance.txt
           curl -sSL $ADGK_BAIDU_URL | sed -e '/^! /d' -e '1c ! ADgk 百度搜索结果极限净化' -e '/^!$/d' -e '/^$/d' > ./adgk-baidu.txt
@@ -76,7 +76,7 @@ jobs:
           curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
           curl -sSL $XINGGSF_MINORITY_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 小众视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-minority-mv.txt
           curl -sSL $NOCOIN_FILTER_URL | sed -e '/^! /d' -e '1c ! NoCoin_Filter' -e '/^!$/d' -e '/^$/d' > ./nocoin.txt
-          curl -sSL $ADGUARD_MOBILE_URL | sed -e '/^! /d' -e '1c ! AdGuard 移动规则' -e '/^!$/d' -e '/^$/d' > ./adguardmoblie.txt
+          curl -sSL $ADGUARD_MOBILE_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' -e '/^$/d' > ./adguardmoblie.txt
           curl -sSL $HACAMER_URL | sed -e '/^! /d' -e '1c ! hacamer移除一些烦人的元素' -e '/^!$/d' -e '/^$/d' > ./hacamer.txt
           curl -sSL $ADGK_URL | sed -e '/^! /d' -e '1c ! ADgk手机规则' -e '/^!$/d' -e '/^$/d' > ./adgk.txt
           curl -sSL $HACAMER_URLF_URL | sed -e '/^! /d' -e '1c ! 杏梢的URL过滤器' -e '/^!$/d' -e '/^$/d' > ./hacamer-url.txt
