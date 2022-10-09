@@ -1,14 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: pAeMi5ovQrSgdQWksexSXw
+! Checksum: 43+Q51B5+PTmluApWYUOXQ
 ! Title: ADFlist
 ! Expires: 6 hours
-! Version(Last Modified): 202210091611
+! Version(Last Modified): 202210091617
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 
-! GeneralBlock
 tieba.baidu.com###pagelet_entertainment-liveshow\/pagelet\/video_head
-! Start
 500px.com###hellobar
 bing.com###banner
 coding.net##.smart-app-banner
@@ -74,7 +72,6 @@ xhamster.com##.sponsorBottom
 @@||apis.google.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
 @@||cdn.bootcss.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
 @@||googleapis.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
-!@@||googletagmanager.com/gtm.js$domain=www.nintendo.co.jp
 @@/js/ads.$domain=shrinklink.co
 ||115.com/static/plug/video_play/qrcode.js
 ||ad.directrev.com^$popup
@@ -208,15 +205,9 @@ xhamster.com##.sponsorBottom
 ||zhongxinghuanyu.com^$third-party
 ||zedo.com^$third-party
 ||zencdn.net^$domain=freegaypornsex.net|www.gayvl.info
-! 2345
 @@||union2.50bang.org^$third-party
-! 6park
-!|http:$third-party,image,domain=www.6park.com
-!|https:$third-party,image,domain=www.6park.com
 @@||popo8.com^$domain=www.6park.com
-! BiliBili
 live.bilibili.com##.fans-medal-item-ctnr
-! Cam4
 ||cam4.com/ads/
 ||cam4.com/buygift/
 ||cam4.com/directoryFanClubs?
@@ -232,21 +223,16 @@ cam4.com##.sponsorAd
 cam4.com##.stickyAd
 cam4.com##.xmlAdsTitle
 cam4.com##.xmlAdsWrapper
-! Chaturbate
 ||chaturbate.com/affiliates/
 ||nsimg.net^
 chaturbate.com##IMG[rel="nofollow"]
 chaturbate.com##.ad
 chaturbate.com##.banner
-! 中华网闲置2分钟广告
 junshi.china.com###mod-box
 junshi.china.com##.w_xiao>.side_bdgg
 toutiao.china.com###js-free-time-show
-! COCOmanhua
 @@||cdndx.clouddata8g.xyz^$script,domain=www.cocomanhua.com
-! 低端影视
 ||ddrk.me/vjs-plugins/videojs.das.min.js
-!通用去除dplayer播放器logo   https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=2180923&pid=46929896
 ##.dplayer-logo
 ###sponsorAdDiv
 ###sponsorAdCountdown
@@ -274,35 +260,26 @@ nfmovies.com##body > div.hidden-xs
 @@||www.nfmovies.com/static/side.jpg
 @@||www.nfmovies.com/pic/tu/banner-03.jpg
 @@||www.nfmovies.com/pic/tu/banner03.jpg
-! Facebook
 www.facebook.com###pagelet_side_ads
 www.facebook.com##.egoOrganicColumn+*
-! ithome
 ithome.com###a_ad
 www.ithome.com###lapin
 www.ithome.com##.content>a[href="http://m.ithome.com/ithome/"]
 ||img.ithome.com/file/js/wap/apprecommend.js
-! Letv
 |http://*/letv-gug/
 ||banana.le.com/letv_tracker.js$domain=m.le.com
 ||dc.letv.com/op/?
 ||player.letvcdn.com/*/newplayer/1/WatchingBuy.swf
-! leisu
 @@||tracker.namitiyu.com^
-! mgtv
 m.mgtv.com##.mg-dcross
 www.mgtv.com##.m-headgg
-! mydrivers
 www.mydrivers.com###weixin_box
-! OutLook
 ||res.office365.com/*/scripts/owa.AdsPanel.js
 ||res.office365.com/*/scripts/microsoft.owa.adsbar.js
 ||outlook.live.com/*/scripts/microsoft.owa.adsbar.js
-! Paper
 www.thepaper.cn##.pdtt01
 m.thepaper.cn##.toutiao
 m.thepaper.cn##.bot_banner
-! PornHub
 pornhub.com###hd-rightColVideoPage>none
 pornhub.com##.videos-morepad.videos.full-row-thumbs.videos-being-watched.logInHotContainer+*
 pornhub.com##.inesuch
@@ -312,24 +289,18 @@ pornhub.com##.hd.clear
 ||phncdn.com/www-static/js/widgets-live-popup.js
 ||phncdn.com/www-static/js/ph-tracking.js
 ||phncdn.com/www-static/js/promo-banner.js
-! QQ video
 @@||video.qq.com^*&refer=http$script
-! Youtube
 youtube.com###contents>ytd-search-pyv-renderer
 youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com###video-masthead
 youtube.com###masthead-ad
 m.youtube.com###koya_child_6
-!m.youtube.com##._menb>._mab:nth-child(1)
 ||youtube.com/*=adunit&
 ||youtube.com/*&yt_ad
 ||youtube.com/get_midroll_info?
-! 心魔听书网
 ||m.ixinmo.com/template/m/js/yidong*.js
-! Baidu
 ^monitor.jpg?xcode^
 pan.baidu.com##.upload-bar.global-clearfix
-! TiebaBlock
 */widget/spage_game_tab/$domain=tieba.baidu.com
 ||xiu8.com/live/$domain=tieba.baidu.com
 ||share.baidu.com/static/js/
@@ -345,7 +316,6 @@ pan.baidu.com##.upload-bar.global-clearfix
 ||bdstatic.com/tb/img/firework_
 ||bdstatic.com/tb/static-common/js/pic_share/logger.js
 ||bdstatic.com/tb/static-pb/img/voice_ad.gif
-! iTieba & Homepage
 jump.bdimg.com,tieba.baidu.com###adide_platform
 jump.bdimg.com,tieba.baidu.com###media_item
 jump.bdimg.com,tieba.baidu.com###spage_game_tab_wrapper
@@ -355,23 +325,19 @@ jump.bdimg.com,tieba.baidu.com##.ihome_aside_section[j-mygift]
 jump.bdimg.com,tieba.baidu.com##.ihome_game_group
 jump.bdimg.com,tieba.baidu.com##.member_rank
 jump.bdimg.com,tieba.baidu.com##.userinfo_scores
-! Top Right
 jump.bdimg.com,tieba.baidu.com##.fMember_cnt
 jump.bdimg.com,tieba.baidu.com##.split
 jump.bdimg.com,tieba.baidu.com##.u_app
 jump.bdimg.com,tieba.baidu.com##.u_appcenterEntrance
-!jump.bdimg.com,tieba.baidu.com##.u_bdhome
 jump.bdimg.com,tieba.baidu.com##.u_blue
 jump.bdimg.com,tieba.baidu.com##.u_game
 jump.bdimg.com,tieba.baidu.com##.u_grab_treasure
 jump.bdimg.com,tieba.baidu.com##.u_joinvip
 jump.bdimg.com,tieba.baidu.com##.u_split
-!jump.bdimg.com,tieba.baidu.com##.u_member
 jump.bdimg.com,tieba.baidu.com##.u_menu_tbmall
 jump.bdimg.com,tieba.baidu.com##.u_mytbmall
 jump.bdimg.com,tieba.baidu.com##.u_xiu8
 jump.bdimg.com,tieba.baidu.com##.u_wallet
-! Top
 jump.bdimg.com,tieba.baidu.com###local_board
 jump.bdimg.com,tieba.baidu.com###j_navtab_wanle
 jump.bdimg.com,tieba.baidu.com###j_navtab_game
@@ -382,7 +348,6 @@ jump.bdimg.com,tieba.baidu.com##.star_nav_ico_activity
 jump.bdimg.com,tieba.baidu.com##.star_nav_ico_deal
 jump.bdimg.com,tieba.baidu.com##.star_nav_ico_group
 jump.bdimg.com,tieba.baidu.com##.star_nav_ico_tuan
-! Sides
 jump.bdimg.com,tieba.baidu.com###aside_ad
 jump.bdimg.com,tieba.baidu.com###aside_ad_wrapper
 jump.bdimg.com,tieba.baidu.com###novel-ranking
@@ -400,7 +365,6 @@ jump.bdimg.com,tieba.baidu.com##.tbui_fbar_bazhu
 jump.bdimg.com,tieba.baidu.com##.tbui_fbar_props
 jump.bdimg.com,tieba.baidu.com##.tieba_notice
 jump.bdimg.com,tieba.baidu.com##.user_score
-! Central
 jump.bdimg.com,tieba.baidu.com###top_activity
 jump.bdimg.com,tieba.baidu.com##.achievement_medal_wrapper
 jump.bdimg.com,tieba.baidu.com##.card_userinfo_honor
@@ -421,7 +385,6 @@ jump.bdimg.com,tieba.baidu.com##.sofa_front_list_wrap
 jump.bdimg.com,tieba.baidu.com##.share_btn_wrapper
 jump.bdimg.com,tieba.baidu.com##.thread_recommend_ps
 jump.bdimg.com,tieba.baidu.com##.user_card_vip_tips
-! Bottom
 jump.bdimg.com,tieba.baidu.com###bdshare
 jump.bdimg.com,tieba.baidu.com###guide_fc
 jump.bdimg.com,tieba.baidu.com###xiu8_follow_warn
@@ -430,7 +393,6 @@ jump.bdimg.com,tieba.baidu.com##.edui-btn-medal
 jump.bdimg.com,tieba.baidu.com##.edui-btn-paypost
 jump.bdimg.com,tieba.baidu.com##.j_surveillance
 jump.bdimg.com,tieba.baidu.com##.showBar
-! Mobile
 ||tieba.baidu.com/mo/q/appSpecialThread
 tieba.baidu.com##.client_ghost_icon
 tieba.baidu.com##.daoliu_sign_in_show
