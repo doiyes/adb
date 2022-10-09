@@ -5,7 +5,7 @@
 
 自用，使用Github Actions定时从上游自动合并，使用Github Release分发。
 
-规则源：  
+部分规则源：  
 [EasyList / EasyPrivacy / Fanboy Lists: https://easylist.to/](https://easylist.to/)  
 [Easylistchina: https://github.com/easylist/easylistchina](https://github.com/easylist/easylistchina)     
 [cjxlist: https://github.com/cjx82630/cjxlist](https://github.com/cjx82630/cjxlist)  
