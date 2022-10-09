@@ -24,11 +24,22 @@ jobs:
           echo "EASYLISTCHINA_URL=https://easylist-downloads.adblockplus.org/easylistchina.txt" >> $GITHUB_ENV
           echo "EASYPRIVACY_URL=https://easylist-downloads.adblockplus.org/easyprivacy.txt" >> $GITHUB_ENV
           echo "CJXLIST_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" >> $GITHUB_ENV
+          echo "GENERALBLOCK_URL=https://github.com/lychichem/list/raw/master/mod/GeneralBlock.txt" >> $GITHUB_ENV
+          echo "TIEBABLOCK_URL=https://github.com/lychichem/list/raw/master/mod/TiebaBlock.txt" >> $GITHUB_ENV
           echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
           echo "ANTI_ADBLOCK_KILLER_FILTERS_URL=https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt" >> $GITHUB_ENV
           echo "ANTIADBLOCKFILTERS_URL=https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" >> $GITHUB_ENV
           echo "ABP_FILTERS_ANTI_CV_URL=https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt" >> $GITHUB_ENV
+          echo "ADGK_BAIDU_URL=https://github.com/banbendalao/ADgk/raw/master/kill-baidu-ad.txt" >> $GITHUB_ENV
+          echo "XINGGSF_RULE_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt" >> $GITHUB_ENV
           echo "XINGGSF_MV_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt" >> $GITHUB_ENV
+          echo "XINGGSF_MINORITY_MV_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/minority-mv.txt" >> $GITHUB_ENV
+          echo "NOCOIN_FILTER_URL=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt" >> $GITHUB_ENV
+          echo "ADGUARD_MOBILE_URL=https://filters.adtidy.org/android/filters/11.txt" >> $GITHUB_ENV
+          echo "HACAMER_URL=https://hacamer.top/AdRule/rules-admin.txt" >> $GITHUB_ENV
+          echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
+          echo "HACAMER_URLF_URL=https://hacamer.top/AdRule/url-filter.txt" >> $GITHUB_ENV
+          echo "BANAD_URL=https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" >> $GITHUB_ENV
           echo "GOPATH=$(dirname $GITHUB_WORKSPACE)" >> $GITHUB_ENV
           echo "$(dirname $GITHUB_WORKSPACE)/bin" >> $GITHUB_PATH
         shell: bash
@@ -46,21 +57,28 @@ jobs:
       - name: Get every files
         id: download
         run: |
-          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad-more.txt
-          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad-mo.txt
-          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad-pc.txt
-          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad.txt
-          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad2.txt
-          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ad3.txt
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist.txt
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist-m.txt
           mkdir -p ./download/
           cd ./download
           curl -sSL $EASYLIST_URL | sed -e '/^! /d' -e '1c ! EasyList' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylist.txt
           curl -sSL $EASYLISTCHINA_URL | sed -e '/^! /d' -e '1c ! EasyList China' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylistchina.txt
           curl -sSL $EASYPRIVACY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./easyprivacy.txt
           curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
+          curl -sSL $GENERALBLOCK_URL | sed -e '/^! /d' -e '1c ! GeneralBlock' -e '/^!$/d' -e '/^$/d' > ./generalblock.txt
+          curl -sSL $TIEBABLOCK_URL | sed -e '/^! /d' -e '1c ! TiebaBlock' -e '/^!$/d' -e '/^$/d' > ./tiebablock.txt
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           sed -i '/!#include cjx-ublock.txt/c !#include https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt' ./cjx-annoyance.txt
-          curl -sSL $XINGGSF_MV_URL | sed '/禁止站内新开窗/,+2d' | sed -e '/^! /d' -e '1c ! 乘风 视频广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
+          curl -sSL $ADGK_BAIDU_URL | sed -e '/^! /d' -e '1c ! ADgk 百度搜索结果极限净化' -e '/^!$/d' -e '/^$/d' > ./adgk-baidu.txt
+          curl -sSL $XINGGSF_RULE_URL | sed -e '/^! /d' -e '1c ! 乘风 广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-rule.txt
+          curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
+          curl -sSL $XINGGSF_MINORITY_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 小众视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-minority-mv.txt
+          curl -sSL $NOCOIN_FILTER_URL | sed -e '/^! /d' -e '1c ! NoCoin_Filter' -e '/^!$/d' -e '/^$/d' > ./nocoin.txt
+          curl -sSL $ADGUARD_MOBILE_URL | sed -e '/^! /d' -e '1c ! AdGuard 移动规则' -e '/^!$/d' -e '/^$/d' > ./adguardmoblie.txt
+          curl -sSL $HACAMER_URL | sed -e '/^! /d' -e '1c ! hacamer移除一些烦人的元素' -e '/^!$/d' -e '/^$/d' > ./hacamer.txt
+          curl -sSL $ADGK_URL | sed -e '/^! /d' -e '1c ! ADgk手机规则' -e '/^!$/d' -e '/^$/d' > ./adgk.txt
+          curl -sSL $HACAMER_URLF_URL | sed -e '/^! /d' -e '1c ! 杏梢的URL过滤器' -e '/^!$/d' -e '/^$/d' > ./hacamer-url.txt
+          curl -sSL $BANAD_URL | sed -e '/^! /d' -e '1c ! 酷安大萌主几十KB的轻量规则' -e '/^!$/d' -e '/^$/d' > ./jiekouad.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
@@ -78,12 +96,9 @@ jobs:
         run: |
           mkdir -p ./new/
           cd ./download
-          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt xinggsf-mv.txt > ../new/ad-pc.txt
-          cat ../mod/GeneralBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt > ../new/ad-mo.txt
-          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt > ../new/ad.txt
-          cat xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt > ../new/ad2.txt
-          cat xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt easyprivacy.txt > ../new/ad3.txt
-          cat antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt > ../new/ad-more.txt
+          cat generalblock.txt tiebablock.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt adgk-baidu.txt nocoin.txt > ../new/ADFlist.txt
+          cat adguardmoblie.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt > ../new/ADFlist-m.txt
+          cat ../mod/GeneralBlock.txt ../mod/xinggsf-mv.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-minority-mv.txt adgk-baidu.txt nocoin.txt > ../new/ad-pc.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
