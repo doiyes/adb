@@ -66,20 +66,20 @@ jobs:
           curl -sSL $EASYLISTCHINA_URL | sed -e '/^! /d' -e '1c ! EasyList China' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylistchina.txt
           curl -sSL $EASYPRIVACY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./easyprivacy.txt
           curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
-          curl -sSL $GENERALBLOCK_URL | sed -e '1c ! GeneralBlock' -e '/^!$/d' -e '/^$/d' > ./generalblock.txt
-          curl -sSL $TIEBABLOCK_URL | sed -e '1c ! TiebaBlock' -e '/^!$/d' -e '/^$/d' > ./tiebablock.txt
-          curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! IMBALIST' -e '/^!$/d' -e '/^$/d' > ./imbalist.txt
+          curl -sSL $GENERALBLOCK_URL | sed -e '1c ! GeneralBlock' -e '/^!$/d' > ./generalblock.txt
+          curl -sSL $TIEBABLOCK_URL | sed -e '1c ! TiebaBlock' -e '/^!$/d' > ./tiebablock.txt
+          curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! IMBALIST' -e '/^!$/d' > ./imbalist.txt
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
-          curl -sSL $ADGK_BAIDU_URL | sed -e '/^! /d' -e '1c ! ADgk 百度搜索结果极限净化' -e '/^!$/d' -e '/^$/d' > ./adgk-baidu.txt
-          curl -sSL $XINGGSF_RULE_URL | sed -e '/^! /d' -e '1c ! 乘风 广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-rule.txt
-          curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
-          curl -sSL $XINGGSF_MINORITY_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 小众视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-minority-mv.txt
-          curl -sSL $NOCOIN_FILTER_URL | sed -e '/^! /d' -e '1c ! NoCoin_Filter' -e '/^!$/d' -e '/^$/d' > ./nocoin.txt
-          curl -sSL $ADGUARD_MOBILE_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' -e '/^$/d' > ./adguardmoblie.txt
-          curl -sSL $HACAMER_URL | sed -e '/^! /d' -e '1c ! hacamer移除一些烦人的元素' -e '/^!$/d' -e '/^$/d' > ./hacamer.txt
-          curl -sSL $ADGK_URL | sed -e '/^! /d' -e '1c ! ADgk手机规则' -e '/^!$/d' -e '/^$/d' > ./adgk.txt
-          curl -sSL $HACAMER_URLF_URL | sed -e '/^! /d' -e '1c ! 杏梢的URL过滤器' -e '/^!$/d' -e '/^$/d' > ./hacamer-url.txt
-          curl -sSL $BANAD_URL | sed -e '/^! /d' -e '1c ! 酷安大萌主几十KB的轻量规则' -e '/^!$/d' -e '/^$/d' > ./jiekouad.txt
+          curl -sSL $ADGK_BAIDU_URL | sed -e '/^! /d' -e '1c ! ADgk 百度搜索结果极限净化' -e '/^!$/d' > ./adgk-baidu.txt
+          curl -sSL $XINGGSF_RULE_URL | sed -e '/^! /d' -e '1c ! 乘风 广告过滤规则' -e '/^!$/d' > ./xinggsf-rule.txt
+          curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频过滤规则' -e '/^!$/d' > ./xinggsf-mv.txt
+          curl -sSL $XINGGSF_MINORITY_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 小众视频过滤规则' -e '/^!$/d' > ./xinggsf-minority-mv.txt
+          curl -sSL $NOCOIN_FILTER_URL | sed -e '/^! /d' -e '1c ! NoCoin_Filter' -e '/^!$/d' > ./nocoin.txt
+          curl -sSL $ADGUARD_MOBILE_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' > ./adguardmoblie.txt
+          curl -sSL $HACAMER_URL | sed -e '/^! /d' -e '1c ! hacamer移除一些烦人的元素' -e '/^!$/d' > ./hacamer.txt
+          curl -sSL $ADGK_URL | sed -e '/^! /d' -e '1c ! ADgk手机规则' -e '/^!$/d' > ./adgk.txt
+          curl -sSL $HACAMER_URLF_URL | sed -e '/^! /d' -e '1c ! 杏梢的URL过滤器' -e '/^!$/d' > ./hacamer-url.txt
+          curl -sSL $BANAD_URL | sed -e '/^! /d' -e '1c ! 酷安大萌主几十KB的轻量规则' -e '/^!$/d' > ./jiekouad.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
