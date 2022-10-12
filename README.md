@@ -19,6 +19,7 @@
 [规则加速: https://github.com/Silentely/AdBlock-Acceleration](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README_CN.md)  
 https://gist.github.com/imba-tjd/2c9817233ac6798d4f2bfe057f781ca5  
 https://github.com/dupontjoy/Customization/tree/main/Rules/uBlock  
+https://github.com/hacamer/AdRule
 
 参考：   
 [https://github.com/lychichem/list](https://github.com/lychichem/list)  
