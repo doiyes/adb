@@ -97,7 +97,7 @@ jobs:
         run: |
           mkdir -p ./new/
           cd ./download
-          cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt adgk-baidu.txt nocoin.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist.txt
+          cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist.txt
           cat hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-m.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
