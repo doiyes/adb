@@ -27,5 +27,5 @@ https://github.com/xtoys/AdGuardHome/blob/main/README_CN.md
 [https://github.com/hacamer/Adblist](https://github.com/hacamer/Adblist)  
 [https://github.com/o0HalfLife0o/list](https://github.com/o0HalfLife0o/list)   
 [https://github.com/xinggsf/Adblock-Plus-Rule](https://github.com/xinggsf/Adblock-Plus-Rule)  
-[https://github.com/DoingDog/XXKiller](https://github.com/DoingDog/XXKiller)
+[https://github.com/DoingDog/XXKiller](https://github.com/DoingDog/XXKiller)  
 [https://github.com/Cats-Team/AdRules](https://github.com/Cats-Team/AdRules)
