@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Uuq++e58CDWBkj0mQsSCOw
+! Checksum: IsLMcd3eqckriLX2F1S9Hg
 ! Title: ADFlist
 ! Expires: 6 hours
-! Version(Last Modified): 202210150725
+! Version(Last Modified): 202210150735
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -12287,6 +12287,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 @@||www.statcounter.com/images/$image,third-party
 @@||www.ups.com/WebTracking/processInputRequest
 @@||www.youtube.com/s/desktop/ad$script
+@@||www.zhihu.com/api/v4/search_v3*
 @@||www.zhihu.com/api/v4^$app=com.zhihu.android
 @@||wwwimage-tve.cbsstatic.com^
 @@||wx.qq.com/*/ad_$script
@@ -26839,6 +26840,8 @@ zzbaike.com##.imglistbg_ad
 zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 zznews.cn##.ad:not([style])
 |.gif$domain=fashangji.com
+|api.zhihu.com/ad-style-service/request
+|api.zhihu.com/fringe/ad
 |app.market.xiaomi.com/apm/app/recommendtab$
 |data:text/plain$popup,domain=music.163.com
 |http$app=com.rock.gota|com.hll.fileexplorer
@@ -34178,6 +34181,7 @@ zznews.cn##.ad:not([style])
 ||api.zhihu.com/answers/*/comments/featured-comment-ad
 ||api.zhihu.com/api/user/prod/user/info/collections/upload
 ||api.zhihu.com/appview/api/v4/answers/*/recommendations
+||api.zhihu.com/appview/api/v4/answers/*/recommendations*hb_answer_ad=0
 ||api.zhihu.com/commercial_api/launch_v2^
 ||api.zhihu.com/commercial_api/real_time_launch_v2^
 ||api.zhihu.com/drama/living-info$replace=/true/false/
@@ -34186,17 +34190,22 @@ zznews.cn##.ad:not([style])
 ||api.zhihu.com/launch
 ||api.zhihu.com/log_collect^
 ||api.zhihu.com/moments*$replace=/\"adjson\"/\"adnull\"/
+||api.zhihu.com/moments*$replace=/\"adjson\"/\"adnull\"/s
 ||api.zhihu.com/moments/recommend$replace=/{"action_text".*?adjson.*?"feed_advert"}\,/ /
 ||api.zhihu.com/people/self$replace=/\"vip_info\"/\"null_vip\"/
+||api.zhihu.com/people/self$replace=/\"vip_info\"/\"null_vip\"/s
 ||api.zhihu.com/real_time_launch
 ||api.zhihu.com/real_time_second_floor
 ||api.zhihu.com/topstory/recommend$replace=/{"id":"AD.*?"type":"feed_advert".*?adjson.*?"ncontent".*?"ecpm".*?}}\,/ /
 ||api.zhihu.com/topstory/recommend*$replace=/\"adjson\"/\"adnull\"/
+||api.zhihu.com/topstory/recommend*$replace=/\"adjson\"/\"adnull\"/s
 ||api.zhihu.com/topstory/recommend*$replace=/\"slot_event_card\"/\"null_card\"/
+||api.zhihu.com/topstory/recommend*$replace=/\"slot_event_card\"/\"null_card\"/s
 ||api.zhihu.com/usertask-core/action/read_content_duration_when_left
 ||api.zhihu.com/usertask-core/action^
 ||api.zhihu.com/v4/questions/*/answers$replace=/"ad_info":{.*?}.*?"position".*?}\,/ /
 ||api.zhihu.com/v4/questions/*/answers*$replace=/\"adjson\"/\"adnull\"/
+||api.zhihu.com/v4/questions/*/answers*$replace=/\"adjson\"/\"adnull\"/s
 ||api.zhuishushenqi.com/config/umeng^
 ||api.zhuti.xiaomi.com/app/v9/uipages$replace=/adInfo//
 ||api16-access-sg.pangle.io/api/ad^
