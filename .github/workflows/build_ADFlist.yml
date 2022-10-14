@@ -1,4 +1,4 @@
-name: Build adblock rules files
+name: Build ADFlist files
 on:
   schedule:
     - cron: 15 0/6 * * *
@@ -70,10 +70,10 @@ jobs:
           curl -sSL $EASYLISTCHINA_URL | sed -e '/^! /d' -e '1c ! EasyList China' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylistchina.txt
           curl -sSL $EASYPRIVACY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./easyprivacy.txt
           curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
+          curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           curl -sSL $GENERALBLOCK_URL | grep -v "啊"> ./generalblock.txt
           curl -sSL $TIEBABLOCK_URL | grep -v "啊"> ./tiebablock.txt
           curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! IMBALIST' -e '/^!$/d' -e '/^$/d' > ./imbalist.txt
-          curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           curl -sSL $ADGK_BAIDU_URL | sed -e '/^! /d' -e '1c ! ADgk 百度搜索结果极限净化' -e '/^!$/d' > ./adgk-baidu.txt
           curl -sSL $XINGGSF_RULE_URL | sed -e '/^! /d' -e '1c ! 乘风 广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-rule.txt
           curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
@@ -107,7 +107,7 @@ jobs:
           cd ./download
           cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist.txt
           cat hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-m.txt
-          cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt adguardmoblie.txt adguard-chinese.txt easyprivacy.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-all.txt
+          cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt adguardmoblie.txt adguard-chinese.txt easyprivacy.txt zhihu-strict.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-all.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
