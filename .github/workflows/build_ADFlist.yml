@@ -1,7 +1,7 @@
 name: Build adblock rules files
 on:
   schedule:
-    - cron: 15 0/24 * * *
+    - cron: 15 0/6 * * *
   push:
     branches:
       - "master"
@@ -107,6 +107,7 @@ jobs:
           cd ./download
           cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist.txt
           cat hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-m.txt
+          cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt adguardmoblie.txt adguard-chinese.txt easyprivacy.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-all.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
