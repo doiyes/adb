@@ -7,7 +7,7 @@
 
 部分规则源：  
 EasyList / EasyPrivacy / Fanboy Lists: [https://easylist.to/](https://easylist.to/)  
-AdGuard filters：https://kb.adguard.com/en/general/adguard-ad-filters#filters
+AdGuard filters：https://kb.adguard.com/en/general/adguard-ad-filters#filters  
 Easylistchina: [https://github.com/easylist/easylistchina](https://github.com/easylist/easylistchina)     
 cjxlist: [https://github.com/cjx82630/cjxlist](https://github.com/cjx82630/cjxlist)  
 乘风过滤规则: [https://github.com/xinggsf/Adblock-Plus-Rule](https://github.com/xinggsf/Adblock-Plus-Rule)  
