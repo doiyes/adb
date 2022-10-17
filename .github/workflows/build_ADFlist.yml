@@ -1,7 +1,7 @@
 name: Build ADFlist files
 on:
   schedule:
-    - cron: 15 0/6 * * *
+    - cron: 15 0/24 * * *
   push:
     branches:
       - "master"
@@ -45,6 +45,9 @@ jobs:
           echo "DAMENGZHU_URL=https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" >> $GITHUB_ENV
           echo "CINGLIST_UBO_URL=https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt" >> $GITHUB_ENV
           echo "ZHIHU_URL=https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt" >> $GITHUB_ENV
+          echo "ADGUARD_DNS_URL=https://filters.adtidy.org/android/filters/15_optimized.txt" >> $GITHUB_ENV
+          echo "CATSTEAM_DNS_URL=https://cats-team.github.io/AdRules/dns.txt" >> $GITHUB_ENV
+          
           echo "GOPATH=$(dirname $GITHUB_WORKSPACE)" >> $GITHUB_ENV
           echo "$(dirname $GITHUB_WORKSPACE)/bin" >> $GITHUB_PATH
         shell: bash
@@ -88,6 +91,8 @@ jobs:
           curl -sSL $DAMENGZHU_URL | grep -v "^!" > ./jiekouad.txt
           curl -sSL $CINGLIST_UBO_URL | grep -v "啊"> ./cinglist-ubo.txt
           curl -sSL $ZHIHU_URL | grep -v "啊"> ./zhihu-strict.txt
+          curl -sSL $ADGUARD_DNS_URL | grep -v "啊"> ./adguard-dns.txt
+          curl -sSL $CATSTEAM_DNS_URL | grep -v "啊"> ./catsteam-dns.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
@@ -108,6 +113,7 @@ jobs:
           cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist.txt
           cat hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-m.txt
           cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt adguardmoblie.txt adguard-chinese.txt easyprivacy.txt zhihu-strict.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-all.txt
+          cat adguard-dns catsteam-dns.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
