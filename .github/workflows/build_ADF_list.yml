@@ -66,6 +66,8 @@ jobs:
         run: |
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist.txt
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist-m.txt
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist-all.txt
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist-dns.txt
           mkdir -p ./download/
           cd ./download
           curl -sSL $EASYLIST_URL | sed -e '/^! /d' -e '1c ! EasyList' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylist.txt
