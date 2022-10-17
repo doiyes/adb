@@ -47,7 +47,6 @@ jobs:
           echo "ZHIHU_URL=https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt" >> $GITHUB_ENV
           echo "ADGUARD_DNS_URL=https://filters.adtidy.org/android/filters/15_optimized.txt" >> $GITHUB_ENV
           echo "CATSTEAM_DNS_URL=https://cats-team.github.io/AdRules/dns.txt" >> $GITHUB_ENV
-          
           echo "GOPATH=$(dirname $GITHUB_WORKSPACE)" >> $GITHUB_ENV
           echo "$(dirname $GITHUB_WORKSPACE)/bin" >> $GITHUB_PATH
         shell: bash
@@ -91,8 +90,8 @@ jobs:
           curl -sSL $DAMENGZHU_URL | grep -v "^!" > ./jiekouad.txt
           curl -sSL $CINGLIST_UBO_URL | grep -v "啊"> ./cinglist-ubo.txt
           curl -sSL $ZHIHU_URL | grep -v "啊"> ./zhihu-strict.txt
-          curl -sSL $ADGUARD_DNS_URL | grep -v "啊"> ./adguard-dns.txt
-          curl -sSL $CATSTEAM_DNS_URL | grep -v "啊"> ./catsteam-dns.txt
+          curl -sSL $ADGUARD_DNS_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-dns.txt
+          curl -sSL $CATSTEAM_DNS_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./catsteam-dns.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
