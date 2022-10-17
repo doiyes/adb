@@ -116,6 +116,7 @@ jobs:
           cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt adguardmoblie.txt adguard-chinese.txt easyprivacy.txt zhihu-strict.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-all.txt
           cat adguard-dns.txt catsteam-dns.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
           cat *.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$"  | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
+          cat *.txt |grep -V "^[(\@\@)|(\|\|)][^\/\^]+\^$"  | sort -n | uniq | awk '!a[$0]++' > ../new/AD2.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
