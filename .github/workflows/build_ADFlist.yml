@@ -1,7 +1,7 @@
 name: Build ADFlist files
 on:
   schedule:
-    - cron: 15 0/24 * * *
+    - cron: 0 14/24 * * *
   push:
     branches:
       - "master"
@@ -165,7 +165,7 @@ jobs:
           git config --local user.email "qudou@live.com"
           git branch -m master
           git add .
-          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+          git commit -m "Updated at $(TZ=UTC+8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
           git push -f -u
       - name: Purge jsdelivr cache
         run: |
