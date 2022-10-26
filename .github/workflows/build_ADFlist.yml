@@ -117,7 +117,7 @@ jobs:
           cat adguard-dns.txt catsteam-dns.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
           cat *.txt | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
           cat *.txt | grep -v '^!\|@\||' | sort -n | uniq | awk '!a[$0]++' > ../new/AD2.txt
-          cat *.txt | grep -v '^!\|@\||\|-\|#' | sort -n | uniq | awk '!a[$0]++' > ../new/ad3.txt
+          cat *.txt | grep -v '^!\|@\||\|-' | sort -n | uniq | awk '!a[$0]++' > ../new/ad3.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
