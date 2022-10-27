@@ -68,6 +68,7 @@ jobs:
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist-m.txt
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist-all.txt
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/ADFlist-dns.txt
+          curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/AD2.txt
           mkdir -p ./download/
           cd ./download
           curl -sSL $EASYLIST_URL | sed -e '/^! /d' -e '1c ! EasyList' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylist.txt
@@ -117,7 +118,6 @@ jobs:
           cat adguard-dns.txt catsteam-dns.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
           cat *.txt | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
           cat *.txt | grep -v '^!\|@\||' | sort -n | uniq | awk '!a[$0]++' > ../new/AD2.txt
-          cat *.txt | grep -v '^!\|@\||\|-' | sort -n | uniq | awk '!a[$0]++' > ../new/ad3.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
