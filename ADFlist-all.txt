@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: NsOrPnPWqJ5U5eqLH5E07Q
+! Checksum: pwZFEjjYwJh6j7ly4u0Ytw
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202210302220
+! Version(Last Modified): 202210312230
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -619,6 +619,7 @@
 ##.my-cat.my-cat-header
 ##.mylist + #topthree
 ##.mylist > a > img[width^="9"][height="80"]
+##.myui-extra + .noticetext
 ##.nQIAj
 ##.nQIAj1
 ##.nav-area + .wrapper .tuiguang
@@ -700,6 +701,7 @@
 ##.top_func_ad
 ##.toy52_outer
 ##.toy52apparel_ALL
+##.trad3
 ##.twavt-ads
 ##.txp_ad[data-role="txpad-interact-pause"]
 ##.txp_ad_center
@@ -11594,9 +11596,8 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl$domain=ff14angler.com|logi.im
 @@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$domain=doitwell.tw
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=as-selection.net
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chaojizhibo.net|chtoen.com|daxiaamu.com|dizhishengcheng.com|doitwell.tw|eu4cn.com|ff14angler.com|freedidi.com|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|monnsutogatya.com|mpyit.com|numberempire.com|ozabc.com|patch.ali213.net|pc3mag.com|shenfendaquan.com|sto520.com|switch520.com|vaptcha.com|wenxuecity.com|wuyong.fun|xbeibeix.com|xiebruce.top|xugaoxiang.com|xxxxx520.com|yodu.org
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chaojizhibo.net|chtoen.com|daxiaamu.com|dizhishengcheng.com|doitwell.tw|eu4cn.com|ff14angler.com|freedidi.com|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|monnsutogatya.com|mpyit.com|numberempire.com|ozabc.com|patch.ali213.net|pc3mag.com|shenfendaquan.com|sistersbedroom.com|sto520.com|switch520.com|vaptcha.com|wenxuecity.com|wuyong.fun|xbeibeix.com|xiebruce.top|xugaoxiang.com|xxxxx520.com|yodu.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dthforum.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=sistersbedroom.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=vorsprung-online.de
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=duelmeta.com|liout.com|moneysave.info|myqqjd.com|zxmee.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=m.twfanti.com
@@ -18532,6 +18533,7 @@ jb51.net##.clearfix.pt10>.clearfix
 jb51.net##.gsdw
 jb51.net##.idc3
 jb51.net##.tipsa_ds
+jb51.net##p[style$="text-align: center; padding: 0px; margin: 20px 0px;"]
 jb51.net,makaidong.com###txtlink
 jb51.net,makaidong.com##.topimg
 jbaaza.com##.notice-img
@@ -21184,6 +21186,7 @@ mydrivers.com##a[href*=".ashx?to="]
 mydrivers.com##a[href*="/a.ashx"]
 mydrivers.com##a[href*="/zt.ashx"]
 mydrivers.com##div#code_lb.code_lb,TABLE[width="998"][height="90"],TABLE[width="1000"][height="90"],DIV.menu + DIV.baidu_box,#hsb_go,#dangbei_down,[id^="a_showhotnews_list"],[style^="width:1100px; height:90px;"],[class^="ad"],[style^="width:468px; height:60px;"],#recommend.news_xg
+mydrivers.com##div[class^="jdong11"]
 mydrivers.com##div[id$="_tab"] > ul > li:first-child
 mydrivers.com##div[style*="/ad/"]
 mydrivers.com##div[style="width:728px;height:90px; margin: auto; padding-top: 5px;"]
@@ -21383,7 +21386,10 @@ news.merumo.ne.jp##aside[style="min-height: 250px;"]
 news.merumo.ne.jp##div[id^="gpt_unit_"]
 news.milli.az##.quiz-holder > div[style^="margin: 15px auto 15px"] > div[style^="margin"]
 news.milli.az##.quiz-holder > div[style^="margin: 15px"] > .hidden-lg
+news.mydrivers.com##.baidu_left
 news.mydrivers.com##div[style="width:1000px;padding-top:16px;padding-bottom:12px;"]
+news.mydrivers.com#?#.news_info > p:-abp-has(> a[href^="https://dt.mydrivers.com/"])
+news.mydrivers.com#?#.news_info > p:-abp-has(> strong:contains(双11红包活动推荐))
 news.mynavi.jp#$##iframeContent { display: none !important; }
 news.mynavi.jp#$#.articleList-along { min-height: 0 !important; }
 news.mynavi.jp#$#.articleList-related-article { min-height: 0 !important; }
@@ -32847,6 +32853,7 @@ zztt24.com##.no-mask
 ||aidata.me^$third-party
 ||aidigua.com^
 ||aidsro.ostin.com^
+||aiedduop.cyou^
 ||aifaka.cc^
 ||aifei0755.net/123/
 ||aifenxiang.xyz^
@@ -40733,6 +40740,7 @@ zztt24.com##.no-mask
 ||dian500.com^
 ||dian500.com^$third-party
 ||dian5000.com^
+||dianchao.me^
 ||diandongchetoukui.com^
 ||diangezan.me^
 ||dianhanjiw.com^
@@ -42651,6 +42659,7 @@ zztt24.com##.no-mask
 ||enviou.com.br^$third-party
 ||enviousshape.com^
 ||enviousthread.com^
+||envkrev.cn^
 ||enyayinxiang.com^
 ||eo.chaungpin.top^
 ||eo.dongdm.cn^
@@ -43120,6 +43129,7 @@ zztt24.com##.no-mask
 ||eyoupie.cn^
 ||eyouv.cn^
 ||eyouv.cn^$third-party
+||eysgrje.cn^
 ||eyusky.net/weixin-img/zhifubao.jpg
 ||eyuyao.com/yyad/
 ||eywvko.shaddy.jp^
@@ -48907,6 +48917,7 @@ zztt24.com##.no-mask
 ||javase.top^
 ||javazhijia.com/skin/
 ||javbooks.com/52toy/
+||javddngx.cyou^
 ||javdove.com/templates/frontend/javdove/*/partialviewslider.
 ||javhd.com/*/300x250.html?
 ||javhd.com/ascripts/gcu.js
@@ -49172,6 +49183,7 @@ zztt24.com##.no-mask
 ||jiemeichike.cn^
 ||jiemian.com/static/jmw/js/adBase_
 ||jiese.fun^
+||jieshareme.xyz^
 ||jieshengit.com/1*.js
 ||jieshengit.com/js/*_
 ||jieshengit.com/js/jhhe.
@@ -50182,6 +50194,7 @@ zztt24.com##.no-mask
 ||kgagck6.com^
 ||kgho.info^
 ||kgimg.com/public/root//images/hardware.jpg
+||kgnlaigd.fun^
 ||kgnpwdf.cn^$third-party
 ||kgq.ink^
 ||kgsrr.top^
@@ -55997,6 +56010,7 @@ zztt24.com##.no-mask
 ||ogeyut.cn^
 ||oghdnp.cn^
 ||oghub.io^$third-party
+||ognlaigk.fun^
 ||ogrid.org^$third-party
 ||ogt.jp^$third-party
 ||oguwou.pichau.com.br^
@@ -56398,6 +56412,7 @@ zztt24.com##.no-mask
 ||oqkdjkdokj4l.xinerdact.com^
 ||oqr4.destinia.in^
 ||oqrwpru.cn^
+||oqshoyd.cn^
 ||ora.tv/j/ora_evttracking.js
 ||oracle.com/visitorinfo/
 ||oracleimg.com^*/metrics/
@@ -65748,6 +65763,7 @@ zztt24.com##.no-mask
 ||tag.rmp.rakuten.com^
 ||tag.search.sensefuel.live^$script,third-party
 ||tag.shopping-feed.com^
+||tag.statshop.fr^
 ||tag.triboomedia.it^
 ||tag4arm.com^$third-party
 ||tagcachedataxrt.com^
@@ -69717,6 +69733,7 @@ zztt24.com##.no-mask
 ||vrbo.com/pdp/logger?
 ||vrhug.cn^
 ||vrizead.com^
+||vrmgwvz.cn^
 ||vrmynha.cn^
 ||vroom.be^*/stats.js?
 ||vroom.be^*/stats.php?
@@ -70311,6 +70328,7 @@ zztt24.com##.no-mask
 ||webstats.vodafone.com^
 ||webstats4u.com^$third-party
 ||webstd.cn^
+||webstudy.fun^
 ||websuccess-data.com/tracker.js
 ||webt.eleonto.com^
 ||webt.eu.teac-audio.com^
@@ -72189,6 +72207,7 @@ zztt24.com##.no-mask
 ||xingjiankangfu.xyz^
 ||xingjuhe.com^
 ||xingkead.com^
+||xingqier.top^
 ||xingshenfang.cn^$popup
 ||xingtu.ltd^
 ||xingtu.net^
@@ -72612,6 +72631,7 @@ zztt24.com##.no-mask
 ||xzl200107151017.ltd^
 ||xzqxz.net^
 ||xztms.com^
+||xzvfd.xyz^
 ||xzwk.hk^
 ||xzyituo.com^
 ||y-track.com^$third-party
