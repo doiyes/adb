@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: pwZFEjjYwJh6j7ly4u0Ytw
+! Checksum: phMMlWTRyfIHQZB9Ohfzcg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202210312230
+! Version(Last Modified): 202211012231
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -343,7 +343,6 @@
 ##.a_fl
 ##.a_fr
 ##.a_oscar1
-##.a_p
 ##.a_pb
 ##.a_ssk_cn
 ##.a_sxc
@@ -645,6 +644,7 @@
 ##.player-rm-float
 ##.player_pic_link > [src*='/player.gif']
 ##.playtop.col-pd
+##.plc > .a_p
 ##.pop[style="right: 10px;"]
 ##.popup + .shortcuts-mobile-overlay
 ##.privilege-promote
@@ -7068,6 +7068,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 /open/log/*
 /openad*
 /openload.co$third-party,domain=openload.co|oload.tv
+/opens.jscrambler.com/*$image
 /opentag-
 /opentag/*
 /openxblank.gif?
@@ -12470,6 +12471,7 @@ _tracker_min.
 _tracking1.gif?
 _txtshow_
 _uvy6qyny.js
+_uwisajs?$script,third-party
 _view_pixel&$image
 _vmind.qqvideo.tc.qq.com^
 _webanalytics.
@@ -14083,6 +14085,8 @@ buffed.de##amp-iframe[width="300"][height="600"]
 buffed.de#?#ul[data-role="listview"] > .ticker_item:-abp-has(> a[href^="/E-Commerce"])
 buffed.de,pcgameshardware.de,cdn.ampproject.org##.anzLab
 buffed.de,pcgameshardware.de,pcgames.de##.wadtag
+buhidoh.net##.feedbox
+buhidoh.net##.im300x250
 buka.cn###download_bar
 bukaivip.com###header_eat
 bukaivip.com##img[onclick]
@@ -14810,6 +14814,7 @@ computerbild.de##.mrecContainer
 contents.internet.apps.samsung.com##.page-bar
 conveni.getnews.jp##.index-ad-banner
 cookpad.com##.standard_ad_slot
+cookpad.com##div[data-ad-slot^="spweb-"]
 cool-de.com###fwin_popadv
 cool-de.com###fwin_popadv_cover
 cool-de.com##.bustopads
@@ -15175,6 +15180,7 @@ delfi.ee#%#Object.defineProperty(window, 'adblock_detect_run', { get: function()
 delfi.ee#@#.adbanner
 delfi.lt#%#//scriptlet("set-constant", "adformtag", "emptyArr")
 delishkitchen.tv##.gm-ad-top
+delishkitchen.tv##body div.delish-header::before
 delivery.rakuten.co.jp##.promArea
 demaxiya.com##.tp_box
 denverpost.com###mobile-adhesion
@@ -15303,8 +15309,8 @@ dlkoo.com##ins[id^="tanxssp-outer-conmm_"]
 dlswbr.baidu.com
 dm.video.qq.com
 dm010.com##a[href*=".apk"]
-dm233.cc###dh-box:style(left:96vw!important;margin-left:0!important;)
-dm233.cc##.playleft:style(height:620px!important)
+dm233.me###dh-box:style(left:96vw!important;margin-left:0!important;)
+dm233.me##.playleft:style(height:620px!important)
 dm456.com,dm456.iqiyi.com##DIV[style*="height:90px;"],IFRAME[width="978"][height="90"],IFRAME[src^="/m/"],DIV#bdLeft,IFRAME[width="980"][height="92"],DIV#p-right,DIV#p-left
 dm5.com###youce
 dm5.com##.index-side-code
@@ -15371,7 +15377,6 @@ doctorslounge.com###LargeMobileBanner
 dodoca.com##div#ad_box
 dogedoge.com##.tag-home__item
 dogfight360.com#%#//scriptlet("abort-current-inline-script", "document.write", "document.write(ad);")
-dojin-pandemic.com,dojinwatch.com,eromanga-castle.com,eromanga-cafe.com,doujincafe.com,nukerumannga.com,ero-mangalife.com,ero-mangasokuhou.com,ero-manga-platinum.net,erodoujinjohoukan.com,erodoujinshi-world.com,ero-comic-hunter.net,eromanga-cafe.com,eromanga-sevendays.net,moeero-library.com##.cntiframe
 dokuha.jp##.ad-size-rect
 domani.shogakukan.co.jp##div[style="display: flex; justify-content: center; align-items: center; min-height: 100px;"]
 domani.shogakukan.co.jp,thesun.co.uk##.billboard
@@ -15917,6 +15922,7 @@ erji.com,erji.net##.black.y-style
 erji.net##TD.black.y-style,td.banner,[width="500"]
 erkiss.live###upa
 ero-comic-hunter.net,eromanga-castle.com,nukerumannga.com,ero-mangasokuhou.com,ero-mangalife.com,eromanga-cafe.com,doujincafe.com##.archive > div[style="margin:0 auto;"]:not([class])
+ero-mangacafe.com,dojin-pandemic.com,dojinwatch.com,eromanga-castle.com,eromanga-cafe.com,doujincafe.com,nukerumannga.com,ero-mangalife.com,ero-mangasokuhou.com,ero-manga-platinum.net,erodoujinjohoukan.com,erodoujinshi-world.com,ero-comic-hunter.net,eromanga-cafe.com,eromanga-sevendays.net,moeero-library.com##.cntiframe
 ero-nuki.net###dmm_ad
 ero-nuki.net###header_adnex2
 ero-nuki.net##.afbnr_fam_index
@@ -16754,6 +16760,7 @@ gendai.media#?##MG_sp_sponsor_1:upward(1)
 genius.com##.dfp_unit--interscroller
 genius.com##div[class^="InreadAd"]
 genius.com##div[class^="StickyBannerAd__Container"]
+genshin.honeyhunterworld.com#@#.a_p
 gentags.net
 geoparker.net
 gesundheitsfrage.net,gutefrage.net##.AdSticky
@@ -21175,6 +21182,8 @@ mydrivers.com##.btnNext + div:last-child
 mydrivers.com##.drivers_right > div[style="padding-top: 10px;"]
 mydrivers.com##.duilian2
 mydrivers.com##.fbh_float
+mydrivers.com##.jdong11
+mydrivers.com##.jdong11bg
 mydrivers.com##.main_right_div[style="padding-top: 10px;"]
 mydrivers.com##.news_info > div[style*="height:"]
 mydrivers.com##.news_left > div[style*="height:"]
@@ -21184,6 +21193,7 @@ mydrivers.com##.taobao_tab
 mydrivers.com##.zcdf ~ div[style]
 mydrivers.com##a[href*=".ashx?to="]
 mydrivers.com##a[href*="/a.ashx"]
+mydrivers.com##a[href*="/bp.ashx"]
 mydrivers.com##a[href*="/zt.ashx"]
 mydrivers.com##div#code_lb.code_lb,TABLE[width="998"][height="90"],TABLE[width="1000"][height="90"],DIV.menu + DIV.baidu_box,#hsb_go,#dangbei_down,[id^="a_showhotnews_list"],[style^="width:1100px; height:90px;"],[class^="ad"],[style^="width:468px; height:60px;"],#recommend.news_xg
 mydrivers.com##div[class^="jdong11"]
@@ -22911,8 +22921,8 @@ rvlev.com,t66y.com#?#[class]:-abp-has(>a[onmouseover="this.style.background='#DE
 rvlev.com,t66y.com#?#[class]:-abp-has(>a[onmouseover="this.style.background='#DEF5CD';"]:nth-child(n+190):-abp-contains(/赌|娱|澳/)) > :nth-child(-n+195)
 ryukyushimpo.jp##.sp-ad-srv
 ryukyushimpo.jp##div[id*="sp_article_"][style*="min-height: 280px;"]
-ryutsuu.biz##.bnr300
-ryutsuu.biz##.bnr50
+ryutsuu.biz##.sp-new-post-advertisement
+ryutsuu.biz##.sp-top-contents-advertisement
 rznews.cn###img
 rznews.cn##DIV[class^="ad"],.guanggao
 s.akiba-souken.com#?#ul > li > div[id^="div-gpt-"]:upward(1)
@@ -28771,6 +28781,7 @@ zztt24.com##.no-mask
 ||56yk.com^
 ||5709751.ab.soul-cycle.email^
 ||572k3.com^
+||573569djd.com^
 ||57558.com^
 ||57577.live^$csp=script-src
 ||576tv.com/Scripts/home.js
@@ -28788,6 +28799,7 @@ zztt24.com##.no-mask
 ||58.com/ds/tgbrand/*.js
 ||58.com/show/ads?
 ||580bk.com/ceshi/
+||585227ybn.com^
 ||5888.tv/Js/topBanner.js
 ||5888.tv/User_Ad/
 ||588o.top^
@@ -33315,6 +33327,7 @@ zztt24.com##.no-mask
 ||amazonaws.com/searchdiscovery-satellite-production/
 ||amazonaws.com/storejs/a/JKRHRQG/ge.js
 ||amazonaws.com/v1/apps/*/events
+||amazonaws.com/xxx/buhidoh/$script,domain=buhidoh.net
 ||amazonclix.com^
 ||amazononline.xyz/mp4/*.mp4$redirect=noopmp3-0.1s,domain=iyingshi7.tv|localmv1.com
 ||ambercrow.com^$third-party
@@ -33419,6 +33432,7 @@ zztt24.com##.no-mask
 ||analytics-cms.whitebeard.me^
 ||analytics-coletor-site.ojc.com.br^
 ||analytics-gw.games.wanmei.com^
+||analytics-helper.com^$third-party
 ||analytics-production.hapyak.com^
 ||analytics-proxy.springboard.com^
 ||analytics-scripts.cablelabs.com^
@@ -36685,6 +36699,7 @@ zztt24.com##.no-mask
 ||bvfmdoo.cn^
 ||bvlang.com/ad/
 ||bvmqkla.de/files/photo/$third-party
+||bvnvx.xyz^
 ||bvr.ast.snva.jp^
 ||bvr.snva.jp^
 ||bvubje.leboncoin.fr^
@@ -44049,6 +44064,7 @@ zztt24.com##.no-mask
 ||ft.com/ingest?
 ||ft8e.top^
 ||ft8e.top^
+||ftanya.ltd^
 ||ftaysn.meinekette.de^
 ||ftbpro.com^$third-party
 ||ftchinese.com/a.html
@@ -46656,6 +46672,7 @@ zztt24.com##.no-mask
 ||hk1oiaj5zpgo.www.enkeleksamen.no^
 ||hk2d.tourismemauricie.com^
 ||hk50606.cn^
+||hk6kn.cn^
 ||hk9600.com^
 ||hkb123.com/plus/show.php
 ||hkbmsb.fun^
@@ -48786,6 +48803,7 @@ zztt24.com##.no-mask
 ||ixnrmco.com^
 ||ixpub.net^*.js
 ||ixqkgc.cn^
+||ixuchch.cn^
 ||iy.com.cn^$third-party
 ||iy20.com^
 ||iyes.youku.com^
@@ -51160,6 +51178,7 @@ zztt24.com##.no-mask
 ||liczniki.org/hit.php
 ||lidebo.com^
 ||lie.vgijoh.com^
+||liebaovip.com^
 ||liebian888.site^
 ||liecso.e-himart.co.kr^
 ||liepin.com/event/jobadver/
@@ -51928,6 +51947,7 @@ zztt24.com##.no-mask
 ||lptssbs.cn^
 ||lpw80d.online^
 ||lpwx.xyz^
+||lpxmall.com^
 ||lqe3.icu^
 ||lqe3.icu^
 ||lqmohun.com^$third-party
@@ -54655,6 +54675,7 @@ zztt24.com##.no-mask
 ||msn.com/OneCollector/
 ||msn.com/collect/
 ||msn.ynet.com/c/tj_comm.js
+||msnignsx.xyz^
 ||msnoownmx.fun^
 ||msparktrk.com^$third-party
 ||msr.p-antiaging.com^
@@ -59855,6 +59876,7 @@ zztt24.com##.no-mask
 ||rst2.y3600.cn^
 ||rstg.io^$third-party
 ||rsvpgenius.com^$third-party
+||rsvqlz.cn^
 ||rsykksw.cn^
 ||rt.api.glispa.com/native/v1/ad
 ||rt.bunte.de^
@@ -61667,6 +61689,7 @@ zztt24.com##.no-mask
 ||shouliang.52lvgucci.com^
 ||shouquan.laohutao.com^
 ||shoushushi.info^
+||shouyefrom.xyz^
 ||shouyou.com/$third-party
 ||shouyoutan.com/Runtime/js/$script
 ||shouyoutv.com/assets/api/web/v4/js/global_head.js
@@ -61925,6 +61948,7 @@ zztt24.com##.no-mask
 ||siomyx.cn^
 ||sipulo.katies.com.au^
 ||siqwfy.cn^
+||sirdata.eu^$third-party
 ||sirdata.io^$third-party
 ||sis.jpush.io^
 ||sis8.premieremoisson.com^
@@ -63243,6 +63267,7 @@ zztt24.com##.no-mask
 ||smxsg.com^
 ||smyarlr.cn^
 ||smzy.com/v1/img/
+||sn0hb.cn^
 ||snailscart.com^
 ||snailsengine.com^
 ||snakemineral.com^
@@ -66284,6 +66309,7 @@ zztt24.com##.no-mask
 ||tgknt.com^$third-party
 ||tglyr.co^$third-party
 ||tglzqw.cn^
+||tgnlaigi.fun^
 ||tgt.maep.ibm.com^
 ||tgtag.io^$third-party
 ||tgtgzo.otelz.com^
@@ -68521,6 +68547,7 @@ zztt24.com##.no-mask
 ||txv0.destinia.hu^
 ||txvoin.with2.net^
 ||txwhds.com.cn^
+||txzlc.cn^
 ||txzqw.*/js/float.js
 ||txzqw.me/attachment88txzqw/*.gif
 ||txzqw.me/tupian/
@@ -72709,6 +72736,7 @@ zztt24.com##.no-mask
 ||yandex.ru^$app=com.narde.backgammon.game|org.aastudio.games.longnards
 ||yandex.ru^$app=com.nektome.talk
 ||yandex.ru^$app=com.olvic.gigiprikol
+||yandex.ru^$app=com.petrik.shifshedule
 ||yandex.ru^$app=com.region
 ||yandex.ru^$app=com.sshex.sberometr
 ||yandex.ru^$app=com.swiftsoft.anixartd
@@ -73725,6 +73753,7 @@ zztt24.com##.no-mask
 ||zdtvfpu.cn^
 ||zdw.w8.com.cn/p.ht?
 ||zdwsh.tech^
+||zdx1.site^
 ||zdx10.site^
 ||zdx11.site^
 ||zdx12.site^
@@ -74279,6 +74308,7 @@ zztt24.com##.no-mask
 ||zsyk91.cn^
 ||zsyk91.cn^$third-party
 ||zszcxxzx.com^
+||zt-uc-baidu.cc^
 ||zt.chuanke.com/?mod=
 ||zt.hylmfeifei.com^
 ||zt.imgwdyey.com^
@@ -74396,6 +74426,7 @@ zztt24.com##.no-mask
 ||zydyjzw.cn^
 ||zyezhz.cn^
 ||zygaoshou888.cn^
+||zygehty.cn^
 ||zygkzytb.cn^
 ||zygscl.cn^
 ||zygxy.online^
