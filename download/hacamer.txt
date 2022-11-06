@@ -8,8 +8,16 @@
 ||oss.mail.qq.com/cgi-bin/oss_log
 ||datacollector-drcn.dt.hicloud.com^
 ||log.kuaiduizuoye.com^
-||httpdns.pro^
-
+||ex.m.jd.com/exception_monitor/report
+||log-sdk.ksapisrv.com^
+||wlog.kuaishou.com^
+||collector.dcdn.baidu.com^
+||collect.ws.126.net^
+||norma-external-collect.meizu.com^
+||clog.skysrt.com^
+||sc-clog.ptskysrt.gitv.tv^
+||tracker.sns.ptqy.gitv.tv^
+||clog.ptskysrt.gitv.tv^
 ||collect.kugou.com^
 ||epcollect.kugou.com^
 ||collectservice.kugou.com^
@@ -18,20 +26,43 @@
 ||nbcollect.kugou.com^
 ||gatecollect.kugou.com^
 ||gatecollectretry.kugou.com^
-||log-sdk.ksapisrv.com^
-||wlog.kuaishou.com^
-||dns.jd.com^
-||dns.jd.com.gslb.qianxun.com^
-||collector.dcdn.baidu.com^
-||collect.ws.126.net^
-||norma-external-collect.meizu.com^
-||clog.skysrt.com^
+||clientlog*.music.163.com^
+||clientlog3.music.163.com^
+||*.music.163.com/api/clientlog^
+||apm.zuoyebang.com/monitor_browser/collect
+||*logtj.zuoyebang.cc^
+||*/c/s/newlog
+||tb*.bdstatic.com/tb/client/log*.js
+||cloud-log.yy.com^
+||pimlog.baidu.com^
+||c.tieba.baidu.com/c/s/newlog
+||zhihu-web-analytics.zhihu.com/api/v*/logs^
+||ulogs.umengcloud.com^
+||adashbc.ut.taobao.com^
+||zhihu-web-analytics.zhihu.com/api/v1/logs/batch
+||track.miui.com^
+||data.mistat.xiaomi.com^
+
+||da.yunbugame.com/api/oied^
+||adxlog-adnet.vivo.com.cn^
+||ssp.vivo.com.cn/api/v3/reqAd
 ||e.kuaishou.*^
-||sc-clog.ptskysrt.gitv.tv^
-||tracker.sns.ptqy.gitv.tv^
-||clog.ptskysrt.gitv.tv^
 ||*-ad.video.yximgs.com^
 ||*clog.snmcoocaa.aisee.tv^
+||*.music.163.com/*/ad^
+||api.ad.xiaomi.com^
+||api.comm.miui.com/calendar/adcard/get
+
+||httpdns.pro^
+||dns.jd.com^
+||dns.jd.com.gslb.qianxun.com^
+||httpdns.*.netease.com^
+||httpdns.zybang.com^
+||httpdns.baidubce.com^
+||doh.iqiyi.com^
+||local.service.doh.domain^
+||doh.ptqy.gitv.tv^
+
 !
 */log/client/*
 */log/ad/*
@@ -44,18 +75,6 @@
 ||sdk-conf.getui.com^$app=com.huabenapp
 ||www.ihuaben.com/book/app/vipReadWaitSecond^
 
-||clientlog*.music.163.com^
-||clientlog3.music.163.com^
-||*.music.163.com/api/clientlog^
-||httpdns.*.netease.com^
-||*.music.163.com/*/ad^
-
-||*.iqiyi.com^$replace=/top_banner//
-||*.iqiyi.com^$replace=/"ad_area":"graphic"/"ad_area":"none"/
-
-||httpdns.zybang.com^
-||apm.zuoyebang.com/monitor_browser/collect
-||*logtj.zuoyebang.cc^
 ||wenda.zuoyebang.com^
 @@||img.zuoyebang.cc^
 ||fmp-notice.zybang.com^
@@ -71,21 +90,10 @@
 ||nps.zuoyebang.com^
 ||sanxia.zybang.com^
 
-baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com#%#document.execCommand = {}
-baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com#%#navigator.clipboard.writeText = {}
-baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com#%#navigator.clipboard.write = {}
-baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com#%#document.write = {}
-
-m.bilibili.com#%#document.execCommand = {}
-m.bilibili.com#%#navigator.clipboard.writeText = {}
-m.bilibili.com#%#navigator.clipboard.write = {}
-m.bilibili.com#%#document.write = {}
-
-csdn.net#%#document.execCommand = {}
-csdn.net#%#navigator.clipboard.writeText = {}
-csdn.net#%#navigator.clipboard.write = {}
-csdn.net#%#document.write = {}
-
+baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com,m.bilibili.com,csdn.net#%#document.execCommand = {}
+baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com,m.bilibili.com,csdn.net#%#navigator.clipboard.writeText = {}
+baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com,m.bilibili.com,csdn.net#%#navigator.clipboard.write = {}
+baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com,m.bilibili.com,csdn.net#%#document.write = {}
 
 !deepl
 www.deepl.com##[class^="SeoTextSection-module--"]
@@ -93,22 +101,8 @@ www.deepl.com##[class^="SeoTextSection-module--"]
 pushplus.plus##div.container.py-3.text-center
 www.pushplus.plus##.img-fluid
 
-ctfile.com##div.card-body.p-3
-ctfile.com##a.btn.btn-sm.btn-light.fs--1
-ctfile.com###main-content > div.container > div.card.bg-light:last-child > div:first-child
-ctfile.com##div.card.bg-light.mb-3
-ctfile.com###main-content > div.container > div.content:first-child > div.card-deck:nth-child(5) > div.card.mb-3.overflow-hidden:last-child > div:last-child
 ctfile.com##div.h-100.card
 
-boce.com##div.main:nth-child(9) > div.bocead02.adBox01.adNewBox:nth-child(7) > div.ad_11:first-child
-boce.com##.bocead02, .ad_10, .adBox01, .adNewBox
-boce.com##div.main:nth-child(9) > div.mainMsg1.mainMsg3:first-child > div.mainMsg1c.vipBox0.on:nth-child(4) > p.mainMsg1d:last-child
-boce.com##div.main:nth-child(9) > div.mainMsg1.mainMsg3:first-child > div.mainMsg1c.vipBox0.on:nth-child(4)
-boce.com##header:nth-child(2) > div.login_menu.y.login_no:last-child > div.vipIcon:first-child
-boce.com##div.main:nth-child(9) > div.page10Box:nth-child(6) > a > img
-
-tool.liumingye.cn##div.text
-tool.liumingye.cn##div#pop-container
 
 petalsearch.com##.feed-cont
 www.petalsearch.com##.van-pull-refresh.refresh-cont
@@ -166,15 +160,10 @@ tieba.baidu.com##li.tb-share__item:nth-of-type(1)
 tieba.baidu.com##.navbar-left
 tieba.baidu.com##.nav-bar.w-row-justify-between.w-row-align-center.w-row
 tieba.baidu.com##.guide-btn
-||downapp.baidu.com/baidutieba/*$document,domain=downapp.baidu.com
-||*/c/s/newlog
-||tb*.bdstatic.com/tb/client/log*.js
-||cloud-log.yy.com^
-||pimlog.baidu.com^
-||c.tieba.baidu.com/c/s/newlog
+
 ||c.tieba.baidu.com/c/f/forum/getAdInfo
 ||pn.baidu.com/*ad^
-||httpdns.baidubce.com^
+
 tieba.baidu.com##.nav-bar-bottom
 tieba.baidu.com##.open-app
 tieba.baidu.com##.more-btn-desc
@@ -190,7 +179,7 @@ anime1.me###text-6
 anime1.me##.widget, .widget_text
 
 zhihu.com##.MRelateFeedAd
-||zhihu-web-analytics.zhihu.com/api/v*/logs^
+
 zhihu.com#%#//scriptlet('remove-attr', 'style', '.Body--Mobile .ContentItem .RichContent--unescapable > .RichContent-inner[style^="max-height:"]')
 ###adsbox
 zhihu.com#$#.Body--Mobile .ContentItem .RichContent--unescapable > .RichContent-inner:not([style]) + button.ContentItem-expandButton { display: none !important; }
@@ -203,39 +192,9 @@ zhihu.com##.css-1svfsgz-OpenInAppButton.OpenInAppButton
 youku.com##[class^=info-bottom_]
 youku.com##.callEnd_box
 youku.com###download_btn
-
-@@||dav.jianguoyun.com^
-
-!APP：中国移动 ver：6.7.6
-||app.10086.cn/*.gif
-!（过滤应用内gif动画）
-||clientaccess.10086.cn/biz-orange/DN/init/*
-!（过滤应用开屏广告）
-||clientaccess.10086.cn/biz-orange/DN/dropsAdver/*
-!（某些广告过滤）
-||clientaccess.10086.cn/biz-orange/DN/dropsAdverService/*
-!（某些广告过滤）
-||clientaccess.10086.cn/biz-orange/DN/clientUpdate/*
-!（拦截APP更新提示）
-
-ipv6.baidu.com,xueshu.baidu.com,www.baidu.com,www1.baidu.com#$#hide-if-contains 广告 .c-container &#039;.f13 &gt; .m&#039;; hide-if-contains 广告 #content_right&gt;[class] span[data-tuiguang]
-1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com#$#abort-current-inline-script _ top_pic
-
-torrentkitty.tv#$#abort-on-property-read _fupfgk;abort-on-property-read _nyjdy
-178.com,nga.cn#$#abort-on-property-write __LOAD_BBS_ADS_12
-cn.bing.com#$#hide-if-contains 360 #b_results&gt;li .b_adProvider
-2345.com#$#abort-current-inline-script setDefaultTheme
-ahri-hentai.com#$#abort-current-inline-script document.querySelectorAll popMagic
-
-cocomanhua.com#$#abort-on-property-read __cad.cpm_popunder; abort-on-property-read __ad
-
-hdzone.org#$#abort-current-inline-script Math zfgloaded
-
 ！爱奇艺
 @@||cards.iqiyi.com^
-||doh.iqiyi.com^
-||local.service.doh.domain^
-||doh.ptqy.gitv.tv^
+
 ！快对作业
 ||c.kuaiduizuoye.com^
 ||adashbc.ut.taobao.com^
@@ -341,14 +300,8 @@ ali213.net##div[class="unfold-field-download"]
 xda-developers.com##div[class="purchad"]
 xda-developers.com###purch-parent-ad-container-id
 
-||ulogs.umengcloud.com^
-||adashbc.ut.taobao.com^
-||zhihu-web-analytics.zhihu.com/api/v1/logs/batch
 
-||api.ad.xiaomi.com^
-||api.comm.miui.com/calendar/adcard/get
-||track.miui.com^
-||data.mistat.xiaomi.com/mistats
+
 
 ||app.bilibili.com/x/v2/splash/list
 ||app.bilibili.com/x/v2/feed/index$replace=/{"card_type":"cm_v2".*?"three_point_v2".*?}\,/ /
@@ -360,40 +313,6 @@ xda-developers.com###purch-parent-ad-container-id
 ||app.bilibili.com/x/v2/view$replace=/{"title":.*?"is_ad":true.*?"trackid".*?}\,//
 ||app.bilibili.com/x/v2/view$replace=/{"request_id".*?"ad_info".*?}}}/{ }/
 
-@@||www.zhihu.com/api/v4^$app=com.zhihu.android
-||android.bugly.qq.com^
-||zhihu-web-analytics.zhihu.com^
-||api.zhihu.com/ad-style-service/request
-||api.zhihu.com/fringe/ad
-||mobads.baidu.com^
-||mobads-logs.baidu.com^
-||toblog.ctobsnssdk.com^
-||pangolin.snssdk.com/api/ad
-||api-access.pangolin-sdk-toutiao.com/api/ad
-||bds.snsskd.com^
-||sf3-ttcdn-tos.pstatp.com/obj/ad-pattern
-||sf3-fe-tos.pglstatp-toutiao.com/obj/ad-pattern
-||sdkconfig.voiceads.cn^
-||sdk.voiceads.cn^
-||img.voiceads.cn^
-||sdk.e.qq.com^
-||api.zhihu.com/*vip_tab^
-||api.zhihu.com/api/user/prod/user/info/collections/upload
-||api.zhihu.com/fringe/ad
-||api.zhihu.com/log_collect^
-||api.zhihu.com/usertask-core/action/read_content_duration_when_left
-||api.zhihu.com/usertask-core/action^
-||datahub.zhihu.com/collector^
-!||lens.zhihu.com^
-||m-cloud.zhihu.com/api/personal^
-||open.kwaizt.com^
-||pic1.zhimg.com/check_health
-||vzuu.com^~$media
-||www.zhihu.com/*/advisor_cards
-||www.zhihu.com/api/v4/members^
-||www.zhihu.com/api/v4/zvideo-collections/contents/included/collections?
-||www.zhihu.com/sc-profiler
-||zhihu.com/check_health
 ||*/check_health$app=com.zhihu.android
 
 !修改内容
@@ -408,35 +327,11 @@ xda-developers.com###purch-parent-ad-container-id
 ||api.zhihu.com/answers/*/comments/featured-comment-ad
 ||api.zhihu.com/drama/living-info$replace=/true/false/
 
-||api.weibo.com/2/proxy/sdk/statistic.json
-||adash.man.aliyuncs.com/man/api
-||googleadservices.com/pagead
-||sdk.e.qq.com/event
-||api.weibo.cn/2/friendships/create
-||api.weibo.cn/2/users/show_batch
-||sdkapp.mobile.sina.cn/interface/sdk/sdkad.php
 
 !||api.zhuti.xiaomi.com/app/v9/uipages$replace=/{"title".*?"imageUrl":null.*?"canEncourage":false}\,/ /
 
 ||api.browser.miui.com/bsr/update/banners/v2
 
-||app.market.xiaomi.com/apm/toplist^
-||app.market.xiaomi.com/apm/necessary^
-||app.market.xiaomi.com/apm/search/guidepageV*
-||app.market.xiaomi.com/apm/floaticonV*
-||app.market.xiaomi.com/apm/usercomment^
-||app.market.xiaomi.com/apm/recommend^
-||app.market.xiaomi.com/apm/zone^
-||app.market.xiaomi.com/*/search^$replace=/"type":"nativeSearchTopAdDetailApp"/"type":listApp"/
-||app.market.xiaomi.com/apm/search?$replace=/\{"fitness":0.*?showAdMark":true.*?fitness":0/{"fitness":0/
-||app.market.xiaomi.com/apm/search?$replace=/nativeSearchTopAdDetailApp/listApp/
-||app.market.xiaomi.com/*/search^$replace=/"recallType":"AD"/"recallType":"NATURE"/
-||app.market.xiaomi.com/*/search^$replace=/"isSearchTopAd":true/"isSearchTopAd":false/
-||app.market.xiaomi.com/*/search^$replace=/"ads":1/"ads":0/
-||app.market.xiaomi.com/apm/search/guidepage?
-||app.market.xiaomi.com/apm/featuredV2^
-||app.market.xiaomi.com/apm/search/hotword^
-|app.market.xiaomi.com/apm/app/recommendtab$
 
 ||*jd.com^$app=com.coolapk.market
 ||*toutiao.com^$app=com.coolapk.market
