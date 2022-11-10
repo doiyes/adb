@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: VLEGm3HI1pYr6pSSzrsnjw
+! Checksum: kyogeT/Tq9DqMcoDaB1Itw
 ! Title: AdFilters-noDNS
 ! Expires: 24 hours
-! Version: 202211092225
-! Last Modified: 202211092225
+! Version: 202211102235
+! Last Modified: 202211102235
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -121,6 +121,7 @@
 ###AdServer_Banner_8
 ###AdServer_Banner_9
 ###AdSkyscraper
+###AdSlot_megabanner
 ###AdSpaceLeaderboard
 ###AdTop
 ###AdTopLeader
@@ -2604,6 +2605,8 @@
 ###belowheaderad
 ###bfad.rm-one
 ###bfad.rm-one
+###bfad2
+###bfad2
 ###bg-custom-ad
 ###bg-footer-ads
 ###bg-footer-ads2
@@ -5291,6 +5294,8 @@
 ###swtleft[style^="position:fixed;"]
 ###syad.visible-xs
 ###syad.visible-xs
+###syad1
+###syad1
 ###syad2
 ###syad2
 ###t4>a
@@ -7842,6 +7847,7 @@
 ##.ad728x90box
 ##.ad728x90btf
 ##.ad960
+##.ad970
 ##.ad970_250
 ##.ad980
 ##.ad990x130
@@ -12576,6 +12582,7 @@
 ##.dfp-block
 ##.dfp-bottom
 ##.dfp-button
+##.dfp-close-ad
 ##.dfp-double-mpu
 ##.dfp-dynamic-tag
 ##.dfp-fixedbar
@@ -12861,6 +12868,8 @@
 ##.first_party_ad_wrapper
 ##.first_post_ad
 ##.firstad
+##.firstpost_advert
+##.firstpost_advert_container
 ##.fix_ad
 ##.fixadheight
 ##.fixed-ad-aside
@@ -15852,6 +15861,7 @@
 ##.region-interstitial-ads
 ##.region-middle-ad
 ##.region-top-ad
+##.region-top-ad-block
 ##.region-top-advertisement
 ##.region-widget-ad-top-0
 ##.regular-ads
@@ -20001,6 +20011,7 @@ $$span[class="dmcenterb"]
 $app=com.fiberhome.wifiserver
 $app=com.miui.analytics
 $app=com.miui.systemAdSolution
+$cookie,domain=ads.stickyadstv.com
 $cookie=/^AMCVS?_.*AdobeOrg/
 $cookie=/^CaosGtag_ga/
 $cookie=/^KRTBCOOKIE_/
@@ -26478,6 +26489,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /common/adv_
 /common/analytics.js
 /common/cf/*$image,object,domain=~bingfeng.tw
+/common/cf/*$image,object,domain=~dahuaiji.com
+/common/cf/*$image,object,domain=~dahuaiji.com
 /common/ga.js
 /common/tracker.js
 /common/tracking/webtrekk
@@ -26721,8 +26734,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /css/gg.js
 /css/gg.js
 /css/mugua.js
-/css_js/site/kfeeo/*
-/css_js/site/kfeeo/*
 /cssjs/ads/*
 /cta-loaded.js
 /ctd-sourcepoint.
@@ -31168,6 +31179,10 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /s_trans.gif?
 /s_trans_nc.
 /sa-tracker-
+/sa.asp?wg&df=$script,third-party
+/sa.asp?wg&df=$script,third-party
+/sa.asp?wsg&df=$script,third-party
+/sa.asp?wsg&df=$script,third-party
 /sa.gif?
 /sa.gif?
 /safelinkconverter.js
@@ -31362,10 +31377,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /setcookieADV.js
 /sfCounter/*
 /sfsites/auraAnalytics
-/sg.asp?wg&df=
-/sg.asp?wg&df=
-/sg.asp?wsg&df=1$script,third-party
-/sg.asp?wsg&df=1$script,third-party
 /sgtracker.js
 /sh588com888/*
 /sh588com888/*
@@ -34114,9 +34125,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ?zoneid=*&ext=$script
 MRelateFeedAd
 Mplay/kk1.js
-[$path=/^\/$/]dzen.ru##div[class^="dzen-mobile__bannerMain-"]
 [$path=/media]dzen.ru##div[class^="article-render-mobile"][class$="type_yandex-direct"]
-[$path=/news]dzen.ru##div[class*="news"] > div[class*="_banner_"]
 [$path=/pogoda]dzen.ru##div[class^="Card_container"][class*="Advert"]
 [$path=/search/top]m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"]:not([data-actual-height="26"]) + div[data-mcomponent="MContainer"]:not([data-actual-height="2"])
 [$path=/search/top]m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"]:not([data-actual-height="26"]) + div[data-mcomponent="MContainer"]:not([data-actual-height="2"]) + div[data-mcomponent="MContainer"]
@@ -36991,7 +37000,7 @@ beforeitsnews.com###fancybox-wrap
 beforeitsnews.com##.notTwitterCardsGrid
 beforeitsnews.com##[id^="banners_"]
 beforeitsnews.com#$#override-property-read setTimeout noopFunc; abort-on-property-read document.body.innerHTML;
-beforeitsnews.com,bigleaguepolitics.com,in5d.com,thetruedefender.com##[href*="hop.clickbank.net"]
+beforeitsnews.com,bigleaguepolitics.com,in5d.com,mytruthnews.com,thetruedefender.com##[href*="hop.clickbank.net"]
 beforeitsnews.com,highshortinterest.com##[href^="https://tinyurl.com/"]
 begeek.cn##[href="http://static.webhek.com/tb.html"],.adsbygoogle
 behance.net##.StockRail-rail-oox
@@ -39559,6 +39568,7 @@ cupfox.app###page-wrap > div:nth-child(3)
 cupfox.app##.banner-box
 cupfox.app#?##outer-container > .model:-abp-has(> .model-content > a[href*=".jd.com"])
 cupfox.app#?#.model:-abp-has(> .model-content > a[href*=".jd.com"])
+cupfox.app#?#.model:-abp-has(> .model-content > a[href*=".jd.com"])
 cupfox.app,zuoyesou.com##.banner-box
 cupfox.app,zuoyesou.com##.banner-box
 curazy.com##.ad_before_h2
@@ -39888,6 +39898,7 @@ ddxsku.com##.adhtml
 ddys.tv,ddrk.me#$#a[href*="/kst6632.com/"] > img { width: 2px !important; }
 ddys.tv,ddrk.me#$#a[href*="/kst6632.com/"] { pointer-events: none !important; }
 ddys.tv,ddrk.me#%#//scriptlet("set-constant", "Object.prototype.nopreroll_", "true")
+ddys.tv,ddys2.me##+js(set, Object.prototype.ads, null)
 de-sexy-tube.ru##.aBlock
 de.adklick.net###w_ad.no_ad
 de.as.pptv.com
@@ -40152,6 +40163,9 @@ dkoding.in##.sidebar .widget_custom_html
 dkoding.in,iheartintelligence.com,fortressofsolitude.co.za,aysetolga.com,revistaforum.com.br,diariodocentrodomundo.com.br,01net.com,gizchina.com,pocketpc.ch##.mrf-adv__wrapper
 dkoding.in,iheartintelligence.com,revistaforum.com.br##.mrf-sticky-wrapper
 dl.3dmgame.com##div.dj_warp_e
+dl.520cc.cc#$##infile { visibility: visible !important; }
+dl.520cc.cc#$##inplayer { position: absolute !important; left: -3000px !important; }
+dl.520cc.cc#%#//scriptlet('set-constant', 'ADS_BLOCKED', 'false')
 dl.pconline.com.cn##.box-push
 dl.pconline.com.cn##.box-push
 dl.pconline.com.cn##.dlTips
@@ -40190,13 +40204,13 @@ dm5.com,dm5.hk##.cl970
 dm5.com,dm5.hk##a[href*=".wannaplay.cn"]
 dm5.com,dm5.hk##a[href*=".wannaplay.cn"]
 dm530.net,it168.com###adv
-dmh8.com##+js(acis,document.writeln)
 dmh8.com##[style^='box-sizing: border-box; position: relative']
 dmh8.com##[style^='display: block; z-index: ']
 dmh8.com##[style^='display: flex']
-dmh8.com##body>a
+dmh8.me##+js(acis,document.writeln)
 dmh8.me##.padding-0 > ul[style]
 dmh8.me##.padding-0 > ul[style]
+dmh8.me##body>a
 dmh8.me##div[id^="test"]
 dmh8.me##div[id^="test"]
 dmh8.me##div[style="width:300px;height:300px;position:fixed;bottom:0;left:0;z-index:2147483647;"]
@@ -40783,6 +40797,8 @@ dzbhdm.net##a[href^="https://www.dzbhdm.com/news/"] > img[src^="https://www.dzbh
 dzbhdm.net##a[href^="https://www.dzbhdm.com/news/"] > img[src^="https://www.dzbhdm.com/"]
 dzbhdm.net##img[width="950"]
 dzbhdm.net##img[width="950"]
+dzen.ru##div[class*="news"] > div[class*="_banner_"]
+dzen.ru##div[class^="dzen-mobile__bannerMain-"]
 dzfoot.com##.messageB
 dzone.com##.partner-resources-block
 dzwww.com##.popular
@@ -41853,6 +41869,7 @@ filmix.ac,filmix.gay,filmix.life,filmix.love,filmix.tech,filmix.zone###oframepla
 filmix.ac,filmix.gay,filmix.life,filmix.love,filmix.tech,filmix.zone##.remove-sda-wrap
 filmix.ac,filmix.tech,filmix.zone###branding_zone
 filmix.ac,filmix.tech,filmix.zone###information > div[style="height:200px!important;overflow:hidden"]
+filmmodu8.com##div[width="468"][height="60"]
 filmschoolrejects.com,reneweconomy.com.au,theteche.com###custom_html-8
 filmxy.one##.promo-contents
 filmy69.pl#$#abort-current-inline-script document.querySelectorAll popMagic
@@ -49532,6 +49549,9 @@ ming120.com##a[href^="http://www.mining120.com"]
 mingpao.com###photo_transition
 mingpao.com###photo_transition
 minhangcidian.com##div[id^="googleAd"]
+mini.eastday.com###dsp_btxf
+mini.eastday.com##.ordernumad
+mini.eastday.com##li[class^="recommend_news recommend_ad_hot_"]
 mini.sohu.com##div.blockRB
 mini.yyrtv.com##.right-gg
 mini.yyrtv.com/static/js/miniyyrtv-config.js
@@ -52174,10 +52194,8 @@ pokertube.com##.promo-holder
 poki.com##div[class^="Advertisement_"]
 politeka.net,znaj.ua##.amp-ad--wrapper
 politico.com###pol-01-wrap
-politico.com##.bump-in.story-enhancement
-politico.com##.fixed-top
-politico.com##.story-continued
-politico.com##.styles_house-ad-cover__3Fvyy
+politico.com##div[class*="styles_supercube_"]
+politico.com##div[class^="styles_PibAd-container_"]
 politifact.com##.m-billboard
 politnavigator.net##amp-embed[type="smi2"]
 politnavigator.net##amp-iframe[id^="adskeeper_iframe"]
@@ -54196,6 +54214,7 @@ shuqu8.com###ad_c_top
 shuquge.com##div[style="margin:10px auto;width: 930px;height: 250px;"]
 shuquge.com##div[style="margin:10px auto;width: 930px;height: 250px;"]
 shurua.com###advbox
+shutterstockmail.com/pub/as?_ri_=$image
 shuzhiduo.com
 shxd.net##div.footadbox,div.addown,div.myad,div.downbtna
 si.com##.m-balloon-header--spacer
@@ -55629,6 +55648,7 @@ technologyreview.com##div[class^="headerTemplate__leaderboardRow-"]
 technopat.net###adhousesticky
 technopat.net##.b-container-ad
 technopat.net##amp-iframe[src^="https://cdn.adhouse.pro/"]
+techonthenet.com###sabl
 techporn.ph##a[href][target*="blank"]
 techpout.com##.widget_xyz_insert_php_widget
 techpp.com###aside-two > .ct-code-block
@@ -56812,6 +56832,7 @@ twocents-lifehacker-com.cdn.ampproject.org,skillet-lifehacker-com.cdn.ampproject
 twpkinfo.com###div_close_cf
 twpkinfo.com###div_close_cf
 twpkinfo.com##div[style^="height:50px;"]
+twpkinfo.com#$##map { position: unset !important; }
 txahz.com###archy_ad2
 txahz.com###archy_ad2
 txahz.com##div.wp #diy1,div.a_cb
@@ -57100,6 +57121,7 @@ user.qzone.qq.com##div[id^="fct_20050606_"]
 user.qzone.qq.com##li[id^="fct_20050606_"]
 user.qzone.qq.com##li[id^="fct_20050606_"]
 userbenchmark.com##.be-lb-page-top-banner
+userload.co#$#abort-current-inline-script $ Math.random
 userscript.zone##.searcad
 userscript.zone##.w300
 userstyles.org##div.ad
@@ -57637,6 +57659,7 @@ washingtonpost.com##.border-box.dn-hp-sm-to-mx
 washingtonpost.com##.border-box.dn-hp-xs
 washingtonpost.com##.dn-hp-sm-to-mx
 washingtonpost.com##.pb-lgmod
+washingtonpost.com##.pb-sm.pt-sm.b
 washingtonpost.com##.social-tools-wrapper-bottom
 washingtonpost.com##.sticky-promo
 washingtonpost.com##[data-qa="article-body-ad"]
@@ -59221,6 +59244,10 @@ xxxsm.vip##a[href="ilupian8.html"]
 xxxvogue.net##.banners-container
 xxxvogue.net##.link-adv
 xxxymovies.com##.kt_imgrc
+xydai.cn###diynavtop
+xydai.cn###diynavtop
+xydai.cn##.deanad4s
+xydai.cn##.deanad4s
 xyg39.xyz###__top_header + script + div
 xyg39.xyz###__top_header + script + div
 xyj321.com##.foot_alert_wrap
@@ -59354,7 +59381,6 @@ yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.
 yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.by,~afisha.yandex.kz,~afisha.yandex.ru,~avia.yandex.by,~avia.yandex.kz,~travel.yandex.ru,~bilet.yandex.com.tr,~flights.yandex.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.fr,~disk.yandex.kz,~disk.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.com,~mail.yandex.com.tr,~music.yandex.ru,~music.yandex.by,~music.yandex.kz,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~tv.yandex.by,~tv.yandex.kz,~tv.yandex.ru,~yadi.sk,~zen.yandex.by,~zen.yandex.com,~zen.yandex.kz,~zen.yandex.ru,~docviewer.yandex.by,~docviewer.yandex.com,~docviewer.yandex.com.tr,~docviewer.yandex.fr,~docviewer.yandex.kz,~docviewer.yandex.ru,~rasp.yandex.by,~rasp.yandex.kz,~rasp.yandex.ru##.serp-item div.organic__recommendation
 yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.by,~afisha.yandex.kz,~afisha.yandex.ru,~avia.yandex.by,~avia.yandex.kz,~travel.yandex.ru,~bilet.yandex.com.tr,~flights.yandex.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.fr,~disk.yandex.kz,~disk.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.com,~mail.yandex.com.tr,~music.yandex.ru,~music.yandex.by,~music.yandex.kz,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~tv.yandex.by,~tv.yandex.kz,~tv.yandex.ru,~yadi.sk,~zen.yandex.by,~zen.yandex.com,~zen.yandex.kz,~zen.yandex.ru,~docviewer.yandex.by,~docviewer.yandex.com,~docviewer.yandex.com.tr,~docviewer.yandex.fr,~docviewer.yandex.kz,~docviewer.yandex.ru,~rasp.yandex.by,~rasp.yandex.kz,~rasp.yandex.ru##.t-construct-adapter__adv
 yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.by,~afisha.yandex.kz,~afisha.yandex.ru,~avia.yandex.by,~avia.yandex.kz,~travel.yandex.ru,~bilet.yandex.com.tr,~flights.yandex.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.fr,~disk.yandex.kz,~disk.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.com,~mail.yandex.com.tr,~music.yandex.ru,~music.yandex.by,~music.yandex.kz,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~tv.yandex.by,~tv.yandex.kz,~tv.yandex.ru,~yadi.sk,~zen.yandex.by,~zen.yandex.com,~zen.yandex.kz,~zen.yandex.ru,~docviewer.yandex.by,~docviewer.yandex.com,~docviewer.yandex.com.tr,~docviewer.yandex.fr,~docviewer.yandex.kz,~docviewer.yandex.ru,~rasp.yandex.by,~rasp.yandex.kz,~rasp.yandex.ru##body > div#bk-container[style^="position: relative; z-index:"]
-yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.by,~afisha.yandex.kz,~afisha.yandex.ru,~avia.yandex.by,~avia.yandex.kz,~travel.yandex.ru,~bilet.yandex.com.tr,~flights.yandex.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.fr,~disk.yandex.kz,~disk.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.com,~mail.yandex.com.tr,~music.yandex.ru,~music.yandex.by,~music.yandex.kz,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~tv.yandex.by,~tv.yandex.kz,~tv.yandex.ru,~yadi.sk,~zen.yandex.by,~zen.yandex.com,~zen.yandex.kz,~zen.yandex.ru,~docviewer.yandex.by,~docviewer.yandex.com,~docviewer.yandex.com.tr,~docviewer.yandex.fr,~docviewer.yandex.kz,~docviewer.yandex.ru,~rasp.yandex.by,~rasp.yandex.kz,~rasp.yandex.ru##body.i-bem > div.body__wrapper > div.content.i-bem > div[class] > div[class^="time"]~div
 yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.by,~afisha.yandex.kz,~afisha.yandex.ru,~avia.yandex.by,~avia.yandex.kz,~travel.yandex.ru,~bilet.yandex.com.tr,~flights.yandex.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.fr,~disk.yandex.kz,~disk.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.com,~mail.yandex.com.tr,~music.yandex.ru,~music.yandex.by,~music.yandex.kz,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~tv.yandex.by,~tv.yandex.kz,~tv.yandex.ru,~yadi.sk,~zen.yandex.by,~zen.yandex.com,~zen.yandex.kz,~zen.yandex.ru,~docviewer.yandex.by,~docviewer.yandex.com,~docviewer.yandex.com.tr,~docviewer.yandex.fr,~docviewer.yandex.kz,~docviewer.yandex.ru,~rasp.yandex.by,~rasp.yandex.kz,~rasp.yandex.ru##div[id^="SerpItemDirectSnippet"]
 yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.by,~afisha.yandex.kz,~afisha.yandex.ru,~avia.yandex.by,~avia.yandex.kz,~travel.yandex.ru,~bilet.yandex.com.tr,~flights.yandex.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.fr,~disk.yandex.kz,~disk.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.com,~mail.yandex.com.tr,~music.yandex.ru,~music.yandex.by,~music.yandex.kz,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~tv.yandex.by,~tv.yandex.kz,~tv.yandex.ru,~yadi.sk,~zen.yandex.by,~zen.yandex.com,~zen.yandex.kz,~zen.yandex.ru,~docviewer.yandex.by,~docviewer.yandex.com,~docviewer.yandex.com.tr,~docviewer.yandex.fr,~docviewer.yandex.kz,~docviewer.yandex.ru,~rasp.yandex.by,~rasp.yandex.kz,~rasp.yandex.ru#$?#body > div.serp_js_inited.main .serp-list > .serp-item:-abp-has(a[href^="http://yabs.yandex."] > div > div.label_theme_direct) { remove: true; }
 yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru,~afisha.yandex.by,~afisha.yandex.kz,~afisha.yandex.ru,~avia.yandex.by,~avia.yandex.kz,~travel.yandex.ru,~bilet.yandex.com.tr,~flights.yandex.com,~disk.yandex.by,~disk.yandex.com,~disk.yandex.com.tr,~disk.yandex.fr,~disk.yandex.kz,~disk.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.com,~mail.yandex.com.tr,~music.yandex.ru,~music.yandex.by,~music.yandex.kz,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~tv.yandex.by,~tv.yandex.kz,~tv.yandex.ru,~yadi.sk,~zen.yandex.by,~zen.yandex.com,~zen.yandex.kz,~zen.yandex.ru,~docviewer.yandex.by,~docviewer.yandex.com,~docviewer.yandex.com.tr,~docviewer.yandex.fr,~docviewer.yandex.kz,~docviewer.yandex.ru,~rasp.yandex.by,~rasp.yandex.kz,~rasp.yandex.ru#$?#body > div.serp_js_inited.main .serp-list > .serp-item:-abp-has(a[href^="http://yabs.yandex."] > div > div[class*="organic__path"]) { remove: true; }
@@ -60790,7 +60816,6 @@ zztt24.com##.no-mask
 3movs.com##.spot-header
 3movs.com,fapality.com##.cs
 3movs.com,tnaflix.com##iframe[width="300"]
-3movs.xxx,analpornpix.com,babesmachine.com,chaturbate.com,fboomporn.com,fetishshrine.com,freepornpicss.com,happysex.ch,imagezog.com,legalporn4k.com,milffox.com,oldies.name,paradisehill.cc,playvids.com,porngames.com,private.com,video.laxd.com,vidxnet.com,vjav.com,watchhentaivideo.com,waybig.com,xbabe.com,xcum.com,yourdailygirls.com,youx.xxx##.banner
 3movs.xxx,bravotube.net,camvideos.tv,dixyporn.com,fetishshrine.com,hello.porn,katestube.com,pornicom.com,videocelebs.net,vjav.com##.spot
 3oloum.com,7olm.org,ahladalil.com,syriaforums.net,ahlamontada.com,alamontada.com,arabepro.com,banouta.net,gid3an.com,jordanforum.net,yoo7.com,forumalgerie.net,own0.com##a[onclick^="this.href=atob"]
 3oloum.com,7olm.org,ahladalil.com,syriaforums.net,ahlamontada.com,alamontada.com,arabepro.com,banouta.net,gid3an.com,jordanforum.net,yoo7.com,forumalgerie.net,own0.com#$#abort-on-property-read atob
@@ -60955,6 +60980,12 @@ zztt24.com##.no-mask
 6parknews.com##.other_list_ad
 6parknews.com#?##d_list > ul > li:-abp-has(a[href^="http"]:not([href*="6parknews"]))
 6parknews.com#?##d_list > ul > li:-abp-has(a[href^="http"]:not([href*="6parknews"]))
+6play.fr#%#//scriptlet('set-local-storage-item', 'gdprAdTargeting', 'false')
+6play.fr#%#//scriptlet('set-local-storage-item', 'gdprMultiDeviceMatching', 'false')
+6play.fr#%#//scriptlet('set-local-storage-item', 'gdprPersonalization', 'false')
+6play.fr#%#//scriptlet('set-local-storage-item', 'gdprTracking', 'false')
+6play.fr#%#//scriptlet('set-local-storage-item', 'gdprUserHasInteracted', '0')
+6play.fr#%#//scriptlet('set-local-storage-item', 'localDeviceId', '0')
 6tj.com##.ad_1000,.ad_600,.ad-banner,[class^="ad_635"],.ad_fy
 6yit.com,uuvps.com##.widget_text
 6yyw.com##.a_mu,.a_pt,.a_pb,.a_pr
@@ -61046,7 +61077,7 @@ zztt24.com##.no-mask
 9le8.com###program_play_right
 9le8.com###program_play_right
 9miao.com###deanrlc22
-9to5google.com,9to5mac.com,audiokarma.org,beeradvocate.com,beliefnet.com,bizjournals.com,biznews.com,bolavip.com,businessinsider.com,computerworld.com,driven.co.nz,ecr.co.za,electrek.co,engineeringnews.co.za,etcanada.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gfinityesports.com,gmanetwork.com,grammarbook.com,hbr.org,insidehook.com,intouchweekly.com,khou.com,ktvu.com,lifeandstylemag.com,macstories.net,mail.com,memuplay.com,metro.us,miningweekly.com,mobilesyrup.com,modernhealthcare.com,my9nj.com,nbcnews.com,newrepublic.com,nzherald.co.nz,oneesports.gg,opb.org,physiology.org,pixiv.net,politico.com,punchng.com,realsport101.com,reason.com,refinery29.com,scroll.in,seattletimes.com,slideshare.net,sportskeeda.com,theglobeandmail.com,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,toofab.com,usmagazine.com,wogx.com##.ad-container
+9to5google.com,9to5mac.com,audiokarma.org,beeradvocate.com,beliefnet.com,bizjournals.com,biznews.com,bolavip.com,businessinsider.com,computerworld.com,driven.co.nz,ecr.co.za,electrek.co,engineeringnews.co.za,etcanada.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gfinityesports.com,gmanetwork.com,grammarbook.com,hbr.org,insidehook.com,intouchweekly.com,khou.com,ktvu.com,lifeandstylemag.com,macstories.net,mail.com,memuplay.com,metro.us,miningweekly.com,mobilesyrup.com,modernhealthcare.com,my9nj.com,nbcnews.com,newrepublic.com,nzherald.co.nz,oneesports.gg,opb.org,physiology.org,pixiv.net,punchng.com,realsport101.com,reason.com,refinery29.com,scroll.in,seattletimes.com,slideshare.net,sportskeeda.com,theglobeandmail.com,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,toofab.com,usmagazine.com,wogx.com##.ad-container
 9to5mac.com,9to5google.com,9to5toys.com##iframe[data-google-container-id]
 9to5mac.com,9to5google.com,9to5toys.com##iframe[title="Advertisement"]
 9to5mac.com,9to5google.com,9to5toys.com,marketrealist.com,electrek.co,dronedj.com##iframe[title="3-rd party ad content"]
@@ -61236,9 +61267,10 @@ zztt24.com##.no-mask
 18moe.vip##a[href^="http"]:not([href*="18moe.vip"]) > img[src*="tc.18moe.net"]
 18moe.vip##a[href^="http"]:not([href*="18moe.vip"]) > img[src*="tc.18moe.net"]
 18p2p.com##[href*="/?Intr="],[href*="/?Extend="],[href*="/?intr="],[src^="http://diopic.net/images"],[href^="http://www.yin6666.net/"],[href^="http://pj555716.net"],[height="60"][width="340"]
-18porn.sex,4kporn.xxx,amateurporn.me,bigtitslust.com,daporn.com,fpo.xxx,freeporn8.com,fuqer.com,gayck.com,hentai-moon.com,heroero.com,intporn.com,japaneseporn.xxx,mrdeepfakes.com,pornchimp.com,porndr.com,pornwild.com,rare-videos.net,sortporn.com,tabootube.xxx,watchmygf.xxx,xcavy.com,xgroovy.com,xxxshake.com##.table
+18porn.sex,18teensex.tv,4kporn.xxx,amateurporn.me,bigtitslust.com,daporn.com,fpo.xxx,freeporn8.com,fuqer.com,gayck.com,hentai-moon.com,heroero.com,intporn.com,japaneseporn.xxx,mrdeepfakes.com,pornchimp.com,porndr.com,pornwild.com,rare-videos.net,sortporn.com,tabootube.xxx,watchmygf.xxx,xcavy.com,xgroovy.com,xxxshake.com##.table
 18porn.sex,amateur8.com,anyporn.com,bigtitslust.com,eachporn.com,fapster.xxx,fpo.xxx,freeporn8.com,pervertslut.com,porngem.com,porntop.com,sexpornimages.com,sexvid.xxx,sortporn.com,xhamster.com##.sponsor
 18qiang.com##.imgbanner,.bottom_khdxz
+18teensex.tv,3movs.xxx,analpornpix.com,babesmachine.com,chaturbate.com,fboomporn.com,fetishshrine.com,freepornpicss.com,happysex.ch,imagezog.com,legalporn4k.com,milffox.com,oldies.name,paradisehill.cc,playvids.com,porngames.com,private.com,video.laxd.com,vidxnet.com,vjav.com,watchhentaivideo.com,waybig.com,xbabe.com,xcum.com,yourdailygirls.com,youx.xxx##.banner
 19lou.com##.ad-980x40
 19lou.com##.ad-980x40
 19lou.com##.editor-ad
