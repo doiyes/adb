@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 5gfb27HfoCJkv1gWNoL3Cw
+! Checksum: bIwAB52c4Zq5SGLg0s7O/A
 ! Title: ADFlist
 ! Expires: 6 hours
-! Version(Last Modified): 202211112221
+! Version(Last Modified): 202211122219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 
@@ -1058,6 +1058,8 @@ biddingx.com
 bigbigwork.com##.pinterestbox
 bilibili.com###b_app_link
 bilibili.com###fixed_app_download
+bilibili.com##+js(set, __INITIAL_STATE__.adData, {})
+bilibili.com##+js(set, __INITIAL_STATE__.locsData, null)
 bilibili.com##.ad-report, .ad-floor
 bilibili.com##.adblock-tips
 bilibili.com##.desktop-download-tip
@@ -1540,7 +1542,6 @@ iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
 iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
 iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"]
-iqiyi.com##.detail-sd, .qy-search~*
 iqiyi.com##.m-downApp
 iqiyi.com##.m-hotWords-bottom
 iqiyi.com##div[data-adzone],#block-V
@@ -2043,6 +2044,7 @@ qpb.sohu.com
 qq.com###J_inner_tips
 qq.com###mod_float_box
 qq.com##+js(json-prune,adList.item)
+qq.com##+js(json-prune,ads)
 qq.com##.J_hot_game
 qq.com##.app-qrcode
 qq.com##.code-content
@@ -2301,6 +2303,7 @@ v.douyu.com##.pop-zoom
 v.douyu.com##.pop-zoom-cover
 v.douyu.com##.pop-zoom-wrap
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
+v.qq.com###player  .txp_zt_content
 v.qq.com##.wrapper.mod_vip_popup, #mask_layer
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##.laifeng
@@ -2713,6 +2716,7 @@ zybang.com##.top_download
 ||365xuet.com/assets/web/js/main.jsr_
 ||39.net/PictureLib/A/f76/20160825/org_749281.png
 ||39.net/js/wt.js
+||3dmgame.com/page/js/indexalert_ad.
 ||3jia5.com^$third-party
 ||45.32.105.134^$third-party
 ||5054399.com/4399_js/$script
@@ -2848,7 +2852,6 @@ zybang.com##.top_download
 ||aoji.cn/default/looyu/
 ||aoji.cn/static/js/pushadv.js
 ||aoji.cn/static/js/yiliao/ad_common.js
-||api.bilibili.com/x/click-interface/click/$xhr
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
 ||api.cupid.qiyi.com/etx?
 ||api.cupid.qiyi.com/track2
@@ -4525,6 +4528,7 @@ zybang.com##.top_download
 3d66.com###botfocus-soft
 3d66.com##.King_Chance_LayerCont
 3d66.com##.botfocus
+3dmgame.com##.dj_warp_e
 3dmgame.com##.modAD
 3dmgame.com##A[href^="http://web.3dmgame.com/h5/game?"]
 3g.163.com##.ne_rps
@@ -4666,6 +4670,7 @@ zybang.com##.top_download
 1111.baidu.com,jump.bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.dialogJmodal
 1111.baidu.com,jump.bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.thread_recommend
 1111.baidu.com,jump.bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.topic_list_box
+1905.com##+js(json-prune,videolink)
 1905.com##.zx-pic
 1905.com##.zx-small-pic
 4399.com###ads1_1
