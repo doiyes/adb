@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: ZFlWxzPvabgAXJ3v983CZg
+! Checksum: SbbOUVsTeNgsLkvYS5Ku1Q
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202211172219
+! Version(Last Modified): 202211182220
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -2988,6 +2988,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 /91ad_
 /96090/*
 /960x*0.gif
+/960x60.
 /960x90.
 /993dy_new//gg123/*
 /99rejs/
@@ -7586,7 +7587,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 /quidsi.ga.js?
 /r.gif?
 /r.rnc?
-/r/*?_r=$object,third-party
+/r/*?_r=$object,subdocument,third-party
 /r/collect?
 /r/t1/*$subdocument,third-party
 /r/t1/16/
@@ -8420,6 +8421,8 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 /template/1/images/t2.gif
 /template/23ttav/js/aa.htm
 /template/bingfeng/statics/js/pingbi.js
+/template/chiav/img/*.mp4
+/template/chiav/img/*.png
 /template/conch/asset/js/hlhtml.
 /template/default_pc/bbs/daohangxia.
 /template/gg.js
@@ -8623,6 +8626,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 /track_click?
 /track_clicks_
 /track_event.
+/track_framework_metrics?
 /track_general_stat.
 /track_google.
 /track_js/?
@@ -9845,7 +9849,6 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 @@/webtracking/*$domain=pasts.lv
 @@/wp-content/*/social_$domain=servercat.me
 @@/yozons-lib/core.js$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
-@@://*/gg/$domain=gg.go.kr
 @@://googleadservices.com^|
 @@://www.googleadservices.com^|
 @@=mm_12852562_1778064_$domain=alimarket.tmall.com|www.taobao.com|www.tmall.com
@@ -11535,6 +11538,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 @@||noahedu.com/ad/$~third-party
 @@||noahedu.com/advertising/
 @@||nobugin.com^$generichide
+@@||nocookie.net^*/tracking-opt-in.min.js$script,domain=fandom.com
 @@||nodkey.xyz^$genericblock,generichide
 @@||nodkey.xyz^$generichide
 @@||noodid.ee/chordQuiz/$~third-party
@@ -11993,7 +11997,6 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 @@||static.okccdn.com/builds/desktop/js/tracking_center.$script,domain=okcupid.com
 @@||static.realme.net/v1/knowledge/images/banner.jpg$image
 @@||static.redtube.com/mobi/images/$domain=redtube.com|redtube.net
-@@||static.wikia.nocookie.net^*/tracking-opt-in.min.js$script,domain=fandom.com
 @@||static00.forvo.com/_presentation/assets/js/vendor_mobile_no_ads.js
 @@||staticflickr.com^*/analytics-min.js$domain=flickr.com
 @@||stats.g.doubleclick.net$app=ro.rcsrds.mydigi
@@ -15801,7 +15804,7 @@ eepw.com.cn###startvideo
 eepw.com.cn##.AD300x200
 eeskill.com##.channel-featured-adv
 eet-china.com#?#.new-list > ul > li:-abp-has(> div.li-row > div > h2 > a[href^="http://pubads.g.doubleclick.net/gampad/"])
-eetop.cn##.alert_windows
+eetop.cn,tucao.eu##.alert_windows
 eeyy.cc###div_dn
 eeyy.cc##.ads650
 eeyy.com###beitou_box
@@ -24464,7 +24467,6 @@ tube8.com###js-mobile-top-banner
 tube8.com##body top-adblock
 tube8.com#%#AG_onLoad(function() { if(window.location.href.indexOf("/interstitial/") != -1){ var el = document.querySelector('a[href].continue-to-video');if(el){el.click();} } });
 tubedupe.com##iframe[src^="//tubedupe.com/banners/"]
-tucao.eu##.alert_windows
 tucao.eu##.header_rmb
 tucao.one##div[style="margin:auto;margin-top:0px;width:964px;height:105px;"]
 tucao.tv##.adsbydyd,div.a2013d,[class$="_poster"],.getx2,.getb1,.getb2,.getc1,.getc2
@@ -24964,6 +24966,8 @@ vuetifyjs.com##.v-sponsors
 vulture.com##.nym-ad
 vx666.com##.async[href^="http"]
 vxjbdagjdec-eviewporn-com.cdn.ampproject.org###popups
+vyatka-grad.ru##.f-w-f1
+vyatka-grad.ru##.widget-wrapper
 vz.ru##div[style="margin: 0px auto;width: 300px; padding: 20px 0px;"]
 vzhuan.cn###box
 w3cplus.com###block-block-49
@@ -27080,6 +27084,7 @@ zztt24.com##.no-mask
 ||0272dd.com^
 ||0272dd.com^
 ||027cgb.com^*.gif
+||027dir.com^
 ||027whht.com^
 ||028yhtz.com^
 ||029mxhs.cn^
@@ -27111,6 +27116,7 @@ zztt24.com##.no-mask
 ||0451106.com^
 ||0460.com/images/banner/
 ||0460.com/js/txtrec.js
+||049uing.com^
 ||04cmm.com:8888/js
 ||04jhgyt.com^
 ||04stream.tv/sda/
@@ -27388,6 +27394,7 @@ zztt24.com##.no-mask
 ||1104piaoba2022.xyz^
 ||1104piaoba2022.xyz^
 ||1105yh.com^
+||1106yh.com^
 ||1108jiuba2022.xyz^
 ||110hack.com/article/UploadPic/
 ||11111.host^
@@ -28718,6 +28725,7 @@ zztt24.com##.no-mask
 ||526d.com^$third-party
 ||5278.cc/js/check.js
 ||5278.mobi/aa/
+||528791725.com^
 ||5293.com^
 ||52996.me/scripts/my_
 ||52996.me/upload/ad/
@@ -28903,6 +28911,7 @@ zztt24.com##.no-mask
 ||5idxw.com^
 ||5ilinglei.com/gg.html
 ||5ilog.com/qq/js/jsgg.js
+||5ilss.top^
 ||5imx.com/image/image/
 ||5ip9.com^
 ||5ips.net/love/
@@ -29415,6 +29424,7 @@ zztt24.com##.no-mask
 ||8341.store^
 ||84232.com^
 ||8456.xyz^
+||8499223.com^
 ||84pb.com/go.js
 ||84pb.com/pv.js
 ||8500.pro^
@@ -29686,6 +29696,7 @@ zztt24.com##.no-mask
 ||9735476.sender.skyscanner.net^
 ||9735476.test.skyscanner.net^
 ||978655.online^
+||9795x.com^
 ||97bike.com^
 ||98.126.219.*/ads/
 ||9800.com^
@@ -35270,6 +35281,7 @@ zztt24.com##.no-mask
 ||baiduada.babihu.com^
 ||baiduccdn1.com^
 ||baiduccdn1.com^$third-party
+||baiducdnimages.com^
 ||baiducom.bj.bcebos.com^
 ||baiduhaoba.com^
 ||baidujavascript.com^
@@ -36416,6 +36428,7 @@ zztt24.com##.no-mask
 ||bqgdd.net/js/wap.js
 ||bqgyy.com^
 ||bqiapp.com/api/config/ad?
+||bqnggnsv.fun^
 ||bqsjb.cn^
 ||bqsm.com.cn^
 ||bqstreamer.com^
@@ -36760,6 +36773,7 @@ zztt24.com##.no-mask
 ||bzgint.com/CUNCollector/
 ||bzhanyy.com^*.gif
 ||bzlpa.cn^
+||bzngisyv.xyz^
 ||bznxc6721.xyz^
 ||bzpics.com/jslib/st.js?
 ||bzqxze.remixshop.com^
@@ -41491,6 +41505,7 @@ zztt24.com##.no-mask
 ||dsdsc.win^
 ||dsdydk.com^
 ||dsfhr.xyz^
+||dsfsdft4324.xyz^
 ||dsg.interia.pl^
 ||dshangyan.com/pc/advertising/
 ||dshrx.com^
@@ -41605,6 +41620,7 @@ zztt24.com##.no-mask
 ||dv.chemie.de^
 ||dv.taolingjing.com^
 ||dv59b.montecarlomeeting.com^
+||dvaimso.cn^
 ||dvaxyqp.cn^
 ||dvb.pandora.xiaomi.com^
 ||dvghns.idealista.it^
@@ -46138,6 +46154,7 @@ zztt24.com##.no-mask
 ||hbbtv-track.prosieben.de^
 ||hbbtv-track.prosiebensat1puls4.com^
 ||hbccwlkj.top^
+||hbcl.ltd^
 ||hbears.com^
 ||hbfie.org/mb/meng/
 ||hbfpvm.comolib.com^
@@ -47671,6 +47688,7 @@ zztt24.com##.no-mask
 ||ijhlca.lulus.com^
 ||ijinshan.com/images/gk/game
 ||ijir.cn^
+||ijkqwopm.xyz^
 ||ijre.club^
 ||ijshh.com^
 ||ijshs.com^
@@ -48678,6 +48696,7 @@ zztt24.com##.no-mask
 ||ityou2tcdb.icu^
 ||iu9g.top^
 ||iubenda.com/write?
+||iuerxw.xyz^
 ||iuiweb.com^
 ||iuliglsh.space^
 ||iumnxwvh.ink^
@@ -49273,6 +49292,7 @@ zztt24.com##.no-mask
 ||jkf2.rpahyhn.cn^
 ||jkk7777.xyz^
 ||jknarp.kakaku.com^
+||jknmsdpo.xyz^
 ||jktopia.com^
 ||jktshare.icu^
 ||jku62.com/news/banner
@@ -50204,6 +50224,7 @@ zztt24.com##.no-mask
 ||kj-gov.cn^
 ||kj733.com^
 ||kjanfwss.xyz^
+||kjanfwss.xyz^
 ||kjbwuq.cn^
 ||kjbyuguv12.com^
 ||kjcenter.com^$third-party
@@ -50277,6 +50298,7 @@ zztt24.com##.no-mask
 ||kmgfjc.cn^
 ||kmib.co.kr/ref/
 ||kmindex.ru^$third-party
+||kmjbwejnr.xyz^
 ||kmmgoogle.oss-ap-southeast-1.aliyuncs.com^
 ||kmpl.rnqxp.cn^
 ||kmplayer.cn/include/jscript/*-a.js
@@ -55611,6 +55633,7 @@ zztt24.com##.no-mask
 ||npftmqv.cn^
 ||nphoto.net/media/
 ||nphqw.cn^
+||npmeingm7.shop^
 ||npo-data.nl/tag/v3/npotag.js
 ||npo-data.nl/tags/tag.min.js
 ||npo.nl/divolte/tt/web-event?$domain=zapp.nl
@@ -57355,6 +57378,7 @@ zztt24.com##.no-mask
 ||pjh7.us.chantelle.com^
 ||pji2.r36ku.site^
 ||pjj9su.xyz^
+||pjjlbjd.cn^
 ||pjogndc8ixoidna.360doc.cn^
 ||pjstat.com^
 ||pjsxebh.com^
@@ -58249,6 +58273,7 @@ zztt24.com##.no-mask
 ||q777.sfchronicle.com^
 ||q7tl.icu^
 ||q8.ttly888.com^
+||q88j2.top^
 ||q9y39.cn^
 ||qa-brc.emails.rakuten.com^
 ||qa1.dr.alphacmsearch.gwsweb.admins-v.net.zooplus.it^
@@ -58323,6 +58348,7 @@ zztt24.com##.no-mask
 ||qd3zn.xyz^
 ||qdaily.com/mount_details/pc/
 ||qdbh.store^
+||qdc7y9x.xyz^
 ||qdchunyu.com^
 ||qdcode.com^
 ||qdff.zxwstong.com^
@@ -58604,6 +58630,7 @@ zztt24.com##.no-mask
 ||qljiop.allabout.co.jp^
 ||qlldvi.motoscout24.ch^
 ||qllxvh.shopstyle.com^
+||qlogo.cn^
 ||qlogo.cn^$domain=250dgj.ga
 ||qloved.cn^
 ||qlssbq.cn^
@@ -58936,6 +58963,7 @@ zztt24.com##.no-mask
 ||qzonestyle.gtimg.cn/qzone/qzact^
 ||qzonestyle.gtimg.cn/qzone/space_item/material/PolymorphicPraise^
 ||qzonestyle.gtimg.cn/qzone/v8/ic/iframeReport.js
+||qzos9ou.xyz^
 ||qzpb.qq.com^
 ||qzpmx.cn^
 ||qzqd2.com^
@@ -60058,6 +60086,7 @@ zztt24.com##.no-mask
 ||s4.parkeren-haarlem.nl^
 ||s4.parkeren-utrecht.nl^
 ||s4e8.cascades.com^
+||s4ls9.top^
 ||s4s51f00a3o7.www.eldorado.gg^
 ||s4te24u.com^
 ||s4zqj3m.cn^
@@ -68353,6 +68382,7 @@ zztt24.com##.no-mask
 ||txlidi.ink^
 ||txmsw.mobi^
 ||txnnhz.cn^
+||txnwq.xyz^
 ||txscn.cn^
 ||txscn.cn^
 ||txshuku.com/js/
@@ -70320,6 +70350,7 @@ zztt24.com##.no-mask
 ||wf.taboola.com^
 ||wf321.com^
 ||wffengtai.com.cn^
+||wfhuzaj.cn^
 ||wfhxssg.com^
 ||wfil.bpnhgan.cn^
 ||wfiles.hcomic.net/indexSwiper/*_*x*_*_TC_gif.gif
@@ -71901,6 +71932,7 @@ zztt24.com##.no-mask
 ||xhmybanjia.cn^
 ||xhpqpq.cn^
 ||xhqg.xyz^
+||xhsrw.xyz^
 ||xhunion.com^
 ||xhx.design^
 ||xhxnkyy.com^
@@ -72781,6 +72813,7 @@ zztt24.com##.no-mask
 ||yiiwoo.com^
 ||yiiwoo.com^$third-party
 ||yiiyoo.net^
+||yijfdsu.cn^
 ||yijia2009.com^
 ||yijiachen.cn^
 ||yijiafangzhi.cn^
@@ -73852,6 +73885,7 @@ zztt24.com##.no-mask
 ||zjqhyx.cn^
 ||zjsdsports.cn^
 ||zjst.net/3.gif
+||zjws.xyz^
 ||zjxc.com/source/plugin/e6_xc_ad/
 ||zjzj11.com/js/$script
 ||zjzs.club^
@@ -74503,7 +74537,7 @@ zztt24.com##.no-mask
 6hck.co##[class^="shade_layer"],#f_huodong,[id$="_top"],.simulate_bet_ad,#lhc_bottom_columns_ad,.shck_APPDownload,[id^="lhck_"]
 6kk.tv###sponsorAdDiv
 6park.com##[width="80"],[height="300"],[width="120"]
-6park.com##a[href*="/link.php?key="]
+6park.com##a[href*=".php?key="]
 6park.com##img[width="980"][height="90"]
 6park.com##table[width="89%"][height="60"]
 6parknews.com##.other_list_ad

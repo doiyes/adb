@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: R98Qcyrtygk4CBZCEPYuTA
+! Checksum: 3SokShtFaGpGSJ2rIQZvEA
 ! Title: AdFilters-noDNS
 ! Expires: 24 hours
-! Version: 202211172219
-! Last Modified: 202211172219
+! Version: 202211182220
+! Last Modified: 202211182220
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -6595,6 +6595,7 @@
 ##.ad-alert-message-text
 ##.ad-alert-wrapper
 ##.ad-align-none
+##.ad-aligncenter
 ##.ad-alignment
 ##.ad-alsorectangle
 ##.ad-anchor
@@ -17353,6 +17354,7 @@
 ##.top-side-advertisement
 ##.top-sidebar-ad
 ##.top-sidebar-adbox
+##.top-site-ad
 ##.top-sponsored-header
 ##.top-story-ad
 ##.top-story__ads
@@ -19953,7 +19955,6 @@
 ##zeus-ad
 #%#//scriptlet('set-constant', 'Document.prototype.browsingTopics', 'undefined')
 #%#//scriptlet('set-constant', 'Document.prototype.interestCohort', 'undefined')
-#%#//scriptlet('set-local-storage-item', 'ajs_anonymous_id', 'null')
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortOnPropertyWrite=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeSet:function(){b&&console.warn("AdGuard aborted property write: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -22030,6 +22031,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 .tv/adl.
 .tv/ads.
 .tv/ads/
+.tv/ads/$image,script,subdocument
 .tv/js/ads/
 .tv/js/ads/
 .tv/log?event
@@ -22338,6 +22340,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /96090/*
 /960_60_
 /960x*0.gif
+/960x60.
 /960x90.
 /980x90.
 /993dy_new//gg123/*
@@ -30872,8 +30875,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /quigo_ad
 /r.gif?
 /r.rnc?
-/r/*?_r=$object,third-party
-/r/*?_r=$object,third-party
+/r/*?_r=$object,subdocument,third-party
+/r/*?_r=$object,subdocument,third-party
 /r/collect?
 /r/t1/*$subdocument,third-party
 /r/t1/*$subdocument,third-party
@@ -32145,6 +32148,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /template/23ttav/js/aa.htm
 /template/ad.
 /template/bingfeng/statics/js/pingbi.js
+/template/chiav/img/*.mp4
+/template/chiav/img/*.png
 /template/conch/asset/js/hlhtml.
 /template/default_pc/bbs/daohangxia.
 /template/gg.js
@@ -32425,6 +32430,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /track_click?
 /track_clicks_
 /track_event.
+/track_framework_metrics?
 /track_general_stat.
 /track_google.
 /track_js/?
@@ -37041,7 +37047,7 @@ bendibao.com###wxbox
 bendibao.com##.content_r_ad300
 bendibao.com##.content_r_ad300
 bendibao.com##DIV[id^="f21ac82b21eeb7322631b6aa94e17f"]
-bendsource.com,federalnewsnetwork.com,lonelyplanet.com,sevendaysvt.com,styleweekly.com,tasty.co,tucsonweekly.com##.Ad
+bendsource.com,federalnewsnetwork.com,imgur.io,lonelyplanet.com,sevendaysvt.com,styleweekly.com,tasty.co,tucsonweekly.com##.Ad
 bengo4.com##.recruiteBnr
 bengo4.com##div[id^="ad-slot-"]
 bengo4.com##div[style="min-width: 320px; min-height: 50px;"]
@@ -41060,8 +41066,8 @@ eet-china.com#?#.new-list > ul > li:-abp-has(> div.li-row > div > h2 > a[href^="
 eetimes.eu##.promotion-block-wrapper
 eetimes.eu,miloserdov.org###custom_html-16
 eetimes.eu,powerelectronicsnews.com##.masthead-banner
-eetop.cn##.alert_windows
-eetop.cn##.alert_windows
+eetop.cn,tucao.eu##.alert_windows
+eetop.cn,tucao.eu##.alert_windows
 eeweb.com###wallpaper_image
 eeyy.cc###div_dn
 eeyy.cc###div_dn
@@ -41470,6 +41476,8 @@ everybithelps.co.uk##img[width="300"][height="300"]
 everybithelps.io##[href^="https://shop.ledger.com/"]
 everydaykoala.com,playjunkie.com##[class*="__adspot-title-container"]
 everydaykoala.com,playjunkie.com##[class*="__adv-block"]
+everydayrussianlanguage.com##.border
+everydayrussianlanguage.com##aside img[src^="/wp-content/themes/edr/img/"]
 everyeye.it##.banner_destra_mobile
 everyeye.it##header > div.adv-top
 everyonepiano.cn##[class^="EOPArticleReadAD"],.EOPFloatDefault,.EOPIndexLeftBar2,.EOPIndexLeftBar3,.img-responsive
@@ -45158,6 +45166,7 @@ igg-games.com##.taxonomy-description
 igg-games.com##.uk-panel.widget-text
 igg-games.com##[href^="http://s2.igg-games.com/"]
 igg-games.com#$#abort-current-inline-script $ php
+igg-games.com#$#abort-on-property-write advanced_ads_ready; abort-current-inline-script document.createElement /script/; prevent-listener DOMContentLoaded
 igg-games.com#$#abort-on-property-write btoa
 ign.com##.deals-block
 ign.com##.wiki-bobble
@@ -45362,6 +45371,8 @@ imgtaxi.com##.bottom_abs
 imgur.com##.PrimisPlayerContainer
 imgur.com##.Top300x600
 imgur.com#?#a.Post-item:-abp-has(div.Post-item-external-ad)
+imgur.com#?#div.Gallery-Sidebar-PostContainer:-abp-has(div.promoted-hover)
+imgur.com#?#div[style="height: 250px; margin-bottom: 16px; position: relative; z-index: 1;"]:-abp-has(div.Ad)
 imgur.com,pushsquare.com,songlyrics.com##.masthead
 imindmap.cc
 imkan.tv##.bottom__card
@@ -53465,6 +53476,7 @@ reuters.com##div[class^="AdSlot__container"]
 reuters.com##div[class^="ArticlePage-mobile-mpu-"]
 reuters.com##div[class^="ad-slot__"]
 reuters.com#$#.site-header__show-nav__3po5A .site-header__inner-sticky__1fm3o { top: 0px !important; }
+reuters.com#%#//scriptlet('set-local-storage-item', 'ajs_anonymous_id', 'null')
 reverso.net###bottom-mega-rca-box
 reverso.net###rca
 reverso.net##.bottom-horizontal
@@ -56688,8 +56700,6 @@ tubeoffline.com##a[href^="https://www.xvinlink.com/?a_"]
 tubepornclassic.com##.___it0h1l3u2se2lo
 tuberel.com##.fel-list
 tuberel.com##.vda-item
-tucao.eu##.alert_windows
-tucao.eu##.alert_windows
 tucao.eu##.header_rmb
 tucao.eu##.header_rmb
 tucao.one##div[style="margin:auto;margin-top:0px;width:964px;height:105px;"]
@@ -57177,6 +57187,7 @@ userscript.zone##.w300
 userstyles.org##div.ad
 userstyles.org#%#//scriptlet("set-constant", "poptin_display", "noopFunc")
 usgang.ch###rectangle-wrapper
+usmagazine.com##.cy-storyblock
 usnews.com###ac-lre-player-ph
 usnews.com###bfad-slot
 usnews.com##[class*="ad-spacer"]
@@ -57585,6 +57596,8 @@ vxxx.com##.emrihiilcrehehmmll
 vxxx.com##.itrrciecmeh
 vxxx.com##.lmetceehehmmll
 vxxx.com##.recltiecrrllt
+vyatka-grad.ru##.f-w-f1
+vyatka-grad.ru##.widget-wrapper
 vymaps.com##div[style="text-align: center; height: 260px;"]
 vz.ru##div[style="margin: 0px auto;width: 300px; padding: 20px 0px;"]
 vzhuan.cn###box
@@ -61010,9 +61023,9 @@ zztt24.com##.no-mask
 6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##.story > .placeholderWrapper
 6hck.co##[class^="shade_layer"],#f_huodong,[id$="_top"],.simulate_bet_ad,#lhc_bottom_columns_ad,.shck_APPDownload,[id^="lhck_"]
 6kk.tv###sponsorAdDiv
-6park.com##A[href*=".php?key="]
 6park.com##[width="80"],[height="300"],[width="120"]
-6park.com##a[href*="/link.php?key="]
+6park.com##a[href*=".php?key="]
+6park.com##a[href*=".php?key="]
 6park.com##img[width="980"][height="90"]
 6park.com##table[width="89%"][height="60"]
 6park.com##table[width="89%"][height="60"]
