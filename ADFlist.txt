@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: WjpUOwp05aCl6YPhOI0G1A
+! Checksum: YZGU2xdxbl+rrhWfvF5A8g
 ! Title: ADFlist
 ! Expires: 6 hours
-! Version(Last Modified): 202211182220
+! Version(Last Modified): 202211192218
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 
@@ -1222,7 +1222,6 @@ dandanzan10.top,nunuyy3.org##+js(set,mozRTCPeerConnection,null)
 dandanzan10.top,nunuyy3.org##+js(set,webkitRTCPeerConnection,null)
 dandanzan10.top,nunuyy3.org##.gm-fp-body video:style(max-height:100%!important)
 dandanzan10.top,nunuyy3.org#@#+js(nowebrtc)
-danmuproxy.douyu.com
 danzhaowang.com##.qxzx_scho
 daohang.qq.com##[id^=AD_]
 dapengjiaoyu.com##.toUnfold
@@ -1355,6 +1354,7 @@ finance.sina.com.cn###ny-link-r
 finance.sina.com.cn###ny-link-r0
 finance.sina.com.cn##.downLink
 finance.sina.com.cn##div[id^="st01_cont0"]
+findlaw.cn###wlcommonbot
 firefox.com.cn,firefoxchina.cn##.side-mod[track-key="side_tpth"]
 firefoxchina.cn##.side-shping
 flstudiochina.com
@@ -1393,7 +1393,7 @@ gebi1.com##.offical-account
 gentags.net
 geoparker.net
 gfan.com##.downs
-ghxi.com##div[style="padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: 99999;background-color: #cc4444;color: #fff"]
+ghxi.com##div[style^="padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index"]
 gift.douyucdn.cn
 gitee.com##.ent-poster-ads
 gitee.com##.float-left-box
@@ -1465,6 +1465,7 @@ house365.com##.leftfixed_box
 huaban.com##.hb-ad
 huaban.com,zcool.com.cn##.ad
 huanqiu.com##.r-hqFashion
+huanqiu.com##.right-box > article-other-template
 huati365.com
 huihev.com##+js(ra,oncontextmenu|onselectstart|ondragstart|onsource,body)
 huishenghuiying.com.cn
@@ -2314,6 +2315,10 @@ v4dwkcv.com
 vdianying.cc##div[style^="display:block !important;"]
 vdisk.weibo.com###ads_layer
 vegaschina.cn
+video.qq.com#@#+js(json-prune,ads adList.item)
+video.qq.com#@#+js(no-fetch-if,/trace\.|beacon\./)
+video.qq.com#@#+js(no-xhr-if,/trace\.|\/collect/)
+video.qq.com#@#+js(set,RTCPeerConnection,null)
 vidhub.cc,vidhub.top###player_pause
 vidhub.cc,vidhub.top##.MacPlayer:style(height:630px!important)
 view.inews.qq.com#?#div[class^="_"]:-abp-has(>div[data-action-id]>div>.react-swipeable-view-container)
@@ -2339,7 +2344,6 @@ we4game.com
 weather.com.cn##.tuiguang
 weather.com.cn##A[href*=".tmall.com"]
 weather.com.cn##A[style="position:fixed;top:220px;left:50%;margin-left: -625px"]
-web-player-tracker.biliapi.net
 webmonkez.com
 wegowan.com
 weibo.cn##.tips.m-container-max
@@ -2404,7 +2408,6 @@ worldve.com###fdkDiv
 worldve.com###img
 wrating.com
 wsdy.top##+js(set,fed.module,{})
-wsproxy.douyu.com
 wuyanzhai.com
 www.1069gay.net###shortcut
 www.139site.com
@@ -2425,7 +2428,6 @@ www.baidu.com###s_top_wrap
 www.baidu.com##body.is-lite:style(min-width: 0px !important)
 www.baidu.com##html:has(body.is-lite>#s_strpx_span1):style(overflow-y: hidden !important)
 www.bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
-www.bilibili.com##+js(set,Sentry.init,noopFunc)
 www.chinakaoyan.com##.side-wx
 www.chnmoney.com##.tonglan
 www.citydy.com##.dplayer-web-fullscreen-fix .player-right, .dplayer-web-fullscreen-fix #player-shrink,#citybanner
@@ -2664,7 +2666,6 @@ zybang.com##.top_download
 |https://img.233.com/project/ztwx/v1/ie/zxwx233.js^
 |https://img.233.com/www/css/chuji/2019/newsMethod.js^$xhr
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
-|https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js
 |https://sta-op.douyucdn.cn/front-publish/butterfly-
 |https://static.youku.com/index/js/ikuAdapterNew.js
 |https://tellme.pw/go/jav$popup
@@ -3451,6 +3452,8 @@ zybang.com##.top_download
 ||hc360.com/js/module/common/logrecordservice.
 ||hdslb.com/bfs/album/$image,domain=555kyy.com|555dsv.com|666ye.com
 ||hdslb.com/bfs/seed/jinkela/short/cols/iframe.html$subdocument
+||hdslb.com/bfs/seed/log/report/log-reporter.js
+||hdslb.com/bfs/static/jinkela/long/js/sentry/$script
 ||hdslb.com/bfs/sycp/creative_img/$image
 ||hdslb.com/js/bfd.js
 ||hegrinhar.com^$third-party
@@ -4003,7 +4006,6 @@ zybang.com##.top_download
 ||qunar.com/js/ga.min.js
 ||qunar.com/render/ga.jsp?
 ||qunar.com/render/googlesem.jsp
-||qvb.qcloud.com/$domain=www.douyu.com
 ||qyer.com/qcross/home/ajax?action=banner
 ||qyer.com^*/base_beacon_ga.js
 ||qyerstatic.com/common/models/common/component/footerBanner/
@@ -4280,7 +4282,7 @@ zybang.com##.top_download
 ||uuu9.com/photolog.html
 ||uuxs.net^$subdocument
 ||v.baidu.com/staticapi/videoAd.json?
-||v.qq.com/$subdocument
+||v.qq.com^$subdocument
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||valipl.cp31.ott.cibntv.net/$media
 ||vamaker.com/$third-party
@@ -4290,7 +4292,7 @@ zybang.com##.top_download
 ||video.da.mgtv.com/$media
 ||video.qq.com/checktime?
 ||video.qq.com/danmu_manage/$xhr
-||video.qq.com/getcookie/cookie.html$subdocument
+||video.qq.com^$subdocument
 ||video.streaming.estream.to^
 ||video.videos.vidto.me^
 ||videoplayer2.xyz^
