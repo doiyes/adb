@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: xL9i3RPj/H3hPuTYw9+Hgg
+! Checksum: xohTALiuQSkHAjDhbd7vYw
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202211212218
+! Version(Last Modified): 202211222219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -317,6 +317,7 @@
 ##div.a_fr.a_cb,div.a_fl.a_cb,div.a_cn,div.wp.a_h
 ##div.a_mu,tr.ad,div.wp.a_f,div.a_fl.a_cb,div.a_fr.a_cb
 ##div.ad-box
+##div.ad-frame-container
 ##div.ad-recommend
 ##div.ads
 ##div.ads-footer
@@ -332,6 +333,7 @@
 ##div[class^="is_"] > a > img[referrerpolicy="no-referrer"][src*="hdslb.com"]
 ##div[id][style="width: 100%;"] > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##div[style^="width: 100%;"][style$="display: block;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
+##iframe.ad-frame
 ##img#hth[onclick$="hth.html')"]
 ##img#hth[onclick^="window.open"]
 ##oxk
@@ -965,6 +967,17 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@guokr.com/apis/flowingboard/item/m_article
 @@guokr.com/apis/flowingboard/item/m_home_
 @@qhres2.com$domain=baike.so.com
+@@rujume.top/?url=
+@@rujume.top/API.php
+@@rujume.top/ckplayerx
+@@rujume.top/css/share.css
+@@rujume.top/dplayer
+@@rujume.top/js/jquer
+@@rujume.top/js/m3u8
+@@rujume.top/js/mplayer
+@@rujume.top/js/share
+@@rujume.top/m3u8.php?url=
+@@rujume.top/muiplayer
 @@www.cocomanga.com/js/ad_/ad2.js
 @@||*/assets/js/common/juqery/
 @@||114la.com/|
@@ -4529,8 +4542,11 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||0272aa.com^
 ||0272dd.com^
 ||028yhtz.com^
+||02asdf.com^
 ||031dfgh.com^
 ||033.com^
+||034dfgh.com^
+||035caop.com^
 ||036e.cn^
 ||0377shujuhuifu.top^
 ||03asdf.com^
@@ -5381,6 +5397,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||adrotator.se^
 ||ads*-normal-hl.zijieapi.com^
 ||ads-
+||ads-pixiv.net^
 ||ads.
 ||ads.exoclick.com^
 ||ads.service.kugou.com^
@@ -8464,6 +8481,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||lovegg.club^
 ||lowadec.cn^
 ||lpasdfgwer.com^
+||lpeolfa.top^
 ||lpjxzs.com^
 ||lpmzt.cn^
 ||lpqhkj.cn^
@@ -9087,6 +9105,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||nphoto.net/media/
 ||nps.zuoyebang.com^
 ||nq37f.cn^
+||nrjzkj.cn^
 ||ns1.chinayms.com^
 ||ns2.chinayms.com^
 ||nsclick.baidu.com^
@@ -9960,7 +9979,6 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||shouji.com.cn/static/v2/images/sj_banner_
 ||shouji360.org^
 ||shouliang.52lvgucci.com^
-||shouquan.laohutao.com^
 ||shouyou.com/$third-party
 ||shouyoutan.com/Runtime/js/$script
 ||show.9zwang.com^
@@ -10383,6 +10401,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||toblog.ctobsnssdk.com^
 ||toblog.snssdk.com^
 ||toggle.qq.com^
+||toijr.xyz^
 ||tongda-bearings.com/d1/
 ||tongji.info^
 ||tongji.xinmin.cn^
@@ -10442,6 +10461,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||treezip.baofeng.net/iteminfo_xml
 ||tribalfusion.com^
 ||trk-cdpetl.emdlz.com.cn^
+||trqhf.xyz^
 ||trslw.cn^
 ||trustutn.org^
 ||ts.market.mi-img.com/thumbnail/gif/*/MusicServer^
@@ -10783,6 +10803,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||wdad.cc^
 ||wdfhbx.zdpeanut.com^
 ||wdn.lm343.com^
+||wdzwd.xyz^
 ||weareqy.com^
 ||web-track.go2yd.com^
 ||web.kuaiwan.com^

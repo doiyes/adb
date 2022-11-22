@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: EWWa3QMyvg/2MqOWBFht0g
+! Checksum: eFx4qYTedqmkSG4zuAlv2w
 ! Title: AdFilters-noDNS
 ! Expires: 24 hours
-! Version: 202211212218
-! Last Modified: 202211212218
+! Version: 202211222219
+! Last Modified: 202211222219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -2788,6 +2788,7 @@
 ###bottom_ads
 ###bottom_adwrapper
 ###bottom_banner_ad
+###bottom_fixed_ad_overlay
 ###bottom_leader_ad
 ###bottom_player_adv
 ###bottom_qr_code
@@ -2951,6 +2952,7 @@
 ###content-ad-side
 ###content-ads
 ###content-adver
+###content-contentad
 ###content-header-ad
 ###content-left-ad
 ###content-right-ad
@@ -9929,6 +9931,7 @@
 ##.adsense_block
 ##.adsense_bottom
 ##.adsense_container
+##.adsense_content_300x250
 ##.adsense_div_wrapper
 ##.adsense_inner
 ##.adsense_label
@@ -11714,6 +11717,7 @@
 ##.bottom-adv-container
 ##.bottom-adv1
 ##.bottom-banner-ad
+##.bottom-fixed-ad
 ##.bottom-left-ad
 ##.bottom-main-adsense
 ##.bottom-mobile-ad
@@ -19028,6 +19032,8 @@
 ##a[href*="/kanxiuren.com?"]
 ##a[href*="/kk80.cc"]
 ##a[href*="/kk80.cc"]
+##a[href*="/ksbz1017.com"]
+##a[href*="/ksbz1017.com"]
 ##a[href*="/kst6632.com/"]
 ##a[href*="/kst6632.com/"]
 ##a[href*="/kt169.com"]
@@ -19666,6 +19672,7 @@
 ##div.a_fr.a_cb,div.a_fl.a_cb,div.a_cn,div.wp.a_h
 ##div.a_mu,tr.ad,div.wp.a_f,div.a_fl.a_cb,div.a_fr.a_cb
 ##div.ad-box
+##div.ad-frame-container
 ##div.ad-recommend
 ##div.ads
 ##div.ads-footer
@@ -19847,6 +19854,7 @@
 ##header + #main:nth-child(n+3) > .jsv.jsv-g1.mb-0 > .container-fluid.mb-3.p-0
 ##header + #main:nth-child(n+3) > .jsv.jsv-g1.mb-0 > .container-fluid.mb-3.p-0
 ##hl-adsense
+##iframe.ad-frame
 ##iframe[id^="google_ads_frame"]
 ##iframe[src*=".xxmh"][src*="?u="]
 ##iframe[src*=".xxmh"][src*="?u="]
@@ -22983,6 +22991,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /__Analytics-Start?url=
 /__analytics/*
 /__dam.gif?
+/__imp_apg__/*
 /__rmn.gif?
 /__ssobj/core.js
 /__ssobj/core.js
@@ -35309,24 +35318,20 @@ amazon.*#?#.sl-carousel-card-faceout-element:-abp-has(.sl-carousel-card-sponsore
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg###nav-swmslot
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg###sponsoredProducts2_feature_div
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##.amzn-safe-frame-container
-amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##.s-result-item > span[cel_widget_id^="MAIN-CARDS-"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##.sbv-video-single-product
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##[cel_widget_id*="-creative-desktop_loom-desktop-"]
-amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id*="_SponsoredProducts"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id*="_ad-placements-"]
-amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id="desktop-dp-sims_sb-dp-id"]
-amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id="dpx-sponsored-products-detail_csm_instrumentation_wrapper"]
-amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id="sims-consolidated-3_csm_instrumentation_wrapper"]
+amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id*="desktop-dp-"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id="sims-mobile-consolidated-4_csm_instrumentation_wrapper"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id="sp-rhf-desktop-carousel_desktop-rhf_0"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id="sp-shiptrack-desktop-carousel_desktop-yo-shiptrack_0"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id="sp_phone_detail_thematic"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id^="LEFT-SAFE_FRAME-"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id^="adplacements:"]
-amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id^="multi-brand-detail-creative-desktop_"]
+amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id^="multi-brand-"]
+amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[cel_widget_id^="sp-desktop-carousel_handsfree-browse"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[data-a-carousel-options*="\\\"isSponsoredProduct\\\":\\\"true\\\""]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[data-ad-id]
-amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[data-cel-widget="sims-consolidated-4_csm_instrumentation_wrapper"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[data-cel-widget="sp-rhf-desktop-carousel_desktop-rhf_1"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[data-cel-widget="sp-shiptrack-desktop-carousel_desktop-yo-shiptrack_0"]
 amazon.ae,amazon.ca,amazon.cn,amazon.co.jp,amazon.co.uk,amazon.com,amazon.com.au,amazon.com.br,amazon.com.mx,amazon.com.tr,amazon.de,amazon.eg,amazon.es,amazon.fr,amazon.in,amazon.it,amazon.nl,amazon.pl,amazon.sa,amazon.se,amazon.sg##div[data-cel-widget^="MAIN-FEATURED_ASINS_LIST-"]
@@ -35552,6 +35557,7 @@ animeyt.tv##.ed-item > ul#filtro-letra-nuevo+div.bloque.bloque__descargas-centro
 animixplay.to###belowcomment
 animixplay.to###streambottomright
 animixplay.to###topmid
+animixplay.to#$#abort-current-inline-script document.createElement /script/; abort-on-property-read document.head.appendChild
 anisearch.com###rrightX
 anisearch.com##.box-error
 anisearch.com##.rect_sidebar
@@ -37434,6 +37440,7 @@ bleedingcool.com,indy100.com,jamaicaobserver.com,pastemagazine.com###top_leaderb
 bleedingcool.com,jamaicaobserver.com###bottom_leaderboard
 bleepcoder.com
 bleepingcomputer.com##.cz-toa-wrapp
+bleepingcomputer.com##.noty_bar
 bleepingcomputer.com##[href^="https://www.bleepingcomputer.com/go/"]
 bleepingcomputer.com#?##bc-home-news-main-wrap > li:-abp-contains(Sponsored Content)
 blesk.cz###stickyfloatLeftEmptySpaceCheckLeft
@@ -37503,6 +37510,7 @@ blog.iportable.in##body > b[style="z-index: 10000;"]
 blog.livedoor.com##.MdAdBox01
 blog.livedoor.jp###article-contents > br + table[cellpadding="5"][border="0"]
 blog.livedoor.jp##.btn-ldb-bottomAdd
+blog.livedoor.jp##a[href="http://analyzer.fc2.com"]
 blog.mercedes-benz-passion.com##header[role="banner"] a[data-track]  > figure
 blog.reh.tw#%#//scriptlet("prevent-setTimeout", "killads.offsetHeight === 0")
 blog.reimu.net##div.entry-content > pre:style(display:block !important;)
@@ -39978,6 +39986,7 @@ depor.com##.ad-amp-movil
 depositfiles.com,depositfiles.org,dfiles.eu,dfiles.ru##.banner1
 depositfiles.com,dfiles.eu##.network_downloader
 depositfiles.com,dfiles.eu##a[href^="http://ads.depositfiles.com/"]
+der-postillon.com##.iqadtile-wrapper
 deshdoaba.com##.site-branding
 deshdoaba.com##[href="https://www.nsbinsures.com/"]
 designspiration.com##.homepageBanner
@@ -40768,7 +40777,7 @@ duowan.com##.lolboxapps-qrcode
 duowan.com##.ui-business
 duowan.com##.ui-business
 duowan.com##a[adid]
-duplichecker.com##[data-pagespeed-url-hash]
+duplichecker.com##a[href^="https://www.duplichecker.com/"][target*="blank"][rel*="nofollow"] > img
 duplichecker.com##img[src*="data:image"]
 duplichecker.com#?#.data_inbox > div[style]:-abp-has(> div > span > ._ap_apex_ad)
 dutchnews.nl##.small-add-block
@@ -44587,6 +44596,7 @@ howbuy.com##.topBigAd
 howbuy.com##a[href^="https://www.howbuy.com/advertisement/"]
 howbuy.com##a[href^="https://www.howbuy.com/advertisement/"]
 howfile.com###outborder
+howstuffworks.com##.z-999
 howstuffworks.com##div[class^="print:hidden md:hidden fixed bottom-"]
 howstuffworks.com##div[class^="sticky-container print:hidden"]
 howtogeek.com###div-thetop1
@@ -50674,6 +50684,7 @@ news.cn2che.com##.banner01
 news.com.au#?#.news-tops_list > .news-tops_group-rhc > .sticky-wrapper:-abp-has(> .sticky-container:only-child > .ad-m-mrec:only-child)
 news.de##div[data-ref="sticky-ad"]
 news.denfaminicogamer.jp###sp_article_billboard
+news.denfaminicogamer.jp##.ad-smp
 news.denfaminicogamer.jp##.inst_overlap_cover
 news.dwango.jp##.overlay-footer_ad
 news.ebc.net.tw##a[href^="http://www.ebcbuzz.com/url/"]
@@ -55440,6 +55451,7 @@ surfline.com##.quiver-google-dfp
 surfwap.com##.ahblock2
 surinenglish.com##.publiTop
 surinenglish.com##.roba
+survey-smiles.com
 sushiscan.su##body > div[id^="teaser"]
 suslusozluk.com###sticky
 sutin0831.pixnet.net#$#div[class*="-ad-sidebar-"] { position: absolute!important; left: -3000px!important; }
@@ -55822,6 +55834,7 @@ teleprogramma.pro##.header-bottom-wrapper
 teleprogramma.pro#$#div[class^="yt-w amp-wp-inline-"] { padding-top: inherit !important; }
 telesputnik.ru##.adbPopup
 telexplorer.com.ar#$#abort-current-inline-script MutationObserver compareDocumentPosition
+telling.asahi.com##.p-banner-wrapper
 tellymix.co.uk###sidebar > div[style]
 tellymix.co.uk##.a-text
 tellymix.co.uk##.adb_top
@@ -61158,7 +61171,7 @@ zztt24.com##.no-mask
 9le8.com###program_play_right
 9le8.com###program_play_right
 9miao.com###deanrlc22
-9to5google.com,9to5mac.com,advfn.com,all3dp.com,audiokarma.org,beeradvocate.com,beliefnet.com,bizjournals.com,biznews.com,bolavip.com,businessinsider.com,computerworld.com,driven.co.nz,ecr.co.za,electrek.co,empireonline.com,engineeringnews.co.za,etcanada.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gfinityesports.com,gmanetwork.com,grammarbook.com,hbr.org,insidehook.com,intouchweekly.com,khou.com,ktvu.com,lifeandstylemag.com,macstories.net,mail.com,memuplay.com,metro.us,miningweekly.com,mobilesyrup.com,modernhealthcare.com,my9nj.com,nbcnews.com,newrepublic.com,nzherald.co.nz,oneesports.gg,opb.org,physiology.org,pixiv.net,punchng.com,realsport101.com,reason.com,refinery29.com,scroll.in,seattletimes.com,slideshare.net,sportskeeda.com,theglobeandmail.com,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,toofab.com,usmagazine.com,wogx.com##.ad-container
+9to5google.com,9to5mac.com,advfn.com,all3dp.com,audiokarma.org,beeradvocate.com,beliefnet.com,bizjournals.com,biznews.com,bolavip.com,businessinsider.com,computerworld.com,driven.co.nz,ecr.co.za,electrek.co,empireonline.com,engineeringnews.co.za,etcanada.com,fox10phoenix.com,fox13news.com,fox26houston.com,fox29.com,fox2detroit.com,fox32chicago.com,fox35orlando.com,fox4news.com,fox5atlanta.com,fox5dc.com,fox5ny.com,fox7austin.com,fox9.com,foxbusiness.com,foxla.com,foxnews.com,funkidslive.com,gfinityesports.com,gmanetwork.com,grammarbook.com,hbr.org,howstuffworks.com,insidehook.com,intouchweekly.com,khou.com,ktvu.com,lifeandstylemag.com,macstories.net,mail.com,memuplay.com,metro.us,miningweekly.com,mobilesyrup.com,modernhealthcare.com,my9nj.com,nbcnews.com,newrepublic.com,nzherald.co.nz,oneesports.gg,opb.org,physiology.org,pixiv.net,punchng.com,realsport101.com,reason.com,refinery29.com,scroll.in,seattletimes.com,slideshare.net,sportskeeda.com,theglobeandmail.com,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se,toofab.com,usmagazine.com,wogx.com##.ad-container
 9to5mac.com,9to5google.com,9to5toys.com##iframe[data-google-container-id]
 9to5mac.com,9to5google.com,9to5toys.com##iframe[title="Advertisement"]
 9to5mac.com,9to5google.com,9to5toys.com,marketrealist.com,electrek.co,dronedj.com##iframe[title="3-rd party ad content"]
@@ -62098,9 +62111,7 @@ zztt24.com##.no-mask
 121xz.com##.btn + .btn
 121xz.com##.c_money
 121xz.com##.c_money
-123-movies.buzz##.ann-home
 123-movies.city,actvid.com,cineb.net,hdtoday.tv,moviesjoy.to,solarmovie.pe,vidbem.com,upload4earn.org,uploadbyte.com,watchseries.ma,yts.mx,zoechip.com#$#abort-on-property-read localStorage
-123-movies.ninja,123movies.net,2umovies.me,4anime.biz,4anime.gg,9anime.tube,actvid.com,animebee.to,animefreak.site,animefreak.ws,animefrenzy.net,animeheaven.pro,animekisa.in,animekisa.tv,animepahe.cc,apkmody.io,batotoo.com,bravoporn.com,coloredmanga.com,dembed1.com,dramacool.pk,dulu.to,filmlinks4u.cam,filmyzilla.autos,filmyzilla.makeup,gogoanime.be,gogoanime.co.in,gogoanime.lol,gogoanime.run,gogoplay1.com,goload.pro,hds-streaming-hd.com,herogayab.net,hhdmovies.cam,hindilinks4u.cam,hothit.me,hurawatch.cc,iflixmovies.com,jujutsukaisen-manga.online,jujutsukaisenonline.net,linksly.co,mangadna.com,mangahere.today,manganatos.com,mangas-raw.com,mangceh.cc,membed.net,messitv.net,miraculous.to,movierulz.cam,movies-watch.com.pk,mp3fromyou.tube,ngomik.net,nkiri.com,playlist-youtu.be,pomvideo.cc,prmovies.bz,prmovies.cam,prmovies.fyi,prmovies.li,prmovies.org,prmovies.re,putlocker.vc,putlockers.fm,putlockers.li,rawkuma.com,sockshare.ac,ssoap2day.to,tamilyogi.best,vanime.co,waploaded.com,wat32.tv,watchofree.com,watchomovies.cam,watchomovies.net,watchseries.cyou,watchseries.ninja,wcostream.cc,webtoonshare.com,y-2mate.com,yomovies.bz,yomovies.pl,yomovies.pm,yomovies.ws,ytmp3.cc,yts-subs.com##iframe[style*="z-index: 2147483647"]
 123-movies.sr,123movies-official.net,animefrenzy.net,apkmody.io,atomohd.app,atomtt.com,d123movies.to,f2movies.to,filmlinks4u.online,gogoanime.day,gogoanime.re,gogoanime.run,goyabu.com,hentai20.com,kimcartoon.li,kisstvshow.to,lalamanga.com,mangadna.com,mangahere.onl,manganato.com,manhwax.com,movies123.sbs,movies123.studio,prmovies.re,projectfreetv.space,readmanganato.com,soap2day.cloud,tinyzonetv.to,udvl.com,wiflix.bet,yomovies1.online#$#abort-on-property-read localStorage;
 123.chinaso.com##.right-list6
 123.chinaso.com##.right-list6
@@ -62123,6 +62134,7 @@ zztt24.com##.no-mask
 123cha.com##div.n_ads_box,img[src^="./2568"]
 123du.cc###fgg2,#fgg1,#divtop2,#divtop1,[style^="height:252px;"],[style="height:200px;"]
 123kubao.com##[width="960"][heigh="90"],.listforum
+123movies.net,2umovies.me,4anime.biz,4anime.gg,9anime.tube,actvid.com,animebee.to,animefreak.site,animefreak.ws,animefrenzy.net,animeheaven.pro,animekisa.in,animekisa.tv,animepahe.cc,animixplay.to,apkmody.io,batotoo.com,bravoporn.com,coloredmanga.com,dembed1.com,dramacool.pk,dulu.to,filmlinks4u.cam,filmyzilla.autos,filmyzilla.makeup,gogoanime.be,gogoanime.co.in,gogoanime.lol,gogoanime.run,gogoplay1.com,goload.pro,hds-streaming-hd.com,herogayab.net,hhdmovies.cam,hindilinks4u.cam,hothit.me,hurawatch.cc,iflixmovies.com,jujutsukaisen-manga.online,jujutsukaisenonline.net,linksly.co,mangadna.com,mangahere.today,manganatos.com,mangas-raw.com,mangceh.cc,membed.net,messitv.net,miraculous.to,movierulz.cam,movies-watch.com.pk,movies.ninja,mp3fromyou.tube,ngomik.net,nkiri.com,playlist-youtu.be,pomvideo.cc,prmovies.bz,prmovies.cam,prmovies.fyi,prmovies.li,prmovies.org,prmovies.re,putlocker.vc,putlockers.fm,putlockers.li,rawkuma.com,sockshare.ac,ssoap2day.to,tamilyogi.best,vanime.co,waploaded.com,wat32.tv,watchofree.com,watchomovies.cam,watchomovies.net,watchseries.cyou,watchseries.ninja,wcostream.cc,webtoonshare.com,y-2mate.com,yomovies.bz,yomovies.pl,yomovies.pm,yomovies.ws,ytmp3.cc,yts-subs.com##iframe[style*="z-index: 2147483647"]
 123moviesgo.club#$#abort-on-property-write atAsyncContainers
 123movieshub.tc,123freemovies.net,123movies.ai,123movies.bike,adblockplustape.com,adblockstreamtape.art,adblockstreamtape.site,adblockeronstreamtape.xyz,animepahe.com,bigtitsxxxfree.com,configspc.com,dood.la,dood.pm,dood.so,dood.to,dood.video,dood.watch,dood.wf,dood.ws,doodstream.co,doodstream.com,fastream.to,govid.me,hclips.com,hd-analporn.com,hotmovs.com,hxfile.co,iframe-secured.com,komikcast.com,mavavid.com,mixdrop.co,mstream.best,mstream.fun,mstream.icu,mstream.press,mstream.space,mstream.tech,mstream.website,mstream.xyz,mystream.io,mystream.to,onetouchtv.me,pandamovies.pw,perfectgirls.net,porn.com,porndollz.com,pornhat.com,prmovies.bz,realgfporn.com,rlslog.net,rule34hentai.net,stapewithadblock.monster,strcloud.club,strcloud.link,streamadblockplus.com,streamadblockplus.xyz,streamta.pe,streamtape.cc,streamtape.com,streamtape.net,streamtape.to,streamtape.xyz,streamtapeadblock.art,strtape.cloud,strtape.site,strtape.tech,strtapeadblock.me,vidstreaming.io,vidstreamz.online,w-123movies.com,xnxxvideo.pro,xvideosxporn.com#$#abort-on-property-read open
 123proxy.biz###cookieConsentUR99472
