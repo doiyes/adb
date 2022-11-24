@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: iYQXOzQnj/fvjglTlHCgxQ
+! Checksum: 4ulxkWqRwfExi2uNXEwPYA
 ! Title: AdFilters-noDNS
 ! Expires: 24 hours
-! Version: 202211232218
-! Last Modified: 202211232218
+! Version: 202211242217
+! Last Modified: 202211242217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -4245,6 +4245,7 @@
 ###mini-ad
 ###mobile-adhesion
 ###mobile-ads-ad
+###mobile-footer-ad-wrapper
 ###mobile-index > div#vodbm
 ###mobile-index > div[id^="ins"]
 ###mobile-swipe-banner
@@ -14173,6 +14174,7 @@
 ##.iqadlinebottom
 ##.iqadmarker
 ##.iqadtile_wrapper
+##.is-ad
 ##.is-carbon-ad
 ##.is-desktop-ads
 ##.is-mpu
@@ -21560,6 +21562,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 .com/s/at?site
 .com/sc/*?n=$script,third-party
 .com/sc/*?n=$script,third-party
+.com/sh/to/$script,third-party
+.com/sh/to/$script,third-party
 .com/ss/*sessionId=
 .com/ss/ad/
 .com/static/js/ad.js
@@ -28968,7 +28972,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /kameleoon.js
 /kameleoon.min.js
 /kameleoon/script.
-/kampyle.js
 /kan/ads/dl.js
 /kan/ads/dl.js
 /kan/js/dian.js
@@ -31186,10 +31189,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /s_trans.gif?
 /s_trans_nc.
 /sa-tracker-
-/sa.asp?wg&df=$script,third-party
-/sa.asp?wg&df=$script,third-party
-/sa.asp?wsg&df=$script,third-party
-/sa.asp?wsg&df=$script,third-party
 /sa.gif?
 /sa.gif?
 /safelinkconverter.js
@@ -31201,6 +31200,10 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /save_stats.php?
 /savetracking?
 /sayac.html
+/sb.asp?wg&df=$script,third-party
+/sb.asp?wg&df=$script,third-party
+/sb.asp?wsg&df=$script,third-party
+/sb.asp?wsg&df=$script,third-party
 /sb.logger.js
 /sb.trackers.js
 /sbhf.js$script,third-party
@@ -32892,6 +32895,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /uplimg/ads/*
 /upload/ads/*
 /upload/ads/*$domain=~ads.ae
+/upload/site/tbgg/*.gif
+/upload/site/tbgg/*.gif
 /upload/vod/2018-08-05/201808051533458526.png
 /upload/vod/2018-08-05/201808051533458526.png
 /uploaded/ads/*
@@ -33879,9 +33884,11 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ://tru.am^
 ://tru.am^$third-party
 ://wa.*/s?$image
+://yandex.ru^$app=com.alex_ip.coins
 ://yandex.ru^$app=com.avito.android
 ://yandex.ru^$app=com.droid27.d3flipclockweather
 ://yandex.ru^$app=com.gazstation
+://yandex.ru^$app=com.jagplay.client.android.app.thousand.hd
 ://yandex.ru^$app=kz.krisha
 ://yandex.ru^$app=kz.tengrinews
 ://yandex.ru^$app=ru.innim.my_finance
@@ -35583,7 +35590,7 @@ anoneko.com,dmhy.org,ye1213.com##div[id$="_ad"] > a:first-child > img
 anoneko.com,dmhy.org,ye1213.com##div[id$="_ad"] > a:first-child > img
 anonymouse.org###mouselayer
 anonymouse.org##.mouselayer
-anoopcnair.com,apkmirror.com,beckernews.com,bizpacreview.com,browserhow.com,constructionreviewonline.com,net-load.com,planetanalog.com,roadaheadonline.co.za,windowslatest.com,yugatech.com##.ai_widget
+anoopcnair.com,apkmirror.com,beckernews.com,bizpacreview.com,browserhow.com,constructionreviewonline.com,hard-drive.net,net-load.com,planetanalog.com,roadaheadonline.co.za,windowslatest.com,yugatech.com##.ai_widget
 anqu.com##.game-ul.mb25,.adsbygoogle,#view1_bg,.guang1000,[src^="http://img.xa9t.com/html/click/"]
 anquan.org##.aside_profile_activity > div:first-child
 anquan.org##.aside_profile_activity > div:first-child
@@ -37104,7 +37111,6 @@ bestfriendsclub.ca###theme-top-section > .section-content
 bestie.vn###ads_fullscreen
 bestie.vn##.viewmore-after-ads
 bestjavporn.com,asianmilfhub.com##.happy-under-player-mobile
-bestjavporn.com,hentaiasmr.moe,stockingfetishvideo.com##.happy-header-mobile
 bestlifeonline.com,eatthis.com##.inline
 bestlifeonline.com,eatthis.com,hellogiggles.com##.vi-video-wrapper
 bestlifeonline.com,hellogiggles.com##.widget_gm_karmaadunit_widget
@@ -38061,13 +38067,13 @@ canberratimes.com.au,examiner.com.au,theland.com.au##div[id^="newswell-side-"]
 canberratimes.com.au,examiner.com.au,theland.com.au,whoscored.com###billboard-container
 cangjige.net##.wp[style="height:36px;padding-top:15px;"]
 cangjige.net##.wp[style="height:36px;padding-top:15px;"]
-cangku.icu##.mb-4.slider
-cangku.icu##.mb-4.slider
 cangku.in##.ad-index,.single-top-ad,.sidebar-game,.panel-zan
 cangku.in,cangku.moe,enjoymore.fun,got001.com,iwan.baidu.com,qq.com,qtv.com.cn,xinhuanet.com,zol.com.cn##.ad-box
 cangku.in,galacg.me,moneyweekly.com.tw###carousel-example-generic
-cangku.life##.slider
-cangku.life##.slider
+cangku.moe##.mb-4.slider
+cangku.moe##.mb-4.slider
+cangku.moe##.slider
+cangku.moe##.slider
 canhasbitcoin.com###adblock-message
 cankaoxiaoxi.com###qihupic
 cankaoxiaoxi.com###qihupic
@@ -39184,6 +39190,7 @@ cointalk.com##li.message:-abp-contains(hide this ad)
 cointelegraph.com##.componentAdbutler_UHZMO
 cointelegraph.com##.header-zone__banners
 cointelegraph.com##.sidebar__promo-button
+coinwarz.com##div[id^="ad"]
 coinweek.com##.g-389
 collectionofbestporn.com##.banner-mobile-header
 collectionofbestporn.com,imagebam.com,motherless.com##._ln-floater
@@ -42110,6 +42117,9 @@ fishki.net###fixed-mobile
 fishki.net##.mobile-float-nav.visible-xs.visible
 fishki.net#?#.list-view-items div.content__preview[-ext-has='> div.picture-holder > a[href="/go/"][target="_blank"]']
 fishki.net#?#div[class^="list-view"] > div[class^="content__intro-text"][-ext-has='> p.content__intro-text__author > a[href="/profile/543769"]']
+fistingplanet.com##.happy-footer-mobile
+fistingplanet.com##.happy-related-videos-mobile
+fistingplanet.com,bestjavporn.com,hentaiasmr.moe,stockingfetishvideo.com##.happy-header-mobile
 fitnessmagazine.com##.promoContainer
 fixolas.net##[href="http://fixolas.net/"] > IMG
 fixya.com###footerBanner
@@ -43756,6 +43766,8 @@ halktv.com.tr##.fixed-pub
 hall123.com,hi.people.com.cn##img[width="1000"]
 hall123.com,hi.people.com.cn##img[width="1000"]
 hamibook.com.tw##.custom-banners-cycle-slideshow
+hamivideo.hinet.net###overlays-ad
+hamivideo.hinet.net#%#//scriptlet("set-constant", "myPlayer.adDisplay", "undefined")
 hamodia.com##.oiomainlisting
 hanfan.cc##ins.adsbygoogle,div.widget_ui_ads
 hanhuazu.cc##.ad,[id^="ad"]
@@ -51553,6 +51565,7 @@ outofmemory.cn##.iloveoutofmemory660
 outofmemory.cn##.iloveoutofmemory660
 outofmemory.cn##.tgBar
 outofmemory.cn##.tgBar
+outputter.io###content > section.html
 outrch.com/api/mailings/opened$image
 ouyaoxiazai.com##.ad_show,.qzhengfu,[href^="http://12808.url.tudown.com/down/"]
 ouyaoxiazai.com##.ad_show_1
@@ -52721,6 +52734,8 @@ py91.net##.widget_textads
 pythonheidong.com
 pythontab.com###head-bottom
 pythontab.com##div[style="margin-bottom: 4px;"]
+pythonthree.com##.astra-advanced-hook-7063
+pythonthree.com##.sidebar-main
 pythonworld.ru##.pythonworld-contributor
 pzzc.net##.portal_block_summary
 pzzc.net##.portal_block_summary
@@ -53490,6 +53505,8 @@ remenxs.com##div[class^="yd_ad"],div[class^="ml_ad"],div.sk1,div[class^="xsad_"]
 renaultpassonxperience.co
 reneweconomy.com.au###text-46
 reneweconomy.com.au,thedriven.io##.sq_get_quotes
+renfei.net#$#.ant-modal-root { display: none !important; }
+renfei.net#$#body { overflow-y: auto !important; }
 rennrad-news.de##.mtbnews-forum__mobile-top
 rennrad-news.de,mtb-news.de##.mtbnews-top
 renonr.com##.below-header-widgets
@@ -57791,6 +57808,7 @@ washingtonpost.com##.pb-lgmod
 washingtonpost.com##.pb-sm.pt-sm.b
 washingtonpost.com##.social-tools-wrapper-bottom
 washingtonpost.com##.sticky-promo
+washingtonpost.com##.tableAd1
 washingtonpost.com##[data-qa="article-body-ad"]
 washingtonpost.com##[data-qa="right-rail-ad"]
 washingtonpost.com##[data-sc-c="adslot"]
@@ -59968,7 +59986,6 @@ zahuishi.com##.show2960x90
 zahuishi.com##.show2960x90
 zaikai.jp##div[id^="ad25"]
 zakon.kz##.adblock_alert
-zalando.be,zalando.ch,zalando.co.uk,zalando.cz,zalando.de,zalando.dk,zalando.ee,zalando.es,zalando.fi,zalando.fr,zalando.ie,zalando.it,zalando.lv,zalando.no,zalando.pl,zalando.se,zalando.si##.noqro0oc_jFfn2AAKrdMo
 zalra.cn##DIV.txthtml a,DIV.txthtml[style="height:320px"]
 zambianeye.com##.box_skitter
 zanghaihua.org##div[id$="_adtop"]
