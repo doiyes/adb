@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: K3z+mXeWpxJbEkavIeB9yQ
+! Checksum: r1cAA9zB9m97VxBdEefj9w
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202211242217
+! Version(Last Modified): 202211252217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -762,7 +762,10 @@
 ##A[href^='http'][style^='display:block;left:0;right:0;position:fixed;border-left:']
 ##DIV#ad-index.col-12.position-relative
 ##DIV.bot-per-context[data-width='728'][data-height='90']
+##DIV.box-width.ec-ad
+##DIV.box-width.ec-ad.ec-ad-double.flex
 ##DIV.col-4.col-sm-2.col-xl-2.px-1.px-sm-2.pb-3.pt-3.pt-sm-0.d-block.d-sm-none
+##DIV.ec-ad.tim-box
 ##DIV.fixed-bottom.d-block.d-sm-none.movies_ad
 ##DIV.myui-content__acc[style='position: relative;padding: 0 10px']
 ##DIV.sptable_do_not_remove f_one
@@ -2633,7 +2636,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 .com/rmb/palyyoubian.js
 .com/s/at?site
 .com/sc/*?n=$script,third-party
-.com/sh/to/$script,third-party
+.com/sh/to/$script,xmlhttprequest,third-party
 .com/ss/*sessionId=
 .com/static/js/ad.js
 .com/stats.ashx?
@@ -13656,6 +13659,7 @@ bbs.yawin.cn##div.ad,a[href^="http://bbs.yawin.cn/ad/"]
 bbs.zhongsou.com##div.lt_gg960,div.gg1p6p6,div.marketingad01,div.lt_ggao_wei
 bbs.zol.com.cn##div#bbsAd
 bbs99.club##[class="wp a2_h"],.a_2mu,.ad,.a_pb
+bbsmax.com
 bbsyl.cn###ggwehaoyi,table[style="width:100%;height:10%;"],[width="980"][height="90"],[src^="/ads/"]
 bcbay.com##.ad_txt_box
 bcbay.com##.discuss + table
@@ -14041,6 +14045,7 @@ bookgew.com###AdsT
 booklink.me##ins.adsbygoogle
 booklink.me,p9.com.tw###ad2
 booklog.jp##.ad-middle
+bookmaker-ratings.ru##.branding-top-wrapper
 bookmeter.com##.application__ads
 bookrb.com##a[href="/rmtj.html"]
 books.com.tw##.header_box_pop > [class^="flash_banner"]
@@ -14257,6 +14262,7 @@ caoporn.com###middleimg,[height="75"],img[height="315"],#alltext,[height="180"],
 caoporn.com##.jw-icon-replay-contain > div[style^="display: block; position: absolute; background-color: white; width:"]
 capitalweek.com.cn##.ArtCAD,.RightTAD,#news_middle_ad,#news_middle_top_ad
 carandbike.com###top_banner_ad
+caranddriver.com#?#section > div[class]:-abp-has(> div.ad-container)
 cardu.com.tw###crazy_layer
 cardu.com.tw##.diamond-txt-ad
 cardu.com.tw##.gold-big-ad
@@ -16245,6 +16251,7 @@ filext.com##.dap-wrap
 filmaker.cn###frame2gS3Ea
 filmcompanion.in###adsSection
 filmcompanion.in##.header-topads
+filmdaily.co##.fd-article-top-banner
 filmibeat.com##.photos-add
 filmibeat.com,goodreturns.in###first-ad > *
 filmibeat.com,goodreturns.in###mobifooterad
@@ -19399,6 +19406,9 @@ ld0766.com###portal_ad3
 ld0766.com##.rsf_pull_screen_adv
 ldmnq.com##.dialog-game
 ldqk.xyz#@#.google-ad
+ldqk.xyz,masuit.com##.bs-slider
+ldqk.xyz,masuit.com##.ibox-content > .wow[id]
+ldqk.xyz,masuit.com#?#.panel:-abp-has(>.panel-body>a>img)
 le.com###a_body_11628
 le.com###a_title_11628
 le.com###full_Column_big,#full_Column_small,#newDaoliu,rightBottomPop,[class^="bottom_layer"],.ztm_head,.hv_play_poster
@@ -20655,11 +20665,6 @@ mashingup.jp##.p-FloatPost
 masok.cn###bottomLayer
 masturbation22.com,playallvideos.com,pron.co,ratedxbiz.com,taporn.com##.ima
 masturhub.com##iframe[width="300"][height="100"]
-masuit.com###bootstrap-touch-slider
-masuit.com###list > .box-right > .wow[id]
-masuit.com##.ibox-content > .wow[id]
-masuit.com##.protected
-masuit.com#?#.panel:-abp-has(>.panel-body>a[href^="/partner/Redirect/"])
 material.xl7.xunlei.com
 materialtools.com#@#.ad-center
 math-prosto.ru###center > div[style^=" max-width: 800px;width: 100%;"]
@@ -21970,6 +21975,7 @@ papa8888.com,papashequ.com##div.wp.a_h,div.wp.a_mu
 papalah.com##.video-ads,.ads-leaderboard
 papalah.com#%#//scriptlet("abort-on-property-read", "adBlockDetected")
 parallelsdesktop.cn
+parismatch.com##.lmn-habmob
 park.zunmi.cn
 parkingcrew.net
 paroles.net##div[style="min-height:250px;"]
@@ -22143,6 +22149,7 @@ pianba.tv,pianba.net##.play-btn > a[target="_blank"]
 pianhd.com###myCarousel
 pianku.me###playad
 pianma.net##.cpcad
+pianshen.com
 pianyuan.la/slade.js
 pianyuan.org###myModal
 pianyuan.org,qixingquan.com##.modal-backdrop
@@ -22316,7 +22323,7 @@ pornovsem.net##.video-wide-br
 pornpapa.com##.mobile-device
 porntrex.com###index-link
 porntrex.com##.pop-adv
-porntrex.com,daftsex.com##iframe[src^="https://a.adtng.com/"]
+porntrex.com##iframe[src^="https://a.adtng.com/"]
 porntrex.com,sleazyneasy.com,vikiporn.com,m.katestube.com,xhamster.com##.pop-fade
 porntube.com##.interstitial
 pornwatchers.com,stileproject.com##.mobile-vda
@@ -23177,6 +23184,7 @@ segmentfault.com###gridAd
 segmentfault.com#?##question-wrap > .row > .col-xl-auto:-abp-has(> #first-ad:first-child + #gridAd + #second-ad:last-child)
 segodnya.ua##.branding-under-menu
 seiga.nicovideo.jp##div[data-ads-name]
+seikantai.er0.buzz###glkab
 sejie4.com##.ad
 sekai-kabuka.com##div[style="width:768px;height:240px;position:relative;"]
 sekai-kabuka.com##div[style^="height:100px;width:300px"]
@@ -24168,6 +24176,7 @@ tgfcer.com##div[id^="ad_thread"]
 th7.cn###PcPoPmarket
 th7.cn##.main > .mb5
 th7.cn##div[style^="display: block; width: 200px; height: 200px;"]
+the-sun.com##.amp-adv-wrapper
 the-sun.on.cc#@##ContentAd1
 theage.com.au,smh.com.au#@#div[id^="_"] > iframe[scrolling="no"][src^="http"][width][height][frameborder="0"]
 theatlantic.com##.ad-loaded
@@ -24505,6 +24514,8 @@ trustedgatetocontent.com
 trustedreviews.com###dfpIdtop
 trustedreviews.com##.ebay-deals-container
 trustedreviews.com##.ipc-advert
+truyenqqpro.com###ad_info
+truyenqqpro.com###ad_info_top
 tryboobs.com###spotsTop
 ts.cn##.gg1,.gg2,.gg3,.gg4,#topgg
 tsargrad.tv##.article__content + div.article__footer ~ div.article__footer
@@ -25476,7 +25487,9 @@ wunderweib.de##amp-embed[type="doubleclick"]
 wuxi.cn##.ada1,.ada2,.ada3,.adgood
 wuxianfuli.com##div.couplet_ad,div#text-13.s-list,div#text-16.s-list,div#text-8.s-list,DIV.s-list:first-child,DIV#primary > A > IMG[src*="sinaimg.cn/mw690/60006c33jw1"],DIV.textwidget:first-child > A > IMG[src*="sinaimg.cn/mw690/60006c33j"]
 wuyanzhai.com
+wuyong.fun##.content-area .adsbygoogle
 wuyong.fun##.riplus_ads_wrap
+wuyong.fun#?#.sidebar-innter > section[id^="b2-widget-html-"]:-abp-has(.adsbygoogle)
 wuzuowei.net##.asb
 wwdjapan.com##.sp-infeed-ad
 wwdjapan.com##.wwdja-sp-bigpanel
@@ -26485,8 +26498,8 @@ youdao.com#@#.share-text
 youflix.is##main > #detail_main + div[style="margin-bottom:-20px;"] > .content_vlist
 youivr.com##.header-widget-region
 youjizz.com###mobileRollAd
+youjizz.com###underPlayerPr
 youjizz.com##.bottom_pr
-youjizz.com##.underPlayerPr
 youjizz.com#%#AG_defineProperty('config.ads.mobilePopunder', {value: false});
 youku.com###bt-banner
 youku.com###download_btn
@@ -27207,6 +27220,7 @@ zztt24.com##.no-mask
 ||053tyfg.com^
 ||0551huayanbdf.com^
 ||0554xx.cn/gg2.js
+||056opui.com^
 ||0573fang.com/ads/
 ||0573fang.com/upimg/switch/
 ||0575bbs.com/js/float.js
@@ -28389,6 +28403,7 @@ zztt24.com##.no-mask
 ||360.cn/int/getadurls?
 ||360.cn/mapping_service?
 ||360.cn/popup/popinfo/
+||360600.xyz^
 ||360640.com^
 ||360buyimg.com$domain=73thz.com
 ||360buyimg.com/babel/jfs/t1/209256/22/21888/60206/627b7a6aEa5f2d78b/219868beb169203f.jpg
@@ -29018,6 +29033,7 @@ zztt24.com##.no-mask
 ||5nj.com/images/appdown.gif
 ||5nj.com/js/cnzz
 ||5p0utbv2mjq1.www.earthclassmail.com^
+||5pe6.fun^
 ||5pub.com^
 ||5s34y422.cn^
 ||5s98.com/img/
@@ -40424,8 +40440,10 @@ zztt24.com##.no-mask
 ||dbankcloud.ru^
 ||dbex-tracker-v2.driveback.ru^
 ||dbfocus.jp^$third-party
+||dbhsejcg-meetup-com.cdnjs.network^
 ||dbkdwe1.com^
 ||dblcs.cn^
+||dbmcmhh.cn^
 ||dbmp4.com/js/foot.
 ||dbncp.com^
 ||dbncp.com^$third-party
@@ -46865,6 +46883,7 @@ zztt24.com##.no-mask
 ||hntiantai.cn^
 ||hntymg.com^
 ||hnwjlhg.cn^
+||hnws.xyz^
 ||hnxahz.com^
 ||hnxbls.cn^
 ||hnycwh.cn^
@@ -47039,6 +47058,7 @@ zztt24.com##.no-mask
 ||hqcqz2.cn^
 ||hqcx.net/images/baidu.jpg
 ||hqcx.net/index.php?m=poster&
+||hqdfh.mobi^
 ||hqdoor.com/Web/
 ||hqf.aldkfsd.cn^
 ||hqgjcm.com^
@@ -48384,6 +48404,7 @@ zztt24.com##.no-mask
 ||inside-channels.ch/proxy/engine/api/v1/auth/ping/
 ||inside-graph.com^$third-party
 ||inside-it.ch/proxy/engine/api/v1/auth/ping/
+||insiderdata360online.com/service/platform.js
 ||insight.fonecta.fi^
 ||insight.mintel.com^$third-party
 ||insight.olx.ba^
@@ -50119,6 +50140,7 @@ zztt24.com##.no-mask
 ||kaoyan.com/school/final_class.html
 ||kaoyan.com/school/js/yz.school.packed.js
 ||kaoyan1v1.com/IAA/
+||kapsmnd.cyou^
 ||kaqweqrdf.com^
 ||karelia.info/counter/
 ||kasdwergv.com^
@@ -50702,6 +50724,7 @@ zztt24.com##.no-mask
 ||kxd56.com/qq.js
 ||kxd56.com/tg.gif
 ||kxewpz.com^
+||kxizloe.cn^
 ||kxji.com^$third-party
 ||kxla.xyz^
 ||kxlidd.ink^
@@ -51628,6 +51651,7 @@ zztt24.com##.no-mask
 ||ljth.hk^
 ||ljwckj.love^
 ||lk.4jzl.cn^$third-party
+||lkjrx.xyz^
 ||lkkskdkfjdk.qiangquanvip.com^
 ||lkm.bangyuandianzi.top^
 ||lknmnnr.xyz^
@@ -55534,6 +55558,7 @@ zztt24.com##.no-mask
 ||niblewren.co^
 ||nice264.com/data?$third-party
 ||nicearticle.cc^
+||nicelinks.site/ad-block-
 ||nicelook.cn^
 ||nicequest.com^$third-party
 ||nickhel.com^
@@ -56039,6 +56064,7 @@ zztt24.com##.no-mask
 ||odc.1und1.de^
 ||oddyqw.com^
 ||odessaaccommodations.com/counter.php
+||odfykc.cn^
 ||odkxgwl.cn^
 ||odnaknopka.ru/stat.js
 ||odoscope.cloud^$third-party
@@ -56817,6 +56843,7 @@ zztt24.com##.no-mask
 ||pagead.
 ||pagead2.
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$redirect=googlesyndication-adsbygoogle,domain=youneed.win
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=wuyong.fun,important
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=xiebruce.top
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,domain=linovelib.com
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,domain=m.twfanti.com,important
@@ -58282,6 +58309,7 @@ zztt24.com##.no-mask
 ||pushly.com/pushly-event-tracker
 ||pushmaster-cdn.xyz^
 ||pushnami.com^$third-party
+||pushowl.com^$third-party
 ||pushpro.io/api/logging/
 ||pushprofit.ru^$third-party
 ||pushpushgo.com^$third-party
@@ -62104,6 +62132,7 @@ zztt24.com##.no-mask
 ||sl.sogoucdn.com/semob$empty,popup
 ||sl00ufi.cn^
 ||sl6.top^
+||slack-edge.com/bv1-10/slack_beacon.
 ||slack.com/beacon/
 ||slack.com/clog/track/
 ||slackb.com^
@@ -64176,6 +64205,7 @@ zztt24.com##.no-mask
 ||startup.mobile.yandex.net^$app=ru.pikabu.android
 ||startup.mobile.yandex.net^$app=ru.ria.ria
 ||startup.mobile.yandex.net^$app=ru.rian.reader
+||startup.mobile.yandex.net^$app=ru.rp5.rp5weatherhorizontal
 ||startup.mobile.yandex.net^$app=ru.sports
 ||startup.mobile.yandex.net^$app=ru.subprogram.guitarsongs
 ||startup.mobile.yandex.net^$app=ru.swc.yaplakalcom
@@ -68610,6 +68640,7 @@ zztt24.com##.no-mask
 ||tzbtw.com^
 ||tzcfyre.cn^
 ||tzcfyre.cn^
+||tzegilo.com^
 ||tzfdc.com.cn/userfiles/flash/
 ||tzfdc.com/Images/09/flv/flv_index.js
 ||tzfdc.com/fdcSell/
@@ -70551,6 +70582,7 @@ zztt24.com##.no-mask
 ||wfpersonal.site^
 ||wfslj.cn^
 ||wfyqc.com^
+||wganilgle.cyou^
 ||wgdacc.com^
 ||wghjq.cn^
 ||wglbx.ltd^
@@ -70571,6 +70603,7 @@ zztt24.com##.no-mask
 ||whdx.cc/js/
 ||where.ud783c02.com^
 ||wheredoyoucomefrom.ovh^$third-party
+||wheregoes.com/api/event
 ||whfpbc.99.com.cn^
 ||whfyhouse.com^
 ||whhd.gov.cn^$script,third-party
@@ -70899,6 +70932,7 @@ zztt24.com##.no-mask
 ||wph2.destinia.us^
 ||wpib0jr.cn^
 ||wples.com/pc/common.js
+||wpozwh.com^
 ||wpqmiq.cn^
 ||wpqsmse.cn^
 ||wps.cn/api/pre_download?dist=
@@ -71891,6 +71925,7 @@ zztt24.com##.no-mask
 ||wymiana.org/stat/
 ||wyovhzs.cn^
 ||wyqaafplm.live^
+||wyqaafplm.live^
 ||wysistat.com^$third-party
 ||wyttech.cn^
 ||wyunion.com^
@@ -72478,6 +72513,7 @@ zztt24.com##.no-mask
 ||xpysozb.cn^
 ||xq12.com^
 ||xqc23.jnyayk.xyz^
+||xqcjfcb.cn^
 ||xqiyi.top^
 ||xqoekp.cn^
 ||xqtzp.cn^
@@ -72760,6 +72796,7 @@ zztt24.com##.no-mask
 ||yandex.ru^$app=ru.idaprikol
 ||yandex.ru^$app=ru.pikabu.android
 ||yandex.ru^$app=ru.ria.ria
+||yandex.ru^$app=ru.rp5.rp5weatherhorizontal
 ||yandex.ru^$app=ru.sports
 ||yandex.ru^$app=ru.swc.yaplakalcom
 ||yandex.ru^$app=ru.topradio
@@ -72922,6 +72959,7 @@ zztt24.com##.no-mask
 ||yfkgnqu.cn^
 ||yfot.com.cn^
 ||yfp.intuit.com^
+||yfue99.xyz^
 ||yfunkgk.cn^
 ||yfygs.cn^
 ||yg006.com/attachment/js/
