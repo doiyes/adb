@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: r1cAA9zB9m97VxBdEefj9w
+! Checksum: 7qVMFwnHwVtkzDPS3IrSYg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202211252217
+! Version(Last Modified): 202211262216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -1032,6 +1032,7 @@
 ##a[href$="/liyusheng.com"]
 ##a[href$="/lol8.co"]
 ##a[href$="/q522p.com"]
+##a[href$="/tv826.com"]
 ##a[href$="/xh8k.vip"]
 ##a[href$="/xha77.com"]
 ##a[href$="/xhg23.com"]
@@ -2636,7 +2637,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 .com/rmb/palyyoubian.js
 .com/s/at?site
 .com/sc/*?n=$script,third-party
-.com/sh/to/$script,xmlhttprequest,third-party
+.com/sh/to/$script,third-party,xmlhttprequest
 .com/ss/*sessionId=
 .com/static/js/ad.js
 .com/stats.ashx?
@@ -10264,6 +10265,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 @@||api.touchnote.io^$xmlhttprequest,domain=app.touchnote.com
 @@||api.transcend.io/privacy/graphql$xmlhttprequest,domain=privacy.patreon.com
 @@||api.tv.sohu.com/mobile_user/device^$app=com.sohu.sohuvideo
+@@||api.us1.exponea.com^$script,xmlhttprequest,domain=walmartpetrx.com
 @@||apis.google.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
 @@||apk.tw^*/ads.js$script,~third-party
 @@||apkpure.com^$generichide
@@ -10991,6 +10993,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 @@||googleads.github.io/videojs-ima/node_modules/video.js/dist/video-js.min.css$domain=setn.com
 @@||googleads.github.io/videojs-ima/node_modules/video.js/dist/video-js.min.css$domain=ulifestyle.com.hk
 @@||googleads.github.io/videojs-ima/node_modules/video.js/dist/video.min.js$domain=setn.com
+@@||googleads4.g.doubleclick.net^$domain=renfei.net
 @@||googleadservices.com/pagead/conversion_async.js$script,domain=jp.square-enix.com
 @@||googleadservices.com^$app=com.google.android.music
 @@||googleadservices.com^|$app=com.google.android.youtube
@@ -11816,6 +11819,7 @@ $xmlhttprequest,third-party,domain=alltube.pl|alltube.tv
 @@||redguide.top^*/ad.css?$stylesheet
 @@||refworks.proquest.com/public/js/tracking.js$~third-party
 @@||regapi.37.com/api/p_register.php?login_account=
+@@||renfei.net^$generichide
 @@||repairtrackingsite.nintendo.eu/Tracking/$subdocument,domain=nintendo.co.uk
 @@||report-ads-to.pubnation.com/dist/pnr.js?t=$domain=m.neogaf.com
 @@||repubblica.it/pw/pw.js?deskurl=$domain=gelocal.it|ilsecoloxix.it|lastampa.it
@@ -15704,6 +15708,7 @@ dytt5.net##body > div[style="overflow: hidden;"]:nth-child(3)
 dyttw.com.cn##td[align="center"][valign="middle"][bgcolor="#FFFFFF"] > table[width="1210"] > tbody > tr > td[height="55"]
 dyxia.com##[id^="qj960"],#xinxi
 dyxs11.com###play-pause
+dyxs11.com,dianyingim.com##.shortcuts-m-overlay
 dyxs11.com,dyxs12.com,dyxs13.com,dyxs14.com,dyxs15.com,dyxs20.com###player_pic
 dyxs11.com,dyxs12.com,dyxs13.com,dyxs14.com,dyxs15.com,dyxs20.com##.popup-tips
 dyxs11.com,dyxs12.com,dyxs13.com,dyxs14.com,dyxs15.com,dyxs20.com##body > .shortcuts-mobile-overlay
@@ -17885,6 +17890,7 @@ iciba.com##.pc-entry
 iciba.com##.recommend-item:not([href*=".iciba."])
 iciba.com##div#ad_right_box,img[width="960"][height="60"],div[class="ad_list"],div#bottom_ad,div.kk01,div#ad-top,div.pc-entry.pc-entry-1380,div.dict_right5,.adsbygoogle,.search-ad
 iciba.com##div.newpc-entry
+iciba.com##div[class^="Kyad_"]
 iclickcdn.com
 icode9.com
 iconarchive.com##DIV#fbpop
@@ -24252,7 +24258,7 @@ tianyatorrents.info##[height="60"],[height="70"]
 tianyibook.com###adtop
 tiboo.cn##.sectionAd
 ticotimes.net##div[class^="ticot-"]
-tie.163.com,uump4.net###top-banner
+tie.163.com,uump4.com,uump4.net###top-banner
 tieba.baidu.com###celebrity
 tieba.baidu.com###diversBanner
 tieba.baidu.com###guide_fc,#global_notice_wrap,.content_top,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
@@ -26297,6 +26303,7 @@ yahoo.com###crazyAD
 yahoo.com###crazyad_mask
 yahoo.com###hp-ad-left
 yahoo.com###hp-ad-right
+yahoo.com###module-appPromoBanner
 yahoo.com###module-pencilAd
 yahoo.com###my-adsFPL,.js-stream-featured-ad
 yahoo.com###my-adsHPSPON
@@ -31403,6 +31410,7 @@ zztt24.com##.no-mask
 ||abminbuy.com/QQ
 ||abminbuy.com^*.gif
 ||abmr.net^$third-party
+||abn.lczk.cn^
 ||abnad.net^
 ||abncx.amv.fr^
 ||abo.schibsted.no^
@@ -31684,6 +31692,7 @@ zztt24.com##.no-mask
 ||acys.fun^
 ||ad*.nexage.com^
 ||ad-
+||ad-*.appacc.dbankedge.cn^
 ||ad-1258444056.cos.accelerate.myqcloud.com^
 ||ad-api.cnblogs.com^
 ||ad-api.ehawk.com^
@@ -32771,6 +32780,9 @@ zztt24.com##.no-mask
 ||adwordsing.com/img/2.jpg
 ||adwstats.com^$third-party
 ||adx-
+||adx-*.dbankcloud.
+||adx-*.dbankedge.cn^
+||adx-*.op.dbankcloud.com.edgekey.net^
 ||adx-dre.op.hicloud.com^
 ||adx-open-service.youku.com^
 ||adx-tk.rayjump.com^
@@ -36227,6 +36239,7 @@ zztt24.com##.no-mask
 ||bjdianyue.com^
 ||bjeai.com^
 ||bjfbac.hyundaivaudreuil.com^
+||bjfc.xyz^
 ||bjgztt.com^
 ||bjhockey.org/public/pc/video/test.mp4
 ||bjhuhangjy.com^
@@ -40434,10 +40447,6 @@ zztt24.com##.no-mask
 ||dayyfq.rapidonline.com^
 ||dazhantai.com^
 ||db-ip.com^$third-party
-||dbankcloud.asia^
-||dbankcloud.cn^
-||dbankcloud.eu^
-||dbankcloud.ru^
 ||dbex-tracker-v2.driveback.ru^
 ||dbfocus.jp^$third-party
 ||dbhsejcg-meetup-com.cdnjs.network^
@@ -47066,6 +47075,7 @@ zztt24.com##.no-mask
 ||hqol.cn/up/ad/
 ||hqq.tv/cdn-cgi/trace
 ||hqq.tv/js/counters.js
+||hqqpw.mobi^
 ||hqsjc.com^
 ||hqtlw.cn^
 ||hqwlm.com^
@@ -50558,6 +50568,7 @@ zztt24.com##.no-mask
 ||kpshx.douguo.com^
 ||kq7it3c6.club^
 ||kq7it3c6.xyz^
+||kq7k.icu^
 ||kqchxa.denizbutik.com^
 ||kqirf.xyz^
 ||kqnggnsd.fun^
@@ -50651,6 +50662,7 @@ zztt24.com##.no-mask
 ||kubam.cn^
 ||kucent.com^
 ||kufar-promo-block.s3-eu-west-1.amazonaws.com^$app=se.scmv.belarus
+||kufmbwm.cn^
 ||kugoucdn.com^*?_t=$xmlhttprequest
 ||kuguopush.com^
 ||kuheju.com^$popup
@@ -51070,6 +51082,7 @@ zztt24.com##.no-mask
 ||leixigroup.com^
 ||lejieti.com^
 ||lejlb.com^
+||lejso.com^
 ||leju.com/abp/cmslead_new.v2.js
 ||leju.com/scripts/app/pc/indexlayer/v1/indexlayer.js
 ||leju.com^*=abs.processReqChange
@@ -52195,6 +52208,7 @@ zztt24.com##.no-mask
 ||lxiu.shop^
 ||lxlidl.ink^
 ||lxqcgj.com^
+||lxrhw.xyz^
 ||lxsway.blogg.se^
 ||lxsway.nyheter24.se^
 ||lxting.com^
@@ -55266,6 +55280,7 @@ zztt24.com##.no-mask
 ||ncoeqz.today^
 ||ncom.dk^$third-party
 ||nct.ui-portal.de/gmx/gmx/s?$image,ping
+||nct.ui-portal.de^
 ||nctrk.abmail.com.br^
 ||ncwckj.com^
 ||ncx2.voyage-prive.it^
@@ -56022,6 +56037,7 @@ zztt24.com##.no-mask
 ||oajxkah.cn^
 ||oal2.destinia.co.uk^
 ||oanlisgk.fun^
+||oapsmnk.cyou^
 ||ob.leap.app^
 ||ob3o3r7.cn^
 ||obazhaheik.top^
@@ -57791,6 +57807,7 @@ zztt24.com##.no-mask
 ||pm2b.top^
 ||pmb*.tj.ali213.net/js/
 ||pmbox.biz^$third-party
+||pmcppla.cn^
 ||pmdatabase.xyz^
 ||pmetrics.performancing.com^
 ||pmo.ee/stats/
@@ -58570,6 +58587,7 @@ zztt24.com##.no-mask
 ||qg1v.adroition.net^
 ||qg8bq.top^
 ||qg9z.cn^
+||qganilgly.cyou^
 ||qgbtd.com^
 ||qgdvyvd.cn^
 ||qgfdqjf.cn^
@@ -60291,6 +60309,7 @@ zztt24.com##.no-mask
 ||s8bbs.com/ad/
 ||s8bbs.com/g.php?
 ||s8x1.com^
+||s93isp.top^
 ||s9o.co^
 ||s9w.cc^
 ||sa.adidas.com^
@@ -60653,6 +60672,7 @@ zztt24.com##.no-mask
 ||sapo.pt/Projects/sapoabd/
 ||sappmetrics.boostmobile.com^
 ||sappmetrics.sprint.com^
+||sapsmnb.cyou^
 ||sare25.com^$third-party
 ||sarov.ws^$third-party
 ||sas.com^$third-party
@@ -61882,6 +61902,7 @@ zztt24.com##.no-mask
 ||simengadx.com^
 ||simg.bwin.com^
 ||simg.gamebookers.com^
+||simi1234.com^
 ||simi345.me^
 ||simi456.me^
 ||simi567.me^
@@ -66342,6 +66363,7 @@ zztt24.com##.no-mask
 ||tf58.com^
 ||tfaftemail.com^
 ||tfdtpa.dot-st.com^
+||tffytdo.cn^
 ||tfg2.com/images/upfile/AD/
 ||tfg2.com/images/upfile/banner/
 ||tfptlgrw.co^
@@ -66364,6 +66386,9 @@ zztt24.com##.no-mask
 ||tgtgzo.otelz.com^
 ||tgu.tjqwb.cn^
 ||tgvtlpi.cn^
+||tgw.gmx.ch^
+||tgw.gmx.net^
+||tgw.web.de^
 ||tgwopez.cn^
 ||th-make.com^
 ||th.bing.com/th/*&riu=$image,third-party
@@ -70017,6 +70042,7 @@ zztt24.com##.no-mask
 ||walmart.com/client/api/metrics
 ||walmart.com/px/PXu6b0qd2S/init.js
 ||walmartimages.com^*/cdn-perf.min.js$domain=walmart.com
+||walmartpetrx.com/1Ct9c6G3/init.js
 ||walmeric.com^$third-party
 ||wan.$~image
 ||wan.liebao.cn/zt/
@@ -72007,6 +72033,7 @@ zztt24.com##.no-mask
 ||xalzny.xyz^
 ||xapi.ozon.ru^
 ||xatczs.cn^
+||xav*.icu/base/js/other.js
 ||xavua.com^
 ||xawsnngjljanxof.su^
 ||xaxdwz.xyz^
@@ -72880,6 +72907,7 @@ zztt24.com##.no-mask
 ||ycmedia.cn^$third-party
 ||ycooh.group^
 ||yctrs.top^
+||ycyipha.cn^
 ||yd.game4343.com^
 ||yd.gxdianhua.com^
 ||yd.linjuyihao.com^
