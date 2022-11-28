@@ -39,13 +39,16 @@ jobs:
           echo "ADGUARD_MOBILE_URL=https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt" >> $GITHUB_ENV
           echo "ADGUARD_CHINESE_URL=https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt" >> $GITHUB_ENV
           echo "ADGUARD_TRACK_URL=https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt" >> $GITHUB_ENV
+          echo "ADGUARD_BASE_URL=https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt" >> $GITHUB_ENV
+          echo "ADGUARD_URLTRACK_URL=https://filters.adtidy.org/extension/ublock/filters/17_optimized.txt" >> $GITHUB_ENV
+          echo "ADGUARD_SOCIAL_URL=https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt" >> $GITHUB_ENV
+          echo "ADGUARD_ANNOY_URL=https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt" >> $GITHUB_ENV
           echo "HACAMER_URL=https://hacamer.top/AdRule/rules-admin.txt" >> $GITHUB_ENV
           echo "HACAMER_URLF_URL=https://hacamer.top/AdRule/url-filter.txt" >> $GITHUB_ENV
           echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
           echo "DAMENGZHU_URL=https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" >> $GITHUB_ENV
           echo "CINGLIST_UBO_URL=https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt" >> $GITHUB_ENV
           echo "ZHIHU_URL=https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt" >> $GITHUB_ENV
-          echo "ADGUARD_DNS_URL=https://filters.adtidy.org/android/filters/15_optimized.txt" >> $GITHUB_ENV
           echo "CATSTEAM_DNS_URL=https://cats-team.github.io/AdRules/dns.txt" >> $GITHUB_ENV
           echo "GOPATH=$(dirname $GITHUB_WORKSPACE)" >> $GITHUB_ENV
           echo "$(dirname $GITHUB_WORKSPACE)/bin" >> $GITHUB_PATH
@@ -87,13 +90,17 @@ jobs:
           curl -sSL $ADGUARD_MOBILE_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' -e '/^$/d' > ./adguardmoblie.txt
           curl -sSL $ADGUARD_CHINESE_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' -e '/^$/d' > ./adguard-chinese.txt
           curl -sSL $ADGUARD_TRACK_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' -e '/^$/d' > ./adguard-track.txt
+          curl -sSL $ADGUARD_DNS_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-dns.txt
+          curl -sSL $ADGUARD_BASE_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-base.txt
+          curl -sSL $ADGUARD_URLTRACK_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-urltrack.txt
+          curl -sSL $ADGUARD_SOCIAL_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-social.txt
+          curl -sSL $ADGUARD_ANNOY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-annoy.txt
           curl -sSL $HACAMER_URL | sed -e '/^! /d' -e '1c ! hacamer移除一些烦人的元素' -e '/^!$/d' -e '/^$/d' > ./hacamer.txt
           curl -sSL $ADGK_URL | grep -v "^!"> ./adgk.txt
           curl -sSL $HACAMER_URLF_URL | sed -e '/^! /d' -e '1c ! 杏梢的URL过滤器' -e '/^!$/d' -e '/^$/d' > ./hacamer-url.txt
           curl -sSL $DAMENGZHU_URL | grep -v "^!" > ./jiekouad.txt
           curl -sSL $CINGLIST_UBO_URL | grep -v "]"> ./cinglist-ubo.txt
           curl -sSL $ZHIHU_URL | grep -v "]"> ./zhihu-strict.txt
-          curl -sSL $ADGUARD_DNS_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-dns.txt
           curl -sSL $CATSTEAM_DNS_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./catsteam-dns.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
