@@ -24,10 +24,11 @@ jobs:
           echo "EASYLISTCHINA_URL=https://easylist-downloads.adblockplus.org/easylistchina.txt" >> $GITHUB_ENV
           echo "EASYPRIVACY_URL=https://easylist-downloads.adblockplus.org/easyprivacy.txt" >> $GITHUB_ENV
           echo "CJXLIST_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" >> $GITHUB_ENV
+          echo "CJXUBLOCK_URL=https://github.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt" >> $GITHUB_ENV
+          echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
           echo "GENERALBLOCK_URL=https://github.com/lychichem/list/raw/master/mod/GeneralBlock.txt" >> $GITHUB_ENV
           echo "TIEBABLOCK_URL=https://github.com/o0HalfLife0o/list/raw/master/mod/TiebaBlock.txt" >> $GITHUB_ENV
           echo "IMBALIST_URL=https://gist.githubusercontent.com/imba-tjd/2c9817233ac6798d4f2bfe057f781ca5/raw/IMBALIST.TXT" >> $GITHUB_ENV
-          echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
           echo "ANTI_ADBLOCK_KILLER_FILTERS_URL=https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt" >> $GITHUB_ENV
           echo "ANTIADBLOCKFILTERS_URL=https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" >> $GITHUB_ENV
           echo "ABP_FILTERS_ANTI_CV_URL=https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt" >> $GITHUB_ENV
@@ -43,6 +44,7 @@ jobs:
           echo "ADGUARD_URLTRACK_URL=https://filters.adtidy.org/extension/ublock/filters/17_optimized.txt" >> $GITHUB_ENV
           echo "ADGUARD_SOCIAL_URL=https://filters.adtidy.org/extension/ublock/filters/4_optimized.txt" >> $GITHUB_ENV
           echo "ADGUARD_ANNOY_URL=https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt" >> $GITHUB_ENV
+          echo "ADGUARD_DNS_URL=https://filters.adtidy.org/extension/ublock/filters/15_optimized.txt" >> $GITHUB_ENV
           echo "HACAMER_URL=https://hacamer.top/AdRule/rules-admin.txt" >> $GITHUB_ENV
           echo "HACAMER_URLF_URL=https://hacamer.top/AdRule/url-filter.txt" >> $GITHUB_ENV
           echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
@@ -77,7 +79,8 @@ jobs:
           curl -sSL $EASYLIST_URL | sed -e '/^! /d' -e '1c ! EasyList' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylist.txt
           curl -sSL $EASYLISTCHINA_URL | sed -e '/^! /d' -e '1c ! EasyList China' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylistchina.txt
           curl -sSL $EASYPRIVACY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./easyprivacy.txt
-          curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
+          curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! CJX's EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
+          curl -sSL $CJXUBLOCK_URL | sed -e '/^! /d' -e '1c ! CJX's uBlock list' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjx-ublock.txt
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           curl -sSL $GENERALBLOCK_URL | grep -v "]"> ./generalblock.txt
           curl -sSL $TIEBABLOCK_URL | grep -v "]"> ./tiebablock.txt
