@@ -79,7 +79,7 @@ jobs:
           curl -sSL $EASYLIST_URL | sed -e '/^! /d' -e '1c ! EasyList' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylist.txt
           curl -sSL $EASYLISTCHINA_URL | sed -e '/^! /d' -e '1c ! EasyList China' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylistchina.txt
           curl -sSL $EASYPRIVACY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./easyprivacy.txt
-          curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! CJX's EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
+          curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! CJX's EasyList Lite' -e '/^!$/d' > ./cjxlist.txt
           curl -sSL $CJXUBLOCK_URL | sed -e '/^! /d' -e '1c ! CJX's uBlock list' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjx-ublock.txt
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           curl -sSL $GENERALBLOCK_URL | grep -v "]"> ./generalblock.txt
