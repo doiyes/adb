@@ -82,13 +82,13 @@ jobs:
           curl -sSL $XINGGSF_MINORITY_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 小众视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-minority-mv.txt
           curl -sSL $NOCOIN_FILTER_URL | sed -e '/^! /d' -e '1c ! NoCoin_Filter' -e '/^!$/d' -e '/^$/d' > ./nocoin.txt
           curl -sSL $ADGUARD_MOBILE_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' -e '/^$/d' > ./adguardmoblie.txt
-          curl -sSL $ADGUARD_CHINESE_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' -e '/^$/d' > ./adguard-chinese.txt
-          curl -sSL $ADGUARD_TRACK_URL | sed -e '/^! /d' -e '1c ! AdGuard-移动规则' -e '/^!$/d' -e '/^$/d' > ./adguard-track.txt
-          curl -sSL $ADGUARD_DNS_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-dns.txt
-          curl -sSL $ADGUARD_BASE_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-base.txt
-          curl -sSL $ADGUARD_URLTRACK_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-urltrack.txt
-          curl -sSL $ADGUARD_SOCIAL_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-social.txt
-          curl -sSL $ADGUARD_ANNOY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-annoy.txt
+          curl -sSL $ADGUARD_CHINESE_URL | sed -e '/^! /d' -e '1c ! AdGuard-中文规则' -e '/^!$/d' -e '/^$/d' > ./adguard-chinese.txt
+          curl -sSL $ADGUARD_TRACK_URL | sed -e '/^! /d' -e '1c ! AdGuard-跟踪保护规则' -e '/^!$/d' -e '/^$/d' > ./adguard-track.txt
+          curl -sSL $ADGUARD_DNS_URL | sed -e '/^! /d' -e '1c ! AdGuard-DNS规则' -e '/^!$/d' > ./adguard-dns.txt
+          curl -sSL $ADGUARD_BASE_URL | sed -e '/^! /d' -e '1c ! AdGuard-基础规则' -e '/^!$/d' > ./adguard-base.txt
+          curl -sSL $ADGUARD_URLTRACK_URL | sed -e '/^! /d' -e '1c ! AdGuard-url跟踪保护规则' -e '/^!$/d' > ./adguard-urltrack.txt
+          curl -sSL $ADGUARD_SOCIAL_URL | sed -e '/^! /d' -e '1c ! AdGuard-社交媒体过滤规则' -e '/^!$/d' > ./adguard-social.txt
+          curl -sSL $ADGUARD_ANNOY_URL | sed -e '/^! /d' -e '1c ! AdGuard-Annoyance过滤规则' -e '/^!$/d' > ./adguard-annoy.txt
           curl -sSL $HACAMER_URL | sed -e '/^! /d' -e '1c ! hacamer移除一些烦人的元素' -e '/^!$/d' -e '/^$/d' > ./hacamer.txt
           curl -sSL $ADGK_URL | grep -v "^!"> ./adgk.txt
           sed -i '/!#include kill-baidu-ad.txt/c !#include https://github.com/banbendalao/ADgk/raw/master/kill-baidu-ad.txt' ./adgk.txt
@@ -96,7 +96,7 @@ jobs:
           curl -sSL $DAMENGZHU_URL | grep -v "^!" > ./jiekouad.txt
           curl -sSL $CINGLIST_UBO_URL | grep -v "]"> ./cinglist-ubo.txt
           curl -sSL $ZHIHU_URL | grep -v "]"> ./zhihu-strict.txt
-          curl -sSL $CATSTEAM_DNS_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./catsteam-dns.txt
+          curl -sSL $CATSTEAM_DNS_URL | sed -e '/^! /d' -e '1c ! Cats-Team-DNS' -e '/^!$/d' > ./catsteam-dns.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
