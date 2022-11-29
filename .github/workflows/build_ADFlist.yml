@@ -21,7 +21,6 @@ jobs:
           echo "TAG_NAME=$(date -d "8 hour" -u +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "MODIFIED_TIME=$(date -d "8 hour" -u "+%Y年%m月%d日 %H:%M")" >> $GITHUB_ENV
           echo "CJXLIST_URL=https://github.com/cjx82630/cjxlist/raw/master/cjxlist.txt" >> $GITHUB_ENV
-          echo "CJX_UBLOCK_URL=https://github.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt" >> $GITHUB_ENV
           echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
           echo "GENERALBLOCK_URL=https://github.com/lychichem/list/raw/master/mod/GeneralBlock.txt" >> $GITHUB_ENV
           echo "TIEBABLOCK_URL=https://github.com/o0HalfLife0o/list/raw/master/mod/TiebaBlock.txt" >> $GITHUB_ENV
@@ -29,7 +28,7 @@ jobs:
           echo "ANTI_ADBLOCK_KILLER_FILTERS_URL=https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt" >> $GITHUB_ENV
           echo "ANTIADBLOCKFILTERS_URL=https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" >> $GITHUB_ENV
           echo "ABP_FILTERS_ANTI_CV_URL=https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt" >> $GITHUB_ENV
-          echo "ADGK_BAIDU_URL=https://github.com/banbendalao/ADgk/raw/master/kill-baidu-ad.txt" >> $GITHUB_ENV
+          echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
           echo "XINGGSF_RULE_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt" >> $GITHUB_ENV
           echo "XINGGSF_MV_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt" >> $GITHUB_ENV
           echo "XINGGSF_MINORITY_MV_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/minority-mv.txt" >> $GITHUB_ENV
@@ -44,7 +43,6 @@ jobs:
           echo "ADGUARD_DNS_URL=https://filters.adtidy.org/extension/ublock/filters/15_optimized.txt" >> $GITHUB_ENV
           echo "HACAMER_URL=https://hacamer.top/AdRule/rules-admin.txt" >> $GITHUB_ENV
           echo "HACAMER_URLF_URL=https://hacamer.top/AdRule/url-filter.txt" >> $GITHUB_ENV
-          echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
           echo "DAMENGZHU_URL=https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" >> $GITHUB_ENV
           echo "CINGLIST_UBO_URL=https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt" >> $GITHUB_ENV
           echo "ZHIHU_URL=https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt" >> $GITHUB_ENV
@@ -74,12 +72,11 @@ jobs:
           mkdir -p ./download/
           cd ./download
           curl -sSL $CJXLIST_URL | grep -v "]" > ./cjxlist.txt
-          curl -sSL $CJX_UBLOCK_URL | grep -v "]" > ./cjx-ublock.txt
-          curl -sSL $CJX_ANNOYANCE_URL | grep -v "]" > ./cjx-annoyance.txt
+          curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
+          sed -i '/!#include cjx-ublock.txt/c !#include https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt' ./cjx-annoyance.txt
           curl -sSL $GENERALBLOCK_URL | grep -v "]" > ./generalblock.txt
           curl -sSL $TIEBABLOCK_URL | grep -v "]" > ./tiebablock.txt
           curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! IMBALIST' -e '/^!$/d' -e '/^$/d' > ./imbalist.txt
-          curl -sSL $ADGK_BAIDU_URL | sed -e '/^! /d' -e '1c ! ADgk 百度搜索结果极限净化' -e '/^!$/d' > ./adgk-baidu.txt
           curl -sSL $XINGGSF_RULE_URL | sed -e '/^! /d' -e '1c ! 乘风 广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-rule.txt
           curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
           curl -sSL $XINGGSF_MINORITY_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 小众视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-minority-mv.txt
@@ -94,6 +91,7 @@ jobs:
           curl -sSL $ADGUARD_ANNOY_URL | sed -e '/^! /d' -e '1c ! EasyPrivacy' -e '/^!$/d' > ./adguard-annoy.txt
           curl -sSL $HACAMER_URL | sed -e '/^! /d' -e '1c ! hacamer移除一些烦人的元素' -e '/^!$/d' -e '/^$/d' > ./hacamer.txt
           curl -sSL $ADGK_URL | grep -v "^!"> ./adgk.txt
+          sed -i '/!#include kill-baidu-ad.txt/c !#include https://github.com/banbendalao/ADgk/raw/master/kill-baidu-ad.txt' ./adgk.txt
           curl -sSL $HACAMER_URLF_URL | sed -e '/^! /d' -e '1c ! 杏梢的URL过滤器' -e '/^!$/d' -e '/^$/d' > ./hacamer-url.txt
           curl -sSL $DAMENGZHU_URL | grep -v "^!" > ./jiekouad.txt
           curl -sSL $CINGLIST_UBO_URL | grep -v "]"> ./cinglist-ubo.txt
