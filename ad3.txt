@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 6+mCmqsDzD02g8afxp9uIQ
+! Checksum: ZGBjTw8141ybCbRlBkHMEg
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202211290853
-! Last Modified: 202211290853
+! Version: 202211290924
+! Last Modified: 202211290924
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -937,6 +937,7 @@ iconworkshop.cn
 ifeng.com##div[class^=adList],div[class^=adbox],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left,[href^="//mall.ifeng.com"],#js_videopause_container
 ikandy.fun##div:has(>b[onclick])
 ikandy.fun##marquee, img[onclick]
+im1907.top,nxflv.com##+js(noeval-if, pushState)
 imasdk.googleapis.com
 img.easypass.cn
 imindmap.cc
@@ -1132,7 +1133,6 @@ yoyi.com.cn
 yrqwnc.cn
 yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 yy.com,le.com##+js(nowebrtc)
-z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 zhihu.com##.Banner
@@ -1239,6 +1239,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||anybest.space
 ||api.bilibili.com/x/click-interface/click/$xhr
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
+||api.huaban.com/ads^$xhr,1p,redirect=noop.txt
 ||api.huo360.com/www/back/$image
 ||api.inwemo.com^$third-party
 ||api.my.tv.sohu.com/wm/getads.do?
@@ -1990,7 +1991,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||toftofcal.com^$third-party
 ||tokyodrift.ga^$third-party
 ||tongj.xilu.com/
-||toutiaoimg.com/origin/$image,domain=mgtv1.tv|agemys.net|acgndmku.com|subaibaiys.com
+||toutiaoimg.com/origin/$image,domain=mgtv1.org|agemys.net|acgndmku.com|subaibaiys.com
 ||tracker.$xhr,websocket,script,ping
 ||traffic.tc-clicks.com^$third-party
 ||traviilo.com^$third-party
