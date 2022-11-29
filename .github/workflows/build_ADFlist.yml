@@ -32,7 +32,7 @@ jobs:
           echo "XINGGSF_RULE_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt" >> $GITHUB_ENV
           echo "XINGGSF_MV_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt" >> $GITHUB_ENV
           echo "XINGGSF_MINORITY_MV_URL=https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/minority-mv.txt" >> $GITHUB_ENV
-          echo "NOCOIN_FILTER_URL=https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt" >> $GITHUB_ENV
+          echo "NOCOIN_FILTER_URL=https://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin-ublock.txt" >> $GITHUB_ENV
           echo "ADGUARD_MOBILE_URL=https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt" >> $GITHUB_ENV
           echo "ADGUARD_CHINESE_URL=https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt" >> $GITHUB_ENV
           echo "ADGUARD_TRACK_URL=https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt" >> $GITHUB_ENV
@@ -116,7 +116,7 @@ jobs:
           cd ./download
           cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist.txt
           cat hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-m.txt
-          cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt adguardmoblie.txt adguard-chinese.txt easyprivacy.txt zhihu-strict.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-all.txt
+          cat generalblock.txt tiebablock.txt imbalist.txt cjx-annoyance.txt xinggsf-rule.txt xinggsf-mv.txt xinggsf-minority-mv.txt nocoin.txt hacamer.txt adgk.txt hacamer-url.txt jiekouad.txt adguardmoblie.txt adguard-chinese.txt zhihu-strict.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-all.txt
           cat adguard-dns.txt catsteam-dns.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
           cat *.txt | grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$" | sort -n | uniq | awk '!a[$0]++' > ../new/ADFlist-dns.txt
           cat *.txt | grep -v '^!\|@\||' | sort -n | uniq | awk '!a[$0]++' > ../new/AD2.txt
