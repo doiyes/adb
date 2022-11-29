@@ -73,9 +73,9 @@ jobs:
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/AD2.txt
           mkdir -p ./download/
           cd ./download
-          curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! CJX's EasyList Lite' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjxlist.txt
-          curl -sSL $CJX_UBLOCK_URL | sed -e '/^! /d' -e '1c ! CJX's uBlock list' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjx-ublock.txt
-          curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./cjx-annoyance.txt
+          curl -sSL $CJXLIST_URL | sed -e '/^! /d' -e '1c ! CJX's EasyList Lite' -e '/^!$/d' > ./cjxlist.txt
+          curl -sSL $CJX_UBLOCK_URL | sed -e '/^! /d' -e '1c ! CJX's uBlock list' -e '/^!$/d' > ./cjx-ublock.txt
+          curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' > ./cjx-annoyance.txt
           curl -sSL $GENERALBLOCK_URL | grep -v "]"> ./generalblock.txt
           curl -sSL $TIEBABLOCK_URL | grep -v "]"> ./tiebablock.txt
           curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! IMBALIST' -e '/^!$/d' -e '/^$/d' > ./imbalist.txt
