@@ -71,11 +71,11 @@ jobs:
           curl -sSL -O https://github.com/doiyes/ADFlist/releases/latest/download/AD2.txt
           mkdir -p ./download/
           cd ./download
-          curl -sSL $CJXLIST_URL | grep -v "啊" > ./cjxlist.txt
+          curl -sSL $CJXLIST_URL | grep -v "}" > ./cjxlist.txt
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           sed -i '/!#include cjx-ublock.txt/c !#include https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt' ./cjx-annoyance.txt
-          curl -sSL $GENERALBLOCK_URL | grep -v "啊" > ./generalblock.txt
-          curl -sSL $TIEBABLOCK_URL | grep -v "啊" > ./tiebablock.txt
+          curl -sSL $GENERALBLOCK_URL | grep -v "}" > ./generalblock.txt
+          curl -sSL $TIEBABLOCK_URL | grep -v "}" > ./tiebablock.txt
           curl -sSL $IMBALIST_URL | sed -e '/^! /d' -e '1c ! IMBALIST' -e '/^!$/d' -e '/^$/d' > ./imbalist.txt
           curl -sSL $XINGGSF_RULE_URL | sed -e '/^! /d' -e '1c ! 乘风 广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-rule.txt
           curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
@@ -94,8 +94,8 @@ jobs:
           sed -i '/!#include kill-baidu-ad.txt/c !#include https://github.com/banbendalao/ADgk/raw/master/kill-baidu-ad.txt' ./adgk.txt
           curl -sSL $HACAMER_URLF_URL | sed -e '/^! /d' -e '1c ! 杏梢的URL过滤器' -e '/^!$/d' -e '/^$/d' > ./hacamer-url.txt
           curl -sSL $DAMENGZHU_URL | grep -v "^!" > ./jiekouad.txt
-          curl -sSL $CINGLIST_UBO_URL | grep -v "啊"> ./cinglist-ubo.txt
-          curl -sSL $ZHIHU_URL | grep -v "啊"> ./zhihu-strict.txt
+          curl -sSL $CINGLIST_UBO_URL | grep -v "}"> ./cinglist-ubo.txt
+          curl -sSL $ZHIHU_URL | grep -v "}"> ./zhihu-strict.txt
           curl -sSL $CATSTEAM_DNS_URL | sed -e '/^! /d' -e '1c ! Cats-Team-DNS' -e '/^!$/d' > ./catsteam-dns.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
