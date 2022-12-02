@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: MiYoSDHbWDNIpNXl2Rwy0A
+! Checksum: MVfOT/U8dgphyTL0Kjit5g
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202212012218
+! Version(Last Modified): 202212022216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -74,8 +74,11 @@
 ##A[href='/hth.html']
 ##A[href='/xinghuo-20.html']
 ##A[href^='http'][style^='display:block;left:0;right:0;position:fixed;border-left:']
+##A[onclick$='()'][target='_top'][style*='.gif) no-repeat;background-size:100% 100%;']
+##A[style='width: 100%;height: 150px;z-index:1000;position: absolute;display:block;top: 0px;'][onclick$=';this.style.display="none";']
 ##DIV#ad-index.col-12.position-relative
 ##DIV#bl_mobile_float
+##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
 ##DIV.box-width.ec-ad
 ##DIV.box-width.ec-ad.ec-ad-double.flex
@@ -90,6 +93,7 @@
 ##DIV[style^='width:100%;height:100%;line-height: 100%;overflow:hidden; margin:auto;border:1px #']
 ##IFRAME[src*="//pos.baidu.com/"]
 ##IMG[onclick='golh()'][src$='.gif']
+##IMG[src$='.dl'][style='width:100% !important;height:90px'][onclick]
 ##IMG[src*='/gg/'][src$='180.gif'][src*='800']
 ##SPAN#qdSZ2
 ##SPAN[style="position: fixed; bottom: 30vh; z-index: 2147483647; right: 0px; margin-right: 6vw; padding: 0px; text-decoration: none; background-color: red; width: 7vw; height: 7vw; border-radius: 7vw; font-size: 6vw; color: rgb(255, 255, 255); text-align: center; transform: rotate(-90deg);"]
@@ -332,6 +336,7 @@
 ##a[href*=".vxzmok.com"]
 ##a[href*=".yixing-hb.com"]
 ##a[href^="https://uds24.com/"]
+##body#nr_body.nr_all.c_nr > div[class] > DIV[style='height:90px;width:100%;']
 ##center > [href^='https://docs.qq.com/doc'][target='_blank']
 ##div#reader-scroll.acgn-reader-chapter.v>div>center>strong>button
 ##div.a_fr.a_cb,div.a_fl.a_cb,div.a_cn,div.wp.a_h
@@ -399,7 +404,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */ads.
 */adsense/
 */app_log/*
-*/blsx_*_1_*?*
+*/blsx_*_*_*?*
 */html/click/
 */log/ad/*
 */log/client/*
@@ -490,22 +495,29 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 -mobile-default/static/js/app-download-
 -time.js?
 -tongji.
+.cam/*_*_*?*$third-party
 .club$domain=yinghuacd.com
 .com/ads.
 .com/adv1/?q=
 .com/gg.js
 .gif$domain=787ck.cc
 .icu/*_*_*.js$third-party
+.ink/*_*_*_*?*$third-party
+.lijie.*/*_*_*_*?
 .live/r/*/*_r=*==
 .openx.
 .top/*/*-*-*-*.*?_=*
+.top/*_*_*_*.js?*$third-party
+.top/*q=*form=*&*url=http*$third-party
 .top/Report/*-*-*-*-*
+.xin/*_*_*_*.js?*$third-party
 .xyz$domain=yinghuacd.com
 .xyz/*/*/12194286116933？
 .xyz/*_*_*_*.js?$third-party
 .xyz/base*.js?
 .xyz/g21934*.v3h
-.xyz/hm.js?
+.xyz/hm.js?$third-party
+.xyz/jque*.js?$third-party
 /(?::\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+_\d{3}x\d{4})/
 /*/*.add.*.add
 /*AdapterNew.
@@ -654,6 +666,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /bg.swf
 /bilibili/okretro/GeneralResponse
 /blog/*.php?z=
+/blxn_*_*_*?*$third-party
 /bwp*js
 /bwp*php
 /c/cevent.
@@ -769,6 +782,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /js/delay.
 /js/dubao.
 /js/fumeiti.js
+/js/hhsyw.js
 /js/htmlk*.js
 /js/js/css.js
 /js/loading.
@@ -1585,6 +1599,7 @@ caibaojian.com##.avatar,.textwidget,.single_top
 caijing.com.cn##div.downdiv
 cailianpress.com##.slick-list,.wrap
 caixin.com##.indexTopAd
+cam/*_*.apk$third-party
 cangku.in##.ad-index,.single-top-ad,.sidebar-game,.panel-zan
 cangku.in,cangku.moe,enjoymore.fun,got001.com,iwan.baidu.com,qq.com,qtv.com.cn,xinhuanet.com,zol.com.cn##.ad-box
 cangku.in,galacg.me,moneyweekly.com.tw###carousel-example-generic
@@ -3928,6 +3943,7 @@ www.btkuaisou.com##div.guanggao
 www.btshare.net##div.clear.text_center
 www.buildingstructure.cn##.allads,.banner,.leftads,.indexRightAds
 www.cailianpress.com##div.banner.AD-1
+www.cartoon18.com/assets/*/jquery.js
 www.cbber.com##div.a_mu,div.a_pt,div.a_pb,div#diy_chart.area
 www.ccav1.com###adsense9,#widget_25060ad
 www.cdz8.net##div#ads_c_tpc,div#ggggg
@@ -4619,6 +4635,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||065b42ba2b.se^
 ||065yuyu.com^
 ||07171.com^
+||074adzx.com^
 ||07780778.com^
 ||0792gdst.com^
 ||080999.cn^
@@ -7633,6 +7650,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||hmwebs.top^
 ||hnbhrt.xyz^
 ||hncsdayu.com^
+||hndfw.com.cn^
 ||hnksln.com^
 ||hnlczgjx.com^
 ||hnlphr.cn^
@@ -10217,6 +10235,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||sqdd.myapp.com^
 ||sqszs.top^
 ||sqxst.com^$third-party
+||srbzw.cn^
 ||srhuafeng.com^
 ||srmdz.vip^
 ||ss.chelaile.net.cn^
@@ -11011,6 +11030,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||wlgszt.com^
 ||wlhcb.cn^
 ||wlog.kuaishou.com^
+||wlsyuule.cam^
 ||wmflabs.org^
 ||wmxke.com^
 ||wn68din.cn^
