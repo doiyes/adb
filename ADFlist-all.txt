@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: jXNveeJnGKZRGZs+s1D/TQ
+! Checksum: wELPyh1TRymFfWRdzvOvUg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202212112216
+! Version(Last Modified): 202212122217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -398,6 +398,7 @@
 ##.ad_thread
 ##.adbox-bg.adscounter
 ##.add-gg
+##.addddddwarp
 ##.ads
 ##.ads > a > img[src*=".sinaimg."]
 ##.ads-after-content
@@ -722,6 +723,7 @@
 ##.uk-width-1-1.adbox
 ##.video-holder > a[target="_blank"] > img[src*=".360buyimg.com"]
 ##.video-item-ads
+##.video_details > .banner
 ##.vodads
 ##.w100b > .m_adv
 ##.wbalist_thumb[style*="/upload/site/"]
@@ -784,6 +786,7 @@
 ##DIV[style^='width:100%;height:100%;line-height: 100%;overflow:hidden; margin:auto;border:1px #']
 ##IFRAME[src*="//pos.baidu.com/"]
 ##IMG[onclick='golh()'][src$='.gif']
+##IMG[referrerpolicy='no-referrer'][style='box-sizing: border-box;height:calc(10vh); width:100%;padding: 0px 15px 10px 15px;']
 ##IMG[src$='.dl'][style='width:100% !important;height:90px'][onclick]
 ##IMG[src*='/gg/'][src$='180.gif'][src*='800']
 ##P[style$='transparent !important; font-size: 0px !important; text-indent: -10000px !important; height: 125px !important;']
@@ -1362,6 +1365,7 @@
 ##div>span>[href='###']
 ##div[align="center"] > a[href^="/url/"] > img[src*=".alicdn.com"]
 ##div[align="center"] > a[href^="/url/"] > img[src*=".qpic.cn"]
+##div[bannerlist]
 ##div[class][id][style] > .pic_container
 ##div[class^="is_"] > a > img[referrerpolicy="no-referrer"]
 ##div[class^="is_"] > a > img[referrerpolicy="no-referrer"][src*="hdslb.com"]
@@ -1385,6 +1389,7 @@
 ##div[onclick*="?i_code="]
 ##div[onclick*="bdtz5.com"]
 ##div[onclick*="kiropa.com"]
+##div[onclick*="ky0222.cn"]
 ##div[onclick*="ky165.cn"]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
@@ -4340,6 +4345,7 @@ $websocket,domain=5nj.com|cechi8.com
 @@||daoju.qq.com/time/*/js/ad/
 @@||dayanzai.me/image/ad/$image
 @@||daziba.cn/Images/share.css
+@@||developer.apple.com$generichide
 @@||dictionary.search.yahoo.com/beacon/sc?&ajaxdd=tabsCard&
 @@||digiland.tw/advert.js
 @@||digit77.com^$generichide
@@ -8567,7 +8573,6 @@ eiga.com##div[id^="rect_ad"]
 eikaiwa.dmm.com###container_bottom_overlay
 eikaiwa.dmm.com##.sp-main-banner
 ejie.me/cn##[width="300"][height="250"]
-ejktj.com
 ekamus.info##+js(no-setTimeout-if, ins.adsbygoogle)
 ekamus.info##+js(set-constant, isAdsDisplayed, true)
 ekamus.info#$#.adsbygoogle { height: 1px !important; }
@@ -9717,6 +9722,7 @@ gordonua.com##.card_sep
 gori.me###primecaster-ad_slot_XaON
 gori.me##.ad-below-single-header
 gori.me##.mobile_adsense_archive
+gorilife.com###slide_wrap
 gosunkugi.com###mobile_text-2
 gotgayporn.com##small:not([class]):not([id]):not([style])
 gotovim.ru##.rekmob
@@ -10546,6 +10552,7 @@ icbc.com.cn###kv-admain > div[id$="_1900_380"]
 icbc.com.cn##.action_Y_more
 icbc.com.cn#@#.adLeft
 icbc.com.cn#@#.adRight
+icegay.tv##.b-mobile-spots
 ichip.ru##.banner-info
 ichunqiu.com###cnzz168_Login
 ichunqiu.com###portal_block_157
@@ -10759,8 +10766,9 @@ iisrn.cn
 ijiandao.com###index_top_ad
 ijiandao.com##div[class^="banner_h_"]
 ik123.com###aa960a
-ikandy.fun##.marquee_outer, img[onclick]:remove(), b[onclick]+a
+ikandy.fun##.marquee_outer, b[onclick]+a
 ikandy.fun##div:has(>b[onclick])
+ikandy.fun##img[onclick]:remove()
 ikanman.com##.top_banner,.mtb16,[class="mt10"][style],[class^="gg_"]
 ikjzd.com##.article-banner-wrap
 ikjzd.com##.foot-advert-box
@@ -11771,6 +11779,7 @@ kakakumag.com##.special-cts-wrap
 kalerkantho.com##.parallax-main
 kalerkantho.com#$#.must-header-fixed-sticky { margin-top: 0 !important; }
 kali.org.cn##.a_mu,.a_pb
+kaluga-poisk.ru##.m-up1-adcode
 kaluga-poisk.ru#$#.brn-fscreen { display: none!important; }
 kaluga-poisk.ru#$#body { overflow: auto!important; }
 kalvin.cn##.fell_advertisement_box
@@ -12745,9 +12754,6 @@ m.jpnn.com##amp-iframe[src*="-adnow.com/"]
 m.karar.com###detail-area > .seperator.margin-bottom-md
 m.karar.com###detail-area > .seperator.margin-bottom-md + a[href][target="_blank"] > img
 m.kaskus.co.id###my-ad-slot
-m.khan.co.kr###adFrame1
-m.khan.co.kr###mobitree
-m.khan.co.kr##.ad_article_view
 m.kkkkwu.cc##DIV.vdgdo
 m.klack.de##.adWebWrapper
 m.kn-online.de##.pdb-ad-container
@@ -14664,6 +14670,7 @@ pc841.com##.w1050
 pc841.com##.w300,.w1050
 pc841.com,ting56.com##.w300
 pc841.com,zol.com.cn##.today-hot-layer
+pc841.com,zol.com.cn##.today-hot-layer
 pcauto.com.cn###PcPoPmarket
 pcauto.com.cn###bgbao
 pcauto.com.cn##.ad_onlyone
@@ -14927,6 +14934,7 @@ poedb.tw#?#div[id]:-abp-contains(ad blocker)
 poginfo.ddo.jp##.mx-auto[style$="text-align: center;"]
 pogoda.mail.ru,sportmail.ru##.wrapper_banner
 pogoda.meta.ua##.main__banner-bottom
+pokemonbbs.com##.Ads_sp_foot
 poklw.com##img[alt="恰饭广告"]
 politeka.net,znaj.ua##.amp-ad--wrapper
 politnavigator.net##amp-embed[type="smi2"]
@@ -19834,6 +19842,7 @@ zztt24.com##.no-mask
 ||074adzx.com^
 ||0755rc.com^$third-party
 ||0758net.com/data/attachment/portal/
+||076lvo.xyz^
 ||0772fang.com/assets/js/Newhouse/inserAds.js
 ||0772fang.com/assets/js/lffoi.js
 ||07780778.com^
@@ -21744,6 +21753,7 @@ zztt24.com##.no-mask
 ||7v46.icu^
 ||7wen.cn^
 ||7wkw.com^$popup
+||7x1u.icu^
 ||7x24s.com^
 ||7x7n.com/static/image/888.jpg
 ||7x7n.com/static/pic/*.jpg
@@ -22067,6 +22077,7 @@ zztt24.com##.no-mask
 ||99496.com/static/
 ||99496.com/v9/head.js
 ||99520.xyz^
+||99885aaa.com^
 ||99886aaa.com^
 ||998k.at^
 ||999.com^
@@ -27939,6 +27950,7 @@ zztt24.com##.no-mask
 ||eoof.net/PicZone/qzgg
 ||eoop6vepv.cyou^
 ||eopa5tepa.icu^
+||eoqygep.cn^
 ||eotglx.top^
 ||eoyqzzk.cn^
 ||eoyqzzk.cn^
@@ -28747,6 +28759,7 @@ zztt24.com##.no-mask
 ||gccode.gongchang.com^
 ||gclick.cn^$third-party
 ||gcpvkfe.cn^
+||gctd.xyz^
 ||gcw*.2liang.cn^
 ||gcxa.cn/a/gb.gif
 ||gcxp.xyz^
@@ -28784,6 +28797,7 @@ zztt24.com##.no-mask
 ||gdt.qq.com^
 ||gdtimg.com^
 ||gdugga.com^
+||gdxinya.com^
 ||gdxxb.com^$third-party
 ||gdyjs.com^
 ||gdzidong.com/static/js/plugin.js^$script
@@ -29350,6 +29364,7 @@ zztt24.com##.no-mask
 ||gxmbr.cn^
 ||gxms.vip^
 ||gxnews.com.cn/clientscript/index_duilian_
+||gxniihk.cn^
 ||gxqzz.7766.org^
 ||gxzhshop.com^
 ||gxzxiww.com^
@@ -33244,6 +33259,7 @@ zztt24.com##.no-mask
 ||lrzsksw.cn^
 ||lsad.net^
 ||lsaeb.com^
+||lsbebm.xyz^
 ||lscckgm.cn^
 ||lsebay.com^
 ||lsforum.net/cam2/*.gif
@@ -34769,6 +34785,7 @@ zztt24.com##.no-mask
 ||ndfsl.com^
 ||nduad811.com^
 ||nearbyad.com^
+||necmdow.cn^
 ||neets.cc/assets/js/dup.js
 ||nehagex.cn^
 ||neihan.co^
@@ -39295,6 +39312,7 @@ zztt24.com##.no-mask
 ||topapi.cp12.ott.cibntv.net/router/rest^
 ||topapi.cp12.wasu.tv/router/rest?v=
 ||topazedu.com^
+||topboo.xyz^
 ||topicimg.1234567.com.cn/product/2021/1/11/b914f8b6-fb61-4c85-834f-863b67c13a45.gif$domain=fund.eastmoney.com
 ||topmba.mobi/ad/
 ||topn.xyz^
@@ -40938,6 +40956,7 @@ zztt24.com##.no-mask
 ||wuyou.la^
 ||wuyulou.com^*.php
 ||wuzitao.xyz^
+||wvggzak.cn^
 ||wvubjgl.cn^
 ||wvvw.harahero.top^
 ||ww*.sinaimg.cn/large^$domain=avtbf.com
@@ -40987,7 +41006,6 @@ zztt24.com##.no-mask
 ||www.833tu.com/js/config.js
 ||www.88eg.cn^
 ||www.91danji.com/js/$script
-||www.91meijutv.com/template/pingg_tpl/images/$image
 ||www.9270.com.cn^
 ||www.92miaopai.com/abc/*.gif$image
 ||www.99miaopai.com/abc/*.gif$image
@@ -41306,6 +41324,7 @@ zztt24.com##.no-mask
 ||wylqafraq7.com^
 ||wymcloud.love^
 ||wyovhzs.cn^
+||wyplmjufd.live^
 ||wyqaafplm.live^
 ||wyqaafplm.live^
 ||wyunion.com^
@@ -41472,6 +41491,7 @@ zztt24.com##.no-mask
 ||xflz.xyz^
 ||xfnkds.com^
 ||xfvcd.com/js/dd/$script
+||xfwxhyd.cn^
 ||xfyjz.cn^$third-party
 ||xg.binkens.cn^
 ||xg.hbcygs518.com^$third-party
@@ -41759,6 +41779,7 @@ zztt24.com##.no-mask
 ||xn--2qu92fhtxsxexqab.xn--fiqs8s^
 ||xn--2qu92fhtxsxexqab.xn--fiqs8s^
 ||xn--2qu96gouvko1a.com^
+||xn--2qus9awz1a6ygowgbua.xn--fiqs8s^
 ||xn--2quv4et7i4yno8fbua.xn--fiqs8s^
 ||xn--2qux23confgml.club^$third-party
 ||xn--2qux23cwrdmnaz3gj3w.xn--fiqs8s^
@@ -44304,7 +44325,6 @@ zztt24.com##.no-mask
 91lai.com##.D_guanggaotu2
 91lai.com##.D_guanggaotu3
 91lai.com##.showimgs
-91meijutv.com##.detail-content~p
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 91meijutv.com,qdm66.com##.close-box.tips
