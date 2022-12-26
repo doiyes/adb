@@ -1,20 +1,21 @@
 [Adblock Plus 2.0]
-! Checksum: fxxsot1tfRjIRrZVJsB5EQ
+! Checksum: 4y1gDqPg1R7t0Eh5rCP/NQ
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202212252214
-! Last Modified: 202212252214
+! Version: 202212262215
+! Last Modified: 202212262215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：https://github.com/doiyes/ADFlist/issues
 # NoCoin filter list optimized for uBlock
+##[id$="-ad"]
+##[id|=ad]
 ##a.disabled
 *##.ad
 *##.ad960-90
 *##.adbox
 *##.adtable
-*##[id$="-ad"],[class|=ad],[id|=ad]
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
 *&adsc_typpe=
 *-160-600.jpg|$image
@@ -778,8 +779,6 @@ djs.sk,mladipodnikatelia.sk,tubettajat.net##+js(aopr, miner)
 dlads.cn
 dlswbr.baidu.com
 dm.video.qq.com
-dm233.me###dh-box:style(left:96vw!important;margin-left:0!important;)
-dm233.me##.playleft:style(height:620px!important)
 dm88.me##+js(acis,document.writeln)
 dm88.me##body>a
 dmvbdfblevxvx.com
@@ -1101,7 +1100,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||bashiyy.com/static/js/plugin.js^$script
 ||bcebos.com^$image,domain=pan.baidu.com
 ||beacon.
-||bibilm.com^$script,3p
 ||bilibili.com/page-proxy/game-nav.html$subdocument
 ||bitautoimg.com/ResourceFiles/$image,object
 ||biz5.
@@ -1473,6 +1471,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||zchot.com/images/jiaoyou
 ||znsv.baidu.com/
 ||ztyumn.ifeng.com/$script
+~crunchyroll.com##[class|=ad]
 ~google.com##.adsbygoogle
 ~google.com,~mediafire.com##.ads
 ~news.sina.com.cn##[id^=ad_]

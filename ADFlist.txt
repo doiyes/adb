@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: hA8XFpav9yD5v5SXlactiw
+! Checksum: NrPmI6D7ZAANo+eggdi83w
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202212252214
+! Version(Last Modified): 202212262215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -32,6 +32,8 @@
 ##.popup + .shortcuts-mobile-overlay
 ##.s.u.m.o.me.scrollbox-popup
 ##.siteAnn1
+##[id$="-ad"]
+##[id|=ad]
 ##a.disabled
 ##body.page > .popup
 ##canvas#live2d
@@ -39,7 +41,6 @@
 *##.ad960-90
 *##.adbox
 *##.adtable
-*##[id$="-ad"],[class|=ad],[id|=ad]
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
 *$script,third-party,domain=hitomi.la
 *&adsc_typpe=
@@ -1138,8 +1139,6 @@ dlads.cn
 dlswbr.baidu.com
 dm.video.qq.com
 dm010.com##a[href*=".apk"]
-dm233.me###dh-box:style(left:96vw!important;margin-left:0!important;)
-dm233.me##.playleft:style(height:620px!important)
 dm5.com##.index-side-code
 dm88.me##+js(acis,document.writeln)
 dm88.me##body>a
@@ -2784,7 +2783,6 @@ zybang.com##.top_download
 ||bestqikan.com/static/js/swt.js
 ||betteredu.net/js/pop_tuiguang_
 ||biancheng.net/templets/new/images/index_pc/fudaoban_
-||bibilm.com^$script,3p
 ||bilibili.com/html/ads-index.js
 ||bilibili.com/page-proxy/game-nav.html$subdocument
 ||bilibili.com/x/web-interface/archive/special/recommend?aid=
@@ -3876,6 +3874,7 @@ zybang.com##.top_download
 ||zuoyebang.cc/zyb_4953cbb8a9a2332469592196c056a906.jpg
 ||zupulu.com/scripts/app/app.js
 ||zx123.cn/templates/zx123cs/theme-2015/js/right_xh.js
+~crunchyroll.com##[class|=ad]
 ~google.com##.adsbygoogle
 ~google.com,~mediafire.com##.ads
 ~laifeng.youku.com,youku.com##a[href^="http://cps.laifeng.com/"]
