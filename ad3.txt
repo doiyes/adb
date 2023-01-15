@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: RByvH2JmQRV0e1/pBHKW9A
+! Checksum: Ko52cGVfNF9NAqztw2oRsg
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202301142215
-! Last Modified: 202301142215
+! Version: 202301152215
+! Last Modified: 202301152215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -542,7 +542,7 @@
 */pipi1.htm$subdocument
 */piwik.
 */pop-ad_
-*/pop.js^$domain=~autohome.com.cn|~patch.ali213.net
+*/pop.js^$domain=~socpk.com|~autohome.com.cn|~patch.ali213.net
 */pop_cpf.$script
 */pop_fmt
 */popiq123
@@ -764,7 +764,7 @@ csgoconfigs.com##+js(acis, m, CH.Anonymous)
 cstm.baidu.com
 ctfile.com,www.pipipan.com##a[href^="https://union.ctfile.com"],div[id|=ad],div[id^=ad_]
 d58zz.com
-dandanzan.com,dandanzan10.top,nunuyy5.org##+js(m3u-prune, /^http/, /^https:\/\/vip\.lz-cdn\d+/)
+dandanzan.com,dandanzan10.top,nunuyy5.org##+js(m3u-prune, /^http/, /^https:\/\/vip\.lz-?cdn\d*\./)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,RTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
@@ -938,7 +938,6 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 static.g.iqiyi.com
 statsy.net
 stgowan.com
-stripe.com
 swc.weather.com.cn
 synacast.com
 taboola.com
@@ -1388,6 +1387,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||static.zongheng.com/upload/recommend/game/201$image
 ||stc.iqiyipic.com/js/sdkpack/barrage
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
+||stripe.com^$script,domain=~nextdns.io
 ||swa.gtimg.com/
 ||t1.hoopchina.com.cn/$subdocument
 ||t7z.cupid.iqiyi.com/show$script,important
