@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: HR81zqX1Rt+KycuPj7R2ug
+! Checksum: yDWAlu++mHFS5AwXcwAnvw
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202301172216
+! Version(Last Modified): 202301182216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -76,6 +76,7 @@
 ##A[target='_blank'][href*='/auth/register?code=']
 ##DIV#ad-index.col-12.position-relative
 ##DIV#bl_mobile_float
+##DIV#div1.div-relative[style='display:block;']
 ##DIV#mhbottom_ad_box
 ##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
@@ -109,6 +110,7 @@
 ##[alt='52bl']
 ##[alt='ACG里番']
 ##[alt='西瓜社']
+##[aria-label='广告']
 ##[at*='尼斯人注册送']
 ##[class^="chapter_"] > .baiduCenter
 ##[data-url='http://xixi.stylar.hk/']
@@ -198,6 +200,7 @@
 ##body#nr_body.nr_all.c_nr > div[class] > DIV[style='height:90px;width:100%;']
 ##body.active > div.myui-panel > DIV#home_slide
 ##center > [href^='https://docs.qq.com/doc'][target='_blank']
+##center > a > IMG[alt$='到期']
 ##div#reader-scroll.acgn-reader-chapter.v>div>center>strong>button
 ##div.a_fr.a_cb,div.a_fl.a_cb,div.a_cn,div.wp.a_h
 ##div.a_mu,tr.ad,div.wp.a_f,div.a_fl.a_cb,div.a_fr.a_cb
@@ -1186,6 +1189,7 @@ baidu.com##[style^="bottom:"][class^="ball-wrapper__"]
 baidu.com##a.ball-wrapper__3BTBO.c-blocka
 baidu.com##div#J-super-layer-promote
 baidu.com##div.FYB_RD
+baidu.com##div.ec_ad_results
 baidu.com##div.egg-bubble
 baidu.com##div.se-recommend-word-list,#se-recommend-word-list-container
 baidu.com##div.suggest-hot
@@ -3632,6 +3636,7 @@ www.ali213.net##DIV.ad-widget-imageplus.ad-widget-imageplus-box,DIV[id^="f21ac82
 www.antpedia.com###articlebody a.adv_oraurl,[class^="tag-b"],.n-img-div,#luxury_car,.topgg,.gg1,.gg2,.gglinks
 www.avtbo.com$$img[style="padding-bottom"]
 www.baidu.com###content_left > *:not([id]) *,[class="result c-container new-pmd"][id="1"][tpl="se_com_default"][data-click="{"]
+www.baidu.com##DIV.c-row:has([data-tuiguang])
 www.baidu.com#@#div[class*="ads"]
 www.baidu.com$@$div[class="ad_"]
 www.baidu.com,m.baidu.com##.listbox
@@ -5782,6 +5787,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||bh100.com.cn^
 ||bhaabom.cn^
 ||bhlianhe.com^
+||bhulgot.com^
 ||bi.ui.doulaihai.top^
 ||bibi100.com^
 ||biddingx.com^
@@ -6765,6 +6771,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||e399.com^
 ||e49.xyz^
 ||e719.net^$domain=~www.flv.tv
+||eabids.com^
 ||eamob.com^
 ||easytomessage.com^
 ||ebjvu.cn^
@@ -7449,6 +7456,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||huhue.com^
 ||huichuan.sm.cn^
 ||huifangwen.com^
+||huiruwei.com^
 ||huitoukao.com^
 ||huiun.com^
 ||huiyelu.com^
@@ -8595,6 +8603,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||mamaqi.com/themes/slcms/js/$script
 ||man7777.com^
 ||manage.wuhancloud.cn^
+||manage88.com^
 ||mangabz.com/wxh_asy.js
 ||manguan.vip^
 ||manhuabei.com/assets/xiwang.js
@@ -8967,6 +8976,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||nimaxrv.cn^
 ||ninebox.cn^
 ||nisihu.com.cn^
+||nissifresh.com^
 ||nithisp.cn^
 ||niulai0323166.space^
 ||niusnews.com/upload/banners/
@@ -9596,6 +9606,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||r.zaitouwang.com^
 ||r1.ykimg.com^$app=com.huawei.hwvplayer.youku
 ||r36ku.site^
+||r6pt6kfz.com^
 ||ra.gtimg.com/uv/1712104/index.js
 ||rakutenmarketing.com^
 ||rakuya.com.tw/position?*&adTagFlag=
@@ -10487,6 +10498,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||twjsx.cn^
 ||twjxmd.com^
 ||twrank.com^
+||txjfso.com^
 ||txscn.cn^
 ||txshuku.com/js/
 ||tyawwj.cn^
@@ -11311,6 +11323,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||xj-n-tax.gov.cn^
 ||xjjkjo.pw^
 ||xjrvwz.com^
+||xjssjc.com^
 ||xjuneuud.cn^
 ||xkqit.com^
 ||xkzjq.cn^
@@ -11594,6 +11607,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||yunshipei.com^
 ||yunzhanghe.cn^
 ||yupan.cc/asd/731.gif$image
+||yuske2.xyz^
 ||yusnw.cc^
 ||yuunion.com^
 ||yuxyz.com^
@@ -11718,6 +11732,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||zhihu.com/check_health
 ||zhihu.m.$popup
 ||zhihuiduijian.com^
+||zhijiangweidu.top^
 ||zhilingshidai.com^
 ||zhimaad.cn^
 ||zhimengad.com^
