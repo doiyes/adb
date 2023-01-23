@@ -1,68 +1,6 @@
 ! hacamer移除一些烦人的元素
 !
 !------start------!
-||in.appcenter.ms/logs?
-||napp.catchingnow.com/logs
-||analytics.map.qq.com^
-||iwx.mail.qq.com/info/report
-||oss.mail.qq.com/cgi-bin/oss_log
-||datacollector-drcn.dt.hicloud.com^
-||log.kuaiduizuoye.com^
-||ex.m.jd.com/exception_monitor/report
-||log-sdk.ksapisrv.com^
-||wlog.kuaishou.com^
-||collector.dcdn.baidu.com^
-||collect.ws.126.net^
-||norma-external-collect.meizu.com^
-||clog.skysrt.com^
-||sc-clog.ptskysrt.gitv.tv^
-||tracker.sns.ptqy.gitv.tv^
-||clog.ptskysrt.gitv.tv^
-||collect.kugou.com^
-||epcollect.kugou.com^
-||collectservice.kugou.com^
-||emcollect.kugou.com^
-||adservice.kugou.com^
-||nbcollect.kugou.com^
-||gatecollect.kugou.com^
-||gatecollectretry.kugou.com^
-||clientlog*.music.163.com^
-||clientlog3.music.163.com^
-||*.music.163.com/api/clientlog^
-||apm.zuoyebang.com/monitor_browser/collect
-||*logtj.zuoyebang.cc^
-||*/c/s/newlog
-||tb*.bdstatic.com/tb/client/log*.js
-||cloud-log.yy.com^
-||pimlog.baidu.com^
-||c.tieba.baidu.com/c/s/newlog
-||zhihu-web-analytics.zhihu.com/api/v*/logs^
-||ulogs.umengcloud.com^
-||adashbc.ut.taobao.com^
-||zhihu-web-analytics.zhihu.com/api/v1/logs/batch
-||track.miui.com^
-||data.mistat.xiaomi.com^
-
-||da.yunbugame.com/api/oied^
-||adxlog-adnet.vivo.com.cn^
-||ssp.vivo.com.cn/api/v3/reqAd
-||e.kuaishou.*^
-||*-ad.video.yximgs.com^
-||*clog.snmcoocaa.aisee.tv^
-||*.music.163.com/*/ad^
-||api.ad.xiaomi.com^
-||api.comm.miui.com/calendar/adcard/get
-
-||httpdns.pro^
-||dns.jd.com^
-||dns.jd.com.gslb.qianxun.com^
-||httpdns.*.netease.com^
-||httpdns.zybang.com^
-||httpdns.baidubce.com^
-||doh.iqiyi.com^
-||local.service.doh.domain^
-||doh.ptqy.gitv.tv^
-
 !
 */log/client/*
 */log/ad/*
@@ -74,21 +12,6 @@
 
 ||sdk-conf.getui.com^$app=com.huabenapp
 ||www.ihuaben.com/book/app/vipReadWaitSecond^
-
-||wenda.zuoyebang.com^
-@@||img.zuoyebang.cc^
-||fmp-notice.zybang.com^
-||n*.zuoyebang.cc/*vip*^
-||apm.zuoyebang.com^
-||apivip.zybang.com^
-||zyb-vip.cdnjtzy.com^
-||syh.zybang.com^
-||apiugc.zybang.com^
-||apivip.zybang.com^
-||msg.zybang.com^
-||napi.zybang.com^
-||nps.zuoyebang.com^
-||sanxia.zybang.com^
 
 baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com,m.bilibili.com,csdn.net#%#document.execCommand = {}
 baijiahao.baidu.com,m*.baidu.com,tieba.baidu.com,m.bilibili.com,csdn.net#%#navigator.clipboard.writeText = {}
@@ -102,7 +25,6 @@ pushplus.plus##div.container.py-3.text-center
 www.pushplus.plus##.img-fluid
 
 ctfile.com##div.h-100.card
-
 
 petalsearch.com##.feed-cont
 www.petalsearch.com##.van-pull-refresh.refresh-cont
@@ -124,7 +46,6 @@ m.v.qq.com##.figure_app
 m.v.qq.com##.js_open_app.btn_user_hd
 m.v.qq.com##.site-top__open-app
 m.v.qq.com##.player-mask__small-tips
-||mcgi.v.qq.com^
 
 m.iqiyi.com##.rank-link
 m.iqiyi.com##.m-videoUser-spacing
@@ -141,11 +62,6 @@ www.iq.com##.download-wrap
 !澎湃新闻
 m.thepaper.cn##[class*=index_footer_banner]
 m.thepaper.cn##[class^=header_header_download]
-
-!itdog
-itdog.cn##[class*="gg_link"]
-itdog.cn##.top_contents
-itdog.cn##.text-center
 
 !百度贴吧
 ||c.tieba.baidu.com/c/f/forum/getAdInfo
@@ -164,14 +80,6 @@ youku.com###download_btn
 ！快对作业
 ||c.kuaiduizuoye.com^
 ||adashbc.ut.taobao.com^
-
-！Pixiv
-m.pixivic.com##.setu-filter
-m.pixivic.com#$#div&gt;img[style*="opacity: 0;"] {opacity: 1  !important;}
-m.pixivic.com#$#div&gt;img[style*="filter: blur(20px);"] {filter:initial  !important;}
-m.pixivic.com#$#div&gt;img[style*="filter: blur(25px);"] {filter:initial  !important;}
-
-
 
 ||app.bilibili.com/x/v2/splash/list
 ||app.bilibili.com/x/v2/feed/index$replace=/{"card_type":"cm_v2".*?"three_point_v2".*?}\,/ /
