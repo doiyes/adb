@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 9VN9VMb1FqE+2tcEyARq3A
+! Checksum: cBWz9Y89SaxGwJNuEy/qvg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202301232217
+! Version(Last Modified): 202301242216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -797,6 +797,7 @@
 ##DIV#bl_mobile_float
 ##DIV#div1.div-relative[style='display:block;']
 ##DIV#mhbottom_ad_box
+##DIV.ad-area.ad-area-fix-bottom
 ##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
 ##DIV.box-width.ec-ad
@@ -1356,10 +1357,12 @@
 ##center > p > a[target="_blank"] > img[width="728px"][height="90px"]
 ##dd[style="padding:16px 16px 20px;margin: 15px;border-radius:50%;background-color:green;"]
 ##div#ad_id
+##div#detail.selector-zero > div > DIV[style]
 ##div#reader-scroll.acgn-reader-chapter.v>div>center>strong>button
 ##div#xinxi
 ##div.a_fr.a_cb,div.a_fl.a_cb,div.a_cn,div.wp.a_h
 ##div.a_mu,tr.ad,div.wp.a_f,div.a_fl.a_cb,div.a_fr.a_cb
+##div.ad-area > [href]
 ##div.ad-box
 ##div.ad-frame-container
 ##div.ad-recommend
@@ -5897,6 +5900,7 @@ avtb6677.com###menu-main-content > li:nth-child(n+5)
 awaker.cn###bew_10010,.adsbygoogle,div#wp125-2,div#text-31
 awaker.cn###jiji + div[style="padding: 20px"]
 awaker.cn##.good-price
+awaliwa.com##.bottomAdsBox
 axiang.cc###photo-sliders + .widget_text
 axios-js.com###lagou-vip
 axios-js.com##.lessonlist
@@ -7610,7 +7614,7 @@ coolaler.com#$#.message-inner { display: flex !important; }
 coolapk.com##P.under_title,DIV.under
 coolapk.com##[style*="position: fixed;bottom: 0"]
 coolapk.com##div[style="width:728px;height:90px;margin:5px auto;"]
-coolhii.com###bottommob
+coolhii.com,lkyw.net###bottommob
 coolinet.com##.section-banner
 coolpc.com.tw##TD[onclick="cancelBubble()"]
 coolsaid.com##iframe[src="http://coolsaid.com/gmifr_lei.html"]
@@ -8063,6 +8067,7 @@ diyifanwen.com###Hzh1
 diyifanwen.com###Hzh2
 diyifanwen.com##.Hzh1
 diyifanwen.com##.Hzh2
+diymobileaudio.com##.california-sticky-footer-ad-container
 dizhanw.com,jiangjunzy.com##div[style="background: #fff;padding:5px;"]
 diziizle.top###reklam-sticky
 dizikorea.com##.mst_ad
@@ -12330,6 +12335,7 @@ liumingye.cn#@#.advText
 live.bilibili.com##.bilibili-live-player-video-gift,.fans-medal-item-ctnr,.chat-item.gift-item,.chat-item.welcome-guard,.chat-item.welcome-msg,.guard-icon,.live-haruna-ctnr,.m-guard-ent,.outlink,.penury-gift-msg,.system-msg.news,.title-label,.user-level-icon,.vip-icon
 live.bilibili.com##.container-wrapper[style="height:446px;min-width:1280px"]
 live.kufu.co.jp##.banner_sp
+live.kufu.co.jp##.float_banner_wrapper
 live.kufu.co.jp##.inner_ad_block
 live.nicovideo.jp##div[class*="___footer-banner-ads"]
 live.nicovideo.jp##div[class^="___overlay-banner-ad"]
@@ -13546,6 +13552,7 @@ mil.tiexue.net##DIV.banner
 mildch.com#?##container > div.free-area > div[align="center"] > script[src*="adingo.jp"]:upward(2)
 milesplit.com#@#.sticky-ad
 milffox.com##.mobile_top_ads
+miliav.com##.b300
 milliyet.com.tr##.amp-dfpslot
 milliyetemlak.com##a[href][target="_blank"].sno-itunes.external > img
 miltonkeynes.co.uk##div[class^="BottomBanner__"]
@@ -14200,7 +14207,6 @@ news18a.com##.ina_ad_left
 news18a.com,tom.com##.ina_ad_class
 news24.jp##.adText > ul
 news4vip.livedoor.biz###f984a
-news4wide.net##.advertisement-position
 news4wide.net#?#.free-area script[src^="https://js.ad-"]:upward(.free-area)
 newsbim.com##.ny_banner,.right_banner,[class^="index_banner"],[class^="con_banner"]
 newsdig.tbs.co.jp##.ad_after_title
@@ -14483,6 +14489,7 @@ onet.pl##div[class^="AdSlotPlaceholder_"]
 onet.pl,fakt.pl##article div[style="margin:auto;width:300px;"] > p[style^="font-size:9px;color:#696969;"]
 onhax.net##div#mid_promo_right
 oniyomech.livedoor.biz##div[id$="_head_v2"]
+oniyomediary.com,news4wide.net##.advertisement-position
 online-lernen.levrai.de###advertmitlinks
 online-life.cc##.brnding_mob
 online.anidub.com###dle-content > div[style*="width: 300px;"][style*="height: 300px;"]
@@ -15519,6 +15526,9 @@ realtime-chart.info##table[width="768px"][height="256px"]
 realtime-chart.info##table[width="768px"][height="640px"]
 realtime-chart.info#?#.tb-n tr[bgcolor="#fff"]:has(span:contains(PR))
 realtime-chart.info,sekai-kabuka.com##div[style^="width:768px;"][style*="background:#00"]
+realty.ya.ru##div[class*="PostBlocks__ad--"]
+realty.ya.ru##div[class^="IndexPage__underFiltersAd--"]
+realty.ya.ru##li[class*="__item_type_ad"]
 rebenok.by##.main-index-part-rekl-mobile
 rebooo.com###gong
 reboyc.com##DIV.ad96090
@@ -16798,6 +16808,8 @@ techradar.com###content > div.slotify-slot[style]
 techraptor.net##.detail-page-lb1-ad
 techraptor.net##div[id^="nn_mobile_mpu"]
 techrum.vn###revive_banner_mobile_div
+techspot.com###insert-top-ts-ad
+techspot.com##.wrapperMobileOnly > .post-list > article[style="min-height: 250px;"]
 techspot.com##div[data-ns="largerectangle"]
 techspot.com##div[id^="insert-ad-"]
 techstage.de,heise.de##a-paternoster
@@ -20307,6 +20319,7 @@ zzzyk.com###Tinfo
 ||192.151.218.66^$third-party
 ||19216811.la/net/advert
 ||19273817.com^
+||194.59.220.161^
 ||194007.com/4058.gif
 ||195315.com/storage/tpl/tj.js
 ||19719197.com^
@@ -25356,6 +25369,7 @@ zzzyk.com###Tinfo
 ||ccdm*/Scripts/ccMedia.js
 ||ccement.com/index/index/fetchAd
 ||ccement.com/js/ccement_new/open.js
+||ccemqe.cn^
 ||cchvc.net^
 ||ccies.cn^
 ||ccio6rope.cyou^
@@ -28823,6 +28837,7 @@ zzzyk.com###Tinfo
 ||gfnormal07ae.com^
 ||gfqfjau.cn^
 ||gfqquls.cn^
+||gfqsded.cn^
 ||gfvip06ab.com^
 ||gfvip06af.com^
 ||gfvip06al.com^
@@ -29050,6 +29065,7 @@ zzzyk.com###Tinfo
 ||googleanalysis.mobi^
 ||googlesyndication.com
 ||googlesyndication.com^
+||googletagmanager.com^
 ||googletagservices.com/dcm/dcmads.js
 ||googletagservices.com/tag/js/gpt.js$script,domain=~bestbuy.ca|~zaobao.com
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices_gpt.js,domain=ani.gamer.com.tw
@@ -29296,6 +29312,7 @@ zzzyk.com###Tinfo
 ||gushiwen.cn/getTicket.aspx^$xhr
 ||gushiwen.org/getTicket.aspx
 ||gutouwang.net^
+||guyu8855.club^
 ||gv4e.top^
 ||gvqrclx.cn^
 ||gvt1.com/videoplayback?$media,redirect=noop-1s.mp4,domain=safeframe.googlesyndication.com
@@ -29324,6 +29341,7 @@ zzzyk.com###Tinfo
 ||gxkfmjk.cn^
 ||gxkj.ink^
 ||gxklsftz.cn^
+||gxkoci.xyz^
 ||gxlsjt.com^
 ||gxmbr.cn^
 ||gxms.vip^
@@ -29706,6 +29724,7 @@ zzzyk.com###Tinfo
 ||helloprojects.up.seesaa.net/image/E381A1E38287E381A3E381A8E381A0E38191-3fe11-thumbnail2.png
 ||helloweb.vip^
 ||helloworldisbeautiful.net^
+||hellu.cyou^
 ||help-ol.bj.bcebos.com/972a3ea966dbe5ced6df6fc1aa9a4490.jpg^$image,domain=ddys.*
 ||help-ol.bj.bcebos.com/ab4639662b03279c6a03785e6bb399a7.jpg^$image,domain=ddys.*
 ||helpantutu1.ksmobile.com/nep/v1/$app=com.antutu.ABenchMark
@@ -30072,6 +30091,7 @@ zzzyk.com###Tinfo
 ||hslyqs.com^
 ||hsmkj.net^$third-party
 ||hsnsdqd.cn^
+||hspffjx.cn^
 ||hssapp.shop^
 ||hssapp.shop^
 ||hssebb.xyz^
@@ -32289,6 +32309,7 @@ zzzyk.com###Tinfo
 ||kiwi8.top/media/plugins/jquery_confirm/
 ||kiwihk.net^
 ||kiwihk.net^$third-party
+||kiymowg.cn^
 ||kj-gov.cn^
 ||kj733.com^
 ||kjanfwss.xyz^
@@ -32360,6 +32381,7 @@ zzzyk.com###Tinfo
 ||kmvbre.com^
 ||kmwqxqh.com^
 ||kmyiubbv.xyz^
+||kmzayrt.cn^
 ||kmzayrt.cn^
 ||kn.zhangdujia.com^
 ||knbtpty.xyz^
@@ -32454,6 +32476,7 @@ zzzyk.com###Tinfo
 ||kt51.com/bjl666.gif
 ||kt51.com/images/kt51.gif
 ||kt51.com/wz.jpg
+||ktbelts.cn^
 ||ktdlsb.com^
 ||ktdlsb.com^
 ||ktggbk.com^
@@ -32986,6 +33009,7 @@ zzzyk.com###Tinfo
 ||liuxue86.com/css/liuxue_output.js
 ||liuxue86.com/js/ideng/liuxue-show
 ||liuyangyang.cn^
+||liuye.club^
 ||liuzhen.love^
 ||liuziqiu.cn^
 ||liuzishen.com^
@@ -33310,6 +33334,7 @@ zzzyk.com###Tinfo
 ||lvxingzhe.store^
 ||lvytzpu.cn^
 ||lvzi.store^
+||lw0mp.fun^
 ||lw54.com/js/
 ||lw88.site^
 ||lw881.com/public/js/gw.js
@@ -33367,6 +33392,7 @@ zzzyk.com###Tinfo
 ||lysq.com/data/attachment/portal/
 ||lyszsz.cn^
 ||lytubaobao.com^
+||lyua.cn^
 ||lywdoo.cn^
 ||lywww.com/data/js.php?id=
 ||lywww.com/header_pic.php
@@ -35105,6 +35131,7 @@ zzzyk.com###Tinfo
 ||nychinaren.com/houbei/
 ||nycp-hlb.dvgtm.akadns.net^
 ||nyhpyq.com^$third-party
+||nykoubk.cn^
 ||nymnt.top^
 ||nypswiu.cn^
 ||nypyzx.xyz^
@@ -37008,6 +37035,7 @@ zzzyk.com###Tinfo
 ||rhcknl.xyz^
 ||rhinogo.cn^
 ||rhlxm.top^
+||rhtc.quanminyouxi.cn^
 ||rhufmpa.cn^
 ||rhxshop.com^
 ||ri1.site/wp-content/uploads/*x400.
@@ -37321,6 +37349,8 @@ zzzyk.com###Tinfo
 ||s9w.cc^
 ||sa.sina.cn^
 ||sa669.com^$popup
+||saccac11.com^
+||saccac11.com^
 ||sacredperpetratorbasketball.com^
 ||sadjk.com^
 ||sadobo.com^
@@ -38931,6 +38961,7 @@ zzzyk.com###Tinfo
 ||telemetryverification.net^
 ||templates_pc/default/scripts/chapter_bottom.js
 ||tencent-cloud.com/s9m1/12f70718c866ea3e5f22c68e6a34c54f.
+||tencent-cloud.com/s9m1/54cb71aff82cfd690619065f2e31c346.
 ||tencent.xn--io0a7i^
 ||tencentmind.com^
 ||tenddata.com^
@@ -40881,6 +40912,7 @@ zzzyk.com###Tinfo
 ||ws.wenshenxiu.com^
 ||wsacdn1.miaopai.com/upload-pic/*.jpg|
 ||wsacjdg.cn^
+||wschao.xyz^
 ||wschao.xyz^
 ||wsds.cn^
 ||wsgblw.com^
@@ -43195,6 +43227,7 @@ zzzyk.com###Tinfo
 ||zkvivi.com/skin/wxc.js
 ||zkwsdf.com^
 ||zlbkj.com^
+||zlfthh.xyz^
 ||zlgame.top^
 ||zli.wang^
 ||zljycst.cn^

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: pCRk8uZ0SHgJ+oI3CVzANw
+! Checksum: NzSlyDAzz+GbQKhgxY2JJw
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202301232217
+! Version(Last Modified): 202301242216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -85,6 +85,7 @@
 ##DIV#bl_mobile_float
 ##DIV#div1.div-relative[style='display:block;']
 ##DIV#mhbottom_ad_box
+##DIV.ad-area.ad-area-fix-bottom
 ##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
 ##DIV.box-width.ec-ad
@@ -208,9 +209,11 @@
 ##body.active > div.myui-panel > DIV#home_slide
 ##center > [href^='https://docs.qq.com/doc'][target='_blank']
 ##center > a > IMG[alt$='到期']
+##div#detail.selector-zero > div > DIV[style]
 ##div#reader-scroll.acgn-reader-chapter.v>div>center>strong>button
 ##div.a_fr.a_cb,div.a_fl.a_cb,div.a_cn,div.wp.a_h
 ##div.a_mu,tr.ad,div.wp.a_f,div.a_fl.a_cb,div.a_fr.a_cb
+##div.ad-area > [href]
 ##div.ad-box
 ##div.ad-frame-container
 ##div.ad-recommend
@@ -7098,6 +7101,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||googleadsserving.cn^
 ||googleanalysis.mobi^
 ||googlesyndication.com^
+||googletagmanager.com^
 ||googletagservices.com/dcm/dcmads.js
 ||googletagservices.com/tag/js/gpt.js$script,domain=~bestbuy.ca|~zaobao.com
 ||googlevideoads.com^
@@ -8376,6 +8380,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||lyra.iscrv.com^
 ||lyraik.cn^
 ||lyszsz.cn^
+||lyua.cn^
 ||lywdoo.cn^
 ||lz13.cn/THEMES/shouji/TEMPLATE/js/ms.js
 ||lzitzfb.cn^
@@ -9604,6 +9609,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||rgyun.com^
 ||rhinogo.cn^
 ||rhlxm.top^
+||rhtc.quanminyouxi.cn^
 ||riceck.cn^
 ||ricewaterhou.xyz^
 ||richshredinger.com^
@@ -9695,6 +9701,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||s7.qhres.com/static^$domain=m.haiduomi.com,third-party
 ||s8.qhres.com/static/*.js$domain=nicotv.cc
 ||s8x1.com^
+||saccac11.com^
 ||sacredperpetratorbasketball.com^
 ||sadjk.com^
 ||saitef.cn^
@@ -10842,6 +10849,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||wrltxt.com/hello/
 ||wsacdn1.miaopai.com/upload-pic/*.jpg|
 ||wsacjdg.cn^
+||wschao.xyz^
 ||wsds.cn^
 ||wsgwc.com^
 ||wshlcgj.com^
