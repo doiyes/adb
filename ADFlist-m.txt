@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Xeo8xa9TuHGOvgH+zHabPQ
+! Checksum: zli+OCTvpnGxWH7FqhtEAQ
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202301272216
+! Version(Last Modified): 202301282215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -103,6 +103,7 @@
 ##DIV[class^='ads_border_']
 ##DIV[data-text-ad]
 ##DIV[id*="BAIDU_SSP__wrapper_"]
+##DIV[style*='.xyz/gif/']
 ##DIV[style^='width:100%;height:100%;line-height: 100%;overflow:hidden; margin:auto;border:1px #']
 ##IFRAME[src*="//pos.baidu.com/"]
 ##IMG.cupfox[src$='gif']
@@ -938,7 +939,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||c.mipcdn.com^$domain=77dushu.com|biqugecom.com|prpcoin.com|zhetian.org
 @@||cache.tv.qq.com/gg/
 @@||cachead.com/*.css
-@@||cards.iqiyi.com^
 @@||cdn.bootcss.com^$script,domain=59xs.com|biqudd.com|didaxiaoshuo.cc|rijutv.com|shudai.org|xhxswz.com|xsw55.com|ysxs8.com
 @@||cdn.exp.qq.com/img/
 @@||cdn.jsdelivr.net^$script,domain=35xss.com
@@ -1892,6 +1892,9 @@ getAds|
 gexing.com##iframe[src^="http://biz.gexing.com/"],div.J_addAdContainer,div.add960,div.add160,div#footad,div#J_bottomMes
 gfan.com##DIV.wp.a_h,div.ad_list,DIV.section.section_ad,div.wpp,div[class^="fter "],.downs,IFRAME[src="plugin.php?id=gfan_viewpic:gfan_adView"],div#sitefocus
 ghoffice.com##[class="tac"],[class="mb5 tac cc"],[id^="ads_"],.textMes
+ghxi.com##DIV.slider-wrap.clearfix
+ghxi.com##LI.item.item-sticky
+ghxi.com##[class="sec-panel"]
 gitee.com##IMG[class='float-people']
 gitee.com,www.gitee.com,m.gitee.com$@$div[class="-ad"]
 gkstk.com##.ad960,.adleft,.adsbygoogle
@@ -3604,6 +3607,7 @@ www.3464.com##ins.adsbygoogle
 www.360doc.com##div[id^="divad"],div#fullbg,#docAdBelowContent
 www.3jy.com##div.Rad,div.rad
 www.40407.com##div.hong_f_201401,div.de_ad
+www.423down.com##LI.item:has(SPAN.sticky-post)
 www.4399.com##div.btn_ico_ri
 www.46g.cn##.ad760x90,.banner
 www.4kong.com##a[href="http://www.fanli20.com"]
@@ -3927,6 +3931,7 @@ www.yunaw.com##img[src*=".tietuku.com/"],img[src="http://yunaw.qiniudn.com/tuixi
 www.yundaex.com##div#ad1
 www.yunlaige.com##div[id^="PAGE_baidu_"],div.guangg,div#hfgg
 www.yuqingcn.cn##div#ad715x90,div.ad1024x90
+www.yxssp.com##DIV.td_module_wrap.td-animation-stack:has([aria-label^='📌「置顶」'])
 www.zhanqi.tv##div.new-advertising-area,div.new-room-img-area,#js-room-banners-list,div.chat-gg-area,div.wrap.ad-area,.js-activity-show,.room-chat-list-banner,.game-banner
 www.zhaodongde.com##ins.adsbygoogle,div.ad_fixed.ie_fixed
 www.zhcw.com##div.news_blanck,div.ad1
@@ -5087,7 +5092,6 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||adashbc.m.taobao.com/rest^$app=com.leku.ustv
 ||adashbc.m.taobao.com/rest^$third-party
 ||adashbc.ut.taobao.com^
-||adashbc.ut.taobao.com^
 ||adashx.m.taobao.com^
 ||adashx4yt.m.taobao.com^
 ||adashxgc.ut.taobao.com/rest^$app=com.huawei.hwvplayer.youku
@@ -5628,6 +5632,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||axbdlox.cn^
 ||axcdt.cn^
 ||axcdy.cn^
+||axutongxue.com/js/Webpopup.js
 ||ayidaye.m.zwdu.com^
 ||aykibra.cn^
 ||aymtdcg.cn^
@@ -5942,7 +5947,6 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||c.bdhcpll.cn^
 ||c.booksir.com.cn^
 ||c.cnzz.com^
-||c.kuaiduizuoye.com^
 ||c.l.qq.com^
 ||c.lattebank.com^
 ||c.leankun.com^
@@ -6786,6 +6790,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||ejieban.com^
 ||eladies.zhmyq.cn^
 ||elegant-creator.com^
+||elsmom.xyz^
 ||elsynmlw.fun^
 ||em.baidu.com^
 ||emarbox.com^
@@ -8003,6 +8008,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||kawa11.space^
 ||kazigua.top^
 ||kb-render.alicdn.com^
+||kb5ke.xyz^
 ||kb8ixcm.cn^
 ||kbae.qiqqh.cn^
 ||kbneks00.online^
@@ -11791,8 +11797,6 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||zzyanhushi.com^
 ||zzycj.com^
 ~g.ifeng.com,ifeng.com##a[href*="/g.ifeng."]
-！快对作业
-！爱奇艺
 01ny.cn##.cl[style],[style^="width:980px;height:70px;"],#Tab9_1,.topadv,[href^="http://f2.01ny.cn/ad/"]
 1avlang.com,avlang.com,avlang13.info##.index-info > .tac
 1fzdao.com###datu1
