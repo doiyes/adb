@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: CGk/k1bZ4A//Zoq5Asyz/g
+! Checksum: U+wlk85BLRboXz0XpodCfg
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202302082217
+! Version(Last Modified): 202302092217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -166,6 +166,7 @@
 ##.theme-dark > .ayx > a
 ##.width.imgs_1
 ##.zozoads
+##A[href*='.com:'][target='_blank'] > IMG[src][width='100%'][height='60px']
 ##A[href='/hth.html']
 ##A[href='http://88yd.cc/']
 ##A[href='http://8hgpro.vip/']
@@ -173,6 +174,8 @@
 ##A[href='http://k023055.com']
 ##A[href='http://kkyty29.cc/']
 ##A[href='http://x5123.cc/']
+##A[href][target='_blank'] > IMG[src$='.gif'][width='100%'][height='120px']
+##A[href][target='_blank'] > IMG[src$='.gif'][width='100%'][height='60px']
 ##A[href^='http'][style^='display:block;left:0;right:0;position:fixed;border-left:']
 ##A[href^='http://cszb420.tinawd81.com/']
 ##A[href^='http://h5.shangjinssp.com/sjprom'][style='display:block;']
@@ -193,13 +196,16 @@
 ##DIV#bfad
 ##DIV#bl_mobile_float
 ##DIV#div1.div-relative[style='display:block;']
+##DIV#links.links.my-1.row[style='font-size:20px']
 ##DIV#mhbottom_ad_box
+##DIV#video-player-ads-wrap
 ##DIV.ad-area.ad-area-fix-bottom
 ##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
 ##DIV.box-width.ec-ad
 ##DIV.box-width.ec-ad.ec-ad-double.flex
 ##DIV.col-4.col-sm-2.col-xl-2.px-1.px-sm-2.pb-3.pt-3.pt-sm-0.d-block.d-sm-none
+##DIV.col-lg-3.col-md-3.col-sm-4.col-12.item.p-0.px-1
 ##DIV.ec-ad.tim-box
 ##DIV.fixed-bottom.d-block.d-sm-none.movies_ad
 ##DIV.module-adslist
@@ -236,6 +242,7 @@
 ##[alt='ad']
 ##[alt='西瓜社']
 ##[at*='尼斯人注册送']
+##[class$="_main_outstream"][style="right: 0px;"]
 ##[class^="chapter_"] > .baiduCenter
 ##[data-url='http://xixi.stylar.hk/']
 ##[href$='/ads.aspx']
@@ -515,9 +522,11 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .top/*q=*form=*&*url=http*$third-party
 .top/Report/*-*-*-*-*
 .xyz$domain=yinghuacd.com
+.xyz/alpine?$third-party
 .xyz/base*.js?$third-party
 .xyz/hm.js?$third-party
 .xyz/jque*.js?$third-party
+.xyz/svelte?$third-party
 .xyz/xling_*_*_*.js?*
 /(?::\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+_\d{3}x\d{4})/
 /(blsx|xling)_\d{4,}_.+.js\?\d{5,}$/
@@ -529,6 +538,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /300x250.
 /360mse/360mse_*.apk?
 /361xk-2^
+/4.0.0/crypto-js.min.js
 /61.174.50.
 /96090/*
 /960x*0.gif
@@ -2071,6 +2081,7 @@ hao.360.cn##DIV.small-obj.animate,a[href$="src=hao_ncad_yule"],a[href$="src=hao_
 hao.qq.com##[id^="AD_"]
 hao.rising.cn###box_taobao2,#box_taobao1,#bbTao,.bd-lmhot,.banner-ad,.channel-adimg
 hao123.com##.adiframe,.adli,.newskin-tip,div.column-mask-model,div.column-content,div.treasure-game,#js-righttip-pic,.ad-imax,#iframeTp
+hao123.com##DIV.popup
 hao7zhe.com##.a_mu,[width="150"][height="300"],.a_pt,.wp.a_f
 haodf.com##div.closeid,div[class^="index_bottom"]
 haokan5.com##.ad8,.ads
@@ -2360,7 +2371,6 @@ jjxw.cn##.logo_ad_r,[class$="_banner"],#ad2,.c_banner_02_ad
 jkforum.net##div.a_p,div.a_pb,div.a_mu
 jlonline.com##.ad960,.ad670,.ad1200,.ad390
 jlonline.com##.focusPic,.ad300_250,[class^="ad_"]
-jmb.izzcwww*.*
 jmbbs.com##DIV.wp.a_h,DIV.comiis_ad,DIV.a_mu,DIV.a_pt,DIV.a_p,div.a_fl.a_cb,div.a_fr.a_cb,div.a_pr,div#comiis_jmad02,img[width="980"][height="60"],[src^="http://img.jmbbs.cn/sjgg/"],[width="1100"][height="55"],.a_pb
 jobbole.com###sidebar > .widget_text:first-child
 jobbole.com##.post-adds + .textwidget
@@ -5507,7 +5517,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||api-shoulei-ssl.xunlei.com^
 ||api-u-ssl.xunlei.com^
 ||api-yuedu.iqiyi.com/book/cloudShelf/pushCloudShelf?qyidv2=1DF0BFF1D9EC8E76824990C7D7A1F38E&appVer=3.6.6&srcPlatform=10&userId=read&qiyiId=865376038025837&md5=6fcd2d8b50e3117b73c8b06c5ec8ffa2&timeStamp=1530867293768$app=com.qiyi.video
-||api.*.com/sh/to/$third-party
+||api.*.com/sh/to/$third-part
 ||api.06fgej.com^
 ||api.1101yh.com^
 ||api.22lianmeng.com^
@@ -9114,7 +9124,6 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||padsdel.com^
 ||pagead.
 ||pagead2.
-||pagead2.googlesyndication.com^
 ||pagechoice.com^
 ||pagechoice.net^
 ||pageview.kgsz.cn^
