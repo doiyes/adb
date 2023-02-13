@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: vSd6MeFozpjgThUfdMgvAA
+! Checksum: b/L12MVtNTWVv48Xwk2Z5w
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202302122215
+! Version(Last Modified): 202302132217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -125,6 +125,7 @@
 ##.width.imgs_1
 ##.zozoads
 ##A[href*='.com:'][target='_blank'] > IMG[src][width='100%'][height='60px']
+##A[href='/?'][target='_blank']
 ##A[href='/hth.html']
 ##A[href='http://88yd.cc/']
 ##A[href='http://8hgpro.vip/']
@@ -157,6 +158,7 @@
 ##DIV#links.links.my-1.row[style='font-size:20px']
 ##DIV#mhbottom_ad_box
 ##DIV#video-player-ads-wrap
+##DIV.JS_mid_ad
 ##DIV.ad-area.ad-area-fix-bottom
 ##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
@@ -186,6 +188,7 @@
 ##IMG[src$='.dl'][style='width:100% !important;height:90px'][onclick]
 ##IMG[src*='.xyz/tupian/'][src$='/h5.gif']
 ##IMG[src*='/gg/'][src$='180.gif'][src*='800']
+##IMG[style='width: 100%;'][src^='https://ad.']
 ##IMG[url][onclick='window.open(this.url)'][src$='.gif'][width='100%']
 ##P[style$='transparent !important; font-size: 0px !important; text-indent: -10000px !important; height: 125px !important;']
 ##SPAN#qdSZ2
@@ -325,7 +328,6 @@
 ##div.stui-pannel__bd > #t-img-box
 ##div.video-box > div.hf > a
 ##div[class^="is_"] > a > img[referrerpolicy="no-referrer"][src*="hdslb.com"]
-##div[id*='ad'][class*='text']
 ##div[id*='cat_'][id*='_ad']
 ##div[id][style="width: 100%;"] > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##div[style^="width: 100%;"][style$="display: block;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
@@ -1744,6 +1746,7 @@ dlkoo.com###taobaoapp
 dm456.com,dm456.iqiyi.com##DIV[style*="height:90px;"],IFRAME[width="978"][height="90"],IFRAME[src^="/m/"],DIV#bdLeft,IFRAME[width="980"][height="92"],DIV#p-right,DIV#p-left
 dm5.com##div#float_tc_pop_299,div[adgroupid="0"],div.beitouc,div.cl760,div.cl970,.yddiv,.adCon,.adform_2,.adform_1,#nAd
 dm530.net,it168.com###adv
+dm530p.net##DIV[style$='; display: block;']
 dmh8.me,dm88.me##DIV[style='display: flex;']
 dmh8.me,dm88.me##DIV[style^='background: url("http']
 dmh8.me,dm88.me##H2[style='display: block;']
@@ -3970,6 +3973,7 @@ www.y4dg.com##div.a_mu,div.a_pb,div.a_pt,div.a_pr,div.wp.a_t
 www.yatu.tv##div[id^="myads_"]
 www.yayaxz.com##div.room-box
 www.ybzhan.cn##.banneradv,.leftAdvNewA,.leftAdvNewB,.adRight,.adTop
+www.ydyse.com##.left,.bottom,.right,.ad,.adimage
 www.yeyou1.com##img[src^="http://www.yeyou1.com/images/"],div.left-box
 www.yiihuu.com##div.popup-ad
 www.you85.cn##div.a_pb,div.a_pt,div.a_mu
@@ -4255,6 +4259,7 @@ znds.com##div#sitefocus
 zol.com.cn###downloader_main
 zol.com.cn##.ad-soft-box
 zol.com.cn##.member-button-yellow
+zol.com.cn##A.dingtong.xianshiyouhui
 zol.com.cn##div.banner.mt,div.banner1.mt,div#rightAd,div#rightAdDiv1,div#right_banner,div.bannerleft,div#top_tl_ad,div.ad_div,DIV.gmine_ad,.adSpace,#commentTopAd,#Bar3733_big,div.ad-box.article-cont-ad,DIV[class="ad-box ad-box"],div#activeEntry0703,ul.ad-window,div[id^="Bar37"],div[id^="Bar38"],div.ecma-baokuan-main,div[id^="ad_"],div[id^="Bar"][id$="_small"],div[id^="Bar"][id$="_big"],div.side-news,ul#soft-sj-rank.soft-list.clearfix,div.winbox,div[class^="default-head"],div.advert,#youdao,#youdao2,div#baoban,div#blank,div#luo-ad,div#luo-small,.zplus_ad,[id^="AD_"],[id^="_AD_"],.dcmads,#ZOL-shop,#bgad,.download-top,[src^="http://www.zol.com.cn/ad/"],.ad_001,.zmall-ad-1000,.gmine_ad,.zol-mall-area,[class^="jd-banner"],iframe[src^="https://icon.zol-img.com.cn/ad/"]
 zol.com.cn##div[class^="box-top-xiaza"]
 zol.com.cn##span[class^="down-dxlt"]
@@ -9980,6 +9985,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||ssports.iqiyi.com/app/$object-subrequest
 ||ssqyuvavse.com^
 ||ssrj.net^
+||sssxwsry.com^
 ||st123.info^
 ||stadig.ifeng.com^
 ||star8.net^
@@ -11537,6 +11543,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||zazgiyoh0s.xyz^
 ||zazhipu.com^
 ||zb.516624.com^
+||zbc6hyepls.xyz^
 ||zblz.me^
 ||zcdsp.com^
 ||zcnnn.com^
