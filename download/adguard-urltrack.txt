@@ -1,4 +1,5 @@
 ! AdGuard-url跟踪保护规则
+$removeparam=pk_vid
 $removeparam=mindbox-click-id
 click_id=*_branch_referrer=$removeparam
 $removeparam=famad_xuid
@@ -413,13 +414,13 @@ $removeparam=ActionID,domain=otto.de|ottoversand.at
 $removeparam=AffiliateID,domain=otto.de|ottoversand.at
 $removeparam=campid,domain=otto.de|ottoversand.at
 ||search.naver.com/p/crd/rd$removeparam=i
-||search.naver.com/p/crd/rd$removeparam=px
-||search.naver.com/p/crd/rd$removeparam=py
-||search.naver.com/p/crd/rd$removeparam=sx
-||search.naver.com/p/crd/rd$removeparam=sy
-||search.naver.com/p/crd/rd$removeparam=p
-||search.naver.com/p/crd/rd$removeparam=s
-||search.naver.com/p/crd/rd$removeparam=time
+||search.naver.com/p/crd/rd$removeparam=px,document,image
+||search.naver.com/p/crd/rd$removeparam=py,document,image
+||search.naver.com/p/crd/rd$removeparam=sx,document,image
+||search.naver.com/p/crd/rd$removeparam=sy,document,image
+||search.naver.com/p/crd/rd$removeparam=p,document,image
+||search.naver.com/p/crd/rd$removeparam=s,document,image
+||search.naver.com/p/crd/rd$removeparam=time,document,image
 ||buzzfeednews.com^$removeparam=ref
 ||goodreads.com^$removeparam=ref
 ||coconala.com^$removeparam=ref
