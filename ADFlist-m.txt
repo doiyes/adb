@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: LAVffN81OjwpOidyuGXz3g
+! Checksum: 6sLjDfmDLSbWjspxBz3C7Q
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202302142218
+! Version(Last Modified): 202302152217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -171,6 +171,7 @@
 ##DIV.module-adslist
 ##DIV.myui-content__acc[style='position: relative;padding: 0 10px']
 ##DIV.sptable_do_not_remove f_one
+##DIV.stui-player.clearfix > [id*='ad'],div.stui-pannel > [id*='ad'],div.container > [id*='ad']
 ##DIV.tpc_icon
 ##DIV[class$='_ad_wrap']
 ##DIV[class^='ads_border_']
@@ -312,6 +313,7 @@
 ##div.box.bottom-adv
 ##div.callApp_fl_btn.an
 ##div.close-player_pic[onclick="document.getElementById('player_pic').style.display='none'"]
+##div.container > DIV.t-img-box
 ##div.container > IFRAME[align][width][src][border][height]
 ##div.container > div.row div.yalayi_box
 ##div.container > div.t-img-box > A[href][target='_blank']
@@ -366,10 +368,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 *$app=com.miui.systemAdSolution
 *-stats.jpush.cn^
 *.com/css/showfloatdiv^
-*.gif$domain=m.imomoe.live
 *.lijie.*/*_*?$third-party
-*.tfptlgrw.*
-*.u8hdqyug.*
 */?tzbilibili
 */ad.
 */adbox/
@@ -383,7 +382,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */piaofu/
 */redirect?ad_cb=
 */svnad/$image,script
-*:*/*.html?k=*&_=*
 *ContentAD.
 *H5Logic_
 *[STATUS]*
@@ -469,7 +467,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .com/ads.
 .com/adv1/?q=
 .com/gg.js
-.com/sh/to$third-party
 .com/sh/to/$third-party
 .cyou/redbaiduct.com
 .cyou/xling_*_
@@ -5467,7 +5464,6 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||api-shoulei-ssl.xunlei.com^
 ||api-u-ssl.xunlei.com^
 ||api-yuedu.iqiyi.com/book/cloudShelf/pushCloudShelf?qyidv2=1DF0BFF1D9EC8E76824990C7D7A1F38E&appVer=3.6.6&srcPlatform=10&userId=read&qiyiId=865376038025837&md5=6fcd2d8b50e3117b73c8b06c5ec8ffa2&timeStamp=1530867293768$app=com.qiyi.video
-||api.*.com/sh/to/$third-part
 ||api.06fgej.com^
 ||api.1101yh.com^
 ||api.22lianmeng.com^
@@ -5752,6 +5748,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||bd1.zuimeitianqi.com^
 ||bd2.zuimeitianqi.com^
 ||bdcode1.haodou.com^
+||bddwm.com^
 ||bdfpbimg.ifengimg.com^
 ||bdgg.youbian.com^
 ||bdhcpll.cn^
@@ -5860,6 +5857,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||bjcass.com^
 ||bjcathay.com^
 ||bjgztt.com^
+||bjkedvvelwf.xyz^
 ||bjlmok.com^
 ||bjmcmj.cn^
 ||bjs.mscto.com^
@@ -7131,6 +7129,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||govliuzhou.cn^
 ||govxinjiang.cn^
 ||gozendata.com^
+||gpxxbyf.cn^
 ||gqdfgyz.cn^
 ||grandcomms.cn^
 ||greatservice.online^
@@ -8176,6 +8175,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||letao.com^
 ||letaotaojishi.com^
 ||letv.com/*ark=
+||letvcdn.com^
 ||letvimg.com/gugwl/201*.jpg
 ||letvimg.com/lc06_gugwl/20$image
 ||lewenma.com/js/read.js
@@ -9026,6 +9026,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||openload.co/assets/js/script$script
 ||openrcv.baidu.com^
 ||ophwrh.cn^
+||opnkedfdye.xyz^
 ||opqsr.com^
 ||optaim.com^
 ||optimix.asia^
@@ -11647,6 +11648,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||zkads.cc^
 ||zkvivi.com/skin/wxc.js
 ||zlbkj.com^
+||zljnwzp.cn^
 ||zlnmzc.top^
 ||zmkma.com^
 ||znlgplt.com^
