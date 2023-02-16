@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: gh4qpcIBaLw98lTkbTwmYw
+! Checksum: +3jllsMkqn3oJBt1ZN/BMg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202302152217
+! Version(Last Modified): 202302162217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -74,6 +74,7 @@
 # NoCoin filter list optimized for uBlock
 ###Ad_windows
 ###ChapterView > .slide-baidu
+###J_sideFooter.side_footer
 ###Layeraa1
 ###Layeraa2
 ###MsnDialog.ad
@@ -689,6 +690,7 @@
 ##.lyzm-prevent
 ##.m1938-container
 ##.m_acmsd
+##.m_hot_rec_box_base[id^="right"]
 ##.main-ad-l
 ##.main-ad-r
 ##.main-ad-r + .topad
@@ -1511,6 +1513,7 @@
 ##div[class^="is_"] > a > img[referrerpolicy="no-referrer"]
 ##div[class^="is_"] > a > img[referrerpolicy="no-referrer"][src*="hdslb.com"]
 ##div[class^="ps_"][value="20"]
+##div[id$='ad1'][class^='text'],div[id$='ad2'][class^='text'],div[id$='ad3'][class^='text'],div[id$='ad4'][class^='text'],div[id$='ad5'][class^='text'],div[id$='ad6'][class^='text']
 ##div[id*='cat_'][id*='_ad']
 ##div[id][style="position: fixed; bottom: 40%; z-index: 19999 !important; right: 2px;"]
 ##div[id][style="width: 100%;"] > div > div > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
@@ -8097,6 +8100,7 @@ der-postillon.com##.iqadtile-wrapper
 descargas2020.com##+js(acis, atob, _0x)
 desixflix.com,fistingplanet.com,bestjavporn.com,hentaiasmr.moe,stockingfetishvideo.com##.happy-header-mobile
 detail.chiebukuro.yahoo.co.jp##aside[class*="ClapLv3SubList_Chie-SubList__ListItem--Ad__"]
+detail.chiebukuro.yahoo.co.jp##aside[class^="Detail_chie-Pages__AdNM_"]
 detail.chiebukuro.yahoo.co.jp##aside[style="height: 100px; padding: 2px 0;"]
 detik.com##.megabillboard
 developers.kaokao.com
@@ -8478,6 +8482,7 @@ duba.com##.cool_textlink
 duba.com##.hot-bottom
 duba.com##.hot_push > .hot_movie
 duba.com##.liondance-wrapper
+duba.com##.m_hot_rec_box_base
 duba.com##.news_ctm_wrap > .ctm_ad
 duba.com##.oneone-search
 duba.com##.plane_ads
@@ -8491,7 +8496,6 @@ duba.com##.tempAd
 duba.com##IMG[width="960"][height="60"],DIV[style^="width:960px;height:90px;"],DIV.baidu_ad,DIV.taobao_ad,DIV.code_yx,DIV[style^="width:645px;height:200px;"],.imgad,#ppysj,.search_promotion,.ad_leftTip_out,.bgOpen,.skinadclosed,#blockAD1,.J_link,.J_close,.adclosed,[class^="top_ad"],.tmall_bg15,.box_shopping
 duba.com##a[w="topad"]
 duba.com#?#.newslist  > .news_ctm_wrap:has(> .ctm_ad)
-duba.com,iduba.com,newduba.cn###J_sideFooter
 duba.com,iduba.com,newduba.cn##.left_slidebar_con
 duba.com,iduba.com,newduba.cn,uu114.cn##.fav_box
 duba.com,newduba.cn###J_FloorWave
@@ -11046,6 +11050,7 @@ imindmap.cc
 imkan.tv##.bottom__card
 imobie.com##.adlet_mobile
 imooc.com##.redrain-bg-shade
+imtest.de##div[class^="contentAd"]
 imzog.com##div[id^="im-vda"]
 in.18gg.net##Table
 in.style.yahoo.com###HeadlineSection > #sda-WFPAD
@@ -14235,6 +14240,7 @@ new.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 new.qq.com#@##TopAd
 newbiquge.com##[id^="index_ad_"]
 newcger.com##.banner_recom
+newduba.cn###jq_youxi
 newgrodno.by##.main-nav-below > nav#top-nav > div.container > div.topbar-wrapper
 newhua.com##div.taobaoad,div.unionad,ins.adsbygoogle,div.adr,div.ad_center,div[class^="ad_ritht_"],DIV.ad_top,DIV.i1,DIV.i2,DIV.i3
 newmatoan.com##.sirowaku
@@ -14631,6 +14637,7 @@ oneinstack.com##.w-ad
 onemanhua.com##body > div[style^="position: fixed;"][style*="z-index:"]
 onemanhua.com##div[id^="rn_ad_native"]
 onenews.vip
+onepiece-akumanomi.com##.adsbygoogle
 onepiece-log.com##.wrapper center
 onet.pl###page > div[style="margin:auto;width:300px;"] > p[style^="font-size:9px;color:#696969;"]
 onet.pl##.placeholder-container
@@ -18929,9 +18936,6 @@ xhadult2.com,xhmoon5.com,xhwide8.com,xhamster3.com,xhamster18.desi,xhamster.com,
 xhadult2.com,xhmoon5.com,xhwide8.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##.thumb-list-mobile-item--widget
 xhadult2.com,xhmoon5.com,xhwide8.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##.wih-banner-container
 xhadult2.com,xhmoon5.com,xhwide8.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##div[class*="banner-container"]
-xhadult3.com,xhadult2.com,xhmoon5.com,xhwide8.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.thumb-list-mobile > .thumb-list-mobile-item--widget
-xhadult3.com,xhadult2.com,xhmoon5.com,xhwide8.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.wio-e
-xhadult3.com,xhadult2.com,xhmoon5.com,xhwide8.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##aside[class^="wio-"][class*="premium-overlay"]
 xhamster.com##.pop-advertise
 xhamster.com##.sponsorBottom
 xhamster.com##.ts
@@ -18940,6 +18944,9 @@ xhamster.com,xhamster2.com#$#.video-view-ads { display: none!important; }
 xhamster.com,xhamster2.com#$#body { overflow: visible!important; position: static!important; }
 xhd.cn##.xinad
 xhtml?$domain=kanshu8.net
+xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide8.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.thumb-list-mobile > .thumb-list-mobile-item--widget
+xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide8.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.wio-e
+xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide8.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##aside[class^="wio-"][class*="premium-overlay"]
 xhzyw.com###HtmlMoKua_752383
 xhzyw.com##.ads_bottom
 xia1ge.com##.wsappad
@@ -19918,6 +19925,7 @@ zzzyk.com###Tinfo
 ||04stream.tv/sda/
 ||0511code.com^
 ||0512s.com^$third-party
+||053h94.com^
 ||053tyfg.com^
 ||0551huayanbdf.com^
 ||0554xx.cn/gg2.js
@@ -26565,6 +26573,7 @@ zzzyk.com###Tinfo
 ||cwc494e.cn^
 ||cwhsmgs1.cn^
 ||cwmlm.com^$third-party
+||cwobgp.cn^
 ||cwpbohx.cn^
 ||cwphgqu.cn^
 ||cwpush.com^
@@ -27449,6 +27458,7 @@ zzzyk.com###Tinfo
 ||dsxgg.com^
 ||dszeda.cn^
 ||dt243100.com^
+||dtckvpc.cn^
 ||dtqiow.cn^
 ||dtrcw.cc^
 ||dtscout.com^
@@ -27825,6 +27835,7 @@ zzzyk.com###Tinfo
 ||eidccepu.cyou^
 ||eidphap.cn^
 ||eiinaq.xyz^
+||eijriol.cn^
 ||eisafniw.space^
 ||eiv.baidu.com/
 ||eiv.baidu.com^
@@ -29085,6 +29096,7 @@ zzzyk.com###Tinfo
 ||googlevideo.com/videoplayback?$xmlhttprequest,redirect=noop.txt,domain=safeframe.googlesyndication.com
 ||googlevideoads.com^
 ||goolpter.com^
+||goopi.cyou^
 ||gop1.co^
 ||goproxy.cc/api.php
 ||gorgon.youdao.com/gorgon/request.s
@@ -32231,7 +32243,7 @@ zzzyk.com###Tinfo
 ||kikinote.net/iframe
 ||kilin.xyz^
 ||killcovid2021.com/*.mp4
-||killcovid2021.com/thumb/*.mp4
+||killcovid2021.com^*.mp4
 ||kimdate2019.xyz^
 ||kimiaexirteb.com^
 ||kingkongapp.com^*/web/adv/list?
@@ -32762,7 +32774,6 @@ zzzyk.com###Tinfo
 ||letsread.club^
 ||letv.com/*ark=
 ||letv.com/pzt/hyhmzq/index.shtml
-||letvcdn.com^
 ||letvimg.com/$object,xhr
 ||letvimg.com/*_gugwl/$image
 ||letvimg.com/gugwl/201*.jpg
@@ -33223,6 +33234,7 @@ zzzyk.com###Tinfo
 ||ltp.jiantiquan.cn^
 ||lts*.qq.com^*.ts?index=$media,redirect=noop-0.1s.mp3,domain=qq.com
 ||ltsdl.qq.com/$xmlhttprequest
+||ltwfd.xyz^
 ||ltxs.me/js/wap.js
 ||lu.sogou.com^
 ||lu.sogoucdn.com^
@@ -33837,6 +33849,7 @@ zzzyk.com###Tinfo
 ||meetsourhig.biz^
 ||megpacokjce.bid^
 ||meibiisheng.com^
+||meidd.cyou^
 ||meihaoxiangwang.com^
 ||meihaoxiangwang.com^
 ||meihu56.cn^
@@ -34408,6 +34421,7 @@ zzzyk.com###Tinfo
 ||mumulian.com^
 ||muoo.xyz^
 ||musan.love^
+||musdga.xyz^
 ||music.163.com/eapi/ad
 ||music.163.com/weapi/activity/downloadpage/config/get
 ||music.163.com^$domain=mvcat.com
@@ -34971,6 +34985,7 @@ zzzyk.com###Tinfo
 ||nuqqcgb.cn^
 ||nuslzkb.cn^
 ||nutaku.net^
+||nuubi.cyou^
 ||nuyqiolnc.cyou^
 ||nv43.com^
 ||nveuiqh.cn^
@@ -35269,6 +35284,7 @@ zzzyk.com###Tinfo
 ||oqfdan.cn^
 ||oqnggnsk.fun^
 ||oqshoyd.cn^
+||oqxep.cn^
 ||orange-dc.youku.com^
 ||orbit.jd.com^
 ||ordidc.com^
@@ -37148,6 +37164,7 @@ zzzyk.com###Tinfo
 ||rzlib.net^
 ||rzlp.xyz^
 ||rzngisyz.xyz^
+||rzxov.cn^
 ||s*.sinaimg.cn/orignal^$domain=avtbf.com
 ||s*z.pstatp.com/site/download/app/pl/news_article/68004/ss_plugin_config.json$app=com.ss.android.article.news
 ||s-adx.op-mobile.opera.com^
@@ -40759,6 +40776,7 @@ zzzyk.com###Tinfo
 ||wsacjdg.cn^
 ||wschao.xyz^
 ||wschao.xyz^
+||wsdof.xyz^
 ||wsds.cn^
 ||wsgblw.com^
 ||wsgwc.com^
@@ -41479,6 +41497,7 @@ zzzyk.com###Tinfo
 ||xinkuaiyu.com^
 ||xinleka.com^
 ||xinlimaoyi2.xinlimaoyi.cn^
+||xinllz.xyz^
 ||xinlongrubber.com^
 ||xinmin.cn/framepage/foot1.htm
 ||xinmin.cn/framepage/left1.htm
@@ -44050,7 +44069,6 @@ zzzyk.com###Tinfo
 91danji.com##.zlVideTowNav
 91duba.com###leftBar
 91duba.com##.m_guess_like
-91duba.com,iduba.com###m_hot_rec_main > div > .noLikeList
 91duba.com,iduba.com###topBanner
 91duba.com,iduba.com##.jq_notice
 91hs.top,hsex.men##.col-xs-12 > a[target="_blank"]
