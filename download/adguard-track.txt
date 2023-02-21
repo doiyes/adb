@@ -1,5 +1,7 @@
 ! AdGuard-跟踪保护规则
 itmedia.co.jp#$##ulCommentWidget[style*="display"] { display: block !important; }
+apkpure.com##+js(set-constant, $.analytics, {})
+apkpure.com##+js(set-constant, $.analytics.send, noopFunc)
 member.neofinancial.com##+js(set-constant, __fpjs_p_l_b, {})
 member.neofinancial.com##+js(set-constant, __fpjs_p_l_b.load, noopFunc)
 itsu.com##+js(set-constant, AtreemoTrackingLbr, noopFunc)
@@ -117,6 +119,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||predatasrv.com^
 ||mediago.io^$third-party
 ||b.karte.io^
 ||cra.hum.works^$third-party
@@ -5044,6 +5047,7 @@ nethunt.com/api/v1/track/email/$image
 ||tags.news.com.au^$~script
 ||telemetry.mozilla.org^
 |piwik.
+||rac.ruutu.fi^
 ||forecast.lemonde.fr^
 ||b0.yahoo.co.jp^
 ||beacon.unext.jp^
@@ -35714,6 +35718,12 @@ link.gmapp*.net$image
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||beacon-api.aliyuncs.com^
+||adash.man.aliyuncs.com^
+||woodpecker.uc.cn^
+||adashx4ae.ut.taobao.com^
+||audid-api.taobao.com^
+||analytics.ff.avast.com^
 ||node.aibeacon.jp^
 ||wsmetrics.batch.com^
 ||log.isnssdk.com^
@@ -36182,7 +36192,7 @@ link.gmapp*.net$image
 ||4seeresults.com^
 ||abcd.mdc.akamaized.net/materials/index/?country=
 ||ad-analytics-bootstrap.metaps.com^
-||adash.m.taobao.com/rest/sur?ak=
+||adash.m.taobao.com^
 ||adfuture.cn^
 ||adserver.snapads.com^
 ||adsunflower.com^
@@ -36352,6 +36362,9 @@ link.gmapp*.net$image
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||cdn.personaclick.com^$domain=koctas.com.tr
+@@||api.personaclick.com/recommend/$domain=koctas.com.tr
+@@||api.personaclick.com/init$domain=koctas.com.tr
 !+ NOT_PLATFORM(windows, mac, android)
 @@||a.apkpure.com/analytics_*.js
 @@||mpsnare.iesnare.com/snare.js$domain=welcome.cryptothrills.io
