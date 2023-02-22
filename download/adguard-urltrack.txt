@@ -1,4 +1,5 @@
 ! AdGuard-url跟踪保护规则
+$removeparam=gci
 $removeparam=pk_vid
 $removeparam=mindbox-click-id
 click_id=*_branch_referrer=$removeparam
@@ -149,6 +150,8 @@ $removeparam=fb_action_types
 $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
+||glami.cz^$removeparam=/ga[ct]id/
+||open.spotify.com^$removeparam=referral
 ||skt.sh/common/share/bridge?$removeparam=referer
 ||login.afreecatv.com^$removeparam=szFrom
 ||moffme.com^$removeparam=source
@@ -163,7 +166,7 @@ $removeparam=fb_source
 ||tiktok.com^$removeparam=referer_url
 ||tiktok.com^$removeparam=refer
 ||voicy.jp^$removeparam=share.ref
-||chaturbate.com^$removeparam=/tour|campaign/
+||chaturbate.com^$removeparam=/tour|campaign/,~third-party
 ||awaliwa.com^$removeparam=lg
 ||awaliwa.com^$removeparam=s
 ||awaliwa.com^$removeparam=c

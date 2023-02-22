@@ -1,4 +1,5 @@
 ! AdGuard-跟踪保护规则
+reverso.net##+js(set-constant, rumjs.business.setManualConsent, noopFunc)
 itmedia.co.jp#$##ulCommentWidget[style*="display"] { display: block !important; }
 apkpure.com##+js(set-constant, $.analytics, {})
 apkpure.com##+js(set-constant, $.analytics.send, noopFunc)
@@ -119,6 +120,13 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||1800cnt.com^$third-party
+||tag.nifty.com^
+||tracker.kantan-access.com^
+||counter2.blog.livedoor.com^
+||odtrtadl.com^
+||dkotrack.com^
+||statscollector.sd-rtn.com^
 ||predatasrv.com^
 ||mediago.io^$third-party
 ||b.karte.io^
@@ -3901,6 +3909,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||visilabs.net^$third-party
 .ay.delivery^
 ||functionalclam.com^$third-party
+||distributionneck.com^$third-party
 ||aliasanvil.com^$third-party
 ||shiveringspot.com^$third-party
 ||magicaljoin.com^$third-party
@@ -5196,7 +5205,6 @@ nethunt.com/api/v1/track/email/$image
 ||log.hypebeast.com^
 ||tracker.remp-beam.golem.de^
 ||tracking.digitalocean.com^
-||events.split.io^
 ||log.bandi.so^
 ||ana.bandi.so^
 ||weblog.dema.mil.kr^
@@ -32388,6 +32396,9 @@ _tracking.php?b=
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz
+||surfsnow.jp/common/js/analytics_
+||torimochi.line-apps.com^$image,redirect=1x1.gif
+samuraisoccer.doorblog.jp##.plugin-l-t:last-child
 ||safevisit.org/api/v*/c?$redirect=noop.txt,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||docs.google.com/forms/*/naLogImpressions^
 ||nikaraw.com/load_adb
