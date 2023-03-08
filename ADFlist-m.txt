@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: H1xaM7v9Scljz3VsBlCljA
+! Checksum: LXdzrTWvZ+QTwxRpsKrwbw
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202303072218
+! Version(Last Modified): 202303082218
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -267,8 +267,10 @@
 ##body.page.player > div.popup.popup-tips.popup-icon.open
 ##center > [href^='https://docs.qq.com/doc'][target='_blank']
 ##center > a > IMG[alt$='到期']
+##div#beijing.article_content.layui-clear > div.left > div > a
 ##div#detail.selector-zero > div > DIV[style]
 ##div#h2_player_prevideo > A[href][target='_blank']
+##div#page-back DIV.container.clearfix div > A > IMG[src]
 ##div#reader-scroll.acgn-reader-chapter.v>div>center>strong>button
 ##div.a_fr.a_cb,div.a_fl.a_cb,div.a_cn,div.wp.a_h
 ##div.a_mu,tr.ad,div.wp.a_f,div.a_fl.a_cb,div.a_fr.a_cb
@@ -317,6 +319,7 @@
 ##section.global_video_bottom_dbtc
 ##span > A[href='###']
 ##ul > li > A[href$='_list.html']
+##ul#page-list.layui-clear.page-wz > ul > li:not([class])
 ##ul.content-list > li.content-tb
 $$a[href="/js/app.htm?url="]
 $$a[href="changhong886.com"]
@@ -854,6 +857,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /show_ads_
 /showad*
 /showframe/*
+/site/mov*$third-party
 /sitead*
 /sitejs/clys.js
 /skin/common.htm
@@ -3638,6 +3642,7 @@ www.0731fdc.com##div#menu2.fixed,div#fontAd
 www.1080pba.com##div.ad_960,div.ad_300,div#topxia,img[src="/templets/default/images/1.gif"]
 www.10s1.com##[src^="http://www.10s1.com/ggpic/"],.jyzxad,.adver
 www.115zk.com##div.wp.a_f,div.a_cn
+www.123pan.com##DIV.VipBanner,DIV[style='width:100%;position:fixed;bottom:80px'],DIV[style='width: 100%; position: fixed; bottom: 25px;']
 www.123yq.com##div.Messageml
 www.12580sky.com##img[width="998"][height="70"],img[width="998"][height="80"],img[width="490"][height="80"],div.zz-list,div.bk8 + table
 www.126.com,mail.163.com##div.APP-dashi-botBanner,div.gWel-promt
@@ -6153,6 +6158,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||cholo101.cn^
 ||cholor201015.cn^
 ||cholor201115.cn^
+||chongyayakk.xyz^
 ||choupsee.com^
 ||chromefeedcontentsuggestions-pa.googleapis.com/v2/suggestions^
 ||chuantu.biz^$domain=thzx.cc
@@ -9058,6 +9064,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||oinjkenwok.xyz^
 ||oinlkwdsx.xyz^
 ||oinlkwr.xyz^
+||oiqwnfk.com^
 ||oiuqwppcsdf.com^
 ||ojbkmcsdx.xyz^
 ||ojj258.com^
@@ -9219,6 +9226,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||pdxubxc.cn^
 ||pee.cn^
 ||pejrq.xyz^
+||pengauto.cn^
 ||pepsico.com.cn^
 ||pexnjio.cn^
 ||pfdth.cn^
@@ -9303,6 +9311,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||poasotha.com^
 ||poereawer.top^
 ||pogwua.cn^
+||poiqknfl.com^
 ||pojkhufef.xyz^
 ||policy.jd.com/m/log^
 ||policy.video.iqiyi.com^
@@ -10567,6 +10576,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||ueg.cc^
 ||ufolm.com^$third-party
 ||ug.snssdk.com^
+||ugbjqwe.com^
 ||ugdtimg.com^
 ||ugooo.cc^
 ||uhyhdrh.cn^
@@ -11586,6 +11596,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||yt800h.com^
 ||ytelc.com^
 ||ytunion.com^
+||ytvwhbejc.com'
 ||ytybl.com^
 ||yu0123456.com^
 ||yubingyuan.top^
