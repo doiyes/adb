@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: KEqa99wELJdB4E5rWIOkDA
+! Checksum: aVz6aAI/CYMugf55v7aizg
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202303102218
+! Version(Last Modified): 202303112215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -957,6 +957,7 @@ bilibili.com##.video-page-game-card
 bilibili.com##.video-page-game-card-small
 bilibili.com##A[href*="cm.bilibili.com"][data-target-url*=".biligame."]
 bilibili.com##A[href*="cm.bilibili.com"][data-target-url*=".biligame."] + .bili-video-card__info
+bilibili.com##button.go-back,a.feedback
 bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
 bing.com###BottomAppPro
@@ -1153,7 +1154,7 @@ docer.com##.popup
 docsmall.com##.modal-connection.show
 dongao.com##div[class^="fu_"]
 dongao.com,zgsyz.com###ad
-dongti2023.com###modules-35,#modules-34,#modules-33,.swiper-slide[data-swiper-slide-index="0"],.swiper-slide[data-swiper-slide-index="1"]
+dongti2023.com##.widget-graphic-cover,.swiper-slide[data-swiper-slide-index="0"]
 douban.com##.bottom_ad_download
 douban.com##.subject-banner, div[ad-status]
 doubleclick.net
@@ -2343,8 +2344,8 @@ www.58trz.com
 www.acfun.cn###guide-fix
 www.baidu.com###bottom_layer
 www.baidu.com###s_top_wrap
-www.baidu.com##body.is-lite:style(min-width: 0px !important)
-www.baidu.com##html:has(body.is-lite>#s_strpx_span1):style(overflow-y: hidden !important)
+www.baidu.com##body:style(min-width: 1100px !important)
+www.baidu.com##html:has(body>#aging-tools-pc):style(overflow-y: hidden !important)
 www.chinakaoyan.com##.side-wx
 www.chnmoney.com##.tonglan
 www.citydy.com##.dplayer-web-fullscreen-fix #player-shrink,#citybanner
