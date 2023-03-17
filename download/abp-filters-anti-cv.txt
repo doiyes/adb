@@ -360,14 +360,15 @@ clanky.seznam.cz,search.seznam.cz##.Result-ico:not([class="Result-ico"])
 clanky.seznam.cz,search.seznam.cz##.Result.Result--organic > .Result-ico:not([class="Result-ico"]) + .Result-contentContainer
 clanky.seznam.cz,search.seznam.cz#?#:-abp-has(> .Result--organic .Result-title-link:not([class="Result-title-link"]))
 clanky.seznam.cz,search.seznam.cz#?#.Result:-abp-has(.Result--organic [class^="Result-contentContainer _"])
-clanky.seznam.cz,search.seznam.cz#?#.Result.Result--organic:-abp-has(.Result-title + .Result-contentContainer > :not(.Result-url):not(.Result-dw-wrapper):not(.Result-image) > :not([class="Result-url-link Result-url-link--cr-result"]):not(span):not(.AnchorList-list))
-www.seznam.cz#$#hide-if-matches-xpath './/div[@class][@style="flex-basis: 1800px; height: 1800px;"]/div[@class][@style="top: 62px;"]'
-www.seznam.cz#$#hide-if-matches-xpath './/div[@class="banner-wrapper"]/a[contains(@href,"click?")]/div/img/ancestor::div[@id]'
-www.seznam.cz#$#hide-if-matches-xpath './/div[contains(@class,"mol-advert-header__advert-label")]/preceding::div[contains(@class,"mol-advert-header__source")]/parent::div[@class]/ancestor::div[@id][1]'
-www.seznam.cz#$#hide-if-matches-xpath './/div[contains(@style,"height: 300px; width: 480px;")]/div[@style]/div/ancestor::div[@class="gadget__content"]'
+www.seznam.cz#$#hide-if-matches-xpath './/div[@class][contains(@style,"flex-basis:")]/div[@class][@style="top: 62px;"]'
+www.seznam.cz#$#hide-if-matches-xpath './/div[@class="banner-wrapper"]/a[contains(@href,"utm_campaign")]/div/img/ancestor::div[@id]'
+www.seznam.cz#$#hide-if-matches-xpath './/div[@class]/preceding::div[contains(@class,"mol-advert-header__source")]/parent::div[@class]/ancestor::div[@id][1]'
+www.seznam.cz#$#hide-if-matches-xpath './/div[contains(@style,"height: 300px; width: 480px;")]/div[@style]/ancestor::div[@class][2]'
 www.seznam.cz#$#hide-if-matches-xpath './/div[contains(@class,"gadget-container")]/div[@id and @class]/div[@*="animated-height"]//span[text()]/following-sibling::a[contains(text(),"reklamu")]//following::div[@*="gadget__content"]//div[@class and @style]/ancestor::div[7][@class]/ancestor::div[contains(@class,"gadget-container")]'; hide-if-matches-xpath './/div[starts-with(@class,"d-flex")]/div[contains(@class,"flex-column")]/div[@class and @style]//div[2]/div[@class and @style]/parent::div/ancestor-or-self::div[contains(@style,"flex-basis:")]'; hide-if-matches-xpath './/div[@*="mainFeed"]//div[@class="overflow-hidden"]/div[contains(@class,"atm-text-placeholder")]/parent::div[@class][1]/ancestor::div[3]/parent::div[@class and @*]/ancestor::li[@data-analytics-first-item]';
-search.seznam.cz#$#hide-if-matches-xpath './/div/span[contains(@class,"a3cddc")][@data-e-b-ae]/parent::div/ancestor::div[@data-dot-data]/parent::div[1]'
-search.seznam.cz#$#hide-if-matches-xpath './/picture[@class]/img[contains(@src,"https://d25-a.sdn.cz")]/ancestor::div[contains(@data-dot-data,"reporter_pos")]'
+search.seznam.cz#$#hide-if-matches-xpath './/div/h3[contains(@class,"bd037d")]/a[@data-dot-data]/ancestor::div[@data-e-b-n]'
+search.seznam.cz#$#hide-if-matches-xpath './/picture[@class]/img[contains(@src,"https://d25-a.sdn.cz")]/ancestor::div[contains(@style,"margin-left:")]/ancestor::div[@data-dot-data]'
+search.seznam.cz#$#hide-if-matches-xpath './/picture[@class]/img[contains(@src,"https://d25-a.sdn.cz")]/ancestor::div[contains(@class,"SuperCarousel")]/ancestor::div[@data-e-b-n]'
+search.seznam.cz#$#hide-if-matches-xpath './/picture[@class]/img[contains(@src,"https://d25-a.sdn.cz")]/ancestor::div[@data-e-b-n][@data-n-id]/parent::div[@class][1]'
 ||seznam.cz/*/static/*/*?nocache=1^$domain=www.seznam.cz
 ||seznam.cz/*/*/js/*?nocache=1^$domain=www.seznam.cz
 www.seznam.cz#$#cookie-remover pubmatic
@@ -724,7 +725,7 @@ userload.co#$#abort-current-inline-script $ Math.random
 tubeload.co#$#abort-on-property-write BetterJsPop
 hotleak.vip#$#abort-on-property-read advertising
 socialmediagirls.com#$#abort-on-property-read ExoVideoSlider.init
-musichq.cc#$#abort-on-property-write rotationUrl; override-property-read changeServer undefined; abort-current-inline-script document.createElement /script/
+musichq.cc#$#abort-on-property-write rotationUrl; override-property-read changeServer undefined; abort-current-inline-script document.createElement /script/; prevent-listener beforeunload ();
 ! MISC
 airsoftmilsimnews.com#$#abort-on-property-read td_ad_background_click_target
 baytorrent.eu.org,europixhd.com,europixhd.net,file-up.org,force-download.com,force-download.es,force-download.fr,force-download.net,gledajonline.net,hdeuropix.io,loadsubs.net,novom.ru,pirateproxy.earth,pirateproxy.live,thehiddenbay.com,thepiratebay.org,thepiratebay.vip,thepiratebay10.org,topeuropix.net,tpb.party,uploadproper.com,uploadproper.net#$#abort-on-property-read atob
@@ -1101,7 +1102,7 @@ gidonline.eu,dc-marvel.org,torrent-soft.net#$#abort-on-property-read atob
 sm.news#$#abort-current-inline-script String.fromCharCode decodeURIComponent
 7ogorod.ru,autonevod.ru,shtrafsud.ru,zazloo.ru#$#abort-on-property-read flat_pm_arr
 hitfm.ua,kissfm.ua,radiorelax.ua,radioroks.ua,rusradio.ua#$#abort-on-property-write prerole_length
-www.goha.ru,3dnews.ru,ura.news#$#abort-on-property-read Ya
+www.goha.ru,3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,relax-fm.ru,pikabu.ru,ura.news#$#abort-on-property-read Ya
 myjane.ru,omskpress.ru,artfile.me,artfile.ru,astrakhan.ru,tambovnet.org#$#abort-on-property-read kav_cn
 krolik.biz#$#abort-current-inline-script document.createElement
 sinoptik.ua#$#abort-on-property-read SIN.globals.ADBLOCK_DETECTED
@@ -1167,7 +1168,6 @@ studref.com#$#abort-on-property-read _0x308a
 studwood.net#$#abort-on-property-read _0x8cc0
 vuzlit.com#$#abort-on-property-read _0xc091
 xstud.org#$#abort-on-property-read _0xd07e
-avtovzglyad.ru,baby.ru,dni.ru,relax-fm.ru#$#abort-on-property-read Ya
 ! Prevent auto reload
 24boxing.com.ua,bilshe.com,businessua.com,f1analytic.com,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,nashamama.com,sportanalytic.com,stravy.net,zdorovia.com.ua#$#abort-current-inline-script setInterval reload
 ! Popup/popunder/clickunder
@@ -1263,7 +1263,7 @@ netflix-izle.com#$#override-property-read reklam_1 undefined; override-property-
 ! *** abp-filters-anti-cv:vietnamese.txt ***
 ! MISC
 blog.abit.vn#$#abort-on-property-read document.cookie
-phimmoik.com#$#json-prune ads
+phimmoi2s.com#$#json-prune ads
 90phut6.live#$#abort-current-inline-script $ overlay;abort-current-inline-script setTimeout overlay
 aoe.vn#$#abort-on-property-read parseInt
 gametv.vn#$#abort-current-inline-script $ homeModal
@@ -1274,42 +1274,37 @@ bongdahomnay.tech#$#abort-on-property-read $
 vebotv.today#$#abort-current-inline-script $ vb-pr-box
 plvb.xyz#$#abort-on-property-read adsTvc; abort-on-property-read adsPlayer; abort-on-property-read ads; abort-on-property-read keyPlayer; abort-on-property-read adsPopupPlayer;
 hh3dhay.com,hh3dhay.xyz#$#abort-current-inline-script document.createElement /break|case/
-luotphim2.com,luotphim.to,luotphimtv.live,webphim1.com#$#json-prune '0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile'
-2phimmoi.net#$#abort-current-inline-script $ urlAdsMbIntro
+luotphim1.net,luotphim.to,luotphimtv1.com,webphim1.com#$#json-prune '0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile'
+hiphimmoi.net#$#abort-current-inline-script $ urlAdsMbIntro
 cafef.vn,gamek.vn,genk.vn,kenh14.vn#$#abort-on-property-write ADMStorageFileCDN
 ! Popup/Popunder/Clickunder
-viet69.in#$#abort-current-inline-script JSON.parse /atob|btoa|break/; abort-current-inline-script String.fromCharCode /atob|btoa|break/; abort-current-inline-script Math /atob|btoa|break/
-rphangs.com,mrcong.com#$#abort-on-property-read open; abort-on-property-write window.location.href
 fembed.com,femax20.com,zo3x.ml,mrdhan.com,m.blogtruyen.vn,viettoons.tv#$#abort-on-property-read open
-phimgif.tv,ophimhd.net,phimraphot.net#$#abort-current-inline-script jQuery popurl
+phimgiff.net,ophimhd.net,phimraphot.net#$#abort-current-inline-script jQuery popurl
 khophimhd.net,downloadsachmienphi.com,tvhay.top#$#abort-current-inline-script JSON.parse atob
 truyen2u.net#$#abort-current-inline-script eval
 tapmoi.net#$#abort-on-property-read SmartPopunder
 thienhatruyen.com#$#abort-current-inline-script $ pc-popup-2
 phimlau.online#$#abort-current-inline-script atob /Y1/
-sexphimhd.net,gvnvh18.com,g18vn.com,vlxxs.net#$#abort-current-inline-script Math
+sexphimhd.net,gvnvh18.com,g18vn.com,sex68.link#$#abort-current-inline-script Math
 360thethao.net#$#abort-current-inline-script onload /puURL/
 xnxx-sex-videos.com#$#abort-current-inline-script setTimeout /window.location/
 xnxx-sex-videos.com#$#override-property-read user_out false
-xuongphim18z.com,phimdinhcao.com,phimtopz.com,truyensieuhay.com,tvchill.org,2phimmoi.net,quangcaoyenbai.com,fullcrackpc.com#$#abort-on-property-read document.cookie
+xuongphim18z.com,phimdinhcao.com,phimtopz.com,truyensieuhay.com,tvchill.org,hiphimmoi.net,quangcaoyenbai.com,fullcrackpc.com#$#abort-on-property-read document.cookie
 phimmoiiii123.com,ophimmoi.net#$#abort-on-property-read matchMedia
 metruyenchu.com#$#abort-on-property-write window.onclick
 ##[href^="//mage98rquewz.com/"]
 *$third-party,script,domain=sexdiaryz.xyz
-phimhays.com#$#abort-current-inline-script jQuery window.open
-truyentranhtuan.com#$#abort-current-inline-script $ btpop
-lphim.net,subnhanhz.tv,subnhanh.cc,iphimchillzz.net,phimmoikf.com#$#abort-on-property-read localStorage
-nguontv.org#$#abort-current-inline-script encodeURIComponent popunder
-||pssy.xyz^$domain=animevi.net
+truyentuan.com#$#abort-current-inline-script $ btpop
+nguontvhd.com#$#abort-current-inline-script encodeURIComponent popunder
+||pssy.xyz^$domain=animevisub.net
 player-cdn.com#$#abort-on-property-read Math.random; override-property-read detectAdBlockAll noopFunc; override-property-read detectAdBlock noopFunc
 player-cdn.com###playback-fake
-xoilac21.tv##.modal.fade.show
-xoilac21.tv#$#abort-current-inline-script jQuery popupBanners
-xoilac21.tv#$#abort-on-property-read adsRedirectPopups
-xoilac21.tv#$#abort-current-inline-script jQuery overlay
-sex369.net,viet69.tv,sexvietnam.site,sexdiaryz.fun#$#abort-on-property-read parseInt
+xoilac4.com##.modal.fade.show
+xoilac4.com#$#abort-current-inline-script jQuery popupBanners
+xoilac4.com#$#abort-on-property-read adsRedirectPopups
+xoilac4.com#$#abort-current-inline-script jQuery overlay
+sex68.link,viet69.love,sexvietnam.site,sexdiaryz.fun#$#abort-on-property-read parseInt
 linkneverdie.net#$#abort-current-inline-script document.createElement script;abort-current-inline-script $ open;abort-on-property-read setTimeout
-phimhanz.me#$#abort-current-inline-script jQuery showPopupSearchKey
 javnong.cc#$#abort-on-property-read Math.round
 viet69.love,ungtycomicsvip.com,vlxx.info#$#abort-current-inline-script WebAssembly instantiate
 vcomic.net,truyen86.com#$#abort-current-inline-script Object $._Eu
