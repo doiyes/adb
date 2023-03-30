@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: YSAxLBbkViTIyGTLvUR3QA
+! Checksum: plIlFdSFtUnpHTQGSbgCAA
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202303292255
+! Version(Last Modified): 202303302216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -251,6 +251,7 @@
 ###player-advertising
 ###player-bottom-ads
 ###playerAdvLayer
+###playerJsvLayer.jsv-layer
 ###player_banner[style*="fixed;"]
 ###player_pause > .tip + a[target="_blank"]
 ###player_pause[style^="position"] > a[target="_blank"]
@@ -543,6 +544,7 @@
 ##.feed-item[data-ad]
 ##.ff-ads
 ##.ff-ads
+##.fixed-bottom.jsv.jsv-g1
 ##.flex-row > #propagandaLeft
 ##.flex-row > #propagandaRight
 ##.float-adv-left-bottom
@@ -800,6 +802,7 @@
 ##A.toptxt[target='_blank']
 ##ASIDE[id^='custom_html-']
 ##A[href*=".com/?Agent="]
+##A[href*="/mx456.cc"]
 ##A[href*='.com:'][target='_blank'] > IMG[src][width='100%'][height='60px']
 ##A[href*='//v.wanfumei.net']
 ##A[href="http://t.cn/A6hQCVsv"]
@@ -1567,6 +1570,11 @@
 ##div[style^="width: 100%;"][style$="visibility: visible;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##div[style^="width: 100%;"][style$="z-index: inherit;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##dl#listwoBox
+##header + #main:nth-child(n+4) > .container-fluid.mb-0.p-0
+##header + #main:nth-child(n+4) > .container-fluid.mb-0.p-0 + .jsv-g1
+##header + #main:nth-child(n+4) > .container-fluid.mb-3.p-0
+##header + #main:nth-child(n+4) > .container-fluid.mb-3.p-0 + .jsv-g1
+##header + #main:nth-child(n+4) > .jsv.jsv-g1.mb-0 > .container-fluid.mb-3.p-0
 ##header + #main:nth-child(n+4) > div[id^="po-s"]:not(#po-shd)
 ##iframe.ad-frame
 ##iframe[src*=".xxmh"][src*="?u="]
@@ -6062,6 +6070,7 @@ avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotak
 avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com#?#.js_sticky-footer:has(> .js_ad-sticky-footer)
 avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com#?#article > div[class]:has(> div[class] > p:contains(Advertisement))
 avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com#?#section div[class] div[class] > .ad-container:upward(1)
+avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com,motorcyclenews.com#?#.js_post-content > div[class] > div[class]:has(> div[data-inset-category="CommerceInsetMobile"])
 avcn18.com##div.header-bar
 avfuuzoku.com##.footer_menu
 avgle.com###avyc
@@ -6101,8 +6110,9 @@ axios-js.com##.lessonlist
 axios-js.com##.recommand
 axios-js.com##.vultr-desc
 axjbt.com,avcao.cc##+js(abort-on-property-read, myclick)
-axutongxue.com##ARTICLE[id]
-axutongxue.com##body > div[id] > ul[class] > li > A[href^='http'],body > div[id] > ul[class] > li > img.icon
+axutongxue.com##ASIDE[style*='height:58px;overflow:hidden;width:322px;border:dashed .5px']
+axutongxue.com##DIV[style*='px;position:relative;box-shadow:rgb(0 0 0/24%)0px 3px 8px;']
+axutongxue.com##DIV[style*='z-index: 9999999;display: flex;justify-content: center;align-items: center;']
 axutongxue.com,axutongxue.net##style + div[id]
 axutongxue.net##+js(no-setTimeout-if, getCookie(")
 axutongxue.net##body > article[style]
@@ -9705,6 +9715,8 @@ games.app-liv.jp#$#.jack-content { display: none !important; }
 games.app-liv.jp#$#body.jack { padding-top: 12% !important; }
 games.qq.com##.dc-kf_list
 games.qq.com##div.iwan-ad2,div.kfb
+gamesisart.ru#$#body > header { transform: none !important; }
+gamesisart.ru,laleggepertutti.it##.clAdPlacementAnchorWrapper
 gamespark.jp##div[style^="min-height:280px;"]
 gamespark.jp,s.inside-games.jp##.aside-box-ad
 gamespark.jp,s.inside-games.jp##div[style^="text-align"][style*="min-height:2"]
@@ -12347,7 +12359,6 @@ laixoo.com,v2rayssr.com##.git_banner
 laixoo.com,zhumengwl.com##.git_banner
 laleggepertutti.it##.BelowPost
 laleggepertutti.it##.BelowTitle
-laleggepertutti.it##.clAdPlacementAnchorWrapper
 lalilali.com##div[id*="_"]
 lalulalu.com###overture-side-bar-ads
 lalulalu.com###overture_main_banner
@@ -18493,7 +18504,7 @@ www.1069gay.net###shortcut
 www.1080pba.com##div.ad_960,div.ad_300,div#topxia,img[src="/templets/default/images/1.gif"]
 www.10s1.com##[src^="http://www.10s1.com/ggpic/"],.jyzxad,.adver
 www.115zk.com##div.wp.a_f,div.a_cn
-www.123pan.com##DIV.VipBanner,DIV[style='width:100%;position:fixed;bottom:80px'],DIV[style='width: 100%; position: fixed; bottom: 25px;']
+www.123pan.com##IMG[src*='-banner']
 www.123yq.com##div.Messageml
 www.12580sky.com##img[width="998"][height="70"],img[width="998"][height="80"],img[width="490"][height="80"],div.zz-list,div.bk8 + table
 www.126.com,mail.163.com##div.APP-dashi-botBanner,div.gWel-promt
@@ -22445,6 +22456,7 @@ zzzyk.com###Tinfo
 ||a304.top^$image,domain=hihbt.com
 ||a32a.com.cn^$third-party
 ||a3vy69.cn^
+||a44u.icu^
 ||a48505.cn^
 ||a4sz.xyz^
 ||a5.1xasset.com^$domain=6161bb.com
@@ -24106,6 +24118,7 @@ zzzyk.com###Tinfo
 ||axqpn.cn^
 ||axt.cool^
 ||axuns.com^
+||axutongxue.com/js/uuiiio.js
 ||axutongxue.net/js/ik474n.js
 ||axvnsla.top^
 ||axybcz.cn^
@@ -24503,6 +24516,7 @@ zzzyk.com###Tinfo
 ||bdasd.chinabig.com.cn^
 ||bdasd.wmxa.cn^
 ||bdcanef.cn^$third-party
+||bdcd2.com^
 ||bdcm.kandianla.com^
 ||bdcode.2345.com^
 ||bdcode.35d1.com^
@@ -25594,6 +25608,7 @@ zzzyk.com###Tinfo
 ||changyan.$subdocument
 ||changyan.itc.cn/mdevp/extensions/mobile-cmt-advert/
 ||changyan.sohu.com^
+||changyangadvertising.com^
 ||changyangcd.com^
 ||channel.m.163.com^
 ||channeladvisor.com^
@@ -26883,6 +26898,7 @@ zzzyk.com###Tinfo
 ||dengbalt.fun^
 ||dengtao.link^
 ||dengzhou.us^
+||denpvh.xyz^
 ||deployads.com^
 ||desk.orsoon.com/so/
 ||detail.taobao.com^
@@ -28686,6 +28702,7 @@ zzzyk.com###Tinfo
 ||gbwzrcymfmvym.bid^
 ||gbzumh.cn^
 ||gccode.gongchang.com^
+||gcejdac.cn^
 ||gcihkyd.cn^
 ||gcpvkfe.cn^
 ||gctd.xyz^
@@ -32308,6 +32325,7 @@ zzzyk.com###Tinfo
 ||kq7k.icu^
 ||kqirf.xyz^
 ||kqnggnsd.fun^
+||kqskqi.xyz^
 ||kqvkvc3.com^
 ||kqwip.cyou^
 ||kr.sdykcloud.cn^
@@ -32651,6 +32669,7 @@ zzzyk.com###Tinfo
 ||leiersuqd.com^
 ||leiphone.com/uploads/new/article/880_880/201807/5b5687fef17a5.jpg
 ||leiphone.com/uploads/new/category/pic/*/740x140/
+||leirsw.com^
 ||leirsw.com^
 ||leiwo.xyz^
 ||lejieti.com^
@@ -33241,6 +33260,7 @@ zzzyk.com###Tinfo
 ||lzljhs.com^
 ||lzngisyl.xyz^
 ||lzthjd.cn^
+||lztmrdv.cn^
 ||lzwdq.xyz^
 ||lzxnhul.cn^
 ||lzyysw.com/upload/
@@ -35176,6 +35196,7 @@ zzzyk.com###Tinfo
 ||orzx.im/js/*pop
 ||os.scmpacdn.com^
 ||osalwqv.cn^
+||oschina.net/informat^document
 ||oschina.net/promotion/
 ||oschina.net/uploads/ad/
 ||oschina.net/uploads/cooperation/
@@ -36041,6 +36062,7 @@ zzzyk.com###Tinfo
 ||qbkybab.cn^
 ||qbreport.html5.qq.com^
 ||qbtd.xyz^
+||qbtd.xyz^
 ||qbyyvg3.com^
 ||qc1.cheshipin.com^
 ||qcgg.net^
@@ -36166,6 +36188,7 @@ zzzyk.com###Tinfo
 ||qianhua.*/data/attachment/portal/
 ||qianjia.com/HotImages/2017/11/img20171109122716999.jpg
 ||qianmeiby.com^
+||qianqian.red^
 ||qianrenge.cc/qian/
 ||qiantubao.asia^
 ||qianyan.love^
@@ -36906,6 +36929,7 @@ zzzyk.com###Tinfo
 ||route34.cn^
 ||rowemfg.com^
 ||rp.hpplay.cn^
+||rp5o.top^
 ||rpacnud.cn^
 ||rpahyhn.cn^
 ||rpkcqtf.cn^
@@ -36915,6 +36939,7 @@ zzzyk.com###Tinfo
 ||rqd.qq.com^
 ||rqkfhquz.cn^
 ||rqkgcd.xyz^
+||rqmob.com^
 ||rqnggnsz.fun^
 ||rqpvevt.cn^
 ||rqwnzbx.cn^
@@ -38697,6 +38722,7 @@ zzzyk.com###Tinfo
 ||tfallview.live^
 ||tfbulkidn.com^
 ||tfbulkidn.com^
+||tfcoverss.live^
 ||tffindmarket.live^
 ||tffytdo.cn^
 ||tfg2.com/images/upfile/AD/
@@ -41245,6 +41271,7 @@ zzzyk.com###Tinfo
 ||xiaoyuanzuqiu.cn^
 ||xiaoyutiao.com^
 ||xiaoz.top/assets/imgurl.js
+||xiaozengyyds.com^
 ||xiaozuowen.net^
 ||xiarikui08.com^
 ||xiatian.buzz^
@@ -41412,6 +41439,7 @@ zzzyk.com###Tinfo
 ||xmgdgo.cn^
 ||xmgysweb.com^
 ||xmhaorizi.cn^
+||xmi1.top^
 ||xmindchina.
 ||xmjikcz.xyz^
 ||xmkbrfyu.cn^
@@ -41710,6 +41738,7 @@ zzzyk.com###Tinfo
 ||yangpinwang.com/wp-content/uploads/*E5%B9%BF%E5%91%8A.
 ||yangshengzu.cn^
 ||yangshengzu.cn^
+||yangsir.xyz^
 ||yangtianc.xyz^
 ||yangxu.store^
 ||yangyiluo.xin^
