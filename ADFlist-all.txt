@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: plIlFdSFtUnpHTQGSbgCAA
+! Checksum: 5NRSPFytPYx2q9Czfx8Qfg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202303302216
+! Version(Last Modified): 202303312215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1688-wp-media/ads/
@@ -262,6 +262,7 @@
 ###projectpostbody > a[target="_blank"]
 ###propagandaInsert[style="display: flex;"]
 ###ptcmsad1
+###qinav_a1
 ###qj960a
 ###qj960b
 ###qrcodeDownloadBar
@@ -458,6 +459,7 @@
 ##.ayx[style="position: fixed;bottom: -10px;right:0;z-index:999;width:250px"]
 ##.ayx[style^="position: fixed;bottom"]
 ##.b-mobile-spots
+##.b300 > .h100 > a[href^="http"]
 ##.b_oscar1
 ##.b_pr
 ##.b_sxc
@@ -802,7 +804,6 @@
 ##A.toptxt[target='_blank']
 ##ASIDE[id^='custom_html-']
 ##A[href*=".com/?Agent="]
-##A[href*="/mx456.cc"]
 ##A[href*='.com:'][target='_blank'] > IMG[src][width='100%'][height='60px']
 ##A[href*='//v.wanfumei.net']
 ##A[href="http://t.cn/A6hQCVsv"]
@@ -1320,6 +1321,7 @@
 ##a[href*="/mdapp2.cc/"]
 ##a[href*="/mobads.php?"]
 ##a[href*="/mt86k.xyz"]
+##a[href*="/mx456.cc"]
 ##a[href*="/nf.brushshopy.com"]
 ##a[href*="/odnb.vip"]
 ##a[href*="/ppffj.me/"]
@@ -3487,6 +3489,8 @@ $websocket,domain=5nj.com|cechi8.com
 /new/27*.html
 /new/50*.html
 /new/55*.html
+/new/56*.html
+/new/57*.html
 /new/81*.html
 /new/82*.html
 /new/83*.html
@@ -6613,7 +6617,6 @@ beauty.rakuten.co.jp###footerPr
 beauty321.com##.pc_ads
 beautynation.jp#?#.m-aside-headline:has(> b.title:contains(AD))
 bee.coupons,blogspot.com,blogspot.hk,blogspot.jp,blogspot.tw,comic.tw,jasonblog.tw#@#.vertical-ads
-beemtube.com,gry-online.pl,m.eprice.com.hk,m.eprice.com.tw##div[class^="ad-"]
 beephone.com.tw##a[href^="http://www.beephone.com.tw/adlink.php?id="]
 begeek.cn##[href="http://static.webhek.com/tb.html"],.adsbygoogle
 behe.com
@@ -11319,6 +11322,8 @@ ipv6.baidu.com,xueshu.baidu.com,www.baidu.com,www1.baidu.com#?#.c-container:-abp
 ipv6.baidu.com,xueshu.baidu.com,www.baidu.com,www1.baidu.com#?#div:not([id]) > style[id^="s-"] + style + div + div[id]
 ipv6.baidu.com,xueshu.baidu.com,www.baidu.com,www1.baidu.com#?#div:not([id]) > style[id^="s-"] + style + div[id]
 iqihang.com##.xf_right
+iqihang.com#$#.app.padding > .header { top: 0 !important; }
+iqihang.com#$#.app.padding { margin-top: 0 !important; }
 iqilu.com##.column_banner,.ad1000x90,.kejie_ad,.ads-wrap,.ad-l-w1000,.gg
 iqilu.com##.gg300250dbl
 iqilu.com##.gg580140
@@ -13611,6 +13616,7 @@ materialtools.com#@#.ad-center
 math-prosto.ru###center > div[style^=" max-width: 800px;width: 100%;"]
 mathtype.cn
 mati.hk##.banner_middle
+matomame.jp###article_contents > div.uk-text-center.uk-margin-bottom
 matomame.jp#?#.uk-margin-bottom > div[id^="div-gpt-"]:upward(1)
 matomame.jp#?#.uk-text-center > ins.adsbygoogle:upward(1)
 matomedane.jp##.fam_hybrid_adv
@@ -15097,6 +15103,9 @@ php1.cn##.baidu_ad_box
 phpvar.com##.aliPic
 phpvar.com##.post_content_linkad
 phpvar.com##.qrcode-swiper-container
+physicsandmathstutor.com###advert_label_ms
+physicsandmathstutor.com##div[class^="pmt_"][class*="_parrent"]
+physicsandmathstutor.com,beemtube.com,gry-online.pl,m.eprice.com.hk,m.eprice.com.tw##div[class^="ad-"]
 pianba.net###jiedoubanban
 pianba.tv,pianba.net##.play-btn > a[target="_blank"]
 pianbus.com,pianmas.com##li[class]:not(.index):not(.hidden-ps):not(.hidden-xs):not(.active)
@@ -16781,6 +16790,7 @@ ssr.tools##.widget_custom_html:nth-child(n+2)
 ssr.tools,zhujiwiki.com##.asb-post-footer
 sssam.com##+js(set-constant, ads, '')
 sssam.com##.widget_html_ad
+sstv.pw##.container > a > img[style="width: 100%;"]
 ssuip.com###mask
 st.benesse.ne.jp###div-M_UP_bnr_320x50
 stackexchange.com###js-gdpr-consent-banner
@@ -19070,7 +19080,8 @@ xhamster19.desi,xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com
 xhamster19.desi,xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhwide8.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.video-page__layout-ad
 xhamster20.desi,xhamster19.desi,xhadult2.com,xhmoon5.com,xhwide8.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##.thumb-list-mobile-item--widget
 xhamster20.desi,xhamster19.desi,xhadult2.com,xhmoon5.com,xhwide8.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##div[class*="banner-container"]
-xhamster20.desi,xhamster19.desi,xhwebsite2.com,xhamster18.desi,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhwide8.com,xhamster3.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.*,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.desi,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com#?#.main-wrap > div.yxd-j:has(> div.yxd-jcams-widget)
+xhamster20.desi,xhamster19.desi,xhwebsite2.com,xhamster18.desi,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhwide8.com,xhamster3.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.*,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.desi,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com#?#.main-wrap > aside:has(> div.yxd-j > div.yxd-jcams-widget)
+xhamster20.desi,xhamster19.desi,xhwebsite2.com,xhamster18.desi,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhwide8.com,xhamster3.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.*,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.desi,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com#?#.main-wrap div.yxd-j:has(> div.yxd-jcams-widget)
 xhd.cn##.xinad
 xhtml?$domain=kanshu8.net
 xhzyw.com###HtmlMoKua_752383
@@ -20176,7 +20187,6 @@ zzzyk.com###Tinfo
 ||1.idc100.com^
 ||1.isanxia.com^
 ||1.jeasyui.net^
-||1.jiaopei.com^
 ||1.jiqie.cn^
 ||1.jushtong.com^
 ||1.kuaidiwo.cn^
@@ -21624,6 +21634,7 @@ zzzyk.com###Tinfo
 ||62mao.com/52
 ||63007.com:82/haodxi.js
 ||6318537ccc.com^
+||637o.top^
 ||6399tp.com^
 ||63ef.com^*.js
 ||63ig.com/*nr.js
@@ -21654,6 +21665,7 @@ zzzyk.com###Tinfo
 ||661291.com^
 ||6613167.cn^
 ||6617398ccc.com^
+||6651tp.com^
 ||6665432.com^*.gif
 ||6665kkk.com/ggvip^
 ||66666119.com^
@@ -23588,6 +23600,7 @@ zzzyk.com###Tinfo
 ||anhuinews.com/include/
 ||anhuinews.com/zhuyeguanli/*ad/
 ||anioz3b.cc^
+||aniqfwz.cc^
 ||aniview.com^
 ||anixwallpaper.com^$csp=script-src 'self' * 'unsafe-inline'
 ||anjuke.com^*/ajax/business_area_search/
@@ -23951,6 +23964,7 @@ zzzyk.com###Tinfo
 ||as1.wenku.baidu.com^
 ||as2.wenku.baidu.com/$subdocument
 ||as89de.top^
+||asa2.cn^
 ||asacdn.com/prod/redirect.html
 ||asahicom.jp/sp/js/and_infeedad.js$script,redirect=noop.js
 ||ascloud.tech^
@@ -24048,6 +24062,7 @@ zzzyk.com###Tinfo
 ||autoimg.cn/engine/root/fggxl.js
 ||autonet.com.tw/90/
 ||autopiano.cn/data/jd_
+||autopwn.site^
 ||autumnleaf.ltd^
 ||auuux.com^
 ||auwehnw.cn^
@@ -24316,6 +24331,7 @@ zzzyk.com###Tinfo
 ||baidujavascript.com^
 ||baidujs.cnys.com^
 ||baidujsvbj.com^
+||baidunnd.top^
 ||baidutm999.xyz^
 ||baiduwudi929.xyz^
 ||baiduyoukualiyun.com^
@@ -24559,6 +24575,7 @@ zzzyk.com###Tinfo
 ||bdm.911cha.com^
 ||bdm.ye-su.cn^
 ||bdmjs.xywy.com^
+||bdnvklavbklabl.com^
 ||bdp.cn^$third-party
 ||bds.snssdk.com^
 ||bdstaic.com/r/www/cache/static/plugins/every_cookie_*.js
@@ -27883,6 +27900,7 @@ zzzyk.com###Tinfo
 ||eoop6vepv.cyou^
 ||eopa5tepa.icu^
 ||eopad.cyou^
+||eoqtyyp.cn^
 ||eoqygep.cn^
 ||eotglx.top^
 ||eoyqzzk.cn^
@@ -28458,6 +28476,7 @@ zzzyk.com###Tinfo
 ||ftdmfxq.cn^
 ||ftfnewu.cn^
 ||ftimg.net/s?z=
+||ftnthzv.cn^
 ||ftp2.verypsp.com/*.gif|$image
 ||ftp2.verypsp.com/55qp.jpg$image
 ||ftrtnr.xyz^
@@ -31369,6 +31388,7 @@ zzzyk.com###Tinfo
 ||jiaodong.net/a/js/
 ||jiaohezhen.com^
 ||jiaojun.icu^
+||jiaopei.com^
 ||jiaoyou8.com^$domain=mitbbs.ca|mitbbs.com
 ||jiaoyu.baidu.com/tieba/
 ||jiape.cyou^
@@ -32884,6 +32904,7 @@ zzzyk.com###Tinfo
 ||liuxue86.com/js/ideng/liuxue-show
 ||liuyangyang.cn^
 ||liuye.club^
+||liuyun.name^
 ||liuzhen.love^
 ||liuziqiu.cn^
 ||live-trace.bilibili.com^
@@ -33076,6 +33097,8 @@ zzzyk.com###Tinfo
 ||looyu.com^$third-party
 ||lop.lamimi.cn^
 ||lopostone.com^
+||lopqrx.xyz^
+||lopqrx.xyz^
 ||lorlsblh.cyou^
 ||lotour.net/analytics/statsv2.js
 ||lotour.net/bcef/388.js
@@ -33798,6 +33821,7 @@ zzzyk.com###Tinfo
 ||mestrip.com/widgets/
 ||metamx.com^
 ||metauniverse88.com^
+||metaword.cn^
 ||meteor.today/ad/
 ||metheny.cn^
 ||metok.sys.miui.com^
@@ -34487,6 +34511,7 @@ zzzyk.com###Tinfo
 ||namedq.com^
 ||namemek.com^
 ||nan-net.com/*/bbs/s/inc/$subdocument
+||naned.xyz^
 ||nanfengyl.com/static/js/zdad.js
 ||nanigans.com^
 ||nanlisgc.fun^
@@ -35276,6 +35301,7 @@ zzzyk.com###Tinfo
 ||oyqjp.cn^
 ||oyvveru.cn^
 ||oyvyxj.cn^$third-party
+||oyxp.xyz^
 ||oyybgs.cn^
 ||ozngisyk.xyz^
 ||ozqae.xyz^
@@ -37098,6 +37124,7 @@ zzzyk.com###Tinfo
 ||s1.bdstatic.com/r/www/cache/biz/ecom/common/api/$script
 ||s1.dapenti.com^
 ||s1.dugoogle.com^
+||s1.hanlinzhijia.com^
 ||s1.pipishu.com^
 ||s1.qiqutt.cn^
 ||s1.qiqutt.com^
@@ -37186,6 +37213,7 @@ zzzyk.com###Tinfo
 ||satismeter.com^
 ||satroki.tech/api/JdUnion
 ||saturn.jd.com/log^
+||saulmy.xyz^
 ||saviourketonic.com^
 ||sawadeca.com^
 ||sax*.sina.
@@ -41389,6 +41417,7 @@ zzzyk.com###Tinfo
 ||xiulishanzhuang.com^
 ||xiumei.com/yeyou/
 ||xiurenji.cc/heji/
+||xiuwaiyyds.com^
 ||xixhx.com^
 ||xixianad.com^
 ||xixianad.com^$third-party
@@ -42271,6 +42300,7 @@ zzzyk.com###Tinfo
 ||yuetx.cc^
 ||yueyuego.com^
 ||yueyuelao.cn^
+||yufeng8.tech^
 ||yufuyan.cn^
 ||yug8.com^
 ||yuggcd.com^
@@ -42552,6 +42582,8 @@ zzzyk.com###Tinfo
 ||zdg-bend.xyz^
 ||zdgbend.buzz^
 ||zdhfff.xyz^
+||zdhpen.xyz^
+||zdhpenn.shop^
 ||zdktgps.cn^
 ||zdmimg.com/collect^
 ||zdnet.com.cn/js/pv.js
@@ -43197,6 +43229,7 @@ zzzyk.com###Tinfo
 3d66.com##.botfocus
 3d66.com##.down-adver
 3dezu.com##div#diynavtop,div[style="margin-bottom:-10px; overflow:hidden;"],div.bm.a_c,div.a_pt,div.a_pb,#login_alert,.a_f
+3dmgame.com###index_bg_box
 3dmgame.com###min_ad_con
 3dmgame.com###yxj_fmt_gg
 3dmgame.com##.Content_L > p
