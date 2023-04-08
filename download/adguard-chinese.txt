@@ -580,7 +580,7 @@ nfmovies.com#$#a[onclick*="openurl"][target="_blank"] img[src^="/static/"] { pos
 ||nfmovies.com/static/*.jpg$image,redirect=1x1.gif
 hdmoli.com#?#.row > div.myui-panel:has(div[style^="text-align:"] > a[href][target="_blank"] > img#index_banner)
 v.qq.com#$?#.video-card-module > div[dt-params*="ad_creative_id="] { remove: true; }
-bilibili.com#?#.bili-video-card > div.bili-video-card__wrap > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]):upward(2)
+bilibili.com#?#.feed-card:has(> div.bili-video-card > div.bili-video-card__wrap > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]))
 bilibili.com#?#.bili-video-card:has(> .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > [class^="bili-video-card__info--ad"])
 bilibili.com#?#.eva-extension-feed-body > div:not([class], [id]):has(> .bili-video-card > .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > [class^="bili-video-card__info--ad"])
 bilibili.com#?#.bili-video-card:has(> .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > .bili-video-card__info--creative-img)
@@ -2136,9 +2136,9 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 @@||nfmovies.com/static/side.jpg$xmlhttprequest,domain=nfmovies.com
 -*-*-*-*.panda^$script,third-party
+-1316632262.cos.
 -1688-wp-media/ads/
 -90mh-gg.
--1316632262.cos.
 .bid/ads/
 .blog/ads/
 .bt*.com/imgs.js?t=
@@ -3590,6 +3590,7 @@ newduba.cn###jq_youxi
 ##a[href^="javascript:gl012"]
 ##a[href^="javascript:gl012"] + img
 ##a[id][href*="/?aff="]
+##a[href="/lht.html"]
 ##a[id][href*="/?register="]
 ##a[id][target="_blank"] > img[src*="help-ol.bj.bcebos.com"]
 ##a[onclick*="open"] > img[src*=".dailygn.com/"]
@@ -3691,9 +3692,11 @@ newduba.cn###jq_youxi
 ||alejd.xyz^
 ||aniem44.cc^
 ||balspaulite.com^
+||bcivqxd.cn^
 ||bekco.xyz^
 ||bqcxgbm.cn^
 ||brkzczn.cn^
+||campu.ltd^
 ||ccohayo.xyz^
 ||cdcc3.com^
 ||fijipic.xyz^
@@ -3706,6 +3709,7 @@ newduba.cn###jq_youxi
 ||h731.icu^
 ||hefei64.com^
 ||hgpdoa.cn^
+||hhrnxr.xyz^
 ||huaweinnd.top^
 ||hxpmbb.xyz^
 ||hxtiojs.cn^
@@ -3718,15 +3722,20 @@ newduba.cn###jq_youxi
 ||kucoa.xyz^
 ||lxbbs.fun^
 ||ojuhwc.xyz^
+||otwiss.xyz^
 ||p4pd.cn^
+||poopd.xyz^
 ||prlioxb.cn^
 ||qiwjiy.xyz^
+||rcxysoj.cn^
 ||readme.red^
 ||rtjmln.xyz^
 ||sh6ss7.top^
 ||smailes.pro^
+||tianma704.ltd^
 ||tmochyf.cn^
 ||vorluic.cn^
+||vujhaib.cn^
 ||wangjiayi.fun^
 ||xcaukve.cn^
 ||xingyang.in^
@@ -3737,14 +3746,20 @@ newduba.cn###jq_youxi
 ||zdlnhv.xyz^
 ||zjqs.shop^
 ||znnodl.xyz^
-||rcxysoj.cn^
-||hhrnxr.xyz^
-||otwiss.xyz^
-||poopd.xyz^
-||tianma704.ltd^
-||campu.ltd^
-||vujhaib.cn^
-||bcivqxd.cn^
+||prtlth.xyz^
+||qqied.xyz^
+||uqymady.cn^
+||wdygoi.xyz^
+||dcdf4.com^
+||kayzqar.cn^
+||lianxi.link^
+||kzjqraj.cn^
+||codeice.xyz^
+||whbn.xyz^
+||nurahf.xyz^
+||ijnuhb.top^
+##a[href*=".mmrjmh.com/"]
+||mindopu.com^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
@@ -5240,7 +5255,6 @@ newduba.cn###jq_youxi
 ||chinazhaoye.com^
 ||chinesean.com^$third-party
 ||chiyan.group^
-||chkaja.com^$third-party
 ||chlinb.xyz^
 ||chocolate521.online^
 ||chrislee.ltd^
@@ -10300,7 +10314,6 @@ newduba.cn###jq_youxi
 ||c.91wan.com^$third-party
 ||cb.baidu.com^
 ||cbjs.baidu.com^
-||chkaja.com^*.gif$third-party
 ||cpro.baidu.com^
 ||cpro.baidustatic.com^
 ||cs.37see.com^$third-party
@@ -14982,6 +14995,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 szxx.com.cn###A0
+youku.com##.src_adwrap
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -22614,6 +22628,7 @@ $image,third-party,domain=258zw.com
 /ce_l.aspx?showid=$third-party
 /ceshi127722.
 /dayu2.html?channelCode=$csp=script-src
+/frambox.php?166$script,~third-party
 /hmzn_*_*_*.js?$script,third-party
 /jquery-ui.js?166$script,~third-party
 /js/easyAD.js
@@ -22628,6 +22643,7 @@ $image,third-party,domain=258zw.com
 /proxy_top_banner_js.php
 /socket?platform=*&href=$third-party,websocket
 /svr/*.aspx?placeid=$third-party
+/swiper.php?166$script,~third-party
 /vbvb_*_pmpm.js
 /windowwap_*_*_*.js?$script,third-party
 /xxgg/0dd*.js

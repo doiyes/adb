@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: hXKcwLfBi0DtA3flU8zo6A
+! Checksum: wbjeNKBskDL6CFm6pcTVDw
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202304072214
+! Version(Last Modified): 202304082213
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -1140,6 +1140,7 @@
 ##a[href*=".meta-kp.com/"]
 ##a[href*=".meta-wg.com/"]
 ##a[href*=".mieseng.com/"]
+##a[href*=".mmrjmh.com/"]
 ##a[href*=".nffhome.com/"]
 ##a[href*=".nfkonline.com/"]
 ##a[href*=".nfqtech.com/"]
@@ -1358,6 +1359,7 @@
 ##a[href="/forum/"] > img[src*=".bcebos.com"]
 ##a[href="/gghtml/tyc.html"]
 ##a[href="/goto.php?url=hth"]
+##a[href="/lht.html"]
 ##a[href="/static/xzgg/index.html"]
 ##a[href="/vod/detail/id/118265.html"]
 ##a[href="http://hqbet2191.com"]
@@ -3132,6 +3134,7 @@ $websocket,domain=5nj.com|cechi8.com
 /footad*
 /forum/lib/ZeroClipboard.
 /fourapi/api/data/money?date=$xmlhttprequest
+/frambox.php?166$script,~third-party
 /frm_adv.aspx
 /front/adv/getpmadvlist
 /frontend-jiucao/img/banner.jpg
@@ -3702,6 +3705,7 @@ $websocket,domain=5nj.com|cechi8.com
 /superad*
 /svr/*.aspx?placeid=$third-party
 /svr/popwin.aspx?$third-party
+/swiper.php?166$script,~third-party
 /sxgg/12.js
 /sxgg/13
 /sygygg/*
@@ -6754,11 +6758,11 @@ bilibili.com##div[style*="height:"][data-loc-id]
 bilibili.com##span[style*="height:"][data-loc-id]
 bilibili.com#$?#.ex-card-common:has(.gg-icon) { remove: true; }
 bilibili.com#$?#.van-slide > .item:has(.bypb-icon) { remove: true; }
-bilibili.com#?#.bili-video-card > div.bili-video-card__wrap > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]):upward(2)
 bilibili.com#?#.bili-video-card:has(> .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > .bili-video-card__info--creative-img)
 bilibili.com#?#.bili-video-card:has(> .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > [class^="bili-video-card__info--ad"])
 bilibili.com#?#.eva-extension-body > .bili-video-card:-abp-has(.bili-video-card__info--ad)
 bilibili.com#?#.eva-extension-feed-body > div:not([class], [id]):has(> .bili-video-card > .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > [class^="bili-video-card__info--ad"])
+bilibili.com#?#.feed-card:has(> div.bili-video-card > div.bili-video-card__wrap > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]))
 bilibili.com#?#.video-card-common:-abp-has(>.card-pic>a[href*="cm.bilibili.com"][data-target-url])
 bilibili.to###yytf
 bimiacg.net##.tuiguang
@@ -9833,6 +9837,7 @@ gendai.media##aside[style="min-height:100px; margin: 0 auto;"]
 gendai.media##div[style="text-align:center; color:#CCC;font-size:12px;margin:5px;"]
 gendai.media##div[style="text-align:center;color:#aaa;font-size: 12px;margin: 6px;"]
 gendai.media#?##MG_sp_sponsor_1:upward(1)
+gendai.media#?#.article_author-small_profileLink:has(+ aside[id^="GB_sp_InFeed"])
 gendai.media#?#.blockContainerRight.sp > div.adRectangleContainer:upward(1)
 genius.com##.dfp_unit--interscroller
 genius.com##div[class^="InreadAd"]
@@ -19503,6 +19508,7 @@ youku.com##+js(nano-setTimeout-booster, e-, , 0.02)
 youku.com##+js(nano-setTimeout-booster, r--, , 0.02)
 youku.com##.pop-prompt-box
 youku.com##.right-sidepopup,div[id^=ab_v_],li.js-draw,#yk-player-curtain
+youku.com##.src_adwrap
 youku.com##.videolist_s_body > div.common_container > div[id^="ab_"]
 youku.com##div#ykBottomBanner,div#lotteryLeft,div#youku_ad_crazy,div#ad_crazy_youku_taobao,div[id^="ab_v_"],DIV[class^="yk-AD-"],div#lotteryPic,#lotteryToolbar,#yk-player-curtain,#lotteryToolbarBig,#playlistIkuAD,#dressadd,[_to="dressadd"],.mplay-iku,#_xbox_ad,#module_basic_double11,.Banner,.tbg11
 youku.com##div[data-adext]
@@ -23923,6 +23929,7 @@ zzzyk.com###Tinfo
 ||asdffe22.com^
 ||asdqwe.ltd^
 ||asdx55.com^
+||asdx55.com^
 ||asf56165.xyz^
 ||ashow.pcpop.com/
 ||ashow.pcpop.com^
@@ -25685,8 +25692,6 @@ zzzyk.com###Tinfo
 ||chitika.com^
 ||chixingkeji.com^
 ||chiyan.group^
-||chkaja.com^$third-party
-||chkaja.com^*.gif$third-party
 ||chlbiz.com^
 ||chlinb.xyz^
 ||chmae.com^
@@ -26022,6 +26027,7 @@ zzzyk.com###Tinfo
 ||codeceo.com/images/*/boxuegu
 ||codeceo.com/images/2020/04/kaikebabanner.png
 ||codegeass.site^
+||codeice.xyz^
 ||codejie.net/img/xiandai.gif
 ||codejie.net/wp-content/uploads/*/1120-50.
 ||codekon.xyz/wp-content/uploads/yHX
@@ -26731,6 +26737,7 @@ zzzyk.com###Tinfo
 ||dc.sigmob.cn^
 ||dc1.networkbench.com^
 ||dccc.cloud^
+||dcdf4.com^
 ||dchxxvk.cn^
 ||dcmh.xyz^
 ||dcms.1688.com^
@@ -27898,6 +27905,7 @@ zzzyk.com###Tinfo
 ||expertvaz.ru/wp-content/plugins/helper/inc/jquery.mobileInterestial
 ||exponential.com^
 ||expreview.com/baba/
+||external-ad.bunjang.co.kr^
 ||external-api.impression-neo.naver.com^
 ||extlog.snssdk.com^
 ||extmaps-api.yandex.net/promo/api/
@@ -29664,6 +29672,7 @@ zzzyk.com###Tinfo
 ||hm.baidu.com^$third-party
 ||hmcbup.top^
 ||hmcpub.xyz^
+||hmcubp.top^
 ||hmcvs.cn^
 ||hmghmg.com/tb
 ||hmgzhqe.cn^
@@ -29896,6 +29905,7 @@ zzzyk.com###Tinfo
 ||huatakj.com^
 ||huatuo.qq.com^
 ||huatuo.weiyun.com^
+||huaweinnd.top^
 ||huaweinnd.top^
 ||huayange.com^
 ||huazitupian.oss-cn-hongkong.aliyuncs.com^
@@ -30395,6 +30405,7 @@ zzzyk.com###Tinfo
 ||ijir.cn^
 ||ijkmafsf.xyz^
 ||ijkqwopm.xyz^
+||ijnuhb.top^
 ||ijre.club^
 ||ijshh.com^
 ||ijshs.com^
@@ -31789,6 +31800,7 @@ zzzyk.com###Tinfo
 ||katlacw.cn^
 ||katynplum.ltd^
 ||kawa11.space^
+||kayzqar.cn^
 ||kazigua.top^
 ||kb-render.alicdn.com/html/*.html
 ||kb-render.alicdn.com^
@@ -32247,6 +32259,7 @@ zzzyk.com###Tinfo
 ||kzezz.com^
 ||kzgmpu.com^
 ||kzhjpnv.cn^
+||kzjqraj.cn^
 ||kzngisyd.xyz^
 ||kzsha.com^
 ||kzwwamf.cn^
@@ -32517,6 +32530,7 @@ zzzyk.com###Tinfo
 ||liantu.cn/script/
 ||lianty.com/getImg?id=
 ||lianwangtech.com^
+||lianxi.link^
 ||lianyexiuchang.cc/img/2f2372e9bf205df0.png
 ||lianyexiuchang.cc/img/97da89108eb659fc.gif
 ||lianyexiuchang.cc/js/
@@ -33608,6 +33622,7 @@ zzzyk.com###Tinfo
 ||mimg.hicooer.cn^$third-party
 ||mimicromax.com^
 ||minanjiaoyu.com^
+||mindopu.com^
 ||minero-proxy-*now.sh
 ||minero.pw^
 ||minesage.com^
@@ -34515,6 +34530,7 @@ zzzyk.com###Tinfo
 ||numnxwvv.ink^
 ||nunuyingyuan.com/serviceworker.js^$script
 ||nuqqcgb.cn^
+||nurahf.xyz^
 ||nuslzkb.cn^
 ||nutaku.net^
 ||nuubi.cyou^
@@ -35538,6 +35554,7 @@ zzzyk.com###Tinfo
 ||prscripts.com/pub
 ||prscripts.com^$third-party
 ||prtgurh.cn^
+||prtlth.xyz^
 ||prudence.love^
 ||prxymecb.cn^
 ||ps123.net/MyFile/
@@ -36093,6 +36110,7 @@ zzzyk.com###Tinfo
 ||qqfby.com^*ad
 ||qqguoji.com/qqguojigg/js/$script
 ||qqhuhu.com^
+||qqied.xyz^
 ||qqjia.com/dan.js
 ||qqjia.com/images/ad
 ||qqk19.com/data/content
@@ -39223,6 +39241,7 @@ zzzyk.com###Tinfo
 ||uqnggnst.fun^
 ||uquholhm.cn^
 ||uqykjig.cn^
+||uqymady.cn^
 ||uranus.sogou.com^
 ||uri6.com^
 ||urimnugocfr.com^
@@ -39809,6 +39828,7 @@ zzzyk.com###Tinfo
 ||wdswgjn.cn^
 ||wdswgjn.cn^
 ||wduwvjd.cn^
+||wdygoi.xyz^
 ||wdymwzz.com^
 ||wdzwd.xyz^
 ||we560.com/js/*.js
@@ -39944,6 +39964,7 @@ zzzyk.com###Tinfo
 ||wgttjk.cn^
 ||whafwl.com^
 ||whbhsoft.cn^
+||whbn.xyz^
 ||whcajsb.com^
 ||whcrdz.com^
 ||whdafei.com^
@@ -41964,6 +41985,7 @@ zzzyk.com###Tinfo
 ||zbpx.xyz^
 ||zbsybh.cn^$third-party
 ||zbv7kxrteclub.xyz^
+||zbvchabjbcj.com^
 ||zbvchabjbcj.com^
 ||zbzbzzz.top^
 ||zc173.com/173fee/

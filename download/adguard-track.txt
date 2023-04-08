@@ -1,4 +1,5 @@
 ! AdGuard-跟踪保护规则
+biedronka.pl##+js(remove-class, async-hide, html)
 avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##+js(set-constant, ga, noopFunc)
 forbes.com##+js(set-constant, Object.prototype.track, noopFunc)
 sportschau.de##+js(set-constant, mediaTrackingOff, true)
@@ -82,6 +83,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ##img[src*="counter.yadro.ru"]
 ##img[src^="http://c.bigmir.net/"]
 ~canstarblue.com.au,~stardewvalleywiki.com,~ricochet5.com,~underverse.su,~underver.se,~minu.stv.ee,~sota.com,~7kingdoms.ru,~epicl2.com,~forum.ixbt.com,~forum.themega.ru,~gamepedia.com,~makeserver.ru,~mozhor.ru,~onliner.by,~wiktionary.org,~yandex.by,~yandex.com,~yandex.com.tr,~yandex.ru##img[width="88"][height="31"]
+gendai.media#?#.elementSectionHeadingsWithSuffix:has(+ div[id^="taboola-below-article-thumbnails-gendai_biz-desktop"])
 blog.jp#?#.plugin-memo > div.side > div > div[id^="blz_rss"]:upward(3)
 jin115.com#?#.plugin-memo > div.side > script[src*="ziyu.net/"]:upward(2)
 minnyuu.jp#?#div[class$="BlockBase"] > div > div > div.plugin-freearea > div.ninja-recommend-block:upward(4)
@@ -5123,6 +5125,8 @@ nethunt.com/api/v1/track/email/$image
 ||tags.news.com.au^$~script
 ||telemetry.mozilla.org^
 |piwik.
+||analytics.bauermedia.sk^
+||ads-dmp-collect.*.karrotmarket.com^
 ||uplog.inews.qq.com^
 ||log1.wtlogin.qq.com^
 ||tp.content-score.com^
@@ -36119,6 +36123,8 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||taboola.com/magazine/$domain=taboolanews.com
+||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js,domain=biedronka.pl
 @@||geoloc.hurriyet.com.tr/api/country$domain=kanald.com.tr
 @@||googletagmanager.com/gtag/js$script,domain=undawn.game
 @@||googletagmanager.com/gtm.js$domain=daily.co.jp
@@ -36133,6 +36139,8 @@ inapps.appsflyersdk.com^
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js,domain=danishagroshoppen.dk
 @@||googletagmanager.com/gtm.js$domain=nordvpn.com
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js,domain=kidega.com
+@@||googleads.g.doubleclick.net/pagead/html$domain=repo.hackyouriphone.org
+@@||google-analytics.com/analytics.js$domain=repo.hackyouriphone.org
 @@||googleoptimize.com/optimize.js$domain=bookmyshow.com
 @@||rt.rtoaster.jp/Rtoaster.js$domain=jreastmall.com
 @@||frosmo.com^$image,xmlhttprequest,domain=karkkainen.com
