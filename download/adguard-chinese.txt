@@ -489,11 +489,10 @@ game735.com##div[id^="ysmAD"]
 game735.com#$#div[id^="gklobl"] { height: 1px!important; }
 @@||www.ruanyifeng.com^$csp=script-src 'self' * 'sha256-0McqMM66/wAVZmxF6zXpjNsb1UMbTl4LXBXdhqPKxws='
 ruanyifeng.com#@#a > img[src*="wangbase.com/blogimg/asset/"]
-t66y.com##+js(nano-setTimeout-booster, adhtml, 10005)
-t66y.com##+js(nano-setTimeout-booster, blockText, 1005)
+t66y.com##+js(abort-current-script, $, adhtml)
 !+ NOT_PLATFORM(windows, mac, android)
 !+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_edge)
-t66y.com#$?#.sptable_do_not_remove { visibility: hidden !important; }
+t66y.com#$?#.sptable_do_not_remove { display: block !important; visibility: hidden !important; }
 ||alicdn.com^$domain=t66y.com
 ||dioimg.net^$domain=t66y.com
 ||sinaimg.cn^$domain=t66y.com
@@ -580,7 +579,8 @@ nfmovies.com#$#a[onclick*="openurl"][target="_blank"] img[src^="/static/"] { pos
 ||nfmovies.com/static/*.jpg$image,redirect=1x1.gif
 hdmoli.com#?#.row > div.myui-panel:has(div[style^="text-align:"] > a[href][target="_blank"] > img#index_banner)
 v.qq.com#$?#.video-card-module > div[dt-params*="ad_creative_id="] { remove: true; }
-bilibili.com#?#.feed-card:has(> div.bili-video-card > div.bili-video-card__wrap > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]))
+bilibili.com#?#.bili-video-card.is-rcmd > div > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]) + .bili-video-card__info:upward(2)
+bilibili.com#?#.bili-video-card > div.bili-video-card__wrap > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]):upward(2)
 bilibili.com#?#.bili-video-card:has(> .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > [class^="bili-video-card__info--ad"])
 bilibili.com#?#.eva-extension-feed-body > div:not([class], [id]):has(> .bili-video-card > .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > [class^="bili-video-card__info--ad"])
 bilibili.com#?#.bili-video-card:has(> .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > .bili-video-card__info--creative-img)
@@ -803,6 +803,7 @@ ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###resul
 ||alicdn.com^$image,domain=m.k1k.cc|thcdy.co|27k.cc|1024pa.com|hg6384.com-www.6u7u.com|4080kan.com|dy686.net
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .result ~ div:not([class]):not([style])
 /^(?!.*(bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com)).*$/$third-party,script,domain=yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top
+||ll.ibiqiuge.com/m.js
 axutongxue.net###uuuui
 sstv.pw##.container > a > img[style="width: 100%;"]
 cupfox.app##.t-img-box > a[target="_blank"] > img
@@ -2137,6 +2138,7 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 @@||nfmovies.com/static/side.jpg$xmlhttprequest,domain=nfmovies.com
 -*-*-*-*.panda^$script,third-party
 -1316632262.cos.
+/Runtime/Js/haojio_
 -1688-wp-media/ads/
 -90mh-gg.
 .bid/ads/
@@ -3706,11 +3708,15 @@ newduba.cn###jq_youxi
 ||cdcc3.com^
 ||codeice.xyz^
 ||dcdf4.com^
+||ej65.xyz^
+||enahmy.xyz^
+||feild.xyz^
 ||fijipic.xyz^
 ||flyinsky2009.ltd^
 ||fnnzr.cn^
 ||gpqicw.xyz^
 ||gwvzgjb.cn^
+||gzexsc.top^
 ||gzsjym.xyz^
 ||gzsscr.cn^
 ||h731.icu^
@@ -3722,8 +3728,11 @@ newduba.cn###jq_youxi
 ||hxtiojs.cn^
 ||iepda.xyz^
 ||ijnuhb.top^
+||itoken.pro^
 ||jerrytom.xyz^
+||jfanhao.com^
 ||jiuba20230320.live^
+||jvkckeg.cn^
 ||jwronx.xyz^
 ||kayzqar.cn^
 ||kingsunsky.ltd^
@@ -3750,14 +3759,17 @@ newduba.cn###jq_youxi
 ||tianma704.ltd^
 ||tmochyf.cn^
 ||uqymady.cn^
+||vnlqcod.cn^
 ||vorluic.cn^
 ||vujhaib.cn^
 ||wangjiayi.fun^
 ||wdygoi.xyz^
 ||whbn.xyz^
+||xbvmrx.xyz^
 ||xcaukve.cn^
 ||xingyang.in^
 ||xunjie.fun^
+||yankuoyyds.com^
 ||yfohgo.xyz^
 ||yulingaa.xyz^
 ||zbvchabjbcj.com^
@@ -3765,16 +3777,18 @@ newduba.cn###jq_youxi
 ||zdlnhv.xyz^
 ||zjqs.shop^
 ||znnodl.xyz^
-||vnlqcod.cn^
-||yankuoyyds.com^
-||xbvmrx.xyz^
-||feild.xyz^
-||ej65.xyz^
-||gzexsc.top^
-||enahmy.xyz^
-||itoken.pro^
-||jvkckeg.cn^
-||jfanhao.com^
+||xlxknf.xyz^
+||cnmmcjn.cn^
+||yingnanyyds.com^
+||excfig.xyz^
+||jeedi.xyz^
+||yingce.asia^
+||52qd.club^
+||39nw.com^
+||vel7.xyz^
+||nqyz.tw^
+||tc911.vip^
+||aaaaa699.com^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
@@ -10942,6 +10956,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||51ztzj.com/res/web/img/pic/inshow.jpg
 ||520call.me/ad/ad_
 ||520cc.tw/AD/
+||520xingyun.com/images/188*.gif
 ||520xs.la/js/dianrui-
 ||520z-2.com/uploadfile/sucai/
 ||521000.com/co/
@@ -15009,8 +15024,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zztongyun.com/static/js/sh.
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
-||520xingyun.com/images/188*.gif
-lukedreyer.com##div[style$="width: 125px;z-index:2000;"]
 szxx.com.cn###A0
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -20043,6 +20056,7 @@ cbber.com##div[style$=":0px;top:200px;z-index:9999;"]
 anhuinews.com##div[style$="height:40px;overflow:hidden"]
 tuwan.com##div[style$="height:90px;"]
 m.mydrivers.com##div[style$="px 0px 0px 0px;text-align:center;"]
+lukedreyer.com##div[style$="width: 125px;z-index:2000;"]
 mydrivers.com##div[style*="/ad/"]
 cq.qq.com##div[style*="1000"][style*="60"]
 ilxdh.com##div[style*="1000px"]
@@ -22645,6 +22659,7 @@ $image,third-party,domain=258zw.com
 /ce_l.aspx?showid=$third-party
 /ceshi127722.
 /dayu2.html?channelCode=$csp=script-src
+/fram*.php?166$script,~third-party
 /hmzn_*_*_*.js?$script,third-party
 /jquery-ui.js?166$script,~third-party
 /js/easyAD.js
@@ -22660,7 +22675,6 @@ $image,third-party,domain=258zw.com
 /socket?platform=*&href=$third-party,websocket
 /svr/*.aspx?placeid=$third-party
 /swiper*.php?166$script,~third-party
-/fram*.php?166$script,~third-party
 /vbvb_*_pmpm.js
 /windowwap_*_*_*.js?$script,third-party
 /xxgg/0dd*.js

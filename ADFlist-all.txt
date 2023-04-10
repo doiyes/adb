@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: rmAU5s0Xqb2Pt1f/7hWHgw
+! Checksum: 0yM+IMDiw9nGEveZx4V9/A
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202304092213
+! Version(Last Modified): 202304102214
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -2767,6 +2767,7 @@ $websocket,domain=5nj.com|cechi8.com
 /Runtime/Js/daohang.js
 /Runtime/Js/footer-m.js
 /Runtime/Js/guding_top.js
+/Runtime/Js/haojio_
 /Runtime/Js/lianmeng.js
 /Runtime/Js/m_tuijian_
 /Runtime/Js/m_v_tuijian_
@@ -6766,11 +6767,12 @@ bilibili.com##div[style*="height:"][data-loc-id]
 bilibili.com##span[style*="height:"][data-loc-id]
 bilibili.com#$?#.ex-card-common:has(.gg-icon) { remove: true; }
 bilibili.com#$?#.van-slide > .item:has(.bypb-icon) { remove: true; }
+bilibili.com#?#.bili-video-card > div.bili-video-card__wrap > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]):upward(2)
+bilibili.com#?#.bili-video-card.is-rcmd > div > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]) + .bili-video-card__info:upward(2)
 bilibili.com#?#.bili-video-card:has(> .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > .bili-video-card__info--creative-img)
 bilibili.com#?#.bili-video-card:has(> .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > [class^="bili-video-card__info--ad"])
 bilibili.com#?#.eva-extension-body > .bili-video-card:-abp-has(.bili-video-card__info--ad)
 bilibili.com#?#.eva-extension-feed-body > div:not([class], [id]):has(> .bili-video-card > .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .bili-video-card__info--tit > a > [class^="bili-video-card__info--ad"])
-bilibili.com#?#.feed-card:has(> div.bili-video-card > div.bili-video-card__wrap > a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"]))
 bilibili.com#?#.video-card-common:-abp-has(>.card-pic>a[href*="cm.bilibili.com"][data-target-url])
 bilibili.to###yytf
 bimiacg.net##.tuiguang
@@ -15176,6 +15178,7 @@ pingwest.com##.pt-two
 pinkpanfan.com###custom_html-11
 pinkpanfan.com###mobile_text-5
 pinkpanfan.com,momoniji.com,gosunkugi.com###mobile_text-3
+pinkvilla.com##.mobileads
 pinkvilla.com##body #gptTagBottom
 pinshan.com##.b_adv
 pinshan.com##.b_adv2
@@ -17014,8 +17017,7 @@ t.qq.com###homeBannerNew
 t.qq.com###talkList > li[ispopula="1"][tv="2"]
 t.rasp.yandex.ru##.HeaderDirectBlock
 t24.com.tr##div[style="margin-bottom:20px;min-height:120px"]
-t66y.com##+js(nano-setTimeout-booster, adhtml, 10005)
-t66y.com##+js(nano-setTimeout-booster, blockText, 1005)
+t66y.com##+js(abort-current-script, $, adhtml)
 t66y.com##.sptable_do_not_remove
 t66y.com##.tips
 t66y.com##.tpc_content.do_not_catch > a[target="_blank"]
@@ -17023,7 +17025,7 @@ t66y.com##.tpc_content.do_not_catch > br
 t66y.com##.tpc_content.do_not_catch > span.f24
 t66y.com##a[href^="http://www.viidii.info/?https://po88_"]
 t66y.com##a[href^="http://www.viidii.info/?https://po88_"] ~ :nth-child(-n+115)
-t66y.com#$?#.sptable_do_not_remove { visibility: hidden !important; }
+t66y.com#$?#.sptable_do_not_remove { display: block !important; visibility: hidden !important; }
 t66y.com$$script[tag-content="r9aeadS"]
 t66y.com$$script[tag-content="timerS"]
 tabletowo.pl##.amp_widget_below_the_header a[data-bid] > amp-img
@@ -21095,6 +21097,7 @@ zzzyk.com###Tinfo
 ||3990.tv^
 ||39jz.com^
 ||39mob.com^
+||39nw.com^
 ||3alian.net^$third-party
 ||3bitter.com/apbk-hbonetag.js
 ||3bmmmesj.life/skin/js/dny.
@@ -21403,6 +21406,7 @@ zzzyk.com###Tinfo
 ||52pk.com/spc.html?zones=
 ||52pk.com/style/files/images/*beitou.
 ||52pk.com/style/files/images/beitou.jpg
+||52qd.club^
 ||52rd.com/Pic/Click/
 ||52rd.com/Pic2/*_600_60
 ||52shouyou.com.cn^
@@ -22467,6 +22471,7 @@ zzzyk.com###Tinfo
 ||aaaa8.top^
 ||aaaaa599.com^
 ||aaaaa663.com^
+||aaaaa699.com^
 ||aaaaa855.com^
 ||aaaesme.cn^
 ||aaaf.info^$script
@@ -25978,6 +25983,7 @@ zzzyk.com###Tinfo
 ||cnlg.cn/attached/script/
 ||cnlink8.com^
 ||cnlongshou.com^
+||cnmmcjn.cn^
 ||cnmo-img.com.cn/oddjs/
 ||cnmo.com/pv.js
 ||cnmoad.com/wp-content/uploads/*_banner.
@@ -27900,6 +27906,7 @@ zzzyk.com###Tinfo
 ||ewtyewj.com^
 ||ewwgqjn.cn^
 ||exceptionlog.kugou.com^
+||excfig.xyz^
 ||excsyrv.cn^
 ||exdynsrv.com^
 ||exe.bid^
@@ -31099,6 +31106,7 @@ zzzyk.com###Tinfo
 ||jeanrace.com^
 ||jebe.renren.com^
 ||jebe.xnimg.cn^
+||jeedi.xyz^
 ||jeepyy.com^$third-party
 ||jellyfish.pandora.xiaomi.com^
 ||jenniferlaurax.com^
@@ -32697,6 +32705,7 @@ zzzyk.com###Tinfo
 ||lktxelg.cn^
 ||ll.gxsky.com^
 ||ll.hudong.com^
+||ll.ibiqiuge.com/m.js
 ||ll.k743.com^
 ||ll38.com^
 ||llaxl.com^
@@ -33643,6 +33652,7 @@ zzzyk.com###Tinfo
 ||mimicromax.com^
 ||minanjiaoyu.com^
 ||mindopu.com^
+||mindopu.com^
 ||minero-proxy-*now.sh
 ||minero.pw^
 ||minesage.com^
@@ -34517,6 +34527,7 @@ zzzyk.com###Tinfo
 ||nqhqpq.cn^
 ||nqnggnsc.fun^
 ||nqxvevk.cn^
+||nqyz.tw^
 ||nrjzkj.cn^
 ||nrjzkj.cn^
 ||nrsfh.com/neirong/
@@ -38272,6 +38283,7 @@ zzzyk.com###Tinfo
 ||tbxqbvt.cn^
 ||tc600.com^
 ||tc6tc.com^
+||tc911.vip^
 ||tcbox.baidu.com^
 ||tccbanner.com^
 ||tchep.com^
@@ -39446,6 +39458,7 @@ zzzyk.com###Tinfo
 ||vecukb.com^
 ||vedvvik.cn^
 ||veickea.cn^
+||vel7.xyz^
 ||velocitycdn.com^
 ||velti.com^
 ||venator.link^
@@ -40989,6 +41002,7 @@ zzzyk.com###Tinfo
 ||xls.go.sohu.com^
 ||xlviiirdr.com^
 ||xlviirdr.com^
+||xlxknf.xyz^
 ||xmangoculture.com^
 ||xmaterial.tu.qq.com^
 ||xmbhj.com^
@@ -41505,8 +41519,10 @@ zzzyk.com###Tinfo
 ||yin1.zgpingshu.com^
 ||yin1.zgpingshu.com^
 ||yingav.net/images/content/spot01.jpg
+||yingce.asia^
 ||yinghuacd.com/bar/
 ||yingjiawm.com^
+||yingnanyyds.com^
 ||yingshidaquan.cc/Templet/js/
 ||yingshidaquan.cc^$third-party
 ||yingshizxw.com/js/tc/
@@ -42068,6 +42084,8 @@ zzzyk.com###Tinfo
 ||zdhpen.xyz^
 ||zdhpenn.live^
 ||zdhpenn.shop^
+||zdjeae.live^
+||zdkdwk.buzz^
 ||zdkdwk.buzz^
 ||zdkdwk.live^
 ||zdkjr.xyz^
