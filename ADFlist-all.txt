@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: qJyhcIsry6m7kgse5Tk3Xw
+! Checksum: oESdI319H+mMblUw3hAwyg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202304172216
+! Version(Last Modified): 202304182220
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -77,8 +77,6 @@
 ###asdw
 ###asdw2
 ###asdw2 + img
-###asdw3
-###asdw3 + img + :not(div)
 ###aside_cat_ad_bottom
 ###asx_text
 ###avshow
@@ -125,6 +123,7 @@
 ###ct > div.mn:last-child > table:nth-child(3)
 ###dbgg
 ###dgf_pc
+###diads
 ###divExoLayerWrapper
 ###downapp1
 ###downdiv > .downcode
@@ -252,6 +251,7 @@
 ###player-advertising
 ###player-bottom-ads
 ###playerAdvLayer
+###playerContainer > .nav-ads
 ###playerJsvLayer.jsv-layer
 ###player_banner[style*="fixed;"]
 ###player_pause > .tip + a[target="_blank"]
@@ -2546,7 +2546,9 @@ $websocket,domain=5nj.com|cechi8.com
 .com/topjs/
 .com/uploads/*-860x250.gif
 .com/vh1/$script,third-party
+.com/vh2/$script,third-party
 .com/vj1/$script,third-party
+.com/vj2/$script,third-party
 .com/vodad.js
 .com/zz/*2.txt$xmlhttprequest
 .com/zz/tcc2.js
@@ -5846,6 +5848,7 @@ amu520.com##[href="http://m.yilingxs.com/"],[href^="http://www.yilingxs.com/"]
 analdin.com,tubewolf.com##.banner-top
 analteen.pro##.pop-wrap
 ananvod.com##.rbPicAll
+andhrajyothy.com##.onlyMobileADS
 androeed.ru##a[href*=".php?r="]
 android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,lspdfrcn.com,moa.tw,moe123.net,numberempire.com,playok.com,reh.tw,shenfendaquan.com,vaptcha.com#@#.adsbygoogle
 android.265g.com##div#fmt-wrap
@@ -9029,6 +9032,7 @@ eromanga-moeerolibrar.com,bl-doujinsouko.com,bl-boyslove.com,eromanga-musou.com#
 eromanga-pon.com##.ad_big
 eromanga-school.com##.ad-top-sp
 eromanga-select.com,doujin-night.com##.sp_adwidget
+eromanga-sora.com#?#.enhanced-text-widget:has(> div.textwidget > div#spwrapper)
 eromanga-yasan.com,eromanga-ace.com###spcontent
 eromanga-yasan.com,eromanga-ace.com##.adontitle
 eromanga-yasan.com,eromanga-kishin.com###spwrapper
@@ -16349,6 +16353,7 @@ shuqu8.com###ad_c_top
 shurua.com###advbox
 shuzhiduo.com
 shxd.net##div.footadbox,div.addown,div.myad,div.downbtna
+si.com##amp-video-iframe[src^="//player.ex.co/"]
 siamblockchain.com###inarticle-banner-mobile
 sibdom.ru##.fixed-position
 sigure.tw##.Ads-Sidebar
@@ -20490,6 +20495,7 @@ zzzyk.com###Tinfo
 ||136.0.56.196^
 ||1368999.com^
 ||137.175.69.92^
+||138txt.net/js/ssgdd.
 ||138vps.com/fa/
 ||139.224.225.117^
 ||139file.com/jsa/
@@ -21939,6 +21945,7 @@ zzzyk.com###Tinfo
 ||7xi9g1.com1.z0.glb.clouddn.com^
 ||7xsf3h.com1.z0.glb.clouddn.com^
 ||7xsf4r.com1.z0.glb.clouddn.com/lianzi.mp4
+||7xwx.cn^
 ||7z66.com^
 ||8*.tianya.cn^
 ||8-7-6-8-0-0.com:8888^
@@ -24072,6 +24079,7 @@ zzzyk.com###Tinfo
 ||aspwg.cn^
 ||asserts.avple.tv/file/avple-asserts/ad.js
 ||asset2.uniwa.cn/assets/custom/csstock$image
+||assets.leetcode.cn/lccn-resources/cn.js^
 ||assets.msn.cn/bundles/v1/microsoftNews/latest/placement-manager.*.js$domain=microsoftnews.msn.cn
 ||assets.sport1.de/imagix/filter2/jpeg/_set=dyn_size_no_crop/imagix/
 ||assiatv.com/css/mob/jquerymin*.js
@@ -25449,6 +25457,7 @@ zzzyk.com###Tinfo
 ||cbgyhe.cn^
 ||cbgyhe.cn^
 ||cbh365.club^
+||cbhwekr.cn^
 ||cbjg.cqnews.net^
 ||cbjs.baidu.com/
 ||cbjs.baidu.com^
@@ -25515,6 +25524,7 @@ zzzyk.com###Tinfo
 ||cdcc3.com^
 ||cdcd.ink^
 ||cdeledu.com/ADVC/$domain=~chinaacc.com|~ruidaedu.com
+||cdfda.xyz^
 ||cdfzcz.com^
 ||cdgfa.ifeng.com^
 ||cdgjxt.com^
@@ -27668,6 +27678,7 @@ zzzyk.com###Tinfo
 ||ea0jlu8jie.cn^
 ||ea3w.com/pv.js
 ||eabids.com^
+||ealdi.xyz^
 ||ealooov.cn^
 ||eamob.com^
 ||eamobile.com/gameasset/direct/draper/*/ads/
@@ -29802,6 +29813,7 @@ zzzyk.com###Tinfo
 ||hikari.website^
 ||hikin.online^
 ||hilltopads.net^
+||himeneko.ink^
 ||hinet.net/product/promotion/$popup
 ||hinet.net/radio/getAdcode.do
 ||hioek.cyou^
@@ -31091,6 +31103,7 @@ zzzyk.com###Tinfo
 ||iuerxw.xyz^
 ||iufjkdjmsm.xyz^
 ||iugbjkqwc.xyz^
+||iughyy7919.com^
 ||iuiweb.com^
 ||iuliglsh.space^
 ||iumnxwvh.ink^
@@ -32630,7 +32643,8 @@ zzzyk.com###Tinfo
 ||ledaren.cn^
 ||lee789.com^
 ||leeleo.top^$third-party
-||leetcode.com/static/cn.js
+||leetcode.cn/api/is_china_ip^
+||leetcode.com/static/cn.js^
 ||leeyuo.com^
 ||lefengtv.com/js/tj.js
 ||legou361.com^
@@ -32944,6 +32958,7 @@ zzzyk.com###Tinfo
 ||lnfund.org.cn^
 ||lnhsjob.com^$third-party
 ||lnk0.com^
+||lnnjnv.xyz^
 ||lnr1.com^$third-party
 ||lntnhtc.cn^
 ||lnymd.com^
@@ -34057,6 +34072,7 @@ zzzyk.com###Tinfo
 ||moe123.net/static/img/1200x200_
 ||moedao.com/js/top.js
 ||moegirl.org.cn/insight/MoegirlInsight.
+||moend.xyz^
 ||moerats.com/usr/ad/
 ||moerats.com/usr/affpc/
 ||moes3quba.cyou^
@@ -35437,6 +35453,7 @@ zzzyk.com###Tinfo
 ||pehlvl.xyz^
 ||peigbv.cn^
 ||peise.net/Skin/js/global.
+||peishuning1.cn^
 ||pejrq.xyz^
 ||pejrq.xyz^
 ||pekingpk10.com^
@@ -35628,6 +35645,8 @@ zzzyk.com###Tinfo
 ||pk331.cn^
 ||pk840.com^
 ||pkeog.cn^
+||pki.net.cn/public/*/plugins/
+||pki.net.cn/public/1/assets/js/custom/tt.
 ||pkjl00l.cn^
 ||pkk1.zuimeiniwo.com^
 ||pkkylyx.xyz^
@@ -35689,6 +35708,7 @@ zzzyk.com###Tinfo
 ||pogwua.cn^
 ||poiful.com/sdk/vrizeadsdk.
 ||poiqknfl.com^
+||poiqwnekb.com^
 ||pojihfnkbllg.net^
 ||pojihfnkbllg.net^
 ||pojjtt.xyz^
@@ -35722,6 +35742,7 @@ zzzyk.com###Tinfo
 ||poqjnkdsou.net^
 ||poqjnkdsou.net^
 ||poqoiwn.com^
+||poqwnllkm.com^
 ||poqwua.cn^
 ||porjjhu.cn^
 ||porlsbll.cyou^
@@ -36344,6 +36365,8 @@ zzzyk.com###Tinfo
 ||qpic.cn/wwpic/471270_J6SyU3sDRNuKUnZ_1680798399/0
 ||qpic.ws/images/pk*.gif
 ||qpix.com/2021/05/20/Aqcp.gif
+||qpoiwnelc.com^
+||qpoiwnelc.com^
 ||qponfva.cn^
 ||qptnew.com^
 ||qq-hls.xyz^
@@ -36900,6 +36923,7 @@ zzzyk.com###Tinfo
 ||rtbapi.douyucdn.cn^
 ||rtbimp-loadbalancer-*.amazonaws.com^
 ||rtcegcp.cn^
+||rtdxqq.com^
 ||rte.fuoo1.top^
 ||rthmnj.xyz^
 ||rtjmln.xyz^
@@ -37668,6 +37692,7 @@ zzzyk.com###Tinfo
 ||sis.jpush.io^
 ||sisafnib.space^
 ||sisgirlav.info^
+||sisjwol.xyz^
 ||site-bk.oss-cn-shenzhen.aliyuncs.com/img/aliyun/
 ||sitemaji.com^
 ||sitemaji.com^$third-party
@@ -38397,6 +38422,7 @@ zzzyk.com###Tinfo
 ||sznj91.com^
 ||szonline.net/static/js/ads.js
 ||szpgzn.com^
+||szsbiw.xyz^
 ||szsxy.vip^
 ||szwjzl.cn^$third-party
 ||szxljdsb.com/tl
@@ -38854,8 +38880,6 @@ zzzyk.com###Tinfo
 ||tlula507.com/Public/js/dui
 ||tlula507.com/Public/js/float
 ||tlvmedia.com^
-||tlxxw.cc/public/*/plugins/
-||tlxxw.cc/public/1/assets/js/custom/tt.
 ||tm1.hoiplay.com^
 ||tmall.com^$popup,domain=eyusky.net|iqiyi.com
 ||tmall.com^$removeparam=/^utm_/
@@ -41323,6 +41347,7 @@ zzzyk.com###Tinfo
 ||xmindchina.
 ||xmjikcz.xyz^
 ||xmkbrfyu.cn^
+||xmlsxar.cn^
 ||xmltym2.cn^
 ||xmmnsl.com^
 ||xmrc.com.cn/net/info/html/
@@ -41361,6 +41386,7 @@ zzzyk.com###Tinfo
 ||xn--xhq9mt12cf5v.xn--io0a7i^$third-party
 ||xne1ocient87zxz.360doc.cn^
 ||xng02.com/api.php?mod=ad&
+||xni.ink^
 ||xniexnz.cn^
 ||xnimg.cn^*/liveinc/rightlive.js
 ||xnklgas.cn/common/getBannerList

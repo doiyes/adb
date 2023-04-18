@@ -1,4 +1,6 @@
 ! AdGuard-跟踪保护规则
+cerbahealthcare.it##+js(set-constant, pa, {})
+cerbahealthcare.it##+js(set-constant, pa.setConfigurations, noopFunc)
 lightrun.com##+js(set-constant, gtag, noopFunc)
 biedronka.pl##+js(remove-class, async-hide, html)
 avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##+js(set-constant, ga, noopFunc)
@@ -132,6 +134,9 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||tr.usergram.info^
+||code.usergram.info^
+||sibautomation.com^$third-party
 ||analytics-beacon.p.uliza.jp^
 ||hnrmvq.com^$third-party
 ||log.qvb.qcloud.com^
@@ -5121,6 +5126,11 @@ nethunt.com/api/v1/track/email/$image
 |piwik.
 ||analytics.s3.amazonaws.com^
 ||analyticsengine.s3.amazonaws.com^
+||prd-collector-anon.ex.co^
+||l.francetvinfo.fr^
+||counter.any.run^
+||cllctr.any.run^
+||owa.any.run^
 ||analytics.skroutz.gr^
 ||lake.joongang.co.kr^
 ||dsas.danawa.com^
@@ -36115,6 +36125,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||plausible.io/api/event
 /umami.js
 /zhugeio.js
+/dist/owa.tracker.js
 /common_access/usercheck.php?muid=$xmlhttprequest
 /api/bfb_write_log
 /swell-ct-pv$xmlhttprequest
@@ -36563,6 +36574,7 @@ _tracking.php?b=
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz
+||wilfmovies.com/wp-content/plugins/google-analytics-dashboard-for-wp/
 ||grabify.link/cdn-cgi/rum?
 ||smart-bdash.com/receptions/action/impression
 ||st.afreecatv.com/api/da_block_api.php
@@ -36586,7 +36598,6 @@ brasil247.com###taboola-mid-article-leia-mais
 ||snap-api.arkoselabs.com/metrics/
 ||zona.plus/ajax/visit-stats
 ||showstopped.com/owa/log.php
-||showstopped.com/owa/modules/base/dist/owa.tracker.js
 ||hotels.com/cl/*.gif?
 ||platform.loyaltylion.com/analytics/
 ||ok.ru/web-api/pixel?
@@ -36692,7 +36703,6 @@ norisoku.com###random
 ||sdk.mrf.io/statics/marfeel-sdk.js
 russianbeauties.jp###secondary-column > div.text-recommend
 ||cdn.pdst.fm/ping.min.js
-||r.bh.d.sendibt3.com/tr/
 jiji.com##.RecommendPianoWrapper
 jiji.com##.RecommendUnderlayer
 ||vanilla.futurecdn.net/tvtechnology/media/shared/js/jwplayer-analytics
@@ -40649,6 +40659,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||adobe.tt.omtrdc.net/rest/v1/delivery?client=adobe&sessionId=$domain=acrobat.adobe.com
 ||ab.blogs.es/abtest.png?editorialRecommendations$image,redirect=2x2.png,domain=applesfera.com
 @@||cdn.clerk.io/clerk.js$domain=apotera.no
 @@||miclaro.com.gt/assets/analytics$domain=miclaro.com.gt
@@ -40980,6 +40991,7 @@ extrahop.com##+js(no-setTimeout-if, ad blocker)
 suki-kira.com##+js(remove-attr, disabled, button.vote-submit)
 @@||mpsnare.iesnare.com/snare.js$domain=rossmann.de
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freundin.de
+@@||googletagmanager.com/gtag/js$script,domain=www3.nissan.co.jp
 @@||googletagmanager.com/gtm.js$domain=www3.nissan.co.jp
 ||as.uncn.jp/uwt/$script,redirect=noop.js,domain=nissan.co.jp
 ||b90.yahoo.co.jp/conv.js$script,redirect=noop.js,domain=nissan.co.jp
