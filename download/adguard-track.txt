@@ -4,7 +4,6 @@ cerbahealthcare.it##+js(set-constant, pa.setConfigurations, noopFunc)
 lightrun.com##+js(set-constant, gtag, noopFunc)
 biedronka.pl##+js(remove-class, async-hide, html)
 avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##+js(set-constant, ga, noopFunc)
-forbes.com##+js(set-constant, Object.prototype.track, noopFunc)
 sportschau.de##+js(set-constant, mediaTrackingOff, true)
 capital.fr,voici.fr,gala.fr##+js(set-constant, DD_RUM.addTiming, noopFunc)
 reverso.net##+js(set-constant, rumjs.business.setManualConsent, noopFunc)
@@ -999,7 +998,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||ad-spire.net^
 ||investingchannel.com^$third-party
 ||f-counter.net^$third-party
-||moshimo.com^$third-party
+||i.moshimo.com^
 ||counter.monkeybanana3.com^
 ||analytic-client.playful-fairies.com^
 ||eventapi.libring.com^$third-party
@@ -5126,6 +5125,7 @@ nethunt.com/api/v1/track/email/$image
 |piwik.
 ||analytics.s3.amazonaws.com^
 ||analyticsengine.s3.amazonaws.com^
+||btrace.qq.com^
 ||prd-collector-anon.ex.co^
 ||l.francetvinfo.fr^
 ||counter.any.run^
@@ -39397,7 +39397,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||bravotube.net/b_track.js
 ||brightcove.com/1pix.gif
 ||brille24.de/fileadmin/tracking
-||btrace.qq.com^
 ||cbslocal.com^*/cbs1x1.gif?
 ||cdn-library.net/*&data=anti-abp
 ||cdn.segment.com/analytics.js
@@ -39859,6 +39858,8 @@ link.gmapp*.net$image
 ||rum-static.pingdom.net/*-*.js$script,redirect=noop.js,important,domain=leboncoin.fr
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||bing.com/fd/ls/
+!+ NOT_OPTIMIZED
+adguard.com,adguard.app##.hello_from_adguard_tracking_protection
 ||tripadvisor.TAUnique
 ||adeventtracker.spotify.com^
 ||do-not-tracker.org^
@@ -40659,6 +40660,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||googletagmanager.com/gtm.js$domain=dzonline.de|wn.de
 @@||adobe.tt.omtrdc.net/rest/v1/delivery?client=adobe&sessionId=$domain=acrobat.adobe.com
 ||ab.blogs.es/abtest.png?editorialRecommendations$image,redirect=2x2.png,domain=applesfera.com
 @@||cdn.clerk.io/clerk.js$domain=apotera.no

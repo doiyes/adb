@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: jo2y8/cs4we1AipyKslynA
+! Checksum: 1RMfSZxk6s8sZG7UTnQ+2g
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202304182220
+! Version(Last Modified): 202304192216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -283,6 +283,7 @@
 ##body.active > div.myui-panel > DIV#home_slide
 ##body.bg_xin > A[href*='com:'][target='_blank']
 ##body.chapter > div.container div.slide-baidu *
+##body.conch-hasone section > span > video
 ##body.no_overflow strong
 ##body.page.player > DIV.shortcuts-mobile-overlay
 ##body.page.player > div.popup.popup-tips.popup-icon.open
@@ -958,9 +959,11 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /us.js
 /v.php?siteid=&id=
 /v0/amp-addthis-*.js
-/v2/stats/99*
+/v2/stats/1*/1*$third-party
+/v2/stats/9*$third-party
 /v3/resolve?
 /variety.tc.qq.com^*.mp4
+/vh2/$third-party
 /videoAd.
 /video_ad_iframe
 /videoad/*
@@ -968,7 +971,8 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /view/*/async*
 /view/*/pop*
 /vip_img/*
-/vj1/
+/vj1/$third-party
+/vj2/$third-party
 /vkp.tc.qq.com/$media
 /vlive.qqvideo.tc.qq.com*.mp4
 /vmindhls.tc.qq.com^
@@ -2764,7 +2768,7 @@ manwa1.me,manwa2.me,manwa.me##div.ad-area-close
 mao-123.com##div.cate.ad
 maodh.com##[width="960"][height="60"]
 maplestage.com##.nav-left-module__info-wrapper___35CLR
-match.tdping.com##P[style='text-align:left;margin:0;']
+match.tdping.com##P[style='text-align:left;margin:0;'],td.livetitle > L
 mbd.baidu.com##.commonPadding
 mbd.baidu.com##.default-container
 mbd.baidu.com##DIV[class='commentTitle']
@@ -6254,6 +6258,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||chixingkeji.com^
 ||chlbiz.com^
 ||chmae.com^
+||chnuuee.xyz^
 ||cholo101.cn^
 ||cholo215.cn^
 ||cholor201015.cn^
@@ -8047,6 +8052,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||joannarace.com^
 ||jocelynrace.com^
 ||jointreport-switch.com^
+||joiwnq2.cn^
 ||jojog.com^
 ||jollytestpartying.com^
 ||jomwihn.cn^
@@ -8315,6 +8321,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||kyxw9itc.xyz^
 ||kyxw9itv.club^
 ||kyzx.xyZ^
+||kzchyhr.cn^
 ||kzgmpu.com^
 ||kzsha.com^
 ||l.aiseet.atianqi.com/livemsg^
@@ -9386,6 +9393,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||pianku.li/ajax/matomo
 ||pianku.tv/ajax/MyJs
 ||pianyuan.la/slade.js
+||piaochong.co^
 ||piaodown.com/other/$script,document
 ||pic*.58cdn.com.cn/brandpic/car^$app=com.ss.android.article.news
 ||pic.ntxfr.cn/banner/*.jpeg$domain=m.shuquge.com
@@ -9463,6 +9471,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||poppyta.com^
 ||popup.*.js*
 ||poqjnkdsou.net^
+||poqwnllkm.com^
 ||poqwua.cn^
 ||pos.baidu.com^
 ||postserviceuk.com^
@@ -11401,6 +11410,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||xchina.co/upload/ad^
 ||xchina.xyz/upload/ad^
 ||xcisleoa.cn^
+||xckyqq.com^
 ||xcmz999.com^
 ||xcwzq.xyz^
 ||xcycm.com^
