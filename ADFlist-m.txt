@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 35yGfpB5NXD8PUBn3ka/uQ
+! Checksum: osYrPVdXjiIn95xO1sRIAw
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202304262215
+! Version(Last Modified): 202304272215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -106,6 +106,7 @@
 ##DIV#video-player-ads-wrap
 ##DIV.JS_mid_ad
 ##DIV.ad-area.ad-area-fix-bottom
+##DIV.ad_js
 ##DIV.advertisingConfiguration
 ##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
@@ -499,6 +500,8 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .net/v2/stats/10*$third-party
 .net/vh1/15*$third-party
 .openx.
+.shop:*/ack?s=
+.shop:*/bid?url=
 .top/*q=*form=*&*url=http*$third-party
 .xyz$domain=yinghuacd.com
 .xyz/*0*0*==$third-party
@@ -516,6 +519,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .xyz/svelte?$third-party
 .xyz/xefeliffng_$third-party
 .xyz/xling_*_*_*.js?*
+.xyz/xtub_
 /(?::\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+_\d{3}x\d{4})/
 /*/*.add.*.add
 /*AdapterNew.

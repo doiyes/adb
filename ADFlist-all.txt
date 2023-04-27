@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: wO6iFSAqAPAqKn5g5hfT7A
+! Checksum: 8MPp+D7ddS7l+57wMWG52g
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202304262215
+! Version(Last Modified): 202304272215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -252,7 +252,6 @@
 ###player-advertising
 ###player-bottom-ads
 ###playerAdvLayer
-###playerContainer > .nav-ads
 ###playerJsvLayer.jsv-layer
 ###player_banner[style*="fixed;"]
 ###player_pause > .tip + a[target="_blank"]
@@ -857,6 +856,7 @@
 ##DIV#video-player-ads-wrap
 ##DIV.JS_mid_ad
 ##DIV.ad-area.ad-area-fix-bottom
+##DIV.ad_js
 ##DIV.advertisingConfiguration
 ##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
@@ -2654,6 +2654,8 @@ $websocket,domain=5nj.com|cechi8.com
 .qidian.com/gameBox.
 .qidian.com/pageOps.
 .ru^$third-party,script,domain=muzmob.org
+.shop:*/ack?s=
+.shop:*/bid?url=
 .site:20443/*.js^$script,third-party
 .test15./
 .top/*q=*form=*&*url=http*$third-party
@@ -2697,6 +2699,7 @@ $websocket,domain=5nj.com|cechi8.com
 .xyz/vh1/$script,third-party
 .xyz/xefeliffng_$third-party
 .xyz/xling_*_*_*.js?*
+.xyz/xtub_
 .zone/ads/
 /(?::\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+_\d{3}x\d{4})/
 /*/*.add.*.add
@@ -6610,7 +6613,6 @@ bbs.ngacn.cc###postsign0,.adsc.adsch
 bbs.pcbeta.com###diynavtop + style + div[class]
 bbs.pcbeta.com##.x_m.pb_tan:upward(1)
 bbs.pcbeta.com##[class^="_jc"]:upward(4)
-bbs.pcbeta.com#?#:matches-path(/^\/$/)#toptb ~ #wp > *:not(div):not(style):not(ul):not(script) + div[class][id]:has(div[style="display:none"])
 bbs.pinggu.org##div#mama_tips_right_bottom
 bbs.qieerxi.com##DIV.wp.a_t,DIV.a_pb
 bbs.qyer.com##iframe[src^="http://ad.qyer.com/www/delivery/afr.php?zoneid="]
@@ -8905,6 +8907,7 @@ ekamus.info##+js(no-setTimeout-if, ins.adsbygoogle)
 ekamus.info##+js(set-constant, isAdsDisplayed, true)
 ekamus.info#$#.adsbygoogle { height: 1px !important; }
 ekitan.com##.popup-info-bg
+ekonomist.com.tr##.display-mobile[style^="margin-left:"][style*="min-height:"]
 elecfans.com###AdHtmlRight
 elecfans.com###MiddleLeaderboard
 elecfans.com###company-ad
@@ -14667,6 +14670,7 @@ niutuku.com###downAD1
 niutuku.com##.listAD
 niutuku.com##.sideAD
 niutuku.com,sina.cn##.bannerAD
+nivod4.tv,nivod5.tv##.nav-ads
 nivod5.tv,nivod4.tv##+js(set-constant, detailParams.is_ad_play, false)
 nivod5.tv,nivod4.tv##.nav-ads
 niwodai.com###fol_div1
@@ -15081,6 +15085,7 @@ pcbeta.com##.x_m.pb_tan:upward(1)
 pcbeta.com##[class^="_jc"]:upward(4)
 pcbeta.com##div[class^="_jc"]:upward(4)
 pcbeta.com##div[style*="width:980px;height:170px;"].wp,div[style^="margin:0 0 10px 0;height:169px;"],div[style*="width:960px;height:91px;"],div[style^="height:171px; padding-top:10px;"],div[style^="width:980px; position:relative; height:171px;"],UL.forum_top + DIV,DIV#diynavtop + STYLE + DIV,DIV#sitefocus.focus,DIV.bm.a_c,a[id$="banner"],BODY[id^="nv_"] > IFRAME + A,span#weixinqr,div.a_pt,div.a_pb,[href^="https://clkde.tradedoubler.com/click?p="],.asdad + div
+pcbeta.com#?##toptb ~ #wp > *:not(div):not(style):not(ul):not(script) + div[class][id]:has(div[style="display:none"])
 pcccp.cn##DIV[id^="xydl"]
 pcdiy.com.tw##[width="160"][height="600"],.box-ads
 pcdown.net##.bzxz
@@ -24926,7 +24931,6 @@ zzzyk.com###Tinfo
 ||bigdata.
 ||bigdramas.net/wp-content/themes/videotube/common.min.js
 ||bigear.cn/cache/htmlcache/
-||biggggg.com/videos/*/media_000$redirect=noop-0.1s.mp3,domain=nivod4.tv,media
 ||bigmobileads.com^
 ||bihaipack.com^
 ||bihaipack.com^
@@ -25983,6 +25987,7 @@ zzzyk.com###Tinfo
 ||cj0968.com/mmad_cn18.js?var=
 ||cj7g.top^
 ||cja-1223.cc^
+||cjbpqq.com^
 ||cjcvd6.com^
 ||cjdby.net/Public/home/images/advImg/
 ||cjgcedu.com^
@@ -27658,6 +27663,7 @@ zzzyk.com###Tinfo
 ||dyguo.com/pc/*0.js
 ||dyguo.com/pc/nr336.js
 ||dyhjw.com/Public/v3/appdown/images/AppEntrance.png
+||dyhnbgtsl.xyz^
 ||dyjcydn.cloud^
 ||dyjqd.com/images/js/dyjqd.js
 ||dykeep.com^
@@ -27908,6 +27914,7 @@ zzzyk.com###Tinfo
 ||eijriol.cn^
 ||eileenjaney.com^
 ||eisafniw.space^
+||eitb7.top^
 ||eiv.baidu.com/
 ||eiv.baidu.com^
 ||eiykmtb.cn^
@@ -29443,6 +29450,7 @@ zzzyk.com###Tinfo
 ||gyhyhyq.website^
 ||gyjinchuang.vip^
 ||gykj.xyz^
+||gykyec.xyz^
 ||gynax.com^
 ||gypowdr.com^
 ||gyt168.com.cn^
@@ -31944,6 +31952,7 @@ zzzyk.com###Tinfo
 ||juzilm.com^$third-party
 ||juzwrl.xyz^
 ||jvkckeg.cn^
+||jvmxrug.xyz^
 ||jvpook.cn^
 ||jvpyxve.cn^
 ||jvyigg.biqugeq.com^
@@ -32297,6 +32306,7 @@ zzzyk.com###Tinfo
 ||kjuwxmi.xyz^
 ||kjvnfhdgb.com^
 ||kjwx8.com^
+||kjwysxs.cn^
 ||kk99.co^
 ||kkbiqu2.com/js/one.js
 ||kkbiqu2.com/js/yuedu.js
@@ -34545,6 +34555,7 @@ zzzyk.com###Tinfo
 ||nadvideo.baidu.com^
 ||nadvideo2.baidu.com^
 ||naemailom.fun^
+||nagmopd.cn^
 ||nahsfl.xyz^
 ||nai7.xyz^
 ||naifei.shop/static/banner/banner_mobile.jpg
@@ -34601,6 +34612,7 @@ zzzyk.com###Tinfo
 ||neaqi.top^
 ||nearbyad.com^
 ||necmdow.cn^
+||nedes.xyz^
 ||neets.cc/assets/js/dup.js
 ||neg.hk^
 ||nehagex.cn^
@@ -36829,6 +36841,7 @@ zzzyk.com###Tinfo
 ||remehealth.net^$third-party
 ||reminews.com^
 ||renameking.com^
+||rencaihome.xyz^
 ||renfs.xyz^
 ||rengbali.fun^
 ||rengbali.fun^
@@ -38285,6 +38298,7 @@ zzzyk.com###Tinfo
 ||static.media.net^$third-party
 ||static.meijiacun.com^
 ||static.missav.com/js/plyr.js
+||static.olelive.com/uploads/file/$image
 ||static.oschina.net/*_banner_$image
 ||static.oschina.net/uploads/space/20*.jpg|$image
 ||static.ptoahaistais.com^
@@ -41798,6 +41812,7 @@ zzzyk.com###Tinfo
 ||yangsir.xyz^
 ||yangxu.store^
 ||yangyiluo.xin^
+||yangyuqing.xyz^
 ||yangzxsh.top^
 ||yanjiusuo.cc^
 ||yankuoyyds.com^
@@ -42888,6 +42903,7 @@ zzzyk.com###Tinfo
 ||zmadsvd.cn^
 ||zmakj.xyz^
 ||zmdtcw.cn^
+||zmfdjb.xyz^
 ||zmhqhuq.cn^
 ||zmk.pw/zfb.png
 ||zmkma.com^
@@ -43919,7 +43935,7 @@ zzzyk.com###Tinfo
 88files.net##+js(window.open-defuser)
 88files.net##.ad1,#popad
 88hd.com##.MacPlayer:style(height:480px!important)
-88hd.com,91meijutv.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
+88hd.com,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
 90bifen.com###live > table[cellspacing="0"][cellpadding="0"]
 90bifen.com##div[id^="ShowTopAds_"]
 90bifen.com##td[bgcolor="#FFFEE0"][height="22"]
