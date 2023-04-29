@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: BcQtMbnzOsZOFoZqmsY/eg
+! Checksum: 5HxC7yoMpM1vZqNyfduEwg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202304282215
+! Version(Last Modified): 202304292213
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -1087,6 +1087,7 @@
 ##a[href*=".bj-lingan.com/"]
 ##a[href*=".blueyoko.com/"]
 ##a[href*=".btwuji.cc"]
+##a[href*=".bucd.icu"]
 ##a[href*=".buscandolaidea.com/"]
 ##a[href*=".c43066a9.com"]
 ##a[href*=".cangpie.com/"]
@@ -2468,6 +2469,7 @@ $websocket,domain=5nj.com|cechi8.com
 .cam/ads/
 .cc/ad/
 .cc/js/ads/
+.cc/o.js$third-party
 .cfd/video/index/index/user_login/
 .cilipa*/js/os.js
 .cloud/ads/
@@ -2477,8 +2479,10 @@ $websocket,domain=5nj.com|cechi8.com
 .cn/*-*-*.xc$script,third-party
 .cn/?ss=
 .cn/a.gif?
+.cn/ack?s=*$third-party
 .cn/ads/
 .cn/b.gif?
+.cn/bid?url=*$third-party
 .cn/gg/$script,third-party
 .cn/js/ads/
 .cn/r.gif?
@@ -2543,6 +2547,7 @@ $websocket,domain=5nj.com|cechi8.com
 .com/mediaController.php?pid=$script,third-party
 .com/myjs/alljs.js
 .com/myjs/mys_alljs.js
+.com/o.js$third-party
 .com/pc/ad/$domain=~yoogame.com
 .com/piaozi/*.js
 .com/pv.gif?
@@ -2703,6 +2708,7 @@ $websocket,domain=5nj.com|cechi8.com
 .xyz/xefeliffng_$third-party
 .xyz/xling_*_*_*.js?*
 .xyz/xtub_
+.xyz/xxbbliffng
 .zone/ads/
 /(?::\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+_\d{3}x\d{4})/
 /*/*.add.*.add
@@ -6346,6 +6352,7 @@ baidu.com##.recommend-goods-card
 baidu.com##.redenvelope-small
 baidu.com##.rel-exp-feed-ad-item
 baidu.com##.rel-exp-feed-ad-item
+baidu.com##.result-op[tpl="b2b_prod"] > div > .c-border
 baidu.com##.result-op[tpl="pc-education-fs"]
 baidu.com##.result-op[tpl="sp_hot_sale"]
 baidu.com##.rightAd-skin
@@ -17398,6 +17405,7 @@ tieba.baidu.com##.more_btn_package
 tieba.baidu.com##.post_client_down
 tieba.baidu.com##.tieba-sign-card-link
 tieba.baidu.com##.tl_spread
+tieba.baidu.com##.top_toutu_admarks
 tieba.baidu.com##.tuijian-wrap
 tieba.baidu.com##.ui-draggable.dialogJshadow.dialogJfix.tieba-sign-card.dialogJ
 tieba.baidu.com##A[class='pb_cut_hot_recommend_content j_recommend_item']
@@ -17427,6 +17435,7 @@ tieba.baidu.com##div[class*='-ad-pb-']
 tieba.baidu.com##div[class="sub-img-list"],div[class="appPromote_wrapper scale-1px-bottom"],div[class="j_pb_footer j_footer footer pb-footer"]
 tieba.baidu.com##frs-tuijian,tl_gap,p_article,p_hot,p_show,s_post.post_user,p_media,hongbao_page_pop_common,ui_image_header_bottom,daoliu_sign_in_prompt,daoliu_sign_in_prompt_img,j_top_bar,wake_app_tip,addbodybottom,no_mean,frs-tuijian,blue_kit_outer_w,daoliu,appPromote,j_footer footer,tuijian-wrap,j_top_bar blue_kit,tab_head tab_index_head j_tab_index_head blue_kit light_tab_head,ui_search j_tab_con_search,expand-all,img_desc,mylike_edit,expand-all,c-blocka,pb_lzl_header_bar,tbheader,top-guide,navbar-box,search-box,all-btn,interest-bar,footer-wrap,hot-topic,no-signed-interest
 tieba.baidu.com##ul.tbui_aside_float_bar
+tieba.baidu.com#$#.special_conf_skin .wrap1 { background: none !important; }
 tieba.baidu.com$$a[class="ti_item j_click_stats"]
 tieba.baidu.com$$button[class="enter_tb"]
 tieba.baidu.com$$div[class="appPromote_wrapper scale-1px-bottom"]
@@ -19461,6 +19470,9 @@ yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##.con
 yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##div[class*="Advert_container__"]
 yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##div[class^="Advert_lite-container__"]
 yandex.md,yandex.by,yandex.com,yandex.com.tr,yandex.fr,yandex.kz,yandex.ru##div[id^="ADVERT_Y-A-"]
+yandex.ru##:matches-path(/video/touch/)#distr-pcode-container
+yandex.ru##:matches-path(/video/touch/).Viewer-Content div.DirectController
+yandex.ru#?#:matches-path(/video/touch/).Viewer-Content div[class$="-BlockInner"]:has(> div.DirectController)
 yandex.ru#?#body[class*="news_phone"] div.news-container > span > div > div.unit:has(> div.turbo-advert__item)
 yangtse.com##BODY > DIV.nav_head:first-child
 yangtse.com##[src^="http://www.cndzys.com/huanlian/"],[style$="height: 250px;"],[id^="ad"],[class^="ad"],#yztjad
@@ -20074,7 +20086,6 @@ zzzyk.com###Tinfo
 ||*.aty.sohu.com^
 ||*.com*.z*.glb.qiniucdn.com/tdata*
 ||*.feipukeplus.com^$domain=m.qqm4.com
-||*.gdt.qq.com^
 ||*.gentags.net^
 ||*.getui.com^
 ||*.gif$domain=6161bb.com
@@ -22662,7 +22673,6 @@ zzzyk.com###Tinfo
 ||ac1.pingpingw.com^
 ||acaoz.com^
 ||access.toggle.qq.com^
-||access1.tpns.tencent.com^
 ||accommodatingremindauntie.com^
 ||account.wps.cn^$replace=/"has_ad": 1/"has_ad": 0/
 ||acd.op.hicloud.com^$app=com.huawei.hwvplayer.youku
@@ -23755,6 +23765,7 @@ zzzyk.com###Tinfo
 ||antdv.com/kaikeb
 ||antdv.com/yideng
 ||antheaceliacd.com^
+||antheaceliacd.com^
 ||anti-bot.baidu.com^
 ||antns.com^
 ||antpedia.com/antad/
@@ -24785,7 +24796,6 @@ zzzyk.com###Tinfo
 ||beacon-api.aliyuncs.com/beacon/fetch/config/byappkey
 ||beacon-api.aliyuncs.com^
 ||beacon.
-||beacon.qq.com^
 ||beacon.sina.com.cn^
 ||beacon.tingyun.com^
 ||beap.gemini.yahoo.com^
@@ -24820,6 +24830,7 @@ zzzyk.com###Tinfo
 ||beijingbang.top/scholar/xljsci
 ||beijinglvyou.net.cn^
 ||beintoo.com^
+||beiod.xyz^
 ||beisb.com^
 ||beishangdichan.com^
 ||beiwaicd.com^
@@ -25167,6 +25178,7 @@ zzzyk.com###Tinfo
 ||boxer.baidu.com^
 ||boxmp4.com/js/foot.js
 ||boy.fujieace.com^
+||boyi.info^
 ||boylov.xyz^*/img/20*.gif
 ||boylove.cc/bookimages/img/
 ||boylove.cc/static/js/yymh.js
@@ -25185,6 +25197,7 @@ zzzyk.com###Tinfo
 ||bpimg.com/4851/19f7543667f26682.jpg
 ||bpimg.com^$domain=ref.so
 ||bqcxgbm.cn^
+||bqdyqq.com^
 ||bqg.tw/js/common.js
 ||bqg16.cc^
 ||bqg23.cc/js/hf
@@ -25603,6 +25616,7 @@ zzzyk.com###Tinfo
 ||cdgtw3.guapaijia.com^
 ||cdhhbyy.cn^
 ||cdjvd.com^
+||cdn-99-pic.cc^
 ||cdn-adn-*.rayjump.com^
 ||cdn-adn.rayjump.com^
 ||cdn-api.admost.com^
@@ -25736,7 +25750,6 @@ zzzyk.com###Tinfo
 ||cfepws.com^
 ||cfff.net^$third-party
 ||cfg.imtt.qq.com/tbs^
-||cfg.imtt.qq.com^
 ||cfhijdsb.cn^
 ||cfhlrai.cn^
 ||cfkkdhs.cn^
@@ -27527,6 +27540,7 @@ zzzyk.com###Tinfo
 ||drvsky.com/js/jolimark.gif
 ||ds9e.top^
 ||ds9e.top^
+||dsctnsn.xyz^
 ||dsdsc.win^
 ||dsdydk.com^
 ||dsfd67.com^
@@ -27675,6 +27689,7 @@ zzzyk.com###Tinfo
 ||dyguo.com/pc/*0.js
 ||dyguo.com/pc/nr336.js
 ||dyhjw.com/Public/v3/appdown/images/AppEntrance.png
+||dyhnbgtsl.xyz^
 ||dyhnbgtsl.xyz^
 ||dyjcydn.cloud^
 ||dyjqd.com/images/js/dyjqd.js
@@ -28888,7 +28903,6 @@ zzzyk.com###Tinfo
 ||gdsqwy.org^
 ||gdt.qq.com/
 ||gdt.qq.com^
-||gdt.qq.com^
 ||gdtimg.com^
 ||gdugga.com^
 ||gdxxb.com^$third-party
@@ -29146,6 +29160,7 @@ zzzyk.com###Tinfo
 ||gold.szonline.net^
 ||gold678.com/news/js/layer/layer.js
 ||golden1.sogou.com^
+||golden88.co^
 ||golden88.co^
 ||goldenlee.cn^
 ||gome.com.cn/flight?
@@ -30685,6 +30700,7 @@ zzzyk.com###Tinfo
 ||igig87.cn^
 ||igo.cn/liuxue/js/slideBar
 ||igo99.cn/js/freetest.js
+||igtchzp.cn^
 ||igtqora.cn^
 ||igusoft.com^
 ||ih336.com^*a.js
@@ -31027,7 +31043,6 @@ zzzyk.com###Tinfo
 ||inveno.com^
 ||investingapp.net/ads_api.php?
 ||investingchannel.com^
-||invida.net.cn^
 ||ioaiaou.cn^
 ||iocoder.cn/alert/js/alert.js
 ||ioeq5cead.icu^
@@ -31052,6 +31067,7 @@ zzzyk.com###Tinfo
 ||ip.ws.126.net^$domain=~fxingw.com
 ||ip138.com/banner/
 ||ip138.com/idc/
+||ip1398.com^
 ||ipaypay.cn^$third-party
 ||ipc08dt.com^
 ||ipeen.com.tw/js/frame/ad-actions.js
@@ -32076,6 +32092,7 @@ zzzyk.com###Tinfo
 ||ka185ly.site^
 ||ka5188.com^
 ||kaafu.cn^
+||kabuto.pro^
 ||kaffnet.com^
 ||kagdf.com^
 ||kagdf.com^
@@ -33959,7 +33976,6 @@ zzzyk.com###Tinfo
 ||mhslbgk.cn^
 ||mhtrt.com^
 ||mi.gdt.qq.com^
-||mi.gdt.qq.com^
 ||mi.tvzhe.com^
 ||mi1.cc^
 ||mianbao99.com/a/mianbao
@@ -35637,6 +35653,7 @@ zzzyk.com###Tinfo
 ||pgdt.gtimg.cn/gdt/$domain=info.3g.qq.com
 ||pgdt.gtimg.cn^
 ||pghwwjd.com^
+||pgjcbz.xyz^
 ||pgl7.cn^
 ||pglstatp-toutiao.com/obj^
 ||pglstatp-toutiao.com^
@@ -36279,6 +36296,7 @@ zzzyk.com###Tinfo
 ||qhres.com^*/baidu_
 ||qhres2.com^
 ||qhrixol.cn^
+||qhvszsl.cn^
 ||qhvws.com^
 ||qhyy8.com/template/default_wap/html/public/img/*.gif
 ||qiabayyds.com^
@@ -36472,7 +36490,9 @@ zzzyk.com###Tinfo
 ||qmbnkdh.cn^
 ||qmdllqv.cn^
 ||qmfcybwbf12.com^
+||qmfcybwbf16.com^
 ||qmfcybwbf19.com^
+||qmfcybwbf28.com^
 ||qmpkoiv.cn^
 ||qmwxb.com/skins/2/images/qp001.gif
 ||qmz931.com^
@@ -39815,6 +39835,7 @@ zzzyk.com###Tinfo
 ||uunak.cn^
 ||uuu9.com/photolog.html
 ||uuu9.tieba.com^$subdocument
+||uuuxyjh.cn^
 ||uuvtpqi.cn^
 ||uuxs.net^$subdocument
 ||uvclick.com^
@@ -40752,6 +40773,7 @@ zzzyk.com###Tinfo
 ||wsnew.cn^
 ||wsnignse.xyz^
 ||wsnoownme.fun^
+||wsoxwa.xyz^
 ||wss.haoyundm.com^
 ||wsthcgl.cn^
 ||wstx.com/api.php?mod=ad&
@@ -41346,6 +41368,7 @@ zzzyk.com###Tinfo
 ||xiaobao8888.com^
 ||xiaobeier.cn^
 ||xiaobi*.com/layer/layer.js
+||xiaobixiaobi.com^
 ||xiaochen1.cn^
 ||xiaodongrui.com^
 ||xiaodongrui.com^
@@ -41596,6 +41619,7 @@ zzzyk.com###Tinfo
 ||xni.ink^
 ||xniexnz.cn^
 ||xnimg.cn^*/liveinc/rightlive.js
+||xnjvn1.com^
 ||xnnews.com.cn/adgl/
 ||xnnews.com.cn/tpl/material/
 ||xnrcnz.xyz^
@@ -42652,6 +42676,7 @@ zzzyk.com###Tinfo
 ||zdmimg.com/collect^
 ||zdmybl.xyz^
 ||zdnet.com.cn/js/pv.js
+||zdo-bdg.xyz^
 ||zdobdg.fyi^
 ||zdpeanut.com^
 ||zdqx.com/statics/v1/images/gif/
