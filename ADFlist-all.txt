@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: O4y09Zm3SmKCB0k27yrI6w
+! Checksum: s93e8QwUvwZqNc+Hw4wViQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202305030841
+! Version(Last Modified): 202305032215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -891,8 +891,10 @@
 ##DIV[style='width: 100%;background-color: black;color: white;padding: 15px 0;']
 ##DIV[style^='position: fixed; bottom: 50%; z-index: 19999 !important; ']
 ##DIV[style^='width:100%;height:100%;line-height: 100%;overflow:hidden; margin:auto;border:1px #']
+##I.fa.fa-close
 ##IFRAME[src*="//pos.baidu.com/"]
 ##IFRAME[src^='https://mydisplay.ctfile.com/popview.php']
+##IMG#diads
 ##IMG.cupfox[src$='gif']
 ##IMG.lazyload[src='/statics/img/load.gif']
 ##IMG[alt='155.fun']
@@ -920,6 +922,7 @@
 ##UL.myui-extra.clearfix
 ##UL[style='margin: 0px; padding: 0px; font-size: 0px; display: flex;']
 ##VIDEO[loop='true'][muted='true'][autoplay='true'][playsinline='true'][preload='auto']
+##[ad_dot_url]
 ##[alt="要恰饭的嘛"]
 ##[alt='52bl']
 ##[alt='ACG里番']
@@ -994,6 +997,7 @@
 ##[onclick^="window.location.href='https://apps.apple.com/cn/app/%E9%80%9F%E9%98%85%E5%B0%8F%E8%AF%B4"]
 ##[poster^='https://dingbu.bj.bcebos.com/']
 ##[src$='/dibu.adadadad']
+##[src*='zdmbl.xyz']
 ##[src='/images/c_l.png']
 ##[src='http://m.guangzhoubingqing.com/88888.jpg']
 ##[src='https://pnm.hpvitycz.cn/00.jpg']
@@ -1500,6 +1504,7 @@
 ##div.flex-1.order-first > DIV.under_player
 ##div.homepage > div.main > div.content > DIV[style='width:100%;height:180px']
 ##div.inn-content-reseter > a > IMG[decoding='async'][loading='lazy']
+##div.layout-box a > IMG[src*='.gif']
 ##div.m_avs
 ##div.main div.content div[id].is_mb a[id] img[id]
 ##div.maomi-content > SECTION.section.section-banner
@@ -2665,6 +2670,7 @@ $websocket,domain=5nj.com|cechi8.com
 .xyz$domain=yinghuacd.com
 .xyz/*.sdk?$script,third-party
 .xyz/*0*0*==$third-party
+.xyz/*?16$third-party
 .xyz/99x/
 .xyz/?channelCode=$csp=script-src
 .xyz/?token=
@@ -2963,6 +2969,7 @@ $websocket,domain=5nj.com|cechi8.com
 /api/getPos?jspath=/videos/view//*
 /api/goods/v1/get.script.core?
 /app/*/%E6%B5%8F%E8%A7%88%E5%99%A8.apk
+/app/get*?t=*http$third-party
 /app/market/*/%E9%AB%98%E9%80%9F%E6%B5%8F%E8%A7%8%A8.apk
 /app/pcBanner/getBannerConfig/v2
 /app_ad/slade.js
@@ -7532,6 +7539,7 @@ chineseinla.com##DIV.forum_banner_ads,DIV.module_content:first-child
 chineseinla.com##div[style^="position:absolute;"][style$=":0px;top:30px;"]
 chip.de##.amp-article-ad
 chip.de##.app_nexus_banners_common
+chip.pl##div[class*="min-h-[370px]"]
 chiphell.com###diy2 + div
 chisou-media.jp##.c-ad--overlay
 chok8.com##div[onclick]
@@ -11811,7 +11819,6 @@ jiemian.com##.app-open
 jiemian.com##.header-container > div > section[style="width: 100%;"]
 jiemian.com##.nav-next-ad-views
 jihehuaban.com.cn
-jiji.com###sp-overlay
 jiji.com##.RectangleAd
 jiji.com##[amp] #recommend_list
 jijidown.com##.Box-4x4
@@ -18117,6 +18124,7 @@ vnexpress.net##.banner_mobile
 vnexpress.net##a[href="https://apps.apple.com/vn/app/bluezone/id1508062685?ls=1"]
 vnexpress.net##a[href="https://play.google.com/store/apps/details?id=com.mic.bluezone"]
 vnexpress.net##body:not(.page-detail-kl) #banner_top
+vnexpress.net#?#.art_item:has(> ins.adsbyeclick)
 voachinese.com##.slide-in-wg
 voc.com.cn##DIV#ad_top_gg,DIV.top_ad,DIV#adbody_show,div[class^="banner"]
 vod1769.com##.banner_img
@@ -18155,6 +18163,7 @@ vpsmm.com##div[class*="xx"]
 vpsmm.com#?#.sidexbar div:-abp-has(>a>img)
 vr186.com##a.infotextkey > img
 vse-shutochki.ru##body > div[class="hidden-desktop post"]
+vtc.vn##.sys-ads
 vtuber-matome.com##.AD-frame
 vuejs.org##.text-ad
 vuetifyjs.com##.v-sponsors
@@ -20544,6 +20553,7 @@ zzzyk.com###Tinfo
 ||139file.com/jsa/
 ||13bt.info^
 ||13hangpifa.com^
+||13niao20230422.live^
 ||13owamwp6c.cn^
 ||13sqw.com/js/foot.js
 ||141h.com/data/attachment/noblock/cf/
@@ -22345,6 +22355,7 @@ zzzyk.com###Tinfo
 ||9wad.com^
 ||9wcn.com/gcld/500.gif
 ||9wee.com^
+||9wsbf.top^
 ||9wushuo.com^
 ||9wx.org/statics/js/new.js
 ||9xf9qkz5.com^
@@ -22600,6 +22611,7 @@ zzzyk.com###Tinfo
 ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/
 ||ac1.786ip.com^
 ||ac1.pingpingw.com^
+||acbe.club^
 ||accommodatingremindauntie.com^
 ||account.wps.cn^$replace=/"has_ad": 1/"has_ad": 0/
 ||acd.op.hicloud.com^$app=com.huawei.hwvplayer.youku
@@ -25703,6 +25715,7 @@ zzzyk.com###Tinfo
 ||chenhao.name^
 ||chenjiayu.cn/gg.js
 ||chenshengyu.cn^
+||chenyuzhou1.cn^
 ||chenzx.site^
 ||cheon2buy.xyz^
 ||cherryblossoms.top^
@@ -27371,6 +27384,7 @@ zzzyk.com###Tinfo
 ||dsfhr.xyz^
 ||dsfsdft4324.xyz^
 ||dshangyan.com/pc/advertising/
+||dshapv.xyz^
 ||dshapv.xyz^
 ||dshrx.com^
 ||dslenggui.com^
@@ -31554,6 +31568,7 @@ zzzyk.com###Tinfo
 ||js.jialingmm.net/dm/tj.js
 ||js.jianbihuadq.com^
 ||js.jstucdn.com/js/ad_37cs.js
+||js.kalvinbg.cn^
 ||js.keeyekey.xyz^
 ||js.kt250.com^
 ||js.letvcdn.com/*_banner_$script
@@ -32325,6 +32340,8 @@ zzzyk.com###Tinfo
 ||kzezz.com^
 ||kzgmpu.com^
 ||kzhjpnv.cn^
+||kzjkexn.cn^
+||kzjkexn.cn^
 ||kzjqraj.cn^
 ||kzngisyd.xyz^
 ||kzsha.com^
@@ -34085,6 +34102,7 @@ zzzyk.com###Tinfo
 ||mxaserver.mxplay.com^
 ||mxde.com/js/05sun.js$script
 ||mxdqfoo.cn^
+||mxevdii.cn^
 ||mxhbkj.cn^
 ||mxitie.com^$third-party
 ||mxj.cx^
@@ -35246,6 +35264,7 @@ zzzyk.com###Tinfo
 ||people.com.cn/adv/
 ||people.com.cn/img/gjt/
 ||people.com.cn/rmrb/tplimg/new.js
+||pepnsnq.cn^
 ||pepnsnq.cn^
 ||pepsico.com.cn^
 ||perf-events.cloud.unity3d.com^
@@ -37549,6 +37568,7 @@ zzzyk.com###Tinfo
 ||smartmad.com^
 ||smartmail.cyou^
 ||smartmuchang.com^
+||smartnextusa.com^
 ||smarttds.ru^
 ||smarttrade.cn^
 ||smetrics.samsung.com^$third-party
@@ -42079,6 +42099,7 @@ zzzyk.com###Tinfo
 ||zdktgps.cn^
 ||zdlnhv.xyz^
 ||zdlnhv.xyz^
+||zdmbl.xyz^
 ||zdmimg.com/collect^
 ||zdmybl.xyz^
 ||zdnet.com.cn/js/pv.js
