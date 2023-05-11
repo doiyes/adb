@@ -631,10 +631,11 @@ bing.com#?#li[class="b_algo"]:-abp-has(>h2 + div[class="b_caption"] > [class^="b
 bing.com#?#li[class="b_algo"]:-abp-has(>[class="ad_ml1ESLItem"])
 bing.com#?#li[class="b_algo"]:-abp-has(a[href="#"]:not([class]))
 ! #CV-1190
-instacart.com#$#hide-if-matches-xpath '//li[descendant::div[count(.//div[@data-sp-eligible]) = 1 and count(.//div/span) = 2]]'
-instacart.com#$#race start; hide-if-matches-xpath './/*[@class]/span[2]/preceding::img[contains(@src,"metadata=copyright")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::section'; hide-if-matches-xpath './/*[@class]/span[2]/preceding::img[contains(@src,"metadata=copyright")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::aside'; hide-if-matches-xpath './/*[@class]/span/preceding::img[contains(@src,"metadata=copyright")][contains(@alt,"")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::article'; race stop;
-instacart.com#$#hide-if-matches-xpath './/div[contains(text(),"Sponsored")]/parent::div[1]'; hide-if-matches-xpath './/*[@class]/span/preceding::img[@src][contains(@alt,"")]/preceding::source[@srcset][@media]/ancestor::picture'
-instacart.com#$#hide-if-matches-xpath './/*[@class]/span[contains(@style,"display:")][2]/ancestor::section[@class]'
+instacart.com#$#hide-if-matches-xpath '//li[descendant::div[count(.//div[@data-fp-eligible]) = 1 and count(.//div/span) = 2]]'
+instacart.com#$#race start; hide-if-matches-xpath './/*[@class]/span[2]/preceding::img[contains(@src,"metadata=copyright")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::section'; hide-if-matches-xpath './/*[@class]/span[2]/preceding::img[contains(@src,"metadata=copyright")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::aside'; hide-if-matches-xpath './/*[@class]/span/preceding::img[contains(@src,"metadata=copyright")][contains(@alt,"")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::article'; hide-if-matches-xpath './/*[@class]/span/preceding::img[contains(@src,"metadata=copyright")][contains(@alt,"")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::div[@id][contains(@class,"css-")][not(@id="store-wrapper") and not(@id="js-app")]'; race stop;
+instacart.com#$#hide-if-matches-xpath './/*[@class]/span/preceding::img[@src][contains(@alt,"")][not(@type)]/preceding::source[@srcset][@media]/ancestor::picture[@class]/parent::div[@class][1]'
+instacart.com#$#hide-if-matches-xpath './/div[contains(text(),"Sponsored")]/parent::div[1]'
+instacart.com#$#hide-if-matches-xpath './/*[@class]/span[contains(@style,"display:")][2]/ancestor::section[@class="css-wbvail"]'
 instacart.com##div[data-testid="ads-promoted-aisle"]
 instacart.com##div[data-testid="storefront-category-hero-banner"]
 instacart.com##a[href*="category_hero_id_"]
@@ -862,7 +863,7 @@ www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/span[@id="ssrb_fee
 ! Rules that don't need to change
 @@||www.facebook.com^$generichide
 @@||web.facebook.com^$generichide
-www.facebook.com,web.facebook.com##span a[aria-labelledby][role="link"][target="_blank"][tabindex="0"]
+www.facebook.com,web.facebook.com##span a[aria-label][aria-labelledby][role="link"][target="_blank"][tabindex="0"]
 www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}/ 'div#watch_feed div[class^="_"]' 'a[href^="?__cft__"]'; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}/ 'div#watch_feed div[class^="_"]' 'a[href="#"][role="link"]'; race stop;
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/object[@type="nested/pressable"]/a[@role="link"]/span[contains("|Sponsoreret|Sponsrad|Patrocinado|Sponsa|Bersponsor|Commandité|Ditaja|Gesponsert|Gesponsord|Publicidad|Sponset|Sponsored|Sponsorisé|Sponsorizat|Sponsorizzato|Sponsorlu|Sponsorowane|Реклама|ממומן|تمويل شوي|دارای پشتیبانی مالی|سپانسرڈ|مُموَّل|प्रायोजित|সৌজন্যে|ได้รับการสนับสนุน|内容|贊助|Sponsoroitu|May Sponsor|Được tài trợ|", concat("|", text(), "|"))]/ancestor::span[2]'
 ! Experimental
@@ -1147,7 +1148,7 @@ softportal.com#$#abort-on-property-read popupShowInterval; abort-on-property-rea
 www.ixbt.com#$#abort-on-property-read adv_obj; abort-current-inline-script document.getElementById branding
 city.ogo.ua#$#abort-on-property-read myatu_bgm
 erofishki.cc,fishki.net#$#abort-on-property-read fishki.adv
-botanichka.ru,itech.co.ua,agronom.com.ua,mediasat.info,housechief.ru,fainaidea.com,1informer.com,dyvys.info#$#abort-on-property-read td_ad_background_click_target
+botanichka.ru,itech.co.ua,agronom.com.ua,mediasat.info,fainaidea.com,1informer.com,dyvys.info#$#abort-on-property-read td_ad_background_click_target
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,gdzputina.ru,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net#$#abort-on-property-write app.book.external
 sports.ru,tribuna.com#$#override-property-read Object.prototype.getRandomArrayElement noopFunc
 volynpost.com#$#abort-on-property-read trek_shownow
@@ -1313,9 +1314,10 @@ plvb.xyz#$#abort-on-property-read adsTvc; abort-on-property-read adsPlayer; abor
 hh3dhay.com,hh3dhay.xyz#$#abort-current-inline-script document.createElement /break|case/
 luotphim1.net,luotphim.to,luotphimtv1.com,webphim1.com#$#json-prune '0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile'
 hiphimmoi.net#$#abort-current-inline-script $ urlAdsMbIntro
-cafef.vn,gamek.vn,genk.vn,kenh14.vn#$#abort-on-property-read ADMStorageFileCDN
+cafef.vn,gamek.vn,genk.vn,kenh14.vn#$#override-on-property-read ADMStorageFileCDN noopFunc
 vaoroi13.online#$#override-property-read adsTvcs ''
 bongda365a.net#$#override-property-read isSkipAds true
+zingnews.vn,baomoi.com#$#abort-on-property-write AdtimaRender
 ! Popup/Popunder/Clickunder
 fembed.com,femax20.com,zo3x.ml,mrdhan.com,m.blogtruyen.vn,viettoons.tv#$#abort-on-property-read open
 phimgiff.net,ophimhd.net,phimraphot.net#$#abort-current-inline-script jQuery popurl
@@ -1343,7 +1345,7 @@ xoilac4.com#$#abort-current-inline-script jQuery popupBanners
 xoilac4.com#$#abort-on-property-read adsRedirectPopups
 xoilac4.com#$#abort-current-inline-script jQuery overlay
 sexdiaryz.us#$#abort-on-property-read parseInt
-linkneverdie.net#$#abort-current-inline-script document.createElement script;abort-current-inline-script $ open;abort-on-property-read setTimeout
+linkneverdie.net#$#abort-current-inline-script document.createElement script;abort-current-inline-script $ open;override-on-property-read setTimeout noopFunc
 javnong.cc#$#abort-on-property-read Math.round
 viet69.love,ungtycomicsvip.com,vlxx.info#$#abort-current-inline-script WebAssembly instantiate
 vcomic.net,truyen86.com#$#abort-current-inline-script Object $._Eu
