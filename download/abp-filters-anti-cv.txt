@@ -987,8 +987,8 @@ animeunity.tv#$#abort-on-property-read localStorage
 ! #CV-1366
 tiscali.it#$#hide-if-matches-xpath './/a[@href][contains(@class,"ofrtsrc")][@target="_blank"]/ancestor::div[@data-nosnippet]/ancestor::div[contains(@class,"ofrtsrc")]'
 tiscali.it#$#hide-if-matches-xpath './/a[@class="boxamazon"][@target="_blank"]/ancestor::div[contains(@class,"active")]/ancestor::div[2]'
-tiscali.it#$#hide-if-matches-xpath './/a[contains(@href,"linkCode") or contains(@href,"amazon.it")][@target="_blank"]/ancestor::div/parent::div[contains(@class,"-main")][@style]'
-tiscali.it#$#hide-if-matches-xpath './/a[contains(@name,"shp-offerta-")][@target="_blank"]/ancestor::div[contains(@class,"active")]/ancestor::div[2]'
+tiscali.it#$#hide-if-matches-xpath './/figure/a[@title][contains(@href,"linkCode") or contains(@href,"amazon.it")][@target="_blank"][contains(@name,"-offerta-")]/ancestor::div[@class][@style][2]'
+tiscali.it#$#hide-if-matches-xpath './/a[@class][@title][@href="#"]/ancestor::div[contains(@class,"active")]/ancestor::div[2]'
 tiscali.it#$#hide-if-matches-xpath './/a[contains(@*,"ebay")]/img[@id]/ancestor::div[@id][@style]'
 tiscali.it#$#hide-if-matches-xpath './/a[contains(@*,"ebay")]/img[@src]/ancestor::div[@id][@style]'
 tiscali.it#$#hide-if-matches-xpath './/a[@target="_blank"][not(@href)][contains(@*,"https://www.ebay.it")]/preceding::div[contains(@style,"height: ")][@id][1]'
@@ -1177,7 +1177,6 @@ sibnet.ru#$#prevent-listener DOMContentLoaded 'smartweek'
 ivanovonews.ru#$#json-prune banner.ytcode
 porngames.su,rintor.info,rintor.net#$#abort-on-property-read TotemToolsObject
 hardwareluxx.ru#$#abort-current-inline-script jQuery backgroundImage
-changeua.com,ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua#$#override-property-read Object.prototype.ottAdvExt undefined
 anidub.vip,anidubonline.com#$#prevent-listener click window.open; abort-on-property-read brblob
 4pda.to#$#hide-if-matches-xpath './/a[@target="_blank"]/img[@alt="" and @title=""]/parent::a/ancestor::*[@id and @class][1]'; hide-if-matches-xpath './/a[@href][@title][@target="_blank"]/img[@itemprop]/parent::a[@href]'; hide-if-matches-xpath './/a[@href][@target="_blank"]/img[@title and @border]/ancestor::*[2]'; hide-if-matches-xpath './/*[@id and @class]/article[@class="post" and @itemscope]/ancestor-or-self::*[1]';
 kanobu.ru#$#json-prune results.fixed
