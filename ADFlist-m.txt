@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 4Q9/phDeRhPQShmmWKwX1Q
+! Checksum: 3pDECIu9mYLdxel2fbEWCw
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202305132213
+! Version(Last Modified): 202305142213
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -16,6 +16,7 @@
 ###avshow
 ###bl_mobile_float[style='height: 152px;']
 ###bottomNavad
+###bottom_ads.hl_bottom_ads
 ###coupletBox
 ###ct > div.mn:last-child > div:nth-child(4) > table
 ###ct > div.mn:last-child > table:nth-child(3)
@@ -67,6 +68,7 @@
 ##A[href*='//v.wanfumei.net']
 ##A[href*='/adjump/?']
 ##A[href*='com:'] > IMG[src],A[href*='cc:'] > IMG[src]
+##A[href*='jialu6699h.vip']
 ##A[href='/?'][target='_blank']
 ##A[href='/hth.html']
 ##A[href='/statics/js/ky-a.html']
@@ -104,6 +106,7 @@
 ##DIV.JS_mid_ad
 ##DIV.ad-area.ad-area-fix-bottom
 ##DIV.ad_js
+##DIV.adj
 ##DIV.advertisingConfiguration
 ##DIV.appdownload_ad
 ##DIV.bot-per-context[data-width='728'][data-height='90']
@@ -493,6 +496,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .club$domain=yinghuacd.com
 .cn/ack?s=*$third-party
 .cn/bid?url=*$third-party
+.cn/o.js$third-party
 .com/ads.
 .com/adv1/?q=
 .com/c.php?s=*=*=$third-party
@@ -7020,6 +7024,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||etlanaberez.fun^
 ||etui8.cn^
 ||eujxqgh.cn^
+||eulaliadoradl.com^
 ||evbb.xyz^
 ||event.csdn.net^
 ||event.toggle.qq.com^
