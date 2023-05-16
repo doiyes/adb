@@ -1,4 +1,5 @@
 ! AdGuard-中文规则
+||jp.twww.sbs^
 ||002777.xyz^
 ||app2.10090dfs.com^
 ||w94.1qlgi.top^
@@ -526,6 +527,7 @@ zhenbuka3.com,zhenbuka2.com,bukaivip.com##+js(no-setTimeout-if, ad_load_fail)
 ||pc.weizhenwx.com/pc/rich-tf.js$script,redirect=noop.js,domain=zhenbuka3.com|zhenbuka2.com|bukaivip.com
 xiebruce.top##+js(addEventListener-defuser, , showRemoveAdBlocker)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication.com/adsbygoogle.js,domain=xiebruce.top
+ddrk.me##+js(set-constant, Object.prototype.cnobpreroll_, true)
 ddys.*##+js(set-constant, Object.prototype.canobpreroll_, true)
 league-funny.com##+js(no-setTimeout-if, ad_num_show)
 blog.reh.tw#@#.adsbygoogle
@@ -685,6 +687,7 @@ csdn.net#?#aside > div.slide-outer:has(> div.box > div[adsid])
 csdn.net#?##feedlist_id > li:has(> div[id^="kp_box_"])
 ##.Zi_ad_a_H
 ##a[href^="https://adm.beimg.com/"]
+m.91zww.com##+js(abort-on-property-write, delCookie)
 pornbest.org##+js(abort-current-script, jQuery, injectPops)
 htmanga4.top##+js(abort-on-property-read, tips)
 nivod5.tv,nivod4.tv##+js(set-constant, pageData.__banners.0.commercial.mediaUrl, '')
@@ -823,6 +826,8 @@ ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###resul
 ||alicdn.com^$image,domain=m.k1k.cc|thcdy.co|27k.cc|1024pa.com|hg6384.com-www.6u7u.com|4080kan.com|dy686.net
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .result ~ div:not([class]):not([style])
 /^(?!.*(bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com)).*$/$third-party,script,domain=yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top
+$script,third-party,denyallow=bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com,domain=m.91zww.com
+5dy15.cc##div[id][class^="is_"][style^="margin"]
 /images/friend/*.webp?$domain=pornbest.org|pornlulu.com
 pornlulu.com,pornbest.org###fullPageModal
 jxnlz.xyz##a[target="_blank"] > img
@@ -2081,7 +2086,6 @@ iyf.tv##vg-player.ng-star-inserted > vg-pause-ads + div.caption.show > .inner
 ||coolpc.com.tw/home/img/right2.html
 !+ NOT_OPTIMIZED
 adguard.com,adguard.app##.hello_from_adguard_chinese
-pcbeta.com#@?##toptb ~ #wp > *:not(div):not(style):not(ul):not(script) + div[class][id]:-abp-has(div[style="display:none"])
 ||lensdump.com/i/*.gif$badfilter
 twinsyang.net#@#.Zi_ad_a_H
 dep-family.hccg.gov.tw#@#.ad_1
@@ -3764,6 +3768,7 @@ newduba.cn###jq_youxi
 ||1qlgi.top^
 ||230579.top^
 ||234mx.club^
+||26niao20230505.live^
 ||32fi.com^
 ||331qka.cn^
 ||36060.xyz^
@@ -3842,6 +3847,7 @@ newduba.cn###jq_youxi
 ||blxfqq.com^
 ||bovhzz.xyz^
 ||boyi.info^
+||bozumi.xyz^
 ||bqcxgbm.cn^
 ||bqdyqq.com^
 ||brkzczn.cn^
@@ -3909,6 +3915,8 @@ newduba.cn###jq_youxi
 ||evmnlpv.cn^
 ||excfig.xyz^
 ||exwxrfz.cn^
+||exz1t.top^
+||ezf48.xyz^
 ||falal.cn^
 ||fangguanjia.xyz^
 ||fangqingkai.icu^
@@ -3966,6 +3974,7 @@ newduba.cn###jq_youxi
 ||huangji1.cn^
 ||huaweinnd.top^
 ||hunlimd.cn^
+||hvfubp.xyz^
 ||hwhefj.xyz^
 ||hxes.cn^
 ||hxpmbb.xyz^
@@ -3986,6 +3995,7 @@ newduba.cn###jq_youxi
 ||iqybys.xyz^
 ||itoken.pro^
 ||iughyy7919.com^
+||iwandlo.top^
 ||jbtfmis.xyz^
 ||jbzjegn.cn^
 ||jeedi.xyz^
@@ -4002,6 +4012,7 @@ newduba.cn###jq_youxi
 ||jnmaeun.xyz^
 ||jntxvf.xyz^
 ||joplopr.cn^
+||jqueryboots.net^
 ||jrtwi.xyz^
 ||jrzaht.xyz^
 ||jstimiz.xyz^
@@ -4028,6 +4039,7 @@ newduba.cn###jq_youxi
 ||kpqdkg.xyz^
 ||kprjva.cn^
 ||kucoa.xyz^
+||kybzkiw.xyz^
 ||kzjkexn.cn^
 ||kzjqraj.cn^
 ||lcjyll.xyz^
@@ -4059,6 +4071,7 @@ newduba.cn###jq_youxi
 ||mrbtkyn.xyz^
 ||mrgecm.xyz^
 ||mrruuov.cn^
+||msqdqq.com^
 ||mueid.xyz^
 ||mxknqq.com^
 ||nagmopd.cn^
@@ -4075,6 +4088,7 @@ newduba.cn###jq_youxi
 ||nurahf.xyz^
 ||nvchmkw.cn^
 ||nwecd.xyz^
+||ocoda.xyz^
 ||oimzak.xyz^
 ||ojuhwc.xyz^
 ||on-you.cn^
@@ -4112,6 +4126,7 @@ newduba.cn###jq_youxi
 ||qhssjyb.xyz^
 ||qhvszsl.cn^
 ||qianjiao45wde15.xyz^
+||qifwbpoo.com^
 ||qingdou.ltd^
 ||qiwjiy.xyz^
 ||qkcaqq.xyz^
@@ -4122,6 +4137,7 @@ newduba.cn###jq_youxi
 ||qwahk.com^
 ||qwrdj.xyz^
 ||ra1.xyz^
+||rbbbdj.xyz^
 ||rbrv9.cn^
 ||rbxunao.cn^
 ||rcxysoj.cn^
@@ -4146,6 +4162,7 @@ newduba.cn###jq_youxi
 ||sanguine.ren^
 ||sbyueyue.xyz^
 ||scrvw3.com^
+||sdfqs2.com^
 ||sectn.xyz^
 ||semaobf1.com^
 ||seumouxuezha.xyz^
@@ -4163,6 +4180,7 @@ newduba.cn###jq_youxi
 ||svrojrv.cn^
 ||szsbiw.xyz^
 ||tc911.vip^
+||tejiachong.co^
 ||tffulllist.shop^
 ||tfonlyuse.shop^
 ||tian0.ltd^
@@ -4249,6 +4267,7 @@ newduba.cn###jq_youxi
 ||xiaoliublog.icu^
 ||xingyang.in^
 ||xiod.xyz^
+||xiongxiaoze12.cn^
 ||xkdlqq.com^
 ||xlsds888.xyz^
 ||xlxknf.xyz^
@@ -4276,6 +4295,7 @@ newduba.cn###jq_youxi
 ||yttc.ren^
 ||yuebog.xyz^
 ||yulingaa.xyz^
+||ywsiqlg.cn^
 ||yywh.vip^
 ||zbbvhj.xyz^
 ||zbvchabjbcj.com^
@@ -4305,18 +4325,15 @@ newduba.cn###jq_youxi
 ||zsblog.vip^
 ||zscgoqt.cn^
 ||zxgko.cn^
-||kybzkiw.xyz^
-||msqdqq.com^
-||xiongxiaoze12.cn^
-||tejiachong.co^
-||iwandlo.top^
-||hvfubp.xyz^
-||rbbbdj.xyz^
-||ywsiqlg.cn^
-||bozumi.xyz^
-||exz1t.top^
-||jqueryboots.net^
-||26niao20230505.live^
+||mahao1.cn^
+||clqkqq.com^
+||uxwkiyp.xyz^
+||pacix.xyz^
+||radish-cake.xyz^
+||zldzbr.xyz^
+||iwdvvoc.cn^
+||1385a.xyz^
+||z11011.com^
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
 ##a[href$="/1c626.com"]
@@ -14920,6 +14937,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 szxx.com.cn###A0
+qq.com,sogou.com##.daohang-gamecenter
+downza.cn##.down-item-2
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -17337,11 +17356,8 @@ xiazaizhijia.com##.down_list
 7x7n.com##.down_load_1
 7x7n.com##.down_load_2
 dayanzai.me##.down_show_intro_first_box
-downza.cn##.down_soft_bottom
-downza.cn##.down_top
 18183.com##.down_url
 greenxiazai.com##.downbtn > a:last-child
-downza.cn##.downbtn-top
 portablesoft.org##.downcenter
 51xiazai.cn##.downgs
 3dmgame.com##.downl_list + script + div
@@ -17547,7 +17563,7 @@ juxia.com##.game_img_list
 yxlady.com##.game_wrap
 sina.com.cn##.gamead1
 qidian.com##.games-op-wrap
-3987.com,downza.cn,drv5.cn,pcsoft.com.cn,win7w.com##.gaosu
+3987.com,drv5.cn,pcsoft.com.cn,win7w.com##.gaosu
 3h3.com##.gaosu_div
 3h3.com,downxia.com##.gaosu_down_div
 so.com##.garllery_ad
@@ -22530,7 +22546,7 @@ $image,third-party,domain=258zw.com
 ##script + [id][style="width:100%;height:auto;min-height:120px;position:relative;display:block;"]
 $script,subdocument,~third-party,websocket,xmlhttprequest,domain=m.6666xsw.com|m.biqugee6.com|m.bqg99.cc|m.chenkuan.com|m.jmshuwu.net|wodexiaoshuoh.com
 !#Novels
-$script,subdocument,third-party,websocket,xmlhttprequest,domain=bixiaks.com|00ksw.com|0794.org|114zww.com|123duw.com|123wx.cc|126shu.org|12zw.net|138txt.net|147xiaoshuo.com|16kxsw.com|17k.com|1biqu.com|1biqug.com|1kanshu.org|1pwx.com|230book.net|23hh.com|23qb.com|23qb.net|23sk.net|23us.tw|23wxx.com|23xstxt.net|24kwx.net|2kxs.org|33yq.org|360xs.com|3yt.com|477zw.com|4gxs.cc|50zw.co|50zw.com|50zww.net|52biquge.com|52bqg.net|52shuku123.net|52xs.net|55shuba.com|56shuku.la|59xs.com|630shu.net|6666xsw.com|67shu.net|69kshu.win|69shu.org|69zww.com|7017k.net|777zw.net|77xsw.cc|8181zw.com|81book.com|81new.cc|81zw.me|8yydstxt226.com|93xscc.com|98xiaoshuo.com|99mk.info|9tiefu.com|a6ksw.net|abcxs.net|aixiaxs.com|aixiaxs.net|aixs.la|anshuge.com|b520.cc|b5200.net|bamxs.com|baoshuu.com|bbiquge.cc|bequgew.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudd.com|biqudu.tv|biquge775.com|biquge98.net|biquge99.cc|biqugecd.com|biqugee6.com|biqugesc.org|biqugewu.net|biqugse.com|biquka.com|biqukt.com|biquluo.org|biqupai.com|biququ.info|biqusk.com|biqutsxs.com|biquzw.la|bisowu.cc|bisowx.com|bixia66.com|bjsxjy.com|bodekang.net|bookbao.me|boquku.com|bqg999.net|bqwxg8.com|bshuku.com|bxwx.live|bxwx00.com|bxwx888.org|changduzw.com|chenkuan.com|clwx666.com|damengzhu1.com|ddbqgtxt.cc|disixs.com|diyibanzhu9.pro|dizishu.com|dobiez.com|doupocangqiong.la|dpcq1.com|dpcq1.net|duanwenxue.com|etongxs.com|fx11.cc|fyxfcw.com|gaofuwu.org|gdbzkz.org|gllmh.com|guanshu.cc|hongyeshuzhai.com|huanyue1234.com|ibiqu.org|ibiquge.la|ibiquta.com|ibotaodz.com|idzs.org|ijjjxs.net|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixsw.org|ixuanshu.org|jcdf99.com|jianlaixiaoshuo.com|jieshengit.com|jiezhong.cc|jingwubook.com|jmshuwu.net|kanshu5.net|kanshushi.com|kbiquge8.com|kbqg5200.com|kchao.net|lansezw.com|lewen123.com|lewenge.org|lewxs.com|liewenn.com|longzu5.net|luoqiu.io|luoqiuzw.com|maxreader.la|mcmssc.net|meiguixsw.com|mhtwxw.com|mhtxs.la|mijiashe.com|mingrenteahouse.com|mishug.com|mozhua2.com|mqxs.com|nbw.la|nuanyuehanxing.com|oldtimesxs.cc|panqis.cc|paoshu8.com|paoshuzw.com|piaotian.la|piaotian5.net|pksge.com|prpcoin.com|qianrenge.cc|qiqidu.net|qishula.com|qishuta.info|qiuyelou.com|qqxsnew.net|qqxsw.so|qr1234.com|quge66.com|ranwen.la|rizhaoxs.com|rmipoz.com|roushuwu6.com|rr3r.com|sbooktxt.com|sdhckt.com|sdhear.com|shanhaimiwenlu.com|shenshuxs.net|shenzu.org|shixiaolong.com|shu008.com|shubaowang.cc|shuhaiwu.com|shumi.la|shumil.co|shuquso.com|shuyy8.com|silukeke.com|silukex.com|siluwx.org|sinodan.cc|sjks88.com|soduha.la|sthuojia.org|stxsw.com|sxcnw.net|sytxt.cc|ting56.cc|tpsge.com|trxs.cc|ttzw.tv|tutengzw.com|txtduo.com|txtshuku.org|txtwan.com|tycqzw.com|tysk.cc|u33.cc|u33.me|viviyzw.com|wenxuem.com|wenxuemi.cc|whzh-xs.com|wodexiaoshuoh.com|wolaido.com|x23us.me|x23us.us|x81zw.co|xbiquge.so|xbiqugela.com|xbiqugexx.com|xbiquke.com|xbxwx.cc|xdingdian.cc|xhtxt.cc|xhytd.com|xiaoshuwu5.com|xiashuyun.com|xiaxs.la|xinqingdou.net|xinremenxs.com|xinxs.la|xiushukong.com|xqianqian.com|xquge6.com|xs5200.com|xs7788.com|xs98.com|xsb-xs.com|xstt5.com|xszww8.net|xuanjiezhimen.org|xuessex.com|xunsilu.org|xwdsc.com|xxbiqudu.com|xygwh.cc|xyuanzunxs.com|xyusk.com|yemancomic.com|ygshu.com|yingsx.com|ymxwx.com|yqd6.com|ysxs8.vip|yunhaixianzong.com|yunxs.com|yuyougu.com|zhuishubox.com|zydu3.com|zzs5.com
+$script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|0794.org|114zww.com|123duw.com|123wx.cc|126shu.org|12zw.net|138txt.net|147xiaoshuo.com|16kxsw.com|17k.com|1biqu.com|1biqug.com|1kanshu.org|1pwx.com|230book.net|23hh.com|23qb.com|23qb.net|23sk.net|23us.tw|23wxx.com|23xstxt.net|24kwx.net|2kxs.org|33yq.org|360xs.com|3yt.com|477zw.com|4gxs.cc|50zw.co|50zw.com|50zww.net|52biquge.com|52bqg.net|52shuku123.net|52xs.net|55shuba.com|56shuku.la|59xs.com|630shu.net|6666xsw.com|67shu.net|69kshu.win|69shu.org|69zww.com|7017k.net|777zw.net|77xsw.cc|8181zw.com|81book.com|81new.cc|81zw.me|8yydstxt226.com|93xscc.com|98xiaoshuo.com|99mk.info|9tiefu.com|a6ksw.net|abcxs.net|aixiaxs.com|aixiaxs.net|aixs.la|anshuge.com|b520.cc|b5200.net|bamxs.com|baoshuu.com|bbiquge.cc|bequgew.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudd.com|biqudu.tv|biquge775.com|biquge98.net|biquge99.cc|biqugecd.com|biqugee6.com|biqugesc.org|biqugewu.net|biqugse.com|biquka.com|biqukt.com|biquluo.org|biqupai.com|biququ.info|biqusk.com|biqutsxs.com|biquzw.la|bisowu.cc|bisowx.com|bixia66.com|bixiaks.com|bjsxjy.com|bodekang.net|bookbao.me|boquku.com|bqg999.net|bqwxg8.com|bshuku.com|bxwx.live|bxwx00.com|bxwx888.org|changduzw.com|chenkuan.com|clwx666.com|damengzhu1.com|ddbqgtxt.cc|disixs.com|diyibanzhu9.pro|dizishu.com|dobiez.com|doupocangqiong.la|dpcq1.com|dpcq1.net|duanwenxue.com|etongxs.com|fx11.cc|fyxfcw.com|gaofuwu.org|gdbzkz.org|gllmh.com|guanshu.cc|hongyeshuzhai.com|huanyue1234.com|ibiqu.org|ibiquge.la|ibiquta.com|ibotaodz.com|idzs.org|ijjjxs.net|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixsw.org|ixuanshu.org|jcdf99.com|jianlaixiaoshuo.com|jieshengit.com|jiezhong.cc|jingwubook.com|jmshuwu.net|kanshu5.net|kanshushi.com|kbiquge8.com|kbqg5200.com|kchao.net|lansezw.com|lewen123.com|lewenge.org|lewxs.com|liewenn.com|longzu5.net|luoqiu.io|luoqiuzw.com|maxreader.la|mcmssc.net|meiguixsw.com|mhtwxw.com|mhtxs.la|mijiashe.com|mingrenteahouse.com|mishug.com|mozhua2.com|mqxs.com|nbw.la|nuanyuehanxing.com|oldtimesxs.cc|panqis.cc|paoshu8.com|paoshuzw.com|piaotian.la|piaotian5.net|pksge.com|prpcoin.com|qianrenge.cc|qiqidu.net|qishula.com|qishuta.info|qiuyelou.com|qqxsnew.net|qqxsw.so|qr1234.com|quge66.com|ranwen.la|rizhaoxs.com|rmipoz.com|roushuwu6.com|rr3r.com|sbooktxt.com|sdhckt.com|sdhear.com|shanhaimiwenlu.com|shenshuxs.net|shenzu.org|shixiaolong.com|shu008.com|shubaowang.cc|shuhaiwu.com|shumi.la|shumil.co|shuquso.com|shuyy8.com|silukeke.com|silukex.com|siluwx.org|sinodan.cc|sjks88.com|soduha.la|sthuojia.org|stxsw.com|sxcnw.net|sytxt.cc|ting56.cc|tpsge.com|trxs.cc|ttzw.tv|tutengzw.com|txtduo.com|txtshuku.org|txtwan.com|tycqzw.com|tysk.cc|u33.cc|u33.me|viviyzw.com|wenxuem.com|wenxuemi.cc|whzh-xs.com|wodexiaoshuoh.com|wolaido.com|x23us.me|x23us.us|x81zw.co|xbiquge.so|xbiqugela.com|xbiqugexx.com|xbiquke.com|xbxwx.cc|xdingdian.cc|xhtxt.cc|xhytd.com|xiaoshuwu5.com|xiashuyun.com|xiaxs.la|xinqingdou.net|xinremenxs.com|xinxs.la|xiushukong.com|xqianqian.com|xquge6.com|xs5200.com|xs7788.com|xs98.com|xsb-xs.com|xstt5.com|xszww8.net|xuanjiezhimen.org|xuessex.com|xunsilu.org|xwdsc.com|xxbiqudu.com|xygwh.cc|xyuanzunxs.com|xyusk.com|yemancomic.com|ygshu.com|yingsx.com|ymxwx.com|yqd6.com|ysxs8.vip|yunhaixianzong.com|yunxs.com|yuyougu.com|zhuishubox.com|zydu3.com|zzs5.com
 /\/\w{8}\/\w{10}\./$script,~third-party,domain=00ksw.com|0794.org|114zww.com|123duw.com|123wx.cc|126shu.org|12zw.net|138txt.net|147xiaoshuo.com|16kxsw.com|17k.com|1biqu.com|1biqug.com|1kanshu.org|1pwx.com|230book.net|23hh.com|23qb.com|23qb.net|23sk.net|23us.tw|23wxx.com|23xstxt.net|24kwx.net|2kxs.org|33yq.org|360xs.com|3yt.com|477zw.com|4gxs.cc|50zw.co|50zw.com|50zww.net|52biquge.com|52bqg.net|52shuku123.net|52xs.net|55shuba.com|56shuku.la|59xs.com|630shu.net|6666xsw.com|67shu.net|69kshu.win|69shu.org|69zww.com|7017k.net|777zw.net|77xsw.cc|81book.com|81new.cc|81zw.me|8yydstxt226.com|93xscc.com|98xiaoshuo.com|99mk.info|9tiefu.com|a6ksw.net|abcxs.net|aixiaxs.com|aixiaxs.net|aixs.la|anshuge.com|b520.cc|b5200.net|bamxs.com|baoshuu.com|bbiquge.cc|bequgew.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudd.com|biqudu.tv|biquge775.com|biquge98.net|biquge99.cc|biqugecd.com|biqugee6.com|biqugesc.org|biqugewu.net|biqugse.com|biquka.com|biqukt.com|biquluo.org|biqupai.com|biququ.info|biqusk.com|biqutsxs.com|biquzw.la|bisowx.com|bixia66.com|bjsxjy.com|bodekang.net|bookbao.me|boquku.com|bqg999.net|bqwxg8.com|bshuku.com|bxwx.live|bxwx00.com|bxwx888.org|changduzw.com|chenkuan.com|clwx666.com|damengzhu1.com|ddbqgtxt.cc|disixs.com|diyibanzhu9.pro|dizishu.com|dobiez.com|doupocangqiong.la|dpcq1.com|dpcq1.net|duanwenxue.com|etongxs.com|fx11.cc|fyxfcw.com|gaofuwu.org|gdbzkz.org|gllmh.com|guanshu.cc|hongyeshuzhai.com|huanyue1234.com|ibiqu.org|ibiquge.la|ibiquta.com|ibotaodz.com|idzs.org|ijjjxs.net|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixsw.org|ixuanshu.org|jcdf99.com|jianlaixiaoshuo.com|jieshengit.com|jiezhong.cc|jingwubook.com|jmshuwu.net|kanshu5.net|kanshushi.com|kbiquge8.com|kbqg5200.com|kchao.net|lansezw.com|lewen123.com|lewenge.org|lewxs.com|liewenn.com|longzu5.net|luoqiu.io|luoqiuzw.com|maxreader.la|mcmssc.net|meiguixsw.com|mhtxs.la|mijiashe.com|mingrenteahouse.com|mishug.com|mozhua2.com|mqxs.com|nbw.la|nuanyuehanxing.com|oldtimesxs.cc|panqis.cc|paoshu8.com|paoshuzw.com|piaotian.la|piaotian5.net|pksge.com|prpcoin.com|qianrenge.cc|qiqidu.net|qishula.com|qishuta.info|qiuyelou.com|qqxsnew.net|qqxsw.so|qr1234.com|quge66.com|ranwen.la|rizhaoxs.com|rmipoz.com|roushuwu6.com|rr3r.com|sbooktxt.com|sdhckt.com|sdhear.com|shanhaimiwenlu.com|shenshuxs.net|shenzu.org|shixiaolong.com|shu008.com|shubaowang.cc|shuhaiwu.com|shumi.la|shumil.co|shuquso.com|shuyy8.com|silukeke.com|silukex.com|siluwx.org|sinodan.cc|sjks88.com|soduha.la|sthuojia.org|stxsw.com|sxcnw.net|sytxt.cc|ting56.cc|tpsge.com|trxs.cc|ttzw.tv|tutengzw.com|txtduo.com|txtshuku.org|txtwan.com|tycqzw.com|tysk.cc|u33.cc|u33.me|viviyzw.com|wenxuem.com|wenxuemi.cc|whzh-xs.com|wodexiaoshuoh.com|wolaido.com|x23us.me|x23us.us|x81zw.co|xbiquge.so|xbiqugela.com|xbiqugexx.com|xbiquke.com|xbxwx.cc|xdingdian.cc|xhtxt.cc|xhytd.com|xiaoshuwu5.com|xiashuyun.com|xiaxs.la|xinqingdou.net|xinremenxs.com|xinxs.la|xiushukong.com|xqianqian.com|xquge6.com|xs5200.com|xs7788.com|xs98.com|xsb-xs.com|xstt5.com|xszww8.net|xuanjiezhimen.org|xuessex.com|xunsilu.org|xwdsc.com|xxbiqudu.com|xygwh.cc|xyuanzunxs.com|xyusk.com|yemancomic.com|ygshu.com|yingsx.com|ymxwx.com|yqd6.com|ysxs8.vip|yunhaixianzong.com|yunxs.com|yuyougu.com|zhuishubox.com|zydu3.com|zzs5.com
 @@.com/ad.aspx|$domain=xdingdian.cc
 @@||bcebos.com^$script,domain=biququ.info|jingwubook.com
