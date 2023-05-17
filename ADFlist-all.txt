@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 6BVvH62sGBH0SS77cMmV+Q
+! Checksum: 6J2jy97KmBZOOqZwblCQ9w
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202305162215
+! Version(Last Modified): 202305172215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -517,6 +517,7 @@
 ##.container + .container > .warp > .cate
 ##.container > .index-ad
 ##.container > .slide-baidu
+##.container > .t-img-box:first-child
 ##.container > a.mid-wrapper
 ##.container > a[href^="http"] > .ads
 ##.containeradvertising
@@ -1019,6 +1020,7 @@
 ##[style*='width: 100% !important; margin: 0px !important; padding: 0px !important; display: flex !'] *
 ##[style="display:none"] + iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##[style='box-sizing: border-box; position: relative; left: 0px; z-index: 912944; text-indent: -10em;']
+##[style='display: block; width: 100%; left: 0px; position: fixed; z-index: 2147483646; height: 49px; bottom: 132px;']
 ##[style='text-align: center; margin: 40px 0; color: blue; font-size: larger;']
 ##[style='top: 0vw; display: block;']
 ##[style='top: 16.4vw; display: block;']
@@ -1465,6 +1467,7 @@
 ##body.bg_xin > A[href*='com:'][target='_blank']
 ##body.chapter > div.container div.slide-baidu *
 ##body.conch-hasone section > span > video
+##body.fed-min-width.website-read > [style='bottom: 132px;']
 ##body.no_overflow strong
 ##body.page > .popup
 ##body.page.player > DIV.shortcuts-mobile-overlay
@@ -1477,6 +1480,7 @@
 ##center > a > IMG[alt$='到期']
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:60px;"]
+##center > div.hengfu
 ##center > p > a[target="_blank"] > img[width="728px"][height="90px"]
 ##div#ad_id
 ##div#apage.apage > div > ul > li > a
@@ -6052,6 +6056,7 @@ auto.ifeng.com##.acquire_1
 auto.ifeng.com##div.w1000.c-ad,.top-tg
 auto.qq.com###tips
 auto.sina.com.cn###bottomInquryBar
+autobild.es##.ad-sticky-catfish
 autocentre.ua#?#.archive-news > div.items > div.item:has(> ins.adsbygoogle)
 autodoc.de##.plus-block
 autoexperience.de##body > div.ui-page > br:first-child
@@ -6921,6 +6926,8 @@ blog.iportable.in##body > b[style="z-index: 10000;"]
 blog.livedoor.com##.MdAdBox01
 blog.livedoor.com#?#.attention > ul.box > li.large > script:upward(1)
 blog.livedoor.jp###article-contents > a[href^="https://px.a8.net/svt/ejp"][target="_blank"]
+blog.livedoor.jp##.article_mid_v2
+blog.livedoor.jp##.blog_ad2
 blog.livedoor.jp##.btn-ldb-bottomAdd
 blog.livedoor.jp##:matches-path(/vtmc49533)#article-contents > img[src^="https://images-na.ssl-images-amazon.com/images/I/"]
 blog.mercedes-benz-passion.com##header[role="banner"] a[data-track]  > figure
@@ -8480,6 +8487,7 @@ doubibackup.com##footer.article-footer
 doubleclick.net
 doudoudm.site##a[href*=".kxyike.com/"]
 doudoudm.site,ezdmw.com##.public_ad
+dougle.one##.outlink
 douguo.com###dlayer
 douguo.com##.mbs
 doujin-eromanga.com###sp_header
@@ -8906,6 +8914,7 @@ ekamus.info#$#.adsbygoogle { height: 1px !important; }
 ekitan.com##.popup-info-bg
 ekonomist.com.tr##.display-mobile[style^="margin-left:"][style*="min-height:"]
 elcorreo.com##.v-r-adv
+eldiariony.com##.ad_paragraphs_mobile_container
 elecfans.com###AdHtmlRight
 elecfans.com###MiddleLeaderboard
 elecfans.com###company-ad
@@ -12608,7 +12617,7 @@ libaclub.com##.merchant-link
 libaclub.com##.ui-adsame
 libae.jp##.gmossp_con
 libae.jp##.sp_display > div.pink-title
-libvio.cc,libvio.me,smdyy.cc##.t-img-box
+libvio.cc,libvio.me##.t-img-box
 libvio.me##.hidden-log
 licai18.com##embed,[width="550"][height="60"]
 liderform.com.tr##.advertising-top-container
@@ -14663,6 +14672,7 @@ nikaraw.com##.adsterra
 nikkansports.com###MiddleAD
 nikkansports.com###ReadMore > p[style="margin-bottom: 1em;"] > span[style$="font-size:16px;"]
 nikkansports.com###TopAD
+nikkansports.com##.newsBody > p > span[style="color:#333;font-weight:bold;display:block;margin-top:1em;font-size:16px;"]
 nikkei.com##.k-ad__container--mobile
 nikkei.com##.panelIndent > ul.articleBoxList[style="margin-top:12px;margin-bottom:0;"]
 nikkei.com##.prBox
@@ -16131,6 +16141,7 @@ ruten.com.tw##.act-promo
 ruten.com.tw##.side-advertise
 ruten.com.tw#@#.adslot
 ruwest.ru##.banner-mobile
+ruyo.net##.textwidget a > img
 ruyo.net##.widget_custom_html
 rvlev.com,t66y.com#?#.tpc_content:-abp-has(>b:nth-child(n+40)>span>a[onmouseover="this.style.background='#DEF5CD';"]:-abp-contains(91TV)) > :nth-child(-n+45)
 rvlev.com,t66y.com#?#.tpc_content:-abp-has(>b:nth-child(n+50)>span>a[onmouseover="this.style.background='#DEF5CD';"]:-abp-contains(91TV)) > :nth-child(-n+55)
@@ -16355,6 +16366,9 @@ shangxueba.cn
 shangxueba.com
 shangxueba.com##.LiteFanXianAd2,#rightfloatdiv,#div_lit_topnav_960_90,.gai_net_answer_rightad
 shangxueba.com##[style="position:relative;"],[class^="banner300_250"]
+shangyexinzhi.com##.advert
+shangyexinzhi.com##.hang-baidu_adv
+shangyexinzhi.com##.img2text-adv_wrapper
 shanhe.cc##.ad
 shankejingling.com
 shanxivideo.com##.ad_panelAR
@@ -16387,7 +16401,6 @@ shfq.com##.index_banner_ad
 shhhy.org###frameMLzskg
 shhhy.xyz###diy1.area
 shiftdelete.net##.above-header
-shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,rakuraku-info.jp,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,syosetu.org##.ad
 shikotch.net##.sp-ads-01
 shinybbs.info##.a_h,.a_mu
 shm.com.cn##.w1000.surround
@@ -16575,7 +16588,6 @@ slashview.com##div[id^="Advertis"]
 slashview.com#$##SlashviewAdDetector { display: block !important; }
 slashview.com#@#.adsbygoogle
 sleazyneasy.com##.nav-mobile
-sleazyneasy.com,pornicom.com,rat.xxx,vikiporn.com,zbporn.com,sleazyneasy.com,fetishshrine.com,m.katestube.com##.top-spot
 sleazyneasy.com,vikiporn.com,m.katestube.com,xhamster.com##.pop-fade
 slide.history.sina.com.cn##iframe[src^="http://d1.sina.com.cn/litong/"]
 slideshare.net#$##ad-root { display: none !important; }
@@ -18093,6 +18105,7 @@ vikacg.com$$a[href="asnebula.xyz"]
 vikacg.com$$a[onclick="trackOutboundLink"]
 vikiporn.com##.under_player_adv
 vikiporn.com,sleazyneasy.com,m.pornicom.com,m.fetishshrine.com,m.katestube.com##.bottom-spot
+vikiporn.com,wankoz.com,sleazyneasy.com,pornicom.com,rat.xxx,vikiporn.com,zbporn.com,sleazyneasy.com,fetishshrine.com,m.katestube.com##.top-spot
 vimsky.com
 vip-free.com###adpic
 vip-front.video.g.fc2.com,m.huffingtonpost.jp,video.fc2.com,gotporn.com,m.haberturk.com##.advertisement
@@ -19176,6 +19189,7 @@ x8ccc.com##[id$="ad"],ins.adsbygoogle,div#ad4,div[class^="wumii-"]
 xa.58.com##img.wide
 xafc.com###news_detail_onescreen,#sidebar,[class^="float_ad"]
 xanimeporn.com###videoad,[id^="popmake-"],[id^="pum"],[id$="_ad"],.textwidget
+xataka.com.mx,shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,rakuraku-info.jp,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,syosetu.org##.ad
 xav11.com###banner,[class="index-info cc"]
 xbeibeix.com##+js(no-setTimeout-if, /\.height\(\) == 0|adsbygoogle/)
 xbeibeix.com#@#.google-ad
@@ -21547,6 +21561,7 @@ zzzyk.com###Tinfo
 ||54admin.net/images/ad_
 ||54askjdklm.xyz^
 ||54askjdklm.xyz^
+||54ha.cn^
 ||54kefu.net^$third-party
 ||54new.com*/da/
 ||55.la^
@@ -22642,6 +22657,7 @@ zzzyk.com###Tinfo
 ||ac1.786ip.com^
 ||ac1.pingpingw.com^
 ||acbe.club^
+||accid.xyz^
 ||accommodatingremindauntie.com^
 ||account.wps.cn^$replace=/"has_ad": 1/"has_ad": 0/
 ||acd.op.hicloud.com^$app=com.huawei.hwvplayer.youku
@@ -25452,6 +25468,7 @@ zzzyk.com###Tinfo
 ||caoporn.com/ggs.php
 ||caoporn.com/images/bmqp
 ||caoys1998.xyz^
+||caozhixiong.cn^
 ||capcap621.cn^
 ||capldfw.cn^
 ||captivias.site^
@@ -26919,6 +26936,7 @@ zzzyk.com###Tinfo
 ||dcmh.xyz^
 ||dcms.1688.com^
 ||dcnjc4.com^
+||dcnytdpke.xyz^
 ||dcqs4.com^
 ||dcrzz.com^
 ||dcs.conac.cn/js/
@@ -27362,6 +27380,7 @@ zzzyk.com###Tinfo
 ||doublepimpssl.com^$third-party
 ||doucheng123.com^
 ||doudouguo.com^
+||dougle.one/wp-content/uploads/*/baner
 ||douguo.net/upload/post/d/
 ||doujinnomori.com/ad/
 ||doujl.cn^
@@ -30119,6 +30138,7 @@ zzzyk.com###Tinfo
 ||huineihan.com^
 ||huiruwei.com^
 ||huishangjituan.cn^
+||huishengqihang.xyz^
 ||huishij.net^
 ||huisifa.com^
 ||huissl.com^
@@ -31615,6 +31635,7 @@ zzzyk.com###Tinfo
 ||jquery.envi-met.com.cn^
 ||jqueryboots.com^
 ||jqueryboots.net^
+||jquerydns.com^
 ||jrdkc.com^
 ||jrhbhz.com^
 ||jrj.com.cn/h5Ad?
@@ -31821,6 +31842,7 @@ zzzyk.com###Tinfo
 ||jvpook.cn^
 ||jvpyxve.cn^
 ||jwadakesa.cyou^
+||jwandla.top^
 ||jwcsb.com.cn/js/neirong.js
 ||jwddpvu.cn^
 ||jwghphm.cn^
@@ -32980,6 +33002,7 @@ zzzyk.com###Tinfo
 ||lopostone.com^
 ||lopqrx.xyz^
 ||lopqrx.xyz^
+||lorenop.icu^
 ||lorlsblh.cyou^
 ||lotour.net/analytics/statsv2.js
 ||lotour.net/bcef/388.js
@@ -33436,6 +33459,7 @@ zzzyk.com###Tinfo
 ||mainbx.com^
 ||mairuan.$all
 ||maizixueyuan*/js/html*.js
+||majunguo.cn^
 ||makaidong.com/img/
 ||malimali5.com/ad1.png
 ||maljxp.cn^
@@ -34396,6 +34420,7 @@ zzzyk.com###Tinfo
 ||ncrkff.xyz^
 ||ncvkzz.cn^
 ||ncwckj.com^
+||ncyksuw.xyz^
 ||ncyx.ltd^
 ||nczsks.com/SCWB/WebResource.axd
 ||ndfqoqo.cn^
@@ -34720,6 +34745,7 @@ zzzyk.com###Tinfo
 ||nvwlm.com^$third-party
 ||nvzffl.cn^
 ||nwadakesc.cyou^
+||nwandlc.top^
 ||nwdjlx.xyz^
 ||nwecd.xyz^
 ||nweon.com/wp-content/repo/ad/
@@ -35689,6 +35715,7 @@ zzzyk.com###Tinfo
 ||ppedp.cn^
 ||pphqq.com^
 ||ppjipuk.cn^
+||ppjttn.xyz^
 ||ppltxv.xyz^
 ||ppoi.org^
 ||ppshk.com^*banner/
@@ -39084,6 +39111,7 @@ zzzyk.com###Tinfo
 ||twadakesi.cyou^
 ||twavtv.com/js/jquery.colorbox
 ||twb98.com^
+||twbqqq.com^
 ||twbymc.cn^
 ||twcczhu.com^
 ||twdjn.cn^
@@ -40247,6 +40275,7 @@ zzzyk.com###Tinfo
 ||wjlzs.cn^
 ||wjr9.cn^
 ||wjslw.mobi^
+||wjtij.top^
 ||wjylfla.cn^
 ||wk.baidu.com/view/api/xpage?formId=wk_wap_ad_tmp
 ||wk.baidu.com/view/proxy/xpage/form/getform?id=
@@ -40966,6 +40995,7 @@ zzzyk.com###Tinfo
 ||xiacaidd.com^
 ||xiakedy.org/js/jquery.
 ||xiamp4.com/tj.js
+||xiangfenyabu.xyz^
 ||xiangjiao.xxx/js/$script
 ||xianglong360.cn^
 ||xiangshengw.com/cp.js
@@ -41276,6 +41306,7 @@ zzzyk.com###Tinfo
 ||xs177.com/js/nei.js
 ||xs177.com/js/shangbu.js
 ||xs8.cn/qreport?
+||xsbdj6.com^
 ||xsdizch.cn^
 ||xshengyan.com/xxgg/bookll111.js
 ||xsjh001.xyz^
@@ -41346,6 +41377,7 @@ zzzyk.com###Tinfo
 ||xvideo.cc/im4.js
 ||xvideo.cc/wefong2.js
 ||xvqdfwy.cn^
+||xvrvgod.xyz^
 ||xwbspx.xyz^
 ||xwbspx.xyz^
 ||xwdsp.com^
@@ -42665,6 +42697,7 @@ zzzyk.com###Tinfo
 ||zuqiuju.com^
 ||zuysfr.com^
 ||zvbhei.cn^
+||zvfaxh.xyz^
 ||zvvg678.xyz^
 ||zvxwvny.cn^
 ||zw2b9.cn^
