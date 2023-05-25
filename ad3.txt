@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: uBi8/ckoOWgbGLYXxc46YA
+! Checksum: T4wSkBTMp4DzzwqnaDizIw
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202305242215
-! Last Modified: 202305242215
+! Version: 202305252215
+! Last Modified: 202305252215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -252,7 +252,7 @@
 */ad-$~stylesheet
 */ad.
 */ad/$script,subdocument,media
-*/ad0$script
+*/ad0$script,domain=~discord.com
 */ad1$script
 */ad2$script
 */ad3$script
@@ -678,7 +678,6 @@
 @@||c.gdt.qq.com/gdt_click.
 @@||cdn.exp.qq.com/img/
 @@||crsky.com/ggao/images/$image
-@@||discord.com/assets/ad0149f80$script
 @@||dwstatic.com/b=amkit
 @@||eiv.baidu.com/fcimg
 @@||g.csdnimg.cn/$script
@@ -688,7 +687,6 @@
 @@||learn.microsoft.com/video/media/*_960.jpg|$image,domain=learn.microsoft.com
 @@||media.nintendo.com/share/nclood/stable/en-us/bundles/microsite.min.js$script
 @@||mmstat.com^$domain=youku.com
-@@||pstatp.com/obj/ad-tetris-site/file/$image,domain=player.kongbuya.com
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
 @@||res.wx.qq.com/mmbizwap/$script
 @@||s.click.taobao.com^$popup
@@ -746,6 +744,7 @@ chat.bilibili.com
 chemdraw.com.cn
 chinanews.com##div.advert_nav,#news_top_advert,#qizhi_div980,#zhengwenvideo~*
 chuangshi.qq.com##.topbanner,.mainbox>div.adv,div.jpBanner.fr,.banner_index,.main_banner,#advert
+chushoushijian.cn
 cloudtime.to,nowvideo.sx,sleeptimer.org,tomadivx.tv,wholecloud.net##+js(aopr, WebAssembly)
 cm.bilibili.com
 cm.jd.com
@@ -868,9 +867,6 @@ mydrivers.com###right_tab li:first-child, #left_tab li:first-child
 mydrivers.com##.baidu, a[href^=http][target=_blank]
 myhack58.com##.CMBox>.adv32
 myqqjd.com##+js(acis, String.fromCharCode, decodeURIComponent)
-netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
-netflix.mom,netflixya.com,yanetflix.com##.rm-list.player-rm
-netflix.mom,netflixya.com,yanetflix.com##.tips-box,#note.popup
 new.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 news.163.com###js-cnxh-content~:not(#js-epTabRank)
 novipnoad.com##.bg-ad
@@ -1009,6 +1005,7 @@ youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements,
 yoyi.com.cn
 yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 yy.com,le.com##+js(nowebrtc)
+z4a.net
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 zhihu.com##.Banner
@@ -1398,7 +1395,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||webconf.douyucdn.cn/resource/common/gift
 ||webrtc.github.io^$script,3p
 ||wkstatic.bdimg.com/static/wkview/widget/top_ads_banner/$script
-||wp.com/netflixya.com/upload/$image
 ||www-static.xunzai.com/static/wwwimg/$image
 ||www.1ting.com/$subdocument
 ||www.2345.com/cnxh/$script
@@ -1446,7 +1442,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||x0.ifengimg.com/feprod/c/web/d/coupletFloat.js
 ||xmindchina.
 ||xz7.com/js/
-||yanetflix.com/upload/vod/$image
 ||ygdy8.com/jsy1/
 ||yijiuningyia.gushiwen.org
 ||youtube.com/pagead/
@@ -1460,7 +1455,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ~news.sina.com.cn##[id^=ad_]
 搜狐网络科技.中国
 1ting.com##[id^=tingx_]
-4kya.com###player_pause
 5hte21mz.com
 17u.cn
 37cs.com

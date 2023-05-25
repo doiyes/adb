@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: /9KkjABsVqoxzs21Dhh0ag
+! Checksum: +0UAqoISpf15ILd9eEVmQg
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202305242215
+! Version(Last Modified): 202305252215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -278,7 +278,7 @@
 */ad-$~stylesheet
 */ad.
 */ad/$script,subdocument,media
-*/ad0$script
+*/ad0$script,domain=~discord.com
 */ad1$script
 */ad2$script
 */ad3$script
@@ -763,7 +763,6 @@
 @@||cdndx.clouddata8g.xyz^$domain=ohmanhua.com
 @@||cdndx.clouddata8g.xyz^$script,domain=www.cocomanhua.com
 @@||crsky.com/ggao/images/$image
-@@||discord.com/assets/ad0149f80$script
 @@||dwstatic.com/b=amkit
 @@||eiv.baidu.com/fcimg
 @@||fm.ipinyou.$domain=ipinyou.com.cn
@@ -782,7 +781,6 @@
 @@||mmstat.com^$domain=youku.com
 @@||onesignal.com/*$script,xhr,domain=www.pixiv.net
 @@||popo8.com^$domain=www.6park.com
-@@||pstatp.com/obj/ad-tetris-site/file/$image,domain=player.kongbuya.com
 @@||qbox.me/static/js/ads.js$domain=linux.cn
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
 @@||res.wx.qq.com/mmbizwap/$script
@@ -1038,6 +1036,7 @@ chinaz.com###result-list>div>div.fr
 chinaz.com##.backtoTop
 chsi.com.cn##.zx-axvert
 chuangshi.qq.com##.topbanner,.mainbox>div.adv,div.jpBanner.fr,.banner_index,.main_banner,#advert
+chushoushijian.cn
 ci123.com###fixed-recom
 ci123.com##div[onclick^="window.location="]
 ck101.com##.btn_dw_app
@@ -1805,9 +1804,6 @@ neihanshequ.com###pageletBottomBanner
 neihanshequ.com###pageletTopBanner
 nen.com.cn##.for3gagzy
 nen.com.cn##.w610
-netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
-netflix.mom,netflixya.com,yanetflix.com##.rm-list.player-rm
-netflix.mom,netflixya.com,yanetflix.com##.tips-box,#note.popup
 netkao.com
 new.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 news.163.com###js-cnxh-content~:not(#js-epTabRank)
@@ -2509,6 +2505,7 @@ yutu.cn###botfocus-res
 yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 yy.com###rbappend
 yy.com,le.com##+js(nowebrtc)
+z4a.net
 zditect.com
 zgkjmjg.cn
 zglww.net##.tool
@@ -3765,7 +3762,6 @@ zybang.com##.top_download
 ||wingontravel.com/Static/headerfooter/Content/js/masterpage.
 ||wkstatic.bdimg.com/static/wkview/widget/top_ads_banner/$script
 ||wlxww.com/html/analytics/
-||wp.com/netflixya.com/upload/$image
 ||wpa.b.qq.com/cgi/wpa.php?
 ||wujiupic.com^
 ||wumii.cn/ext/relatedItemsWidget
@@ -3847,7 +3843,6 @@ zybang.com##.top_download
 ||xz7.com/js/
 ||y3600.cc/20
 ||yahoo.com^*banner_ad
-||yanetflix.com/upload/vod/$image
 ||yaolan.com/ylk.mini.js
 ||yaozh.com/Public/js/widget/dbAdDownload.
 ||ydstatic.com/fanyi/fanyi-ad-place/
@@ -3935,7 +3930,6 @@ zybang.com##.top_download
 3dmgame.com##A[href^="http://web.3dmgame.com/h5/game?"]
 3g.163.com##.ne_rps
 3g.baidu.com,m.baidu.com,m5.baidu.com,www.baidu.com###banner_call + div[id]
-4kya.com###player_pause
 5axxw.com
 5ewin.com##.erweima
 5ewin.com##.jjb-slide

@@ -1,4 +1,5 @@
 ! AdGuard-跟踪保护规则
+tieba.baidu.com##+js(set-constant, passFingerPrint, noopFunc)
 secure1.comed.com##+js(set-constant, setupGoogleAnalytics, noopFunc)
 cerbahealthcare.it##+js(set-constant, pa, {})
 cerbahealthcare.it##+js(set-constant, pa.setConfigurations, noopFunc)
@@ -3968,6 +3969,8 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||visilabs.net^$third-party
 .ay.delivery^
 ||functionalclam.com^$third-party
+||crowdedmass.com^$third-party
+||balloonbelieve.com^$third-party
 ||longingtrees.com^$third-party
 ||knottyswing.com^$third-party
 ||beamvolcano.com^$third-party
@@ -5148,6 +5151,7 @@ nethunt.com/api/v1/track/email/$image
 |piwik.
 ||analytics.s3.amazonaws.com^
 ||analyticsengine.s3.amazonaws.com^
+||analytics.starlink.com^
 ||st-5cva8vttppvjafpc7jvj.kodik.biz^
 ||tracking.overwolf.com^
 ||d3-umami.up.railway.app^
@@ -38051,6 +38055,10 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||analytics-*.clickdimensions.com/*/pages/*.html$subdocument,domain=nhs.uk
+@@||analytics-*.clickdimensions.com/forms/$subdocument,domain=nhs.uk|clickdimensions.com
+@@||googletagmanager.com/gtm.js$domain=laptopsdirect.co.uk
+tieba.baidu.com##+js(set-constant, passFingerPrint, noopFunc)
 @@||datadoghq-browser-agent.com^$script,domain=hungryroot.com
 ||bbcgoodfood.com/stitcher-assets/gpt/tag/js/gpt.js$script,redirect=noop.js
 !+ NOT_PLATFORM(windows, mac, android, ext_chromium)
