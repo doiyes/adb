@@ -1,4 +1,6 @@
 ! AdGuard-url跟踪保护规则
+$removeparam=__io_lv
+$removeparam=_io_session_id
 $removeparam=asgtbndr
 $removeparam=ymid
 ^z=*&var=$removeparam=var
@@ -159,6 +161,7 @@ $removeparam=fb_action_types
 $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
+||pravda.com.ua^$removeparam=pageviewCount
 ||7net.omni7.jp^$removeparam=intpr
 ||7net.omni7.jp^$removeparam=intpr2
 ||dietpartner.jp^$removeparam=from
