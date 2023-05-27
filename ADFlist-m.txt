@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: lDXatIUQUSA1bhiF6jfSSA
+! Checksum: fhnubImWYUGAK5EuuLImzw
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202305262214
+! Version(Last Modified): 202305272213
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -52,6 +52,7 @@
 ##.ayx[style="position: fixed;bottom: -10px;right:0;z-index:999;width:250px"]
 ##.bottom-pic,.col-pd.mb10
 ##.clearfix > a > IMG[referrerpolicy='no-referrer'][src]:not([style='display: block;'])
+##.cupfox-content.right,.cupfox-content.left
 ##.div.ps_
 ##.fc_foot
 ##.fed-part-advs.fed-text-center.fed-font-xvi
@@ -519,6 +520,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .com/sh/to/$third-party
 .com/xz/*?token8=
 .com:8001/*/*?t=$3p
+.com:8010/cc/
 .cyou/redbaiduct.com
 .cyou/xling_*_
 .gif$domain=787ck.cc
@@ -1400,8 +1402,12 @@ baidu.com##.ec-ad
 baidu.com##.ec_wise_ad
 baidu.com##.popup-lead
 baidu.com##.rel-exp-feed-ad-item
+baidu.com##DIV#page-copyright.se-page-copyright.se-copyright-zbios[style='margin-bottom: 50px;']
+baidu.com##DIV.barea-ad
 baidu.com##DIV.c-result.result[srcid='mkt_ad_space']
 baidu.com##DIV.navs-bottom-bar
+baidu.com##DIV[data-module='rec:undefined-undefined']
+baidu.com##DIV[data-module='swan-ad-fc-feed'] DIV[sid][posid][prank]
 baidu.com##[class^='ball-wrapper']
 baidu.com##a.ball-wrapper__3BTBO.c-blocka
 baidu.com##div#J-super-layer-promote
@@ -2698,11 +2704,7 @@ m.autohome.com.cn##A[href^="http://t.cn"],section.fn-mt.fn-mlr,li.jmp-promote,[c
 m.autohome.com.cn##ol > li,.evade-operate
 m.baidi.com,www.baidu.com##DIV[class='voice call']
 m.baidu.com##DIV#page-copyright.se-page-copyright.se-copyrig
-m.baidu.com##DIV#page-copyright.se-page-copyright.se-copyright-zbios[style='margin-bottom: 50px;']
-m.baidu.com##DIV.barea-ad
 m.baidu.com##DIV.brand-entry
-m.baidu.com##DIV[data-module='rec:undefined-undefined']
-m.baidu.com##DIV[data-module='swan-ad-fc-feed'] DIV[sid][posid][prank]
 m.baidu.com#@#div[class*="ads"]
 m.baidu.com,www.baidu.com###provider,div[class$="fixed"],SECTION#middle_banner,.ec_ad_results,.shopping-item,#bottomOperate
 m.baidu.com,www.baidu.com##ARTICLE[class='c-container aladdin__10uYO']
@@ -8198,6 +8200,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||juzi.cn^
 ||juzi007.com^$third-party
 ||juzilm.com^$third-party
+||jv0rlf.com^
 ||jvpyxve.cn^
 ||jwcsb.com.cn/js/neirong.js
 ||jwddpvu.cn^
@@ -8885,6 +8888,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||metvb.com/js/z.js
 ||mf01.zybang.com^
 ||mfe.paqpq.com^
+||mfoevvy.com^
 ||mfxyqh.cn^
 ||mg.yunchong6.cn^
 ||mg.zgcqxjzny.cn^
@@ -11996,7 +12000,6 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||zhantai.com^$third-party
 ||zhanzhang.baidu.com/push.js
 ||zhanzhang.net^
-||zhanzhang.toutiao.com^
 ||zhaoshang8.com^
 ||zhemaijs.net^
 ||zhenbuka.com/gg/lunbo.js
