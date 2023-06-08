@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 6B9n/Ih8Us2vOBzY7NHibQ
+! Checksum: l8cldqSaPNmmW5kUfQHvmw
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202306072214
+! Version(Last Modified): 202306082214
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -189,6 +189,7 @@
 ##[at*='尼斯人注册送']
 ##[class$="_main_outstream"][style="right: 0px;"]
 ##[class^="chapter_"] > .baiduCenter
+##[data^='/banners/pr_advertising_ads_banner']
 ##[href$='/ads.aspx']
 ##[href*="/?channelCode="] > [referrerpolicy='no-referrer']
 ##[href*="/entry/register/?i_code="]
@@ -252,6 +253,7 @@
 ##[src='https://pnm.hpvitycz.cn/00.jpg']
 ##[src^='/MDassets/images/']
 ##[src^='/Uploads/ad/'][src$='.gif'][alt='广告']
+##[src^='/banners/pr_advertising_ads_banner']
 ##[src^='https://ae01.alicdn.com/'][alt='歪歪漫画']
 ##[src^='https://dingbu.bj.bcebos.com/']
 ##[src^='https://immmg.owowqrf.cn']
@@ -544,6 +546,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .net/v2/stats/10*$third-party
 .net/vh1/15*$third-party
 .openx.
+.ru/ads/
 .shop:*/ack?s=
 .shop:*/bid?url=
 .top/*/*.js?ts=$third-party
@@ -721,6 +724,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /baidu/189/999.php
 /baidu/tg.js
 /banma.
+/banners/pr_advertising_ads_banner
 /bar/yfdi.js
 /bar/yfgg.js
 /base/plugin/showwin_
@@ -6635,6 +6639,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||d1q4x2p7t0gq14.cloudfront.net^
 ||d20903hof2l33q.cloudfront.net^
 ||d227cncaprzd7y.cloudfront.net^
+||d2wy8f7a9ursnm.cloudfront.net^
 ||d3f3.xyz^
 ||d3g.qq.com^
 ||d3mshiiq22wqhz.cloudfront.net^
@@ -12114,6 +12119,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||zq84.com^
 ||zqzxz.com^
 ||zsh-work.com^
+||zsnfdphz.com^
 ||zt-uc-baidu.cc^
 ||ztgame.com^
 ||ztshg.cn^
