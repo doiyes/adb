@@ -1,4 +1,5 @@
 ! AdGuard-跟踪保护规则
+reddit.com##+js(set-constant, navigator.sendBeacon, noopFunc)
 livemint.com##+js(set-constant, dapTracker, {})
 livemint.com##+js(set-constant, dapTracker.track, noopFunc)
 kbjfree.com##+js(set-constant, plausible, noopFunc)
@@ -144,6 +145,10 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||talpa-analytics.$third-party
+||dna8twue3dlxq.cloudfront.net^
+||public.profitwell.com^
+||cdn.userleap.com^
 ||zhanzhang.toutiao.com^$third-party
 ||ad2iction.com^$third-party
 ||events.flagship.io^
@@ -3974,6 +3979,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||visilabs.net^$third-party
 .ay.delivery^
 ||functionalclam.com^$third-party
+||enormousfoot.com^$third-party
 ||rebelswing.com^$third-party
 ||tightpowder.com^$third-party
 ||tidymitten.com^$third-party
@@ -5092,6 +5098,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||delightful-development.ml^$third-party
 ||wizaly.com^
 ||affex.org^
+.pulse-stat.com$image
 click.e.change.org$image
 shutterstockmail.com/pub/as?_ri_=$image
 track.email.stackcommerce.com/q/$image
@@ -5160,6 +5167,8 @@ nethunt.com/api/v1/track/email/$image
 |piwik.
 ||analytics.s3.amazonaws.com^
 ||analyticsengine.s3.amazonaws.com^
+||evs.sgmt.loom.com^
+||cdn.p.analitik.bik.gov.tr^
 ||webstat.ws.126.net^
 ||stats.rbc.ua^
 ||stats.img2go.com^
@@ -7087,7 +7096,6 @@ nethunt.com/api/v1/track/email/$image
 ||statscol.pond5.com^
 ||statstracker.celebrity-gossip.net^
 ||stattrack.0catch.com^
-||statweb.egloos.com^
 ||statwup.huya.com^
 ||statwup.nimo.tv^
 ||stbt.coupons.com^
@@ -37067,6 +37075,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||plausible.io/api/event
 /umami.js
 /zhugeio.js
+/js/profitwell.js
 /collect/pv?
 /log/pv?id=
 /webtracking.min.js
@@ -37520,12 +37529,12 @@ _tracking.php?b=
 ||adc.nine.com.au/?token=$redirect=noop.txt,important,domain=9now.com.au,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|rusvideos.porn
-||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au
+||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com
+||reddit.com/svc/shreddit/perfMetrics
 ||static.ws.126.net/f2e/products/analysis/
 ||sport.ua/pixel/$image
 ||s3a.pstatp.com/toutiao/push.js
 ||api.channel.io/front/v5/channels/*/events
-||cdn.p.analitik.bik.gov.tr/tracker
 ||cdon.*/assets/dist/assets-cdonAnalytics.js
 ||articulture.org/_t/
 ||bayshop.com/img/svg/track
