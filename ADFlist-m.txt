@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 8HZzM9tSFUBAGLZDbKHDSg
+! Checksum: nS+9tqdLIQ8s+GQ/b58yqA
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202306232216
+! Version(Last Modified): 202306242216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -140,6 +140,7 @@
 ##DIV[class^='ads_border_']
 ##DIV[data-text-ad]
 ##DIV[id*="BAIDU_SSP__wrapper_"]
+##DIV[onclick='if (!window.__cfRLUnblockHandlers) return false; window.location.href=\'https://a.biquge-app.com/apps/\''],[onclick='if (!window.__cfRLUnblockHandlers) return false; window.location.href=\'https://a.biquge-app.com/apps/\''] + div
 ##DIV[style*='!important; color: transparent !important; font-size: 0px !important; text-indent: -10000px !important; line-height: 0px !important; height: 150px !important;']
 ##DIV[style*='.xyz/gif/']
 ##DIV[style*='animation: 1s ease 0.2s infinite normal none running shakegwegs; z-index:'][style*='background: url']
@@ -534,6 +535,9 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .cn/ack?s=*$third-party
 .cn/bid?url=*$third-party
 .cn/o.js$third-party
+.cn:*/*/*?c=$third-party
+.cn:*/*/*?n=$third-party
+.cn:*/*/*?t=$third-party
 .cn:8001/*/*?*=$third-party
 .com/adv1/?q=
 .com/c.php?s=*=*=$third-party
@@ -543,6 +547,9 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .com/qq.js$third-party
 .com/sh/to/$third-party
 .com/xz/*?token8=
+.com:*/*/*?c=$third-party
+.com:*/*/*?n=$third-party
+.com:*/*/*?t=$third-party
 .com:10446/*/get*.html
 .com:8001/*/*?*=$3p
 .com:8001/*/*?*=$third-party
@@ -822,6 +829,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /hdpv.
 /hengfu.js
 /hm.html?s=*=http
+/hm.js?$third-party
 /hm.js^$third-party
 /homead*
 /hostinger-promote-$domain=nodkey.xyz
@@ -1415,6 +1423,7 @@ baidu.com##DIV.c-result.result[srcid='mkt_ad_space']
 baidu.com##DIV.navs-bottom-bar
 baidu.com##DIV[data-module='rec:undefined-undefined']
 baidu.com##DIV[data-module='swan-ad-fc-feed'] DIV[sid][posid][prank]
+baidu.com##[class*='index_godCard'][class*='index_noGuaranteeTag'][class*='index_adTextPosition'],[class^='index_brandEntry__'],[data-show*='swan-ad-fc-swiper-banner']
 baidu.com##[class^='ball-wrapper']
 baidu.com##a.ball-wrapper__3BTBO.c-blocka
 baidu.com##div#J-super-layer-promote
@@ -1439,6 +1448,7 @@ baihe.com##div.carousel
 baihei.cc##.a_f,.a_mu,.a_cb,.a_cn,.it618_firstad_flex,td[colspan="5"],.a_pt,.bm.a_c
 baihei.net##.a_h
 baijiahao.baidu.com##.headDeflectorContainer
+baijiahao.baidu.com##DIV#bdrainrwDragButton
 baijiahao.baidu.com##DIV[class='_1T6TbV3IOYsTyKUDLU3h5K']
 baijiahao.baidu.com##DIV[class='_23jxxPi62SsDrI4gDqqvlk onepxT']
 baijiahao.baidu.com##DIV[class='_2zYa3D96DKBK80Jm2RnKgv commonPadding']
@@ -11389,6 +11399,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||www.ostlon.com^
 ||www.parisianmacao.bet/rarbt.js
 ||www.pcuois.com^
+||www.pkmp*.xyz/template/piankuwap/js/afoot.js
 ||www.pksanb.com^
 ||www.ppslsa.com^
 ||www.q4ee.top^
