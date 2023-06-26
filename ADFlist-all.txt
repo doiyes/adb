@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: KBYci3RT/764+MnnIAu4OA
+! Checksum: bYNdZM2dtu+J7QczNaM6Ng
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202306252216
+! Version(Last Modified): 202306262218
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -5973,6 +5973,7 @@ app.sogou.com##div.sogou-app
 app111.com##[height="60"],.ads
 appbank.net##.uz-ny
 appbank.net##div[id^="logly-"]
+appbank.net#?#.entry-content > div.sp.fixed-height:has( > div[id^="div-gpt-ad"])
 appbank.net#?#.entry-content > div.sp.fixed-height:has(> div#elseScript)
 appchina.com###yyh-bottom
 appcrawlr.com###top-row.mobile-top-slot
@@ -12736,7 +12737,7 @@ linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
 linkvertise.com##.yahoo-wrapper
 linovel.net##div.download-app
-linovelib.com##+js(abort-current-script, document.createElement, b.onerror)
+linovelib.com##+js(set-constant, adblock, 0)
 linovelib.com#$##byspider { display: none !important; }
 linovelib.com#$#body[style] { overflow: auto !important; }
 linux.cn##.linuxcnad
@@ -16882,6 +16883,7 @@ sohu.com##div.adA.area,div.adB.area,div#adList.area,div.ad-listB.clear,div.ad680
 sohu.com##div.cbd-plate-bill.common-ad
 sohu.com##div.middle-insert-ad
 sohu.com##div[data-spm-content="promotion"]
+sohu.com#?#.news-wrapper > div.news-box.clear:has(> [data-ad-format])
 sohu.com#?#.sidebar.right:has(> div.extend-mod:first-child)
 sohu.com#@#.label-ad
 sojson.com##._left_ad
@@ -18431,6 +18433,11 @@ wdzzz.com##.zz
 wdzzz.com##.zz_nr
 we4game.com
 we5200.com##table[bordercolor="#ffcc66"][width="900"]
+wealth.com.tw#?##root > div[class] > div[class]:matches-css(z-index: 4):has(> button path[d^="M16 4c6.627 0 12 5.373"])
+wealth.com.tw#?##root > div[class] > div[class]:matches-css(z-index: 4):has(> div[class]:matches-css(height: 250px))
+wealth.com.tw#?##root div[class]:matches-css(padding-left: 70px) > div[class]:matches-css(column-gap: 30px):has(> div[class]:matches-css(align-items: center))
+wealth.com.tw#?##root div[class]:matches-css(position: relative) > div[class]:matches-css(justify-content: center):has(> div[class]:matches-css(width: 300px))
+wealth.com.tw#?##root div[class]:matches-css(row-gap: 13px) > div[class]:matches-css(row-gap: 6px):has(> div[class]:matches-css(width: 300px))
 wealth.com.tw#?#div[class]:-abp-has(>div[class]>div[class*="-ad-manager-"])
 wealth.com.tw#?#div[class]:has(> div[class] > div[class^="rytass-ad-manager-"]:only-child)
 weather.com##div[class*="adWrapper"]
@@ -18661,6 +18668,9 @@ winda10.com#?#.entry-content > div[style="height: 600px;"]:has(div[id^="yandex_r
 windows-11.com
 windows11update.com
 windows7en.com##.fu-welcome
+windowsfaq.net##main > .mt-2[style="height:360px!important;"]
+windowsfaq.net#$#body > .text-center[style="height: 280px;"] { height: 1px !important; }
+windowsfaq.net#$#body > .text-center[style="height:280px;"] { height: 1px !important; }
 winning11cn.com##[class="hdc cl"][style],.eis_topad
 winshang.com##.ggwrap
 winxdvd.com##div[style^="position:fixed; width:200px; height:320px;"]
@@ -24195,6 +24205,7 @@ zzzyk.com###Tinfo
 ||aszswyd.cn^
 ||at*.doubanio.com^
 ||atanx.alicdn.com^
+||atbdkmt.xyz^
 ||atdmt.com^
 ||atemda.com^$third-party
 ||athena.api.kwalee.com^
@@ -24493,6 +24504,7 @@ zzzyk.com###Tinfo
 ||baidu1.codejie.net^
 ||baiduada.babihu.com^
 ||baiduajbcjkabcav.com^
+||baidubdvjssv.com^
 ||baidubvjsbvv.com^
 ||baiducdnimages.com^$domain=chichiav1.xyz
 ||baiducom.bj.bcebos.com^
@@ -24908,6 +24920,7 @@ zzzyk.com###Tinfo
 ||bhaabom.cn^
 ||bhaoea.cn^
 ||bharalhallahs.com^
+||bhcnmrn.icu^
 ||bhcwr.cn^
 ||bhduan.xyz^
 ||bhfdgdounv.xyz^
@@ -25527,6 +25540,7 @@ zzzyk.com###Tinfo
 ||casee.cn^
 ||cashprom.ru^
 ||casino-ad-mediation.me2zengame.com^
+||casisi118.vip^
 ||castplatform.com^
 ||castplatform.com^
 ||cat.da.us.criteo.com^
@@ -27785,6 +27799,7 @@ zzzyk.com###Tinfo
 ||eduad.baidu.com^
 ||eduancm.com^
 ||educity.cn/self_text/text_disp.aspx?id=
+||eduizioq.com^
 ||eduuu.com/website/public_js/pc_aso.js
 ||edwad.co^
 ||ee.32z8d.cn^$third-party
@@ -28568,6 +28583,7 @@ zzzyk.com###Tinfo
 ||fxxgw.com^$third-party
 ||fxxrllt.com^
 ||fxxz.com/skin/know/all.js
+||fy14.cn^
 ||fy4zb.cn^
 ||fy6b.com^$image,third-party
 ||fyber.com^
@@ -28720,6 +28736,7 @@ zzzyk.com###Tinfo
 ||gavbus*.com/assets/common/js/admenu.js
 ||gayeah.cn^
 ||gayide.com^
+||gbcnvip15.com^
 ||gbcnvip15.com^
 ||gbitcoin.cn^
 ||gblvwv.com^
@@ -29099,6 +29116,7 @@ zzzyk.com###Tinfo
 ||govxinjiang.cn^
 ||govyunfu.cn^
 ||gowinxp.com^$third-party
+||goxob6wo.icu^
 ||goyetteconnelly.bid^
 ||gozendata.com^
 ||gp.jstv.com^
@@ -29985,6 +30003,7 @@ zzzyk.com###Tinfo
 ||httpool.com^
 ||httpsjs.com^
 ||httpwwwdcom.com/js/aaa/
+||htvixv.xyz^
 ||htys123.com/pic/$image
 ||hu.xbhy.com^
 ||hu4c.top^
@@ -30214,6 +30233,7 @@ zzzyk.com###Tinfo
 ||i1.go2yd.com^
 ||i1.hoopchina.com.cn/blogfile/*/*/BbsImg_*_s_*_o_w_750_h_*.jpg$app=com.hupu.games
 ||i16-tb.isnssdk.com^
+||i18n-pglstatp.com^
 ||i2.51cto.com/
 ||i2.myapkcdn.in^
 ||i2ad.jp^
@@ -31957,6 +31977,7 @@ zzzyk.com###Tinfo
 ||kgacp.cyou^
 ||kgcyvd.com^
 ||kgelugaz.com^
+||kgeshe.site^
 ||kgfjrb711.com^
 ||kgimg.com/public/root//images/hardware.jpg
 ||kgnlaigd.fun^
@@ -33799,6 +33820,7 @@ zzzyk.com###Tinfo
 ||modzj.net^$third-party
 ||moe.la/images/banner/$image
 ||moe123.net/static/img/1200x
+||moead.xyz^
 ||moedao.com/js/top.js
 ||moegirl.org.cn/insight/MoegirlInsight.
 ||moend.xyz^
@@ -35049,6 +35071,7 @@ zzzyk.com###Tinfo
 ||pangolin-sdk-toutiao.com^
 ||pangolin.snssdk.com^
 ||pangolin16.isnssdk.com^
+||pangolin16.sgsnssdk.com^
 ||pangu.cc^
 ||panjin.net/ichat2/adhtml.htm
 ||panmeme.com/pc/common.js
@@ -37011,6 +37034,7 @@ zzzyk.com###Tinfo
 ||sexyno1.com/mk-banner/
 ||sezuleg.cn^
 ||sf*-ttcdn-tos.pstatp.com/img/web.business.image^
+||sf16-scmcdn-sg.ibytedtos.com^
 ||sf2.net/a/index.
 ||sfacg.com/JS/New/j
 ||sfbixfd.cn^
@@ -38490,6 +38514,7 @@ zzzyk.com###Tinfo
 ||tmuseum.com.cn^
 ||tmz.vo.llnwd.net^
 ||tnarzc.com^
+||tnc16-*.byteoversea.com^
 ||tnc16-alisg.isnssdk.com^
 ||tnc16-useast1a.isnssdk.com^
 ||tnc3-aliec2.snssdk.com^
@@ -40063,6 +40088,7 @@ zzzyk.com###Tinfo
 ||wps.cn/api/pre_download?dist=
 ||wps.cn/wpsv6internet/infos.ads?
 ||wpwpquse.cn^
+||wqdro6us.icu^
 ||wqdwork.com^
 ||wqmgqm.xyz^
 ||wqnggnse.fun^
@@ -40890,6 +40916,7 @@ zzzyk.com###Tinfo
 ||xnnews.com.cn/tpl/material/
 ||xnrcnz.xyz^
 ||xnyemao.com^
+||xnzetb.xyz^
 ||xoimg.com^$domain=18board.com|18p2p.com
 ||xokcaxw.cn^
 ||xonlines.com/upload/gg/
@@ -41240,6 +41267,7 @@ zzzyk.com###Tinfo
 ||ygwdai.cn^
 ||ygwdai.cn^
 ||yh.zg-zxzx.net^
+||yh20230625tu.com^
 ||yh21kk.com^
 ||yh300.vip^
 ||yhbdrnr.cn^
@@ -41629,6 +41657,7 @@ zzzyk.com###Tinfo
 ||yunzuowen.com^$third-party
 ||yupan.cc/asd/731.gif$image
 ||yupoo.com/dapenti/5cfa8673/c6045c69.jpeg
+||yupov6ks.icu^
 ||yuqingby.fun^
 ||yuretb.site^
 ||yurti.cyou^
@@ -42244,6 +42273,7 @@ zzzyk.com###Tinfo
 ||zrblog.net/gg/
 ||zrblog.net/zanzhu/virpus.gif
 ||zrbn.ltd^
+||zrgbh6bm.icu^
 ||zrpyfgt.cn^
 ||zrrnqq.com^
 ||zrwba.cn^
