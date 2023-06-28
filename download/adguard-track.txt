@@ -1,4 +1,6 @@
 ! AdGuard-跟踪保护规则
+fandom.com##+js(set-constant, optimizely, {})
+fandom.com##+js(set-constant, optimizely.initialized, true)
 weather.com##+js(set-constant, DprSdk, {})
 weather.com##+js(set-constant, DprSdk.init, noopFunc)
 weather.com##+js(set-constant, DprSdk.setHooks, noopFunc)
@@ -3970,6 +3972,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||visilabs.net^$third-party
 .ay.delivery^
 ||functionalclam.com^$third-party
+||rebelhen.com^$third-party
 ||guardeddirection.com^$third-party
 ||enormousfoot.com^$third-party
 ||rebelswing.com^$third-party
@@ -5157,6 +5160,8 @@ nethunt.com/api/v1/track/email/$image
 ||tags.news.com.au^$~script
 ||telemetry.mozilla.org^
 |piwik.
+||abt.s3.yandex.net^
+||uaas.yandex.ru^
 ||monitor.ebay.com^
 ||analytics.cookiefirst.dev^
 ||t.sports.ru^
@@ -54494,8 +54499,10 @@ _tracking.php?b=
 ||nd.demdex.net/event?d_mid=$redirect=noop.txt,important,domain=9now.com.au,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||adc.nine.com.au/?token=$redirect=noop.txt,important,domain=9now.com.au,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
-/analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|rusvideos.porn
+/analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|rusvideos.porn|jrkyushu.co.jp
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org
+||cdn.deporvillage.com/tracking-library/
+||wolfram.com/common/javascript/analytics.js
 ||vost.com.ua/count.js
 ||devicebind.ebay.com/signin/sub/log
 ||ebay.com/api/client-logging
@@ -57588,8 +57595,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||media-imdb.com/*/js/ads/beacon-
 ||media-imdb.com/images/*/imdbads/js/beacon-$script
 ||media-imdb.com/twilight/?
-||mediashop.tv/daten/*/google.js
-||megashara.org/uploads/button/online.png
 ||meinauto.de/js/vendor/criteo/criteo_ld.js
 ||meta.ua/f_new.asp?g=
 ||metrics.amd.com/b/ss/
@@ -58015,6 +58020,8 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.site^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
+||preview-collector.scopely.io^
+||collector.scopely.io^
 ||events.swishapps.ai^
 ||telemetry.canva.com^
 ||analytics.picsart.com^
@@ -58704,9 +58711,12 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+vippetcare.com##+js(no-fetch-if, www.yext-pixel.com)
+@@||accaii.com^$domain=kyuusai2nd.net
 ||dl.reg.163.com^$subdocument,redirect-rule=noop.html,domain=mail.163.com
 @@||googletagmanager.com/gtag/js$script,domain=panflix.com.br
-@@||bat.bing.com/bat.js$domain=northwell.edu
+@@||googletagmanager.com/gtm.js$domain=northwell.edu
+@@||js-agent.newrelic.com/async-api$domain=northwell.edu
 @@||shenlongruanjian.com/website/js/fingerprint2.min.js
 @@||google-analytics.com/gtm/optimize.js$domain=turkcell.com.tr
 @@||googletagmanager.com/gtm.js$domain=turkcell.com.tr

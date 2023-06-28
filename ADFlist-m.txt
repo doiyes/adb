@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: OU/CYLHS2UrGzfAn45GE9A
+! Checksum: yU3lWcfzrp1ASq9ueyBbsQ
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202306272217
+! Version(Last Modified): 202306282217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -401,6 +401,7 @@
 ##secion#ly LI[role='group'],secion#ly > H2
 ##section > SPAN[style='display: block; clear: both; overflow: hidden;']
 ##section.global_video_bottom_dbtc
+##section.wrap > section.f0
 ##span > A[href='###']
 ##ul > li > A[href$='_list.html']
 ##ul#page-list.layui-clear.page-wz > ul > li:not([class])
@@ -552,7 +553,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .com:*/*/*?n=$third-party
 .com:*/*/*?t=$third-party
 .com:10446/*/get*.html
-.com:8001/*/*?*=$3p
 .com:8001/*/*?*=$third-party
 .com:8004/*/*?*=$third-party
 .com:8007/*/*?*=$third-party
@@ -562,6 +562,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .cyou/xling_*_
 .gif$domain=787ck.cc
 .icu/*_*_*.js$third-party
+.icu/pssbk?$third-party
 .live/hm.js$third-party
 .live/o.js
 .live/r/*/*_r=*
@@ -593,10 +594,11 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .xyz/jque*.js?$third-party
 .xyz/mithril?$third-party
 .xyz/o.js$third-party
+.xyz/qby_*.js?$third-party
 .xyz/st?gp=*$third-party
 .xyz/svelte?$third-party
 .xyz/xefeliffng_$third-party
-.xyz/xling_*_*_*.js?*
+.xyz/xling_*_*_*.js?
 /(?::\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+_\d{3}x\d{4})/
 /*/*.add.*.add
 /*AdapterNew.
@@ -723,6 +725,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /adzone*
 /ali213-kx-function.js
 /android_start.asp?start=
+/api/LM/Report?placeUUID=$third-party
 /api/ad/*
 /api/analytics?_
 /api/getPos?jspath=/videos/view//*
@@ -869,6 +872,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /js/htmlk*.js
 /js/js/css.js
 /js/js4.js
+/js/lmdas.js
 /js/loading.
 /js/mts.js
 /js/mts66.js
@@ -1005,6 +1009,8 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /static/js/bds_
 /static/js/miniyyrtv-config.js
 /static/localStorage.
+/statics/js/dddd.js
+/statics/js/guding.js
 /statics/js/hth1111.html
 /stats.php?adsid=
 /stats/tj.
@@ -1038,6 +1044,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /v3/resolve?
 /variety.tc.qq.com^*.mp4
 /vh2/*$third-party
+/vhyoydie_*_*.js$third-party
 /videoAd.
 /video_ad_iframe
 /videoad/*
@@ -6748,6 +6755,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||deployads.com^
 ||dertyhsf.xyz^
 ||desk.orsoon.com/so/
+||destc10.icu^
 ||detail.taobao.com^
 ||detect.mb.qq.com^
 ||device.fishmobi.com^
@@ -8352,6 +8360,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||kkpgv2.xunlei.com^
 ||kkylx.xyz^
 ||kl.yditweb.cn^
+||klbvqqqj.com^
 ||klfxq.kieedi.foosheng.com^
 ||klgzzs.cn^
 ||kmaa45.com^
@@ -8471,6 +8480,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||leadboltads.net^
 ||leadboltapps.net^
 ||leadboltmobile.net^
+||leadc6.icu^
 ||leads.api.autohome.com.cn^
 ||leads.autohome.com.cn^
 ||ledaren.cn^
@@ -10485,6 +10495,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||superfastcdn.com^
 ||supersonicads.com^
 ||supfast.net^
+||surface361.com^
 ||surveys.hotjar.com^
 ||suwoj.com^
 ||sv.baidu.com/liveserver/sys/sync
