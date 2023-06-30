@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 3FcSaTkdCe7ULb0YDObFDQ
+! Checksum: NZJk6BmldqmvtKt2qmIelA
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202306292216
+! Version(Last Modified): 202306302216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -424,6 +424,7 @@
 ##.adpc > .promote-link
 ##.adpc > .promote-link-
 ##.ads
+##.ads > #video_playr_sider
 ##.ads > a > img[src*=".sinaimg."]
 ##.ads-after-content
 ##.ads-after-header
@@ -8537,6 +8538,8 @@ doubibackup.com##.widgetRoller
 doubibackup.com##a[href*="/rightad"]
 doubibackup.com##footer.article-footer
 doubleclick.net
+doucolle.net##.entry_body > [href^="https://al.dmm.co.jp/"]
+doucolle.net#?##entry:has(> div.entry_box > div.entry_body > a[href^="https://al.dmm.co.jp"]:only-child > img)
 doudoudm.site##a[href*=".kxyike.com/"]
 doudoudm.site,ezdmw.com##.public_ad
 dougle.one##.outlink
@@ -14159,6 +14162,7 @@ momon-ga.com##.content > div[style="margin-bottom:12px;"]
 momon-ga.com##.section-box > .plugin-blogroll
 momon-ga.com#?#.section-box:has(.list-box)
 momoniji.com#?##content-bottom > #mobile_text-11:upward(1)
+money.163.com##.ad1200
 money.163.com#$#.finance_header { height: auto !important; }
 money.163.com#$#.finance_header_gg { display: none !important; }
 money.cnn.com##.ob-widget-section.ob-first
@@ -15518,10 +15522,10 @@ porn5f.com#?#.row:has(> div.col-lg-3 > div[style] > div.carousel-inner > p.ad-ti
 porn87.com##.pc_instant
 pornbest.org##+js(abort-current-script, jQuery, injectPops)
 pornbest.org#?#.container-fluid > div.row:has(> div.item > div.card > div.card-body > div > span:contains(/^ad$/))
+pornbest.org,pornlulu.com,ptt.sex##.no-gutters
 pornbest.org,ptt.sex###fullPageModal
 pornbest.org,ptt.sex##.btn-group + .row
 pornbest.org,ptt.sex##.links.row
-pornbest.org,ptt.sex##.no-gutters
 porndoe.com##.-up-mobile
 pornhat.*##.bn-title-mobile
 pornhd.com###adhesionZone
@@ -15537,7 +15541,6 @@ pornhub.com##div.topAdContainter
 pornhub.com$$div[class="bottomNav clearfix"]
 pornhub.com,pornhub.org,pornhub.net,pornhubthbh7ap3u.onion##+js(set-constant, abp1, 0)
 pornhub.com,pornhubthbh7ap3u.onion#@#div > [style*="width: 100%;"]:first-child
-pornlulu.com##.no-gutters
 pornlulu.com##.row.links
 pornlulu.com,pornbest.org###fullPageModal
 pornodiamant.com##.sticky-banner
@@ -18423,6 +18426,7 @@ wapwenku.baidu.com##p.pd5,p.wapAd
 wapwenku.baidu.com,wk.baidu.com###bottomFixed
 wapwenku.baidu.com,wk.baidu.com##.tout
 wapwenku.baidu.com,wk.baidu.com##a[href^="http://www.baidu.com/cpro.php?"]
+war.163.com##.hotset
 warn.chrome.360.cn##.pop-box
 warting.com##.banner_hz,.link_hz,.adsbygoogle,[class^="top_hz"],[class^="love_hz"],[class$="_hz"]
 warting.com##.hz2
@@ -20370,6 +20374,7 @@ zzzyk.com###Tinfo
 ||0439.com/javascript.php?part=advertisement&
 ||0439.com/wtj/homepage/handler/guangg.ashx?
 ||045zxnm.com^
+||0460.com/images/ad/
 ||0460.com/images/banner/
 ||0460.com/js/txtrec.js
 ||046zxnm.com^
@@ -20411,14 +20416,14 @@ zzzyk.com###Tinfo
 ||066hjkl.com^
 ||06789.xyz^
 ||06fgej.com^
+||07073.com/api/getKfList?
+||07073.com/pc/js/right-ad.
 ||07171.com^
 ||0722fc.com/index/index.php?/ajax/get_adv/
 ||0722fc.com/index/tools/js.php
 ||073img.com/*/|
-||073img.com^$subdocument
 ||074adzx.com^
 ||0755rc.com^$third-party
-||0758net.com/data/attachment/portal/
 ||076lvo.xyz^
 ||0776.red^
 ||07780778.com^
@@ -20450,6 +20455,7 @@ zzzyk.com###Tinfo
 ||0ftyz.top^
 ||0hlc8.top^
 ||0kkbb.com/js/i.js
+||0krdn3.com^
 ||0l9x.cn^
 ||0m483y7.cn^
 ||0n6h.cn^
@@ -27599,6 +27605,7 @@ zzzyk.com###Tinfo
 ||dv.taolingjing.com^
 ||dvaimso.cn^
 ||dvb.pandora.xiaomi.com^
+||dvbnmikxh.xyz^
 ||dvr8.com^
 ||dvrnszf.cn^
 ||dvs.china.com^
@@ -29384,6 +29391,7 @@ zzzyk.com###Tinfo
 ||gykyec.xyz^
 ||gynax.com^
 ||gypowdr.com^
+||gysn001.com^
 ||gyt168.com.cn^
 ||gythsg.com^
 ||gytty.top^
@@ -29661,6 +29669,7 @@ zzzyk.com###Tinfo
 ||hefrpv.xyz^
 ||hefrpv.xyz^
 ||hegk06a.top^
+||hegk09a.top^
 ||heha2cpoe.icu^
 ||hehehe.buzz^
 ||hehuren.cn^
@@ -32051,6 +32060,7 @@ zzzyk.com###Tinfo
 ||kiees.cn/jm.png
 ||kiees.cn/k1.js
 ||kiees.com^$image,subdocument,third-party
+||kifyeldd.top^
 ||kikinote.net/iframe
 ||killcovid2021.com/*.mp4
 ||killcovid2021.com^*.mp4
@@ -34301,6 +34311,8 @@ zzzyk.com###Tinfo
 ||nccaer.xyz^
 ||nchap.com^
 ||nchte.com^
+||nchxzmhr.com^
+||ncmxwhf.icu^
 ||ncnfjasd.net^
 ||ncoeqz.today^
 ||ncrkff.xyz^
@@ -34536,6 +34548,7 @@ zzzyk.com###Tinfo
 ||node.cdntxt.com^
 ||nogff.top^
 ||nogff.top^
+||nohcff.xyz^
 ||noiea.xyz^
 ||nomalleadzuaff.com^
 ||nonabh.xyz^
@@ -35479,6 +35492,7 @@ zzzyk.com###Tinfo
 ||plkmd.com^
 ||plmn5.com^
 ||plnshao.xyz^
+||plof69.com^
 ||plugin.mediavoice.com^$third-party
 ||plugin.mobopay.baidu.com^
 ||plugrush.com^
@@ -39347,6 +39361,7 @@ zzzyk.com###Tinfo
 ||uyflu0x7.xyz^
 ||uygckiy.cn^
 ||uyjhbawd.xyz^
+||uym11.xyz^
 ||uysdxmo.com^
 ||uyt79.top^
 ||uyueread.com^
@@ -41061,6 +41076,7 @@ zzzyk.com###Tinfo
 ||xuanqi.ltd^
 ||xuanxuan520.com^
 ||xuanyaosp.com^
+||xudgjz.xyz^
 ||xue.zbyw.cn^
 ||xueaaai.cn^
 ||xueaaaw.cn^
@@ -42410,6 +42426,7 @@ zzzyk.com###Tinfo
 ||zupulu.com/scripts/app/app.js
 ||zuqiuju.com^
 ||zuysfr.com^
+||zvdc9y.icu^
 ||zvfaxh.xyz^
 ||zvvg678.xyz^
 ||zvxwvny.cn^
@@ -44107,8 +44124,6 @@ zzzyk.com###Tinfo
 07073.com###rightDiv > div[style="height:250px"]
 07073.com###tanchuang
 07073.com##.No1
-07073.com##.news_list1_tu
-07073.com##.subarea_ad
 07073.com##div#top_ads0,div[rel="code211"],td.fadSideLink,.xAd1,.xAd20,.xAd2,div.thisAd100,div.thisFullyad,DIV.cont_ad,DIV[class^="cont_right_ad"],div.this_view_top,div.this_view,a#view_bg,div.this_win1,div[class="nav_tuijian c1"],div#outer_gread,.fmt16,.w_ad,.tanchuang_flash,[style="height:250px"]
 7574.com##div[style*="height:90px;"],div[style*="height: 100px;"],div[style*="height:160px;"]
 7654.com###gg_top
