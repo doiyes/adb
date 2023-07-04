@@ -1,4 +1,5 @@
 ! AdGuard-url跟踪保护规则
+$removeparam=sscid
 $removeparam=rtkcid
 rtkcid=*&clickid=$removeparam=clickid
 $removeparam=cuid
@@ -168,6 +169,14 @@ $removeparam=fb_action_types
 $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
+||roboform.com^$removeparam=frm
+||roboform.com^$removeparam=affid
+||roboform.com^$removeparam=a
+||roboform.com^$removeparam=c
+||roboform.com^$removeparam=s1
+||shareasale-analytics.com^$removeparam=lplid
+||shareasale-analytics.com^$removeparam=shrsl_analytics_sscid
+||shareasale-analytics.com^$removeparam=shrsl_analytics_sstid
 ||sportsbull.jp^$removeparam=vkTop
 ||hbol.jp^$removeparam=cx_clicks_art_mdl
 ||singtao.ca^$removeparam=referid
