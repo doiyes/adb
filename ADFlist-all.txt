@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: bFvLtle00Y6UAs7WxYPhZw
+! Checksum: G1AgtkMhnxqYACuz2Zha+Q
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202307052218
+! Version(Last Modified): 202307062218
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -823,7 +823,6 @@
 ##A.toptxt[target='_blank']
 ##ASIDE[id^='custom_html-']
 ##A[href*=".com/?Agent="]
-##A[href*="kdocs.cn"] > IMG[src*=".ax1x.com/"]
 ##A[href*='//v.wanfumei.net']
 ##A[href*='/adjump/?']
 ##A[href*='com:'] > IMG[src],A[href*='cc:'] > IMG[src]
@@ -1361,6 +1360,7 @@
 ##a[href*="?invite_code="] > img[src*=".com"]
 ##a[href*="?register="] > img[src*=".douyinpic.com"]
 ##a[href*="?register="] > img[width="100%"]
+##a[href*="kdocs.cn"] > img[src*=".ax1x.com/"]
 ##a[href*="nnqp.vip"]
 ##a[href="/bbs/"] > img[src*=".bcebos.com"]
 ##a[href="/e/member/register/index.php?tobind=0&groupid=1"]
@@ -5932,6 +5932,8 @@ aoshitang.com##div#msg_win,div.lunbo
 aoshu.com,zhongkao.com,zuowen.com##.bottomImg
 aotu43.com##center > a[rel="nofollow"] > .king
 api.fghrsh.net
+api.guailie.com##+js(set-constant, killAdKiller, noopFunc)
+api.guailie.com#@#.google-ad
 api.so.lianmeng.360.cn,pos.baidu.com##body
 api3.fghrsh.net
 apic.in##.ad,.adsbygoogle,[src="http://www.apic.in/dyd.png"]
@@ -9217,7 +9219,7 @@ exoav.com##.table
 expert.ru##.mobile-subscribe-popup
 express.co.uk##.ampad
 express.co.uk#$?##taboola-mid-article-thumbnails-outstream { remove: true; }
-express.co.uk#$?#div[data-type="article-body"] .text-description > p ~ div { remove: true; }
+express.co.uk#$?#div[data-type="article-body"] .text-description > div { remove: true; }
 expressen.se##body div.bam-ad-slot[data-slot-name]
 expreview.com##.babaBox
 expreview.com##.colbaba
@@ -9873,6 +9875,7 @@ gamersky.com##header[class^="ymw-header20"]
 gamerstand.net,xn--gdkl0dubtwb7e.net,xn--o9j0bk1rwe8bvh.com,xn--o9j0bk3kzb8d3ee20ala8a.com,xn--o9j0bk5t7exbwe.com##.Bnr
 games.app-liv.jp#$#.jack-content { display: none !important; }
 games.app-liv.jp#$#body.jack { padding-top: 12% !important; }
+games.nme-jp.com##header.sp
 games.qq.com##.dc-kf_list
 games.qq.com##div.iwan-ad2,div.kfb
 gamesisart.ru#$#body > header { transform: none !important; }
@@ -10257,6 +10260,7 @@ gtloli.one###topbanner
 gu.qq.com##[boss*="click-ad"]
 guagua.cn###floatRoomDiv
 guahao.com##.link-modal
+guailie.com#@#.google-ad
 guancha.cn###ewm_app
 guancha.cn###goapp
 guancha.cn##.QR_code,.advertise
@@ -14759,6 +14763,7 @@ nfuwow.com##.adtopnewnewbox
 nfuwow.com##.bannermid3box
 nfuwow.com##.crightbtad
 nfuwow.com##.midbgdbox
+nfuwow.com##DIV[style*="width: 1160px;"]
 nfuwow.com##a[href*="myyj.net"]
 nfxhd.com##a[href*=".fa510.com"]
 nga.cn##[id^="postads"],.adshid,.adsh,.adsc
@@ -17146,6 +17151,7 @@ stheadline.com##[class^="ad_"]
 stheadline.com,yinyuetai.com##.ad_w300
 stileproject.com##.stage-promo
 stnn.cc##.full-banner,.basehr + div[style],#xingdaohuanqiuwang_640_90_a,#xingdaohuanqiuwang_640_90_a + * + * + DIV[style],#xingdaohuanqiuwang_300_250_a
+sto520.com#?#.content > div.book > div[style^="text-align"]:has(> ins.adsbygoogle)
 stock.qq.com##.ad,.phone_ad_1000
 stock87.com##a[href^="http"]:not([href*="stock87."]) > img[src*="uploadfiles/image/"]
 stock87.com##div[id^="Javascript"]
@@ -20789,6 +20795,7 @@ zzzyk.com###Tinfo
 ||1512a.com^
 ||154.196.143.171^
 ||154.212.147.231^
+||154.22.214.2^
 ||154.7.80.158^
 ||155game.com^
 ||156.232.37.2^
@@ -26349,7 +26356,6 @@ zzzyk.com###Tinfo
 ||configuration.ttpsdk.info^
 ||congsons.uno^
 ||congtad.com^
-||content.ad^
 ||contentabc.com^
 ||contextualadv.com^
 ||cooguo.com^
@@ -27977,6 +27983,7 @@ zzzyk.com###Tinfo
 ||evenyw.xyz^
 ||everestop.io^
 ||everyonepiano.cn/Public/*0x
+||evidhjksdtgyxrh.xyz^
 ||evmnlpv.cn^
 ||evtubescms.phncdn.com^
 ||evtubescms.phncdn.com^$redirect=noopmp4-1s
@@ -28274,6 +28281,7 @@ zzzyk.com###Tinfo
 ||fjrkn.com^
 ||fjsen.com:81/mysql/count/
 ||fjshxjs.cn^
+||fjsytjs.cn^
 ||fjttbkoxer.xyz^
 ||fjxyo.com^
 ||fjzimaoqu.cn^$third-party
@@ -31583,6 +31591,7 @@ zzzyk.com###Tinfo
 ||kaffnet.com^
 ||kagdf.com^
 ||kagdf.com^
+||kahgjjd.com^
 ||kaicn.com/style/js/js.js$script
 ||kaiguangdou.com^
 ||kaimaohong20.cn^
@@ -31740,6 +31749,7 @@ zzzyk.com###Tinfo
 ||kfyg.xyz^
 ||kgacp.cyou^
 ||kgcyvd.com^
+||kgeesh.site^
 ||kgelugaz.com^
 ||kgeshe.site^
 ||kgfjrb711.com^
@@ -36657,7 +36667,6 @@ zzzyk.com###Tinfo
 ||sexy-more.com^$third-party
 ||sexyno1.com/mk-banner/
 ||sf*-ttcdn-tos.pstatp.com/img/web.business.image^
-||sf16-scmcdn-sg.ibytedtos.com^
 ||sf2.net/a/index.
 ||sfacg.com/JS/New/j
 ||sfbixfd.cn^
@@ -40744,6 +40753,7 @@ zzzyk.com###Tinfo
 ||ygwdai.cn^
 ||ygxgk.cn^
 ||yh.zg-zxzx.net^
+||yh18h8s.com^
 ||yh20230625tu.com^
 ||yh21kk.com^
 ||yh300.vip^
