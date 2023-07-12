@@ -75,6 +75,7 @@
 ||reqde.afreecatv.com^
 ||adballoon.afreecatv.com^
 ||deapi.afreecatv.com^
+||naverpa-phinf.pstatic.net^
 ||tivan.naver.com^
 ||veta.naver.com^
 ||mradx.net^
@@ -916,6 +917,9 @@ yandex.*#$?#:matches-path(/q)body.page_qArticleRoute div#page > div[class]:first
 turbopages.org##div[class*="type_adfox"]
 turbopages.org##.turbo-advert
 turbopages.org##.page__result > div[class*="type_native"]
+autoweek.com#?#section > div[class*="css-"]:has(> div[id^="gpt-ad"])
+runnersworld.com#?#div[class*="css-"]:has(> div.ad-container)
+tmailweb.com#?#.row > div[class^="col-"]:has(> div.d-none > ins.adsbygoogle)
 popularmechanics.com#?#section > div[class*=" "]:has(> div[class]:first-child + .ad-container:last-child)
 wetter.com#?#div[class^="sc-"]:has(> div.ad-container)
 wetter.com#?#.som-wrapper:has(> div[data-slotname])
@@ -1791,6 +1795,7 @@ ign.com,gazeteduvar.com.tr,innpoland.pl,wired.com,sports.ru,manager-magazin.de,a
 scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##.inline-ad-container
 memo.onl.jp,daily-sun.com,home.kingsoft.jp,berkem.ru,pixiv.net,cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 macwelt.de,pcwelt.de,xataka.com.mx,shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,rakuraku-info.jp,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,syosetu.org##.ad
+news.abplive.com##.ad-container-outer
 gpfans.com###adverinsertvijf
 www-foxnews-com.cdn.ampproject.org##amp-render.i-amphtml-element[height="250"]
 popularmechanics.com##.standard-article-vertical-ad
@@ -4228,7 +4233,7 @@ bbs.saraba1st.com##div[style="line-height:420px;height:420px"]
 saglamindir.net##.text-center > a[class="download"][rel="nofollow"]
 ipad.hotnews.ro###ci-div-banner
 nfmovies.com##div[id^="sponsorAd"]
-m.apkpure.com##.ad-box
+m.apkpure.com##.ad-box:not(#ad-banner)
 gfycat.com##.sharepage-mobile-adunit
 finance.yahoo.com##.ys-mobileFeaturedAd
 dailywire.com##div[style^="width: 320px; height: 50px;"]

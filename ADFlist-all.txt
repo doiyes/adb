@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: qwBowgyPjXlGfygc1Pcb3Q
+! Checksum: HL5KpxO1xy63Un6pr6puDQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202307112217
+! Version(Last Modified): 202307122217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -507,6 +507,7 @@
 ##.col-lg-3.col-xs-6 > .well
 ##.col-md-10 > .banner-table-block
 ##.col5 > dl#randomBox
+##.col6 > A[onclick*="横幅"]
 ##.comiis_ad
 ##.comiis_adbox
 ##.comiis_guanggao
@@ -5509,6 +5510,7 @@ _naimabdd_
 _popAds.
 _quick_prop_
 _right_picshow
+_rony.js$script,third-party
 _showad*
 _stat.js*
 _tm11_pmt_
@@ -6120,6 +6122,7 @@ automaton-media.com##.code-block.ai-viewport-3
 autonet.com.tw##[src^="http://www.autonet.com.tw/90/"],[name="ntwad2"]
 autos-yahoo-com.cdn.ampproject.org,yahoo.com##.pencilad
 autos.goo.ne.jp##.cont_ad
+autoweek.com#?#section > div[class*="css-"]:has(> div[id^="gpt-ad"])
 autozeitung.de##body .adAnything.dikr-responsive-ads-mca
 av.movie##.adss-160x600
 av.movie##.pop-up-a
@@ -9184,6 +9187,7 @@ etotop.cc##div[style^="padding: 0px 10px 10px; margin: 10px 0px;"][style*="borde
 ettoday.net###adsense-matched-content
 ettoday.net###for-ec
 ettoday.net###ticker_3
+ettoday.net##.adHint
 ettoday.net##.ad_in_news
 ettoday.net##.ad_readmore
 ettoday.net##.content-container > .iframe-ad
@@ -11932,6 +11936,7 @@ jiaodong.net###FixedRight
 jiaodong.net###leftBanner
 jiaodong.net###rightBanner
 jiaoyizhe.com##.a_f
+jiayongluyou.com#?#.widget_html_myimg:has(> ins.adsbygoogle)
 jieav.com##.b300
 jieav.com##ul[id^="jieav_"]
 jieav.com#$##comment { margin-bottom: 0 !important; }
@@ -12789,6 +12794,7 @@ limia.jp#?#.Section > div.OUTBRAIN:upward(1)
 limo.media##.m-ad-rectangle
 limo.media#?#.article > section.l-block > h3.c-sub-headline:contains(PR)
 line.me###install_line
+line.me##.midAdModule-root
 linetv.tw##.aspect-ratio > img.object-cover + .aspect-ratio-content + div[class^="absolute inset-"][class*="bg-brand"]
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
@@ -13005,7 +13011,7 @@ m.alpha.facebook.com,touch.alpha.facebook.com,mtouch.alpha.facebook.com,x.alpha.
 m.alpha.facebook.com,touch.alpha.facebook.com,mtouch.alpha.facebook.com,x.alpha.facebook.com,iphone.alpha.facebook.com,touch.facebook.com,mtouch.facebook.com,x.facebook.com,iphone.facebook.com,m.beta.facebook.com,touch.beta.facebook.com,mtouch.beta.facebook.com,x.beta.facebook.com,iphone.beta.facebook.com,touch.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion,mtouch.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion,x.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion,iphone.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion,touch.beta.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion,m.facebook.com,m.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion,b-m.facebook.com,b-m.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion,mobile.facebook.com,mobile.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##article[data-store*="is_sponsored.1"]
 m.alphaporno.com###suggested
 m.anysex.com##.top_b
-m.apkpure.com##.ad-box
+m.apkpure.com##.ad-box:not(#ad-banner)
 m.appchina.com##div[class^="yyh"]
 m.ariva.de###siteTeaserLayer
 m.ariva.de##div[id^="ariva.de_m_300x"]
@@ -14631,6 +14637,7 @@ news.163.com#?#div[ne-module="/modules/slide/slide.js"]:-abp-has(.ad_hover_pic)
 news.17173.com###ginfo,div.ad-zhanneituiguang
 news.99k.tw##.entry-content > table[align="left"][style="width:360px"]
 news.99k.tw##iframe[src^="http://news.99k.tw/open/open"][src$=".php"]
+news.abplive.com##.ad-container-outer
 news.baidu.com###detail-HotScrollNews-wrapper
 news.baidu.com###favoriteTips
 news.baidu.com###women-picwall
@@ -15890,7 +15897,7 @@ qq.com###pop_apps_sponsors
 qq.com###qqadv
 qq.com###qqmail_AD_container
 qq.com###r_ad
-qq.com##+js(json-prune,ads adList.item)
+qq.com##+js(json-prune,ads ad.pause adList.item)
 qq.com##+js(no-fetch-if,/trace\.|beacon\./)
 qq.com##+js(no-xhr-if,/trace\.|\/collect/)
 qq.com##+js(set,RTCPeerConnection,null)
@@ -16310,6 +16317,7 @@ ruian.com##div[class^="gg_"]
 rumusrumus.com,rumus.co.id##.closads
 runbt.cc##[href="http://uikkaj.koreatorrent.com/ "]
 rundschau-online.de##div[id^="mobile_"]
+runnersworld.com#?#div[class*="css-"]:has(> div.ad-container)
 runningmanzx.com##.guangao
 runoob.com###sidebar-right-re
 runoob.com#?#.sidebar-box:-abp-has(.re-600160)
@@ -17751,6 +17759,7 @@ titan007.com###table_live > tbody > tr > td[height="18"] > a
 tkplayer.com###banner
 tktube.com##.content > div.top
 tltds.cn###content > div.main:first-child > div.container.content-box > section.sousuo
+tmailweb.com#?#.row > div[class^="col-"]:has(> div.d-none > ins.adsbygoogle)
 tmall-sp.wamgame.jp###geniee_overlay_margin
 tmall.com###J_BottomSmartBanner
 tmall.com###J_Recommend
@@ -18228,7 +18237,6 @@ v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdb
 v.ifeng.com##div.topAdBox,div.vAdbox,div.v-adbox,div.w_code,.vPlayerAdbox
 v.pps.tv##div.pgbox-content
 v.pptv.com###video-download-game
-v.qq.com###player .txp_zt_content
 v.qq.com##.module-image[style*="width:1100px;"]
 v.qq.com##.module-image[style*="width:1240px;"]
 v.qq.com##.nav_link[href^="http"]:not([href*=".qq."])
@@ -18317,10 +18325,6 @@ video.fc2.com###pr
 video.fc2.com##.list-spCont > li[style="line-height: 0; margin: 0; padding: 0; height: 110px;"]
 video.fc2.com##center[style$="opacity: 1;"]
 video.fc2.com##div[style^="height:30px;text-align:center;background-color:black;"]
-video.qq.com#@#+js(json-prune,ads adList.item)
-video.qq.com#@#+js(no-fetch-if,/trace\.|beacon\./)
-video.qq.com#@#+js(no-xhr-if,/trace\.|\/collect/)
-video.qq.com#@#+js(set,RTCPeerConnection,null)
 vidhub.*,www.jujiso.com##.MacPlayer:style(height:630px!important)
 vidhub.cc##div.player-info > div.module
 vidhub.cc,vidhub.top###player_pause
@@ -21039,6 +21043,7 @@ zzzyk.com###Tinfo
 ||1sapp.com^
 ||1st.clublucifer.net/regular/$subdocument
 ||1tlm.cn^
+||1u5gy.xyz^
 ||1v7.cn^$third-party
 ||1w73a5d.cn^
 ||1wkg.cn^
@@ -23455,6 +23460,7 @@ zzzyk.com###Tinfo
 ||agathacd.com^
 ||agathazanna.com^
 ||agdewasmnjktfrdewqjgdser.top^
+||agefans.top/js/wap2-jm-ms.js
 ||agent.tamedia.com.tw^
 ||agkacg.xyz^
 ||agnezanna.com^
@@ -27346,6 +27352,7 @@ zzzyk.com###Tinfo
 ||doowe.cn^
 ||dopa.com^
 ||dorangesource.alicdn.com^
+||dosre12.xyz^
 ||dota.sykty.com^
 ||dota2.uuu9.com^$subdocument
 ||dotomi.com^
@@ -27956,6 +27963,7 @@ zzzyk.com###Tinfo
 ||erwgj.xyz^
 ||es3984.review/02_cn_ad/
 ||esanciw.top^
+||esgher.site^
 ||esiws.com^
 ||esjzj.cyou^
 ||eskay.cn^
@@ -28322,6 +28330,7 @@ zzzyk.com###Tinfo
 ||fjsen.com:81/mysql/count/
 ||fjshxjs.cn^
 ||fjsytjs.cn^
+||fjtroip.cn^
 ||fjttbkoxer.xyz^
 ||fjxyo.com^
 ||fjzimaoqu.cn^$third-party
@@ -31306,6 +31315,7 @@ zzzyk.com###Tinfo
 ||jojog.com^
 ||jokerlu.com/upload/addon/
 ||jokerlu.com/upload/vod/
+||jokerlulm.com^
 ||jollyspring.com^
 ||jollytestpartying.com^
 ||jomwihn.cn^
@@ -32107,6 +32117,7 @@ zzzyk.com###Tinfo
 ||kydb.xyz^
 ||kydb.xyz^
 ||kygso.com/js/lrtk.js
+||kyq3hky.icu^
 ||kyqbifz.cn^
 ||kyrj.xyz^
 ||kyxw9itc.xyz^
@@ -33992,6 +34003,7 @@ zzzyk.com###Tinfo
 ||nativead.s3.amazonaws.com^
 ||nativex.com^
 ||nav.browser.miui.com^
+||naverpa-phinf.pstatic.net^
 ||navigation.api.hk.goforandroid.com/api/*/website/navigations?virtual_id=
 ||nawpush.com^
 ||nb.zol.com.cn/detail_*.html
@@ -34454,6 +34466,7 @@ zzzyk.com###Tinfo
 ||oicvvnm.cn^
 ||oiewpw.com^
 ||oiewpw.com^
+||oifyeldk.top^
 ||oiknldwlkop.com^
 ||oikqwnm.com^
 ||oiljomy.xyz^
@@ -36099,6 +36112,7 @@ zzzyk.com###Tinfo
 ||rdsmod.cc^
 ||rdtjkwy.cn^
 ||rdtuijian.com^
+||rdufuxr.icu^
 ||re.taotaosou.com^
 ||reachmax.cn^
 ||reactor.xingye.work^
@@ -40202,6 +40216,7 @@ zzzyk.com###Tinfo
 ||xcvsw.xyz^
 ||xcvtg.xyz^
 ||xcvur.xyz^
+||xcvwrj.xyz^
 ||xcwzq.xyz^
 ||xcwzq.xyz^
 ||xcycm.com^
@@ -41688,6 +41703,7 @@ zzzyk.com###Tinfo
 ||zikao365.com/upload/js/pfgg/
 ||ziling.ink^
 ||zipeyrp.cn^
+||ziravd.xyz^
 ||zisafniq.space^
 ||zisu.cn.com^
 ||ziye8.com^
@@ -41708,6 +41724,7 @@ zzzyk.com###Tinfo
 ||zjst.net/3.gif
 ||zjthzf.xyz^
 ||zjttaqx.cn^
+||zjtu.tv/add.
 ||zjws.xyz^
 ||zjxc.com/source/plugin/e6_xc_ad/
 ||zjzh2019.com^
