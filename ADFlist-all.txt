@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: mqQEYfI6PzkfQP5/AFtORg
+! Checksum: 9bDkUAq8MaxBCr4q9Y50rw
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202307142216
+! Version(Last Modified): 202307152215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -825,7 +825,6 @@
 ##A.toptxt[target='_blank']
 ##ASIDE[id^='custom_html-']
 ##A[href*=".com/?Agent="]
-##A[href*=".taobao.com"] > .top1
 ##A[href*='//v.wanfumei.net']
 ##A[href*='/adjump/?']
 ##A[href*='com:'] > IMG[src],A[href*='cc:'] > IMG[src]
@@ -1202,6 +1201,7 @@
 ##a[href*=".snmlyshj.com/"]
 ##a[href*=".ssmh"][href*="?u="]
 ##a[href*=".supernfp.com/"]
+##a[href*=".taobao.com"] > .top1
 ##a[href*=".tdchat.in"]
 ##a[href*=".thejierou.net"]
 ##a[href*=".tholikiranam.com/"]
@@ -2544,6 +2544,7 @@ $websocket,domain=5nj.com|cechi8.com
 .com/sh/*.js$third-party
 .com/sh/to/$script,third-party,xmlhttprequest
 .com/sh/to/$third-party
+.com/sitejs/hansan.js
 .com/stat-qq.html?*&click_url_final=$all
 .com/static/js/ad.js
 .com/style/vue.js?v=
@@ -3913,6 +3914,7 @@ $websocket,domain=5nj.com|cechi8.com
 /xiwang/dfumeiti.js
 /xiwang/fumeiti.js
 /xpgod/*
+/xtub_*_rony.js$third-party
 /xuanfusige.js
 /xxgg/0dd*.js
 /xxgg/app.js
@@ -5911,6 +5913,7 @@ animego.org##div[class^="mb-"][style="min-height: 210px"]
 animego.org##div[style="min-height: 290px"]
 animetvn.tv,eurogamer.de###mobile-ads
 animewld.club##.header-img
+aniporn.com##.header__item
 anjia365.com#@#.adv_bg
 anjian.com,qq.com###advertisement
 anjuke.com###xajk_down_new
@@ -6427,10 +6430,14 @@ baidu.com##.wgt-bottom-ask
 baidu.com##.wgt-bottom-union
 baidu.com##.wgt-union
 baidu.com##.yitiao-box
+baidu.com##DIV#bdrainrwDragButton
+baidu.com##DIV#page-copyright.se-page-copyright.se-copyrig
 baidu.com##DIV#page-copyright.se-page-copyright.se-copyright-zbios[style='margin-bottom: 50px;']
 baidu.com##DIV.barea-ad
+baidu.com##DIV.brand-entry
 baidu.com##DIV.c-result.result[srcid='mkt_ad_space']
 baidu.com##DIV.navs-bottom-bar
+baidu.com##DIV[class='qrcode call']
 baidu.com##DIV[data-module='rec:undefined-undefined']
 baidu.com##DIV[data-module='swan-ad-fc-feed'] DIV[sid][posid][prank]
 baidu.com##[class*='index_godCard'][class*='index_noGuaranteeTag'][class*='index_adTextPosition'],[class^='index_brandEntry__'],[data-show*='swan-ad-fc-swiper-banner']
@@ -6456,6 +6463,7 @@ baidu.com#@##header > div:last-child
 baidu.com#@##page-pre
 baidu.com#@##results > div[class]:not(.result):not(.result-op):not(.sp-rslt-bar)
 baidu.com#@#.share-line
+baidu.com#@#div[class*="ads"]
 baidu.com$$article[rl-link-data-url="mbd.baidu.com"]
 baidu.com$$div[class="ec_wise_ad"]
 baidu.com$$div[class="hotword-container"]com^
@@ -6482,7 +6490,6 @@ baihe.com##div.carousel
 baihei.cc##.a_f,.a_mu,.a_cb,.a_cn,.it618_firstad_flex,td[colspan="5"],.a_pt,.bm.a_c
 baihei.net##.a_h
 baijiahao.baidu.com##.headDeflectorContainer
-baijiahao.baidu.com##DIV#bdrainrwDragButton
 baijiahao.baidu.com##DIV[class='_1T6TbV3IOYsTyKUDLU3h5K']
 baijiahao.baidu.com##DIV[class='_23jxxPi62SsDrI4gDqqvlk onepxT']
 baijiahao.baidu.com##DIV[class='_2zYa3D96DKBK80Jm2RnKgv commonPadding']
@@ -8857,6 +8864,7 @@ e0575.com##.tg2
 e0838.com###float-bot
 e0838.com##.ad-txt + a
 e1.ru##div[data-test="sticky-header"] + div[class]
+e1.ru#?##app > div[class] > div[class]:has(> div[class] > a + div > svg[width="64"][height="12"] > use)
 e10000.cn###imgFloat
 e10000.cn##.navigate_sty + div
 e23.cn##div[id*="adv"]
@@ -10807,6 +10815,7 @@ hmitalk.com##div[data-adid]
 hmoe.one#?#.widget_text > .inn-sidebar__widget:has(> .poi-panel__header > .poi-panel__header__title:contains(赞助商))
 hmoe.one,hmoe.moe##a[href^="https://item.taobao.com"]
 hmoe12.com##.poi-container > div > a[href^="https://www.hmoe12.com/wp-admin/admin-ajax.php?action="][target="_blank"]
+hmoeh.com##+js(set-constant, google_tag_data, {})
 hmqg.net##DIV#bottommob.bottommob
 hmv.co.jp#?#.contentsBlock.fitLR:has(> div.bannerBlock)
 hn.ifeng.com##.couplet,.fixed_ad
@@ -13066,12 +13075,9 @@ m.baidu.com##.c-line-bottom > div.c-row > div[class^="ad-layout-"] + div[class]
 m.baidu.com##.c-touchable-feedback[rl-node][rl-highlight-self][style^="padding-bottom:"]:not([data-module]) > a[href^="https://m.baidu.com/from"][target="_self"][data-log]
 m.baidu.com##.ec_adv
 m.baidu.com##.news_ad
-m.baidu.com##DIV#page-copyright.se-page-copyright.se-copyrig
-m.baidu.com##DIV.brand-entry
 m.baidu.com##a[href*="m.lecai.com"]
 m.baidu.com##div[data-tpl="jr_stock_open_account"] > div.c-result-content
 m.baidu.com#?#.c-list > div.c-list-item:has(> div[class] > p[class] ~ div > span[class^="new-ad-label"])
-m.baidu.com#@#div[class*="ads"]
 m.baidu.com,www.baidu.com###provider,div[class$="fixed"],SECTION#middle_banner,.ec_ad_results,.shopping-item,#bottomOperate
 m.baidu.com,www.baidu.com##ARTICLE[class='c-container aladdin__10uYO']
 m.baidu.com,www.baidu.com##A[class='hint-qnaire-bar']
@@ -19045,7 +19051,6 @@ www.baidu.com###content_left > *:not([id]) *,[class="result c-container new-pmd"
 www.baidu.com###s_top_wrap
 www.baidu.com##body:style(min-width: 1100px !important)
 www.baidu.com##html:has(body>#aging-tools-pc):style(overflow-y: hidden !important)
-www.baidu.com#@#div[class*="ads"]
 www.baidu.com$@$div[class="ad_"]
 www.baidu.com,m.baidu.com##.listbox
 www.baidu.com,m.baidu.com##DIV[class='qrcode call']
@@ -30744,6 +30749,7 @@ zzzyk.com###Tinfo
 ||ipip.net/loveapp/ipip/tools/theme/partner/
 ||ipkruu.xyz^
 ||iplm.cc^
+||iplm.cc^
 ||ipm.atm.youku.com^
 ||ipndulsempjgb.bid^
 ||iporn.world/attachment/ad/
@@ -31529,6 +31535,7 @@ zzzyk.com###Tinfo
 ||jsyefc.com^
 ||jsyunmi.com^
 ||jsyunmy.com^
+||jszavs1.com^
 ||jszctech.com^
 ||jszhonglang.com^
 ||jsztl.com/img/particular/tbyhq.jpg
@@ -33536,6 +33543,7 @@ zzzyk.com###Tinfo
 ||mkd88.cc/16.32.jpg
 ||mkqdj.cn^
 ||mlog.aipai.com^
+||mlstx.cn^
 ||mlsynmlx.fun^
 ||mlt01.com^
 ||mlzgazz.cn^
@@ -34188,6 +34196,7 @@ zzzyk.com###Tinfo
 ||nga.cn/common_res/js_dscommon.js^
 ||ngacn.cc/common_res/js_dscommon.js^
 ||ngacn.cc/proxy/cache_attach/ds_list.js
+||ngbthf.xyz^
 ||nghdp.cn^
 ||ngishc.top^
 ||ngmnhc.xyz^
@@ -35234,6 +35243,7 @@ zzzyk.com###Tinfo
 ||pmp.365dmp.com^$app=com.huawei.hwvplayer.youku
 ||pmthinktank.shop^
 ||pmvlwjy.cn^
+||pmxalz.xyz^
 ||pnesemr.cn^
 ||pnez8.rut6m.xyz^
 ||pniao99.com/statics/js/stat.js
@@ -35918,6 +35928,7 @@ zzzyk.com###Tinfo
 ||qqjia.com/images/ad
 ||qqk19.com/data/content
 ||qqm98.com^
+||qqnde.xyz^
 ||qqnggnsy.fun^
 ||qqppz.com^
 ||qqq123987.site^
@@ -35947,6 +35958,7 @@ zzzyk.com###Tinfo
 ||qs9jfd.xyz^
 ||qsanciy.top^
 ||qscvli.com^
+||qselic.top^
 ||qsezjy.cn^
 ||qsj8fd.com^
 ||qsj8fd.com^
@@ -36139,6 +36151,7 @@ zzzyk.com###Tinfo
 ||rc7e.top^
 ||rc7e.top^
 ||rcpuierp.cn^
+||rcqmvmq.cn^
 ||rcqqlwb.cn^
 ||rcsden.top^
 ||rcxysoj.cn^
@@ -38236,6 +38249,7 @@ zzzyk.com###Tinfo
 ||tmochyf.cn^
 ||tmrhoe2.com^
 ||tmuseum.com.cn^
+||tmwbszn.icu^
 ||tmz.vo.llnwd.net^
 ||tnarzc.com^
 ||tnc16-*.byteoversea.com^
@@ -39440,6 +39454,7 @@ zzzyk.com###Tinfo
 ||wbnhqq.com^
 ||wbqosw.xyz^
 ||wbupbv.com^
+||wcanj.com/2345/
 ||wcaos.com^
 ||wcdc5.com^
 ||wcdc5.com^
@@ -41592,6 +41607,7 @@ zzzyk.com###Tinfo
 ||zfotrq.xyz^
 ||zfteiv.xyz^
 ||zfteiv.xyz^
+||zfticz.buzz^
 ||zg.mmyuer.com^
 ||zg40c.cn^
 ||zgc66.com^$third-party
