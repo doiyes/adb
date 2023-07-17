@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: AHhU2w0x7vy4xb1BBioGXg
+! Checksum: FpptIfLPRcjePy9ZuSaJ0Q
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202307162215
+! Version(Last Modified): 202307172217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -423,6 +423,7 @@
 ##.adpc > .module
 ##.adpc > .promote-link
 ##.adpc > .promote-link-
+##.adpc > .promote-link_
 ##.ads
 ##.ads > #video_playr_sider
 ##.ads > a > img[src*=".sinaimg."]
@@ -2449,7 +2450,6 @@ $websocket,domain=5nj.com|cechi8.com
 .cc/ad/
 .cc/js/ads/
 .cc/o.js$third-party
-.cfd/video/index/index/user_login/
 .cilipa*/js/os.js
 .cloud/ads/
 .club/ads/
@@ -2490,6 +2490,7 @@ $websocket,domain=5nj.com|cechi8.com
 .com/adv1/?q=
 .com/c.gif?
 .com/c.php?s=*=*=$third-party
+.com/candy*.js$third-party
 .com/code.php?a=index&z=$script,third-party,xmlhttprequest
 .com/core/js/the_pf.js
 .com/cpc/*.ashx?$script,third-party
@@ -2616,6 +2617,7 @@ $websocket,domain=5nj.com|cechi8.com
 .info/js/alls_top.js
 .info/topjs/
 .io/js/ads/
+.js?*&ssid=$third-party
 .js?advertID=
 .js?ssid=_$script,third-party
 .k618.cn/sytab/
@@ -2643,9 +2645,9 @@ $websocket,domain=5nj.com|cechi8.com
 .men/ads/
 .mp4?*sdtfrom=&$domain=m.v.qq.com
 .net/js/ads/
-.net/v2/stats/10*$third-party
+.net/v2/stats/1*$third-party
 .net/vh1/$script,third-party
-.net/vh1/15*$third-party
+.net/vh1/1*$third-party
 .net/vj1/$script,third-party
 .niusnews.com/upload/banners/
 .nyaa.fun/static/img/*_refesh.
@@ -2699,14 +2701,14 @@ $websocket,domain=5nj.com|cechi8.com
 .xyz/99x/
 .xyz/?channelCode=$csp=script-src
 .xyz/?token=
-.xyz/ack?s=
+.xyz/ack?s=$third-party
 .xyz/ad/
 .xyz/alpine?$third-party
 .xyz/base*.js?$third-party
-.xyz/bid?url=*
+.xyz/bid?url=*$third-party
 .xyz/foundation?$third-party
 .xyz/gatsby?$third-party
-.xyz/gif
+.xyz/gif$third-party
 .xyz/hm.html?s=
 .xyz/hm.js?$third-party
 .xyz/jque*.js?$third-party
@@ -2866,7 +2868,6 @@ $websocket,domain=5nj.com|cechi8.com
 /acmsd/*
 /ad*_mobile_banner.png$domain=nfmovies.com
 /ad-agent^
-/ad/dhgg.js
 /ad/sdkApi/api.php
 /ad2/*?
 /ad2/*js
@@ -3401,7 +3402,6 @@ $websocket,domain=5nj.com|cechi8.com
 /js/gg123/*
 /js/ggtop.js
 /js/guanggao_gg.js
-/js/hhsyw.js
 /js/home/ad/ad.
 /js/htmlk*.js
 /js/index_adfloat.js
@@ -3922,7 +3922,6 @@ $websocket,domain=5nj.com|cechi8.com
 /xxgg/app.js
 /xxgg/book.js
 /xxgg/dj*.js
-/xxgg/e13dj113a.js
 /xxgg/goodad.js
 /xxgg/pf*.js
 /xxgg/pv.js
@@ -5621,8 +5620,8 @@ addic7ed.com##.mcimg
 adgk.sxl.cn##A.logo
 adgk.sxl.cn##DIV.s-mobile-footer-bar
 adguard.com$@$div[class="ad_"]
-adguard.com,adguard.app##.hello_from_adguard_chinese
-adguard.com,adguard.app##.hello_from_adguard_mobile
+adguard.info,adguard.com,adguard.app##.hello_from_adguard_chinese
+adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 admaimai.com##.in16_w01 > div[class*="_ad0"]
 adme.media###infinite-scroll-article + div > div > div.article ~ div:not([id]):not([class])
 adme.media##div[data-test-id="articles-list"] > div:not([data-test-id^="article-list-element-"])
@@ -6136,8 +6135,6 @@ automaton-media.com##.code-block.ai-viewport-3
 autonet.com.tw##[src^="http://www.autonet.com.tw/90/"],[name="ntwad2"]
 autos-yahoo-com.cdn.ampproject.org,yahoo.com##.pencilad
 autos.goo.ne.jp##.cont_ad
-autoweek.com#?#section > div[class*="css-"]:has(> div[id^="gpt-ad"])
-autoweek.com,popularmechanics.com,housebeautiful.com##.standard-article-vertical-ad
 autozeitung.de##body .adAnything.dikr-responsive-ads-mca
 av.movie##.adss-160x600
 av.movie##.pop-up-a
@@ -6805,7 +6802,6 @@ bhf5.xyz##div:nth-child(4) > a
 bi-girl.net##.ad_sp_top_wrapper
 bianchengquan.com
 bibgame.com##.topicContent > font[color="red"]:last-child
-bicycling.com##.standard-article-vertical-ad
 bicycling.com#?#section > div[class]:has(> .ad-container)
 bidcenter.com.cn##.tggg
 biddingx.com
@@ -10263,9 +10259,9 @@ gpcxw.com###AA2
 gpcxw.com###ad_dl
 gpcxw.com###ad_dl2
 gpcxw.com##table[width="960"][height="90"]
-gpfans.com###adverinsertvijf
 gpfans.com###snack_mpu
 gpfans.com##.article div.topbanmobile.mobileshow
+gpfans.com##div[id^="adverinsert"]
 gpfans.com##div[id^="snackban"]
 gpfans.com##div[style^="margin:10px auto 10px auto;"][style$="min-height: 250px;"]
 gpshk.cc##div.wp.a_t,div.a_pt,div.a_pb,.ad,div.bm.a_c,div#diy4.area,div.wp.a_f,DIV#hd + DIV.wp.cl,.a_pr,div#chs_bannerArea,td#drk_ledtd,a[href="http://www.yihua365.com/"]
@@ -11304,6 +11300,7 @@ ijiandao.com##div[class^="banner_h_"]
 ik123.com###aa960a
 ikan6.vip,www.1111modruba.cc##IMG[src$='.gif']
 ikandy.fun##.stui-banner__pic[href="/statics/js/ky-a.html"]
+ikandy1.com##A[href*="/ky-a.html"]
 ikandy2.fun##.marquee_outer, b[onclick]+a
 ikandy2.fun##div:has(>b[onclick])
 ikandy2.fun##img[onclick]:remove()
@@ -14051,6 +14048,7 @@ miaook.com
 miaopai.com##.div1,.v6_btn_banner_class,.footer_banner
 miaopai.com##.footer_banner
 miaopai.com,renren.com##.swiper-container
+miaoshangmanhua.com##.cy_menuright
 miaozhen.com
 microcontrol.cn###body > table[width="758"]
 microsoft.com,visualstudio.com,windows.com###uhfCookieAlert
@@ -17565,6 +17563,9 @@ theav.xyz,69xx.one,theporn.cc##+js(set-constant, is_show, false)
 theav.xyz,69xx.one,theporn.cc#$##alert_windows { display: none !important; }
 theav.xyz,69xx.one,theporn.cc#$#.q-body--prevent-scroll { position: static !important; }
 thebrickfan.com###content > center
+thebrighterside.news#?#div[data-testid="mesh-container-content"] > div.wix-blog-hide-in-print:has(> wix-iframe)
+thebrighterside.news#?#div[id^="viewer-"]:has(line[x2="100%"])
+thebrighterside.news#?#iframe[src*="usrfiles.com/"]:upward(1)
 thec64community.online##.middle-ad-mobile__wrapper
 thecatcity.com##.article-page__ad-block
 thechive.com##.phone-ad
@@ -18887,6 +18888,8 @@ womane.ru###slidebox_container
 womanlife.online##.afc_popup
 womenshealth.de#?#.article__content > div > span.list__header:contains(/^Sponsored$/)
 womenshealth.de#?#body > .list__header:contains(Sponsored Section)
+womenshealthmag.com,autoweek.com#?#section > div[class*="css-"]:has(> div[id^="gpt-ad"])
+womenshealthmag.com,bicycling.com,autoweek.com,popularmechanics.com,housebeautiful.com##.standard-article-vertical-ad
 wonderzine.com,the-village.com.ua##.banners
 woniupai.net##.wnp-adbox
 woquge.com###adt1
@@ -20853,6 +20856,7 @@ zzzyk.com###Tinfo
 ||136.0.56.196^
 ||1368999.com^
 ||137.175.69.92^
+||1379a.xyz^
 ||1381a.xyz^
 ||1383a.xyz^
 ||1385a.xyz^
@@ -21969,6 +21973,7 @@ zzzyk.com###Tinfo
 ||61saat.com/_themes/hs-rush-php/mobil/scripts/modal.js
 ||620uu.com/images/$image
 ||62422.cn/ggimg/
+||627txt.com/da/*js
 ||628536nyv.com^
 ||62kjjhg.com^
 ||62mao.com/52
@@ -22759,6 +22764,7 @@ zzzyk.com###Tinfo
 ||a666.one^
 ||a78wt.top^
 ||a7shun.com^
+||a8age.com^
 ||a907907.com^
 ||a962m.xyz^
 ||a9v8.cn^
@@ -24327,7 +24333,6 @@ zzzyk.com###Tinfo
 ||autoimg.cn/club/v1Content/images/heycar
 ||autoimg.cn/club/v1Content/images/heycar1111.jpg
 ||autoimg.cn/club/v1Content/images/young
-||autoimg.cn/engine/root/fggxl.js
 ||autonet.com.tw/90/
 ||autopiano.cn/data/jd_
 ||auuux.com^
@@ -24598,6 +24603,7 @@ zzzyk.com###Tinfo
 ||baishuku.com/news/$script
 ||baitaiad.com^
 ||baitaiad.com^$third-party
+||baitaiz.com^
 ||baiten.cn/images/weInternation/
 ||baitu1llbkotsfthllcjeg.com^
 ||baitugu.com^$third-party
@@ -24691,6 +24697,7 @@ zzzyk.com###Tinfo
 ||bbads.vip^
 ||bbazhaheiv.top^
 ||bbbazlp.cn^
+||bbges.xyz^
 ||bbhktv.xyz^
 ||bbk5921.yncjsc.cn^$third-party
 ||bbnnnb.com^*.js
@@ -28012,6 +28019,7 @@ zzzyk.com###Tinfo
 ||erwgj.xyz^
 ||es3984.review/02_cn_ad/
 ||esanciw.top^
+||esgher.fun^
 ||esgher.site^
 ||esiws.com^
 ||esjzj.cyou^
@@ -28496,6 +28504,7 @@ zzzyk.com###Tinfo
 ||friendshipmale.com^
 ||frodo.douban.com/api/v2/erebor/feed_ad?
 ||frontendjs.com/api/ad
+||frontman.tmobiapi.com^
 ||fronttoad.com^
 ||frpns.com^
 ||frpns.com^
@@ -29674,6 +29683,7 @@ zzzyk.com###Tinfo
 ||hfqdipw.cn^
 ||hfrxs.com/js/hf$script
 ||hg5858.net^
+||hgf8hck.com^
 ||hgiafe.site^
 ||hgibbei.cyou^
 ||hgjxp.cn^
@@ -29826,6 +29836,7 @@ zzzyk.com###Tinfo
 ||hnzls8.cn^
 ||hnzzff.club^
 ||ho3ia.cn^
+||hohmaryt.com^
 ||hohpdld.cn^
 ||hoiea.xyz^
 ||hoiplay.com/tm_popup.html$popup
@@ -33474,6 +33485,7 @@ zzzyk.com###Tinfo
 ||miduoke.net^$third-party
 ||mifeng.buzz^
 ||mifengtd.cn/ad-
+||mifyeldx.top^
 ||miguvideo.com/ad^
 ||miguyu.com/AD/
 ||mihouse.pw^
@@ -33533,6 +33545,7 @@ zzzyk.com###Tinfo
 ||mir300.com/88a/
 ||misadw1.cn^
 ||misafnix.space^
+||misapopait.com^
 ||misc.pandora.xiaomi.com^
 ||mishop.cdn.pandora.xiaomi.com^
 ||mishop.pandora.xiaomi.com^
@@ -34280,6 +34293,7 @@ zzzyk.com###Tinfo
 ||njcengpianwang.cn^
 ||njcyt.com^
 ||njdaily.cn/templates/njdaily2014/widget/njdaily-slideAds
+||njogejt.icu^
 ||njqyjlyh.com^
 ||njs.manhuahome.com^$third-party
 ||njslx.cn^
@@ -39128,6 +39142,7 @@ zzzyk.com###Tinfo
 ||venulaevavs.com^
 ||vercel.app/ads/
 ||veronicamagazine.nl/srv/*/banner
+||verysadfun.com/assets/publish/jquery.*.js
 ||veta.naver.com^
 ||veugcz8.com^
 ||vewdk.cyou^
@@ -39256,6 +39271,7 @@ zzzyk.com###Tinfo
 ||vnet.cn^*.html
 ||vnet.cn^*.html?$popup,third-party
 ||vnfjsus.xyz^
+||vnfsbl.xyz^
 ||vnlqcod.cn^
 ||vnq3.top^
 ||vns86.oss-*.aliyuncs.com^
@@ -40616,6 +40632,7 @@ zzzyk.com###Tinfo
 ||xp3366.com^
 ||xp85.com/common/js/allpage.js
 ||xpcha.com/js/notice.js
+||xpcwrgy.cn^
 ||xpdjsd.cn^
 ||xpj08.oss-cn-beijing.aliyuncs.com^
 ||xpqy.xyz^
@@ -40653,6 +40670,7 @@ zzzyk.com###Tinfo
 ||xswape.top^
 ||xsxmvb.xyz^
 ||xt918.com^
+||xtbzff.xyz^
 ||xtcake.com^$third-party
 ||xtgreat.com^
 ||xthrdyi.cn^
@@ -41605,6 +41623,7 @@ zzzyk.com###Tinfo
 ||zevbzn.xyz^
 ||zewfbw.buzz^
 ||zewfbw.xyz^
+||zexfzson.icu^
 ||zfcdirf.icu^
 ||zfcumb.xyz^
 ||zfehvv.buzz^
@@ -41782,6 +41801,7 @@ zzzyk.com###Tinfo
 ||zichenit.com^$third-party
 ||ziedwr.com^
 ||ziffdavis.com^
+||zifyeldq.top^
 ||zihuiguochao.top^
 ||zikao365.com/upload/js/pfgg/
 ||ziling.ink^
@@ -42463,6 +42483,7 @@ zzzyk.com###Tinfo
 18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="20%"] > a[target="_blank"]
 18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="25%"]
 18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="33%"]
+18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="50%"]
 18board.com,18board.net,18p2p.com,18p2p.tv##a[target="_blank"] > img[width="320"]
 18board.com,18board.net,18p2p.com,18p2p.tv##a[target="_blank"] > img[width="330"]
 18board.com,18board.net,18p2p.com,18p2p.tv##a[target="_blank"] > img[width="900"]

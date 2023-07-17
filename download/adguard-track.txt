@@ -1,4 +1,5 @@
 ! AdGuard-跟踪保护规则
+security.oneplus.com##+js(set-constant, _dx, {})
 platform.autods.com##+js(set-constant, _conv_q, {})
 platform.autods.com##+js(set-constant, _conv_q.push, noopFunc)
 fandom.com##+js(set-constant, optimizely, {})
@@ -119,8 +120,6 @@ blogterest.net#?#.blockSide > div.blockWrapper > div > div.ninja-recommend-block
 nukeruerodouga.com#?##main-right > div.right_area > div.ninja-recommend-block:upward(2)
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> div[ub-in-page])
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> script:contains(window.usabilla))
-hdreactor.club,hdreactor.tv,hdreactor.net#?#.sidebar > div.menu-wrap > div.menu-head:contains(Счетчики)
-hdreactor.club,hdreactor.tv,hdreactor.net#?#.sidebar > div.menu-wrap > div.menu-head:contains(Счетчики) + div.menu-head1
 aatyu.livedoor.blog#?#.article > div.plugin-memo:has(> div.side > div.ninja-recommend-block)
 cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward(1)
 livedoor.biz,ldblog.jp#?#.plugin-memo > div.side > a[href$="ziyu.net/"]:upward(2)
@@ -2753,7 +2752,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||linkconnector.com^$third-party
 ||linkpulse.com^$third-party
 ||linkxchanger.com^$third-party
-||listrakbi.com^$third-party
+||s1.listrakbi.com^$third-party
 ||listtop.ru^$third-party
 ||livecount.fr^$third-party
 ||livecounter.dk^$third-party
@@ -3920,6 +3919,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||visilabs.net^$third-party
 .ay.delivery^
 ||functionalclam.com^$third-party
+||childlikeexample.com^$third-party
 ||adamantsnail.com^$third-party
 ||healflowers.com^$third-party
 ||blushingbread.com^$third-party
@@ -5103,6 +5103,7 @@ nethunt.com/api/v1/track/email/$image
 ||tags.news.com.au^$~script
 ||telemetry.mozilla.org^
 |piwik.
+||s.deepl.com^
 ||analytics.tedium.co^
 ||tracking.gnavi.co.jp^
 ||logcollector.note.com^
@@ -60067,6 +60068,9 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||googletagmanager.com/gtag/js$domain=bihann.com|nehannn.com
+@@||googletagservices.com/tag/js/gpt.js$domain=bihann.com|nehannn.com
+@@||googletagmanager.com/gtag/js$domain=oko.sh
 @@||googletagmanager.com/gtm.js$domain=tv-asahi.co.jp
 @@||sp0.baidu.com/*/finance.pae.baidu.com/vapi/async$domain=baidu.com
 @@||treasuredata.com^$script,domain=skincare-univ.com
@@ -61581,7 +61585,6 @@ demae-can.com##+js(remove-attr, data-trm-action|data-trm-category|data-trm-label
 @@||atdmt.com^*/direct*01$domain=sprint.com
 @@||ec.atdmt.com/b/$domain=starwoodhotels.com
 @@||switch.atdmt.com/iaction/$subdocument,domain=bestbuy.com
-@@||view.atdmt.com^$domain=starwoodhotels.com
 @@||google-analytics.com/analytics.js$domain=enter.ru
 @@||highscreen.ru/bitrix/templates/highscreen/js/counters.js
 @@||mc.yandex.ru^$domain=planeta.ru
