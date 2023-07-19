@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: jvDLIbtMWtO9EuzONYvDlA
+! Checksum: gErSH6cf3IDFU+0BjeZhFQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202307182216
+! Version(Last Modified): 202307192215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -742,6 +742,7 @@
 ##.spon-img[src*=".alicdn."]
 ##.spot_nav_under_ad
 ##.ssr1
+##.standard-article-vertical-ad
 ##.static-a2d
 ##.stui-vodlist__thumb.lazyload[href^="http"][target="_blank"]
 ##.stui-vodlist__thumb.lazyload[href^="http"][target="_blank"] + .stui-vodlist__detail
@@ -1555,6 +1556,7 @@
 ##div[onclick*=".lyty49.com"]
 ##div[onclick*=".open"][onclick*="leyu"]
 ##div[onclick*=".rwnyou.com"]
+##div[onclick*="/ky"][onclick*="open"]
 ##div[onclick*="/ky0777.cn"]
 ##div[onclick*="?i_code="]
 ##div[onclick*="bdtz5.com"]
@@ -2692,7 +2694,7 @@ $websocket,domain=5nj.com|cechi8.com
 .work/ads/
 .xhtmm?$domain=wap.dulaidw.com|m.hebao9.com
 .xn--fiqs8s:7385/
-.xyz$domain=btsj6.com|yinghuavideo.com|dm99.me
+.xyz$domain=btsj6.com|dm99.me
 .xyz/*.sdk?$script,third-party
 .xyz/*0*0*==$third-party
 .xyz/*=$object,third-party
@@ -8271,6 +8273,7 @@ daydayin.com##body > div[class^="spu-"]
 dayoo.com###ad-xl
 dayoo.com##div.ad-area,ins.adsbygoogle,div[id^="c_ad_"],div[class^="gg-"],iframe[src^="http://news.dayoo.com/test/"],div[id^="adpb_lmr"],div.dayooAd,div#diy1.area,div.layoutAd,DIV#adVideoiShow,DIV[id^="adpb_hf"],.dy-side-ad,[class^="dy-ad-"]
 daysou.com##.pageadarea,.adsbygoogle,#footcnt,.adarea
+dbltap.com#?#main > figure > div[class^="style_"]:has(> div[id^="mm-player-placeholder-"])
 dbs724.com
 dbw.cn##.Jutop,.Jushang,[src^="http://tg.7477.com/adiframe/"],[style*="width:640px;height:345px;"],[class^="ad"],[style^=" width:630px; height:160px;"]
 dcard.tw##div[class^="PostPageContainer__AdContainer-"]
@@ -9048,6 +9051,7 @@ emome.net##.source_advertising
 empflix.com##[id^="player_top_"]
 emu999.net###brand
 emuch.net/bbs/##.adclass,TABLE.adtable:first-child,div[style="padding:10px 0;"]
+emulsive.org#$#body { padding-bottom: 0 !important; }
 emumax.com##.tbanner
 en8848.com.cn##.adtexts
 en8848.com.cn##.list_adv
@@ -10572,6 +10576,7 @@ haoxxoo.com##.nrad1
 haoxxoo.com##.nrad2
 happymh.com##[src="https://c.nationaltcm.com/ad/tm1111dd.png"]
 happytogether2015.com##img[src^="http://p5.urrpic.com/2015/upload/image/"],img[width="760"][height="75"]
+harpersbazaar.com,countryliving.com,womenshealthmag.com,autoweek.com#?#section > div[class*="css-"]:has(> div[id^="gpt-ad"])
 hateblo.jp,hatenablog.*,hatenadiary.*##.variable-rectangle-ad
 haus.de##a[href*="?utm_campaign"][target="_blank"]
 haveagood.holiday##.layout__aside--advertisement
@@ -10736,6 +10741,8 @@ hi-tech.mail.ru##.mailru-visibility-check-counter+center > a[href^="https://r.ma
 hi-tech.mail.ru##.wrapper_inner > aside[data-module="SlotModel"] > div[data-module="MyWidgetModel"] > div.block > a[href^="https://t.mail.ru/redir/"]
 hi-tech.mail.ru##a[data-counter-type="rbmail"]
 hi-tech.mail.ru##aside[data-adq-id]
+hi-tech.mail.ru##div[data-logger-parent="top"] > div[data-rb-slot]::before
+hi-tech.mail.ru##div[data-logger-parent="top"] > div[data-rb-slot]:empty
 hi-tech.mail.ru##div[id^="trg-fs-wrapper"]
 hiapk.com##.header{height: 100px;}
 hiapk.com##DIV.g2_m.clearfix.mt10,DIV.g2.mb10.clearfix,DIV[id^="zone_"][class^="g2"],div#zoneid301.g2_m,DIV#ad_zone_headerbanner,DIV#tag_1_7.w971,DIV[id^="zoneid"][class^="g2_"],[src="/images/client_download.png"],[src*=".image.hiapk.com/uploads/AD/"],[class^="g2 m"],.rem_apk
@@ -17579,7 +17586,7 @@ thehindu.com##.flooting-ad
 thehindubusinessline.com##.footer-mobile-ad
 theinventory.com##.js_mobile-horizontal-ad
 theinventory.com##main > div > script[type="application/ld+json"] ~ div[class*="-1 "][class*="-0 "]
-themanual.com##.dtads-mobile
+themanual.com##body .dtads-mobile
 themercury.com.au##.widget-area-main-content > .tgc-footer-fixed
 thenewslens.com##.ad-btm
 thenewslens.com##body > div#bottombar
@@ -18891,8 +18898,6 @@ womane.ru###slidebox_container
 womanlife.online##.afc_popup
 womenshealth.de#?#.article__content > div > span.list__header:contains(/^Sponsored$/)
 womenshealth.de#?#body > .list__header:contains(Sponsored Section)
-womenshealthmag.com,autoweek.com#?#section > div[class*="css-"]:has(> div[id^="gpt-ad"])
-womenshealthmag.com,bicycling.com,autoweek.com,popularmechanics.com,housebeautiful.com##.standard-article-vertical-ad
 wonderzine.com,the-village.com.ua##.banners
 woniupai.net##.wnp-adbox
 woquge.com###adt1
@@ -20001,6 +20006,8 @@ yule.iqiyi.com##div[style="width:180px;padding:25px 0 20px 20px;float:right;marg
 yun.cn##div[class*="ad-block"]
 yunduanxin.xyz###adb-mask
 yunpan.cn###clientDl
+yunpan.com#@#.share-new
+yunpan.com#@#.share-wrapper
 yunvs.com##img[height="270"]
 yutu.cn###botfocus-res
 yuyouge.com##.gad2,.adsbygoogle
@@ -25368,6 +25375,7 @@ zzzyk.com###Tinfo
 ||btsow.mom/app/jav$image
 ||btspread.com/app/bts/View/js/base.js
 ||btspread.com/script/$script
+||btsvad8.com^
 ||bttazsyk.icu^
 ||bttt.la/static/*960.js|$script
 ||btwuji.com/jsj1/
@@ -27008,6 +27016,7 @@ zzzyk.com###Tinfo
 ||ddrk.me/vjs-plugins/videojs.das.min.js
 ||ddshu.net/a_d_code/
 ||ddtx.fun^
+||ddush.xyz^
 ||dduu.buzz^
 ||ddwt.am^
 ||ddxolb.xyz^
@@ -27126,6 +27135,7 @@ zzzyk.com###Tinfo
 ||dherea.site^
 ||dhgdp.cn^
 ||dhgxl8qk9zgzr.cloudfront.net/js/log.js
+||dhjrvj.xyz^
 ||dhkipdsc.xyz^
 ||dhkipdsc.xyz^
 ||dhl.135320.com^
@@ -27989,6 +27999,7 @@ zzzyk.com###Tinfo
 ||epinv.com/wp-content/themes/ep/tu/
 ||epmf4.cn^
 ||epochtimes^
+||epoid.xyz^
 ||epom.com^
 ||epoun.top^
 ||eprice.com.tw/img/tw_m/ad/
@@ -28340,6 +28351,7 @@ zzzyk.com###Tinfo
 ||fhddnh.xyz^
 ||fhfgg.com^
 ||fhfgg.com^
+||fhglcpf.icu^
 ||fhhvdzr.cn^
 ||fhiiyi.cn^
 ||fhitagd.cn^
@@ -29785,6 +29797,7 @@ zzzyk.com###Tinfo
 ||hkgolden.com/reqwads?s=
 ||hkitblog.com^*-banner
 ||hkk456.cc^
+||hkkeafj.cn^
 ||hkmte.com/seo.js
 ||hktvmall.com/api/preroll/getList?
 ||hladalliance.com^
@@ -31621,6 +31634,7 @@ zzzyk.com###Tinfo
 ||just4kira.cn^
 ||justad.mobi^
 ||justasimple.top^
+||jutwzssh.icu^
 ||juuhe.com^
 ||juvtpeb.cn^
 ||juweixin.com/static/spk
@@ -34260,6 +34274,7 @@ zzzyk.com###Tinfo
 ||nickhel.com^
 ||nieae.xyz^
 ||niebiaoyyds.com^
+||nifyeldc.top^
 ||nihaovcd.com/js/neirong
 ||nihuwo.asia^
 ||niik9494.top^
@@ -34335,6 +34350,7 @@ zzzyk.com###Tinfo
 ||nmrdnqn.cn^
 ||nmtibv.xyz^
 ||nmwbank.cn^
+||nnfyxd.xyz^
 ||nnocsin.cn^
 ||nntsdp.xyz^
 ||nnwm.com^
@@ -40347,6 +40363,7 @@ zzzyk.com###Tinfo
 ||xdytt.com/b_*.js
 ||xe2c.com^
 ||xecner.top^
+||xeghes.fun^
 ||xegneils.com^
 ||xeiatmf.cn^
 ||xeiyt.cyou^
