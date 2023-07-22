@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: fZjzhlqC7zCVsbAUJaboXQ
+! Checksum: rW+j7f/8SGsyWa6O+pj+oQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202307212214
+! Version(Last Modified): 202307222213
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -387,6 +387,7 @@
 ##.ad-below-header-menu
 ##.ad-below-post-title
 ##.ad-below-related-post
+##.ad-block-cn
 ##.ad-couplet-common
 ##.ad-left-down
 ##.ad-right-down
@@ -672,6 +673,7 @@
 ##.mod + #bottomBox
 ##.module-adslist
 ##.module-adslists
+##.module-ttlist.tt_w-2
 ##.my-cat.my-cat-header
 ##.mylist + #topthree
 ##.mylist > a > img[width^="9"][height="80"]
@@ -702,6 +704,7 @@
 ##.player-rm > a[href*="/ad.html?url="]
 ##.player-rm > a[target="_blank"]
 ##.player-rm-float
+##.player-tt-rm.rm-list
 ##.player_ggw
 ##.player_pic_link > [src*='/player.gif']
 ##.playtop.col-pd
@@ -2558,6 +2561,7 @@ $websocket,domain=5nj.com|cechi8.com
 .com/uploads/*-860x250.gif
 .com/vh1/$script,third-party
 .com/vh2/$script,third-party
+.com/vh5/$script,third-party
 .com/vj1/$script,third-party
 .com/vj2/$script,third-party
 .com/vodad.js
@@ -5193,6 +5197,7 @@ $websocket,domain=5nj.com|cechi8.com
 @@||r3sub.com^$generichide
 @@||readmoo.com/images/social/
 @@||redguide.top^*/ad.css?$stylesheet
+@@||redian.news^$generichide
 @@||regapi.37.com/api/p_register.php?login_account=
 @@||renfei.net^$generichide
 @@||report-ads-to.pubnation.com/dist/pnr.js?t=$domain=m.neogaf.com
@@ -5310,6 +5315,7 @@ $websocket,domain=5nj.com|cechi8.com
 @@||studioclassroom.com/ad/
 @@||sudupan.com^*/*.gif
 @@||suning.cn/project/msIndex/js/??
+@@||supercloudsms.com/static/js/taboola_ads.js
 @@||swjoy.com^
 @@||swsc.com.cn/download/ad_images/
 @@||sxjbjt.com^*/ad
@@ -7476,6 +7482,8 @@ chiasenhac.vn##[width="800"][height="500"]
 chichi-pui.com#?#.is-hidden-tablet > div.is-mobile > div.column:has(> div.is-hidden-tablet):not(:has(> a))
 chiemgau24.de#?#div[data-id-module="col-width-watcher"] > div.id-Container--hasHeadline:has(> h3 > span:contains(Auch interessant))
 chiemgau24.de#?#div[data-id-module="col-width-watcher"] > div.id-Container--hasNoHeadline:matches-css-before(content:*- Reklame)
+chijoshikakatan.blogterest.net##adroute
+chijoshikakatan.blogterest.net##random_link
 chil-chil.net##.c-banner_w640_sp
 china.cn###pic_banner
 china.cn##.bottom_recommend_box
@@ -10582,6 +10590,7 @@ haoxxoo.com##.nrad2
 happymh.com##[src="https://c.nationaltcm.com/ad/tm1111dd.png"]
 happytogether2015.com##img[src^="http://p5.urrpic.com/2015/upload/image/"],img[width="760"][height="75"]
 hateblo.jp,hatenablog.*,hatenadiary.*##.variable-rectangle-ad
+hatimitukarupisu.blogterest.net##.clickclick
 haus.de##a[href*="?utm_campaign"][target="_blank"]
 haveagood.holiday##.layout__aside--advertisement
 haxiu.com##.feedcomm,#pagelet-ad_taobao
@@ -11808,6 +11817,7 @@ iyf.tv##.video-player > app-gg-block.ng-star-inserted[style]
 iyf.tv##vg-pause-ads
 iyf.tv##vg-player.ng-star-inserted > vg-pause-ads + div.caption.show > .inner
 iyf.tv#$#.player-side > .block { visibility: hidden !important; min-height: 390px !important; }
+iyf.tv,macwelt.de,pcwelt.de,xataka.com.mx,shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,rakuraku-info.jp,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,syosetu.org##.ad
 iyin.net##[id^="ad"]
 iyouman.com##.w300
 izhufu.net##.index_tong,.news_cnxhz,[class$="_gg"],.aside_img1,.top_banner,.index_banner,.izfyxf
@@ -13735,7 +13745,6 @@ macdaxue.com##.content > div.asb
 macfans.org###portal_block_180
 machbbs.com
 maclife.de#$#body.mobile.ads .mobilesticky { min-height: 0px !important; height: 50px !important; top: 0px !important; margin-top: 0px !important; }
-macwelt.de,pcwelt.de,xataka.com.mx,shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,rakuraku-info.jp,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,syosetu.org##.ad
 macwk.com#@#.adBanner
 macwk.com,poedb.tw#@#.adBanner
 macx.cn##ins.adsbygoogle,div#diynavtop.area
@@ -14438,7 +14447,6 @@ mumsnet.com##div[class^="my-"][aria-hidden]
 mumsnet.com##div[id^="div_m_talk"]
 mumu.163.com##.pic-con
 mundokodi.com##.clAdPlacementAnchorWrapper
-mundokodi.com##div[id^="lx_"]
 mundoxiaomi.com#$#.m-sponsor-masthead { padding-top: 0 !important; }
 muratordom.pl###m_zpr_box_art_lead
 muratordom.pl##.m_zpr_box_top1
@@ -14695,6 +14703,8 @@ news.denfaminicogamer.jp##.ad-smp
 news.denfaminicogamer.jp##.inst_overlap_cover
 news.denfaminicogamer.jp#?#.articleList > li > div.amazon-ranking:upward(1)
 news.dwango.jp##.overlay-footer_ad
+news.ebc.net.tw###marquee-box
+news.ebc.net.tw##.fncnews-content > div.raw-style > div > p > a[href]
 news.ebc.net.tw##a[href^="http://www.ebcbuzz.com/url/"]
 news.gamebase.com.tw##.MobileNewsArticleMiddleDownAds
 news.gamebase.com.tw##.PCAD
@@ -16205,6 +16215,9 @@ reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.Pos
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.PostsList > span > article:has(> .adLinkBar)
 redhdtube.xxx##.b_frame
 redhdtube.xxx##.kelsey_top
+redian.news##._ap_apex_ad[style^="width: 300px"]
+redian.news##.bottom-0.fixed
+redian.news##.md\:w-\[728px\].mx-auto
 redircdn.com##.al
 rednet.cn##div#topbanner,object#FlashId_ad1
 redocn.com###yc_adv_1_2
@@ -17305,6 +17318,9 @@ suopao.org##.t5[style^="margin-top:8px;"]
 suopao.org##.tr3.t_one[onmouseout]
 superlife.ca##.sidebar-ad-zone
 superlife.ca##[class*="ad"]
+superluchas.com###AbovePostPlacementWrapper
+superluchas.com##.custom-html
+superluchas.com,mundokodi.com##div[id^="lx_"]
 supermarktcheck.de##.product-details > section:not([class]):not([id])
 superomsk.ru#$##backgroundform { display: none!important; }
 superomsk.ru#$##openwindow { display: none!important; }
@@ -20852,6 +20868,7 @@ zzzyk.com###Tinfo
 ||126.net/silver/
 ||126.net^$script,redirect=noop.js,domain=rjno1.com
 ||126.net^*analysis
+||1267a.xyz^
 ||127.net/2018/08/15/71ee02b5b61c4090b3ce0116306596c2.jpeg
 ||127.net/external/js6promote
 ||127.net/external/js6public126_
@@ -25181,6 +25198,7 @@ zzzyk.com###Tinfo
 ||blogamethu.com^
 ||bloggerads.net^
 ||blogspot.com^*/s1600/drug.gif
+||blogterest.net/regular/?i=$subdocument
 ||blsenpg.cn^
 ||blsynmlv.fun^
 ||blue-rain.com.cn^
@@ -25210,6 +25228,7 @@ zzzyk.com###Tinfo
 ||bnextmedia.com.tw/feed/fetch.js
 ||bnextmedia.s3.hicloud.net.tw/dp_cp/cp_prebid
 ||bnextmedia.s3.hicloud.net.tw/dp_cp/mt_programmatic_ad.js
+||bnfyzszm.icu^
 ||bngpt.com^
 ||bnhxxj.xyz^
 ||bnhxxj.xyz^
@@ -25314,6 +25333,7 @@ zzzyk.com###Tinfo
 ||brfgbn.xyz^
 ||brfvyrrp.com^
 ||bridalplums.com^
+||bridgetnbe.com^
 ||brkxgfs.cn^
 ||brkzczn.cn^
 ||brokerbabe.com^$third-party
@@ -25530,6 +25550,7 @@ zzzyk.com###Tinfo
 ||c3.myapkcdn.in^
 ||c4d.cn/api.php?mod=ad&adid=
 ||c4d.cn/template/iscwo_zcool/iscwo/ad/
+||c4d4.cn^
 ||c6.friok.com^
 ||c6890.cn^$third-party
 ||c8.net.ua^
@@ -29047,6 +29068,7 @@ zzzyk.com###Tinfo
 ||godie.cyou^
 ||godloveme.cn^
 ||godlu.com^
+||godni.xyz^
 ||goeyxwhp.site^
 ||gog.cn/sys/online_calc.js
 ||gogfhq.xyz^
@@ -29585,6 +29607,7 @@ zzzyk.com###Tinfo
 ||hdbaichuan.cn^
 ||hdc.maxli.cn^
 ||hdchina.*/styles/topshow/AD/
+||hdfdsdaw.com^
 ||hdgzta.com^
 ||hdherpc.cn^
 ||hdminfeng.com^
@@ -29950,6 +29973,7 @@ zzzyk.com###Tinfo
 ||hqcx.net/index.php?m=poster&
 ||hqdfh.mobi^
 ||hqdoor.com/Web/
+||hqgearb.icu^
 ||hqgjcm.com^
 ||hqnpwzu.cn^
 ||hqol.cn/up/ad/
@@ -30148,6 +30172,7 @@ zzzyk.com###Tinfo
 ||hybird.rayjump.com^
 ||hybrid.ai^
 ||hydra.alibaba.com^
+||hyeqp.xyz^
 ||hyfumxc.cn^
 ||hyhfimgg.com^
 ||hyidlu.com^
@@ -31358,6 +31383,7 @@ zzzyk.com###Tinfo
 ||jkasn.com^
 ||jke1.jianke.com^
 ||jkk7777.xyz^
+||jklhs7u.com^
 ||jknmsdpo.xyz^
 ||jknrwe.cn^
 ||jku62.com/news/banner
@@ -32400,6 +32426,7 @@ zzzyk.com###Tinfo
 ||leetcode.com/static/cn.js^
 ||leeyuo.com^
 ||lefengtv.com/js/tj.js
+||legdeh.fun^
 ||legou361.com^
 ||legozu.com^$third-party
 ||leiersuqd.com^
@@ -32933,6 +32960,7 @@ zzzyk.com###Tinfo
 ||ly6080.com.cn/gg/
 ||lycc72.com/resources/js/content.js
 ||lychangxu.cn^$third-party
+||lycjsix.cn^
 ||lyd.com.cn^*950-90.
 ||lydrnj.xyz^
 ||lyewe.xyz^
@@ -34811,6 +34839,7 @@ zzzyk.com###Tinfo
 ||oss-ap-southeast-1.aliyuncs.com/js/copy.js
 ||oss-cn-shanghai.aliyuncs.com/feimobileA.js
 ||oss.amap.com/ws/banner^
+||ossfile001.com^
 ||osswc.pplive.cn/cccms/$image
 ||otantgi.cn^
 ||otcdn2.auditude.com^
@@ -36131,6 +36160,7 @@ zzzyk.com###Tinfo
 ||qwblog.cn/localfile/20200612230036.gif
 ||qwcqqw.xyz^
 ||qwcwnjk.com^
+||qwdbsjnql.com^
 ||qwe0231141.bj.bcebos.com^
 ||qwe0231141.bj.bcebos.com^
 ||qweasd.vip^
@@ -38323,6 +38353,7 @@ zzzyk.com###Tinfo
 ||tlanyan.pp.ua/wp-content/uploads/meomiao.png
 ||tlcs666.com^
 ||tlhlpcb.xyz^
+||tlprlf.xyz^
 ||tlsgq.cn^
 ||tlsynmli.fun^
 ||tlula507.com/Public/js/dui
@@ -38363,6 +38394,7 @@ zzzyk.com###Tinfo
 ||to8to.com/yezhu/zxbjWidget.
 ||to8to.com^$subdocument,third-party
 ||to8to.com^*_bottom_
+||toastspinner.com^
 ||toblog.snssdk.com^
 ||todayapp.tv^$popup,third-party
 ||todayweather.co/ads.json
@@ -39365,6 +39397,7 @@ zzzyk.com###Tinfo
 ||vreephay.com^
 ||vrffwbf.cn^
 ||vrizead.com^
+||vrlvnz.xyz^
 ||vrmgwvz.cn^
 ||vrrw.net//templets/default/js/ad.js
 ||vs1.exo01.xyz^$image,third-party
@@ -40366,6 +40399,7 @@ zzzyk.com###Tinfo
 ||xchina.xyz/upload/ad^
 ||xcisleoa.cn^
 ||xcjwq.world^
+||xckj0623.com^
 ||xckyqq.com^
 ||xckyqq.com^
 ||xcmno.xyz^
