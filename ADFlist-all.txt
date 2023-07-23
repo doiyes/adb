@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: rW+j7f/8SGsyWa6O+pj+oQ
+! Checksum: ELhDjqzRJMogZ7OZ3ZOYNw
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202307222213
+! Version(Last Modified): 202307232213
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316632262.cos.
@@ -101,6 +101,7 @@
 ###bottom_ads.hl_bottom_ads
 ###bottom_qr_code
 ###bottombanner
+###bottommob.bottommob
 ###breadCrumb + .c + .t[style="margin-top:8px"]
 ###breadCrumb + .t[style="margin-top:8px"]
 ###cat_intro_first_ad
@@ -1447,6 +1448,7 @@
 ##body > div[style="width: 100% !important; margin: 0px !important; padding: 0px !important; display: flex !important; flex-flow: row wrap !important; background: rgb(255, 255, 255) !important; color: transparent !important; font-size: 0px !important; text-indent: -10000px !important; line-height: 0px !important;"]
 ##body > h1 > strong > title > a
 ##body > style + div[id="ics"]
+##body#nr_body a[href*="/?utm_source="]
 ##body#nr_body div.fixed ~ *
 ##body#nr_body font > [id]
 ##body#nr_body.nr_all.c_nr > div > div[id][class] > [href]
@@ -3703,6 +3705,7 @@ $websocket,domain=5nj.com|cechi8.com
 /showpage2.asp?u=$script,third-party
 /sinaLoginReward2014.
 /sinaLoginReward2014_comment.
+/sinaads/release/sinaads.js
 /site/mov*$third-party
 /sitead*
 /sitejs/clys.js
@@ -10994,6 +10997,9 @@ huarenjie.com###cftoutiao
 huarenjie.net##div[style*="top: 50px;"]
 huati365.com
 hubei.gov.cn#@##ad-side
+huffpost.com,huffingtonpost.jp#$#.front-page.nav-sticking .nav__header { transform: unset !important; }
+huffpost.com,huffingtonpost.jp#$#div.ad-leaderboard-flex { display: none !important; }
+huffpost.com,huffingtonpost.jp#@#.ad-leaderboard-flex
 huhumh.com,popomh.com###bottom_ads
 huishenghuiying.com.cn
 huize.com##.hz-bottom-reserve-link
@@ -16702,6 +16708,7 @@ silver.org.cn##div[class^="ads_"]
 simply-hentai.com###rufous-sandbox,.sticked,.facebook-background,[src^="//data.iridiumsergeiprogenitor.info"],div[style*="height:4428px;"]
 simtimes.de###mobile-header-ad
 simuwang.com##div.new_adv_div,div.myadv
+sina.cn###float-btn.callApp_fl_btn
 sina.cn###j_gotop ~ .fl_suspension_template
 sina.cn###j_toTop ~ .fl_suspension_template
 sina.cn###midThreeAds
@@ -16716,12 +16723,14 @@ sina.cn##.p_newsmore
 sina.cn##.sw_c0.fix_top
 sina.cn##.xc_da
 sina.cn##.zhidi
+sina.cn##SECTION.sw_c0.sina_sliders_pos
 sina.cn##[data-href*="://sax"]
 sina.cn##[data-href*="://sax"] + aside
 sina.cn##[data-href*="://sax"] + aside + blockquote
 sina.cn##[data-sudaclick^="one_pic_conf_"],[href^="https://render.m.taobao.com/shop/"],[class="m_f_a show "],[data-info^="ad_none"],[href^="http://saxn.sina.com.cn/dsp/click"]
 sina.cn##[data-videojc*="://sax"]
 sina.cn##[href*="://sax"]
+sina.cn##[sax-type='proxy'][data-pos][data-saxname][loaded='loaded']
 sina.cn##a[href*=".maozhuar.com"]
 sina.cn##div.ad_baner.j_imgdelay,section > div.article_push,div.advertise,[class^="j_sax sina_tj_"],div.pic-wrap.j_article_cutpic,a[id^="jdAdplace"],[id^="_145595"],.sina_tj_banner,[data-id^="PDPS0000000"],.sax_banner_bottom,section[id^="_148751"],[class="extend-module j_hotpic_box"],.tj-list_md,[class^="article article-sax"],[class^="module-ads"],.s_card.z_c3,[data-adid]
 sina.cn##div[data-adid]
@@ -16782,6 +16791,7 @@ sina.com.cn##A[href*="/comfinanceweb."]
 sina.com.cn##A[href="https://touzi.sina.com.cn/"]
 sina.com.cn##DIV[class^="side-btns-jifen"]
 sina.com.cn##[data-info^="ad_"]
+sina.com.cn##[id^="fake_div_"].xxl-card
 sina.com.cn##div.ad-banner,div#ad_top,div.top-ads,div.adNone,div.adSpace,div#divMilBottom,div.zhaoshang-block,span#CoupletMediaWrap,div.bannerF1,div#flashcontent_96FFB521078A,DIV#baidu.article_baidu,DIV#topbar.topAd950,DIV.sa_w.top_ads,div#HP_IDX_BANNER_UN_01,div#AD_Background_Wall_Banner,div.ad_article_top,div.taier_pfp,iframe[src*=".sina.com.cn/iframe/76/"],DIV#blk_xlzttltop_01.blk_xlzt,UL#blk_sxad_2,DIV[class^="ATopTxt"],div.tit01.clearfix,div.palm01-ad,div#SI_EDU_AD,div.part-l.clearfix,span.adNone,div.bsjie_ad,div.wrap.topAD,div.mod_ad,div.clearAd,div#ad_blk_fixed,div#sinaLoginReward2014_w,iframe[src^="http://www.baidu.com/ur/scun?di="],div.article-video,div.article-ad.ad_07,div.sinaad-toolkit-box,div#bgAdWrap,div.gg,div#left_focus_ad,div[class="right-module ad"],div[data-sudaclick="blk_right_gg"],[id^="PublicRelation"],.a-ad,.sinaads,#SI_Comment_DA,[data-ad-pdps],#nav-hover_ad,.ny-link-r
 sina.com.cn##div[class*="farmpop"]
 sina.com.cn##p + .article-video
@@ -21197,6 +21207,7 @@ zzzyk.com###Tinfo
 ||22fssv.com^
 ||22pixx.xyz/l/
 ||23.224.89.2^$third-party
+||23.231.151.252^
 ||23.234.217.11^
 ||23.234.217.12^
 ||23.244.43.212^
@@ -25724,6 +25735,7 @@ zzzyk.com###Tinfo
 ||cdgjxt.com^
 ||cdgtw3.guapaijia.com^
 ||cdkke.xyz^
+||cdmjur.xyz^
 ||cdn-99-pic.cc^
 ||cdn-adn-*.rayjump.com^
 ||cdn-adn.rayjump.com^
@@ -26663,6 +26675,7 @@ zzzyk.com###Tinfo
 ||csi.gstatic.com^
 ||csi.gstatic.com^
 ||csjkb.com^
+||cslbahf.top^
 ||cslpf.cn^
 ||cspb1.5w5w.com^
 ||csqiulong.com^
@@ -27005,6 +27018,7 @@ zzzyk.com###Tinfo
 ||dbmcmhh.cn^
 ||dbmp4.com/js/foot.
 ||dbncp.com^$third-party
+||dbnwlp.xyz^
 ||dbp-resource.cdn.bcebos.com/*/banner*.jpg
 ||dbtojr.xyz^
 ||dbw.cn/eap/js/db/dbwad_
@@ -27062,6 +27076,7 @@ zzzyk.com###Tinfo
 ||dedcrfvdj.xyz^
 ||dedcrfvdj.xyz^
 ||deeterno.cn^
+||dehaer.site^
 ||dehua.ixinfan.com^
 ||dehua.mengtubo.com^
 ||deliver.ifeng.com^
@@ -27152,6 +27167,7 @@ zzzyk.com###Tinfo
 ||dgfggy.com^
 ||dgfqqq.com^
 ||dghehu.com^
+||dghhot.com^
 ||dgozp.com^
 ||dgstatic.jd.com^
 ||dgvkrt.xyz^
@@ -27942,6 +27958,7 @@ zzzyk.com###Tinfo
 ||ejunshi.com^
 ||ejyvgq.xyz^
 ||ekdbfu.cn^
+||ekdky.cn^
 ||ekhnbwe.cn^
 ||ekofelj.xyz^
 ||ekqfkk.xyz^
@@ -29799,6 +29816,7 @@ zzzyk.com###Tinfo
 ||hiphotos.baidu.com/ting/pic/item/
 ||hiqidi.com^
 ||hiqrnyn.cn^
+||hiqua.xyz^
 ||hisnote.cc^$third-party
 ||histats.com^
 ||histats.com^$third-party
@@ -30064,6 +30082,7 @@ zzzyk.com###Tinfo
 ||huaweinnd.top^
 ||huaweinnd.top^
 ||huayange.com^
+||hubiazhi.com^
 ||hubiazhi.com^
 ||hubpd.com/hubpd/images/dingtong
 ||hudiecaifu.com^
@@ -30851,6 +30870,7 @@ zzzyk.com###Tinfo
 ||ipssss.com^
 ||iptv444.com/ad-
 ||ipyud.cn^
+||iqede.xyz^
 ||iqilu.com/getZone.php
 ||iqilu.com/static_files/multiads/
 ||iqilu.com/static_files/richmedia/
@@ -31846,6 +31866,7 @@ zzzyk.com###Tinfo
 ||kapsmnd.cyou^
 ||kart2ks.icu^
 ||kasdwergv.com^
+||kasiklz.cc^
 ||kat.how/popup.js
 ||katelin.top^
 ||kawa11.space^
@@ -32032,6 +32053,7 @@ zzzyk.com###Tinfo
 ||kldtmki.cn^
 ||klfxq.kieedi.foosheng.com^
 ||klgzzs.cn^
+||kljslku.com^
 ||klsnckalualkcn.com^
 ||klsynmld.fun^
 ||kltxw.xyz^
@@ -32220,6 +32242,7 @@ zzzyk.com###Tinfo
 ||kuwoyy.com^
 ||kuxinqi.com^
 ||kuyw.cn^
+||kv8899.com^
 ||kvbgoc.com^
 ||kveff.com^
 ||kvhcc.com^
@@ -34485,6 +34508,7 @@ zzzyk.com###Tinfo
 ||numnxwvv.ink^
 ||nunuyingyuan.tk/serviceworker.js^$script
 ||nunuyy.cf/serviceworker.js^$script
+||nunxhv.com^
 ||nurahf.xyz^
 ||nutaku.net^
 ||nuubi.cyou^
@@ -35097,6 +35121,7 @@ zzzyk.com###Tinfo
 ||pconline.com.cn/js/ivy.js
 ||pconline.com.cn/pconline/download/fz/$image
 ||pcpop.com/pv/pv.js
+||pcqsajr.icu^
 ||pcstore.com.tw/adm/psearch_payad_
 ||pcstore.com.tw/css/myacc_init.js
 ||pcvideogs.titan.mgtv.com/pb/*/*/*/*/.mp4?arange=*&pm=*
@@ -35638,6 +35663,7 @@ zzzyk.com###Tinfo
 ||pyyhkn.com^
 ||pyzjhd.com^
 ||pziad.com^
+||pzjizsyf.icu^
 ||pzkrgcp.cn^
 ||pzlxnd.xyz^
 ||q.baminw.com.cn^
@@ -36400,6 +36426,7 @@ zzzyk.com###Tinfo
 ||richpays.com^
 ||richshredinger.com^
 ||rifyeldz.top^
+||rifyeldz.top^
 ||rigengjihua.cn/banner/
 ||right.com.cn/forum/static/image/common/logo
 ||right.com.cn/forum/static/image/common/logo*.gif
@@ -37158,6 +37185,7 @@ zzzyk.com###Tinfo
 ||simiyue2.com^
 ||simplewebanalysis.com^
 ||sina.cn*/view?
+||sina.cn/cm/sinaads_
 ||sina.cn/cm/sinaads_
 ||sina.cn/interface/*_game_wap_home_mid_list_in.
 ||sina.cn^*/impress?
@@ -38668,6 +38696,7 @@ zzzyk.com###Tinfo
 ||tveta.naver.net^
 ||tvf4.com/1/$script
 ||tvrom.cn^
+||tvrshv.xyz^
 ||tvsou.com/js/360ad.js
 ||tvszazx.icu^
 ||tvxqdp.xyz^
@@ -40735,6 +40764,7 @@ zzzyk.com###Tinfo
 ||xpcha.com/js/notice.js
 ||xpcwrgy.cn^
 ||xpdjsd.cn^
+||xpicj1.cc^
 ||xpj08.oss-cn-beijing.aliyuncs.com^
 ||xpqy.xyz^
 ||xpynqq.com^
@@ -41750,6 +41780,7 @@ zzzyk.com###Tinfo
 ||zfteiv.xyz^
 ||zfteiv.xyz^
 ||zfticz.buzz^
+||zfticz.xyz^
 ||zfvltd.xyz^
 ||zg.mmyuer.com^
 ||zg40c.cn^
