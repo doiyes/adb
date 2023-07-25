@@ -1,4 +1,6 @@
 ! AdGuard-跟踪保护规则
+futura-sciences.com##+js(set-constant, pa, {})
+futura-sciences.com##+js(set-constant, pa.privacy, {})
 northerntool.com##+js(no-xhr-if, configure.rapid.js)
 clickhole.com,lifehacker.com,splinternews.com,avclub.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,qz.com,theinventory.com,theonion.com,theroot.com,thetakeout.com##+js(set-constant, ga, noopFunc)
 lun.com##+js(set-constant, CallAjax, noopFunc)
@@ -161,6 +163,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||track.gaconnector.com^
 ||trafico.prensaiberica.es^
 ||collector-*.px-cloud.net^
 ||ediemidnightzombies.com^
@@ -168,6 +171,8 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||meowlytics.bignutty.xyz^
 ||loggw.alipay.com^
 ||loggw-ex.alipay.com^
+||loggw-exsdk.alipay.com^
+||loggw.alipaydns.com^
 ||loggw.alipay.com.cn^
 ||analytics.gooogol.com^
 ||nol.hubty.network^
@@ -1298,7 +1303,6 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||tr.infopanel.jp^
 ||blok.link^
 ||taxel.jp^$third-party
-||awseukpi.whisbi.com^$third-party
 ||contentsquare.net^$third-party
 ||sys.refocus.ru^$third-party
 ||center.io^$third-party
@@ -2850,7 +2854,6 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||meteorsolutions.com^$third-party
 ||metricsdirect.com^$third-party
 ||metrigo.com^$third-party,domain=~metrigo.de
-||metriweb.be^$third-party
 ||mezzobit.com^$third-party
 ||mialbj6.com^$third-party
 ||micodigo.com^$third-party
@@ -5548,7 +5551,6 @@ nethunt.com/api/v1/track/email/$image
 ||gtm.eduki.com^
 ||6pal.consobaby.com^
 ||a-reporting.nytimes.com^
-||a-stat.appmifile.com^
 ||a.hstrck.com^
 ||a.mobify.com^
 ||a.oix.net^
@@ -5594,11 +5596,8 @@ nethunt.com/api/v1/track/email/$image
 ||ampltd.top.gg^
 ||an.reflektion.com^
 ||analysis.afreecatv.com^
-||analysis.focalprice.com^
 ||analytic.imlive.com^
-||analytic.piri.net^
 ||analytic20.detik.com^
-||analyticapi.piri.net^
 ||analytics-api.smzdm.com^
 ||analytics-ingress-global.bitmovin.com^
 ||analytics-ingress.bitmovin.com^
@@ -5607,14 +5606,11 @@ nethunt.com/api/v1/track/email/$image
 ||analytics-sdk.yle.fi^
 ||analytics-sg.tiktok.com^
 ||analytics-static.ugc.bazaarvoice.com^
-||analytics-udg.netdna-ssl.com^
 ||analytics.74.ru^
-||analytics.247sports.com^
 ||analytics.adfreetime.com^
 ||analytics.adoffice.11st.co.kr^
 ||analytics.appservice.tech^
 ||analytics.archive.org^
-||analytics.artirix.com^
 ||analytics.atlassian.com^
 ||analytics.aweber.com^
 ||analytics.bi.encuentra24.com^
@@ -5625,7 +5621,6 @@ nethunt.com/api/v1/track/email/$image
 ||analytics.callbell.eu^
 ||analytics.carambo.la^
 ||analytics.ceneo.pl^
-||analytics.cervellio.com^
 ||analytics.cinematoday.jp^
 ||analytics.clic2buy.com^
 ||analytics.cn.ru^
@@ -5637,9 +5632,7 @@ nethunt.com/api/v1/track/email/$image
 ||analytics.edgesuite.net^
 ||analytics.electro-com.ru^
 ||analytics.faceitanalytics.com^
-||analytics.fairfax.com.au^
 ||analytics.fontanka.ru^
-||analytics.go.com^
 ||analytics.gorillanation.com^
 ||analytics.hashnode.com^
 ||analytics.histmag.org^
@@ -5657,7 +5650,6 @@ nethunt.com/api/v1/track/email/$image
 ||analytics.move.ru^
 ||analytics.msnbc.msn.com^
 ||analytics.nextopia.net^
-||analytics.omgpop.com/log
 ||analytics.ooyala.com^
 ||analytics.ovh.com^
 ||analytics.plaid.com^
@@ -5672,7 +5664,6 @@ nethunt.com/api/v1/track/email/$image
 ||analytics.sanoma.fi^
 ||analytics.schoolwires.com^
 ||analytics.send.cm^
-||analytics.services.distractify.com^
 ||analytics.sgnapps.com^
 ||analytics.shareaholic.com^
 ||analytics.shop.hisense.com^
@@ -5687,7 +5678,6 @@ nethunt.com/api/v1/track/email/$image
 ||analytics.teespring.com^
 ||analytics.thenest.com^
 ||analytics.thenewslens.com^
-||analytics.thetab.com^
 ||analytics.tio.ch^
 ||analytics.tmonews.com^
 ||analytics.tout.com^
@@ -5697,15 +5687,9 @@ nethunt.com/api/v1/track/email/$image
 ||analytics.us.archive.org^
 ||analytics.vadio.com^
 ||analytics.vedantu.com^
-||analytics.volvocars.com^
-||analytics.vooxe.com^
 ||analytics.webgains.io^
-||analytics.wetpaint.me^
-||analytics.whatculture.com^
 ||analytics.wondershare.cc^
-||analytics.xyscdn.com^
 ||analytics.yahoo.com^
-||analytics.zeekit.co^
 ||analytics*.carambo.la^
 ||analytics2.tvreport.co.kr^
 ||analyticsnew.overwolf.com^
@@ -5716,11 +5700,9 @@ nethunt.com/api/v1/track/email/$image
 ||api-adservices.apple.com^
 ||api-analytics.rozetka.com.ua^
 ||api.amplitude.com^
-||api.calq.io^
 ||api.exc.mob.com^
 ||api.flocktory.com^
 ||api.iterative.ly^
-||api.logmatic.io^
 ||apm.crittercism.com^
 ||apollo.plein.nl^
 ||app-analytics-*.snapchat.com^
@@ -5886,8 +5868,6 @@ nethunt.com/api/v1/track/email/$image
 ||code.lockbot.net^
 ||codes.royalad.pl^
 ||collect-elb-*.amazonaws.com^
-||collect-test.arabam.com^
-||collect.data.tm-awx.com^
 ||collect.igodigital.com^
 ||collect.tianya.cn^
 ||collect.usefathom.com^
@@ -6134,7 +6114,6 @@ nethunt.com/api/v1/track/email/$image
 ||event.scimo.io^
 ||eventapi.afreecatv.com^
 ||eventbus.intuit.com^
-||eventlog.inspsearch.com^
 ||eventlog.inspsearchapi.com^
 ||eventlog.jackpot.de^
 ||eventlog.outbrain.com^
@@ -6590,7 +6569,6 @@ nethunt.com/api/v1/track/email/$image
 ||phiesi.stroeerdp.de^
 ||pictures.zooplus.com^
 ||ping.buto.tv^
-||ping.hellobar.com^
 ||ping.hungama.com^
 ||ping.smyte.com^
 ||ping.tvmaze.com^
@@ -55827,6 +55805,14 @@ _tracking.php?b=
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|rusvideos.porn|jrkyushu.co.jp|amiunique.org
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org
+||hub.fromdoppler.com/public/dhtrack.js
+||kick.com/*&loaderVersion=
+||connatix.com/scripts/hotjar.js
+||connatix.com/scripts/gaconnector.js
+||connatix.com/scripts/munchkin-script.js
+||connatix.com/scripts/microsoft-ad-script.js
+||connatix.com/scripts/facebook-pixel-script.js
+||unibet.com/orval/tracking/lastclick.min.js
 ||terabox.fun/api/analytics
 ||us.web3-lab.com*/*/stats
 ||data.infranken.de/g/collect
@@ -60077,6 +60063,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||analytics.digitalpfizer.com/js/prod/pcc/pf_appmeasurement.js$domain=pfizer-covid19-vaccine.jp
 !+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_opera)
 @@||cdn.optimizely.com/js/*.js$domain=perlego.com
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js,domain=otpotthon.hu
