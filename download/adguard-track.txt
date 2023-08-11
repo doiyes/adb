@@ -127,6 +127,7 @@ blogterest.net#?#.blockSide > div.blockWrapper > div > div.ninja-recommend-block
 nukeruerodouga.com#?##main-right > div.right_area > div.ninja-recommend-block:upward(2)
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> div[ub-in-page])
 kuow.org#?#.story-content-wrapper > div.embed_block:has(> script:contains(window.usabilla))
+hinatasoku.blog.jp#?#.right-container > div.sidewrapper:has(> div.side > a[href="http://www.ziyu.net/"])
 aatyu.livedoor.blog#?#.article > div.plugin-memo:has(> div.side > div.ninja-recommend-block)
 cartune.me#?#.contents-inner > div > div#taboola-alternating-thumbnails-a:upward(1)
 livedoor.biz,ldblog.jp#?#.plugin-memo > div.side > a[href$="ziyu.net/"]:upward(2)
@@ -163,6 +164,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||ythingy.com^
 ||spiny.ai^$third-party
 ||c.blockdetector.org^$third-party
 ||sailthru.com^$third-party
@@ -51528,6 +51530,8 @@ _tracking.php?b=
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|rusvideos.porn|jrkyushu.co.jp|amiunique.org
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org
+||2ip.*/member_photo/$domain=~2ip.com|~2ip.ru
+||lvbet.pl/*/json/web-analitics-events.json
 ||services.rome2rio.com/api/json/LogAnalyticsEvent
 ||services.rome2rio.com/api/json/LogCoreWebVital
 lto.de##img[src^="https://ssl-wolterskluwer.met.vgwort.de/"]
@@ -51721,7 +51725,6 @@ fudge.jp##.ratio-wrapper
 ||jdsports.co.kr/collect.php
 ||cmp.quantcast.com/?log=
 ||nicovideo.jp/api/counter/
-||nicovideo.jp/v2/user/actions/watch-events.json
 ||vesseltracker.com/assets/js/leaflet-ais-trackingsymbols/
 ||apl.roskomsvoboda.org/js/script.js
 ||cdn.shopify.com/shopifycloud/shopify/assets/shop_events_listener-*.js
@@ -52965,8 +52968,6 @@ moeimg.net###pickup-header_frame
 ||uber.com/_events
 ||uber.com/_track
 ||nvapi.nicovideo.jp/*/bandit-machine/
-||nicovideo.jp/*/user/actions/watch-events/nonmember.json?
-||nicovideo.jp/*/user/actions/video/watch-events.json?
 ||emmi.jp/Scripts/tracker.js
 pusatporn18.com###HTML1
 ||data.biliintl.com/log^
@@ -52981,7 +52982,6 @@ otekomachi.yomiuri.co.jp###_popIn_right
 ||qgraph.io/dist/aiqua-wp.js
 ||qgraph.io/v3/r/aiqua.js
 ||a.apkpure.com/analytics_*.js
-||nicovideo.jp/v1/recommend/log/
 ||rapidspike.com/rum/
 ||ubereats.com/_events
 ||app.leadplan.ru/assets/img/1px.gif
@@ -54965,6 +54965,16 @@ link.gmapp*.net$image
 ||ya.ru/clck/
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||bing.com/fd/ls/
+links.theskimm.com$image
+link.theskimm.com$image
+track.canva.com$image
+notices.rei.com$image
+email.mgtp01.squarespace-mail.com$image
+open.convertkit-mail*.com$image
+email.feedrabbit.com$image
+go.smartinsights.com*gif$image
+clicks.mlsend.com$image
+sli.thedailybeast.com$image
 app.c.bloomberg.com$image
 u.pcloud.com*trackmail$image
 filetransfer.io*pixel$image
@@ -54978,6 +54988,7 @@ tracking.newsletter.m6.fr$image
 clicks.hungryroot.com$image
 link.mail.bloombergbusiness.com$image
 click.emails.paypal.com$image
+link.theatlantic.com$image
 data-cdn.theatlantic.com/email.gif
 whiteclouddrive.com$image
 link.vox.com$image
@@ -55040,7 +55051,7 @@ app.outreach.io$image
 outrch.com/api/mailings/opened$image
 track.mixmax.com/api$image
 email.mixmax.com/e/o$image
-ct.sendgrid.net%2Fwf%2Fopen%3$image
+ct.sendgrid.net$image
 /wf/open?upn=$image
 exct.net/open.aspx$image
 emltrk.com$image
@@ -55054,7 +55065,7 @@ polymail.io/v2/z$image
 yamm-track.appspot$image
 /open.html?x=$image
 close.io/email_opened$image
-returnpath.net/pixel.gif$image
+pixel.monitor*.returnpath.net$image
 nethunt.com/api/v1/track/email/$image
 /mpss/o/*$image
 ||mkto-*.com^$third-party
