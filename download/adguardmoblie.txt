@@ -920,6 +920,7 @@ yandex.*#$?#:matches-path(/q)body.page_qArticleRoute div#page > div[class]:first
 turbopages.org##div[class*="type_adfox"]
 turbopages.org##.turbo-advert
 turbopages.org##.page__result > div[class*="type_native"]
+sueddeutsche.de#?#article > div[data-manual-remove="true"]:has(> div[id^="iqadt"])
 seikeidouga.blog.jp#?##ad
 fujixweekly.com#$?#span[data-ez-ph-id] { display: none !important; }
 giga.de#?#.alice-teaser-list-item:has(> div[id^="giga.de_gruen_startseite_teaser"]:only-child)
@@ -1357,7 +1358,7 @@ m.efuxs.com##+js(set-constant, add_h2023, noopFunc)
 uraaka.com##+js(addEventListener-defuser, touchmove, preventDefault)
 ura.news##+js(abort-on-property-read, yaContextCb)
 gameinn.jp##+js(abort-current-script, navigator.userAgent, /document\.write[\s\S]*?BANNER_/)
-pornhub.com,pornhub.org,pornhub.net,pornhubthbh7ap3u.onion##+js(set-constant, abp1, 0)
+pornhub.com,pornhub.org,pornhub.net##+js(set-constant, abp1, 0)
 m.viptube.com##+js(set-constant, player.postitialTimeout, 0)
 thestudentroom.co.uk##+js(remove-class, fixed_ad, #header.fixed_ad)
 share-videos.se##+js(abort-current-script, $, clickurl)
@@ -1389,6 +1390,7 @@ m.tnaflix.com##+js(set-constant, organicPop, undefined)
 m.drtuber.com##+js(abort-on-property-read, mobileAdvPop)
 pornhd.com##+js(abort-on-property-read, popUnderUrl)
 sasisa.ru##+js(set-constant, Umobi, noopFunc)
+kinobar.vip#$?#.has-brand { margin-top: 0 !important; }
 m.hkgolden.com#$#html > body[data-app-lightbox] { overflow: auto !important; }
 gismeteo.ru#$#label[data-title="Объясняем.рф"] { display: none !important; }
 indy100.com#$#.body-description > p { margin-bottom: 0 !important; }
@@ -1753,7 +1755,7 @@ timesofindia.indiatimes.com#@#style[type="text/css"] + div[class]:not([id]):not(
 @@||mssl.fwmrm.net/*/AdManager.js?$domain=nhl.com|dtmts.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=espn.com
 @@||m.haberturk.com/adscbg/mdet.js
-pornhub.com,pornhubthbh7ap3u.onion#@#div > [style*="width: 100%;"]:first-child
+pornhub.com#@#div > [style*="width: 100%;"]:first-child
 m.veporn.net#@#.advertisment
 m.veporn.net#@##topAds
 @@||g.doubleclick.net/gpt/pubads_impl_$script,domain=ukr.net
@@ -2179,7 +2181,7 @@ cityheaven.net##.adm-layoutshift-loading
 m.ura.news##div[class$="placeholder"]
 search.yahoo.co.jp##.TSg_Ad
 citimuzik.com##div[class*="ai-viewport-"]
-nknews.jp###im_overelay
+nknews.jp###im_overlay
 nknews.jp###im_panel_b
 thehindu.com##.flooting-ad
 nishinippon.co.jp##.c-ad-header
@@ -3168,7 +3170,7 @@ hochi.news##.ad[style^="min-width: 360px; min-height: 100px"]
 hochi.news##.ad[style^="min-width: 336px"]
 hochi.news##div[style^="min-width: 320px; min-height: 100px"]
 inporn.com##.video__wrapper > div.header__item
-number.bunshun.jp##.container-banner-02
+number.bunshun.jp##div[class^="container-banner-"]
 number.bunshun.jp##div[style="text-align:center; border-top: 1px solid #f3f3f3; border-bottom: 1px solid #f3f3f3;"]
 comic.pixiv.net##.w-screen.bg-surface4-default[data-testid="container"]
 laurier.excite.co.jp###exAsideRectangle
@@ -3835,6 +3837,8 @@ dic.pixiv.net###ad-d-sp-footer
 dic.pixiv.net###ad-d-sp-rectangle
 dic.pixiv.net###ad-d-sp-toparticle
 dexerto.com##div[id^="dex-amp-ad"]
+uta-net.com##.songlist-table + div.text-center.py-2.row
+uta-net.com##div[style="min-height:150px;"]
 sp.uta-net.com###overlay_banner
 uta-net.com,sp.uta-net.com##.ad-area-d
 sp.uta-net.com##.ad-kashi-bottom2
@@ -5270,7 +5274,7 @@ babycenter.de###topAdContainerMobile
 rg.ru###yandex_ads_hor_pda
 mobil.pcwelt.de,apkmirror.com##.OUTBRAIN
 4g.co.uk##.ad4
-news18.com,m.economictimes.com,m.haberler.com,redtube.com,redtube.net,pornhub.com,pornhub.org,pornhub.net,pornhubthbh7ap3u.onion##.adContainer
+news18.com,m.economictimes.com,m.haberler.com,redtube.com,redtube.net,pornhub.com,pornhub.org,pornhub.net##.adContainer
 bhaskar.com,divyabhaskar.co.in,fashion101.in##.ad_320
 m.delfi.lt##.ad_atop
 seclub.org##.ad_block
