@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: HmZDP7kZnV1BfMK1NY3w7A
+! Checksum: caDmKlzvuh7hH7j4EDFbMQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202308142214
+! Version(Last Modified): 202308162214
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -11,6 +11,33 @@
 -960x*0.gif
 -250.js*
 -90mh-gg.
+                        '//sedoparking.com/privacy-policy/en/index.html',
+                        'privacy-policy','width=600,height=400');
+                        return false;">
+                class="container-privacyPolicy__content-link"
+                href="#"
+                onclick="window.open(
+                var cafRL={container:"rb-default",type:"relatedsearch",styleId:6267031743,number:3};if("adLoaded"in dto.postActionParameter.token&&dto.postActionParameter.token.adLoaded){cafRL.adLoadedCallback=callbackAdLoaded}var cafEl=[{meta:{layoutTypes:[1]},caf:{container:"ab-default",type:"ads",lines:3,linkTarget:"_blank",styleId:6267031743}},{meta:{layoutTypes:[5]},caf:cafRL},{meta:{layoutTypes:[1,2,3,5]},caf:{container:"sb-default",type:"searchbox",hideSearchInputBorder:true,hideSearchButtonBorder:true,colorSearchButtonText:"#638296",fontSizeSearchInput:12,fontSizeSearchButton:12,fontFamily:"Arial"}}];
+            Privacy Policy
+            var onclick_param_l=dto.signedLink;var onclick_value_l=dto.gFeedSES.default;var onclick_value_al=dto.gFeedSES.alternate;var onclick_param_v=dto.visitorViewId;var onclick_value_v=dto.visitorViewIdJsAds;var fb="";var fb_token="";if(dto.postActionParameter){fb=dto.pu+dto.postActionParameter.feedback;if(dto.postActionParameter.token.pageLoaded){fb_token=dto.postActionParameter.token.pageLoaded}}var pu=dto.pu;var ds=dto.adultFlag;var pus=dto.pus;var tlt=dto.contentType;var dsb=dto.searchbox;var pdto={caf:{colorBackground:"transparent"}};if(dto.jsParameter){for(let key in dto.jsParameter.request){pdto.caf[key]=dto.jsParameter.request[key]}}(function(){let pageOptions=pdto.caf;let noAds=pdto.caf.noAds;delete pdto.caf.noAds;pageOptions.resultsPageBaseUrl=pu+"/caf/?"+pus;let clickControlParams={};clickControlParams[onclick_param_l]=onclick_value_l;clickControlParams[onclick_param_v]=onclick_value_v;function setRlsAmount(){cafEl.forEach(function(part,index){if(cafEl[index].meta.layoutTypes.indexOf(dto.contentType)!==-1&&cafEl[index].caf.type==="relatedsearch"){cafEl[index].caf.number=dto.numberRelatedLinks}})}function addClickTrackUrl(cafObject){let params=Object.keys(clickControlParams).map(function(key){return encodeURIComponent(key)+"="+encodeURIComponent(clickControlParams[key])}).join("&");let parkingClickTrack="//"+dto.clickControlHost+"/search/cc.php?"+params;if(dto.clickTrack.length>0){dto.clickTrack.forEach(function(part,index){this[index]=encodeURI(this[index])},dto.clickTrack);cafObject.clicktrackUrl=[parkingClickTrack].concat(dto.clickTrack)}else{cafObject.clicktrackUrl=parkingClickTrack}}pageOptions.pageLoadedCallback=function(requestAccepted,status){let fb_add_params="";function isAdultStatusCallbackRequired(){if(!("adult"in status)){return false}if(ds===false&&status.adult===true){return true}if(ds===true&&status.adult===false){return true}return false}function isErrorCodeCallbackRequired(){if(!("error_code"in status)){return false}if(isAdultStatusCallbackRequired()&&26===status.error_code){return false}return true}if(isAdultStatusCallbackRequired()){fb_add_params+="&as="+status.adult+"&gc="+status.client}if(isErrorCodeCallbackRequired()){fb_add_params+="&ec="+parseInt(status.error_code)}if(fb_add_params.length===0||fb_token.length===0){return}let request=new XMLHttpRequest;request.open("GET",fb+fb_token+fb_add_params,true);request.send()};function collectCafObjects(){let cafObjects=[pageOptions];cafEl.forEach(function(part,index){if(cafEl[index].meta.layoutTypes.indexOf(tlt)===-1){return}if(cafEl[index].caf.type==="ads"){addClickTrackUrl(cafEl[index].caf);cafEl[index].caf.number=noAds}pdto.caf.uiOptimize=dto.uiOptimize;if(cafEl[index].caf.type==="relatedsearch"&&dto.rls.length>0){return}if(cafEl[index].caf.type==="searchbox"&&dsb===false){return}cafObjects.push(cafEl[index].caf)});return cafObjects}function appendCafRls(){if(dto.rls.length<=0){return}let start=0;let cafRlObjects=[pdto.caf];cafEl.forEach(function(part,index){if(cafEl[index].meta.layoutTypes.indexOf(dto.contentType)!==-1&&cafEl[index].caf.type==="relatedsearch"){let stop=start+cafEl[index].caf.number;let terms=[];for(var i=start;i<stop;i++){if(i>dto.rls.length-1){break}terms[i]=dto.rls[i].term;start=i+1}cafEl[index].caf.terms=terms.join(",");cafEl[index].caf.optimizeTerms=false;cafRlObjects.push(cafEl[index].caf)}});createCaf.apply(this,cafRlObjects)}if(typeof google!=="undefined"){window.createCaf=function(){function F(args){return google.ads.domains.Caf.apply(this,args)}F.prototype=google.ads.domains.Caf.prototype;return function(){return new F(arguments)}}();setRlsAmount();if(dto.advt===1&&dto.contentType!==2&&dto.contentType!==3){appendCafRls()}let cafObjects=collectCafObjects();if(cafObjects.length>1){createCaf.apply(this,cafObjects)}}})();if(dto.tsc){var request=new XMLHttpRequest;request.open("GET",dto.pu+"/search/tsc.php?"+dto.tscQs);request.send()}var $parkModalButton=document.getElementById("cookie-modal-open");var $parkModalCloseButton=document.getElementById("cookie-modal-close");var $parkModal=document.getElementById("cookie-modal-window");var $parkCookieMessage=document.getElementById("cookie-message");var $parkThirdPartyCookieCheckbox=document.getElementById("third-party-cookie-checkbox");var $parkAcceptAllCookiesButton=document.getElementById("accept-all-cookies-btn");var executeTrackingPixel=function(trigger){if(trigger===true&&typeof pxTracking==="function"){pxTracking()}};var getCookieExpirationTime=function(){var d=new Date;d.setTime(d.getTime()+7*24*60*60*1e3);return d.toUTCString()};var saveParkingCookie=function(statisticsCookie){var cookieConsent={necessary:true,statistics:statisticsCookie,version:1,timestamp:(new Date).getTime()};document.cookie="CookieConsent="+JSON.stringify(cookieConsent)+";expires="+getCookieExpirationTime()};if($parkModalButton!=null){$parkModalButton.onclick=function(e){$parkModal.classList.remove("disabled")}}if($parkModalCloseButton!=null){$parkModalCloseButton.onclick=function(e){$parkModal.classList.add("disabled");$parkCookieMessage.classList.add("disabled");saveParkingCookie($parkThirdPartyCookieCheckbox.checked);executeTrackingPixel($parkThirdPartyCookieCheckbox.checked)}}if($parkAcceptAllCookiesButton!=null){$parkAcceptAllCookiesButton.onclick=function(){$parkCookieMessage.classList.add("disabled");saveParkingCookie(true);executeTrackingPixel(true)}}if(dto.executeTrackingPixels===true){executeTrackingPixel(true)}
+        .container-infobox{font-size:12px;text-align:center}.container-infobox__text{color:#919da6}.container-infobox__link{font-weight:normal;text-decoration:underline;color:#919da6}/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}.announcement{background:#262626;text-align:center;padding:0 5px}.announcement p{color:#717171}.announcement a{color:#717171}.container-header{margin:0 auto 0 auto;text-align:center}.container-header__content{color:#717171}.container-content{margin:25px auto 20px auto;text-align:center;background:url("//img.sedoparking.com/templates/bg/arrows-1-colors-3.png") #fbfbfb no-repeat center top;background-size:100%}.container-content__container-relatedlinks,.container-content__container-ads,.container-content__webarchive{width:30%;display:inline-block}.container-content__container-relatedlinks{margin-top:9%}.container-content__container-ads{margin-top:8%}.container-content__container-ads--twot{margin-top:7%}.container-content__webarchive{margin-top:8%}.container-content__header{color:#717171;font-size:15px;margin:0}.container-content--lp{width:90%;min-height:820px}.container-content--rp{width:90%;min-height:820px}.container-content--wa{width:90%}.container-content--twot{width:90%;min-height:820px}.two-tier-ads-list{padding:0 0 1.6em 0}.two-tier-ads-list__list-element{list-style:none;padding:10px 0 5px 0;display:inline-block}.two-tier-ads-list__list-element-image{content:url("//img.sedoparking.com/templates/images/bullet_justads.gif");float:left;padding-top:32px}.two-tier-ads-list__list-element-content{display:inline-block}.two-tier-ads-list__list-element-header-link{font-size:37px;font-weight:bold;text-decoration:underline;color:#0a48ff}.two-tier-ads-list__list-element-text{padding:3px 0 6px 0;margin:.11em 0;line-height:18px;color:#000}.two-tier-ads-list__list-element-link{font-size:1em;text-decoration:underline;color:#0a48ff}.two-tier-ads-list__list-element-link:link,.two-tier-ads-list__list-element-link:visited{text-decoration:underline}.two-tier-ads-list__list-element-link:hover,.two-tier-ads-list__list-element-link:active,.two-tier-ads-list__list-element-link:focus{text-decoration:none}.webarchive-block{text-align:center}.webarchive-block__header-link{color:#0a48ff;font-size:20px}.webarchive-block__list{padding:0}.webarchive-block__list-element{word-wrap:break-word;list-style:none}.webarchive-block__list-element-link{line-height:30px;font-size:20px;color:rgba(10,72,255,.7)}.webarchive-block__list-element-link:link,.webarchive-block__list-element-link:visited{text-decoration:none}.webarchive-block__list-element-link:hover,.webarchive-block__list-element-link:active,.webarchive-block__list-element-link:focus{text-decoration:underline}.container-buybox{text-align:center}.container-buybox__content-buybox{display:inline-block;text-align:left}.container-buybox__content-heading{font-size:15px}.container-buybox__content-text{font-size:12px}.container-buybox__content-link{color:#919da6}.container-buybox__content-link--no-decoration{text-decoration:none}.container-searchbox{margin-bottom:50px;text-align:center}.container-searchbox__content{display:inline-block;font-family:arial,sans-serif;font-size:12px}.container-searchbox__searchtext-label{display:none}.container-searchbox__input,.container-searchbox__button{border:0 none}.container-searchbox__button{cursor:pointer;font-size:12px;margin-left:15px;border:0 none;padding:2px 8px;color:#638296}.container-disclaimer{text-align:center}.container-disclaimer__content{display:inline-block}.container-disclaimer__content-text,.container-disclaimer a{font-size:10px}.container-disclaimer__content-text{color:#555}.container-disclaimer a{color:#555}.container-imprint{text-align:center}.container-imprint__content{display:inline-block}.container-imprint__content-text,.container-imprint__content-link{font-size:10px;color:#555}.container-contact-us{text-align:center}.container-contact-us__content{display:inline-block}.container-contact-us__content-text,.container-contact-us__content-link{font-size:10px;color:#555}.container-privacyPolicy{text-align:center}.container-privacyPolicy__content{display:inline-block}.container-privacyPolicy__content-link{font-size:10px;color:#555}.container-cookie-message{position:fixed;bottom:0;width:100%;background:#5f5f5f;font-size:12px;padding-top:15px;padding-bottom:15px}.container-cookie-message__content-text{color:#fff}.container-cookie-message__content-text{margin-left:15%;margin-right:15%}.container-cookie-message__content-interactive{text-align:left;margin:0 15px;font-size:10px}.container-cookie-message__content-interactive-header,.container-cookie-message__content-interactive-text{color:#fff}.container-cookie-message__content-interactive-header{font-size:small}.container-cookie-message__content-interactive-text{margin-top:10px;margin-right:0px;margin-bottom:5px;margin-left:0px;font-size:larger}.container-cookie-message a{color:#fff}.cookie-modal-window{position:fixed;background-color:rgba(200,200,200,.75);top:0;right:0;bottom:0;left:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;text-align:center}.cookie-modal-window__content-header{font-size:150%;margin:0 0 15px}.cookie-modal-window__content{text-align:initial;margin:10% auto;padding:40px;background:#fff;display:inline-block;max-width:550px}.cookie-modal-window__content-text{line-height:1.5em}.cookie-modal-window__close{width:100%;margin:0}.cookie-modal-window__content-body table{width:100%;border-collapse:collapse}.cookie-modal-window__content-body table td{padding-left:15px}.cookie-modal-window__content-necessary-cookies-row{background-color:#dee1e3}.disabled{display:none;z-index:-999}.btn{display:inline-block;border-style:solid;border-radius:5px;padding:15px 25px;text-align:center;text-decoration:none;cursor:pointer;margin:5px;transition:.3s}.btn--success{background-color:#218838;border-color:#218838;color:#fff;font-size:x-large}.btn--success:hover{background-color:#1a6b2c;border-color:#1a6b2c;color:#fff;font-size:x-large}.btn--success-sm{background-color:#218838;border-color:#218838;color:#fff;font-size:initial}.btn--success-sm:hover{background-color:#1a6b2c;border-color:#1a6b2c;color:#fff;font-size:initial}.btn--secondary{background-color:#8c959c;border-color:#8c959c;color:#fff;font-size:medium}.btn--secondary:hover{background-color:#727c83;border-color:#727c83;color:#fff;font-size:medium}.btn--secondary-sm{background-color:#8c959c;border-color:#8c959c;color:#fff;font-size:initial}.btn--secondary-sm:hover{background-color:#727c83;border-color:#727c83;color:#fff;font-size:initial}.switch input{opacity:0;width:0;height:0}.switch{position:relative;display:inline-block;width:60px;height:34px}.switch__slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#5a6268;-webkit-transition:.4s;transition:.4s}.switch__slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:#fff;-webkit-transition:.4s;transition:.4s}.switch__slider--round{border-radius:34px}.switch__slider--round:before{border-radius:50%}input:checked+.switch__slider{background-color:#007bff}input:focus+.switch__slider{box-shadow:0 0 1px #007bff}input:checked+.switch__slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px)}body{background-color:#262626;font-family:Arial,Helvetica,Verdana,"Lucida Grande",sans-serif}body.cookie-message-enabled{padding-bottom:300px}.container-footer{padding-top:0;padding-left:5%;padding-right:5%;padding-bottom:10px}
+        </a></div></div></div><div class="container-contact-us" id="container-contact-us"></div></div><!-- CAF --><script type="text/javascript" src="//www.google.com/adsense/domains/caf.js"></script><script type="text/javascript">
+        Renew Now!
+        This webpage was generated by the domain owner using <a href="https://www.sedo.com/services/parking.php3">Sedo Domain Parking</a>. Disclaimer: Sedo maintains no relationship with third party advertisers. Reference to any specific service or trade mark is not controlled by Sedo nor does it constitute or imply its association, endorsement or recommendation.
+        href="//img.sedoparking.com/templates/logos/sedo_logo.png"
+        rel="icon"
+        type="image/png"
+        var dto = {"uiOptimize":false,"singleDomainName":"hacamer.top","domainName":"hacamer.top","domainPrice":0,"domainCurrency":"","adultFlag":false,"pu":"//hacamer.top","dnsh":true,"dpsh":false,"toSell":false,"cdnHost":"http://img.sedoparking.com","adblockkey":" data-adblockkey=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANnylWw2vLY4hUn9w06zQKbhKBfvjFUCsdFlb6TdQhxb9RXWXuI4t31c+o8fYOv/s8q1LGPga3DE1L/tHU4LENMCAwEAAQ==_UN6eLL7q8fI5YaY2WqN/xkuxvpgdi8eIe+RDBEcPx9GCIbjYMP+eLVZ3m9MMjtqLe2VbAq90jTZoInit8yo+yQ==","tid":3070,"buybox":false,"buyboxTopic":true,"disclaimer":true,"imprint":false,"searchbox":false,"noFollow":false,"slsh":false,"ppsh":true,"dnhlsh":true,"toSellUrl":"","toSellText":"","searchboxPath":"//hacamer.top/parking.php","searchParams":{"ses":"Y3JlPTE2OTIxOTUyNzEmdGNpZD1oYWNhbWVyLnRvcDY0ZGNkOWM3NDE3ZjY3LjgyMzIyNzYwJnRhc2s9c2VhcmNoJmRvbWFpbj1oYWNhbWVyLnRvcCZhX2lkPTEmc2Vzc2lvbj02aFlFYmtSTDNqMlhFTXNOWk9JWiZ0cmFja3F1ZXJ5PTE="},"imprintUrl":false,"contactUsUrl":false,"contentType":5,"t":"content","pus":"ses=Y3JlPTE2OTIxOTUyNzEmdGNpZD1oYWNhbWVyLnRvcDY0ZGNkOWM3NDE3ZjY3LjgyMzIyNzYwJnRhc2s9c2VhcmNoJmRvbWFpbj1oYWNhbWVyLnRvcCZhX2lkPTMmc2Vzc2lvbj02aFlFYmtSTDNqMlhFTXNOWk9JWg==","postActionParameter":{"feedback":"/search/fb.php?ses=","token":{"pageLoaded":"4b6b3bfa7a14c9c30169219527138339cf07e78ceb"}},"gFeedSES":{"default":"OAlmY2M3MTY4YWI3NWIwMzUxMWMyZDQ5ZDhlNWQ0N2JiYwkxMjAxCTEzCTAJCTUyOTQ3NjcwNAloYWNhbWVyCTMwNzAJMQk1CTU5CTE2OTIxOTUyNzEJMAlOCTAJMQkwCTEyMDUJNTE3MzY1Njc0CTQwLjc3LjkzLjMJMQ%3D%3D","alternate":"OAlmY2M3MTY4YWI3NWIwMzUxMWMyZDQ5ZDhlNWQ0N2JiYwkxMjAxCTEzCTAJCTUyOTQ3NjcwNAloYWNhbWVyCTMwNzAJMQk1CTU5CTE2OTIxOTUyNzEJMAlOCTAJMQkwCTEyMDUJNTE3MzY1Njc0CTQwLjc3LjkzLjMJMQ%3D%3D"},"visitorViewIdJsAds":"NDViZmE1OGNlZGVmZjE4MjRmYjRjY2FkNTFhYzMzYTIJMQloYWNhbWVyLnRvcDY0ZGNkOWM3NDE3ZjY3LjgyMzIyNzYwCWhhY2FtZXIudG9wNjRkY2Q5Yzc0MTgxZDguMDY0NjQzOTgJMTY5MjE5NTI3MQkw","jsParameter":{"request":{"pubId":"dp-sedo80_3ph","domainRegistrant":"as-drid-2383353299994854","kw":"","adtest":"off","adsafe":"low","noAds":5,"uiOptimize":"true","hl":"en","channel":"exp-0051,auxa-control-1,8810114"},"alternate_pubid":"dp-sedo80_3ph"},"ads":[],"adv":1,"advt":1,"rls":[],"numberRelatedLinks":6,"waUrl":"/search/portal.php?l=OAlmY2M3MTY4YWI3NWIwMzUxMWMyZDQ5ZDhlNWQ0N2JiYwkxMjAxCTEzCTAJCTUyOTQ3NjcwNAloYWNhbWVyCTMwNzAJMQk1CTU5CTE2OTIxOTUyNzEJMAlOCTAJMQkwCTEyMDUJNTE3MzY1Njc0CTQwLjc3LjkzLjMJMQ%3D%3D","tsc":true,"tscQs":"200=NTI5NDc2NzA0&21=NDAuNzcuOTMuMw==&681=MTY5MjE5NTI3MWY3MGE2NTNjMThiYzhjNmE0MmMzYWQyOWY5NDgwZmQw&crc=3a18a3f2a7a1969d0785a8d61317ba03f0ce353d&cv=1","lang":"en","maid":59,"sedoParkingUrl":"https://www.sedo.com/services/parking.php3","dbg":false,"signedLink":"l","visitorViewId":"v","registrar_params":[],"clickTrack":[],"cookieMessage":false,"cookieMessageInteractive":false,"executeTrackingPixels":false,"bannerTypes":[],"clickControlHost":"hacamer.top"};
+        var dto = {"uiOptimize":false,"singleDomainName":"hacamer.top","domainName":"hacamer.top","domainPrice":0,"domainCurrency":"","adultFlag":false,"pu":"//hacamer.top","dnsh":true,"dpsh":false,"toSell":false,"cdnHost":"http://img.sedoparking.com","adblockkey":" data-adblockkey=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANnylWw2vLY4hUn9w06zQKbhKBfvjFUCsdFlb6TdQhxb9RXWXuI4t31c+o8fYOv/s8q1LGPga3DE1L/tHU4LENMCAwEAAQ==_uiQcnI3kgmEJ6R/b0p0+Y1bRTJiAVdhKG5JgOdPJEkawEK/J039WwZB1yxmKMVQi7g/D0+Jgoj9WmTBnsoIpbw==","tid":3070,"buybox":false,"buyboxTopic":true,"disclaimer":true,"imprint":false,"searchbox":false,"noFollow":false,"slsh":false,"ppsh":true,"dnhlsh":true,"toSellUrl":"","toSellText":"","searchboxPath":"//hacamer.top/parking.php","searchParams":{"ses":"Y3JlPTE2OTIxOTUyNzAmdGNpZD1oYWNhbWVyLnRvcDY0ZGNkOWM2MGU4YWE2LjEwMjQ0MzA0JnRhc2s9c2VhcmNoJmRvbWFpbj1oYWNhbWVyLnRvcCZhX2lkPTEmc2Vzc2lvbj0tZUhLQnRzMTBScXkzTmlTN3dmZyZ0cmFja3F1ZXJ5PTE="},"imprintUrl":false,"contactUsUrl":false,"contentType":5,"t":"content","pus":"ses=Y3JlPTE2OTIxOTUyNzAmdGNpZD1oYWNhbWVyLnRvcDY0ZGNkOWM2MGU4YWE2LjEwMjQ0MzA0JnRhc2s9c2VhcmNoJmRvbWFpbj1oYWNhbWVyLnRvcCZhX2lkPTMmc2Vzc2lvbj0tZUhLQnRzMTBScXkzTmlTN3dmZw==","postActionParameter":{"feedback":"/search/fb.php?ses=","token":{"pageLoaded":"b07dd2d65054731e0169219527015fb0546cc4df89"}},"gFeedSES":{"default":"OAk3ZmNlZWE2ZmE3Njk0OWEyMjM0NTE5YWFhN2ZkZjQ4NwkxMjAxCTEzCTAJCTUyOTQ3NjcwNAloYWNhbWVyCTMwNzAJMQk1CTU5CTE2OTIxOTUyNzAJMAlOCTAJMAkwCTEyMDUJNTE3MzY1Njc0CTQwLjc3LjkzLjMJMQ%3D%3D","alternate":"OAk3ZmNlZWE2ZmE3Njk0OWEyMjM0NTE5YWFhN2ZkZjQ4NwkxMjAxCTEzCTAJCTUyOTQ3NjcwNAloYWNhbWVyCTMwNzAJMQk1CTU5CTE2OTIxOTUyNzAJMAlOCTAJMAkwCTEyMDUJNTE3MzY1Njc0CTQwLjc3LjkzLjMJMQ%3D%3D"},"visitorViewIdJsAds":"Y2IzOTJhMzkyYTZlNDEwNTAxZDExOGZmMTcyOTRkZjYJMQloYWNhbWVyLnRvcDY0ZGNkOWM2MGU4YWE2LjEwMjQ0MzA0CWhhY2FtZXIudG9wNjRkY2Q5YzYwZThlZDYuOTgxMTI5OTQJMTY5MjE5NTI3MAkw","jsParameter":{"request":{"pubId":"dp-sedo80_3ph","domainRegistrant":"as-drid-2383353299994854","kw":"","adtest":"off","adsafe":"low","noAds":5,"uiOptimize":"true","hl":"en","channel":"exp-0051,auxa-control-1,8810114"},"alternate_pubid":"dp-sedo80_3ph"},"ads":[],"adv":1,"advt":1,"rls":[],"numberRelatedLinks":6,"waUrl":"/search/portal.php?l=OAk3ZmNlZWE2ZmE3Njk0OWEyMjM0NTE5YWFhN2ZkZjQ4NwkxMjAxCTEzCTAJCTUyOTQ3NjcwNAloYWNhbWVyCTMwNzAJMQk1CTU5CTE2OTIxOTUyNzAJMAlOCTAJMAkwCTEyMDUJNTE3MzY1Njc0CTQwLjc3LjkzLjMJMQ%3D%3D","tsc":true,"tscQs":"200=NTI5NDc2NzA0&21=NDAuNzcuOTMuMw==&681=MTY5MjE5NTI3MGNhZTE4ZGYxMzg5ZDExMjk5NGFkY2I3ZDU5YmZlNzQ3&crc=be27461c3fdc8ef489e37b5c7e991dd972171a78&cv=1","lang":"en","maid":59,"sedoParkingUrl":"https://www.sedo.com/services/parking.php3","dbg":false,"signedLink":"l","visitorViewId":"v","registrar_params":[],"clickTrack":[],"cookieMessage":false,"cookieMessageInteractive":false,"executeTrackingPixels":false,"bannerTypes":[],"clickControlHost":"hacamer.top"};
+    </a></p></div><div class="container-footer" id="container-footer"><div class="container-disclaimer" id="container-disclaimer"><div class="container-disclaimer__content"><p class="container-disclaimer__content-text">
+    </p></div></div><div class="container-imprint" id="container-imprint"></div><div class="container-privacyPolicy" id="container-privacyPolicy"><div class="container-privacyPolicy__content"><div id="privacy-policy-link"><a
+    </script></body></html>
+    </script></head><body ><div class="container-header" id="container-header"><h1 class="container-header__content">hacamer.top</h1></div><div id="container-content" class="container-content container-content--lp"><div class="container-content__container-relatedlinks" id="container-relatedlinks"><div id="rb-default"></div></div></div><div class="container-searchbox" id="container-searchbox"></div><div class="container-buybox" id="container-buybox"></div><div class="container-infobox"><p class="container-infobox__text">
+    </script><script type="text/javascript">
+    </style><script type="text/javascript">
+    <br><a  class="container-infobox__link"
+    This domain has expired. Is this your domain?
+    href="https://www.namesilo.com/?utm_source=separk" target="_blank">
 # NoCoin filter list optimized for uBlock
 ###Ad_windows
 ###ChapterView > .slide-baidu
@@ -1043,6 +1070,7 @@
 ##[src^='/MDassets/images/']
 ##[src^='/Uploads/ad/'][src$='.gif'][alt='广告']
 ##[src^='/banners/pr_advertising_ads_banner']
+##[src^='data:image/png;base64,iVBORw0KGgoAAAANSU'][style*='position: fixed; z-index: 2000000000; width: 30px; bottom:']
 ##[src^='https://ae01.alicdn.com/'][alt='歪歪漫画']
 ##[src^='https://dingbu.bj.bcebos.com/']
 ##[src^='https://immmg.owowqrf.cn']
@@ -1669,7 +1697,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|0794.o
 $script,subdocument,third-party,websocket,xmlhttprequest,domain=bhshu.net|louzhong8.com|miwens.com
 $script,subdocument,third-party,xmlhttprequest,domain=alicili.me|alicili8.com|alicilibt.com|bittorrentsearchweb.com|btdiggba.me|btdiggba.ws|btdiggcn.xyz|btdiggs.co|btkitty.com|btkitty.pet|btkittyba.cc|btkittyba.me|btkittyba.net|btkittyba.pw|btkittyla.me|btkittyla.org|btkittyon.co|btkittyplus.cc|btlibrary.xyz|btlibrarys.cc|btlibrarys.net|btspread.cc|cilidaquan.co|cilidaquan.top|cilidaquancn.pw|cilidb.net|cilifanhao.ws|cilifanhaobt.xyz|cnbtdigg.pw|cnbtkitty.xyz|cncilidb.pw|cntorrentkitty.co|cnzhongzicili.net|diggbts.cc|diggbts.xyz|feifeibt.pw|godiggbt.org|godiggbts.cc|kikibt.me|kikibts.org|mybtlibrary.cc|nanrenbt.cc|newbtkitty.me|newbtkitty.pw|newbtspread.ws|okbtkitty.me|renrencili.pw|renrencili.xyz|savebt.pw|sousoucili.com|storebt.net|storetorrents.com|torrentkitty.app|torrentsearchweb.xyz|zhainanbt.me|zhongzicilibt.org|zhongzicilicn.com|zhongzicilicn.ws|zhongzicilicn.xyz|zhongzicilila.cc|zhongzicilila.co|zhongziciliso.net|zhongzifuli.cc|zhongzishenqi.ws
 $script,subdocument,~third-party,websocket,xmlhttprequest,domain=m.6666xsw.com|m.biqugee6.com|m.bqg99.cc|m.chenkuan.com|m.jmshuwu.net|wodexiaoshuoh.com
-$script,third-party,denyallow=sharecast.ws|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io,_____,domain=h.fkxs.net|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz
+$script,third-party,denyallow=sharecast.ws|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io,_____,domain=h.fkxs.net|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com
 $script,third-party,domain=52movieba.com|66s.cc|audio699.com|btsow.cfd|kan-tv.com|m.supfree.net|xiaoheimi.net
 $script,third-party,domain=cilimao.co|cilimao.one
 $script,third-party,domain=colamanhua.com
@@ -2780,6 +2808,7 @@ $websocket,domain=5nj.com|cechi8.com
 /://666(7|8)[0-9]{2}.xyz\//$image,third-party
 /:\/\/[A-Za-z0-9]+.ru\/[A-Za-z0-9]{20,25}.js/$domain=music-radio.ru
 /:\d{4,}\//$third-party,domain=subdh.com
+/><style>
 /?encrypt=$empty,app=com.tencent.mtt.intl
 /?placementName=$script,redirect=noop.js,domain=vpslog.net
 /A-Tian/Tian-*-good.js
@@ -4035,12 +4064,6 @@ $websocket,domain=5nj.com|cechi8.com
 :9875/vh2/
 :9875/vj2/
 :99/js/ads/
-</body>
-</html>
-<body>
-<center><h1>403 Forbidden</h1></center>
-<head><title>403 Forbidden</title></head>
-<hr><center>openresty</center>
 =AdCode_$script,third-party
 =AdCode_sjdb
 =Ad_ZPlusGoods&
@@ -4195,11 +4218,11 @@ $websocket,domain=5nj.com|cechi8.com
 @@_cpa_cpm_$domain=52xkdy.com
 @@_cpc_cpm/$domain=youranshare.com
 @@_cpc_cpm_$domain=fydy8.com|saraba1st.com
-@@css.yhdmtu.xyz$domain=yinghuavideo.com
 @@guokr.com/apis/flowingboard/item/guokrapp_download_source.json
 @@https://static.ws.126.net/163/frontend/libs/antanalysis.min.js
 @@|https://media.amazon.map.fastly.net^$script
 @@||*/assets/js/common/juqery/
+@@||/template/conch/asset/js/hlhtml.js$domain=www.gqdm.net|1anime.me
 @@||012.tw^$script,domain=apk.tw
 @@||060s.com/images_ad/*.png
 @@||073img.com/*,*,
@@ -4622,6 +4645,7 @@ $websocket,domain=5nj.com|cechi8.com
 @@||cs-op.douyucdn.cn/vod-cover^
 @@||cs-op.douyucdn.cn/vod-index^
 @@||csdn.net/static/static/js/apps/popShow.js
+@@||css.yhdmtu.xyz^$domain=yinghuavideo.com
 @@||cstnet.cn/r/cms/cstnet/zh_CN/ad/index/
 @@||ctrip.com/Customer-Market-Proxy/AdCallProxyV2.$~third-party
 @@||cy.com/hz/*/ad
@@ -5841,6 +5865,7 @@ ameblo.jp##article > div[class^="_"]:last-child > header[class^="_"] + div:not([
 ameblo.jp##aside[class^="_"] > div[class^="_"] > div[class^="_"] > ul:last-child > div:empty
 ameblo.jp##aside[class^="_"]:first-child > aside[class^="_"] > div[class^="_"][class$="_"]:only-child > section:not([class]):only-child
 ameblo.jp##aside[class^="_"]:only-child > aside[class^="_"] > div[class^="_"]:only-child > div[class^="_"]:only-child
+ameblo.jp##aside[data-amb-auto-ad-style="wrapper"]
 ameblo.jp##body .skinBody2 > div[style="overflow: hidden;"] > main + aside[class^="_"]
 ameblo.jp##div:not([class]) > div[class^="_"]:first-child > aside[class^="_"]:only-child > div[class^="_"]:last-child
 ameblo.jp##div[class^="_"] > aside[class^="_"] section > div[class^="_"] > a[href^="https://dokusho-ojikan.jp/ameba_manga_login"]:only-child
@@ -6135,6 +6160,7 @@ auto.ifeng.com##div.w1000.c-ad,.top-tg
 auto.qq.com###tips
 auto.sina.com.cn###bottomInquryBar
 autobild.es##.ad-sticky-catfish
+autobild.es##div[class^="ad-catfish"]
 autocentre.ua#?#.archive-news > div.items > div.item:has(> ins.adsbygoogle)
 autodoc.de##.plus-block
 autoexperience.de##body > div.ui-page > br:first-child
@@ -6798,6 +6824,7 @@ bestie.vn###ads_fullscreen
 bestie.vn##.viewmore-after-ads
 bestopview.com###pubtextnone
 bestopview.com##.Adv_c
+bestproducts.com,cosmopolitan.com,thepioneerwoman.com,roadandtrack.com,womansday.com,harpersbazaar.com,countryliving.com,womenshealthmag.com,autoweek.com#?#section > div[class*="css-"]:has(> div[id^="gpt-ad"])
 bestwode.com
 beva.com##.av250-250,[style="height:180px;"],#beva-av-left,#beva-av-right,#beva-av-bottom
 beyondcompare.cc
@@ -6886,11 +6913,12 @@ bilibili.com##div[style*="height:"][data-loc-id]
 bilibili.com##span[style*="height:"][data-loc-id]
 bilibili.com#$?#.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__skeleton { visibility: visible !important; }
 bilibili.com#$?#.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__skeleton { visibility: visible !important; }
+bilibili.com#$?#.container > div.floor-single-card:has(> div.skeleton) { remove: true; }
+bilibili.com#$?#.container > div[class*="-card"]:has(div[style="display: none !important;"]) { remove: true; }
 bilibili.com#$?#.ex-card-common:has(.gg-icon) { remove: true; }
 bilibili.com#$?#.van-slide > .item:has(.bypb-icon) { remove: true; }
 bilibili.com#?#.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__wrap
 bilibili.com#?#.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
-bilibili.com#?#.container > div[class*="-card"]:has(div[style="display: none !important;"])
 bilibili.com#?#.eva-extension-body > .bili-video-card:-abp-has(.bili-video-card__info--ad)
 bilibili.com#?#.video-card-common:-abp-has(>.card-pic>a[href*="cm.bilibili.com"][data-target-url])
 bilibili.com#?#.video-page-special-card-small:-abp-has(>.card-box>.info>a[href^="http"]:not([href*=".bilibili.com/"]))
@@ -7227,6 +7255,8 @@ bukaivip.com##img[onclick]
 bukaivip.com$$script[tag-content="showAd"]
 bumimi.com##[href="http://www.meiweis.com/"],#adv
 bunshun.jp###sp_multiplex[style="min-width: 300px; min-height: 250px;"]
+bunshun.jp##.ad-banner-space
+bunshun.jp##.sp_article_inarticle
 bunshun.jp#?#aside[role="complementary"] > .block > .block-header > span.title:contains(/^SPECIAL$/)
 business.nikkei.com##.dag_rectangle
 businessinsider-com-pl.cdn.ampproject.org##.bottomLayerBar
@@ -7996,6 +8026,7 @@ comnews.ru###mv-fullscreen
 computerbild.de##.bannerBtfContainer
 computerbild.de##.mrecContainer
 contents.internet.apps.samsung.com##.page-bar
+context.reverso.net,krautundrueben.de,irasutoya.com##.mobilead
 conveni.getnews.jp##.index-ad-banner
 cookdoor.jp##.main_bnr_area
 cookpad.com##.standard_ad_slot
@@ -8028,7 +8059,6 @@ copymanga.org##.comicDetailAds
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 coreldrawchina.com
 corriere.it#$?#body { margin-top: 0 !important; }
-cosmopolitan.com,thepioneerwoman.com,roadandtrack.com,womansday.com,harpersbazaar.com,countryliving.com,womenshealthmag.com,autoweek.com#?#section > div[class*="css-"]:has(> div[id^="gpt-ad"])
 cosxcos.com##.mya
 cosxcos.org##.xxabc
 cotton.pink##.adsbyfalcon
@@ -8509,7 +8539,6 @@ diyifanwen.com##.Hzh1
 diyifanwen.com##.Hzh2
 dizhanw.com,jiangjunzy.com##div[style="background: #fff;padding:5px;"]
 diziizle.top###reklam-sticky
-dizikorea.com##.mst_ad
 dizipal1.cloud,dizipal2.cloud,dizipal3.cloud,dizipal4.cloud,dizipal5.cloud,dizipal6.cloud,dizipal7.cloud,dizipal8.cloud,dizipal9.cloud,dizipal10.cloud,dizipal11.cloud,dizipal12.cloud,dizipal13.cloud,dizipal14.cloud,dizipal15.cloud,dizipal16.cloud,dizipal17.cloud,dizipal18.cloud,dizipal19.cloud,dizipal20.cloud,dizipal21.cloud,dizipal22.cloud,dizipal23.cloud,dizipal24.cloud,dizipal25.cloud,dizipal26.cloud,dizipal27.cloud,dizipal28.cloud,dizipal29.cloud,dizipal30.cloud,dizipal31.cloud,dizipal32.cloud,dizipal33.cloud,dizipal34.cloud,dizipal35.cloud,dizipal36.cloud,dizipal37.cloud,dizipal38.cloud,dizipal39.cloud,dizipal40.cloud,dizipal41.cloud,dizipal42.cloud,dizipal43.cloud,dizipal44.cloud,dizipal45.cloud,dizipal46.cloud,dizipal47.cloud,dizipal48.cloud,dizipal49.cloud,dizipal50.cloud,dizipal51.cloud,dizipal52.cloud,dizipal53.cloud,dizipal54.cloud,dizipal55.cloud,dizipal56.cloud,dizipal57.cloud,dizipal58.cloud,dizipal59.cloud,dizipal60.cloud,dizipal61.cloud,dizipal62.cloud,dizipal63.cloud,dizipal64.cloud,dizipal65.cloud,dizipal66.cloud,dizipal67.cloud,dizipal68.cloud,dizipal69.cloud,dizipal70.cloud,dizipal71.cloud,dizipal72.cloud,dizipal73.cloud,dizipal74.cloud,dizipal75.cloud,dizipal76.cloud,dizipal77.cloud,dizipal78.cloud,dizipal79.cloud,dizipal80.cloud,dizipal81.cloud,dizipal82.cloud,dizipal83.cloud,dizipal84.cloud,dizipal85.cloud,dizipal86.cloud,dizipal87.cloud,dizipal88.cloud,dizipal89.cloud,dizipal90.cloud,dizipal91.cloud,dizipal92.cloud,dizipal93.cloud,dizipal94.cloud,dizipal95.cloud,dizipal96.cloud,dizipal97.cloud,dizipal98.cloud,dizipal99.cloud,dizipal100.cloud,dizipal101.cloud,dizipal102.cloud,dizipal103.cloud,dizipal104.cloud,dizipal105.cloud,dizipal106.cloud,dizipal107.cloud,dizipal108.cloud,dizipal109.cloud,dizipal110.cloud,dizipal111.cloud,dizipal112.cloud,dizipal113.cloud,dizipal114.cloud,dizipal115.cloud,dizipal116.cloud,dizipal117.cloud,dizipal118.cloud,dizipal119.cloud,dizipal120.cloud,dizipal121.cloud,dizipal122.cloud,dizipal123.cloud,dizipal124.cloud,dizipal125.cloud,dizipal126.cloud,dizipal127.cloud,dizipal128.cloud,dizipal129.cloud,dizipal130.cloud,dizipal131.cloud,dizipal132.cloud,dizipal133.cloud,dizipal134.cloud,dizipal135.cloud,dizipal136.cloud,dizipal137.cloud,dizipal138.cloud,dizipal139.cloud,dizipal140.cloud,dizipal141.cloud,dizipal142.cloud,dizipal143.cloud,dizipal144.cloud,dizipal145.cloud,dizipal146.cloud,dizipal147.cloud,dizipal148.cloud,dizipal149.cloud,dizipal150.cloud,dizipal151.cloud,dizipal152.cloud,dizipal153.cloud,dizipal154.cloud,dizipal155.cloud,dizipal156.cloud,dizipal157.cloud,dizipal158.cloud,dizipal159.cloud,dizipal160.cloud,dizipal161.cloud,dizipal162.cloud,dizipal163.cloud,dizipal164.cloud,dizipal165.cloud,dizipal166.cloud,dizipal167.cloud,dizipal168.cloud,dizipal169.cloud,dizipal170.cloud,dizipal171.cloud,dizipal172.cloud,dizipal173.cloud,dizipal174.cloud,dizipal175.cloud,dizipal176.cloud,dizipal177.cloud,dizipal178.cloud,dizipal179.cloud,dizipal180.cloud,dizipal181.cloud,dizipal182.cloud,dizipal183.cloud,dizipal184.cloud,dizipal185.cloud,dizipal186.cloud,dizipal187.cloud,dizipal188.cloud,dizipal189.cloud,dizipal190.cloud,dizipal191.cloud,dizipal192.cloud,dizipal193.cloud,dizipal194.cloud,dizipal195.cloud,dizipal196.cloud,dizipal197.cloud,dizipal198.cloud,dizipal199.cloud,dizipal200.cloud##div[data-org^="MENU_BOTTOM_GENERAL"] > a[href][target="_blank"]
 dj6u.com##.banner,.banner_text
 dj92cc.com,djkk.com,tingqq.com#@#.share_list
@@ -10642,6 +10671,7 @@ haoweichi.com#$#.adsbygoogle { height: 1px !important; }
 haowj.com.cn##DIV.ad_top,DIV[id^="ad_pc_"]
 haoxxoo.com##.nrad1
 haoxxoo.com##.nrad2
+happymag.tv###site-leader
 happymh.com##[src="https://c.nationaltcm.com/ad/tm1111dd.png"]
 happytogether2015.com##img[src^="http://p5.urrpic.com/2015/upload/image/"],img[width="760"][height="75"]
 hateblo.jp,hatenablog.*,hatenadiary.*##.variable-rectangle-ad
@@ -10720,6 +10750,7 @@ he-games.com###he_banner_ad
 he-games.com###he_bottom_ad
 he.xinhuanet.com##[id^="idx-ad-"],.idx-ad,#idx-srch-ad,#idx-bk1-adl,#bk-list-ad
 hea.cn###top_slides_box
+head-fi.org##div[class^="head-fi_spnsr_flxbx_"]
 health.tvbs.com.tw##.ad_desktop_top
 health.tvbs.com.tw##.ad_mo_top
 health.tvbs.com.tw##.fly_outbox
@@ -10770,6 +10801,7 @@ hepuwang.com##.n5_dbhfad > .wapper
 hepuwang.com##[height="70"]
 hepuwang.com##a[href^="http://ad."]
 heraldcorp.com##.wrap > div[style^="width:100%; position:fixed; bottom:0;"]
+heraldo.es##.prometeoArticleBottom
 herebro.com,hpjav.com,javplayer.com,kbj.tv,shyav.com,sushi.tv,tktube.tv,uncensoredleak.com,kissjav.*,tokyomotion.com###player-advertising-mobile
 hero3g.com##.pcbanner
 heroku.com###heroku-cookie-banner
@@ -12623,7 +12655,6 @@ kpzpw.com##.header-pic
 kpzpw.com##.littlebanner
 kq7.com##.J_appFromLen
 krautundrueben.de,areamobile.de##.rectangle
-krautundrueben.de,irasutoya.com##.mobilead
 krayot.com###front_trandiv
 ks.js.cn##.height200
 ks.js.cn##.height45,.height60,[id^="sliderTop"],[class="fontshow k958 clearfix"],.height80
@@ -12810,6 +12841,7 @@ lecturas.com##.open-image::after
 ledinside.cn##.floatAD,[id^="ad-"],#center-block-0,#center-block-1,#center-block-2
 leetcode.com###cn-banner
 leetcode.com###region_switcher
+leikw.com
 leiling.org##.ad__single-double-rectangle-wrap
 leinetal24.de,wiesn.bayern,wetterauer-zeitung.de,werra-rundschau.de,wa.de,wlz-online.de,volksfest-freising.de,soester-anzeiger.de,sauerlandkurier.de,op-online.de,oktoberfest.bayern,news.bayern,meine-anzeigenzeitung.de,mannheim24.de,ludwigshafen24.de,lokalo24.de,kurierverlag.de,kreisbote.de,in-muenchen.de,ingame.de,hersfelder-zeitung.de,hanauer.de,hallo-muenchen.de,giessener-allgemeine.de,fuldaerzeitung.de,fnp.de,fehmarn24.de,echo24.de,dasgelbeblatt.de,costanachrichten.com,come-on.de,bw24.de,buzzfeed.de,brokser-heiratsmarkt.de,az-online.de,24vita.de,24rhein.de,24hamburg.de,24garten.de,24auto.de,heidelberg24.de,extratipp.com,fr.de,kreiszeitung.de,hna.de,tz.de,merkur.de##.wv_story_el_insertedAd
 leiphone.com##div.lph-top-ad,.zhiqu-ads
@@ -14101,9 +14133,6 @@ meltoday.com,sydneytoday.com##.promo
 memexie.com##div[style^="width:9"][style$="#C8E4F0"]
 memo.onl.jp,daily-sun.com,home.kingsoft.jp,berkem.ru,pixiv.net,cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 memopanda.com,ero-gazou.jp,eroiro.info##.widget_mobile_text
-memurlar.net###news_detailContainer > div[style="text-align:center; margin:auto; min-width:300px; min-height:250px"]
-memurlar.net###sticky-container
-memurlar.net##.mobileBody #MainPageFooter
 memurlar.net##.widget-320x100
 memurlar.net##.widget-sticky-mobil
 menshealth.de##.mh-sponsored
@@ -16224,6 +16253,7 @@ radio-canada.ca##.g-adbox-sticky
 radio.*###content-wrapper #stations-in-family + div[class]:not([data-testid])
 radio.*#?##stationpage-holder > div[class]:has(> div[class] > div[id^="RAD_NET"])
 radio.net#?##stationpage-holder > div:has(> div > div#RAD_NET_M_Station_Middle)
+radio.net#?##stationpage-holder > div:has(div[id^="RAD_M_station_incontent-"])
 radio.net#?#div[data-testid="RAD_NET_M_Search_Middle"] > div#RAD_NET_M_Search_Middle:upward(2)
 radiotimes.com##.amp-ad-wrapper
 raincent.com##.banner-top
@@ -17725,6 +17755,7 @@ thenewslens.com##div[class^="help-tnl-"]
 thenewslens.com##div[class^="help-tnl-container-"]
 thenewsminute.com##.view-ads
 thenewsminute.com##amp-iframe#prebid-user-sync
+theobjective.com##.tno-sticky
 theoutline.com##.post__body > div[class$="-embed--display"]
 thepage.ua##.adv-320x90
 thepaper.cn###head_ask_app_down
@@ -21120,6 +21151,7 @@ zzzyk.com###Tinfo
 ||17173cdn.com/a/lib/vda/seed.
 ||17173cdn.com/a/lib/vda/seed.js
 ||17173cdn.com/a/lib/vda/sources/ad17173
+||17173cdn.com/a/oms/oms-data.
 ||17173cdn.com/a/www/index/2016v2/js/seed.js
 ||17173cdn.com/js/play/page/pThridPlayerAd.js
 ||17173cdn.com^*/js/task/src/task/live/greenhand/
@@ -25375,6 +25407,7 @@ zzzyk.com###Tinfo
 ||bmp1.ali213.net/js/
 ||bmp1.ali213.net/pubjs/index_sc_utf8.js
 ||bmp2.ali213.net/js/
+||bmptbyb.com^
 ||bmw100.cn^
 ||bnbvd.xyz^
 ||bnds3.site^
@@ -25383,6 +25416,7 @@ zzzyk.com###Tinfo
 ||bnds4.site^
 ||bnds6.site^
 ||bnds6.site^
+||bnds7.site^
 ||bnds8.site^
 ||bnds8.site^
 ||bnet.com^
@@ -25656,6 +25690,7 @@ zzzyk.com###Tinfo
 ||bytravel.cn/js/ad_
 ||bytravel.cn/js/b_
 ||bytravel.cn/js/s_
+||byvlph.xyz^
 ||byytogm.cn^
 ||byzt8.top^
 ||bzclk.baidu.com^
@@ -26206,6 +26241,7 @@ zzzyk.com###Tinfo
 ||choujue.net/script/
 ||choupsee.com^
 ||chouti.com/js/tingyun-rum.js
+||chozarpeases.com^
 ||chromeba.net/wp-content/uploads/
 ||chromefeedcontentsuggestions-pa.googleapis.com/v2/suggestions^
 ||chuantu.biz/t2/22/1450961822x1822613148.gif
@@ -27895,6 +27931,7 @@ zzzyk.com###Tinfo
 ||dydujb.xyz^
 ||dyeperd.icu^
 ||dygang.cc/d/$script
+||dygtulfe.icu^
 ||dyguo.com/pc/*0.js
 ||dyguo.com/pc/nr336.js
 ||dyhjw.com/Public/v3/appdown/images/AppEntrance.png
@@ -28270,6 +28307,7 @@ zzzyk.com###Tinfo
 ||eqyzc.cyou^
 ||er.5ykj.cn^
 ||er.5ykj.com^
+||eraaoec.cn^
 ||erabaru.net^
 ||ercnrxa.cn^
 ||ere.wew.92kkdy.cc^
@@ -28703,7 +28741,6 @@ zzzyk.com###Tinfo
 ||flurry.com^
 ||flygo.ru^
 ||flyigouwu.com^
-||flymc.cc^$third-party
 ||flyzy2005.com/wp-content/*/bandwagonhost-top.
 ||flzyw.com/js/foot.js
 ||fm086.com/Plugins/search
@@ -29064,6 +29101,7 @@ zzzyk.com###Tinfo
 ||gdgffir.cn^
 ||gdhzpmh.com^
 ||gdicoou.com^
+||gdjme27.com^
 ||gdl.i9dhjx.ru^
 ||gdls114.com^
 ||gdmm.com*/mybt/
@@ -29988,6 +30026,7 @@ zzzyk.com###Tinfo
 ||hh010.com/static/image/fff/
 ||hh0212.cc^
 ||hh6666.com^
+||hh6820123.com^
 ||hh9uv6tq.com^
 ||hhaobcj.cn^
 ||hhcskj.com^
@@ -30012,6 +30051,7 @@ zzzyk.com###Tinfo
 ||hibiquan.com/uploads/images/
 ||hickeyhsu.top^
 ||hifyeldu.top^
+||higefa.site^
 ||higu.tv/upload/2deb000^
 ||hiido.com^$third-party
 ||hijack.baidu.com/idm/v1/setting?appkey=100001&sign=80b7979088cc6af422bd3775e137452a&timestamp=1530867456491$app=com.qiyi.video
@@ -30308,6 +30348,7 @@ zzzyk.com###Tinfo
 ||huatuo.weiyun.com^
 ||huaweinnd.top^
 ||huaweinnd.top^
+||huaxia.name^
 ||huayange.com^
 ||hubiazhi.com^
 ||hubiazhi.com^
@@ -31106,6 +31147,7 @@ zzzyk.com###Tinfo
 ||ipyud.cn^
 ||iqede.xyz^
 ||iqede.xyz^
+||iqgoukn.cn^
 ||iqilu.com/getZone.php
 ||iqilu.com/static_files/multiads/
 ||iqilu.com/static_files/richmedia/
@@ -31617,6 +31659,7 @@ zzzyk.com###Tinfo
 ||jiwekawe.top^
 ||jixing.cc^
 ||jixing8.com^$third-party
+||jixmlx.xyz^
 ||jiyan.net^
 ||jiyingdm.com/js/loadingshow.html
 ||jizzads.com^
@@ -31753,6 +31796,7 @@ zzzyk.com###Tinfo
 ||jpzsmbp.cn^
 ||jq159.com^$third-party
 ||jq6b.top^
+||jqkcett.icu^
 ||jqmt.qq.com^
 ||jqnggnsa.fun^
 ||jqsex.com^
@@ -32341,6 +32385,7 @@ zzzyk.com###Tinfo
 ||kmmgoogle.oss-ap-southeast-1.aliyuncs.com^
 ||kmn1sk.com^
 ||kmnhbr.xyz^
+||kmnhgna.com^
 ||kmpjrjz.cn^
 ||kmpl.rnqxp.cn^
 ||kmplayer.cn/include/jscript/*-a.js
@@ -32784,6 +32829,7 @@ zzzyk.com###Tinfo
 ||lf-hl.snssdk.com/search/suggest^
 ||lf-hl.snssdk.com/ugc/publish^
 ||lf9-static.bytednsdoc.com/obj/tos-cn-i-0813
+||lfjtiuy.cn^
 ||lflmdm.com^
 ||lftxali.fancyapi.com^
 ||lfzk2cp.icu^
@@ -33203,6 +33249,7 @@ zzzyk.com###Tinfo
 ||lsjxs.cc/js/html
 ||lskmipb.icu^
 ||lskmipb.icu^
+||lslbahl.top^
 ||lslld.xyz^
 ||lsnignsl.xyz^
 ||lsnoownml.fun^
@@ -34023,6 +34070,7 @@ zzzyk.com###Tinfo
 ||mnks.cn/jk/appAD_
 ||mnlgsjh.cn^
 ||mnnmnn.com^
+||mnpbxjq.cn^
 ||mnrrk.com/yuhe/ote/js/pcgg.js
 ||mnver.xyz^
 ||mnvqx.xyz^
@@ -34522,6 +34570,7 @@ zzzyk.com###Tinfo
 ||ncyksuw.xyz^
 ||nczsks.com/SCWB/WebResource.axd
 ||ndfsl.com^
+||ndqcz0e.xyz^
 ||ndqzqmb.xyz^
 ||ndruhz.xyz^
 ||neaqi.top^
@@ -35181,6 +35230,7 @@ zzzyk.com###Tinfo
 ||oschina.net/promotion/
 ||oschina.net/uploads/ad/
 ||oschina.net/uploads/cooperation/
+||oslbahk.top^
 ||osnignsk.xyz^
 ||osnignsk.xyz^
 ||osnoownmk.fun^
@@ -35993,6 +36043,7 @@ zzzyk.com###Tinfo
 ||pyjqhb.xyz^
 ||pyk.in-neo.cn^
 ||pyntr.xyz^
+||pypwxvo.cn^
 ||pythontab.com/statics/images/*abc
 ||pythontab.com/statics/images/*ads
 ||pythontab.com/statics/images/*comp
@@ -37280,6 +37331,7 @@ zzzyk.com###Tinfo
 ||selornews.com^
 ||semaobf1.com^
 ||sense-*.tapdb.net^
+||sensifyfugged.com^
 ||sensors.cloud.tencent.com^
 ||sensors.ibreader.com^
 ||sensors.larkplayerapp.com^
@@ -37527,6 +37579,7 @@ zzzyk.com###Tinfo
 ||siluke.tw/js/count.js
 ||silvermob.com^
 ||silwm.com^
+||simblotusitate.com^
 ||simengadx.com^
 ||simi1234.com^
 ||simi1234.com^
@@ -38468,6 +38521,7 @@ zzzyk.com###Tinfo
 ||tcss.qq.com^$domain=~pt80.net
 ||tctask.com^
 ||tctltb.com^
+||tcuqqhj.icu^
 ||td.haoxyx.com^
 ||td.zgxue.com^
 ||td1h.cn^
@@ -38551,6 +38605,7 @@ zzzyk.com###Tinfo
 ||tgcfmh.com^
 ||tgdopodk.com^
 ||tgfyq.cn^
+||tggsd07.com^
 ||tgktw.xyz^
 ||tgnlaigi.fun^
 ||tgryfh.xyz^
@@ -39679,7 +39734,9 @@ zzzyk.com###Tinfo
 ||vh5g.top^
 ||vhjxrj.xyz^
 ||vhjxrj.xyz^
+||vhsutpgui.xyz^
 ||vhulan.com^
+||vhutitpu.icu^
 ||vhyvkx.com^
 ||vi1.souid.com^
 ||vi7a.top^
@@ -40596,6 +40653,7 @@ zzzyk.com###Tinfo
 ||www.pksanb.com^
 ||www.ppslsa.com^
 ||www.q4ee.top^
+||www.qiniu.com/qfans^document
 ||www.qinlinghe.com^
 ||www.qkixi.com^
 ||www.qlspx.com^
@@ -42072,6 +42130,7 @@ zzzyk.com###Tinfo
 ||zbzbzzz.top^
 ||zc173.com/173fee/
 ||zcaijing.com/images/
+||zcbfjd.xyz^
 ||zcchyr*.xyz^
 ||zcchyw*.xyz^
 ||zcck60eqyw.world^
@@ -42519,6 +42578,7 @@ zzzyk.com###Tinfo
 ||zswph.com^
 ||zsyk91.cn^
 ||zsyk91.cn^$third-party
+||zszhln.xyz^
 ||zt-uc-baidu.cc^
 ||zt-uc-baidu.cc^
 ||zt.chuanke.com/?mod=
@@ -44278,6 +44338,7 @@ zzzyk.com###Tinfo
 12999.com##[height="100"]
 16668tu.com,alibuybuy.com,chewen.com,faloo.com,newhua.com,ph66.com,tv.cntv.cn,weishangshijie.cn##div[class^="ad_"]
 16888.com##.cardataclass
+17173.com###finalTuijian
 17173.com###topAlert
 17173.com###vjs-ad-on-pause
 17173.com##.js-lol-pop
@@ -44286,6 +44347,7 @@ zzzyk.com###Tinfo
 17173.com##.pic[href*="Room"]
 17173.com##DIV[class^="ad-pn"],DIV.top-background-adv,DIV.middel_advers,.win17173,div[class^="banner"][class$="0"],iframe[src^="http://www.17173.com/if/x/"],div.ad-rt,div.ad-lt,[class^="ad0"],[class^="dloadArea"],[class^="tg-h-"],[class^="pn pn-tg ad17173"],.img-placeholder,[class^="pn pn-tg-avatar ad17173carousel"],[id^="Youliang_"],.pn-tg,.pn.pn-rss
 17173.com##a[href*="&ad_code="]
+17173.com##a[href^="https://gtv."]
 17173.com,cdyee.com,chinaz.com,eastmoney.com,epochtimes.com,hsw.cn,ifeng.com,lantian.tv,phoenixtv.com,pyccoo.cn,xineurope.com,yesky.com,zdzdm.com##.adbox
 17173.tv.sohu.com##div.list-beauty,div#playAdLeftTop.adbox,DIV.win17173.maximize
 18183.com###gsBtn
