@@ -392,6 +392,8 @@ ebay.com,ebay.com.au,ebay.co.uk,ebay.com.my,ebay.ie,ebay.ca,ebay.at,ebay.de,ebay
 ebay.com,ebay.com.au,ebay.co.uk,ebay.com.my,ebay.ie,ebay.ca,ebay.at,ebay.de,ebay.ch,ebay.pl,ebay.it,ebay.nl,ebay.be,ebay.fr,ebay.es,ebay.com.hk,ebay.com.sg,ebay.ph#$#hide-if-matches-xpath './/div[@data-view]/a[@class="srp-1p__link"]//div[text()="Sponsored"]/ancestor::div[@data-view][@class][1]'
 ebay.com,ebay.com.au,ebay.co.uk,ebay.com.my,ebay.ie,ebay.ca,ebay.at,ebay.de,ebay.ch,ebay.pl,ebay.it,ebay.nl,ebay.be,ebay.fr,ebay.es,ebay.com.hk,ebay.com.sg,ebay.ph#$#hide-if-matches-xpath './/div[contains(@class,"sponsored-infotip")]/parent::div[starts-with(@class,"ads")]/parent::div[contains(@class,"ads")]/ancestor::div[@id and @aria-label="Advertisement"]'
 ebay.fr#$#hide-if-matches-xpath './/a[@*]/img [@src][contains(@alt,"reconditionné")]/parent::a[@class="srp-banner"]/ancestor::li[contains(@class,"SIMPLE_IMAGE_BANNER")][1]'
+ebay.com,ebay.co.uk,ebay.com.au,ebay.ca,ebay.fr,ebay.at,ebay.de,ebay.it,ebay.es#$#hide-if-contains-visible-text /Sponsored|Anzeigen|Sponsorisé|Sponsorizzati|Sponsorowane|G⁣e⁣s⁣p⁣o⁣n⁣s⁣o⁣r⁣d|Patrocinado/ 'li[class^="carousel__snap-point"][style]>div[data-viewport]>a' 'span'
+ebay.com,ebay.co.uk,ebay.com.au,ebay.ca,ebay.fr,ebay.at,ebay.de,ebay.it,ebay.es#$#hide-if-matches-xpath './/div/h2[contains(@class,"merch")][contains(translate(text(), "SPONSORED", "sponsored"), "sponsored") or contains(translate(text(), "SPONSORISÉS", "sponsorisés"), "sponsorisés") or contains(translate(text(), "PATROCINADOS", "patrocinados"), "patrocinados") or contains(translate(text(), "ANZEIGEN", "anzeigen"), "anzeigen") or contains(translate(text(), "SPONSORIZZATI", "sponzorizzati"), "sponsorizzati") or contains(translate(text(), "SPONSORIZZATE", "sponzorizzate"), "sponsorizzate")]/ancestor::div[contains(@class,"merch")]/parent::div[@class="merch-module"]'
 ! #CV-737
 cnn.com#$#strip-fetch-query-parameter caid warnermediacdn.com; strip-fetch-query-parameter afid warnermediacdn.com
 ! #CV-1149
@@ -636,7 +638,7 @@ bing.com#?#li[class="b_algo"]:-abp-has(>h2 + div[class="b_caption"] > [class^="b
 bing.com#?#li[class="b_algo"]:-abp-has(>[class="ad_ml1ESLItem"])
 bing.com#?#li[class="b_algo"]:-abp-has(a[href="#"]:not([class]))
 ! #CV-1190
-instacart.com#$#race start; hide-if-matches-xpath './/span[@class][contains(text(),"")]/preceding::div[@aria-label][@role]/div[@style]/parent::div[starts-with(@aria-label,"Product") and @role and @class]/ancestor::*[1]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eligible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eliggible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eliigible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eligiible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eliiggible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; race stop;
+instacart.com#$#race start; hide-if-matches-xpath './/span[@class][contains(text(),"")]/preceding::div[@aria-label][@role]/div[@style]/parent::div[starts-with(@aria-label,"Product") and @role and @class]/ancestor::*[1]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eligible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eliggible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eliigible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eligiible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div[@data-sp-eliiggiible]/ancestor::div[@aria-label="Product"]/parent::div[1]'; race stop;
 instacart.com#$#hide-if-matches-xpath './/*[@class]/span[2]/preceding::img[contains(@src,"metadata=copyright")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::header'
 instacart.com#$#hide-if-matches-xpath './/*[@class]/span/preceding::img[contains(@src,"metadata=copyright")][contains(@alt,"")][@data-testid]/ancestor::a[contains(@href,"interaction_id")]/ancestor::section[@id][@class][not(@id="store-wrapper") and not(@id="js-app")]'
 instacart.com#$#hide-if-matches-xpath './/*[@class]/span[2]/preceding::img[contains(@src,"cloudfront.net/uploads/image_display_")][@alt]/parent::div[@class][1]'
@@ -881,7 +883,9 @@ animeunity.cc#$#abort-on-property-read zfgstorage; abort-current-inline-script d
 aniwatch.to#$#abort-current-inline-script XMLHttpRequest
 asura.gg#$#hide-if-matches-xpath './/div[@language]/video[@src]/ancestor::div[@style]/parent::div[@id="tip_text_content"]/ancestor::div[@style][@id][1]'
 dl-protect.link#$#abort-current-inline-script addEventListener DOMContentLoaded; hide-if-matches-xpath './/a[@style="cursor: pointer;"]/img[@src][@onmouseover]/ancestor::center/parent::div[1]/ancestor::div[@class="row"]'
-aliexpress.com#$#hide-if-contains-visible-text /AD/ 'a[class][style^="width: 190px"]' 'span[class]'
+aliexpress.com#$#hide-if-contains-visible-text /AD/ 'div[data-index][style] div[style]>a[target^="_blank"]' 'span[class][style]'
+aliexpress.com#$#hide-if-contains-visible-text /AD/ 'a[class][target][style^="width"]' 'span[class][style]'
+aliexpress.com#$#hide-if-matches-xpath './/div[contains(text(),"sponsored")]/parent::div[@class][@id]/ancestor::div[contains(@class,"spin")]'
 ! Video ads
 ||content.sinpartycdn.com/*pre-roll-ads/*$media,rewrite=abp-resource:blank-mp4,domain=sinparty.com
 ||content.sinpartycdn.com/videos-ads/*$media,rewrite=abp-resource:blank-mp4,domain=sinparty.com
@@ -1088,6 +1092,7 @@ polygamia.pl,echirurgia.pl,kardiolo.pl,dobreprogramy.pl,o2.pl,kafeteria.pl,paren
 echirurgia.pl,dobreprogramy.pl,o2.pl,autokult.pl,pudelek.pl,money.pl,wp.pl#$#hide-if-matches-xpath '//div[@id]/a[@id]/img[string-length(@src) < 120][contains(normalize-space()," ")][@class="img-full show"]/ancestor::div[1]'
 kafeteria.pl,medycyna24.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,echirurgia.pl,dobreprogramy.pl,o2.pl,autokult.pl,pudelek.pl,money.pl,wp.pl,~sportowefakty.wp.pl#$#hide-if-matches-xpath '//div[@*]/div[@class][contains(normalize-space()," ")]/iframe[@*][string-length(@src) < 150] /ancestor::div[3][@*]'
 kafeteria.pl,medycyna24.pl,komorkomania.pl,gadzetomania.pl,fotoblogia.pl,echirurgia.pl,dobreprogramy.pl,o2.pl,autokult.pl,pudelek.pl,money.pl,wp.pl#$#hide-if-matches-xpath '//div[@*]/p[contains(normalize-space(), " ")][@*]/preceding-sibling::label[1][@class]/ancestor::div[2]'
+money.pl#$#hide-if-matches-xpath '//div[@id]/following::a[@class]/img[string-length(@src) < 130]/ancestor::div[1]'
 polygamia.pl,echirurgia.pl,kardiolo.pl,dobreprogramy.pl,o2.pl,kafeteria.pl,parenting.pl,autokult.pl,pudelek.pl,nerwica.com,medycyna24.pl,money.pl,smaczneblogi.pl,komorkomania.pl,gadzetomania.pl,open.fm,fotoblogia.pl,abczdrowie.pl,autocentrum.pl,wp.pl,~poczta.wp.pl#$#hide-if-matches-xpath '//ul[@class]/li[string-length(@class)<=25][contains(normalize-space(), " ")]/img[string-length(@src) >140]/following-sibling::span/a[string-length(@href) > 2000]/ancestor::li'
 www.wp.pl#$#hide-if-matches-xpath './/div[@id][@data-st-area]/div[1]/div/parent::div[@class]'
 poczta.o2.pl#$#hide-if-matches-xpath './/a[@class][contains(@href,"wp.pl/")]/parent::div[@style]/ancestor-or-self::div[@class][@slot="NATIVE_FEED"]/parent::div[1]'
@@ -1244,6 +1249,7 @@ ashdi.vip,tortuga.wtf#$#json-prune vast
 ||pikabu.ru/ajax/?key=$xmlhttprequest,header=x-robots-tag
 vprognoze.ru#$#abort-on-property-read bannersBillboard
 vk.com,vk.ru#$#abort-on-property-read vk__adsLight.adsShowed
+transkarpatia.net#$#abort-current-inline-script document.createElement redtram
 ! Prevent auto reload
 24boxing.com.ua,bilshe.com,businessua.com,f1analytic.com,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,nashamama.com,sportanalytic.com,stravy.net,zdorovia.com.ua#$#abort-current-inline-script setInterval reload
 ! Popup/popunder/clickunder
