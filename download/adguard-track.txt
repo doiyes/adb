@@ -1,4 +1,5 @@
 ! AdGuard-跟踪保护规则
+starblast.io##+js(set-constant, ga, noopFunc)
 uol.com.br##+js(set-constant, YT, {})
 uol.com.br##+js(set-constant, YT.ImaManager, noopFunc)
 uol.com.br##+js(set-constant, UOLPD, {})
@@ -423,7 +424,7 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||metaversn.site^
 ||hermes.allo-media.net^
 ||cdn.cohesionapps.com^$third-party
-||c212.net^
+||c212.net^$third-party
 ||imp.xmax.jp^
 ||analytics.audionow.de^$third-party
 ||cdn.kaizenplatform.net^
@@ -1494,7 +1495,6 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||denakop.com^$third-party
 ||trv.upperbooking.com^$third-party
 ||trl.upperbooking.com^$third-party
-||getback.ch^$third-party
 ||meapk.com^
 ||vidapi.expepp.de^$third-party
 ||builfico.de^$third-party
@@ -5091,6 +5091,10 @@ prjaga.ru#?##right > div#right_nav > h3:contains(Онлайн статистик
 ||tags.news.com.au^$~script
 ||telemetry.mozilla.org^
 |piwik.
+||tracking.socketlabs.com^
+||analytics.elegela.us^
+||analytics.code.illusion.jp^
+||a.brack.ch^
 ||go.bidfluence.com^
 ||stracker.rmg.ru^
 ||mcs-sg.tiktok.com^
@@ -48407,6 +48411,7 @@ _tracking.php?b=
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|rusvideos.porn|jrkyushu.co.jp|amiunique.org
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org
+||synthira.ru/*.php|$script
 ||imgssl.constantcontact.com/letters/images/sys/S.gif
 thestar.com##.viafoura-engagement-starter
 thestar.com##div[data-lpos="you-might-be-interested-in"]
@@ -48434,9 +48439,6 @@ lto.de##img[src^="https://ssl-wolterskluwer.met.vgwort.de/"]
 ||m.cdn.yclients.com/utm.marker.js
 ||ltn.com.tw/impression?
 ||muragon.com/js/normal/gtag-event.js
-||sealfit.ontraport.net/o?$image
-||cdn.shopify.com/shopify-email/$image
-||sendfox.com/trk/open/$image
 ||cdn.iol.pt/js/utils/Modules/IOLAnalytics/dist/iol.analytics.js
 ||wowow.co.jp/API/new_prg/get_tracking_url.php
 /exp-metrika.js$domain=russia-tv.online
@@ -51859,6 +51861,27 @@ link.gmapp*.net$image
 ||ya.ru/clck/
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||bing.com/fd/ls/
+egbgaig.r.*.d.sendibt$image
+links.signup.com$image
+aa.agkn.com$image
+mail.nationalgeographic.com
+email.123formbuilder.com/e/o/$image
+email.123formbuilder.com%2Fe%2Fo%2F$image
+sealfit.ontraport.net/o?$image
+sealfit.ontraport.net%2Fo%3F$image
+cdn.shopify.com/shopify-email/$image
+cdn.shopify.com%2Fshopify-email%2F$image
+sendfox.com/trk/open/$image
+sendfox.com%2Ftrk%2Fopen%2F$image
+email.nirandfar.com/*/link-tracker?$image
+events.jotform.com/email/$image
+click.mailersend.net$image
+clicks.mlsend2.com$image
+email.send.aliyana.in$image
+links.kahoot.com$image
+track.team.kahoot.com$image
+signup.com$image
+email.cloud2.secureclick.net$image
 nyb.soundestlink.com*track$image
 link.thirdlove.com$image
 intercom-mail.com/q/$image
@@ -51882,6 +51905,7 @@ mailing.pbank.com.ua$image
 email.azurareborn.com$image
 30menu.com/_t/$image
 mandrillapp.com/track/$image
+nnw.soundestlink.com$image
 omni.soundestlink.com$image
 email.wetransfer.com$image
 click.*.mc.philips.com$image
@@ -51921,6 +51945,7 @@ img.promio-connect.com$image
 email-links.buffer.com$image
 sli.wired.com/imp?s$image
 bolt.im/t/$image
+site123.com*openedMessages.php$image
 app.site123.com$image
 mx11.tildacdn.com^*img/pixel/$image
 links.email.digg.com$image
@@ -52838,6 +52863,11 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||optout.rlcdn.com^
+@@||wurfl.io/wurfl.js$domain=onlinetouch.nl
+@@||cdn.cxense.com/cx.cce.js$domain=bizjournals.com
+@@||cdn.cxense.com/cx.js$domain=bizjournals.com
+@@||api.cxense.com/public/widget/data?$domain=bizjournals.com
 @@||static.personaclick.com/Elektromarketim/$domain=elektromarketim.com
 @@||cdn.personaclick.com/v*.js$domain=elektromarketim.com
 @@||api.personaclick.com/recommend/$domain=elektromarketim.com
