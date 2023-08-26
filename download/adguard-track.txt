@@ -27,9 +27,12 @@ cerbahealthcare.it##+js(set-constant, pa, {})
 cerbahealthcare.it##+js(set-constant, pa.setConfigurations, noopFunc)
 lightrun.com##+js(set-constant, gtag, noopFunc)
 biedronka.pl##+js(remove-class, async-hide, html)
+auto.ru##+js(set-local-storage-item, __rtbhouse.lid, 0)
+auto.ru##+js(set-local-storage-item, ludca, 0)
 sportschau.de##+js(set-constant, mediaTrackingOff, true)
 capital.fr,voici.fr,gala.fr##+js(set-constant, DD_RUM.addTiming, noopFunc)
 reverso.net##+js(set-constant, rumjs.business.setManualConsent, noopFunc)
+itmedia.co.jp##+js(set-cookie, cX_G, 1)
 itmedia.co.jp#$##ulCommentWidget[style*="display"] { display: block !important; }
 apkpure.com##+js(set-constant, $.analytics, {})
 apkpure.com##+js(set-constant, $.analytics.send, noopFunc)
@@ -43,6 +46,13 @@ galaxy.geely.com,guancha.cn##+js(set-constant, sensors.quick, noopFunc)
 galaxy.geely.com,guancha.cn##+js(set-constant, sensors.registerPage, noopFunc)
 embed.rtl.hu##+js(set-constant, gemiusStream, {})
 embed.rtl.hu##+js(set-constant, gemiusStream.event, noopFunc)
+reuters.com##+js(set-local-storage-item, ajs_anonymous_id, null)
+6play.fr##+js(set-local-storage-item, gdprTracking, false)
+6play.fr##+js(set-local-storage-item, gdprPersonalization, false)
+6play.fr##+js(set-local-storage-item, gdprAdTargeting, false)
+6play.fr##+js(set-local-storage-item, gdprMultiDeviceMatching, false)
+6play.fr##+js(set-local-storage-item, gdprUserHasInteracted, 0)
+6play.fr##+js(set-local-storage-item, localDeviceId, 0)
 imdb.com##+js(set-constant, doWithAds, noopFunc)
 ##+js(set-constant, Document.prototype.browsingTopics, undefined)
 fmkorea.com##+js(set-constant, link_url, '')
@@ -61,6 +71,7 @@ athabascau.ca##+js(set-constant, WURFL, {})
 tarnkappe.info##+js(abort-on-property-read, Matomo)
 careermap.co.uk##+js(set-constant, trackEvent, noopFunc)
 gmarket.co.kr##+js(set-constant, pvprofiler.sendEvt, noopFunc)
+popin.cc##+js(set-local-storage-item, _ss_pp_id, )
 valleybreeze.com##+js(remove-attr, hidden, #asset-content[hidden])
 tvnturbo.pl,ttv.pl,tvn24.pl##+js(set-constant, gemiusStream, noopFunc)
 tvnturbo.pl,ttv.pl,tvn24.pl##+js(set-constant, __pix2, {})
@@ -51807,6 +51818,7 @@ link.gmapp*.net$image
 ||ya.ru/clck/
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||bing.com/fd/ls/
+linkedin.com*emimp$image
 .e-mailnews.de/i/$image
 .e-mailnews.de%2Fi%2F
 email.budovideos.com$image
@@ -52823,6 +52835,8 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||js.datadome.co/tags.js$domain=auth.garena.com
+@@||api-js.datadome.co/js/|$xmlhttprequest,domain=auth.garena.com
 @@||manage.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=vod$domain=editor.wixapps.net
 @@||optout.rlcdn.com^
 @@||wurfl.io/wurfl.js$domain=onlinetouch.nl
