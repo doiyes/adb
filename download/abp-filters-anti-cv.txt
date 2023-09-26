@@ -642,6 +642,7 @@ bing.com#?#li[class="b_algo"]:-abp-has(>[class="ad_ml1ESLItem"])
 bing.com#?#li[class="b_algo"]:-abp-has(a[href="#"]:not([class]))
 ! #CV-1190
 instacart.com#$#hide-if-contains-visible-text '/S(\\s)*p(\\s)*o(\\s)*n(\\s)*s(\\s)*o(\\s)*r(\\s)*e(\\s)*d/' li 'li div[aria-label="Product"]'
+instacart.com#$#hide-if-contains-visible-text '/Sponsor/' li 'li div[aria-label="Product"]'
 instacart.com#$#hide-if-matches-xpath '//img[@alt="Sponsored"][contains(@src,".svg")]/ancestor::div[@aria-label="Product"]/parent::div[1]'
 instacart.com#$#race start; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-sp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-fp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; race stop;
 instacart.com#$#hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-featured-")]/ancestor::div[@aria-label="Product"]/parent::div[1]'
@@ -651,7 +652,7 @@ instacart.com#$#hide-if-matches-xpath './/*[@class]/span[2]/preceding::img[conta
 instacart.com#$#hide-if-matches-xpath './/span[starts-with(@class,"e-1r5")][contains(text(),"d")]/parent::div[1]'
 instacart.com#$#hide-if-matches-xpath './/*[@class]/span[contains(@style,"display:")][2]/ancestor::section[@class="e-wbvail"]'
 instacart.com#$#hide-if-matches-xpath './/a[@href]//img[@data-testid]/following::div[.//span[text()]/following-sibling::span[text()]][1]/parent::div[@class]/parent::a[@href]/ancestor::div[@class and @id][1]'
-instacart.com#$#hide-if-matches-xpath './/source[@media]/following-sibling::img[contains(@alt,"Sponsored")]/parent::picture/ancestor::div[@class][1]'
+instacart.com#$#hide-if-matches-xpath './/span[text()]/preceding::div[@aria-hidden="true"]/preceding::source[@media]/following-sibling::img[contains(@alt,"Sponsored")]/ancestor::header[@id][@class][1]'
 ! #CV-1213
 samsclub.com#$#hide-if-matches-xpath '//img[contains(@class,"sc-pc-image-small-controller")]/preceding::div[contains(@class,"sc-sponsored-simple")][contains(text(),"Sponsored")]/ancestor::div[contains(@class,"sc-product-carousel-canary-card-has-sponsored-product")]'
 samsclub.com#$#hide-if-matches-xpath './/span[@class="sc-specials-label"]/following::a[@role="button"]/ancestor::div[@class="sc-sba-modules-logo"]/parent::div[@class="sc-sba-modules"]'
@@ -1357,6 +1358,8 @@ monoschinos2.com#$#abort-current-inline-script EventTarget.prototype.addEventLis
 seriesyonkis.cx#$#abort-on-property-read window.atob; abort-on-property-read open; abort-on-property-read _0x4c81
 ! #CV-368
 rainanime.net#$#abort-on-property-read NativeAd
+! #CV-1809
+mercadolibre.com.ar,mercadolibre.com.bo,mercadolivre.com.br,mercadolibre.cl,mercadolibre.com.co,mercadolibre.co.cr,mercadolibre.com.do,mercadolibre.com.ec,mercadolibre.com.gt,mercadolibre.com.hn,mercadolibre.com.mx,mercadolibre.com.ni,mercadolibre.com.pa,mercadolibre.com.py,mercadolibre.com.pe,mercadolibre.com.sv,mercadolibre.com.uy,mercadolibre.com.ve#$#hide-if-matches-xpath './/div[@class="ui-search-item__pub-container"]/preceding::a[@rel="nofollow,sponsored"]/ancestor::div[contains(@class,"ui-search-result__wrapper")]'
 ! *** abp-filters-anti-cv:turkish.txt ***
 ! #CV-717
 yandex.com.tr#$#hide-if-contains reklam li.serp-item 'li.serp-item div.label'
