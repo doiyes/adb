@@ -647,7 +647,7 @@ instacart.com#$#hide-if-contains-visible-text '/S(\\s)*p(\\s)*o(\\s)*n(\\s)*s(\\
 instacart.com#$#hide-if-contains-visible-text '/Sponsor/' li 'li div[aria-label="Product"]'
 instacart.com#$#hide-if-contains-visible-text '/(\\s)*sored/' li 'li div[aria-label="Product"]'
 instacart.com#$#hide-if-matches-xpath '//img[@alt="Sponsored"][contains(@src,".svg")]/ancestor::div[@aria-label="Product"]/parent::div[1]'
-instacart.com#$#race start; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-sp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-fp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-ssp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; race stop;
+instacart.com#$#race start; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-sp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-fp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-ssp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-sssp")]/ancestor::div[@aria-label="Product"]/parent::div[1]'; race stop;
 instacart.com#$#hide-if-matches-xpath './/div[@class]//div/@*[contains(name(),"data-featured-")]/ancestor::div[@aria-label="Product"]/parent::div[1]'
 instacart.com#$#hide-if-matches-xpath './/*[@class]/span[2]/preceding::img[contains(@src,"metadata=copyright")]/ancestor::a[contains(@href,"interaction_id")]/ancestor::header'
 instacart.com#$#hide-if-matches-xpath './/*[@class]/span/preceding::img[contains(@src,"metadata=copyright")][contains(@alt,"")][@data-testid]/ancestor::a[contains(@href,"interaction_id")]/ancestor::section[@id][@class][not(@id="store-wrapper") and not(@id="js-app")]'
@@ -1295,6 +1295,7 @@ tapochek.net#$#abort-on-property-read ads_script
 rutor.org#$#abort-on-property-read Light.Popup
 bez-smenki.ru#$#abort-current-inline-script $ showPopupextra
 partnerkin.com#$#override-property-read Object.prototype.autoPopups undefined
+comedy-radio.ru,radioromantika.ru,veseloeradio.ru#$#abort-on-property-read yaContextCb
 ! Video ads
 yastatic.net#$#abort-on-property-read Object.prototype.vast
 ! #CV-547
@@ -1427,6 +1428,7 @@ khoaiphim.com#$#abort-current-inline-script jQuery click_time
 dualeotruyenus.com#$#abort-current-inline-script document.addEventListener popunder
 lxmanga.net#$#abort-current-inline-script $ PopUnder
 truyen35.vn#$#abort-current-inline-script jQuery click_ads
+toptruyenne.com#$#abort-current-inline-script Promise instance
 ! *** abp-filters-hotfix:hotfix.txt ***
 ! FDA-2830
 @@||cdn.jsdelivr.net/npm/just-detect-adblock@*/dist/bundle.umd.min.js|
