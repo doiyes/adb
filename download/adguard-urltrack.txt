@@ -149,6 +149,7 @@ $removeparam=mtm_source
 $removeparam=pk_campaign
 $removeparam=pk_medium
 $removeparam=pk_source
+$removeparam=_branch_referrer
 $removeparam=_branch_match_id
 $removeparam=vc_lpp
 $removeparam=ml_subscriber
@@ -179,9 +180,9 @@ $removeparam=fb_ref
 $removeparam=fb_source
 ||v.daum.net^$removeparam=x_imp
 ||v.daum.net^$removeparam=x_hk
-||dmm.com^$removeparam=dmmref
-||dmm.com^$removeparam=i3_ref
-||dmm.com^$removeparam=i3_ord
+$removeparam=dmmref,domain=dmm.co.jp|dmm.com
+$removeparam=i3_ref,domain=dmm.co.jp|dmm.com
+$removeparam=i3_ord,domain=dmm.co.jp|dmm.com
 ||mootoon.co.kr$removeparam=in_id
 ||researchgate.net^$removeparam=_tp
 ||peacocktv.com^$removeparam=orig_ref
@@ -307,7 +308,6 @@ mailchimp.com$removeparam=amp%3Bafl
 ||hbol.jp^$removeparam=cx_clicks_art_mdl
 ||singtao.ca^$removeparam=referid
 ||orbis.co.jp^$removeparam=adid
-||esquire.com^$removeparam=_ga
 ||mora.jp^$removeparam=fmid
 ||record.pt^$removeparam=ref
 ||wsj.com^$removeparam=reflink
@@ -343,7 +343,6 @@ mailchimp.com$removeparam=amp%3Bafl
 ||minfin.com.ua^$removeparam=mcr
 ||cnbc.com^$removeparam=__source
 ||cnbc.com^$removeparam=par
-$removeparam=utm_campaign,domain=joongang.co.kr|donga.com|hankyung.com|khan.co.kr|asiae.co.kr|fnnews.com|chosun.com
 $removeparam=plink,domain=sbs.co.kr
 $removeparam=cooper,domain=sbs.co.kr
 $removeparam=nv,domain=khan.co.kr
@@ -511,7 +510,6 @@ $removeparam=afid,domain=123chat.jp|kanochat.jp|live.fc2.com
 ||immobilienscout24.de^$removeparam=enteredFrom
 ||immobilienscout24.de^$removeparam=source
 ||tumblr.com^$removeparam=source
-||tumblr.com^$removeparam=_branch_referrer
 ||tumblr.app.link^$removeparam=_p
 ||dhits.docomo.ne.jp^$removeparam=affiliate
 ||promo.korabli.su^$removeparam
@@ -583,7 +581,7 @@ $removeparam=afid,domain=123chat.jp|kanochat.jp|live.fc2.com
 ||stripchat.com^$removeparam=affiliateId
 ||stripchat.com^$removeparam=referrer
 ||1password.university^$removeparam=utm_ref
-||blog.twitch.tv^$removeparam=/web_only|_branch_referrer/
+||blog.twitch.tv^$removeparam=web_only
 ||michaelkors.global^$removeparam=ecid
 ||michaelkors.global^$removeparam=cjevent
 ||michaelkors.global^$removeparam=cjdata
@@ -597,7 +595,6 @@ $removeparam=afid,domain=123chat.jp|kanochat.jp|live.fc2.com
 ||stripchat.com^$removeparam=sourceId
 ||stripchat.com^$removeparam=realDomain
 ||fmworld.net^$removeparam=from
-||kaspersky.$removeparam=_ga
 ||kaspersky.$removeparam=icid
 ||facebook.com/marketplace/$removeparam=tracking
 ||facebook.com^$removeparam=extid
@@ -611,7 +608,6 @@ $removeparam=afid,domain=123chat.jp|kanochat.jp|live.fc2.com
 ||music.apple.com^$removeparam=itscg
 ||netflix.com^$removeparam=trackId
 ||netflix.com^$removeparam=tctx
-||moodfabrics.com^$removeparam=_kx
 ||target.georiot.com/Proxy.ashx$removeparam=tsid
 ||kamigame.jp^$removeparam=kamigame_source
 ||shop.hololivepro.com^$removeparam=pr_rec_id
@@ -669,7 +665,6 @@ $removeparam=/utm_partner_id|frommail/,domain=mail.ru|sportmail.ru
 ||pulse.mail.ru^$removeparam=/^(udid|DeviceID|ver|appbuild|vendor|model|device_name|device_type|instanceid|device_year|connection_class|appsflyerid)/
 ||use.typekit.net^$font,removeparam=~/^(primer|subset_id)=/,domain=~fonts.adobe.com
 ||p.typekit.net^$stylesheet,removeparam
-||open.spotify.com^$removeparam=_branch_referrer
 ||qcplay.co.jp/?shortlink=*&c=$removeparam=c
 ||qcplay.co.jp^$removeparam=pid
 ||qcplay.co.jp^$removeparam=shortlink
@@ -824,7 +819,6 @@ $removeparam=scid,domain=rakuten.co.jp|rakuten-wallet.co.jp
 ||dmm.co.jp^$removeparam=i3_ref
 ||imdb.com^$removeparam=ref_
 ||livedoor.biz^$removeparam=ref
-||reddit.com^$removeparam=_branch_referrer
 ||reddit.com^$removeparam=post_fullname
 ||adj.st^$removeparam=CollectionId
 ||adj.st^$removeparam=adjust_deeplink
@@ -907,7 +901,6 @@ $removeparam=a_aid,domain=expressvpn.com|vpnarea.com
 ||lcs.naver.com/m?u=$removeparam=ts
 ||edx.org^$removeparam=source
 ||infoq.com^$removeparam=/topicPageSponsorship|^itm_/
-||coupondunia.in^$removeparam=itm_source
 ||adshares.net^$removeparam=cid
 ||creativecloud.adobe.com^$removeparam=trackingid
 ||get.adobe.com^$removeparam=browser_type
@@ -1103,18 +1096,14 @@ $removeparam=at_medium,domain=bbc.com|bbc.co.uk
 ||twitter.com$removeparam=ref_url
 ||zerkalo.io^$removeparam=tg
 ||zerkalo.io^$removeparam=vk
-||microsoft.com^$removeparam=tduid
-||microsoft.com^$removeparam=irclickid
 ||microsoft.com^$removeparam=ranEAID
 ||microsoft.com^$removeparam=ranSiteID
 ||microsoft.com^$removeparam=ocid
 $removeparam=epi,domain=microsoft.com|xbox.com
 ||nbcume.sc.omtrdc.net/id?d_visid_ver=$removeparam=/mcorgid|mid|ts/,domain=nbcdfw.com
 $removeparam=dclid
-||trendyol.com^$removeparam=_ga
 ||trendyol.com^$removeparam=utm_subaff
 ||realitykings.com^$removeparam=ats
-||duda.co^$removeparam=irclickid
 ||marktjagd.de^$removeparam=client
 ||kaspersky.com^$removeparam=icid
 ||coursera.org^$removeparam=siteID
@@ -1178,7 +1167,6 @@ $removeparam=dclid
 ||flipkart.com^$removeparam=/^affExtParam/
 ||flipkart.com^$removeparam=affid
 ||flipkart.com^$removeparam=cid
-||flipkart.com^$removeparam=cmpid
 ||flipkart.com^$removeparam=iid
 ||flipkart.com^$removeparam=lid
 ||flipkart.com^$removeparam=/^otracker/
