@@ -624,10 +624,11 @@ topwwnews.com#$#abort-on-property-read localStorage
 ! #CV-697
 thetrendspotter.net,theavtimes.com#$#abort-on-property-read advads_passive_ads
 ! #CV-782
+www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#json-prune '0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds'
 www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#override-property-read playerResponse.adPlacements undefined;
 www.youtube.com,m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com#$#override-property-read ytInitialPlayerResponse.adPlacements undefined;
 ! Fallback
-www.youtube.com,m.youtube.com,music.youtube.com,youtube-nocookie.com#$#simulate-event-poc click button.ytp-ad-skip-button
+www.youtube.com,m.youtube.com,music.youtube.com,youtube-nocookie.com#$#simulate-mouse-event button.ytp-ad-skip-button$delay=0
 ||googlevideo.com/videoplayback?*&ctier=L&$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com/videoplayback?*&pfa=*$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
 @@||googlevideo.com/videoplayback?*yt_live_broadcast&$xmlhttprequest,domain=www.youtube.com|m.youtube.com|music.youtube.com
@@ -1461,17 +1462,17 @@ metruyenchu.com#$#abort-on-property-write window.onclick
 truyentuan.com#$#abort-current-inline-script $ btpop
 player-cdn.com#$#override-property-read detectAdBlockAll noopFunc; override-property-read detectAdBlock noopFunc
 player-cdn.com###playback-fake
-xoilac87.tv##.modal.fade.show
-xoilac87.tv#$#abort-current-inline-script jQuery popupBanners
-xoilac87.tv#$#abort-on-property-read adsRedirectPopups
-xoilac87.tv#$#abort-current-inline-script jQuery overlay
+xoilac91.tv##.modal.fade.show
+xoilac91.tv#$#abort-current-inline-script jQuery popupBanners
+xoilac91.tv#$#abort-on-property-read adsRedirectPopups
+xoilac91.tv#$#abort-current-inline-script jQuery overlay
 sexdiaryz.us#$#abort-on-property-read parseInt
 linkneverdie.net#$#abort-current-inline-script document.createElement script;abort-current-inline-script $ open
 javnong.cc#$#abort-on-property-read Math.round
 viet69.tube,ungtycomicsvip.com,truyengihotday.net,dualeotruyenpk.com,yurineko.net,vlxyz.tv,javhay.media,phimsexhay669.co,cliphot69.biz,doctruyen3qmax.com,hentaizz.vip,vl2.xvideos69.xxx#$#abort-current-inline-script WebAssembly instantiate
 animevietsub.fan#$#abort-current-inline-script document.documentElement break;case
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,ophim.vip#$#abort-on-property-read localStorage
-phimgigi.net#$#abort-current-inline-script jQuery popurl;abort-current-inline-script document.createElement script
+phimgichill.net#$#abort-current-inline-script jQuery popurl;abort-current-inline-script document.createElement script
 khoaiphim.com#$#abort-current-inline-script jQuery click_time
 dualeotruyenpk.com#$#abort-current-inline-script document.addEventListener popunder
 lxmanga.net#$#abort-current-inline-script $ PopUnder
