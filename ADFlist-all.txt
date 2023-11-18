@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: h8cXQNxUYSkcyyYg/OI5YQ
+! Checksum: cYnyBy4FmpYrSyfYq0F5jQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202311172215
+! Version(Last Modified): 202311182213
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -858,6 +858,7 @@
 ##.zozoads
 ##A > IMG[alt][src*='resources/images/']
 ##A#floating-banner
+##A#wrapper_left_bg\ llll
 ##A.toptxt[target='_blank']
 ##ASIDE[id^='custom_html-']
 ##A[href*=".com/?Agent="]
@@ -1136,8 +1137,8 @@
 ##[style^='position: fixed; z-index: 2147483616; width: 10%; height: 32.5px;']
 ##a > I.gg-icon
 ##a > IMG[src$='.gif'][wapsrc][style^='width: 100%']
-##a#wrapper_left_bg[target="_blank"]
-##a#wrapper_right_bg[target="_blank"]
+##a#wrapper_left_bg
+##a#wrapper_right_bg
 ##a.broad_roll
 ##a.disabled
 ##a.gggg[href^="https"]
@@ -4054,6 +4055,9 @@ $websocket,domain=5nj.com|cechi8.com
 :701/Pus/pus.js
 :701/gd_xueersi/$popup
 :7701/load.cw.js
+:800*/d/*?n=$script,third-party
+:800*/d/*?t=$script,third-party
+:800*/sc/*?n=$script,third-party
 :8007/*/*?is_not=
 :8008/*/*?is_not=
 :8080/ad/
@@ -9246,7 +9250,7 @@ eol.cn###small_adright
 eol.cn##.ad_490
 eol.cn##.listAd
 eol.cn##div[id^="s1_"]
-eol.cn,firefoxchina.cn,myd666.tv,site.baidu.com##.popup
+eol.cn,firefoxchina.cn,meiyida01.com,myd666.tv,site.baidu.com##.popup
 eoof.net##.tableborder1[cellspacing="1"][cellpadding="3"]
 epaper.freepressjournal.in###ad-code-footer
 epaper.freepressjournal.in##.ad-bx
@@ -10687,7 +10691,7 @@ hao.360.com###top-nav
 hao.360.com##.licai-right
 hao.360.com#?#.cube-container div.cube-mod:has(span.adMark)
 hao.360.com#?#.cube-list-recommend > div.cube-mod.cpc-card > div.cube-bd > div.cube-card > div.dh-cpcad-container:upward(div.cube-mod.cpc-card)
-hao.360.com#?#.cube-mod:-abp-has(> .cube-bd > .cube-card > .project-root > ._CUBE_A_D_CLK_)
+hao.360.com#?#.cube-mod:-abp-has(.dh-cpcad-container)
 hao.lenovo.com.cn##.IconLink
 hao.lenovo.com.cn##.left.icons
 hao.lenovo.com.cn##.right.icons
@@ -11458,6 +11462,9 @@ ifeng.com##.yiyuan
 ifeng.com##.yy_right_bottom
 ifeng.com##.zhenxuan
 ifeng.com##DIV[class^="enquiry_bottom"]
+ifeng.com##[class^='index_bottom_box']
+ifeng.com##[class^='index_pageBottomBrand']
+ifeng.com##[class^='index_wutong']
 ifeng.com##[data-cl]
 ifeng.com##[href^='https://mall.ifeng.com'],IMG[class^='picMark-'][src^='https://x0.ifengimg.com/']
 ifeng.com##[id^="cl"]
@@ -14315,6 +14322,8 @@ meishij.net##div#bottomdl
 meitu.com###meipaiFixed
 meituan.com##.component-downtip
 meituan.com##div.bottomtip
+meiyida01.com,myd666.tv##.module-blocklist
+meiyida01.com,myd666.tv#?#.module-item:-abp-has(>.module-item-titlebox>a[href*="/download/"])
 meiyouad.com##[href^="http://www.szfeichangyou.com/"],.ads
 meizhou.cn##.toptonglan
 meizhou.cn##.tuwengg
@@ -14809,8 +14818,6 @@ my0832.com##.xx_div
 myanimelist.net,frag-mutti.de##.anchor-ad
 mycleanmymac.com
 mycq.qq.com##div[style^="width:960px;"]
-myd666.tv##.module-blocklist
-myd666.tv#?#.module-item:-abp-has(>.module-item-titlebox>a[href*="/download/"])
 myday.com.tw##.myday_ad_950
 myday.com.tw##.myday_ad_left
 myday.com.tw##.myday_ad_right
@@ -15071,6 +15078,7 @@ news.merumo.ne.jp##aside[style="min-height: 250px;"]
 news.merumo.ne.jp##div[id^="gpt_unit_"]
 news.milli.az##.quiz-holder > div[style^="margin: 15px auto 15px"] > div[style^="margin"]
 news.milli.az##.quiz-holder > div[style^="margin: 15px"] > .hidden-lg
+news.mixi.jp#?#.NEWS_baseSection01 > ul > li:has(> .gAdComponent01)
 news.mydrivers.com##.baidu_left
 news.mydrivers.com##div[style="width:1000px;padding-top:16px;padding-bottom:12px;"]
 news.mydrivers.com#?#.news_info > p:has(> a[href^="https://dt.mydrivers.com/"])
@@ -16821,6 +16829,7 @@ s.kakaku.com#$#body div.subCtsArea { display: none!important; }
 s.kakaku.com#?#.c-bnr span.c-global_pr:upward(.c-bnr)
 s.kakaku.com,hoken.kakaku.com##.p-publicBoard
 s.minkabu.jp###ad9101_wrapper
+s.minkabu.jp###layout > div.min-h-\[120px\]
 s.parentNode.insertBefore(hm, s);
 s.resemom.jp##.aside-box.aside-box-ad
 s.response.jp##.arti-body > p[style="margin-bottom:5px;"] > .bottom-link
@@ -18861,6 +18870,7 @@ vesti.kz##amp-iframe[src^="https://smi24.kz/"]
 vesti.ru###rb_fs_wrapper__ID
 vesti.ua##body > div[style^="height: 300px; z-index: 65000; position: fixed;"]
 vfe3.com##div#swtleft
+vfokuse.mail.ru#?#header > div[class]:has(> div[class*="rb-slot_plug"])
 vg247.com###last-mpu-slot
 vg247.com###last-mpu-slot + #recommendations
 vg247.com##div[id^="mobile-mpu-"]
@@ -21631,14 +21641,18 @@ zzzyk.com###Tinfo
 ||1buu1.penyouw.com^
 ||1ccbt.com^
 ||1cdhf.top^
+||1cjzfyb.com^
 ||1cpkcnm.com^
 ||1dfsdfg.com^
 ||1f3k.com^
+||1iuybpo.com^
+||1iuybpo.com^
 ||1jc5t.xyz^
 ||1jc5t.xyz^
 ||1k2l3m4n5o.com^
 ||1kanz.cn^
 ||1ketang.com/Runtime/js/play
+||1kfnsra.com^
 ||1kkk.com/wxh_asy.js?cid=
 ||1kqfzwd.com^
 ||1l1.cc^
@@ -21648,6 +21662,7 @@ zzzyk.com###Tinfo
 ||1mob.com^
 ||1mp.mobi^
 ||1mpi.com^
+||1mxabnt.com^
 ||1o26.com^
 ||1porp.top^
 ||1ppt.com/ad$image
@@ -21665,6 +21680,7 @@ zzzyk.com###Tinfo
 ||1u5gy.xyz^
 ||1v7.cn^$third-party
 ||1w73a5d.cn^
+||1weorpu.com^
 ||1weorpu.com^
 ||1wkg.cn^
 ||1x3x.com^
@@ -22784,6 +22800,7 @@ zzzyk.com###Tinfo
 ||7dlm.cn^
 ||7down.com/navdata^
 ||7down.com/static/js/foot_
+||7dusx.xyz^
 ||7edown.com/newbd/$script,document
 ||7edown.com/show/complete.js$script
 ||7hjb8.com^*.php
@@ -22903,6 +22920,7 @@ zzzyk.com###Tinfo
 ||8886i.top^
 ||88885aaa.com^
 ||888bb666cc.com^
+||888cool.cn^
 ||888dizhi.com/888/
 ||888fr.xyz^
 ||888lianmeng.com^
@@ -25925,6 +25943,7 @@ zzzyk.com###Tinfo
 ||bpewo.cyou^
 ||bpimg.com/4851/19f7543667f26682.jpg
 ||bpimg.com^$domain=ref.so
+||bplrpf.xyz^
 ||bqcxgbm.cn^
 ||bqdyqq.com^
 ||bqdzvl.xyz^
@@ -26176,6 +26195,7 @@ zzzyk.com###Tinfo
 ||c114.com.cn/js/channel.js
 ||c114.com.cn^*/js/ad_load-new.js
 ||c1313.f28014.cn^
+||c1d8i3p6.com^
 ||c1ecda.com^
 ||c1km4.com/mobile/app.js
 ||c2000.cn/c2000/
@@ -27735,6 +27755,7 @@ zzzyk.com###Tinfo
 ||dealmoon.com/hotdeals/hotdeals_scroller.php
 ||dealmoon.com/upload/dealmoon_app.jpg
 ||deansent.top^
+||deanth.xyz^
 ||deapi.afreecatv.com^
 ||debojuagug1sf.cloudfront.net^
 ||debugease.com/static/js/show.js
@@ -28389,6 +28410,7 @@ zzzyk.com###Tinfo
 ||dwnews.net/images/www/ad/
 ||dwnews.net/js/common/dwnews.dwcn.ad.js
 ||dwnews.net/js/common/dwnews.ga.js
+||dwq661.biz^
 ||dwstatic.com^*/newsPopup/
 ||dwstatic.com^*/p/livetip/
 ||dwstatic.com^*/sidebar.js
@@ -28965,6 +28987,7 @@ zzzyk.com###Tinfo
 ||eyq3nog.icu^
 ||eyusky.net/weixin-img/zhifubao.jpg
 ||eyuyao.com/yyad/
+||ezacci.xyz^
 ||ezf48.xyz^
 ||ezlgszdb.icu^
 ||ezlgszdb.icu^
@@ -32073,6 +32096,7 @@ zzzyk.com###Tinfo
 ||jeepyy.com^$third-party
 ||jeidd.xyz^
 ||jellyfish.pandora.xiaomi.com^
+||jeqxuvv.icu^
 ||jerrytom.xyz^
 ||jesgoo.com^
 ||jessicarace.com^
@@ -32329,6 +32353,7 @@ zzzyk.com###Tinfo
 ||jmpnrh.xyz^
 ||jmr.nnxiant.cn^
 ||jmty.jp/s/geniee/
+||jmvvpb.xyz^
 ||jmw.com.cn/m_v2/js/active.js
 ||jmydm.com/jspage/ftt.js
 ||jn060.xyz^
@@ -32870,6 +32895,7 @@ zzzyk.com###Tinfo
 ||kekop.cn^
 ||kelatv.com/ad/
 ||kelun13.top^
+||kemas.top^
 ||ken.kenxq.com^
 ||kendingfa.com^
 ||kengi.top^
@@ -33959,6 +33985,7 @@ zzzyk.com###Tinfo
 ||lvcha99.cc^
 ||lvjtiaa.xyz^
 ||lvjtiaa.xyz^
+||lvnlrmn.xyz^
 ||lvrvdn.xyz^
 ||lvrvdn.xyz^
 ||lvse.cn/output/block/html/
@@ -34254,6 +34281,7 @@ zzzyk.com###Tinfo
 ||m19ud.cn^
 ||m2.lelemh.com^
 ||m2.yqxs.cc/js^
+||m2k3j7x8.com^
 ||m4pgay.com^
 ||m4pgay.com^
 ||m5.66077.cn^
@@ -36392,6 +36420,8 @@ zzzyk.com###Tinfo
 ||pipix.cc/gg.gif
 ||piqtpbxo.icu^
 ||piqtpbxo.icu^
+||pirubcfy.xyz^
+||pirubcfy.xyz^
 ||pirxzl.xyz^
 ||pirxzl.xyz^
 ||pitawastarkani.com^
@@ -37350,6 +37380,7 @@ zzzyk.com###Tinfo
 ||r6pt6kfz.com^
 ||r75tia.cn^
 ||r75tia.cn^
+||r9ffi.fun^
 ||ra.gtimg.com/uv/1712104/index.js
 ||ra1.xyz^
 ||ra5.xyz^
@@ -39473,6 +39504,7 @@ zzzyk.com###Tinfo
 ||titan007.com/js/indexshow.
 ||titan007.com/news.aspx
 ||titanads5.com/sp/delivery/js.php?
+||titv.top^
 ||tivan.naver.com^
 ||tizerclik.com^
 ||tizf7.top^
@@ -43947,6 +43979,7 @@ zzzyk.com###Tinfo
 18comic.*#?#body .bot-per
 18comic.*#@#img[style*="300px"]
 18comic.org##.div_sticky2
+18comic.org,18comic.vip##div[data-group^="photo_center_games_"]
 18comic.org,18comic.vip,18-comic.work#?#:-abp-has(>ins+script)
 18comic.org,18comic.vip,18-comic.work#?#:-abp-has(>script+ins)
 18comic.org,18comic.vip,18-comic.work#?#:not(body):-abp-has(>script[src*=".realsrv.com"])
@@ -43957,7 +43990,6 @@ zzzyk.com###Tinfo
 18comic.org,18comic.vip,jmcomic1.city,jmcomic1.win,jmcomic1.group#.bot-per-times
 18comic.vip##IMG[src^='//18comic.vip/media/albums/']
 18comic.vip##div[data-group^="skyscraper_"]
-18comic.vip#?#.thumb-overlay-albums > div[class][data-group^="photo_center_games_"]:has(> a[target="_blank"] > img)
 18comic.vip,18comic.org##div[data-height="250"][data-width="300"]
 18h.animezilla.com###manga-bottom
 18h.avmimi.com##body > p[align="center"]:first-child

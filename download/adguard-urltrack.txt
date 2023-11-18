@@ -1,4 +1,5 @@
 ! AdGuard-url跟踪保护规则
+$removeparam=mt_link_id
 $removeparam=iclid
 $removeparam=srsltid
 $removeparam=user_email_address
@@ -617,6 +618,8 @@ $removeparam=xptdk,domain=shopee.ph|shopee.co.th
 ||campaigns-serving.cognativex.com^$xmlhttprequest,removeparam=device_code
 ||campaigns-serving.cognativex.com^$xmlhttprequest,removeparam=exc_ads
 ||campaigns-serving.cognativex.com^$xmlhttprequest,removeparam=history_adids
+||dzen.ru^$removeparam=clid
+||dzen.ru^$removeparam=yredirect
 ||dzen.ru^$removeparam=stid
 ||dzen.ru^$removeparam=persistent_id
 ||teknosa.com^$removeparam=aid
