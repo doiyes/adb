@@ -138,6 +138,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||analysis.wangtwothree.com^$third-party
 ||pixel.locker2.com^
 ||analytics.trovit.com^
 ||us.tags.newscgp.com^
@@ -64254,8 +64255,8 @@ xxibanorte.xxibanorte.com$image
 yakima.townsquaremedia.info$image
 yc.mailgun.com$image
 zelda.paperlesspost.com$image
-/\/[a-z0-9]{12}\/(?=[a-zA-Z0-9\/\-]*\+)[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
-/^https?:\/\/[0-9a-z]{11,12}\.[^\/]*\/(?=[a-zA-Z0-9\/\-]*\+)[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
+/\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
+/^https?:\/\/[0-9a-z]{11,13}\.[^\/]*\/(?=[a-zA-Z0-9\/\-]*\+)[a-zA-Z0-9\/\+\-]{91,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 !+ NOT_OPTIMIZED
 /.well-known/private-click-measurement
@@ -69283,7 +69284,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=nordvpn.com,important
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
-@@||lms.ev.org.br/mpls/WebAds/
+@@||global.ketchcdn.com/web/$domain=forbes.com
 @@||rudaw.net/images/pixel.gif$~third-party
 @@||googletagmanager.com/gtm.js$domain=portal.game.aug.wkb.jp
 !+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_opera)
