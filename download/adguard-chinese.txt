@@ -1,4 +1,6 @@
 ! AdGuard-中文规则
+||max211.top^
+||st-fly.b-cdn.net^
 ||ggsfq.xyz^$third-party
 ||lqxbkqdtvtdhw.xyz^
 ||noafoaji.xyz^
@@ -806,8 +808,12 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > di
 ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###results > div[class]:not(.result):not(.result-op):not(.sp-rslt-bar):not(.s-group-result):not(.hint-unsafe)
 ||alicdn.com^$image,domain=m.k1k.cc|thcdy.co|27k.cc|1024pa.com|hg6384.com-www.6u7u.com|4080kan.com|dy686.net
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .result ~ div:not([class]):not([style])
-/^(?!.*(statically.io|sharecast.ws|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|imgsmail.ru)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top|634.tv|myhaitang.cc
+/^(?!.*(fastly.net|statically.io|sharecast.ws|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|imgsmail.ru)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top|634.tv|myhaitang.cc
 $script,third-party,denyallow=fastly.net|statically.io|sharecast.ws|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|yhdmjx.com|yinghuazy.xyz,_____,domain=wap.dmwenku.com|m.wfxs.tw|h.fkxs.net|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com|qiyoudy2.com|1yydstxt178.com|rouman5.com|feijisu20.com|iqb5.org|ntdm9.com
+||jdbstatic.com/ads/
+netfly.fun##.player-box-main ~ [style^="display: flex; justify-content: space-between;"]
+netfly.fun#?#.content > div:not([class]):has(> [style="display: flex; justify-content: space-between; width: 100%;"])
+vid.onlymu.site##.tips
 ||1905.com/data/js/*.json?pwd=*.shtml&rand=$xmlhttprequest
 ||1905.com/data/js/*.json?pwd=*?fr=videoplay_*&rand=$xmlhttprequest
 04647.club##div[class*="adsBox"]
@@ -3708,7 +3714,7 @@ newduba.cn###jq_youxi
 ##.davwheat-ad
 ##.dipiao
 ##.div-search-box.col-lg-offset-2.col-lg-8 > a[href^="http"][target="_blank"]
-##.dplayer-notice + .top-right-tips
+##.dplayer > .tips
 ##.duilian > .leftd
 ##.ec-ad
 ##.edtj
@@ -4078,6 +4084,7 @@ newduba.cn###jq_youxi
 ##img[onclick^="window.open"][src*="pc.qq.com"]
 ##img[src$=".gif"][style="width:100%;max-width: 960px;height:45px;margin-bottom:2px;"]
 ##img[src$="/img/tianbo.gif"]
+##img#GGADIMG
 ##img[src*=".c-ctrip.com"][style="width:100%;height:70px;"]
 ##img[src*=".jd.com"][style="width:100%;height:70px;"]
 ##img[src*=".meituan.net"][style="width:100%;height:70px;"]
@@ -4086,6 +4093,7 @@ newduba.cn###jq_youxi
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##.player-box > [style*="flex; justify"]
 ##script + a[href] > img[src*="lbsugc.cdn.bcebos.com"]
 ##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
 ##script + div[id^="a-loading-"]
@@ -4144,6 +4152,7 @@ newduba.cn###jq_youxi
 ||5jzu5t.com^
 ||6528fdyngk.xyz^
 ||6gcstb.xyz^
+||7bspu.site^
 ||7dusx.xyz^
 ||7ry30.xyz^
 ||888bb666cc.com^
@@ -4185,6 +4194,7 @@ newduba.cn###jq_youxi
 ||berrynicolo.com^
 ||beste3.icu^
 ||bfbchr.xyz^
+||bfgtfxd.com^
 ||bgbqfqwi.xyz^
 ||bgdgpbpm.xyz^
 ||bhiagi.xyz^
@@ -4225,6 +4235,7 @@ newduba.cn###jq_youxi
 ||cnrdlpk.xyz^
 ||cntc8.icu^
 ||cojvur.icu^
+||corcztpc.xyz^
 ||crazyit8.com^
 ||crhabkd.cn^
 ||cry2h.cn^
@@ -4259,6 +4270,7 @@ newduba.cn###jq_youxi
 ||dvnqhdmze.xyz^
 ||dwerzv.xyz^
 ||dwq661.biz^
+||dzdxnbc.xyz^
 ||ebmlsvw.cn^
 ||eejwvwoo.xyz^
 ||egadfe.xyz^
@@ -4286,6 +4298,7 @@ newduba.cn###jq_youxi
 ||feijied.xyz^
 ||fenem.top^
 ||fepmpify.xyz^
+||fgcxdr.cn^
 ||fgttbz.xyz^
 ||fguhyg.cn^
 ||fkjsjwbs.xyz^
@@ -4375,6 +4388,7 @@ newduba.cn###jq_youxi
 ||hjnjjcw.xyz^
 ||hkljed.xyz^
 ||hkrytf.xyz^
+||hkvuzv.xyz^
 ||hnkhgw.com^
 ||holdntlc.com^
 ||hooe.top^
@@ -4406,6 +4420,7 @@ newduba.cn###jq_youxi
 ||itwzlyq.com^
 ||iujlwn.icu^
 ||iuvssgh.cn^
+||jackdd.xyz^
 ||jane1.top^
 ||jane2.top^
 ||jcbjcb9.cn^
@@ -4430,6 +4445,7 @@ newduba.cn###jq_youxi
 ||kaaqgf.icu^
 ||kaezakkjt.com^
 ||kbbrptv.xyz^
+||kbzs88.com^
 ||kemas.top^
 ||kjdbcjkmc.com^
 ||kkmsa.top^
@@ -4482,6 +4498,7 @@ newduba.cn###jq_youxi
 ||meilunsc.com^
 ||mfnfylx.xyz^
 ||mggzah.icu^
+||mhglue.xyz^
 ||mhnzhlase.xyz^
 ||mhzftye.xyz^
 ||mlumlio.cn^
@@ -4566,11 +4583,13 @@ newduba.cn###jq_youxi
 ||qtq632.com^
 ||quqtone.cn^
 ||quzmtpxw.xyz^
+||quzpvtt.xyz^
 ||qwesaz.com^
 ||qwjtdcl.cn^
 ||qwnmfiti.xyz^
 ||qyoqeq.xyz^
 ||r9ffi.fun^
+||ran2.top^
 ||rcnithgm.xyz^
 ||rcnldz.xyz^
 ||rett.top^
@@ -4581,12 +4600,14 @@ newduba.cn###jq_youxi
 ||rkds2.icu^
 ||rkds5.icu^
 ||rntdqwc.xyz^
+||ronm.top^
 ||roxewwq.cn^
 ||rqrvfp.xyz^
 ||rrfccx.com^
 ||rslkhj.xyz^
 ||rvreuxi.cn^
 ||rvvji.online^
+||rxrdjb.xyz^
 ||rzflhxn.cn^
 ||scqaaf.cn^
 ||serda10.icu^
@@ -4688,6 +4709,7 @@ newduba.cn###jq_youxi
 ||wutsldsk.xyz^
 ||wuyaw.cn^
 ||wvtem.com^
+||wwwww.asia^
 ||wyiegt.icu^
 ||wymzwy.cn^
 ||wyoaij.icu^
@@ -4723,6 +4745,7 @@ newduba.cn###jq_youxi
 ||yhlzadr.xyz^
 ||yhtpsy8888.cc^
 ||yivkzvog.xyz^
+||yjbdyjnctgj.top^
 ||yjxzvqy.xyz^
 ||ykujch.icu^
 ||ynulcpt.cn^
@@ -4754,22 +4777,22 @@ newduba.cn###jq_youxi
 ||zyzo.cn^
 ||zzyy17.top^
 ||zzyy18.top^
-||corcztpc.xyz^
-||ran2.top^
-||7bspu.site^
-||quzpvtt.xyz^
-||rxrdjb.xyz^
-||hkvuzv.xyz^
-||dzdxnbc.xyz^
-||jackdd.xyz^
-||mhglue.xyz^
-||bfgtfxd.com^
-||fgcxdr.cn^
-||ronm.top^
-||wwwww.asia^
-||kbzs88.com^
-||yjbdyjnctgj.top^
+||ytezym.xyz^
+||juhooqv.cn^
+||lejshxao.xyz^
+||vpqko.fun^
+||prhphla.xyz^
+||lejshxao.xyz^
+||koyuod.xyz^
+||djponj.xyz^
+||huxsvl.xyz^
+||kkeojk.xyz^
+||tobyxev.com^
+||wecklrb.cn^
+||qvftejz.cn^
 ||zzyy19.top^
+##a[href*=".erodatalabs.com/"]
+##a[href*=".hyenadata.com/"]
 ||zzyy20.top^
 ##[style*="sotv.me"]
 ##a[href$="/1c626.com"]
@@ -13732,7 +13755,11 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zztongyun.com/static/js/sh.
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||gg88.bj.bcebos.com^
+||asiav.cyou/myupdatelist.
 szxx.com.cn###A0
+aaread.space##.navi
+aaread.space##DIV[style^="position: fixed; bottom:"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -17216,7 +17243,6 @@ kaifu.com##.play_fmt
 ttsp.tv##.play_list_adbox
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.play_list_panel
 ifeng.com##.playad
-netfly.tv##.player-box > [style^="display"]
 senfun.net##.player-recommend
 qq.com##.player-side-ads
 league-funny.com##.player_bb
