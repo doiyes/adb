@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: s5KUKGjBIMY+2cq9SKK+7w
+! Checksum: rSQvTztxuRKV5MLaKeUNMQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202312142216
+! Version(Last Modified): 202312152215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -745,6 +745,8 @@
 ##.postmessage > #googleSecond
 ##.privilege-promote
 ##.pro-molnk
+##.pro1-molnk
+##.prom-olnk
 ##.promolink-[style="position:relative;width:100%;height:100%;"]
 ##.promtlink_[style="position:relative;width:100%;height:100%;"]
 ##.propa_bottom
@@ -1366,6 +1368,7 @@
 ##a[href^="/dasp.php?a="]
 ##a[href^="/hy-"][ontouchstart]
 ##a[href^="/template/1/html/ad/"]
+##a[href^="http"] > img[src*="p.sda1.dev"]
 ##a[href^="http"] > img[src*="pic.rmb.bdstatic.com/"][src$=".gif"]
 ##a[href^="http"][onclick^="setCookie"][style^="width:100%;height:100"]
 ##a[href^="http://ad.moemoe."]
@@ -3961,7 +3964,6 @@ $websocket,domain=5nj.com|cechi8.com
 00sy.net##.dahengfu,.ad360,[style*="height:250px;"]
 0du123.com,100ec.cn,24en.com,3gsc.com.cn,591hx.com,acgnx.net,acgnx.se,aguitar.cn,btzx2017.com,e0514.com,eastmoney.com,guitarchina.com,gz0668.com,hk.on.cc,iguaji.com,iqiyi.com,jia360.com,jojf.cn,kdnet.net,kumi.cn,netbian.com,qiuziti.com,rain2.top,solarbe.com,tiboo.cn,v2rayssr.com,woniuyulew.com,xingkbjm.com,zyue.com##.banner
 0du123.com,24en.com,3gsc.com.cn,591hx.com,5g0a.com,acgnx.se,aguitar.cn,btzx2017.com,e0514.com,eastmoney.com,guitarchina.com,gz0668.com,hk.on.cc,iciba.com,iguaji.com,iqiyi.com,jia360.com,joy.cn,kdnet.net,kumi.cn,manyuancs8.xyz,newnet.cc,rain2.top,tiboo.cn,toocle.com,wallstreetcn.com,xingkbjm.com,xizi.com,zgfznews.com,zyue.com##.banner
-0matome.com##.ad_sp
 ://*.rbc.ru/*/?target-ref=*&
 ://*.tv/ad/$domain=~moviedj.tv
 ://*.z*.xyz/$object,third-party
@@ -13193,6 +13195,7 @@ localking.com.tw###adbannerurl
 lofter.com##.js-promote-itm
 logi.im##+js(no-setTimeout-if, ins.adsbygoogle)
 logi.im##body > div[style^="background: black; position: fixed; "][style*="opacity: 0.5; z-index: 1999;"]
+logist.today##.article-sidebar__add
 logo160.com##script + a[href="/"]
 logoshejishi.com
 lohas.pixnet.net###box785805
@@ -13539,6 +13542,7 @@ m.facebook.com##div[data-status-bar-color] > div[data-mcomponent="MContainer"] >
 m.facebook.com##div[data-type="vscroller"][data-comp-id] > div.bg-s3[tabindex][data-focusable="true"] + div[style]:not([data-action-id]):not([data-focusable="true"]):not([style*="1px"]):not([data-actual-height="27"]):not([data-mcomponent="MContainer"])
 m.facebook.com#$?#div[data-type="vscroller"] > div[data-tracking-duration-id]:has(> div[data-focusable="true"] div[data-mcomponent*="TextArea"] .native-text > span:contains(/(Sponsored|Gesponsert|Sponsorlu|Sponsorowane|Ispoonsara godhameera|Geborg|Bersponsor|Ditaja|Disponsori|Giisponsoran|Sponzorováno|Sponsoreret|Publicidad|May Sponsor|Sponsorisée|Oipytyvôva|Ɗaukar Nayin|Sponzorirano|Uterwa inkunga|Sponsorizzato|Imedhaminiwa|Hirdetés|Misy Mpiantoka|Gesponsord|Sponset|Patrocinado|Patrocinado|Sponsorizat|Sponzorované|Sponsoroitu|Sponsrat|Được tài trợ|Χορηγούμενη|Спонсорирано|Спонзорирано|Ивээн тэтгэсэн|Реклама|Спонзорисано|במימון|سپانسرڈ|دارای پشتیبانی مالی|ስፖንሰር የተደረገ|प्रायोजित|ተደረገ|प|प्रायोजित|স্পনসর্ড|ਪ੍ਰਯੋਜਿਤ|પ્રાયોજિત|ପ୍ରାୟୋଜିତ|செய்யப்பட்ட செய்யப்பட்ட|చేయబడినది చేయబడినది|ಪ್ರಾಯೋಜಿಸಲಾಗಿದೆ|ചെയ്‌തത് ചെയ്‌തത്|ලද ලද ලද|สนับสนุน สนับสนุน รับ สนับสนุน สนับสนุน|ကြော်ငြာ ကြော်ငြာ|ឧបត្ថម្ភ ឧបត្ថម្ភ ឧបត្ថម្ភ|광고|贊助|赞助内容|広告|സ്‌പോൺസർ ചെയ്‌തത്)/)) { position: absolute !important; left: -3000px !important; }
 m.facebook.com#?#:matches-path(/search/top)div[data-mcomponent="MContainer"]:has(> .intersection-observer:first-child + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"][style*="display: none !important;"]:not([data-actual-height="26"]) + div[data-mcomponent="MContainer"]:not([data-actual-height="2"]) + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]:not([data-actual-height="2"]) + div[data-mcomponent="MContainer"]:not([data-actual-height="2"]):not([data-actual-height="65"]):last-child)
+m.facebook.com#?#article[data-store*="encrypted_tracking_data"]:has(> .story_body_container div[data-sigil="m-feed-voice-subtitle"] > span:contains(/(Sponsored|Gesponsert|Sponsorlu|Sponsorowane|Ispoonsara godhameera|Geborg|Bersponsor|Ditaja|Disponsori|Giisponsoran|Sponzorováno|Sponsoreret|Publicidad|May Sponsor|Sponsorisée|Oipytyvôva|Ɗaukar Nayin|Sponzorirano|Uterwa inkunga|Sponsorizzato|Imedhaminiwa|Hirdetés|Misy Mpiantoka|Gesponsord|Sponset|Patrocinado|Patrocinado|Sponsorizat|Sponzorované|Sponsoroitu|Sponsrat|Được tài trợ|Χορηγούμενη|Спонсорирано|Спонзорирано|Ивээн тэтгэсэн|Реклама|Спонзорисано|במימון|سپانسرڈ|دارای پشتیبانی مالی|ስፖንሰር የተደረገ|प्रायोजित|ተደረገ|प|प्रायोजित|স্পনসর্ড|ਪ੍ਰਯੋਜਿਤ|પ્રાયોજિત|ପ୍ରାୟୋଜିତ|செய்யப்பட்ட செய்யப்பட்ட|చేయబడినది చేయబడినది|ಪ್ರಾಯೋಜಿಸಲಾಗಿದೆ|ചെയ്‌തത് ചെയ്‌തത്|ලද ලද ලද|สนับสนุน สนับสนุน รับ สนับสนุน สนับสนุน|ကြော်ငြာ ကြော်ငြာ|ឧបត្ថម្ភ ឧបត្ថម្ភ ឧបត្ថម្ភ|광고|贊助|赞助内容|広告|സ്‌പോൺസർ ചെയ്‌തത്)/))
 m.fanfox.net#$#header > .top-banner { display: block!important; height: 60px!important; }
 m.fanfox.net,m.mangafox.la##.adv-here
 m.faz.net##.iqadtile_wrapper
@@ -15364,6 +15368,10 @@ nunuyy3.org##+js(abort-current-script, $, infoid)
 nuomiphp.com
 nuoqiu.com##SPAN.baidu,DIV.parttop[style="height:90px;"]
 nutgeek.com##[src^="https://img.nutgeek.com/ad-"],.widget_cjtz
+nutraceuticalsworld.com###inscroll-banner
+nutraceuticalsworld.com##.pullheader + hr
+nutraceuticalsworld.com##.pullrightside + hr
+nutraceuticalsworld.com#?#div[id^="carouse"] > .items > .col-sm-3:has(> div[id^="main-content-ad-"])
 nv.ua##.content-wrapper > div#async__head_opinions:empty
 nv.ua##.content-wrapper > div.article__content + div[style]
 nv.ua#?#.article__content__footer > div[class] > div[id]:contains(загрузка)
@@ -16675,6 +16683,7 @@ retty.me###page > div[style="text-align:center; margin-top:16px;"]
 reuters.com###in-article-connatix-player
 reuters.com##div[class^="ArticlePage-mobile-mpu-"]
 reuters.com##div[class^="article-body_"] > div[class*="cnx-player__in-article_"]
+reuters.com##div[class^="homepage-sponsor-logo__"]
 reuters.com#$#.site-header__show-nav__3po5A .site-header__inner-sticky__1fm3o { top: 0px !important; }
 reuters.com#?#div[class^="article-body__content__"] > div[class^="article-body__element__"]:has(> div[class^="spacing-container_"] > div[data-testid="AdSlot"])
 reviewjournal.com##amp-video-iframe[src^="https://amp.stnvideo.com/"]
@@ -18575,6 +18584,7 @@ twiman.net,hotscope.tv##div[style="height: 100px;"]
 twinsyang.net#@#.Zi_ad_a_H
 twinsyang.net,free.com.tw###custom_html-7
 twitter.com##.presented
+twittrend.jp,0matome.com##.ad_sp
 two.game.tw#@##ad_02
 twoucan.com###app_advertise_top_space
 twoucan.com##.twoucan-ad
@@ -22895,6 +22905,7 @@ zzzyk.com###Tinfo
 ||88cpc.com^
 ||88dgl.top^
 ||88dgn.top^
+||88dgx.top^
 ||88dml.top^
 ||88eg.cn^
 ||88hs.net^
@@ -24201,6 +24212,7 @@ zzzyk.com###Tinfo
 ||aizhan.com/images/img/ios-sign.png
 ||aizhan.com/imagesa/
 ||aj4j.icu^
+||ajbpcxi.xyz^
 ||ajcnz1.com^
 ||ajcode.co^
 ||ajcode.co^
@@ -24232,6 +24244,7 @@ zzzyk.com###Tinfo
 ||akyei.xyz^
 ||al.newxue.com^
 ||albsgdq.cn^
+||alchemeeten.com^
 ||aldkfsd.cn^
 ||aldtop.com/scrtips/
 ||alejd.xyz^
@@ -25686,6 +25699,7 @@ zzzyk.com###Tinfo
 ||biquyue.com/js/common.js
 ||birdmedia.com^$third-party
 ||birgga.top^
+||birglucy.xyz^
 ||birjkhm.cn^
 ||bis8j.com^
 ||bis8j.com^
@@ -26411,6 +26425,7 @@ zzzyk.com###Tinfo
 ||cdn0.sxhjty.cn^
 ||cdn2.auditude.com^
 ||cdn3.mancdn88.com^
+||cdn77.org^*.mp4
 ||cdn93d99x0e.23bei.com^
 ||cdn93d99x0e.23bei.com^
 ||cdnads.com^
@@ -29098,6 +29113,7 @@ zzzyk.com###Tinfo
 ||fhcmeiju.com/template/DYXS2/html/1.
 ||fhddnh.xyz^
 ||fhddnh.xyz^
+||fhdjdv.xyz^
 ||fherunm.cn^
 ||fhfgg.com^
 ||fhglcpf.icu^
@@ -29372,6 +29388,7 @@ zzzyk.com###Tinfo
 ||fx110.com/Styles/1.0.0/dist/Ghz/MatrixAds.
 ||fx168.com/am.js
 ||fx678.com/htcount/count.js
+||fxbcc.cyou^
 ||fxbcpr.xyz^
 ||fxbcpr.xyz^
 ||fxeaobv.icu^
@@ -32844,6 +32861,7 @@ zzzyk.com###Tinfo
 ||kkmbbvz.xyz^
 ||kkmsa.top^
 ||kkpgv2.xunlei.com^
+||kkyjfdj.xyz^
 ||kkylx.xyz^
 ||kl.yditweb.cn^
 ||kl91ccp.com^
@@ -36081,6 +36099,7 @@ zzzyk.com###Tinfo
 ||pgght17.com^
 ||pgght17.com^
 ||pghwwjd.com^
+||pgieqr.top^
 ||pgjcbz.xyz^
 ||pglstatp-toutiao.com/obj^
 ||pglstatp-toutiao.com^
@@ -36994,6 +37013,7 @@ zzzyk.com###Tinfo
 ||qsptv.com/tpl/newstyle/js/extension.js
 ||qsptv.net/tpl/newstyle/js/pv.js
 ||qstzar.cn^
+||qtciam.xyz^
 ||qtd95fj.online^
 ||qtd95fj.online^$third-party
 ||qtienly.top^
@@ -37725,7 +37745,6 @@ zzzyk.com###Tinfo
 ||sd173.com/images/
 ||sd1v.yitongwl.cn/site/
 ||sd6hon.cn^
-||sda1.dev^
 ||sdaiv.com^
 ||sdbeta.com/skin/mobile/js/1688.js
 ||sdbeta.com/statics/mystyle/js/1
@@ -40322,6 +40341,7 @@ zzzyk.com###Tinfo
 ||vjhjxh.xyz^
 ||vjie.com^$third-party
 ||vjksa.com^
+||vjnxpj.xyz^
 ||vjrpnv.xyz^
 ||vjzjpt.xyz^
 ||vk920.com/img1/
@@ -40862,6 +40882,7 @@ zzzyk.com###Tinfo
 ||worjeklmq.com^
 ||worjeklmq.com^
 ||worldcup1.com/imgs/*.gif$domain=avcao.cc
+||worlderva.com^
 ||worldssl.net^
 ||worldwide.sogou.com^
 ||wosidnlkxq.com^
@@ -43388,6 +43409,8 @@ zzzyk.com###Tinfo
 4gamers.com.tw##.vue-portal-target > div[style="min-height: 210px;"]
 4gamers.com.tw##img[alt="ads"]
 4gamers.com.tw##video[src^="https://img.4gamers.com.tw/ads-media/"]
+4gamers.com.tw#?#.aroma-news-detail-side > div[media-width]:has(div.aols-wrapper > a[target="_blank"][rel="noopener"])
+4gamers.com.tw#?#.container-fluid  > .vue-portal-target:has(> div[style] > .aroma-news-detail-iframe-ads)
 4gtv.tv,80s.ai,ft.com,ftchinese.com,ftchinese.com.sz-dns.net,kartinfo.me,long7.qq.com,reh.tw,typecho.wiki#@#.adsbox
 4k123.com##.comeing_wad,.a_pb
 4kzw.com,quanxiong.org,dijiuzww.com##[style="width:770px;height:260px"]
@@ -44401,6 +44424,7 @@ zzzyk.com###Tinfo
 423down.com##.entry > p[style="font-size: 20px;"]
 423down.com##.entry > p[style^="color:red"]
 423down.com##.entry > p[style^="font-size"] > a[href*="/go."]
+423down.com##.entry > strong > p
 423down.com##.menu > .menu-item:nth-child(n+6)
 423down.com##.widget_d_banner
 423down.com##a[href*="/go."] > img
