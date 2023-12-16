@@ -12,28 +12,32 @@ cad.youku.com
 ||valipl.cp31.ott.cibntv.net/$media
 !|https://static.youku.com/index/js/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
-iqiyi.com##div[data-adzone],#block-V
+iqiyi.com##.black-screen[data-cupid=adblock-blackscreen]
+iqiyi.com##.cupid-panel + div, div[data-adzone],#block-V
+iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
+iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
+iqiyi.com##+js(set, QiyiPlayerProphetData.a.data, {})
+||iqiyi.com/videos/other/202$xmlhttprequest
+||71edge.com/videos/other/202$xmlhttprequest
 ||iqiyipic.com/image/20*_100000$image
 apisgame.iqiyi.com
 static.g.iqiyi.com
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||ssports.iqiyi.com/app/$media,object-subrequest
 show.ssports.com
-!v.qq.com###player .txp_zt_content
-v.qq.com##.quick_games.quick_item,div.card-wrap
-qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap, .iwan-wrapper
-qq.com#@#+js(nowebrtc)
-qq.com##+js(set,RTCPeerConnection,null)
-qq.com##+js(no-xhr-if,/trace\.|\/collect/)
-qq.com##+js(no-fetch-if,/trace\.|beacon\./)
-qq.com##+js(json-prune,ads ad.pause adList.item)
+v.qq.com##.quick_games.quick_item
+!qq.com##.mod_ad, .txp_ad, .txp_ad_link, .adWrap
+qq.com##+js(json-prune, ads ad material.video)
+!qq.com##+js(no-xhr-if,/trace\.|\/collect/)
+!qq.com##+js(no-fetch-if,/trace\.|beacon\./)
 !qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 !qq.com##+js(aopr, Beacon.prototype.fail)
 @@||union.video.qq.com/fcgi-bin/$script,domain=qq.com
+gdt.qq.com
 cm.l.qq.com
-||l.qq.com/lview?
-||l.qq.com/livemsg?
-||mark.l.qq.com/fcgi-bin/get_video_mark_all?
+!||l.qq.com/lview?
+||qq.com/livemsg?
+!||mark.l.qq.com/fcgi-bin/get_video_mark_all?
 ||gtimg.com/qqlive/
 ||qzonestyle.gtimg.cn/qzone/biz/ac/comm/$script
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
@@ -142,10 +146,6 @@ dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org#@#+js(nowebrtc)
 dandanzan.com,dandanzan10.top,nunuyy5.org##.gm-fp-body video:style(max-height:100%!important)
-wpadmngr.com
-|https://static.cloudflareinsights.com/beacon.min.js^$xhr,script
-||nunuyingyuan.tk/serviceworker.js^$script
-||nunuyy.cf/serviceworker.js^$script
 aqours.today
 chushoushijian.cn
 z4a.net

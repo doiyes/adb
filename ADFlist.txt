@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: AqCreARUFRiWwtNUv1a/yA
+! Checksum: DcSHd7CzJ9vP8My/HE3ZTA
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202312152215
+! Version(Last Modified): 202312162215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -1313,6 +1313,7 @@ gd.qq.com###r_ad
 gdmm.com###diy3
 gdmm.com##a[href="http://www.gdmm.com/appdown/"]
 gdmm.com##img[width="1200"]
+gdt.qq.com
 gebi1.com###fwin_dialog
 gebi1.com###fwin_dialog_cover
 gebi1.com##.offical-account
@@ -1472,10 +1473,14 @@ investing.com##div[class*="adBlock"]
 investing.com##div[class*="overlay_overlay"]
 ipinyou.com
 iqihang.com##.xf_right
+iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
 iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
+iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
+iqiyi.com##+js(set, QiyiPlayerProphetData.a.data, {})
+iqiyi.com##.black-screen[data-cupid=adblock-blackscreen]
+iqiyi.com##.cupid-panel + div, div[data-adzone],#block-V
 iqiyi.com##.m-downApp
 iqiyi.com##.m-hotWords-bottom
-iqiyi.com##div[data-adzone],#block-V
 iqiyi.com##div[style^="z-index: 4200; position: absolute; left:"]
 iqiyi.com##iframe[style^="z-index:"]:last-child
 irs03.com
@@ -1980,16 +1985,12 @@ qmshengekj.cn
 qpb.sohu.com
 qq.com###J_inner_tips
 qq.com###mod_float_box
-qq.com##+js(json-prune,ads ad.pause adList.item)
-qq.com##+js(no-fetch-if,/trace\.|beacon\./)
-qq.com##+js(no-xhr-if,/trace\.|\/collect/)
-qq.com##+js(set,RTCPeerConnection,null)
+qq.com##+js(json-prune, ads ad material.video)
 qq.com##.J_hot_game
 qq.com##.app-qrcode
 qq.com##.code-content
 qq.com##.elevator[class^="jsx-"]
 qq.com##.mod-download-tips
-qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap, .iwan-wrapper
 qq.com##.mod_float_banner
 qq.com##.notice[class^="jsx-"]
 qq.com##.public-banner
@@ -1997,7 +1998,6 @@ qq.com##.qGirl-wrap
 qq.com##.wrap[class^="jsx-"]
 qq.com##.yscoin-box
 qq.com##div[id^=AdZone],div.ad-banner,div.side_ad,#topAd
-qq.com#@#+js(nowebrtc)
 qqping.cn
 qrserver.com
 quandangdang.net
@@ -2247,7 +2247,7 @@ v.douyu.com##.pop-zoom
 v.douyu.com##.pop-zoom-cover
 v.douyu.com##.pop-zoom-wrap
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
-v.qq.com##.quick_games.quick_item,div.card-wrap
+v.qq.com##.quick_games.quick_item
 v.qq.com##.wrapper.mod_vip_popup, #mask_layer
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##.laifeng
@@ -2347,7 +2347,6 @@ wordpress.com##.site__notices
 wordpress.com##.widget_eu_cookie_law_widget
 worldve.com###fdkDiv
 worldve.com###img
-wpadmngr.com
 wrating.com
 wsdy.top##+js(set,fed.module,{})
 wuyanzhai.com
@@ -2631,7 +2630,6 @@ zybang.com##.top_download
 |https://img.233.com/www/css/chuji/2019/newsMethod.js^$xhr
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
 |https://sta-op.douyucdn.cn/front-publish/butterfly-
-|https://static.cloudflareinsights.com/beacon.min.js^$xhr,script
 |https://tellme.pw/go/jav$popup
 |https://www.36dm.com/js/
 |https://x.qcheng.cc/x/statics/js/fuck-debugger.js^$script
@@ -2703,6 +2701,7 @@ zybang.com##.top_download
 ||6pan.cc/ps/vip.jpg
 ||6vgood.com/d/$script
 ||6vw.cc/d/$script
+||71edge.com/videos/other/202$xmlhttprequest
 ||7k7k.com/api/position/
 ||7k7k.com/js/bg-img.js
 ||7moor.com^$third-party
@@ -2830,7 +2829,6 @@ zybang.com##.top_download
 ||bdstatic.com/tb/static-common/js/pic_share/logger.js
 ||bdstatic.com/tb/static-pb/img/voice_ad.gif
 ||bdstatic.eastmoney.com^
-||beacon.
 ||bendibao.com/js/count.js
 ||bendibao.com/weixin_
 ||bestpush.pconline.com.cn^
@@ -3268,6 +3266,7 @@ zybang.com##.top_download
 ||iqiyi.com/js/common/mars_v.js
 ||iqiyi.com/js/pingback/
 ||iqiyi.com/track
+||iqiyi.com/videos/other/202$xmlhttprequest
 ||iqiyipic.com/image/20*_100000$image
 ||irs01.
 ||isdspeed.qq.com/
@@ -3337,8 +3336,6 @@ zybang.com##.top_download
 ||kuakao.com:6053/floatcard?
 ||kuke99.com/static/home/js/index/index.js
 ||kuwo.cn/static/swf/xctg.swf
-||l.qq.com/livemsg?
-||l.qq.com/lview?
 ||l.ykimg.com^
 ||lancdn.com/tmp3/GG_Notice.png
 ||laosiji.com/static/js/lib/od_statistics.js
@@ -3374,7 +3371,6 @@ zybang.com##.top_download
 ||mail.21cn.com/w2/source/images/firstpagecont/$image
 ||mairuan.$all
 ||map.baidu.com^$domain=laosiji.com
-||mark.l.qq.com/fcgi-bin/get_video_mark_all?
 ||market.aliyun.com/
 ||mat1.gtimg.com/$object
 ||mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
@@ -3438,8 +3434,6 @@ zybang.com##.top_download
 ||nsclick.baidu.com^
 ||nsimg.net^
 ||ntce.com/images/js/ntce_public.js
-||nunuyingyuan.tk/serviceworker.js^$script
-||nunuyy.cf/serviceworker.js^$script
 ||nxhh.net/gw/gw.js
 ||offcn.com/index.php?m=dbsource&c=call&a=get&id=75
 ||offcn.com/index.php?m=dbsource&c=call&a=get&id=77
@@ -3538,6 +3532,7 @@ zybang.com##.top_download
 ||qq.com/games/$subdocument
 ||qq.com/inc/utf8/nav/ad.htm
 ||qq.com/js/adswf_tl_object.js$script
+||qq.com/livemsg?
 ||qudao.com/common/minisite.js
 ||qunar.com/js/ga.min.js
 ||qunar.com/render/ga.jsp?
@@ -3754,14 +3749,12 @@ zybang.com##.top_download
 ||uuu9.com/photolog.html
 ||uuxs.net^$subdocument
 ||v.baidu.com/staticapi/videoAd.json?
-||v.qq.com^$subdocument
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||valipl.cp31.ott.cibntv.net/$media
 ||vamaker.com/$third-party
 ||video.da.mgtv.com/$media
 ||video.qq.com/checktime?
 ||video.qq.com/danmu_manage/$xhr
-||video.qq.com^$subdocument
 ||videowood.tv/assets/js/popup.js
 ||videowood.tv/pop2
 ||videowood.tv/pop^$popup
@@ -4021,6 +4014,8 @@ zybang.com##.top_download
 66rpg.com###left_overlay
 66rpg.com###right_overlay
 66zuhao.com
+77mh.nl###bdbottop
+77mh.nl###bdtopbot
 88mv.org##.MacPlayer, .dplayer:style(height:600px!important)
 88mv.org,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
 91danji.com###bg_ad,div.hr.hr48
