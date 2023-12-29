@@ -178,6 +178,9 @@ $removeparam=fb_action_types
 $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
+||plus.yandex.*^$removeparam=source
+||plus.yandex.*^$removeparam=state
+||plus.yandex.*^$removeparam=origin
 ||boredpanda.com^$removeparam=cexp_id
 ||boredpanda.com^$removeparam=cexp_var
 ||ziprecruiter.com^$removeparam=zrclid
@@ -850,6 +853,8 @@ $domain=atlanticcouncil.org|digikey.com,removeparam=/^mkt_tok/
 ||xkcd.com^$removeparam=trk
 ||video.laxd.com^$removeparam=ref
 ||msn.com^$removeparam=pc
+||msn.com^$removeparam=cvid
+||msn.com^$removeparam=ei
 ||approach.yahoo.co.jp^$removeparam=code
 ||taobao.com^$removeparam=scm
 ||taobao.com^$removeparam=pvid
@@ -1096,6 +1101,8 @@ $removeparam=igshid,domain=instagram.com|threads.net
 ||google.*/search$removeparam=ei
 ||google.*/search$removeparam=gs_lcp
 ||google.*/search$removeparam=gs_lcrp
+||www.ebay.$removeparam=mkevt
+||www.ebay.$removeparam=mkcid
 ||www.ebay.$removeparam=_trkparms
 ||www.ebay.$removeparam=_trksid
 ||www.ebay.$removeparam=amdata
@@ -1183,7 +1190,7 @@ $removeparam=asc_source,domain=aboutamazon.com|amazon.*|amzn.to
 ||cam4.com^$removeparam=act
 ||cam4.com^$removeparam=suid
 ||cam4.com^$removeparam=showSignupPopup
-$removeparam=ocid,domain=bbc.com|bbc.co.uk
+$removeparam=ocid,domain=bbc.com|bbc.co.uk|msn.com
 $removeparam=ns_mchannel,domain=bbc.com|bbc.co.uk
 $removeparam=ns_source,domain=bbc.com|bbc.co.uk
 $removeparam=ns_campaign,domain=bbc.com|bbc.co.uk
