@@ -76,7 +76,6 @@ reuters.com##+js(set-local-storage-item, ajs_anonymous_id, null)
 6play.fr##+js(set-local-storage-item, gdprUserHasInteracted, 0)
 6play.fr##+js(set-local-storage-item, localDeviceId, 0)
 imdb.com##+js(set-constant, doWithAds, noopFunc)
-##+js(set-constant, Document.prototype.browsingTopics, undefined)
 fmkorea.com##+js(set-constant, link_url, '')
 app.tirelocator.ca##+js(set-constant, googleAnalyticsEnhancedTrackEvent, noopFunc)
 app.tirelocator.ca##+js(set-constant, googleAnalyticsEnhancedTrackPageview, noopFunc)
@@ -4081,6 +4080,9 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||tags.news.com.au^$~script
 |piwik.
+||analytics-api.invideo.io^
+||tr.staff-start.com^
+||rtnl.bxcl.de^
 ||analytics.api.justeattakeaway.com^
 ||analytics.eip.telegraph.co.uk^
 ||metrics.geekwire.com^
@@ -76750,6 +76752,9 @@ _tracking.php?b=
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|rusvideos.porn|jrkyushu.co.jp|amiunique.org|edit.ing|konami.com
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org|thehill.com|realtor.com|nzherald.co.nz|aia.com.ph|baynews9.com
+||gvm.com.tw/tracker/view
+||avivid.likr.tw/api/ring_only_tracking.min.js
+||cdn.gravitec.media/track.min.js
 ||events.*/takeaway/takeaway.com/*/*.gif$domain=thuisbezorgd.nl|takeaway.com|just-eat.ch|lieferando.at|lieferando.de|just-eat.fr|pyszne.pl|just-eat.dk|just-eat.no
 ||cf.eip.telegraph.co.uk/particle-embed/js/particle.js
 ||tinhte.vn/appforo/index.php?tinhte-analytics/
@@ -81332,6 +81337,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||easyupload.io/cdn-cgi/zaraz/s.js
 @@||dlswbr.baidu.com/heicha/mw/abclite-$domain=haoma.baidu.com,script
 @@||rmcpay.com/js/google-analytics.js|
 @@||d.line-scdn.net/*/torimochi.js/public/v1/release/stable/min/torimochi.js$domain=pointclub-portal.landpress.line.me
