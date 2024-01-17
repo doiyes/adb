@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: xnoM5hUVQgOkTgYms/GyHw
+! Checksum: DNQMv+G4DPR1SwvheF1/Mw
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202401162216
+! Version(Last Modified): 202401172216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -6880,6 +6880,8 @@ belcy.jp##.ads_textbox
 belcy.jp,cuty.jp##div[style^="min-width: 336px; min-height: 280px;"]
 bella.tw##.hide-mobile[style]
 bella.tw##.hide-pc[style]
+bellesa.co##div[class^="Column-sc"] > div[class^="MediaQuery__Query-sc"]:has(> div[class^="Structure-sc"] > div[class^="Display__RatioOuter"] > div[class^="Display__RatioInner-sc"]:empty)
+bellesa.co##div[class^="Structure-sc"] > div[class^="MediaQuery__Query-sc"]:has(div[class^="Display__RatioOuter-sc"] > div[class^="Display__RatioInner-sc"]:empty)
 bellesa.co#?#div[class^="Structure-sc-"] > div[class^="MediaQuery__Query-sc-"]:has([rel~="noreferrer"] video[class*="_VideoAd-sc"])
 benchmark.pl#?#.col-xs-12 > div:has(> style + div)
 bendibao.com###wxbox
@@ -15415,6 +15417,8 @@ nobugin.com##.td-a-rec
 nod32key.xyz##.tw_float_ads_main_Wrap_Both,.adsbygoogle
 nodejs.cn###biz_center
 nodejs.cn###biz_nav
+nodejs.cn###pagead
+nodejs.cn##+js(set-constant, _AdBlockInit, noopFunc)
 nokuo.blog.jp,blog.livedoor.jp##.article_mid_v2
 nokuo.blog.jp,tsuisoku.com,blog.livedoor.jp##.blog_ad2
 nongjitong.com##.ad_sms
@@ -15469,6 +15473,7 @@ nowscore.com###toperAd
 nowscore.com###toperBaskText
 nowscore.com###toperText
 nowscore.com##div[style="background-color:#F0F0F0;line-height:25px;height:25px;text-align:center"]
+noy1.top##+js(no-xhr-if, /api/ads)
 ntfsformac.cc
 ntfsformac.cn
 ntm.gov.tw#@#.ad-left
@@ -15634,10 +15639,14 @@ ooopic.com##.fix-newUser
 ooopn.com###ab-left
 ooopn.com##a[href*="/jump.html"]
 oops.udn.com#?##wrapper > #mainbar > .area:not(#story):not(#comments):has(> h3 > a[href]:contains(商品推薦))
+op.gg###__next > div[class^="css-"] > div[class^="css-"] > div[class^="css-"]:has(> div:not([class]):not([id]) > div.vm-placement)
+op.gg###__next > div[class^="css-"] > div[class^="css-"]:has(> div > div.vm-placement)
+op.gg###__next > div[class^="css-"]:has(> div > div.vm-placement)
+op.gg###__next > div[class^="css-"]:has(> div#vm-av)
+op.gg###video-metaTrend-ad
+op.gg##.adTd
+op.gg##.gtag-ad
 op.gg##.vm-placement,[class^="ads"]
-op.gg#?##__next > div[class^="css-"] > div[class^="css-"] > div[class^="css-"]:has(> div:not([class]):not([id]) > div.vm-placement)
-op.gg#?##__next > div[class^="css-"] > div[class^="css-"]:has(> div > div.vm-placement)
-op.gg#?##__next > div[class^="css-"]:has(> div#vm-av)
 opdown.com##.cq-recom
 opdown.com##.gxxz-btn
 opdown.com##.listaddrs
@@ -15737,7 +15746,6 @@ ouyaoxiazai.com##div[id^="cs_"] > *
 overclockers.ru##.container-block.woback:has(> div > ins[data-revive-zoneid])
 overclockers.ru##.container-block:has(> div[id^="yandex_rtb"])
 overdrive.in##.add_placeholder_300_250
-overwatch.op.gg,pubg.op.gg##.gtag-ad
 ovo.kyodo.co.jp##div[style$="bottom: 0; width: 100%; display: block; text-align: center; background-color: #000000;"]
 owyb1688.com##.gray-show
 oyksoft.com##.h-speed,#down-one,#down-two,.h-spd
@@ -16095,8 +16103,6 @@ plays01.com##.adbox-bg
 playtv.com.cn###table6
 playtv.com.cn##a[href="http://www.sdhanrui.cn/"]
 playtv.com.cn##table[id] > tbody > tr > td[colspan="2"][width^="32"]
-playwright.nodejs.cn###pagead
-playwright.nodejs.cn##+js(set-constant, _AdBlockInit, noopFunc)
 playzuan.com###ShouYe_ShangBu
 plaza.rakuten.co.jp##.pr01
 plicy.net##.adGamepageHeaderBase
@@ -18168,7 +18174,6 @@ tetonashentai.com##div[id^="dp-ad-"]
 textologia.ru###slidebox
 teyule.net###ifloatdiv
 teyvatsokuho.com##.st-sp-top-only-widgets
-tft.op.gg###video-metaTrend-ad
 tgbus.com###guide-download
 tgbus.com###neck_970
 tgbus.com##DIV#txt_ad2.txt_ad2,DIV[class^="a760x100"],DIV.s.a200x375,DIV[class^="a200x"],DIV.ad111.fc.t10,div[class^="ad"][class$="fx"],div.ad[style^="width"],div.a_pr,div[id^="TGBUS_VISTA_CONTAINER_"],div#duilian,div#neck_970,div.ad760x100,div.in.ad200x375,DIV.s.p3 + DIV.ad,div.db.mar5,div.db.mb10,div.db.mb20,div[style="width: 300px; height: 250px; background: #ccc;"]
@@ -22404,6 +22409,7 @@ zzzyk.com###Tinfo
 ||4po6iqp9.cn^
 ||4sexmail.com^
 ||4wad.com^
+||4wfe3.icu^
 ||5.61.55.143^
 ||5.ccutu.com^
 ||5.gzfenda.com^
@@ -24404,6 +24410,7 @@ zzzyk.com###Tinfo
 ||ajdivotdelbloab24.jio.com^
 ||ajfkwwpo.xyz^
 ||ajfkwwpo.xyz^
+||ajghca.xyz^
 ||ajhdf.com^
 ||ajkjbcjbaaaed.com^
 ||ajkjbcjbaaaed.com^
@@ -24420,6 +24427,7 @@ zzzyk.com###Tinfo
 ||akdhiahcjojdkck.com^
 ||akdie.xyz^
 ||akdie.xyz^
+||akjdbjkcbacj.com^
 ||akmh074.vip^
 ||akmh080.vip^
 ||akncklacnvka.com^
@@ -28341,6 +28349,7 @@ zzzyk.com###Tinfo
 ||dnceqzz.icu^
 ||dnceqzz.icu^
 ||dncvj.cn^
+||dnfnpff.xyz^
 ||dngz.net/x/
 ||dnightwish.xyz^
 ||dnightwish.xyz^
@@ -30978,6 +30987,7 @@ zzzyk.com###Tinfo
 ||hlnr9q.icu^
 ||hlrml.cn^
 ||hlstlyy.com^$third-party
+||hltkl.fun^
 ||hltoon.com/hanman/static/dist/ppm/js/foot
 ||hltqsbl.cn^
 ||hly.com^
@@ -31107,6 +31117,7 @@ zzzyk.com###Tinfo
 ||hqgearb.icu^
 ||hqgearb.icu^
 ||hqgjcm.com^
+||hqjstd.xyz^
 ||hqnpwzu.cn^
 ||hqol.cn/up/ad/
 ||hqzcths.cn^
@@ -34726,6 +34737,7 @@ zzzyk.com###Tinfo
 ||me680.com/js/*.js
 ||meaqcj.cn^
 ||mebohjhh.xyz^
+||mec9k.com^
 ||mecop.cyou^
 ||med-api.admost.com^
 ||med66.com/lamu/
@@ -36277,6 +36289,7 @@ zzzyk.com###Tinfo
 ||oyhurln.cn^
 ||oyksoft.com/assets/images/*.gif
 ||oyksoft.com/show/b.
+||oyotqp.icu^
 ||oyvyxj.cn^$third-party
 ||oyxp.xyz^
 ||oyxp.xyz^
@@ -37481,6 +37494,7 @@ zzzyk.com###Tinfo
 ||qscvli.com^
 ||qselic.top^
 ||qselic.top^
+||qsfbmol.cn^
 ||qsj8fd.com^
 ||qsjfd2.com^
 ||qsjfd2.xyz^
@@ -41040,6 +41054,7 @@ zzzyk.com###Tinfo
 ||vrr.name^
 ||vrr.name^
 ||vrrw.net//templets/default/js/ad.js
+||vrwdsvr.icu^
 ||vs1.exo01.xyz^$image,third-party
 ||vs3.bdstatic.com/videoadv.js?
 ||vs9158.com^
@@ -41363,6 +41378,7 @@ zzzyk.com###Tinfo
 ||wfiles.hcomic.net/indexSwiper/*_*x*_*_TC_gif.gif
 ||wfndponfd.com^
 ||wfndponfd.com^
+||wfpjeul.cn^
 ||wfqgfaa.cn^
 ||wghjq.cn^
 ||wgnpq.com^
@@ -43163,6 +43179,7 @@ zzzyk.com###Tinfo
 ||yximgs.com/bs2/adcarsku/sku9c0e68cc-2f12-4e47-a340-a7293ee88c88.
 ||yxlady.com/cdd/201005/$script
 ||yxmrqc.com^
+||yxptcrss.xyz^
 ||yxrxsov.xyz^
 ||yxtvg.com/*/yxtvg.js|
 ||yxvoud.com^
@@ -43673,6 +43690,7 @@ zzzyk.com###Tinfo
 ||zmfdjb.xyz^
 ||zmhqhuq.cn^
 ||zmk.pw/zfb.png
+||zmklhev.cn^
 ||zmkma.com^
 ||zn46.com/images/*0x
 ||znchw.com^
