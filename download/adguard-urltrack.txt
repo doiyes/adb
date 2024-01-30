@@ -1,4 +1,21 @@
 ! AdGuard-url跟踪保护规则
+$removeparam=cjdata
+$removeparam=cjevent
+$removeparam=/^at_custom/
+$removeparam=at_campaign
+$removeparam=at_campaign_type
+$removeparam=at_creation
+$removeparam=at_emailtype
+$removeparam=at_link
+$removeparam=at_link_id
+$removeparam=at_link_origin
+$removeparam=at_link_type
+$removeparam=at_medium
+$removeparam=at_ptr_name
+$removeparam=at_recipient_id
+$removeparam=at_recipient_list
+$removeparam=at_send_date
+$removeparam=_ope
 $removeparam=af_xp
 $removeparam=af_ad
 $removeparam=af_adset
@@ -130,6 +147,7 @@ $removeparam=utm_term
 $removeparam=utm_umguk
 $removeparam=utm_userid
 $removeparam=utm_viz_id
+$removeparam=gad_source
 $removeparam=gbraid
 $removeparam=wbraid
 $removeparam=gclsrc
@@ -194,6 +212,10 @@ $removeparam=fb_action_types
 $removeparam=fb_comment_id
 $removeparam=fb_ref
 $removeparam=fb_source
+||nuuvem.com^$removeparam=ranMID
+||nuuvem.com^$removeparam=ranEAID
+||nuuvem.com^$removeparam=ranSiteID
+||gog.com^$removeparam=pp
 ||chitai-gorod.ru^$removeparam=partnerId
 ||mall.kinarino.jp^$removeparam=karea
 ||mall.kinarino.jp^$removeparam=klay
@@ -626,12 +648,7 @@ $removeparam=ici,domain=shein.co.uk|shein.com
 ||joshi-spa.jp^$removeparam=cx_clicks_sldbox
 ||n11.com^$removeparam=/pfx|adj/
 ||home.kingsoft.jp^$removeparam=from
-||bbc.$removeparam=at_link_id
 ||bbc.$removeparam=facebook_page
-||bbc.$removeparam=at_ptr_name
-||bbc.$removeparam=at_link_type
-||bbc.$removeparam=at_link_origin
-||bbc.$removeparam=at_campaign_type
 ||bbc.$removeparam=at_bbc_team
 ||jlcpcb.com^$removeparam=from
 ||event.hoken-mammoth.jp^$removeparam=s_mf
@@ -725,8 +742,6 @@ $removeparam=xptdk,domain=shopee.ph|shopee.co.th
 ||1password.university^$removeparam=utm_ref
 ||blog.twitch.tv^$removeparam=web_only
 ||michaelkors.global^$removeparam=ecid
-||michaelkors.global^$removeparam=cjevent
-||michaelkors.global^$removeparam=cjdata
 ||doctolib.de^$removeparam=utm_website
 ||doctolib.de^$removeparam=utm_page-url
 ||doctolib.de^$removeparam=utm_content-group
@@ -1071,7 +1086,6 @@ $removeparam=a_aid,domain=expressvpn.com|vpnarea.com
 ||instagram.com^$removeparam=ig_rid
 ||instagram.com^$removeparam=igsh
 $removeparam=igshid,domain=instagram.com|threads.net
-||euronews.com^$removeparam=_ope
 ||mediamarkt.com.tr^$removeparam=rbtc
 ||t.myvisualiq.net^$removeparam=~red
 ||uspoloassn.com^$removeparam=ref
@@ -1241,9 +1255,6 @@ $removeparam=ns_source,domain=bbc.com|bbc.co.uk
 $removeparam=ns_campaign,domain=bbc.com|bbc.co.uk
 $removeparam=ns_linkname,domain=bbc.com|bbc.co.uk
 $removeparam=ns_fee,domain=bbc.com|bbc.co.uk
-$removeparam=at_campaign,domain=bbc.com|bbc.co.uk
-$removeparam=/^at_custom/,domain=bbc.com|bbc.co.uk
-$removeparam=at_medium,domain=bbc.com|bbc.co.uk
 ||office.com^$removeparam=ocid
 $removeparam=refsrc,domain=twitter.com|x.com
 $removeparam=ref_src,domain=twitter.com|x.com
