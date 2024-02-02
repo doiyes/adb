@@ -36,7 +36,7 @@ ahri8.top#$#abort-current-inline-script document.querySelectorAll popMagic
 ifenpaidy.com#$#abort-on-property-read localStorage
 ! Popups & Popunders
 cocomanga.com#$#abort-on-property-read __cad.cpm_popunder; abort-on-property-read __ad
-madouqu.com,madouqu.tk#$#abort-current-inline-script document.querySelectorAll popMagic
+madouqu.com#$#abort-current-inline-script document.querySelectorAll popMagic
 editcode.net#$#abort-current-inline-script setTimeout openAd
 69xx.one,theav.xyz,theporn.cc#$#override-property-read is_show false
 ! Video ads
@@ -406,7 +406,7 @@ ebay.fr#$#hide-if-matches-xpath './/a[@*]/img [@src][contains(@alt,"reconditionn
 ebay.*#?#div[aria-label^="Advertisement"]:-abp-has(>section.ads-berries)
 ebay.com,ebay.co.uk,ebay.com.au,ebay.ca,ebay.fr,ebay.at,ebay.de,ebay.it,ebay.es#$#hide-if-contains-visible-text /Sponsored|Anzeigen|Sponsorisé|Sponsorizzati|Sponsorowane|G⁣e⁣s⁣p⁣o⁣n⁣s⁣o⁣r⁣d|Patrocinado/ 'div[class][role]>section[data-viewport]' 'div[class][role]'
 ebay.com,ebay.co.uk,ebay.com.au,ebay.ca,ebay.fr,ebay.at,ebay.de,ebay.it,ebay.es#$#hide-if-contains-visible-text /Sponsored|Anzeigen|Sponsorisé|Sponsorizzati|Sponsorowane|G⁣e⁣s⁣p⁣o⁣n⁣s⁣o⁣r⁣d|Patrocinado/ 'li[style]>section[data-viewport]' 'span[class][role]'
-ebay.com,ebay.co.uk,ebay.com.au,ebay.ca,ebay.fr,ebay.at,ebay.de,ebay.it,ebay.es#$#hide-if-matches-xpath './/div/h2[contains(@class,"merch")][contains(translate(text(), "SPONSORED", "sponsored"), "sponsored") or contains(translate(text(), "SPONSORISÉS", "sponsorisés"), "sponsorisés") or contains(translate(text(), "PATROCINADOS", "patrocinados"), "patrocinados") or contains(translate(text(), "ANZEIGEN", "anzeigen"), "anzeigen") or contains(translate(text(), "SPONSORIZZATI", "sponzorizzati"), "sponsorizzati") or contains(translate(text(), "SPONSORIZZATE", "sponzorizzate"), "sponsorizzate")]/ancestor::div[@class="merch-placement-layout"]'
+ebay.com,ebay.co.uk,ebay.com.au,ebay.ca,ebay.fr,ebay.at,ebay.de,ebay.it,ebay.es#$#hide-if-matches-xpath './/div/h2[contains(@class,"recs-title-label")][contains(translate(text(), "SPONSORED", "sponsored"), "sponsored") or contains(translate(text(), "SPONSORISÉS", "sponsorisés"), "sponsorisés") or contains(translate(text(), "PATROCINADOS", "patrocinados"), "patrocinados") or contains(translate(text(), "ANZEIGEN", "anzeigen"), "anzeigen") or contains(translate(text(), "SPONSORIZZATI", "sponzorizzati"), "sponsorizzati") or contains(translate(text(), "SPONSORIZZATE", "sponzorizzate"), "sponsorizzate")]/ancestor::div[contains(@class,"recs-card-container")][1]'
 ebay.com,ebay.com.au,ebay.co.uk,ebay.com.my,ebay.ie,ebay.ca,ebay.at,ebay.de,ebay.ch,ebay.it,ebay.fr,ebay.es,ebay.com.sg,ebay.ph#$#hide-if-matches-xpath './/span[@class="s-item__promoted"][text()]/ancestor-or-self::li[contains(@class,"s-item")][1]'
 ! #CV-737
 cnn.com#$#strip-fetch-query-parameter caid warnermediacdn.com; strip-fetch-query-parameter afid warnermediacdn.com; strip-fetch-query-parameter conf_csid warnermediacdn.com; strip-fetch-query-parameter app_csid warnermediacdn.com
@@ -1112,7 +1112,7 @@ hotsexstory.xyz#$#abort-current-inline-script document.querySelectorAll popMagic
 moredesi.com#$#abort-on-property-read __formatsGetters
 ! *** abp-filters-anti-cv:indonesian.txt ***
 ! #CV-667
-citpekalongan.com,designmyhomee.com,mangacanblog.com,marthamatika.com,tokusatsuindo.com,unbrick.id#$#abort-current-inline-script Math zfgloaded
+citpekalongan.com,designmyhomee.com,mangacanblog.com,tokusatsuindo.com,unbrick.id#$#abort-current-inline-script Math zfgloaded
 hotabis.com#$#override-property-read td_ad_background_click_link undefined
 ! Popup/Popunder/Clickunder
 komikcast.me#$#abort-on-property-read localStorage; abort-on-property-write JSON.parse
@@ -1218,7 +1218,6 @@ filmy69.pl#$#abort-current-inline-script document.querySelectorAll popMagic
 ! #CV-692
 anitube.be,anitube.cx,anitube.cz#$#abort-on-property-write _pop
 ! MISC
-||torcidatricolor.tv/*.gif$image
 kastream.biz#$#abort-on-property-write open
 filmesonlinegratis.com#$#abort-on-property-read atob
 multicanais.tv#$#abort-current-inline-script document.createElement _whvbtwzo
@@ -1233,13 +1232,12 @@ animesonline22.com#$#abort-current-inline-script JSON.parse /atob|btoa|break/
 gekkou.com.br#$#abort-current-inline-script document.querySelectorAll popMagic
 gofilmes.me#$#abort-on-property-read zfgformats
 betteranime.net#$#abort-current-inline-script document.createElement _mdttdpu
-torrentdosfilmes.eu#$#abort-current-inline-script document.createElement /break|case/
 mangalivre.net#$#hide-if-matches-xpath './/div[contains(@style,"pointer-events")]/ancestor-or-self::div[@style][1]'
 ! #CV-667
 filmesonlinegratis.com#$#abort-current-inline-script Math zfgloaded
 ! *** abp-filters-anti-cv:romanian.txt ***
 ! #CV-667
-4bac.ro,cinemasfera.com,filme-bune.biz#$#abort-current-inline-script Math zfgloaded
+4bac.ro,filme-bune.biz#$#abort-current-inline-script Math zfgloaded
 ! *** abp-filters-anti-cv:russian.txt ***
 ! #CV-244
 zen.yandex.ru##div[class*="is-parent-size_undefined"]
@@ -1408,7 +1406,7 @@ agroreview.com#$#abort-current-inline-script encodeURIComponent rcBuf; abort-cur
 ! #CV-691
 ! #CV-761
 ! #CV-667
-envivotv.net,lucenpop.com.es,pokefanleoretrogames.com,topflix.tv#$#abort-current-inline-script Math zfgloaded
+envivotv.net,lucenpop.com.es,topflix.tv#$#abort-current-inline-script Math zfgloaded
 ! #9272
 mamaslatinas.com##.top-bar-content
 ! #CV-663
@@ -1420,7 +1418,7 @@ peliculaseroticasonline.tv#$#abort-on-property-write _0x1dc1
 animeflv.cc#$#abort-current-inline-script JSON.parse
 gnula.se,pelismart.com#$#abort-on-property-read localStorage
 animeflv.net,estrenosdoramas.net#$#abort-on-property-read __DOMAIN
-compucalitv.com,pornstarsyfamosas.es#$#abort-on-property-write _pop
+pornstarsyfamosas.es#$#abort-on-property-write _pop
 animeflv.ac,bajarpelisgratis.com,jkanime.top,pelismart.com,pelismartv.com,pelispoptv.com,series-de.online,torrentdownloads.pro#$#abort-on-property-read localStorage; abort-on-property-write JSON.parse
 gnula.nu,pelisnow.to,pelispop.me,tmomanga.com#$#abort-on-property-write JSON.parse
 futbollatam.com#$#abort-on-property-read attr; abort-on-property-read mm
@@ -1501,7 +1499,7 @@ xoilac96.net#$#abort-on-property-read adsRedirectPopups
 sexdiaryz.us#$#abort-on-property-read parseInt
 linkneverdie.net#$#abort-current-inline-script document.createElement optad;abort-on-property-read pushOnPageGala
 javnong.cc#$#abort-on-property-read Math.round
-viet69.red,ungtycomicsvip.com,truyengihotqua.net,truyengihotqua.com,truyengihotvay.net,truyengihotnay.com,dualeotruyenme.com,yurineko.net,vlxyz.tv,javhay.cam,phimsexhay669.co,cliphot69.vin,doctruyen3qto.com,hentaizz.vip,animehay.city,vlxx.xxx,heo69.top,top1sex.club,lenlut.net,xemsex.asia,hentaivn.vc,sexphim1.com,cdn.streamvl.sbs,buomtv.tv,truyenvnhay.tv,cdnstream.sbs,javtiful.com,tuoi69.tv,quatvn.club,tenmientruyengi.net,topsexviet69.com#$#abort-current-inline-script WebAssembly instantiate
+viet69.red,ungtycomicsvip.com,truyengihotqua.net,truyengihotqua.com,truyengihotvay.net,truyengihotnay.com,dualeotruyenme.com,yurineko.net,vlxyz.tv,javhay.cam,phimsexhay669.co,cliphot69.vin,doctruyen3qto.com,hentaizz.vip,animehay.city,vlxx.xxx,heo69.top,top1sex.club,lenlut.net,xemsex.asia,hentaivn.vc,sexphim1.com,cdn.streamvl.sbs,www.buomtv.app,truyenvnhay.tv,cdnstream.sbs,javtiful.com,tuoi69.tv,quatvn.club,tenmientruyengi.net,topsexviet69.com#$#abort-current-inline-script WebAssembly instantiate
 animevietsub.io#$#abort-current-inline-script document.documentElement break;case
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com#$#abort-on-property-read localStorage
 phimgichill.net#$#abort-current-inline-script jQuery popurl;abort-current-inline-script eval $._Eu
