@@ -66,6 +66,7 @@ apkpure.*##+js(set-constant, $.analytics.send, noopFunc)
 member.neofinancial.com##+js(set-constant, __fpjs_p_l_b, {})
 member.neofinancial.com##+js(set-constant, __fpjs_p_l_b.load, noopFunc)
 itsu.com##+js(set-constant, AtreemoTrackingLbr, noopFunc)
+pracuj.pl##+js(set-cookie-reload, gptrackCookie, 1)
 tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors, {})
 tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.init, noopFunc)
 tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.track, noopFunc)
@@ -75,6 +76,7 @@ tineco.com,galaxy.geely.com,guancha.cn##+js(set-constant, sensors.registerPage, 
 embed.rtl.hu##+js(set-constant, gemiusStream, {})
 embed.rtl.hu##+js(set-constant, gemiusStream.event, noopFunc)
 reuters.com##+js(set-local-storage-item, ajs_anonymous_id, null)
+m.dcinside.com,upload.dcinside.com##+js(set-cookie-reload, _ga, OK)
 6play.fr##+js(set-local-storage-item, gdprTracking, false)
 6play.fr##+js(set-local-storage-item, gdprPersonalization, false)
 6play.fr##+js(set-local-storage-item, gdprAdTargeting, false)
@@ -109,6 +111,7 @@ freecodecamp.org##+js(abort-current-script, Function, b9kEBAW)
 cw.com.tw##+js(set-constant, qg, noopFunc)
 alternative.me,justjaredjr.com,r-graph-gallery.com##+js(remove-attr, onclick, a[href][onclick*="getOutboundLink"])
 eduscho.at##+js(set-constant, exactagTrack, noopFunc)
+the-japan-news.com##+js(set-cookie-reload, fp, 1)
 laprovence.com##+js(set-constant, refresh_xiti, noopFunc)
 laprovence.com##+js(set-constant, xt_click, noopFunc)
 aena.es##+js(set-constant, window.digitalChange, noopFunc)
@@ -159,6 +162,11 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||getui.com^
+||pixel.glimr.io^
+||scripts.jixie.media^$third-party
+||pt.wisernotify.com^
+||citrusad.net^$third-party
 ||pubperf.com^$third-party
 ||stats.getaim.org^
 ||analytics-cf.bigcrunch.com^
@@ -3913,7 +3921,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||tags.news.com.au^$~script
 |piwik.
-||track.addevent.com^
+||a.deadlinefunnel.com^
 ||visitor.sokuja.net^
 ||nlog.naver.com^
 ||collector.taoxh.life^
@@ -91866,6 +91874,8 @@ zmail.neolab.ubilab.me$image
 ||plausible.io/api/event
 /umami.js
 /zhugeio.js
+/glimr-sdk.
+/assets/userevents/application.js
 /webAnalytics/*$xmlhttprequest,script
 /plow.lite.js
 /clickcount/clickcount.js
@@ -92339,6 +92349,7 @@ _tracking.php?b=
 ||googleadservices.com/pagead/conversion_async.js$redirect=noop.js,domain=ffm.to,important,script
 /analytics.js$domain=tokyometro.jp|resumes.breakdownexpress.com|techcult.com|inbox.lv|kopeda.com|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp|imore.com|city.kushiro.lg.jp|emeraldbridal.com.au|emarat-news.ae|imobie.jp|tikla.com.tr|rusvideos.porn|jrkyushu.co.jp|amiunique.org|edit.ing|konami.com
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk|spiegel.de|hp.com|deutschepost.de|thebay.com|s.shufoo.net|tsn.ca|tabelog.com|euronews.com|newshub.co.nz|fredmeyer.com|viabcp.com|carsales.com.au|falabella.com|aarp.org|thehill.com|realtor.com|nzherald.co.nz|aia.com.ph|baynews9.com|thesaurus.com|dhc.co.jp
+||go.masterclass-piano.com/v1/track_capi?
 ||ip-approval.com/*/ip-checker-js$script,domain=amiga.sk
 ||wc.yahoodns.net^$image
 ||cerebro.edna.yahoo.net^$image
