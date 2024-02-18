@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 6Jn0Dssa0PlzPzIFXG3rMw
+! Checksum: bKebSQw5gUp+eiBh5R/lDw
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202402172214
-! Last Modified: 202402172214
+! Version: 202402182214
+! Last Modified: 202402182214
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -816,11 +816,8 @@ imasdk.googleapis.com
 img.easypass.cn
 imindmap.cc
 ipinyou.com
-iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
 iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
-iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
-iqiyi.com##+js(set, QiyiPlayerProphetData.a.data, {})
-iqiyi.com##.black-screen[data-cupid=adblock-blackscreen]
+iqiyi.com##.black-screen[data-cupid=adblock-blackscreen], .qy-plist-ad
 iqiyi.com##.cupid-panel + div, div[data-adzone],#block-V
 irs03.com
 ithome.com##.categoryimg,#hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-child(5)
@@ -1179,7 +1176,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||gtimg.com/qqlive/
 ||gushiwen.cn/getTicket.aspx^$xhr
 ||hao6v.com/d/$script
-||hdslb.com/bfs/seed/jinkela/short/cols/iframe.html$subdocument
+||hdslb.com/bfs/seed/jinkela/$subdocument
 ||hdslb.com/bfs/seed/log/report/log-reporter.js
 ||hdslb.com/bfs/sycp/creative_img/$image
 ||hjwzw.com/js/n$script
