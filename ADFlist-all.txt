@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: GN8wIHUigx4Kiy7oEdPWAA
+! Checksum: 1jEztk9DygROkOXaIKYqjQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202403152215
+! Version(Last Modified): 202403162214
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -285,7 +285,7 @@
 ###player_banner[style*="fixed;"]
 ###player_pause > .tip + a[target="_blank"]
 ###player_pause[style^="position"] > a[target="_blank"]
-###playlistbtn > a[href="/h0312.html"]
+###playlistbtn > a[href$=".html"]
 ###pop_hongbao
 ###popadv_popmask
 ###popadv_popmenu
@@ -1008,7 +1008,6 @@
 ##DIV[class^='ads_border_']
 ##DIV[data-text-ad]
 ##DIV[id*="BAIDU_SSP__wrapper_"]
-##DIV[onclick='if (!window.__cfRLUnblockHandlers) return false; window.location.href=\'https://a.biquge-app.com/apps/\''],[onclick='if (!window.__cfRLUnblockHandlers) return false; window.location.href=\'https://a.biquge-app.com/apps/\''] + div
 ##DIV[style$='display:block;width:9.6vw;height:7.96875vw;background: #000;opacity:0.01;']
 ##DIV[style$='display:block;width:9.6vw;height:7.96875vw;background:#000;opacity:0.01;']
 ##DIV[style*='!important; color: transparent !important; font-size: 0px !important; text-indent: -10000px !important; line-height: 0px !important; height: 150px !important;']
@@ -1144,6 +1143,7 @@
 ##[href^='https://w5979.com:']
 ##[href^='https://www.00285164.com']
 ##[href^='https://www.00426740.com']
+##[href^='https://www.jumbobag.cn']
 ##[href^='https://www.qlspx.com:']
 ##[href^='https://xcc.'][href*='cn/']
 ##[href^='https://xxx.nunxun.com']
@@ -1258,6 +1258,7 @@
 ##a[href*=".ipndyn.com/"]
 ##a[href*=".kekexc.com/"]
 ##a[href*=".las88889999.com:"]
+##a[href*=".mbrnf.com/"]
 ##a[href*=".mhtimes.cn"]
 ##a[href*=".mjjji.com/"]
 ##a[href*=".mmrjmh.com/"]
@@ -1655,13 +1656,12 @@ $script,third-party,domain=colamanga.com
 $script,third-party,domain=torkitty.com|torrentkitty.app|torrentkitty.asia|torrentkitty.cam|torrentkitty.ink|torrentkitty.io|torrentkitty.live|torrentkitty.lol|torrentkitty.net|torrentkitty.se|torrentkitty.tv|torrkitty.com
 $script,third-party,websocket,domain=52codes.net
 $script,third-party,xmlhttprequest,domain=btio.pw
-$third-party,xmlhttprequest,domain=subhd.tv|subhdtw.com|xyg688.com|zzzzz688.com
+$third-party,xmlhttprequest,domain=cocolamanhua.com|subhd.tv|subhdtw.com|xyg688.com|zzzzz688.com
 $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biqu.ge|biqubao.com|biquduge.com|biqug.org|biquga.com|biquge.info|biquge.tv|biquge001.com|biquge123.com|biquge5200.cc|biqugedu.com|biqugeg.com|biquger.com|biquges.com|biqugewx.com|biqugle.com|biquku.la|biquw.com|biquwu.cc|gebiqu.com|hehuamei.com|ibqg5200.com|m.fengyunok.com|mybooks8.com|shuquge.com|snzb.org|xbiquge.la|xsbiquge.com|xshengyan.com|xswang.com|yiyi120.com|yuanzunxs.cc|zuimeng8.com|zzbiquge.com|75dr.com|bggee.com|biquge96.com|biqugeabc.com|aishu5.com|biquger.net|senwy.com|biqugeso.org|whzh-xs.com|bqg.org|mmbqg.com
 &ad*&puid=*&uid=*=show
 &ad=*&referer=
 &adid=$third-party
 &xhtml?$script,third-party
-*##.ad
 *##.ad960-90
 *##.adbox
 *##.adtable
@@ -1671,7 +1671,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 *$script,third-party,xmlhttprequest,domain=cnbtspread.xyz
 *&adsc_typpe=
 *-160-600.jpg|$image
-*-300X250.$image,object,object-subrequest
+*-300X250.$image,object
 *-980x60.gif$image
 *-ads-$script
 *-stats.jpush.cn^
@@ -1845,7 +1845,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */198game_
 */2345explorer.$script
 */2345float
-*/300250.swf$object,object-subrequest
+*/300250.swf$object
 */300X250.gif$image
 */300x250.swf
 */300x250_
@@ -1864,9 +1864,9 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */740_60.jpg
 */760.js|$script
 */760_*.js|$script
-*/778_110.$image,object,object-subrequest
+*/778_110.$image,object
 */789uc/sb.
-*/7mad.$image,object,object-subrequest
+*/7mad.$image,object
 */8976_360100$subdocument
 */900x250.$subdocument
 */9115gg/dd1.js
@@ -1898,9 +1898,9 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */a_d_c
 */a_d_s
 */aaadddd/2.js$script
-*/aadd/$image,object,object-subrequest
+*/aadd/$image,object
 */acadv
-*/acho/280x$image,object,object-subrequest
+*/acho/280x$image,object
 */acmsd/thea15
 */acmsd/thea17
 */acmsd/thea5
@@ -1908,10 +1908,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */ad-$~stylesheet
 */ad.
 */ad/$script,subdocument,media
-*/ad0$script,domain=~discord.com
-*/ad1$script
-*/ad2$script
-*/ad3$script
 */ad340-50.gif|
 */adImgCover
 */adPictures
@@ -1933,7 +1929,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */adgg/
 */adhead
 */adiframe/
-*/adimages/$image,object,object-subrequest
+*/adimages/$image,object
 */adjs.
 */adjs/
 */adload.
@@ -1995,7 +1991,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */code/popjs.asp?
 */code_img/
 */codepic/
-*/common/cf/$image,object,object-subrequest,domain=~wifi.liebao.cn|~96fei.com
+*/common/cf/$image,object,domain=~wifi.liebao.cn|~96fei.com
 */cont_adL
 */cont_adr
 */cont_bottom.js|
@@ -2017,15 +2013,15 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */displayAd.js?
 */doublePop.js
 */duilian_
-*/dzx/forum$image,object,object-subrequest
+*/dzx/forum$image,object
 */ead/union/
 */ejia/$domain=~189.cn
-*/ejia360$image,object,object-subrequest
+*/ejia360$image,object
 */enkj.gif$image
 */eptgoal/
 */external/public126
 */fbookad/
-*/fdad/$image,object,object-subrequest
+*/fdad/$image,object
 */fhHYTagNew
 */files/adv/
 */fkunion
@@ -2056,13 +2052,13 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */ggao.
 */ggao/
 */ggaotp/
-*/ggg/$image,object,object-subrequest
+*/ggg/$image,object
 */gggg
 */gghead
 */ggimages/
 */ggjs/
 */ggs/
-*/gguangg$image,object,object-subrequest
+*/gguangg$image,object
 */gongyong.js|
 */goo.js|$script
 */googleAds3Wide.js
@@ -2085,14 +2081,14 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */html/hot_s
 */html/yuedu$subdocument
 */html_1.
-*/hxli/$image,object,object-subrequest
+*/hxli/$image,object
 */i.js^$script,third-party
 */icast/
 */idcgg/
 */if/07top-new
 */ikb/js/t.js|
 */image/banner/$image
-*/images/169$object,object-subrequest
+*/images/169$object
 */images/ad960.
 */images/banner$domain=~ipo.chinairn.com|~www.shuame.com|~exp.qq.com
 */images/bbsad/
@@ -2106,8 +2102,8 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */inner_center1
 */intf/bbs_expert
 */ireadad.
-*/ja486$image,object,object-subrequest
-*/jbk.gif^$image,object,object-subrequest
+*/ja486$image,object
+*/jbk.gif^$image,object
 */js/1.htm$subdocument
 */js/118.
 */js/22.$subdocument
@@ -2160,7 +2156,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */jsgg/
 */jump.js|
 */kdjl_306x200
-*/kwgg/$image,object,object-subrequest
+*/kwgg/$image,object
 */letv-gug/$media
 */lm/iframe/js/blognew2011
 */lmt_v
@@ -2178,11 +2174,11 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */mini/01.$subdocument
 */mlfoot.js|
 */mopgg
-*/mygg$image,object,object-subrequest
+*/mygg$image,object
 */mynicedd/
 */nadScreenFloat
 */nadTimeFlashLayer
-*/nc.jpg$image,object,object-subrequest
+*/nc.jpg$image,object
 */nettv/adp/
 */newSNDAPop
 */newS_contentad
@@ -2212,11 +2208,11 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */pu_nocap_cn
 */push_n.php
 */pushcar.php
-*/rdidc.gif$image,object,object-subrequest
+*/rdidc.gif$image,object
 */readadend
 */redirect?ad_cb=
 */rightCornerPop/
-*/rnad/$image,object,object-subrequest
+*/rnad/$image,object
 */rndView.
 */rsdowngood_
 */s.php?id=$script,third-party
@@ -2236,7 +2232,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */soft_mid_
 */soqidian/
 */svnad/$image,script
-*/svnad/$subdocument,image,object,object-subrequest
+*/svnad/$subdocument,image,object
 */sygg/$subdocument
 */tan.$script
 */tan/
@@ -2267,14 +2263,14 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */tuiguang/$subdocument
 */tuiguang360-300.
 */tv/tv1.js|
-*/tyad_$image,object,object-subrequest
+*/tyad_$image,object
 */ugcad
 */ulinkdir
 */ulinkjs
 */union/link_
 */union/union_
 */upcontent.js|
-*/upfile/myshow$image,object,object-subrequest
+*/upfile/myshow$image,object
 */usmsad
 */uuzu_
 */vamaker/
@@ -2288,15 +2284,15 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 */wcast
 */web/js/th/$domain=cam4.com
 */webimg08/dot.gif^
-*/weige.$image,object,object-subrequest
+*/weige.$image,object
 */widget.jsp?bId$subdocument
 */widget/spage_game_tab/$domain=tieba.baidu.com
 */wizard.js^
 */www/deliver/
 */www/delivery/
 */wwwcpm
-*/wzduilian/$image,object,object-subrequest
-*/wzygg/$image,object,object-subrequest
+*/wzduilian/$image,object
+*/wzygg/$image,object
 */xiazaiyoudao
 */xiu.$script
 */xy/js/
@@ -5330,7 +5326,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||studioclassroom.com/ad/
 @@||sudupan.com^*/*.gif
 @@||suning.cn/project/msIndex/js/??
-@@||supercloudsms.com/static/js/taboola_ads.js
+@@||supercloudsms.com/static/ad/ads.js
 @@||swjoy.com^
 @@||swsc.com.cn/download/ad_images/
 @@||sxjbjt.com^*/ad
@@ -5470,7 +5466,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||www.nfmovies.com/static/side.jpg
 @@||www.playno1.com/data/attachment/common/cf/*$image,domain=www.playno1.com
 @@||www.ruanyifeng.com^$csp=script-src 'self' * 'sha256-0McqMM66/wAVZmxF6zXpjNsb1UMbTl4LXBXdhqPKxws='
-@@||www.youtube.com/s/desktop/ad$script
 @@||www.zhihu.com/api/v4/search_v3*
 @@||wx.qq.com/*/ad_$script
 @@||wx.qq.com/c/=/mpres/*/video_ad_
@@ -10341,7 +10336,6 @@ ghxi.com,mcdulll.com,pixnet.net##div[id*="-ad-"]
 gift.douyucdn.cn
 giga.de###content-block-01F9V7JV1FJ57J4N0HJZQ9MMH7
 giga.de##.BC-Container
-giga.de##.alice-root-header-ads__ad--top
 giga.de##.smb-gallery-ed-container
 giga.de##div[class^="alice-root-topmobile"]
 giga.de#$#body { padding-top: 9rem !important; }
@@ -15088,11 +15082,12 @@ netflav.com##.ads_head_banner_container
 netflav.com##.ads_video_overlay_mobile
 netfly.fun##.player-box-main ~ [style^="display: flex; justify-content: space-between;"]
 netfly.fun#?#.content > div:not([class]):has(> [style="display: flex; justify-content: space-between; width: 100%;"])
+netfly.fun,netfly.tv##.banner[href^="http"]
 netfly.fun,netfly.tv##.container-slide
 netfly.fun,netfly.tv##.content > div > [style="display: flex; flex-direction: column;width: 100%;"]
 netfly.fun,netfly.tv##.module-tg-box
 netfly.fun,netfly.tv##.player-box > div.player-tt-rmm
-netfly.fun,netfly.tv##[style^="display: flex; justify-content:"]
+netfly.fun,netfly.tv##[style^="display: flex;"]
 netfly.fun,netfly.tv##div[class*="tt-"] > a[target="_blank"] + span.tt-icon-close
 netfly.fun,netfly.tv##div[class*="tt-"] > a[target="_blank"] > img
 netfly.lol##.module-tglist
@@ -17113,6 +17108,11 @@ seehd.so##.header_wrap + .tac + table[align="center"]
 seehd.so##.tac + table
 seemh.com##div.top_banner,div.mtb16.cf,div[style][class="mt10"],div[class^="gg_"]
 seesaa.net###reload-ad-div-id
+seexh.com,taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhadult2.com,xhmoon5.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##.thumb-list-mobile-item--widget
+seexh.com,taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhadult2.com,xhmoon5.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##div[class*="banner-container"]
+seexh.com,taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhadult2.com,xhmoon5.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com#?#.thumb-list-mobile-item:has(> amp-iframe)
+seexh.com,taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.thumb-list-mobile > .thumb-list-mobile-item--widget
+seexh.com,taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.video-page__layout-ad
 sefon.pro##.body_header
 sefon.pro##.rklm
 segmentfault.com###first-ad
@@ -17926,6 +17926,7 @@ sunnylife.tw##.post-entry > div[style="min-width: 300px; min-height:300px;"]
 sunofbeach.net##div[id$="-ad"]
 suopao.org##.t5[style^="margin-top:8px;"]
 suopao.org##.tr3.t_one[onmouseout]
+supercloudsms.com##A[id^="ad_"]
 superlife.ca##.sidebar-ad-zone
 superlife.ca##[class*="ad"]
 superluchas.com###AbovePostPlacementWrapper
@@ -18086,11 +18087,6 @@ taoguba.com.cn##img#head_img_2,div#wrap_footer,div#wz_ad,[id^="ad_"],[src^="http
 taohuabt.net##.a_cb,.a_cn,.a_pb,img[height="60"],img[height="120"],.a_fl,.it618_firstad_flex,div[style="margin-bottom:5px"],div[style="margin-top:5px"]
 taohuahd.com##[height="60"],.a_fl,.a_cn,.a_cb,.a_pb,.it618_firstad_flex,table[bordercolor="#999999"]
 taohuayun.cn##img[width="150"][height="60"]
-taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhadult2.com,xhmoon5.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##.thumb-list-mobile-item--widget
-taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhadult2.com,xhmoon5.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com##div[class*="banner-container"]
-taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhadult2.com,xhmoon5.com,xhamster3.com,xhamster18.desi,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.*,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,xhamster.one,xhamster.desi,stripchat.com#?#.thumb-list-mobile-item:has(> amp-iframe)
-taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.thumb-list-mobile > .thumb-list-mobile-item--widget
-taoxh.life,xhamster42.desi,xhvid.com,xhtab2.com,xhamster20.desi,xhamster19.desi,xhwebsite2.com,xhadult3.com,xhadult2.com,xhmoon5.com,xhwide1.com,xhplanet2.com,megaxh.com,xhamster16.*,hamsterix.*,xhamster13.*,xhamster18.*,xhamster19.*,xhamster11.*,xhamster5.*,xhamster10.*,xhamster4.*,xhamster3.*,xhamster2.*,xhamster.*##.video-page__layout-ad
 taoyizhu.com##.float-banner
 taoziba.cc##.vddb2 + a
 taptap.com###bottomBanner
@@ -21386,6 +21382,7 @@ zzzyk.com###Tinfo
 ||0ns32h.com^
 ||0o0.ooo/2017/01/13/58787d42bbad6.jpg
 ||0op8kh.cn^
+||0oqt9i.cn^
 ||0p7w.cn^
 ||0r3tyg.cn^
 ||0tq6ub.cn^
@@ -30791,6 +30788,7 @@ zzzyk.com###Tinfo
 ||hk-pub.com/forum/images/banner/
 ||hkaiedb.icu^
 ||hkb123.com/plus/show.php
+||hkbumv.icu^
 ||hkcoding.com/chequeconvert/img/grammarly-
 ||hkcoding.com/img/
 ||hkctmldg.icu^
@@ -31622,7 +31620,7 @@ zzzyk.com###Tinfo
 ||img.yangshengtang123.com^
 ||img.zuowen8.com^
 ||img.zuowenwang.net^
-||img0.pcgames.com.cn^$object,object-subrequest
+||img0.pcgames.com.cn^$object
 ||img1.126.net/
 ||img1.126.net^
 ||img1.360buyimg.com^$app=com.hunantv.imgo.activity
@@ -33163,6 +33161,7 @@ zzzyk.com###Tinfo
 ||kslbahd.top^
 ||ksqfwxu.cn^
 ||ksrgsc.xyz^
+||kssolo.com^
 ||kstj.baidu.com^
 ||ksvkfwth.xyz^
 ||kszvmqo.cn^
@@ -33422,6 +33421,7 @@ zzzyk.com###Tinfo
 ||ld0766.com/index.php?m=call&id=10
 ||ld12.com/js/myfiles/
 ||ldb.cc/js/top.js
+||ldgjwdohqbi.xyz^
 ||ldjhlqr.cn^
 ||ldjhlqr.cn^
 ||ldjnbn.xyz^
@@ -35751,6 +35751,7 @@ zzzyk.com###Tinfo
 ||offerwall.yandex.net^
 ||offerwall.yandex.net^
 ||offline-adv.oray.com^
+||ofkcww.xyz^
 ||ofooe.cn^
 ||ofreadingand.biz^
 ||ofweek.com/img/proimage/2017/osl
@@ -36188,6 +36189,7 @@ zzzyk.com###Tinfo
 ||pb.shuxigua.com^
 ||pb.sogou.com^
 ||pbaiyho.cn^
+||pbbhhxm.xyz^
 ||pbcdn.com/data/attachment/album/$image
 ||pbmp.ali213.net/
 ||pbmp.ali213.net/js/
@@ -39614,6 +39616,7 @@ zzzyk.com###Tinfo
 ||tnebxv.top^
 ||tnfhxszj.xyz^
 ||tngmn.com^$third-party
+||tnifdlai.top^
 ||tnjvz.cn^
 ||tnkfactory.com^$third-party
 ||tnllxd.xyz^
@@ -40140,6 +40143,7 @@ zzzyk.com###Tinfo
 ||udnfunlife.com/mall/cus/cat/OutWebAd.do
 ||udpdmeb.cn^
 ||udsahkln.xyz^
+||udykkl.cn^
 ||ue8im.com^
 ||uebabuf.cn^
 ||uebipacy.xyz^
@@ -42161,6 +42165,7 @@ zzzyk.com###Tinfo
 ||xrb0owc.icu^
 ||xrb0owc.icu^
 ||xrcembm.cn^
+||xrdqdd.xyz^
 ||xrkadslmgg.top^
 ||xrkadslmgg.xyz^
 ||xrkyqq.com^
