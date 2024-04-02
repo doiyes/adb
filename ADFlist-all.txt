@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: nywQzEXKcW+lAM8Rg1xSew
+! Checksum: 7vIU7N1X9nisi6Oq+1WFOQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202404012215
+! Version(Last Modified): 202404022215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -6928,7 +6928,11 @@ bilibili.com##.ad-report, .ad-floor
 bilibili.com##.adblock-tips
 bilibili.com##.banner-card
 bilibili.com##.bili-dyn-ads
+bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__wrap
+bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > .extension-tips
+bilibili.com##.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
 bilibili.com##.bili-video-card__wrap > a[href^="http"]:not([href*=".bilibili.com/"])
+bilibili.com##.carousel-container > .carousel-transform > .carousel-slide:has(> a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bilibili.com/"])) > .extension-tips
 bilibili.com##.desktop-download-tip
 bilibili.com##.eva-banner
 bilibili.com##.extension-tips
@@ -6957,13 +6961,11 @@ bilibili.com##a[href="/video/av8587236/?tg"]
 bilibili.com##button.go-back,a.feedback
 bilibili.com##div[style*="height:"][data-loc-id]
 bilibili.com##span[style*="height:"][data-loc-id]
-bilibili.com#$?#.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__skeleton { visibility: visible !important; }
-bilibili.com#$?#.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__skeleton { visibility: visible !important; }
+bilibili.com#$#.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__skeleton { visibility: visible !important; }
+bilibili.com#$#.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__skeleton { visibility: visible !important; }
 bilibili.com#$?#.container > div.floor-single-card:has(> div.skeleton) { remove: true; }
 bilibili.com#$?#.ex-card-common:has(.gg-icon) { remove: true; }
 bilibili.com#$?#.van-slide > .item:has(.bypb-icon) { remove: true; }
-bilibili.com#?#.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__wrap
-bilibili.com#?#.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
 bilibili.com#?#.eva-extension-body > .bili-video-card:-abp-has(.bili-video-card__info--ad)
 bilibili.com#?#.video-card-common:-abp-has(>.card-pic>a[href*="cm.bilibili.com"][data-target-url])
 bilibili.com#?#.video-page-special-card-small:-abp-has(>.card-box>.info>a[href^="http"]:not([href*=".bilibili.com/"]))
@@ -11925,6 +11927,7 @@ iqiyi.com###videoBuyContainer
 iqiyi.com###widget-jingdongAd
 iqiyi.com###zbsp
 iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
+iqiyi.com##+js(set, QiyiPlayerProphetData.a.data, {})
 iqiyi.com##.ad-seed
 iqiyi.com##.adBanner980
 iqiyi.com##.banner3
@@ -14788,6 +14791,7 @@ motortrend.com##section[data-c="body"] > div[class]:has(.lazyload-placeholder)
 motortrend.com##section[data-c="body"] > div[class]:has(div[data-freestar-placement-name])
 movie-rush.com##.container-fluid > div.mb-2
 movie-rush.com##.fs
+movie-rush.com##iframe[src^="https://www.movie-rush.com/files/js/ad/"]
 movie.digle.tokyo#$#.p-fixed-menu__button-post-movie[href^="https://t.afi-b.com"] { display: none !important; }
 movie.digle.tokyo#$#.p-fixed-menu__menu-wrapper--post-movie { background-color: #0f0e0e !important; }
 movieclassic.net###billboard-modal
@@ -21112,6 +21116,7 @@ zjrxz.com###bdcs-frame-box,.ads,.column-aside > A[href^="http://www.zjrxz.com/ht
 zjst.net##body > style ~ *,.vod-gd
 zjstv.com##.ad.w,.ad_tl,[class^="ad_nr_"]
 zk001.cc##section[class^="ch"]
+zk021.com
 zkvivi.com##.ad2
 zmovs.com##div[class^="player-banner"]
 zmovs.com##div[id^="div-gpt-"]
@@ -21823,6 +21828,7 @@ zzzyk.com###Tinfo
 ||1905715.com^
 ||1909.me/upload/ad/
 ||192.151.218.66^$third-party
+||192.luyouwang.com^
 ||194.59.220.161^
 ||194007.com/4058.gif
 ||198game.com^
@@ -25197,7 +25203,6 @@ zzzyk.com###Tinfo
 ||badjs.weixinbridge.com^
 ||badmintoncn.com/cbo_include/js/cboaaa.js
 ||bahamut.com.tw/js/ad.js
-||bai.luyouwang.com^
 ||bai.luyouwang.com^
 ||bai128.xyz^
 ||bai128.xyz^
@@ -28710,6 +28715,7 @@ zzzyk.com###Tinfo
 ||ebten.xyz^
 ||ebuqxsjq.com^
 ||ebuqxsjq.com^
+||ebwonro.cn^
 ||ec.yimg.com^
 ||ecami.xyz^
 ||ecard.shenzhentong.com^
@@ -31730,6 +31736,7 @@ zzzyk.com###Tinfo
 ||imymobi.com^
 ||imyqb.cn^
 ||in-page-push.com^
+||inalzlo.top^
 ||inclk.com^$popup
 ||info.vip.iqiyi.com/promotion/
 ||info/ad/
@@ -32699,6 +32706,7 @@ zzzyk.com###Tinfo
 ||jweoe.xyz^
 ||jweoe.xyz^
 ||jwfesuk.cn^
+||jwhdgt.icu^
 ||jwiyr.com^
 ||jwjzf.online^
 ||jwltpv.xyz^
@@ -35604,6 +35612,7 @@ zzzyk.com###Tinfo
 ||npftmqv.cn^
 ||nphoto.net/media/
 ||nphqw.cn^
+||npjvgug.xyz^
 ||nplahh.xyz^
 ||npnpxoz.xyz^
 ||npnzfri.xyz^
@@ -36002,6 +36011,7 @@ zzzyk.com###Tinfo
 ||ossfile001.com^
 ||osswc.pplive.cn/cccms/$image
 ||ostjpig.cn^
+||osusjsga.com^
 ||oswowg.xyz^
 ||otbeksf.cn^
 ||otcdn2.auditude.com^
@@ -37107,6 +37117,7 @@ zzzyk.com###Tinfo
 ||qk6.org/file/script/
 ||qkcaqq.xyz^
 ||qksapp.net/gif/
+||qkscga.xyz^
 ||qktmwiq.cn^
 ||qkwsqq.com^
 ||ql.uzuzuz.com^
@@ -39099,6 +39110,7 @@ zzzyk.com###Tinfo
 ||szmpy.cn^
 ||szmtd.cn^
 ||szmty.cn^
+||szmyl.cn^
 ||szn0ehq.icu^
 ||sznews.com/s?z=
 ||szonline.net/static/js/ads.js
@@ -41829,6 +41841,7 @@ zzzyk.com###Tinfo
 ||xgapi-hl.snssdk.com/video/app/article/information/v25/?$replace=/ad_/fuck/
 ||xghnqq.com^
 ||xghylt.com/api.php?mod=ad&adid=
+||xgjidt.xyz^
 ||xgo.com.cn/pv.js
 ||xgrcfz.xyz^
 ||xgzdys.com^
@@ -43637,7 +43650,7 @@ zzzyk.com###Tinfo
 ~car.kdslife.com,enet.com.cn,fjsen.com,hupu.com,kdslife.com,~my.hupu.com,mysteel.com,news.cnyes.com,pchome.net,rznews.cn##div[class^="ad"]
 ~cbachina.sports.sohu.com,sohu.com##sohuadcode
 ~cityheaven.net###gg1
-~crunchyroll.com##[class|=ad]
+~crunchyroll.com,~cloud.189.cn##[class|=ad]
 ~dongman8.com##.m_acmsd
 ~dongman8.com##.pc_acmsd
 ~g.ifeng.com,ifeng.com##a[href*="/g.ifeng."]
