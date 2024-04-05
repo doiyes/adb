@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 4jjXrp1MPdOu1ct2tCxNhA
+! Checksum: 76/cc0F7h5CYHSF4arh1AA
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202404042216
-! Last Modified: 202404042216
+! Version: 202404052217
+! Last Modified: 202404052217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -810,6 +810,7 @@ imasdk.googleapis.com
 img.easypass.cn
 imindmap.cc
 ipinyou.com
+iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
 iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
 iqiyi.com##+js(set, QiyiPlayerProphetData.a.data, {})
 iqiyi.com##.black-screen[data-cupid=adblock-blackscreen], .qy-plist-ad
@@ -893,6 +894,7 @@ static.g.iqiyi.com
 stgowan.com
 swc.weather.com.cn
 synacast.com
+t7z.cupid.iqiyi.com
 taboola.com
 tanx.com
 taobao.qq.com
@@ -992,6 +994,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |https://www.36dm.com/js/
 |https://x.qcheng.cc/x/statics/js/fuck-debugger.js^$script
 ||126.net/silver/
+||127.0.0.1^$script,domain=iqiyi.com
 ||168.it168.com$script
 ||17173.com/batch_show?ads=
 ||17173.com/if/$script,subdocument
@@ -1230,6 +1233,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
 ||mat1.gtimg.com/sports/000_AD/$image
 ||media.$third-party,script,subdocument,domain=~ted.com
+||mesh.if.iqiyi.com/player/pcw/update/commonAppDownloadData^$xhr
 ||mfm.video.qq.com/danmu
 ||midext2.cdn.huya.com/ext-web-mid/ext-web-sub-frame/$subdocument
 ||mimg.127.net/m/lb/img/inboxBottom/$image
@@ -1304,6 +1308,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||ssports.iqiyi.com/app/$media,object-subrequest
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||static.cnbetacdn.com/frontend/vipics/$image
+||static.iqiyi.com/js/common/mars_v.js^$script
 ||static.olelive.com/uploads/file/$image
 ||static.oschina.net/*_banner_$image
 ||static.oschina.net/uploads/space/20*.jpg|$image
@@ -1318,7 +1323,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||stripe.com^$script,domain=~nextdns.io|~obsidian.md
 ||swa.gtimg.com/
 ||t1.hoopchina.com.cn/$subdocument
-||t7z.cupid.iqiyi.com/show$script,important
 ||tajs.qq.com/$domain=~wuxia.qq.com
 ||taobao.com^$removeparam=/^utm_/
 ||tj.ali213.net/
@@ -1334,6 +1338,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||valipl.cp31.ott.cibntv.net/$media
 ||vamaker.com/$third-party
 ||video.da.mgtv.com/$media
+||video.iqiyi.com/ws$websocket
 ||video.qq.com/danmu_manage/$xhr
 ||vidhub.tv/player/buffer.html$subdocument
 ||vidhub2.cc/player/buffer.html$subdocument
@@ -1365,6 +1370,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||www.fxxz.com/skin/know/html/$subdocument
 ||www.greenxiazai.com/green/
 ||www.hexun.com/hxpage/index.html$subdocument
+||www.iqiyi.com/service-worker.js
 ||www.myhack58.com/Articleacb0$image
 ||www.olevod.com/upload/site/202$image
 ||www.pconline.com.cn/*/intf$subdocument,script
