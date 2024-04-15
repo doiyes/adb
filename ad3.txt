@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: ZOyafxlyVfsKTtlBHZVsFQ
+! Checksum: 3uO6iWBv2svABzyDNrQnpw
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202404142307
-! Last Modified: 202404142307
+! Version: 202404152214
+! Last Modified: 202404152214
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -11,10 +11,12 @@
 # NoCoin filter list optimized for uBlock
 ##[id$="-ad"]
 ##a.disabled
+*##.ad
 *##.ad960-90
 *##.adbox
 *##.adtable
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
+*$doc,removeparam=/^utm_/
 *&adsc_typpe=
 *-160-600.jpg|$image
 *-300X250.$image,object
@@ -1217,7 +1219,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||ja1.gamersky.com/
 ||ja2.gamersky.com/
 ||jd.com/$domain=le.com
-||jd.com^$removeparam=/^utm_/
 ||jianshu.io/assets/web/*-ads-$image
 ||js.cncrk.com/
 ||js.letvcdn.com/*_banner_$script
@@ -1324,9 +1325,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||swa.gtimg.com/
 ||t1.hoopchina.com.cn/$subdocument
 ||tajs.qq.com/$domain=~wuxia.qq.com
-||taobao.com^$removeparam=/^utm_/
 ||tj.ali213.net/
-||tmall.com^$removeparam=/^utm_/
 ||tongj.xilu.com/
 ||toutiaoimg.com/origin/$image,domain=agedm.org|acgndmku.com|subaibaiys.com
 ||tracker.$xhr,websocket,script,ping

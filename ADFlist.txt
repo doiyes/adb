@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: eASxbuXytOvWNsM2wNYvnA
+! Checksum: hQc7dHWMGxSMexSqo4gC+w
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202404142307
+! Version(Last Modified): 202404152214
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -37,10 +37,12 @@
 ##a.disabled
 ##body.page > .popup
 ##canvas#live2d
+*##.ad
 *##.ad960-90
 *##.adbox
 *##.adtable
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
+*$doc,removeparam=/^utm_/
 *$script,third-party,domain=hitomi.la
 *&adsc_typpe=
 *-160-600.jpg|$image
@@ -3273,7 +3275,6 @@ zybang.com##.top_download
 ||jc001.cn/img/yhj.gif
 ||jc001.cn/indexnew/js/yuyue.js
 ||jd.com/$domain=le.com
-||jd.com^$removeparam=/^utm_/
 ||jia.com/js/common/jia-common.js
 ||jia.com/js/tuku/footBanner_
 ||jia.com/js/zixun/news.js
@@ -3677,7 +3678,6 @@ zybang.com##.top_download
 ||tajs.qq.com^
 ||taobao.com/api/data/v2/d9543feac7c9433a98bc85be3ba856b1.js
 ||taobao.com/js/smartbanner/
-||taobao.com^$removeparam=/^utm_/
 ||tawk.to^$third-party
 ||tcss.qq.com^
 ||tencent.com/developer/api/common/getAds
@@ -3700,7 +3700,6 @@ zybang.com##.top_download
 ||tj.ali213.net/
 ||tjj.com^
 ||tkres.tuku.cc/k32/
-||tmall.com^$removeparam=/^utm_/
 ||to8to.com/assets/wap//common/widgets/appGuide/appGuide.
 ||to8to.com/to8to_pc/common/modules/bottom_up_slide/
 ||to8to.com/yezhu/zxbjWidget.

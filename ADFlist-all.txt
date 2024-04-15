@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: hwE86aUzixe5eG1QaqULhw
+! Checksum: IpHpTyMkaRa04nE01QaFZg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202404142307
+! Version(Last Modified): 202404152214
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -1655,11 +1655,13 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 &ad=*&referer=
 &adid=$third-party
 &xhtml?$script,third-party
+*##.ad
 *##.ad960-90
 *##.adbox
 *##.adtable
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
 *$app=com.miui.systemAdSolution
+*$doc,removeparam=/^utm_/
 *$script,third-party,domain=hitomi.la
 *$script,third-party,xmlhttprequest,domain=cnbtspread.xyz
 *&adsc_typpe=
@@ -2689,6 +2691,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .xyz/xefeliffng_$third-party
 .xyz/xling_*_*_*.js?
 .xyz/z/*/code.js$script,third-party
+.xyz:8009/11?x=
 .zone/ads/
 /(?::\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+_\d{3}x\d{4})/
 /*/*.add.*.add
@@ -5022,6 +5025,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||meta.wikimedia.org/wiki^
 @@||mhxk.com^*/main/entry.common.$script
 @@||mi.cn^
+@@||miaozhen.com^$domain=miaozhen.com
 @@||miaozhen.com^*/m.suning.
 @@||microsoft.com/translate/auth
 @@||microsofttranslator.com/translate?
@@ -6937,10 +6941,10 @@ bilibili.com##.adblock-tips
 bilibili.com##.banner-card
 bilibili.com##.bili-dyn-ads
 bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__wrap
-bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > .extension-tips
+bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > div[class^="extension-tips"]
 bilibili.com##.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
 bilibili.com##.bili-video-card__wrap > a[href^="http"]:not([href*=".bilibili.com/"])
-bilibili.com##.carousel-container > .carousel-transform > .carousel-slide:has(> a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bilibili.com/"])) > .extension-tips
+bilibili.com##.carousel-container > .carousel-transform > div[class^="carousel-slide"]:has(> a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bilibili.com/"])) > div[class^="extension-tips"]
 bilibili.com##.desktop-download-tip
 bilibili.com##.eva-banner
 bilibili.com##.extension-tips
@@ -6978,6 +6982,7 @@ bilibili.com#?#.eva-extension-body > .bili-video-card:-abp-has(.bili-video-card_
 bilibili.com#?#.video-card-common:-abp-has(>.card-pic>a[href*="cm.bilibili.com"][data-target-url])
 bilibili.com#?#.video-page-special-card-small:-abp-has(>.card-box>.info>a[href^="http"]:not([href*=".bilibili.com/"]))
 bilibili.to###yytf
+bilinovel.com##+js(abort-current-script, document.createElement, pagead2.googlesyndication.com)
 bimiacg.net##.tuiguang
 bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
@@ -7814,6 +7819,7 @@ cinematoday.jp##.ct-ad
 cinematoday.jp##.text-center[style="min-height:100px;"]
 citimuzik.com##div[class*="ai-viewport-"]
 city.living.jp##.ad-area-l
+city.tsuyama.lg.jp##.mb20 > .pos_ac
 cityheaven.net##.adm-layoutshift-loading
 cityheaven.net##.astl
 ciudad.com.ar#$##header { height: auto!important; }
@@ -22857,6 +22863,7 @@ zzzyk.com###Tinfo
 ||6vhao.tv/d/
 ||6vw.cc/d/$script
 ||6ye.com.cn^
+||6yfcuuw.com^
 ||6yso.com/wp-content/uploads/*-300-x-
 ||6zfem.icu^
 ||6zhewang.com^
@@ -22904,6 +22911,7 @@ zzzyk.com###Tinfo
 ||777aa999aa.com^
 ||777bb111ww.com^
 ||777bbb222bbb.com^
+||777bbb777www.com^
 ||777g.me/cs$script
 ||777zz777zz.com^
 ||777zz777zz.com^
@@ -23059,6 +23067,7 @@ zzzyk.com###Tinfo
 ||8886i.top^
 ||888bb555ww.com^
 ||888bb666cc.com^
+||888bbb555www.com^
 ||888cool.cn^
 ||888fr.xyz^
 ||888lianmeng.com^
@@ -26575,7 +26584,6 @@ zzzyk.com###Tinfo
 ||cdn-99-pic.cc^
 ||cdn-adn-*.rayjump.com^
 ||cdn-adn.rayjump.com^
-||cdn-ads.tmap.co.kr^
 ||cdn-api.admost.com^
 ||cdn-cf.postitial.com^
 ||cdn-data-cloud.com/history/
@@ -26933,6 +26941,7 @@ zzzyk.com###Tinfo
 ||cimg.cnyes.cool/prod/adContent/$image
 ||cir-smart.baidu.com^
 ||cis.sohu.com^
+||city.tsuyama.lg.jp/common/photo/banner_ad/
 ||city.youpukeji.cn^
 ||citysbs.com/chongqing/*/1920x179-
 ||citysbs.com/no/*/1190x60-
@@ -27458,6 +27467,7 @@ zzzyk.com###Tinfo
 ||crashlytics.com^
 ||crayon.meishichina.com^
 ||crazyit8.com^
+||crbbhp.xyz^
 ||cre-dp.sina.cn^
 ||cre.dp.sina.cn/api/v3/get?cateid=F&cre=tianyi&mod=wmil&merge=
 ||creaders.net*/ad_func.js
@@ -27633,6 +27643,7 @@ zzzyk.com###Tinfo
 ||czsp12.com/api/*=advert&
 ||czsp12.com/api/*=announce&
 ||cztv.com/201506/02/124d35111e8f180c96f99acbcbdf5de6.jpg
+||czxvgod.xyz^
 ||d*.ruiwen.com^
 ||d*.wanzhuang.com^
 ||d*.xinshipu.com^
@@ -29531,6 +29542,7 @@ zzzyk.com###Tinfo
 ||fqbjzj.xyz^
 ||fqceyqo.com^
 ||fqfclmlo.xyz^
+||fqghykp.cn^
 ||fqmgjad.cn^
 ||fqpxzr.xyz^
 ||fqpxzr.xyz^
@@ -30378,6 +30390,7 @@ zzzyk.com###Tinfo
 ||gxgbvmg.cn^
 ||gxgbvmg.cn^
 ||gxhzv.cn^
+||gxihcq.xyz^
 ||gxjajt.com^
 ||gxlsjt.com^
 ||gxnews.com.cn/clientscript/index_duilian_
@@ -32107,6 +32120,7 @@ zzzyk.com###Tinfo
 ||iykig.cn^
 ||iytrn.xyz^
 ||iyuedu.cn.com^
+||iyuwkbo.top^
 ||iyybqzv.cn^
 ||izalflh.cn^
 ||izmiua.xyz^
@@ -32226,7 +32240,6 @@ zzzyk.com###Tinfo
 ||jd.com/exsites?spread_type=
 ||jd.com/static/js/auto.js
 ||jd.com/static/js/cpc.js
-||jd.com^$removeparam=/^utm_/
 ||jd100.com/cwmpc/
 ||jd2ujc.cn^
 ||jd5c.top^
@@ -32486,6 +32499,8 @@ zzzyk.com###Tinfo
 ||jmcomic1.me/exads
 ||jmcomic1.me/static/resources/lp.php
 ||jmcomic1.me/static/resources/old/images/AD/
+||jmesxbe.icu^
+||jmesxbe.icu^
 ||jmhfw.com/index.php?/ajax/get_adv/
 ||jmhngn.com^
 ||jmpnrh.xyz^
@@ -32725,6 +32740,7 @@ zzzyk.com###Tinfo
 ||jtxh.net^
 ||jtys8.com^
 ||jtyusia.top^
+||jtzdld.xyz^
 ||ju33.com^
 ||juandou.com^$third-party
 ||juapp5.com/geek_image/chaopai.jpeg
@@ -39339,7 +39355,6 @@ zzzyk.com###Tinfo
 ||taobao.com^$popup,domain=52movieba.com|btee.net|ck180.net|friok.com|iqiyi.com
 ||taobao.com^$popup,domain=dlkoo.cc
 ||taobao.com^$popup,domain=dlkoo.com
-||taobao.com^$removeparam=/^utm_/
 ||taobao.qq.com^
 ||taobaoad.com^
 ||taobaocdn.com^$domain=www.aknba.com|xiaoer.tv|whnight.com
@@ -39728,7 +39743,6 @@ zzzyk.com###Tinfo
 ||tlvmedia.com^
 ||tm1.hoiplay.com^
 ||tmall.com^$popup,domain=eyusky.net|iqiyi.com
-||tmall.com^$removeparam=/^utm_/
 ||tmatch.simba.taobao.com^*&name=tbuad&pid=
 ||tmdn2015x9.com^
 ||tmea116.oss-cn-beijing.aliyuncs.com^
@@ -40028,6 +40042,7 @@ zzzyk.com###Tinfo
 ||tuisong.baidu.com^
 ||tuite8.com^
 ||tukj.net^
+||tuky889900.com^
 ||tumeite.cn^
 ||tunion-api.m.taobao.com^
 ||tunka.com.cn/images/1234.gif
@@ -40930,6 +40945,7 @@ zzzyk.com###Tinfo
 ||vrrw.net//templets/default/js/ad.js
 ||vrwdsvr.icu^
 ||vrxhnr.xyz^
+||vs-api.voodoo-tech.io^
 ||vs1.exo01.xyz^$image,third-party
 ||vs3.bdstatic.com/videoadv.js?
 ||vs9158.com^
