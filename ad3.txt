@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 3uO6iWBv2svABzyDNrQnpw
+! Checksum: acBUz2GD7w3LUN1tQ8CVcQ
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202404152214
-! Last Modified: 202404152214
+! Version: 202404162216
+! Last Modified: 202404162216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -771,7 +771,7 @@ douban.com##.subject-banner, div[ad-status]
 doubleclick.net
 douyu.com##+js(set, RTCPeerConnection.prototype.addTrack, noopFunc)
 douyu.com##.Title-ad, .DropMenuList-ad, .DropPane-ad
-douyu.com,huya.com##a[href^="https://g.wan."]
+douyu.com##a[href^="https://g.wan."]
 downxia.com##.download-ad,#gaosu_div0,ul.list-down>h3,a[href^="http://url.tduou.com/down/"]
 duote.com###quickDown
 duowan.com##a[adid]
@@ -801,6 +801,7 @@ hqq.tv##+js(aopr,  mscript)
 huishenghuiying.com.cn
 hupu.com##[class|=sidebar-ad],[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],div[class^=ad],.topPub
 huya.com###hy-ad,#hy-ab,#huya-ab
+huya.com##a[href^="https://wan."]
 iciba.com##div.newpc-entry
 iconworkshop.cn
 ifeng.com##div[class^=adList],div[class^=adbox],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left,[href^="//mall.ifeng.com"],#js_videopause_container
@@ -893,6 +894,7 @@ show.ssports.com
 skycn.com###top970,ul.ul_Address>h3,a[href^="http://down.xiazaidc.com/"]
 sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35,div[adconfig_charset]
 static.g.iqiyi.com
+statwup.huya.com
 stgowan.com
 swc.weather.com.cn
 synacast.com
@@ -925,9 +927,10 @@ v.qq.com##.wrapper.mod_vip_popup, #mask_layer
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 v2ex.com##.box:has(.sidebar_compliance)
+va.huya.com
 vegaschina.cn
-vidhub2.cc,vidhub.tv##.MacPlayer:style(height:630px!important)
-vidhub2.cc,vidhub.tv##.adpcc,#player_pause
+vidhub1.cc,vidhub.*##.MacPlayer:style(height:630px!important)
+vidhub1.cc,vidhub.*##.adpcc,#player_pause
 wan.douyu.com
 waust.at
 weizhenwx.com
@@ -939,8 +942,9 @@ www.dmhy.org##.info.relative-goods, #pkpk
 www.douyu.com##.is-fullScreenPage .ToTopBtn, div.layout-Player~*, .multiBitRate-da4b60, .watermark-442a18, .player-dialog~*, .ChargeTask+div, .HeaderGif-right, .HeaderGif-left,#js-room-activity
 www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing],.siye,#leftbannerv2
-www.huya.com##.main-ab-close-mode, div.sidebar-banner
+www.huya.com###public-screen-ab
 www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .player-banner-gift,#player-marquee-wrap
+www.huya.com##.sidebar-banner
 www.nivod4.tv###my_saberfeedback_button
 www.nivod4.tv##.nav-ads:remove()
 www.qq.com##.adLeft,.adRight
@@ -971,7 +975,6 @@ yoyi.com.cn
 yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 yy.com,le.com##+js(nowebrtc)
 z4a.net
-zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 zhihu.com##.Banner
 zhihu.com##.Banner-image
@@ -983,10 +986,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |data:text/plain$popup,domain=music.163.com
 |http://res.njxzwh.com/downza/pc/v2017/images/downAD.gif
 |http://www.downyi.com/tg/$script
-|https://a.msstatic.com/huya/main3/assets/css/room/gift_$important
-|https://a.msstatic.com/huya/main3/assets/img/room/gift/$important
-|https://a.msstatic.com/huya/main3/modules/chat$important
-|https://a.msstatic.com/huya/main3/modules/gift/$important
 |https://abb.$script,3p
 |https://dd-static.jd.com/ddimg/jfs/t1/173245/15/28822/346324/62fcb4b0Eb437d047/136a1e04890320b8.jpg$image,domain=subaibaiys.com
 |https://ikandy2.fun/loadingbk.html^$subdocument
@@ -1009,6 +1008,11 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||6vgood.com/d/$script
 ||6vw.cc/d/$script
 ||a.lz13.cn/
+||a.msstatic.com/huya/main3/assets/css/room/gift.$script
+||a.msstatic.com/huya/main3/assets/img/room/gift/$important
+||a.msstatic.com/huya/main3/assets/modules/gift/$script
+||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
+||a.msstatic.com/huya/main3/components/OnTVLottery/$script
 ||acs.$domain=~youku.com|~tudou.com|~acs.org
 ||acs.youku.com/h5/mopen.youku.danmu.
 ||ad.
@@ -1225,6 +1229,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||jwz.3conline.com/adpuba/
 ||letvimg.com/$object,xhr
 ||letvimg.com/*_gugwl/$image
+||live-cover.msstatic.com/huyalive/*.jpg?$image
 ||lofter.com/$subdocument,third-party
 ||log1.17173.com/
 ||mail.21cn.com/w2/source/images/firstpagecont/$image
@@ -1240,7 +1245,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||mimg.127.net/m/lb/img/inboxBottom/$image
 ||mimg.127.net/m/lb/img/leftNavBottom/$image
 ||mimg.127.net/m/lc/img/LoginBackgroundPic/$image
-||msstatic.com/huya/*/p2plib.js$script
 ||mydisplay.ctfile.com/$script,subdocument,popup
 ||mydrivers.com/*_728_90.$image
 ||n.sinaimg.cn/tech/zcapp$image
@@ -1330,6 +1334,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||toutiaoimg.com/origin/$image,domain=agedm.org|acgndmku.com|subaibaiys.com
 ||tracker.$xhr,websocket,script,ping
 ||tv.sohu.com/upload/csad/admaster/$image
+||tx-live-cover.msstatic.com/huyalive/*.jpg?$image
 ||ubmcmm.baidustatic.com/
 ||union.
 ||v.baidu.com/staticapi/videoAd.json?
@@ -1340,8 +1345,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||video.iqiyi.com/ws$websocket
 ||video.qq.com/danmu_manage/$xhr
 ||vidhub.tv/player/buffer.html$subdocument
-||vidhub2.cc/player/buffer.html$subdocument
-||vidhub2.cc/upload/art/rgsp-$image
 ||view.news.qq.com/PL_ad$subdocument
 ||wa.gtimg.com/
 ||wan.$~image
