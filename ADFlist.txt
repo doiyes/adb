@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: LHajjqW/nFFKBwO24OALmA
+! Checksum: gYkv2jy2KTPDTeytOwsKbg
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202404182215
+! Version(Last Modified): 202404192215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -1086,6 +1086,7 @@ crsky.com##.adowGright
 crsky.com##a[href^="http://count."][href$=".exe"]
 crsky.com##div.adowGright
 crsky.com##div[class^=banner],div.fast_down,dl.mirror-special,div.banner-square,li.yellowdown
+csdn.net###mainBox~*, body > .imgViewDom~*
 csdn.net##.blog-column-pay
 csdn.net##.blog_star_enter
 csdn.net##.csdn-common-logo-advert
@@ -1102,7 +1103,6 @@ csdn.net##.pulllog-box
 csdn.net##.toolbar-advert
 csdn.net##.toolbar-redpack-advert
 csdn.net##div.toolbar-btn-vip
-csdn.net##div[class^=ad_],#ad_left,#ad_right,div.AD.mb-bg
 csgoconfigs.com##+js(acis, m, CH.Anonymous)
 cskaoyan.com###scanWxQrCode
 cstm.baidu.com
@@ -1453,7 +1453,6 @@ ikandy2.fun##div:has(>b[onclick])
 ikandy2.fun##img[onclick]:remove()
 im1907.top,nxflv.*##+js(noeval-if, pushState)
 imasdk.googleapis.com
-img-ads.csdn.net
 img.easypass.cn
 imindmap.cc
 imooc.com##.redrain-bg-shade
@@ -1796,11 +1795,11 @@ my.avira.com##.bottom-page-notification
 mycleanmymac.com
 mydrivers.com###a_showhotnews_list_dia
 mydrivers.com###recommend
+mydrivers.com##+js(set,jQuery.fn.resetIdleTimeup,trueFunc)
 mydrivers.com##.ab
 mydrivers.com##.baidu, a[href^=http][target=_blank]
 mydrivers.com##.bb
 myexceptions.net
-myhack58.com##.CMBox>.adv32
 myqqjd.com##+js(acis, String.fromCharCode, decodeURIComponent)
 neea.edu.cn##+js(aopr, ActiveXObject)
 neets.cc#?#div[class]:-abp-has(> div > .home_p)
@@ -1821,6 +1820,7 @@ news.baidu.com###favoriteTips
 news.baidu.com##.recommend-animate
 news.baidu.com##.recommend-mask
 news.baidu.com##.swipe-backflow-container
+news.mydrivers.com##.main_right_div:nth-of-type(4)
 news.sina.com.cn##.news_weixin_ercode
 newsmth.net##.Smthtwenty_float
 nfmovies.com##+js(nano-sib)
@@ -2873,6 +2873,7 @@ zybang.com##.top_download
 ||cctvpic.com/photoAlbum/templet/common/*/game_
 ||cdn-data-cloud.com/history/
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
+||cdn.huya.com/leaf/*_max.m3u8?$xhr
 ||cdn.iciba.com/web/co/ci/$image
 ||cdn.jsdelivr.net/npm/canvas-nest.js*$script
 ||cdnlog.zhenai.com^
@@ -3094,7 +3095,6 @@ zybang.com##.top_download
 ||fengniao.com*/pv.js
 ||fh21.com.cn/js/passport/createQuickMenu.js
 ||files.jb51.net^$image
-||files.nyaa.se/be-$image
 ||firefoxchina.cn/html/$subdocument
 ||fjsen.com:81/mysql/count/
 ||flashi.tv/histats.php?
@@ -3107,6 +3107,7 @@ zybang.com##.top_download
 ||fundingchoicesmessages.google.com^$third-party
 ||fx678.com/htcount/count.js
 ||fydisk.com/images/showvip.gif
+||g.csdnimg.cn/asdf/*/trackad.js|$script,important
 ||g.pptv.com/game/$subdocument
 ||galaxy.sogoucdn.com/galaxy/
 ||gamersky.com/$subdocument
@@ -3193,9 +3194,6 @@ zybang.com##.top_download
 ||hupu.com/_dace.gif?
 ||hxsame.hexun.com/
 ||hz.youku.com/red/
-||i1.51cto.com/
-||i2.51cto.com/
-||i3.51cto.com/
 ||i8.chinanews.com^$subdocument
 ||iask.sina.com.cn/s-b/mxbg
 ||icast.
@@ -3482,6 +3480,7 @@ zybang.com##.top_download
 ||phncdn.com/www-static/js/ph-tracking.js
 ||phncdn.com/www-static/js/promo-banner.js
 ||phncdn.com/www-static/js/widgets-live-popup.js
+||php.cn/faq^
 ||pinggu.org/api/bbsgg.
 ||player.letvcdn.com/*/newplayer/1/WatchingBuy.swf
 ||playstats.v.duowan.com^
@@ -3803,7 +3802,6 @@ zybang.com##.top_download
 ||www.huaweicloud.com/theme^$document
 ||www.huaweicloud.com/zhishi^$document
 ||www.iqiyi.com/service-worker.js
-||www.myhack58.com/Articleacb0$image
 ||www.olevod.com/upload/site/202$image
 ||www.pcbeta.com//data/cache/ggk.js
 ||www.pconline.com.cn/*/intf$subdocument,script
@@ -3973,7 +3971,6 @@ zybang.com##.top_download
 51cto.com###advCanvas
 51cto.com###edu_adver
 51cto.com###f_close_box
-51cto.com###ft~div
 51cto.com###upopbox_bot
 51cto.com###upopbox_mid
 51cto.com##.footer_mask
@@ -3981,7 +3978,6 @@ zybang.com##.top_download
 51cto.com##.suspend
 51cto.com##.upopbg
 51cto.com##DIV[id^="topbanner"]
-51cto.com##div:has(#tonglanad)
 51cto.com,chinaacc.com,yidianzixun.com##.banner
 51offer.com###rightFu
 51zhishang.com###kyzb_layer

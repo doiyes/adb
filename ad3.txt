@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 40daluvD0Itz9tu9C/xwCw
+! Checksum: zHNHb9pdvye9c1gP+iKR3w
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202404182215
-! Last Modified: 202404182215
+! Version: 202404192215
+! Last Modified: 202404192215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -748,7 +748,7 @@ coreldrawchina.com
 cr-nielsen.com
 cr173.com###foot~*,div.show_970,[data=viewAds]
 crsky.com##div[class^=banner],div.fast_down,dl.mirror-special,div.banner-square,li.yellowdown
-csdn.net##div[class^=ad_],#ad_left,#ad_right,div.AD.mb-bg
+csdn.net###mainBox~*, body > .imgViewDom~*
 csgoconfigs.com##+js(acis, m, CH.Anonymous)
 cstm.baidu.com
 ctfile.com,www.pipipan.com##a[href^="https://union.ctfile.com"],div[id|=ad],div[id^=ad_]
@@ -810,7 +810,6 @@ ikandy2.fun##div:has(>b[onclick])
 ikandy2.fun##img[onclick]:remove()
 im1907.top,nxflv.*##+js(noeval-if, pushState)
 imasdk.googleapis.com
-img-ads.csdn.net
 img.easypass.cn
 imindmap.cc
 ipinyou.com
@@ -849,11 +848,12 @@ mfp.deliver.ifeng.com
 miaozhen.com
 mindmanager.cc
 mycleanmymac.com
+mydrivers.com##+js(set,jQuery.fn.resetIdleTimeup,trueFunc)
 mydrivers.com##.baidu, a[href^=http][target=_blank]
-myhack58.com##.CMBox>.adv32
 myqqjd.com##+js(acis, String.fromCharCode, decodeURIComponent)
 new.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 news.163.com###js-cnxh-content~:not(#js-epTabRank)
+news.mydrivers.com##.main_right_div:nth-of-type(4)
 ntfsformac.cc
 ntfsformac.cn
 olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
@@ -1066,6 +1066,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||cbjs.baidu.com/
 ||cc/scriptAD/$script
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
+||cdn.huya.com/leaf/*_max.m3u8?$xhr
 ||cdn.iciba.com/web/co/ci/$image
 ||china.com.cn/2016ads/$subdocument
 ||cibntv.net/youku/$media
@@ -1155,9 +1156,9 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||exp.bdstatic.com/static/exp-pc/common-jquery/widget/popup-$script
 ||f11.baidu.com/
 ||files.jb51.net^$image
-||files.nyaa.se/be-$image
 ||firefoxchina.cn/html/$subdocument
 ||fund.eastmoney.com/trade/Hot_$subdocument
+||g.csdnimg.cn/asdf/*/trackad.js|$script,important
 ||g.pptv.com/game/$subdocument
 ||galaxy.sogoucdn.com/galaxy/
 ||gamersky.com/$subdocument
@@ -1187,9 +1188,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||hjwzw.com/js/n$script
 ||hm.baidu.com/
 ||hxsame.hexun.com/
-||i1.51cto.com/
-||i2.51cto.com/
-||i3.51cto.com/
 ||i8.chinanews.com^$subdocument
 ||icast.
 ||icon.zol-img.com.cn/public/js/web_foot$script
@@ -1369,7 +1367,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||www.greenxiazai.com/green/
 ||www.hexun.com/hxpage/index.html$subdocument
 ||www.iqiyi.com/service-worker.js
-||www.myhack58.com/Articleacb0$image
 ||www.olevod.com/upload/site/202$image
 ||www.pconline.com.cn/*/intf$subdocument,script
 ||www.pconline.com.cn/_hux_$script
@@ -1416,8 +1413,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 37cs.com
 37gowan.com
 51.la
-51cto.com###ft~div
-51cto.com##div:has(#tonglanad)
 52z.com###softdown>div,div.syGaosuDa:first-child
 88mv.org##.MacPlayer, .dplayer:style(height:600px!important)
 88mv.org,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]

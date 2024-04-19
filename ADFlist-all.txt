@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: ySsNvJgwoQB3T5ed72ONaA
+! Checksum: F9TUiqzWjXRje/N9ZAgqgw
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202404182215
+! Version(Last Modified): 202404192215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -6941,11 +6941,11 @@ bilibili.com##.ad-report, .ad-floor
 bilibili.com##.adblock-tips
 bilibili.com##.banner-card
 bilibili.com##.bili-dyn-ads
+bilibili.com##.bili-video-card > div[class^="extension-tips"]
 bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__wrap
-bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > div[class^="extension-tips"]
 bilibili.com##.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
 bilibili.com##.bili-video-card__wrap > a[href^="http"]:not([href*=".bilibili.com/"])
-bilibili.com##.carousel-container > .carousel-transform > div[class^="carousel-slide"]:has(> a[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bilibili.com/"])) > div[class^="extension-tips"]
+bilibili.com##.carousel-container > .carousel-transform > div[class^="carousel-slide"] > div[class^="extension-tips"]
 bilibili.com##.desktop-download-tip
 bilibili.com##.eva-banner
 bilibili.com##.extension-tips
@@ -8232,6 +8232,7 @@ csdn.net###kp_box_476
 csdn.net###kp_box_58
 csdn.net###kp_box_www_swiper
 csdn.net###layerd
+csdn.net###mainBox~*, body > .imgViewDom~*
 csdn.net###tad2,div#ad_top,DIV[class^="ad_"],#Topic_Top,div#ad_left,div#ad_right,DIV.AD.mb-bg,.enter-AD,.top_ad,.ad .J_adv,.dl_mar_b,.J_adv,.yd_a_d_feed_cla,[data-mod^="ad_popu_"]
 csdn.net##.ad_class
 csdn.net##.advert-bg
@@ -8259,7 +8260,6 @@ csdn.net##.toolbar-advert
 csdn.net##.toolbar-redpack-advert
 csdn.net##a[href="//gitbook.cn/new/gitchat/activity?utm_source=csdnblog1"]
 csdn.net##div.toolbar-btn-vip
-csdn.net##div[class^=ad_],#ad_left,#ad_right,div.AD.mb-bg
 csdn.net##li[data-type="ad"]
 csdn.net#?##feedlist_id > li:has(> div[id^="kp_box_"])
 csdn.net#?#aside > div.slide-outer:has(> div.box > div[adsid])
@@ -11751,7 +11751,6 @@ imdb.com###bottom_ad_wrapper,#btf_rhs2_wrapper,#top_rhs_wrapper
 ime666.com##img[src^="/Resources/ads/float_ads/"]
 ime688.com,ime888.com##.moneyarea,[width="100"][height="400"]
 imeee.cn##.DA336
-img-ads.csdn.net
 img.easypass.cn
 imginn.com#$#body { padding-top: 0 !important; }
 imgo.tv##[id^="ac-"]
@@ -15013,6 +15012,7 @@ mydramalist.com#?#.app-body > div[class]:first-child:has(> .is-mobile > div[clas
 mydrivers.com###a_showhotnews_list_dia
 mydrivers.com###div_newsyjgg
 mydrivers.com###recommend
+mydrivers.com##+js(set,jQuery.fn.resetIdleTimeup,trueFunc)
 mydrivers.com##.ab
 mydrivers.com##.adds
 mydrivers.com##.baidu, a[href^=http][target=_blank]
@@ -15037,7 +15037,6 @@ myexception.cn##.c_a_3
 myexception.cn##.m_a
 myexceptions.net
 myfreax.com#?#main > div.w-full:has(> ins.adsbygoogle)
-myhack58.com##.CMBox>.adv32
 myhack58.com##.adv32
 myhktv.com###sponsorAdDiv
 myhomebook.de##.article__content > p > iframe[src^="https://embed.contentverticals.de"]
@@ -15266,6 +15265,7 @@ news.milli.az##.quiz-holder > div[style^="margin: 15px auto 15px"] > div[style^=
 news.milli.az##.quiz-holder > div[style^="margin: 15px"] > .hidden-lg
 news.mixi.jp#?#.NEWS_baseSection01 > ul > li:has(> .gAdComponent01)
 news.mydrivers.com##.baidu_left
+news.mydrivers.com##.main_right_div:nth-of-type(4)
 news.mydrivers.com##div[style="width:1000px;padding-top:16px;padding-bottom:12px;"]
 news.mydrivers.com#?#.news_info > p:has(> a[href^="https://dt.mydrivers.com/"])
 news.mydrivers.com#?#.news_info > p:has(> strong:contains(双11红包活动推荐))
@@ -17174,6 +17174,7 @@ search.kakaku.com,s.kakaku.com##.subCtsArea
 search.yahoo.co.jp##.TSg_Ad
 search.yahoo.co.jp##article[class^="W2ARailway_"]
 searchenginejournal.com###sej_m_sticky-adv-label
+seasonvar.one##.content > div.pgs-nearcarusel-wrap:has(div.groove)
 seattlehelpers.org###slideup_form
 seattletimes.com##.zeus-ad-right
 seattletimes.com#@#.ad-fixed
@@ -19267,6 +19268,8 @@ vodjk.com###advertise_baidu
 vodjk.com##.ggkuang,[class$="-ad"],.tw3,[class^="tjgg_"]
 voennoedelo.com##.mBanner
 vogue.com.au##.show-when-loading
+vogue.it##.ad-height-hold
+vogue.it##div[class^="TwoColumnsWithHorizontalAdMosaicWrapper-"]
 voicetube.com##.tab-ad-image,#tab-ad-remove-sign
 voidcc.com
 voidcn.com
@@ -23710,6 +23713,7 @@ zzzyk.com###Tinfo
 ||ad-creatives-public.commondatastorage.googleapis.com^
 ||ad-display.wikawika.xyz^
 ||ad-ettoday.cdn.hinet.net^
+||ad-files.classting.com^
 ||ad-img.diyidan.net^
 ||ad-splash-tracking.hktvmall.com^
 ||ad-splash.hktvmall.com^
@@ -26634,6 +26638,7 @@ zzzyk.com###Tinfo
 ||cdn.haokongbu1.com^*.js
 ||cdn.holmesmind.com^
 ||cdn.holmesmind.com^$third-party
+||cdn.huya.com/leaf/*_max.m3u8?$xhr
 ||cdn.iciba.com/web/co/ci/$image
 ||cdn.itphanpytor.club^
 ||cdn.jampp.com^
@@ -28536,6 +28541,7 @@ zzzyk.com###Tinfo
 ||dtckvpc.cn^
 ||dtfyhdghsd.online^
 ||dtjhtp.xyz^
+||dtjpihv.xyz^
 ||dtnhjzl.xyz^
 ||dtrcw.cc^
 ||dtscout.com^
@@ -29416,7 +29422,6 @@ zzzyk.com###Tinfo
 ||file.market.xiaomi.com/download/AppStore/
 ||files.jb51.net/image/
 ||files.jb51.net^$image
-||files.nyaa.se/be-$image
 ||fillhr.xyz^
 ||fillhr.xyz^
 ||fillidutt.tw^
@@ -29722,6 +29727,7 @@ zzzyk.com###Tinfo
 ||g.3lian.com^
 ||g.alicdn.com/alilog^
 ||g.cnzz.cn/Static/js/*-
+||g.csdnimg.cn/asdf/*/trackad.js|$script,important
 ||g.doubleclick.net^
 ||g.gegeyingshi.com^
 ||g.haofan005.com^
@@ -31254,6 +31260,7 @@ zzzyk.com###Tinfo
 ||huryds.top^
 ||hushenqiquan.com^
 ||husky.sogou.com^
+||huuocxu.icu^
 ||huxifena.cn^
 ||huxsvl.xyz^
 ||huya.com*/cache1min.
@@ -31365,14 +31372,11 @@ zzzyk.com###Tinfo
 ||i.skimresources.com^
 ||i.tddmp.com^
 ||i0.hdslb.com/bfs/sycp/creative_img^
-||i1.51cto.com/
 ||i1.go2yd.com^
 ||i1.hoopchina.com.cn/blogfile/*/*/BbsImg_*_s_*_o_w_750_h_*.jpg$app=com.hupu.games
 ||i100.cao-gao.xyz/aimgs/
 ||i16-tb.isnssdk.com^
-||i2.51cto.com/
 ||i2ad.jp^
-||i3.51cto.com/
 ||i322.com/ad_avshow/
 ||i3535.com^$third-party
 ||i36mf.cn^
@@ -33099,6 +33103,7 @@ zzzyk.com###Tinfo
 ||kfvjdvjzhddhc.com^
 ||kfyg.xyz^
 ||kgcyvd.com^
+||kgdyoh.icu^
 ||kgeesh.site^
 ||kgelugaz.com^
 ||kgelugaz.com^
@@ -33107,6 +33112,7 @@ zzzyk.com###Tinfo
 ||kggikf.icu^
 ||kghgmn.top^
 ||kgimg.com/public/root//images/hardware.jpg
+||kgqcse.xyz^
 ||khgj.cn^
 ||khgjfm16.com^
 ||khrtac.xiangha.com^
@@ -36532,6 +36538,7 @@ zzzyk.com###Tinfo
 ||photofans.cn*/banner/
 ||photovms.tv.sohu.com/*/*_1.jpg$app=com.sohu.sohuvideo
 ||php.cn/ad1.
+||php.cn/faq^
 ||php.cn/hezuo/
 ||php1.cn/uploads/huayun.jpg
 ||php?*=cpv
@@ -36979,6 +36986,7 @@ zzzyk.com###Tinfo
 ||pw321.com/bulu/
 ||pw321.com^
 ||pw321.com^*.gif
+||pwbuhb.xyz^
 ||pwddhc.xyz^
 ||pwhkfd.xyz^
 ||pwhtip.icu^
@@ -38877,6 +38885,7 @@ zzzyk.com###Tinfo
 ||speedtest.cn/assets/images/ce_
 ||speee-ad.akamaized.net^
 ||spl.ztvx8.com^$third-party
+||splash-ad.classting.com^
 ||splash.appsgeyser.com^
 ||splashqqlive.gtimg.com/website^
 ||splfnok.cn^
@@ -41745,7 +41754,6 @@ zzzyk.com###Tinfo
 ||www.mitao17.com^
 ||www.moneyziyouwm.com^
 ||www.mqhzdl.com^
-||www.myhack58.com/Articleacb0$image
 ||www.naifei.shop^$third-party
 ||www.nda3456.com^
 ||www.olevod.com/upload/site/202$image
@@ -44480,7 +44488,6 @@ zzzyk.com###Tinfo
 51cto.com###advCanvas
 51cto.com###edu_adver
 51cto.com###f_close_box
-51cto.com###ft~div
 51cto.com###list4
 51cto.com###postform + a[style]
 51cto.com###top_banner,#top_banner .ban2{height: 26px;}.top_bg,.top_bg .wrap{height: 76px;}
@@ -44493,7 +44500,6 @@ zzzyk.com###Tinfo
 51cto.com##.suspend
 51cto.com##.upopbg
 51cto.com##DIV[id^="topbanner"]
-51cto.com##div:has(#tonglanad)
 51cto.com#$#.top_bg { height: 60px !important; }
 51cto.com#@#.addarea
 51cto.com,chinaacc.com,yidianzixun.com##.banner
