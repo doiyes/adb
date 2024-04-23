@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: nrw6dGM8A74gR+w0tDJt5w
+! Checksum: J3K8OI/arwPVl4fY5pwCfg
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202404222216
+! Version(Last Modified): 202404232215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -1177,7 +1177,7 @@ douyu.com##.noble-up-guide
 douyu.com##.pendant-wrap
 douyu.com##.summer_enter
 douyu.com##.video-info-download
-douyu.com##a[href^="https://g.wan."]
+douyu.com,huya.com##a[href^="https://g.wan."]
 dovov.com
 download.csdn.net##.quake-slider
 downxia.com##.download-ad,#gaosu_div0,ul.list-down>h3,a[href^="http://url.tduou.com/down/"]
@@ -1244,6 +1244,7 @@ fanyi.baidu.com##.app-side-banner
 fanyi.baidu.com##.sideQrContainer
 fanyi.baidu.com##.vip-btn
 fanyi.baidu.com##div.banner-wrap
+fanyi.baidu.com##span:has(div[style^=background-image])
 fanyi.sogou.com##.img-banner
 fanyi.sogou.com##.survey
 feierlaiedu.com
@@ -2361,9 +2362,10 @@ www.csdn.net##aside>div.slide-outer.right_top
 www.django-rest-framework.org##div.promo
 www.dlsite.com###work_name:style(user-select: text !important)
 www.dmhy.org##.info.relative-goods, #pkpk
+www.douyu.com##.ChargeTask+div, .HeaderGif-right, .HeaderGif-left
 www.douyu.com##.ZoomTip
 www.douyu.com##.giftbatter-box
-www.douyu.com##.is-fullScreenPage .ToTopBtn, div.layout-Player~*, .multiBitRate-da4b60, .watermark-442a18, .player-dialog~*, .ChargeTask+div, .HeaderGif-right, .HeaderGif-left,#js-room-activity
+www.douyu.com##.is-fullScreenPage .ToTopBtn, .multiBitRate-da4b60
 www.douyu.com##.pop-zoom
 www.douyu.com#js-rec-follow
 www.dwnews.com##.big2-gg
@@ -2690,7 +2692,6 @@ zybang.com##.top_download
 ||a.msstatic.com/huya/main3/assets/img/room/gift/$important
 ||a.msstatic.com/huya/main3/assets/modules/gift/$script
 ||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
-||a.msstatic.com/huya/main3/components/OnTVLottery/$script
 ||a.tbcdn.cn/s/ac.js
 ||a.tbcdn.cn/s/atp.js
 ||a.tbcdn.cn/s/tb-tracer-min.js
@@ -3379,6 +3380,8 @@ zybang.com##.top_download
 ||msg.iqiyi.com^
 ||msg.video.qiyi.com^
 ||msn.ynet.com/c/tj_comm.js
+||msstatic.com/huya/main3/assets/modules/CommercialAdSdk/$script
+||msstatic.com/huya/main3/components/OnTVLottery/$script
 ||msstatic.com/huya/main3/widget/DiyActLayer/DiyActLayer_*.js
 ||mtime.cn/library/*/ECommerce/GoodsAndFeatureCtrl.js
 ||music.163.com^$domain=mvcat.com
@@ -3566,8 +3569,7 @@ zybang.com##.top_download
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/ScreenBannerAd_$script
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/SetofGiftPop_$script
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/SuspendedBallAd_$script
-||shark2.douyucdn.cn/front-publish/live-master/js/room/XinghaiGoods_$script
-||shark2.douyucdn.cn/front-publish/live-master/js/room/XinghaiShoppingCart_$script
+||shark2.douyucdn.cn/front-publish/live-master/js/room/Xinghai$script
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/activity_
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/topBanner_$script
 ||shejiben.com/common/libs/layer.js
@@ -3795,7 +3797,6 @@ zybang.com##.top_download
 ||www.crsky.com/img/pic.js
 ||www.csdn.net/tags^$document
 ||www.dmhy.org/*.gif^$image
-||www.douyu.com/webSocket.worker_$script
 ||www.downbank.cn/js/gong.js
 ||www.downxia.com/dgjs/$script
 ||www.dy2018.com/jsdd/$script

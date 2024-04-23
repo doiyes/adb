@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 6EqEvE6TKbAy1WsCCcx7iQ
+! Checksum: EH1sNX8TNk+ntbPssUS/Fw
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202404222216
-! Last Modified: 202404222216
+! Version: 202404232215
+! Last Modified: 202404232215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -768,7 +768,7 @@ dm.video.qq.com
 douban.com##.subject-banner, div[ad-status]
 doubleclick.net
 douyu.com##.Title-ad, .DropMenuList-ad, .DropPane-ad
-douyu.com##a[href^="https://g.wan."]
+douyu.com,huya.com##a[href^="https://g.wan."]
 downxia.com##.download-ad,#gaosu_div0,ul.list-down>h3,a[href^="http://url.tduou.com/down/"]
 duote.com###quickDown
 duowan.com##a[adid]
@@ -936,7 +936,8 @@ wwads.cn
 www.bilibili.com##.pop-live-small-mode
 www.chnmoney.com##.tonglan
 www.dmhy.org##.info.relative-goods, #pkpk
-www.douyu.com##.is-fullScreenPage .ToTopBtn, div.layout-Player~*, .multiBitRate-da4b60, .watermark-442a18, .player-dialog~*, .ChargeTask+div, .HeaderGif-right, .HeaderGif-left,#js-room-activity
+www.douyu.com##.ChargeTask+div, .HeaderGif-right, .HeaderGif-left
+www.douyu.com##.is-fullScreenPage .ToTopBtn, .multiBitRate-da4b60
 www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing],.siye,#leftbannerv2
 www.huya.com##.duya-header-right,#public-screen-ab
@@ -1008,7 +1009,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||a.msstatic.com/huya/main3/assets/img/room/gift/$important
 ||a.msstatic.com/huya/main3/assets/modules/gift/$script
 ||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
-||a.msstatic.com/huya/main3/components/OnTVLottery/$script
 ||acs.$domain=~youku.com|~tudou.com|~acs.org
 ||acs.youku.com/h5/mopen.youku.danmu.
 ||ad.
@@ -1236,6 +1236,8 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||mimg.127.net/m/lb/img/inboxBottom/$image
 ||mimg.127.net/m/lb/img/leftNavBottom/$image
 ||mimg.127.net/m/lc/img/LoginBackgroundPic/$image
+||msstatic.com/huya/main3/assets/modules/CommercialAdSdk/$script
+||msstatic.com/huya/main3/components/OnTVLottery/$script
 ||mydisplay.ctfile.com/$script,subdocument,popup
 ||n.sinaimg.cn/tech/zcapp$image
 ||net/Runtime/js/$script
@@ -1302,8 +1304,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/ScreenBannerAd_$script
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/SetofGiftPop_$script
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/SuspendedBallAd_$script
-||shark2.douyucdn.cn/front-publish/live-master/js/room/XinghaiGoods_$script
-||shark2.douyucdn.cn/front-publish/live-master/js/room/XinghaiShoppingCart_$script
+||shark2.douyucdn.cn/front-publish/live-master/js/room/Xinghai$script
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/activity_
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/topBanner_$script
 ||sina.com.cn/iframe/76/$subdocument
@@ -1364,7 +1365,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||www.chnmoney.com/skin/$script
 ||www.crsky.com/img/pic.js
 ||www.dmhy.org/*.gif^$image
-||www.douyu.com/webSocket.worker_$script
 ||www.downbank.cn/js/gong.js
 ||www.downxia.com/dgjs/$script
 ||www.dy2018.com/jsdd/$script
