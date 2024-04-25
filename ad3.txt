@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 3Hphmx1kzkZE5mULn0DU+Q
+! Checksum: QYH+45JxkhCw1J7McDfUlw
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202404242217
-! Last Modified: 202404242217
+! Version: 202404252212
+! Last Modified: 202404252212
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -817,6 +817,7 @@ iqiyi.com##.black-screen[data-cupid=adblock-blackscreen], .qy-plist-ad
 iqiyi.com##.cupid-panel + div, div[data-adzone],#block-V
 irs03.com
 ithome.com##.categoryimg,#hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-child(5)
+iwan-s.video.qq.com
 jads.co
 jianshu.com###note-fixed-ad-container
 jihehuaban.com.cn
@@ -842,7 +843,6 @@ makeding.com
 mathtype.cn
 mediav.com
 mfp.deliver.ifeng.com
-miaozhen.com
 mindmanager.cc
 mycleanmymac.com
 mydrivers.com##+js(set,jQuery.fn.resetIdleTimeup,trueFunc)
@@ -879,11 +879,8 @@ qidian.com##.crumbs-nav.top-op:style(margin: auto!important)
 qiushibaike.com##div.shopwindow
 qpb.sohu.com
 qq.com##+js(json-prune, ads ad material.video)
-qq.com##+js(no-fetch-if, beacon.)
 qq.com##div[id^=AdZone],div.ad-banner,div.side_ad,#topAd
 quandangdang.net
-reachmax.cn
-scorecardresearch.com
 shankejingling.com
 show.ssports.com
 skycn.com###top970,ul.ul_Address>h3,a[href^="http://down.xiazaidc.com/"]
@@ -899,14 +896,12 @@ taboola.com
 tanx.com
 taobao.qq.com
 tasma.ru,vidzi.tv##+js(aopw, decodeURIComponent)
-tencentmind.com
 thepiratebay.*##+js(aopr, _wm)
 tianyabooks.com##div[class^=bread_]
 tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com###thread_list>li:not(.j_thread_list):not(.thread_top_list_folder),div[data-rank],div[ad-dom-img],a.j_click_stats
 toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add,div[ad_name]
 track.sohu.com
 tuijian.sogou.com
-tv.sohu.com###qflivetg,div.right>.adv
 tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 tvyb03.com###hth,a[href="/e1111.html"]
 tvyb03.com##+js(acis,document.writeln)
@@ -918,8 +913,9 @@ ulmdb.cn
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box,li.f-single-biz
 v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
+v.qq.com##+js(no-fetch-if, /(beacon|trace)\.qq\.com/)
 v.qq.com##.quick_games.quick_item, div.game-switch-ad
-v.qq.com##.wrapper.mod_vip_popup, #mask_layer
+v.qq.com##.video-card-module > .card-wrap
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 v2ex.com##.box:has(.sidebar_compliance)
@@ -943,7 +939,7 @@ www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#sho
 www.huya.com##.duya-header-right,#public-screen-ab
 www.huya.com##.player-banner-gift,#player-marquee-wrap
 www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap
-www.huya.com##.sidebar-banner
+www.huya.com##.sidebar-banner, a.J_g_resource
 www.nivod4.tv###my_saberfeedback_button
 www.nivod4.tv##.nav-ads:remove()
 www.qq.com##.adLeft,.adRight
@@ -958,7 +954,6 @@ x.qcheng.cc##+js(set,killAdKiller,noopFunc)
 xelements.cn
 xiazaiba.com##div.test-90,div.test-300,div.dl-item:first-child
 xshellcn.com
-xtgreat.com
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
 yiche.com##.news-head > div.news-head-adv:first-child, div.words-ad-list
@@ -1226,13 +1221,14 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||log1.17173.com/
 ||mail.21cn.com/w2/source/images/firstpagecont/$image
 ||mairuan.$all
+||mall.video.qq.com/m/activity/h5/$subdocument
+||mark.l.qq.com/fcgi-bin/get_video_mark_all?$script
 ||market.aliyun.com/
 ||mat1.gtimg.com/$object
 ||mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
 ||mat1.gtimg.com/sports/000_AD/$image
 ||media.$third-party,script,subdocument,domain=~ted.com
 ||mesh.if.iqiyi.com/player/pcw/update/commonAppDownloadData^$xhr
-||mfm.video.qq.com/danmu
 ||midext2.cdn.huya.com/ext-web-mid/ext-web-sub-frame/$subdocument
 ||mimg.127.net/m/lb/img/inboxBottom/$image
 ||mimg.127.net/m/lb/img/leftNavBottom/$image
@@ -1340,12 +1336,15 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||ubmcmm.baidustatic.com/
 ||union.
 ||v.baidu.com/staticapi/videoAd.json?
+||v.qq.com/activity/qqvideo/interact/vod.html^$subdocument
+||v.qq.com/thumbplayer-offline-log.html^$subdocument
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||valipl.cp31.ott.cibntv.net/$media
 ||vamaker.com/$third-party
+||vfiles.gtimg.cn/tvideo/aegis/web-sdk/lib/$script
+||vfiles.gtimg.cn/tvideo/libcocos-frame/$subdocument
 ||video.da.mgtv.com/$media
 ||video.iqiyi.com/ws$websocket
-||video.qq.com/danmu_manage/$xhr
 ||vidhub.tv/player/buffer.html$subdocument
 ||view.news.qq.com/PL_ad$subdocument
 ||wa.gtimg.com/
