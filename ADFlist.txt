@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: IzmpjFroSczeyxanMRvR0Q
+! Checksum: QfEodeg5lBEeHWtC9w41Hw
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202404272213
+! Version(Last Modified): 202404282213
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -573,7 +573,6 @@
 */popiq123
 */popjs.$script
 */popme.
-*/preroll/$media,domain=91porn.com
 */proxy.html?id=$subdocument
 */pu_nocap_cn
 */push_n.php
@@ -774,8 +773,8 @@
 @@||js.tv.itc.cn/gg.seed.js
 @@||lancdn.com/landian/public/js/ads.js
 @@||learn.microsoft.com/video/media/*_960.jpg|$image,domain=learn.microsoft.com
+@@||log.mmstat.com/eg.js^$script
 @@||media.nintendo.com/share/nclood/stable/en-us/bundles/microsite.min.js$script
-@@||mmstat.com^$domain=youku.com
 @@||onesignal.com/*$script,xhr,domain=www.pixiv.net
 @@||popo8.com^$domain=www.6park.com
 @@||qbox.me/static/js/ads.js$domain=linux.cn
@@ -785,7 +784,7 @@
 @@||sax.sina.com.cn/video/$script
 @@||static.realme.net/v1/knowledge/images/banner.jpg$image
 @@||static.zhihu.com/ad-raccoon-web/$script
-@@||tb.mgtv.com/sdk/*/ad-sdk.
+@@||tb.mgtv.com/sdk/*/ad-sdk.js^$script
 @@||tb1.bdstatic.com/??/tb/_/*/ad_$script
 @@||th7.cn/sanda2015/css/ads.js
 @@||tracker.namitiyu.com^
@@ -811,7 +810,6 @@ acfun.cn###prompt-box
 acfun.cn##.app-guide
 acfun.cn##.pause-display
 acfun.cn##.pause-display-container,#ad-comment,#ad-player-view
-ad-survey.com
 ada.baidu.com
 admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 adpushup.com
@@ -1116,8 +1114,6 @@ dailiantong.com##.appDwn
 dajiang03.cn
 dajie.com##.envelop_layer
 dajie.com##.register_layer
-dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
-dandanzan.com,nnyy.in##.gm-fp-body video:style(max-height:100%!important)
 danzhaowang.com##.qxzx_scho
 daohang.qq.com##[id^=AD_]
 dapengjiaoyu.com##.toUnfold
@@ -1774,6 +1770,7 @@ mfp.deliver.ifeng.com
 miaook.com
 miaopai.com##.footer_banner
 miaopai.com,renren.com##.swiper-container
+miaozhen.com
 microsoft.com,visualstudio.com,windows.com###uhfCookieAlert
 miercn.com###foot_return_foot
 miercn.com##.color-box
@@ -1833,6 +1830,7 @@ niuacc.com##.botLm-container
 niuacc.com##.masks
 niuacc.com##.yure
 njcyt99.com
+nnyy.in##.gm-fp-body video:style(max-height:100%!important)
 noobyard.com
 nowcoder.com###jsSideTopicList
 ntfsformac.cc
@@ -1849,7 +1847,6 @@ oomake.com
 ooopic.com##.fix-newUser
 open.163.com###j-hbtj,#j-footertj
 orcode.com
-orgaorg.com
 oschina.net##.blog-left-ad,#project_ad_banner,a[data-traceid],a[href^="http://click.aliyun."]
 oschina.net##.recruitment
 oulub.com
@@ -2255,7 +2252,6 @@ wangxiao.xisaiwang.com##body:style(user-select:text !important)
 wantgoo.com###FixModal
 wasu.cn###scan_qrcode
 wasu.cn##.qp
-waust.at
 wbiao.cn###popupImgCorner
 wbiao.cn##.wb-panel
 we4game.com
@@ -2267,7 +2263,6 @@ weibo.cn##.tips.m-container-max
 weibo.com###WB_webchat
 weikao.com
 weimob.com###active-entrance
-weizhenwx.com
 wenda.so.com##div.mod-detail-normal
 wendu.com##.foot_adv
 wendu.com##.head-banner
@@ -2506,7 +2501,6 @@ yun.cn##div[class*="ad-block"]
 yutu.cn###botfocus-res
 yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 yy.com###rbappend
-yy.com,le.com##+js(nowebrtc)
 z4a.net
 zditect.com
 zgkjmjg.cn
@@ -2596,7 +2590,6 @@ zybang.com##.top_download
 |https:$popup,domain=openload.co|oload.tv|javno.me|supjav.com
 |https:$third-party,domain=linkshrink.net
 |https://abb.$script,3p
-|https://dd-static.jd.com/ddimg/jfs/t1/173245/15/28822/346324/62fcb4b0Eb437d047/136a1e04890320b8.jpg$image,domain=subaibaiys.com
 |https://dimg04.c-ctrip.com/images/03913120009rucji5D56B.gif^
 |https://files.cnblogs.com/files/jingmoxukong/canvas-nest.min.js|
 |https://ikandy2.fun/loadingbk.html^$subdocument
@@ -3359,6 +3352,7 @@ zybang.com##.top_download
 ||med66.com/lamu/
 ||media.$third-party,script,subdocument,domain=~ted.com
 ||media.pussycash.com^$third-party
+||mediamax.suning.com/adssp/sdk/$script
 ||meiju22.com/new/Public/gg.js
 ||meilele.com/js/mll/baiduLabelRecommend.
 ||meiqia.com^$third-party
@@ -3412,7 +3406,6 @@ zybang.com##.top_download
 ||niuacc.com/static/common/js/145.js
 ||nivod4.tv/image/ad$image
 ||nmgnews.com.cn/sys/online_calc.js
-||nooen.com^$popup
 ||nsclick.baidu.com^
 ||nsimg.net^
 ||ntce.com/images/js/ntce_public.js
@@ -3446,7 +3439,6 @@ zybang.com##.top_download
 ||p.zol-img.com.cn/$script
 ||p.zol.com.cn/$script
 ||p0y.cn^
-||p2p.$xhr,websocket,ping,domain=~huya.com|~binance.com
 ||p2p.v.yyclouds.com/crossdomain.xml
 ||pacd.3conline.com/$script
 ||padstm.com^$third-party
@@ -3551,7 +3543,6 @@ zybang.com##.top_download
 ||sax.sina.
 ||saxs.sina.
 ||sbeacon.sina.com.cn/
-||sealine.youku.com/yk/*callback=adpagesdk$script
 ||security.iqiyi.com/static/cook/v1/cooksdk.js
 ||serving-sys.com^
 ||sexad.net^$third-party
@@ -3942,7 +3933,6 @@ zybang.com##.top_download
 2cto.com##.adv980box
 2cto.com##div[style^="float:left;width:300px;"]
 2gedian.cn
-2qpqwkx.cn
 3d66.com###botfocus-soft
 3d66.com##.King_Chance_LayerCont
 3d66.com##.botfocus
@@ -4019,7 +4009,6 @@ zybang.com##.top_download
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,gdzidong.com,mjw8.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 91meijutv.com,k8hdw.com,imjw.cc,qdm66.com##.close-box.tips
-91p20.space
 91wenmi.com###xiezuo
 91wenmi.com###xzsp
 91wenmi.com##a[href^="http://www.91wenmi.com/xiezuo/"]
