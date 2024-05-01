@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: KG2CEc5wOGy4dc0VpDGsEg
+! Checksum: bQ870twHGTbhp6X4kdTVog
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202404302216
-! Last Modified: 202404302216
+! Version: 202405012217
+! Last Modified: 202405012217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -703,7 +703,7 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 adpushup.com
 adxvip.com
 age.tv,agedm.org##+js(noeval-if, devtoolsDetector)
-agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
+age.tv,agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
 apisgame.iqiyi.com
 aqours.today
 at3.doubanio.com
@@ -797,16 +797,12 @@ iciba.com##div.newpc-entry
 iconworkshop.cn
 icws.jb51.net
 ifeng.com##div[class^=adList],div[class^=adbox],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left,[href^="//mall.ifeng.com"],#js_videopause_container
-ikandy2.fun##.marquee_outer, b[onclick]+a
-ikandy2.fun##div:has(>b[onclick])
-ikandy2.fun##img[onclick]:remove()
 im1907.top,nxflv.*##+js(noeval-if, pushState)
 imasdk.googleapis.com
 img.easypass.cn
 imindmap.cc
 ipinyou.com
 iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
-iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
 iqiyi.com##+js(set, QiyiPlayerProphetData.a.data, {})
 iqiyi.com##.black-screen[data-cupid=adblock-blackscreen], .qy-plist-ad
 iqiyi.com##.cupid-panel + div, div[data-adzone],#block-V
@@ -973,11 +969,9 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://res.njxzwh.com/downza/pc/v2017/images/downAD.gif
 |http://www.downyi.com/tg/$script
 |https://abb.$script,3p
-|https://ikandy2.fun/loadingbk.html^$subdocument
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
 |https://tellme.pw/go/jav$popup
 |https://www.36dm.com/js/
-|https://x.qcheng.cc/x/statics/js/fuck-debugger.js^$script
 ||126.net/silver/
 ||127.0.0.1^$script,domain=iqiyi.com
 ||168.it168.com$script
@@ -996,6 +990,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||a.msstatic.com/huya/main3/assets/img/room/gift/$important
 ||a.msstatic.com/huya/main3/assets/modules/gift/$script
 ||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
+||a.msstatic.com/huya/main3/components/OnTVLottery/$script
 ||acs.$domain=~youku.com|~tudou.com|~acs.org
 ||acs.youku.com/h5/mopen.youku.danmu.
 ||ad.
@@ -1121,6 +1116,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||d3.sina.com.cn/
 ||da.mgtv.com/mediafiles/wiad_creative/$image
 ||data.vod.itc.cn/*&prod=ad&$media
+||dd-static.jd.com^$image,domain=subaibaiys.com
 ||ddooo.com/ddshow/$script
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
 ||dm.gucheng.com/
@@ -1149,7 +1145,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||games.qq.com/playgame/gamesad/js/swfobject.js
 ||games.qq.com/playgame/videoweb/
 ||gdt.qq.com/
-||gdzidong.com/static/js/plugin.js^$script
 ||gg.
 ||ggg.
 ||go.$domain=kickass.cd|thepiratebay.*|btsow.*
@@ -1225,14 +1220,12 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||mimg.127.net/m/lb/img/leftNavBottom/$image
 ||mimg.127.net/m/lc/img/LoginBackgroundPic/$image
 ||msstatic.com/huya/main3/assets/modules/CommercialAdSdk/$script
-||msstatic.com/huya/main3/components/OnTVLottery/$script
 ||mydisplay.ctfile.com/$script,subdocument,popup
 ||n.sinaimg.cn/tech/zcapp$image
 ||net/Runtime/js/$script
 ||net/adfiles/
 ||net/code/pop_
 ||net/scriptAD/$script
-||netease.com^$image,domain=ikandy2.fun
 ||news.mydrivers.com/incutf8/HaoWuTuiJianTop6_2023.js$script
 ||news.ssp.qq.com/app
 ||nex.163.com/q?
@@ -1311,12 +1304,11 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||static.zongheng.com/upload/recommend/game/201$image
 ||stc.iqiyipic.com/js/sdkpack/barrage
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
-||stripe.com^$script,domain=~nextdns.io|~obsidian.md
 ||swa.gtimg.com/
 ||tajs.qq.com/$domain=~wuxia.qq.com
 ||tj.ali213.net/
 ||tongj.xilu.com/
-||toutiaoimg.com/origin/$image,domain=agedm.org|acgndmku.com|subaibaiys.com
+||toutiaoimg.com/origin/$image,domain=agedm.org|acgndmku.com
 ||tracker.$xhr,websocket,script,ping
 ||tv.sohu.com/upload/csad/admaster/$image
 ||tx-live-cover.msstatic.com/huyalive/*/format,webp/$image
