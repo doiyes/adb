@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: QBvrleYNzCMjOspU2OY19A
+! Checksum: xagst9ZAD8RU+I1B8rRBMA
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202405032216
+! Version(Last Modified): 202405042216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -675,6 +675,7 @@
 ##.it618_firstad_flex
 ##.itopbar + .container
 ##.jav-nav + .bcpic
+##.jav-nav + .bcpic2
 ##.jingqun_tu
 ##.jq_infoflow_ad_wrap
 ##.jq_mediav_ad_report
@@ -4608,6 +4609,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||cpro.baidustatic.com/cpro/ui/f.js$script,domain=www.400gb.com|www.pipipan.com|colayun.com|coladrive.com
 @@||cq.qq.com/js/cody/*scroll_ad.js
 @@||crackedresource.com^$generichide
+@@||creaders.net^$generichide
 @@||create.jd.com/ad/
 @@||crsky.com/ggao/images/$image
 @@||cruisecenter.com.tw/data/ad/
@@ -4791,6 +4793,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||googletagservices.com/tag/js/gpt.js$domain=koigaku.machicon.jp
 @@||googletagservices.com/tag/js/gpt.js$domain=tvb.com|www.gamer.com.tw
 @@||googletagservices.com/tag/js/gpt.js$domain=ukr.net
+@@||googletagservices.com^$script,domain=creaders.net
 @@||gooogle.how^$generichide
 @@||gotunnel.org^
 @@||gov.cn/scripts/Comm/AdRotator.js
@@ -5154,6 +5157,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||pro.gooooal.com/ad/ad_2.js
 @@||pttplay.com/js/momo/adsbygoogle.js
 @@||pub.alimama.com/common/adzone/
+@@||pub.network^$script,domain=creaders.net
 @@||pubads.g.doubleclick.net/activity;$domain=15min.lt
 @@||pubads.g.doubleclick.net/gampad/ads?*&description_url=https%3A%2F%2Fani.gamer.com.tw$domain=imasdk.googleapis.com
 @@||pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&output=xml_vast*&url=http%3A%2F%2Famp.usatoday.com
@@ -10811,6 +10815,8 @@ hao.360.com###sidebar
 hao.360.com###tmall-full-screen
 hao.360.com###top-nav
 hao.360.com##.licai-right
+hao.360.com##.right-nav-bar-hd
+hao.360.com##div[id^="rightBottom_"]
 hao.360.com#?#.cube-container div.cube-mod:has(span.adMark)
 hao.360.com#?#.cube-list-recommend > div.cube-mod.cpc-card > div.cube-bd > div.cube-card > div.dh-cpcad-container:upward(div.cube-mod.cpc-card)
 hao.360.com#?#.cube-mod:-abp-has(.dh-cpcad-container)
@@ -11040,6 +11046,8 @@ hentai-cosplays.com,hentai-gif-anime.com,hentai-img.com,porn-images-xxx.com###ad
 hentai2read.com##iframe[src*="?zoneid="]
 hentai89.com##iframe[width="308"][height="258"],[id^="dp-ad"]
 hentaicomic.*,wnacg1.cc,wnacg.*##+js(abort-current-script, document.write, /\.(gif|php)/)
+hentaicomic.ru#@#.Flagrow-Ads-under-header
+hentaicomic.ru#@#.pcd_ad
 hentaihaven.xxx##.adb
 hentaiporno.xxx##div.mibanner
 hentairon.net##div.fluid-width-video-wrapper
@@ -11398,6 +11406,7 @@ hurriyet.com.tr#?#.news-wrapper > div > amp-fx-flying-carpet:has(> div > div > a
 hutool.cn##.hutool-top-ad
 huxiu.com##div#app-guide-box
 huya.com###J_roomGg2 + a
+huya.com###J_roomGgTop
 huya.com###J_roomSideTop
 huya.com###ggcomment
 huya.com###huya-ab
@@ -13398,6 +13407,8 @@ loveshang.com##[class^="float-ad-"]
 loveshang.com##div[class^="float-ad-"]
 loveshares.cc##[id^="dgd_scrollbox"],.adsbygoogle,.banner-post
 lpl.qq.com##.ost_gg,.seeking-gg
+lpl.qq.com,v.qq.com##+js(set-constant, CreativePlayerwebPlugin.AD_EVENT.AD_DESTROY, '')
+lpl.qq.com,v.qq.com##+js(set-constant, CreativePlayerwebPlugin.AD_EVENT.AD_LOAD_START, '')
 lqz.cn###ad_index
 lrshare.com##.item,.asb-post,div#g-nav,aside#text-11,aside#text-12,.wp-image-2587,#g-single
 lsj.ac##div[class="col-12"] > div[class="poster"]
@@ -19115,8 +19126,6 @@ v.pps.tv##div.pgbox-content
 v.pptv.com###video-download-game
 v.qq.com###iwan-gamependant-page
 v.qq.com##+js(no-fetch-if, /(beacon|trace)\.qq\.com/)
-v.qq.com##+js(set-constant, CreativePlayerwebPlugin.AD_EVENT.AD_DESTROY, '')
-v.qq.com##+js(set-constant, CreativePlayerwebPlugin.AD_EVENT.AD_LOAD_START, '')
 v.qq.com##.game-switch-ad
 v.qq.com##.module-image[style*="width:1100px;"]
 v.qq.com##.module-image[style*="width:1240px;"]
@@ -25224,6 +25233,7 @@ zzzyk.com###Tinfo
 ||azhibo.*/media/aimg/*.gif
 ||azhibo.*images/leisu.png
 ||aziekg.xyz^
+||azkrya.xyz^
 ||azukgee.cn^
 ||azureedge.net/script/$script
 ||azureedge.net/wp-content/cache/minify/3c6d7.js
@@ -29154,6 +29164,7 @@ zzzyk.com###Tinfo
 ||eyq3nog.icu^
 ||eyq3nog.icu^
 ||eyusky.net/weixin-img/zhifubao.jpg
+||eyuwkbw.top^
 ||eyuyao.com/yyad/
 ||eyyqwd.icu^
 ||ezacci.xyz^
@@ -30895,6 +30906,8 @@ zzzyk.com###Tinfo
 ||hlbbn6ii.icu^
 ||hlbbn6ii.icu^
 ||hldwdz.xyz^
+||hlegsdh.icu^
+||hlegsdh.icu^
 ||hlnr9q.icu^
 ||hlnr9q.icu^
 ||hlrml.cn^
@@ -34640,6 +34653,7 @@ zzzyk.com###Tinfo
 ||mephimnhat.com/vast*.xml
 ||meqanhm.icu^
 ||meqanhm.icu^
+||mercor.cn^
 ||mercury-sdk.snssdk.com^
 ||merqieth.com^
 ||merywf.xyz^
@@ -37392,6 +37406,7 @@ zzzyk.com###Tinfo
 ||qweasd.vip^
 ||qweewq2021.online^
 ||qwer220.cn^
+||qwerioy.top^
 ||qwertyuadf.com^
 ||qwesaz.com^
 ||qwjtdcl.cn^
@@ -37708,6 +37723,7 @@ zzzyk.com###Tinfo
 ||rlxhbff.cn^
 ||rm.lomark.cn^
 ||rm.sina.com.cn/$script,subdocument
+||rmbvzh.xyz^
 ||rmdown.com^$replace=/var rmJson/var fuck/
 ||rmduuv.icu^
 ||rmhfrtnd.com^$third-party
@@ -37842,6 +37858,7 @@ zzzyk.com###Tinfo
 ||runoob.com/images/re/
 ||runsky.com/phpstat/
 ||runtujs.com^
+||rupmlh.cn^
 ||ruqwgb.icu^
 ||rusticaula.com^
 ||ruten.com.tw/js/gads_
@@ -42281,6 +42298,7 @@ zzzyk.com###Tinfo
 ||xs177.com/js/shangbu.js
 ||xs8.cn/qreport?
 ||xsbdj6.com^
+||xsbiquge.la/js/detail.js
 ||xsfajf.xyz^
 ||xshengyan.com/xxgg/bookll111.js
 ||xsjh001.xyz^
@@ -42443,6 +42461,7 @@ zzzyk.com###Tinfo
 ||xzqxz.net^
 ||xzrhvv.xyz^
 ||xzvahr.xyz^
+||xzvhyx.com^
 ||xzxforn.xyz^
 ||xzxhpcdz.icu^
 ||xzxhpcdz.icu^
