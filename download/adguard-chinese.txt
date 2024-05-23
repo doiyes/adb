@@ -500,6 +500,7 @@ nfmovies.com#$#a[onclick*="openurl"][target="_blank"] img[src^="/static/"] { pos
 ||nfmovies.com/static/*.jpg$image,redirect=1x1.gif
 ##.Zi_ad_a_H
 ##a[href^="https://adm.beimg.com/"]
+cnys.tv##+js(set-constant, config.group, '')
 applnn.cc##+js(noeval-if, encodeURIComponent)
 now.com##+js(set-constant, preBid, {})
 now.com##+js(set-constant, preBid.displayAd, noopFunc)
@@ -2384,6 +2385,7 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 -*-*-*-*.as^$script,third-party
 -*-*-*-*.panda^$script,third-party
 -1316632262.cos.
+||iwanshang*.asia^
 -1316899192.cos.
 .land/ad/*.gif
 -1688-wp-media/ads/
@@ -3166,6 +3168,7 @@ ubmcmm.baidustatic.com
 |http://ad.$domain=~ad.cnr.cn|~ckckk.com|~jxnews.com.cn
 |http://gg.$third-party,domain=~guagua.cn
 ||allyes.$third-party
+wss://*/api/wss/GetNotReadCount$third-party
 ||asd8900.oss-*.aliyuncs.com^
 ||ky891.oss-*.aliyuncs.com^
 ||ssh.*.com^*!$script,third-party
@@ -4026,7 +4029,7 @@ newduba.cn###jq_youxi
 ##.apd-footer
 ##.ya-normal-box-done
 ##a[href^="http"] > img[height="60px"][src*="imgsrc.baidu.com"]
-##a[href*=":6001/entry/register"]
+##a[href*="/entry/register"][href*="i_code"]
 ##div[class^="module-"] > a[href="/index/voddetail.html?id=1"]
 ##style + .a-loading
 ##style + .need_grid_img
@@ -5063,6 +5066,18 @@ newduba.cn###jq_youxi
 ||shangwenchao4.cn^
 ||dceuhnpc57.shop^
 ||hsylieu.top^
+||kgeqsu.xyz^
+||ohncc.cn^
+||jhnnnb.xyz^
+||u2w95z.xyz^
+||kmwclt.xyz^
+||dreuaxk.icu^
+||isylieo.top^
+||mweriox.top^
+||iwanshang8.asia^
+||udheansv.com^
+##a[href*=".bsy3.xyz"]
+||fonfn.com^
 ||zuvbzl.xyz^
 ||zwdtvx.xyz^
 ||zwxxcb.icu^
@@ -13486,6 +13501,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||chengzijianzhan.cc^$third-party,subdocument
 szxx.com.cn###A0
 olevod.com##.swiper
+douyin.com###videoSideBar:-abp-has(div:-abp-contains(/商品|商家|退款|店铺/))
 douyin.com###videoSideBar iframe
 douyin.com#?#.xgplayer>div[class]:-abp-has(svg[height="16"][width="30"])
 czys.top#?#.swiper-slide:-abp-has(.coveimg[src*=".gif"])
