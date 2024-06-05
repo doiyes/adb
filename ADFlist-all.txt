@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: T5iCZXbGscCc4CQYzTSxSA
+! Checksum: CFV4ucVOofQ3iFtKT3THhw
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202406042217
+! Version(Last Modified): 202406052218
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -79,6 +79,9 @@
 ###ad_full
 ###ad_globle_div
 ###ad_headerbanner
+###ad_hf_out2
+###ad_hf_out4
+###ad_hf_out5
 ###ad_inview_area
 ###adad
 ###adleft
@@ -374,10 +377,6 @@
 ###upprev_box
 ###videoADPIC
 ###video_playr_side.video_playr_sider.videoplayerside
-###vodplay-ad-hf2
-###vodplay-ad-hf2-m
-###vodplay-ad-hf3
-###vodplay-ad-hf3-m
 ###vpnModal.nordvpn-popup
 ###whYuTlxF
 ###widget-quan
@@ -4310,7 +4309,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||a1.itc.cn/pv/js/spv.
 @@||abchina.com^*ad
 @@||aboluowang.com^$generichide
-@@||acdn.adnxs.com/ast/ast.js$domain=totaaltv.nl
 @@||acgbenzi.com//dist/images/top.png
 @@||acgdraw.com/ad$xmlhttprequest
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
@@ -4367,8 +4365,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||adserver.juicyads.com/js/jads.js$domain=netflav.com
 @@||adservice.google.com/adsid/integrator.js$domain=logi.im
 @@||advert.kf5.com^
-@@||advertising-cdn.dpgmedia.cloud/native-renderer/main.js$domain=totaaltv.nl
-@@||advertising-cdn.dpgmedia.cloud/web-advertising/$domain=totaaltv.nl
 @@||adx.yiche.com/cityindex.ashx
 @@||adx.yiche.com/ssp/echo/v1.0/en?*,*,*&cs=
 @@||affyun.com^$generichide
@@ -18767,6 +18763,7 @@ torkitty.com,torrentkitty.app,torrentkitty.io,torrentkitty.lol,torrentkitty.net,
 torrentkitty.app,torrentkitty.tv###fixedbanner
 torrentkitty.app,torrentkitty.tv##a[href*=".nordvpn.net/"]
 torrentsearchweb.net##div#__cpf_popup__
+totaaltv.nl#$?##c1 { remove: true; }
 touch.mail.ru#?#.messagelist > div:not([cid]):has(span.js-href + div:contains(Реклама))
 touch.mail.ru#?#.messagelist > div[style^="width: 100%; height:"] + div:has(span.js-href + div:contains(Реклама))
 touch.mail.ru#?#.messagelist > div[style^="width:100%; height:"] + div:has(span.js-href + div:contains(Реклама))
@@ -25987,6 +25984,7 @@ zzzyk.com###Tinfo
 ||bian-min.com/javascript/a/detail.js
 ||biancheng.net/templets/new/images/index_pc/fudaoban_
 ||biancheng.net/uploads/ggxc/
+||biancitiao.com^
 ||bianshengruanjian.com/tu/%E6%89%93%E8%B5%8F.
 ||bianxianmao.com^$third-party
 ||bianzhirensheng.com/img/banner.jpg
@@ -26033,6 +26031,7 @@ zzzyk.com###Tinfo
 ||bimiacg*.net/template/JOELEO/asset/js/jquery.leeleo.js
 ||bimiacg4.net/template/JOELEO/asset/js/jquery.common.js
 ||bing001.shop^
+||bing003.shop^
 ||bing005.shop^
 ||bio-equip.com/dimg/
 ||bio-equip.com/dimgs/
@@ -28404,6 +28403,7 @@ zzzyk.com###Tinfo
 ||dlbooks.to/img/smart/bn_
 ||dlfvgndsdfsn.com^
 ||dlili.tv/ufile/22222.js
+||dljzcl.cn^
 ||dlkoo.cc/down/$subdocument
 ||dlkoo.cc/down/*.htm$popup
 ||dlkoo.cc/down/copy
@@ -30981,6 +30981,7 @@ zzzyk.com###Tinfo
 ||hfjhr.cn^
 ||hfjk3wa.com^
 ||hfjk3wa.com^
+||hfjsliu.top^
 ||hfk7j.top^
 ||hfk7j.top^
 ||hflwgg.xyz^
@@ -33947,6 +33948,7 @@ zzzyk.com###Tinfo
 ||liaocpa.com^$third-party
 ||liaoxuefeng.com/files/attachments/00144*/0
 ||liates.top^
+||libhzf.xyz^
 ||librarymanagement.cn^
 ||licai18.com/henyepweb/
 ||licai18.com/pic/article/*.gif
@@ -37555,6 +37557,7 @@ zzzyk.com###Tinfo
 ||qpb0.sohu.com^
 ||qpb1.sohu.com^
 ||qpcvlbp.cn^
+||qpesok.xyz^
 ||qpgyy.com/add01.html
 ||qpic.cn/mblogpic/$image,domain=www.repaik.com|www.neonan.com
 ||qpic.cn/qq_public/$domain=m.nfydd.com
@@ -40884,6 +40887,7 @@ zzzyk.com###Tinfo
 ||uuvzmba.cn^
 ||uuxfznnf.xyz^
 ||uuxs.net^$subdocument
+||uuysiaq.com^
 ||uuzsfpju.xyz^
 ||uuzwvqc.cn^
 ||uuzwvqc.cn^
@@ -41074,11 +41078,12 @@ zzzyk.com###Tinfo
 ||vfchm.cyou^
 ||vfgajrk.cn^
 ||vfiles.gtimg.cn/pub/video_float_ad_config.config_list^
-||vfiles.gtimg.cn/tvideo/aegis/web-sdk/lib/$script
+||vfiles.gtimg.cn/tvideo/aegis/web-sdk/lib/$script,domain=new.qq.com
 ||vfiles.gtimg.cn/tvideo/libcocos-frame/$subdocument
 ||vfjsa6do.icu^
 ||vfjsa6do.icu^
 ||vflorp.xyz^
+||vfphbh.xyz^
 ||vfrdewsdg.xyz^
 ||vfsdgjrr.xyz^
 ||vfsdsdeq.xyz^
@@ -41676,6 +41681,7 @@ zzzyk.com###Tinfo
 ||wkctj.baidu.com^
 ||wkdown.info/bmw*.gif$image
 ||wkdown.info/bt.php?
+||wkjyxcheng.top^
 ||wkrcbszi.xyz^
 ||wkrcbszi.xyz^
 ||wkrhel.icu^
@@ -42261,6 +42267,7 @@ zzzyk.com###Tinfo
 ||xazbts.com^
 ||xazhuozhi.com^
 ||xb588.net^
+||xbbhwggj.icu^
 ||xbiqu5.com/12345678.
 ||xbiqu5.com/12345678.js
 ||xbiquge*.com/js/script.js
@@ -42839,6 +42846,7 @@ zzzyk.com###Tinfo
 ||xymahuxv.xyz^
 ||xyqmy.xyz^
 ||xyryjt.xyz^
+||xysefte.icu^
 ||xytcboyz.icu^
 ||xywy.com/display/display_load.js
 ||xywy.com/gk?a=
@@ -44056,6 +44064,7 @@ zzzyk.com###Tinfo
 ||zt2088.com^
 ||ztaan.top^
 ||ztgame.com^
+||zthxobgk.icu^
 ||ztjal.info/wp-content/plugins/kill-adblock/
 ||ztqdkzn.cn^
 ||ztqdkzn.cn^
