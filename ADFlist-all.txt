@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: sdRG4HOPPzvyShdzOh+WkQ
+! Checksum: R3TRsaGwVubql7qV+nuJPg
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202406092216
+! Version(Last Modified): 202406102218
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -641,6 +641,7 @@
 ##.gnt_xmst
 ##.google-ad2_fixed
 ##.google_adsense2
+##.gotoclick[adv_id]
 ##.gpost-below
 ##.gpt_ads_box
 ##.gpt_ads_title
@@ -673,6 +674,7 @@
 ##.indexad3
 ##.indexad4
 ##.indexnews-ad
+##.infomation + #notice_container > .event-notice
 ##.inner-advertise
 ##.it618_firstad_flex
 ##.itopbar + .container
@@ -902,6 +904,7 @@
 ##.xzbox-gh
 ##.y.mtw[style="padding: 0px 10px;"]
 ##.ya-normal-box-done
+##.yueduad1
 ##.zhanzhang_tuijian_btn
 ##.zhedangceng_ggg
 ##.zone_wap_banner2
@@ -5325,6 +5328,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||sohu.com/upload/static/share/share_play.html
 @@||soufunimg.com/??*/fshare.
 @@||soufunimg.com/count/uvbforpc.js
+@@||sovrn.com^$domain=mens1069.com
 @@||sozi.cn/images/ad/tj
 @@||speedtest.net^
 @@||speee-ad.akamaized.net/tag/$script,domain=hochi.news
@@ -7666,7 +7670,7 @@ chexun.com##a[attr-outside-ad]
 chiasenhac.vn##[width="800"][height="500"]
 chichi-pui.com#?#.is-hidden-tablet > div.is-mobile > div.column:has(> div.is-hidden-tablet):not(:has(> a))
 chiemgau24.de#?#div[data-id-module="col-width-watcher"] > div.id-Container--hasHeadline:has(> h3 > span:contains(Auch interessant))
-chiemgau24.de#?#div[data-id-module="col-width-watcher"] > div.id-Container--hasNoHeadline:matches-css-before(content:*- Reklame)
+chiemgau24.de#?#div[data-id-module="col-width-watcher"] > div.id-Container--hasNoHeadline:matches-css(before, content:*- Reklame)
 chijoshikakatan.blogterest.net##adroute
 chijoshikakatan.blogterest.net##random_link
 chil-chil.net##.c-banner_w640_sp
@@ -8717,7 +8721,6 @@ dlkoo.com###taobaoapp
 dlkoo.com##ins[id^="tanxssp-outer-conmm_"]
 dlsite.com##h3:has-text(全部购买对象作品)+*+#search_result_list
 dlsite.com##h3:has-text(折扣作品)+#search_result_list
-dm.video.qq.com
 dm010.com##a[href*=".apk"]
 dm456.com,dm456.iqiyi.com##DIV[style*="height:90px;"],IFRAME[width="978"][height="90"],IFRAME[src^="/m/"],DIV#bdLeft,IFRAME[width="980"][height="92"],DIV#p-right,DIV#p-left
 dm5.com###youce
@@ -14156,7 +14159,7 @@ m.timesofindia.com##figure + div[style="height:undefined"]
 m.timesofindia.com##li[data-ptype="sponsoredcityent"]
 m.timesofindia.com#?##newslisting .story_left:has(> div[data-ad-id])
 m.timesofindia.com#?##newslisting .story_left:has(> div[id^="div-gpt"])
-m.timesofindia.com#?#.clearfix > br.id-r-component + div[class^="_"]:matches-css-before(content: /^ADVERTISEMENT$/)
+m.timesofindia.com#?#.clearfix > br.id-r-component + div[class^="_"]:matches-css(before, content: /^ADVERTISEMENT$/)
 m.timesofindia.com#?#.contentwrapper > div > div > div > div[class]:has(> div[id^="div-gpt-ad-"])
 m.timesofindia.com#?#.wrapperMobileHome div[class][style]:not([data-videomsid]) > .ad_text:upward(1)
 m.timesofindia.com#?#.wrapperMobileHome div[class][style]:not([data-videomsid]) > .ctn-workaround-div:upward(1)
@@ -14758,6 +14761,8 @@ mmff30.com##span[id$="_gg"]
 mmonly.cc###\32 vm_box
 mmweibo.net##[href="/thread-8457589-1-1.html"],[class^="lt-"],.zoom,.a_pr,.a_sxpb,[height="60"],[height="80"],.div-list
 mmybt.com##.a_mu,.a_pt
+mnews.tw##.ad-container-pc
+mnews.tw##.ad-container-pc-only
 mnw.cn##.ads,.ad2,.ad1,.left_300_250,iframe[src^="http://g.mnw.cn/"],.mnw_top_ads,.h65,.mnw_265,[style*="height:140px;width:1000px;"]
 mnw.cn##.mnw_685
 mnw.cn##.mnw_960
@@ -14857,6 +14862,8 @@ mogujie.com##div.ui-hada
 moguravr.com##.mg-ads-mobile
 molbuk.ua###copyright
 molure.cn##.adplan
+momon-ga.com###video_inst_area
+momon-ga.com##+js(addEventListener-defuser, load, document.cookie)
 momon-ga.com#?#.section-box:has(.list-box)
 momoniji.com#?##content-bottom > #mobile_text-11:upward(1)
 monamona2525.com#$##im_interstitial { display: none !important; }
@@ -16167,6 +16174,7 @@ peiyinxiu.com##div.divRecvideo.swiper-correction
 peizimenhu.com##a[href^="http"]:not([href*=".peizimenhu."]) > img[src^="data/attachment/portal/"]
 penbbs.com##.a_h,.a_pb
 pengbocloud.com#@#.ad-bg
+pennlive.com###ad-wrapper__mobile-bottom-adhesion
 people.com.cn##.ad_left
 people.com.cn##.cont_banner
 people.com.cn##.ipc_none
@@ -16496,7 +16504,6 @@ pronewsua.com##.ads-into-news
 pronewsua.com##.lna-full-news__ads-block
 prorab.odessa.ua
 prothomalo.com##.anchor_ad_wrapper
-prplads.com
 prts.wiki##.nomobile[style*="810px;height:240"]
 ps-xxw.cn##.topmenu2
 psahz.com#@#.ad_960
@@ -16551,8 +16558,11 @@ qastack.cn
 qbaobei.com###diyforumdisplaybottom
 qcfxw.net##div#belownavbar-ad
 qciss.net
+qciss.net###lightbox
+qciss.net###lightbox1
 qciss.net##+js(window.open-defuser, 0, qciss.net)
 qciss.net##.container-fluid > #lightbox
+qciss.net##.d1
 qciss.net##div[style^="border-style:solid;"][style*="border-width:2px;"][style*="width: 80%;"]
 qcsdn.com
 qcvf.ifeng.com
@@ -19344,17 +19354,12 @@ video.fc2.com#?#iframe[src^="/a/pagead/"]:upward(1)
 vidhub.cc##div.player-info > div.module
 vidhub.me,vidhub.tv##.promolnk
 vidhub.me,vidhub.tv##.promote-link
-vidhub1.cc,vidhub.*##.MacPlayer:style(height:630px!important)
-vidhub1.cc,vidhub.*##.adpcc,#player_pause
 viet-jo.com#?#.bd_bd > div[class^=text-top-tab1-] > div.bd > div.bd_left[name]:contains(PR):upward(2)
 view.inews.qq.com#?#div[class^="_"]:-abp-has(>div[data-action-id]>div>.react-swipeable-view-container)
 vijaykarnataka.com##style[type="text/css"] + div[class]:not([id]):not([style]):not([class*=" "])
-vikacg.com###custom_html-9
-vikacg.com###home-row-lunbo
-vikacg.com##a[href^="http"] > img[src^="/assets/main/"]
-vikacg.com##div[id^="home-row-ads"]
 vikacg.com$$a[href="asnebula.xyz"]
 vikacg.com$$a[onclick="trackOutboundLink"]
+vikacg.com,vikacg.xyz##a[href^="http"] > img[src^="/assets/main/"]
 vikiporn.com##.under_player_adv
 vikiporn.com,sleazyneasy.com,m.pornicom.com,m.fetishshrine.com,m.katestube.com##.bottom-spot
 vikiporn.com,wankoz.com,sleazyneasy.com,pornicom.com,rat.xxx,vikiporn.com,zbporn.com,sleazyneasy.com,fetishshrine.com,katestube.com##.top-spot
@@ -21451,9 +21456,6 @@ zzkdhb.com##li[style*="important"]
 zzkdhb.com##p[style^="width: 100%; margin: 0px;"]
 zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 zznews.cn#@#.ad-wrapper
-zztt11.com,zztt24.com##.event-notice
-zztt11.com,zztt24.com##.gotoclick
-zztt11.com,zztt24.com##.no-mask
 zzzyk.com###Tinfo
 |api.zhihu.com/ad-style-service/request
 |api.zhihu.com/fringe/ad
@@ -21487,7 +21489,6 @@ zzzyk.com###Tinfo
 |https:$popup,third-party,domain=88files.net|99files.net|avsdown.com|downdvs.com|jandown.com
 |https:$subdocument,domain=nodkey.xyz
 |https:$third-party,domain=linkshrink.net
-|https://abb.$script,3p
 |https://dimg04.c-ctrip.com/images/03913120009rucji5D56B.gif^
 |https://files.cnblogs.com/files/jingmoxukong/canvas-nest.min.js|
 |https://img.233.com/project/zixun/xueba/v1/pc/zxXueba.js^
@@ -25292,6 +25293,7 @@ zzzyk.com###Tinfo
 ||aueajkn.cn^
 ||auerkbo.cn^
 ||auisaoa.top^
+||auislq.top^
 ||aukllsq.cn^
 ||aup34.xyz^
 ||autchoog.net^
@@ -28069,6 +28071,7 @@ zzzyk.com###Tinfo
 ||datax.baidu.com^
 ||datouniao.com^
 ||daup.map.baidu.com/cltr/rcvr$app=com.qiyi.video
+||davtvd.xyz^
 ||dawdlealmonry.com^
 ||daweijita.com/201*430.
 ||daweijita.com/201*ad.
@@ -29095,6 +29098,7 @@ zzzyk.com###Tinfo
 ||effectivehealthy.cn^
 ||effectivemeasure.net^
 ||efgh.5lu.com^
+||efjsliw.top^
 ||efmtsw.xyz^
 ||efs604.top^
 ||efvsyhbf.xyz^
@@ -30148,6 +30152,7 @@ zzzyk.com###Tinfo
 ||gfan.com/press/
 ||gfbdb1.com^
 ||gfbdb1.com^
+||gfdgfhh.cn^
 ||gfjn5.xyz^
 ||gfpvvwf.xyz^
 ||gfrzzzx.cn^
@@ -30833,6 +30838,7 @@ zzzyk.com###Tinfo
 ||haxqxd.xyz^
 ||hb.rayjump.com^
 ||hb.vntsm.com/v3/live/ad-manager.min.js
+||hb8g86k.mom/mz.js
 ||hbalx.cn^
 ||hbandier.com^
 ||hbbxwan.cn^
@@ -31146,6 +31152,7 @@ zzzyk.com###Tinfo
 ||hkkeafj.cn^
 ||hkljed.xyz^
 ||hkmte.com/seo.js
+||hkpeghqu.icu^
 ||hkrytf.xyz^
 ||hkscldggm.xyz^
 ||hkscldggm.xyz^
@@ -32526,6 +32533,7 @@ zzzyk.com###Tinfo
 ||jgblvt.xyz^
 ||jghklz.xyz^
 ||jgidskia.top^
+||jglgjz.xyz^
 ||jgmywh.icu^
 ||jgntjtyf.icu^
 ||jgsajfggv.xyz^
@@ -33173,6 +33181,7 @@ zzzyk.com###Tinfo
 ||kaixin001.com.cn/js/cpm-
 ||kaixinjiehun.com^$third-party
 ||kaiyiluye.com^
+||kak17p.xyz^
 ||kakakumag.com/script/mag/smartphone/fixed_bnr_area.js
 ||kalerkantho.com/banner/
 ||kalmukrattail.com^
@@ -34011,6 +34020,7 @@ zzzyk.com###Tinfo
 ||lifvfr.xyz^
 ||lifyeldl.top^
 ||lifyeldl.top^
+||ligfdjnfd.cn^
 ||lih6e.site^
 ||lihong.ltd^
 ||lihuasoft.net/images/ad_
@@ -36509,6 +36519,7 @@ zzzyk.com###Tinfo
 ||ozkbdxdu.icu^
 ||ozkbdxdu.icu^
 ||ozolei.xyz^
+||ozykeor.icu^
 ||p*-ad-sign.byteimg.com^
 ||p-behacdn.ksmobile.net^
 ||p.5mnh.com^
@@ -36995,6 +37006,7 @@ zzzyk.com###Tinfo
 ||pnzhpb.xyz^
 ||pnzhpb.xyz^
 ||po18.in^
+||po2qgo.xyz^
 ||poae2klya.icu^
 ||poasotha.com^
 ||pobrpr.xyz^
@@ -39742,6 +39754,7 @@ zzzyk.com###Tinfo
 ||tapone.jp^
 ||taporn.com/d/
 ||tappx.com^
+||taproximo.com^
 ||tapsell.ir^
 ||tapsense.com^
 ||tapstat.ru^$third-party
@@ -40478,6 +40491,7 @@ zzzyk.com###Tinfo
 ||twlmq.space^
 ||twnafj.xyz^
 ||two.fsylr.com^
+||twqtf.boats^
 ||twrailpolice.appspot.com/campaign.xml
 ||twrailpolice.appspot.com/full_ad_priority.txt
 ||twrank.com^
@@ -41137,7 +41151,6 @@ zzzyk.com###Tinfo
 ||vfchm.cyou^
 ||vfgajrk.cn^
 ||vfiles.gtimg.cn/pub/video_float_ad_config.config_list^
-||vfiles.gtimg.cn/tvideo/aegis/web-sdk/lib/$script,domain=new.qq.com
 ||vfiles.gtimg.cn/tvideo/libcocos-frame/$subdocument
 ||vfjsa6do.icu^
 ||vfjsa6do.icu^
@@ -41203,7 +41216,6 @@ zzzyk.com###Tinfo
 ||videowood.tv/pop2
 ||videowood.tv/pop^$popup
 ||videowood.tv/popjavascript
-||vidhub.tv/player/buffer.html$subdocument
 ||vidout.net^$third-party
 ||vidwkd.com^
 ||vieldeold.xyz^
@@ -43516,6 +43528,7 @@ zzzyk.com###Tinfo
 ||yxhjt.com^
 ||yximgs.com/bs2/adcarsku/sku1563a96c-38ca-4563-a4b5-522208113126.
 ||yximgs.com/bs2/adcarsku/sku9c0e68cc-2f12-4e47-a340-a7293ee88c88.
+||yxkbgg.xyz^
 ||yxlady.com/cdd/201005/$script
 ||yxmrqc.com^
 ||yxptcrss.xyz^
@@ -45098,7 +45111,7 @@ zzzyk.com###Tinfo
 88files.net##+js(window.open-defuser)
 88files.net##.ad1,#popad
 88mv.org##.MacPlayer, .dplayer:style(height:600px!important)
-88mv.org,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
+88mv.org,91meijutv.com,olevod.com,tvyb03.com##a[target=_blank][href^=http]
 90bifen.com###live > table[cellspacing="0"][cellpadding="0"]
 90bifen.com##div[id^="ShowTopAds_"]
 90bifen.com##td[bgcolor="#FFFEE0"][height="22"]
@@ -45466,6 +45479,7 @@ zzzyk.com###Tinfo
 360kuai.com##.detail__top__title__under
 360kuai.com##.g4.undefined
 360kuai.com##.k-float-btn__qrcode__body
+360kuai.com##.marketing-box
 360kuai.com##.mid-right__operate-adv__container
 360kuai.com##.novel_galery_icon
 360kuai.com##.taskbar
