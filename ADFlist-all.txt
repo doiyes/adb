@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: VxaYvT9Yx2BixUPZaqOYwA
+! Checksum: g66WOQBhIcsk/bfBLBIwYQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202406122216
+! Version(Last Modified): 202406132217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -928,7 +928,6 @@
 ##A[href*='youqu.buzz']
 ##A[href*='zbkrv.com']
 ##A[href="http://t.cn/A6hQCVsv"]
-##A[href="javascript:;"][onclick^="iwjfewufewekjr"]
 ##A[href='/?'][target='_blank']
 ##A[href='/hth.html']
 ##A[href='/iwagbwfiwehaeyh/']
@@ -1361,6 +1360,7 @@
 ##a[href="/gghtml/tyc.html"]
 ##a[href="/goto.php?url=hth"]
 ##a[href="/ht.html"]
+##a[href="javascript:;"][onclick^="iwjfewufewekjr"]
 ##a[href="javascript:GoGd();"]
 ##a[href="javascript:GoTp();"]
 ##a[href="javascript:window.GoTp();"]
@@ -2645,6 +2645,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .top/ad-
 .top/ad/
 .top/ads/
+.top/g3/myString3AsyncG?$third-party
 .top/gluinfo.php?s=$third-party
 .top/upload/ad.js
 .top^*-960x80-*.gif
@@ -3709,6 +3710,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /slade.js
 /sm/xycms.
 /smcreative/*
+/smflow/get.*=gAdCallback_
 /sms/ppinstall*
 /smsad*
 /sobt_adv.js
@@ -8567,7 +8569,6 @@ delishkitchen.tv##body div.delish-header::before
 delivery.rakuten.co.jp##.promArea
 delo-vcusa.ru#?#aside:has(> div.aligncenter > ins.adsbygoogle)
 demaxiya.com##.tp_box
-denverpost.com###mobile-adhesion
 dep-family.hccg.gov.tw#@#.ad_1
 dep-family.hccg.gov.tw#@#.ad_2
 depor.com##.ad-amp-movil
@@ -11057,7 +11058,10 @@ hea.cn###top_slides_box
 head-fi.org##div[class^="head-fi_spnsr_flxbx_"]
 health.tvbs.com.tw##.ad_desktop_top
 health.tvbs.com.tw##.ad_mo_top
+health.tvbs.com.tw##.ed-hidden.ed-xl-block
 health.tvbs.com.tw##.fly_outbox
+health.tvbs.com.tw##.hidden .justify-center:has(> div[id^="health_pc_read_"])
+health.tvbs.com.tw##div[data-testid="ad-container"]
 healthboards.com##.sticky_ad
 healthline.com###site-header ~aside[class^="css-"] > div[class^="css-"]
 healthline.com##div.mlb
@@ -14680,6 +14684,7 @@ miercn.com##DIV.adtop,DIV[class$="_gg"],div.gg,div.dbggs,div.top_height,.down_bo
 mifangba.com##.banner,.title_con[style]
 migeek.ru##div[style="height: 410px; display: flex; justify-content: space-around;"]
 migeek.ru##img[width="300"][height="250"]
+miguvideo.com###adver-box
 mikanani.me##a[href][onclick*="'ad'"] > img[src^="/images/Masha/"]
 mil.chinaiiss.com##div.left_picimg,DIV[id^="f21ac82b21eeb7322631b6aa94e17f"]
 mil.sohu.com##div.m_ad.m_ad_full
@@ -18144,6 +18149,8 @@ subhd.com##.container > div > div[style="padding-top:120px"]:not([class]):not([i
 subhd.com##.container > div[style="margin:0 auto;"]:not([class]):not([id])
 subhd.com##[src^="/images/ad/"]
 subhd.com##div[style="position:fixed;bottom:20px;left:20px;"]
+subito.it##div[data-google-interstitial] > div[style^="min-height:150px;"]
+subito.it#$#div[id^="index-module_mobile-navigation"] { height: auto !important; }
 sucaijiayuan.com##.gbox1000,.show_title_bottom_gg,.gg250,.jsPart1Right.right
 sueddeutsche.de###taboola-iqadtile5
 sueddeutsche.de##.adslot
@@ -18907,6 +18914,7 @@ tuliu.com##.zx-advertising-box
 tumadouga.jp##.index_banner_space > div.index_banner_space
 tumblr.com##.standalone-ad-container
 tumutanzi.com###text-3
+tunein.com##div[data-testid="viewModelAd"]
 tupaki.com###roadblocker-wrapper
 tupaki.com##+js(remove-node-text, script, roadblocker)
 tupaki.com##body div[id$="_ad"]:not(#style_important)
@@ -18995,6 +19003,7 @@ tweaktown.com#$#.footer_bottom { margin: 0px !important; }
 twiman.net##.mx-auto[style="max-width:623px;"]
 twiman.net##div[style="height:100px;"]
 twiman.net,hotscope.tv##div[style="height: 100px;"]
+twincities.com,denverpost.com##body #mobile-adhesion
 twinsyang.net#@#.Zi_ad_a_H
 twinsyang.net,free.com.tw###custom_html-7
 twitter.com##.presented
@@ -19154,6 +19163,7 @@ unpkg.com/aladug/*.js
 unsplash.com#?#div[data-test="search-photos-route"] div[style^="--column-gutter:"] > div[class] > figure + div:has(> div + footer)
 unsplash.com#?#div[style^="--column-gutter:"] > div[style^="--row-gutter:"] > div:first-child:has(> figure a + div > span)
 unwire.hk###post-sidebar-ad
+unwire.hk##.post-main-ad
 uoso.net##DIV.adtopbox.block,H3 + DL.list
 uotan.cn###fuck-ads
 up.ymgt.xyz##.play-wrap > #background
@@ -21768,6 +21778,7 @@ zzzyk.com###Tinfo
 ||1024down.com/images/*.gif
 ||1024mzs.pw^$popup,third-party
 ||1024wanzhai.$popup,third-party
+||1028images.com^
 ||102tv.cn/js/main.js
 ||104.199.8.250^*/webservices/getDialogAdDetails.php
 ||106.15.205.174/api^
@@ -22767,6 +22778,7 @@ zzzyk.com###Tinfo
 ||52z.com/images/52zgg/
 ||52zpi.com/gg/
 ||52zy.com/other/js/
+||537images1.com^
 ||5399.com^$third-party
 ||53kf.com^
 ||53kf.com^$third-party
@@ -22988,6 +23000,7 @@ zzzyk.com###Tinfo
 ||66wz.com/eap/
 ||66ys.cc/d/$script,document
 ||66zhuang.com/public_2017/js/count-gou.js
+||67.21.92.163^
 ||670t5x.cn^
 ||6711.com^
 ||6788787.com^
@@ -23059,6 +23072,7 @@ zzzyk.com###Tinfo
 ||711983.com^
 ||7160.com/js/tiaozhuanquanju.js
 ||71zrh.cn^
+||7299tu75.cc^
 ||73508.com^
 ||73652253191.com^$third-party
 ||738atf.xyz^
@@ -23205,6 +23219,7 @@ zzzyk.com###Tinfo
 ||82zcb.icu^
 ||83.222.115.150/?type=
 ||83133.com/api/
+||835images1.com^
 ||84232.com^
 ||84pb.com/go.js
 ||84pb.com/pv.js
@@ -26758,6 +26773,7 @@ zzzyk.com###Tinfo
 ||ccb.com.cn/V5/images5/left0.gif
 ||ccb.com.cn/V5/images5/right0.gif
 ||ccc.sys.miui.com^
+||ccccc67kkkkk.com^
 ||cccrir.com^
 ||ccdm*/Scripts/ccMedia.js
 ||ccement.com/index/index/fetchAd
@@ -27806,6 +27822,7 @@ zzzyk.com###Tinfo
 ||cupid.ptqy.gitv.tv/mixer?ap=
 ||cuvtnzv.cn^
 ||cvbjctqs.xyz^
+||cvfgere96.cn^
 ||cvftv2.com^
 ||cvgrszkg.xyz^
 ||cvnxetmq.xyz^
@@ -27905,6 +27922,7 @@ zzzyk.com###Tinfo
 ||d1pmhihatyvp1k.cloudfront.net^
 ||d1pmhihatyvp1k.cloudfront.net^
 ||d1q4x2p7t0gq14.cloudfront.net^
+||d1zoi2q7y0e4d.cloudfront.net^
 ||d2.sina.com.cn/
 ||d2.sina.com.cn^$object,script
 ||d2.yingyongge.com/*?*&$subdocument
@@ -30556,6 +30574,7 @@ zzzyk.com###Tinfo
 ||gtoyouin.biz^
 ||gtpso.com/Home/TopSdk/getFavCoupItems
 ||gtpxvpi.cn^
+||gtrhnhg.cn^
 ||gts-ads.twistbox.com^
 ||gtxkze.cn^
 ||guahao.cn/blank.gif?
@@ -33943,6 +33962,7 @@ zzzyk.com###Tinfo
 ||lfffzv.xyz^
 ||lfhdryz.xyz^
 ||lfhnzbj.xyz^
+||lfjslil.top^
 ||lfjtiuy.cn^
 ||lfjtiuy.cn^
 ||lflmdm.com^
@@ -35090,6 +35110,7 @@ zzzyk.com###Tinfo
 ||mifengtd.cn/ad-
 ||mifyeldx.top^
 ||mifyeldx.top^
+||migo011.top^
 ||miguvideo.com/ad^
 ||miguyu.com/AD/
 ||miidi.net^
@@ -35618,6 +35639,7 @@ zzzyk.com###Tinfo
 ||myqcloud.com/ad/
 ||myqcloud.com/wp-content/uploads/huoxingyun.
 ||myqcloud.com^$domain=hfg.80579.net
+||myreadcloud.com^
 ||myrtb.net^
 ||myshou.com^$third-party
 ||mysteelcdn.com/advert/
@@ -37431,6 +37453,7 @@ zzzyk.com###Tinfo
 ||qhdlz.net/uploads/glxs/980x120.jpg
 ||qhdzljxsb.cn^
 ||qhemphox.com^
+||qheose.xyz^
 ||qheoy.cn^
 ||qhicumg.cn^
 ||qhimg.com/clk.gif?
@@ -40095,6 +40118,7 @@ zzzyk.com###Tinfo
 ||tjnwfjy.cn^
 ||tjq.com^
 ||tjqwb.cn^
+||tjuspyk.icu^
 ||tjwzyjx.icu^
 ||tjwzyjx.icu^
 ||tk.504pk.com^
@@ -40441,6 +40465,7 @@ zzzyk.com###Tinfo
 ||tunovl.xyz^
 ||tuoizbtl.xyz^
 ||tuotianxia.top^
+||tupian6666.com^
 ||tupian888.*.bcebos.com^
 ||tupian888.*.bcebos.com^
 ||tuplzt.xyz^
@@ -40955,6 +40980,7 @@ zzzyk.com###Tinfo
 ||uu1.3gu.com^
 ||uu11881.com^
 ||uu22002.com^
+||uu22112.com^
 ||uu22332.com^
 ||uu22662.com^
 ||uu3192uu.com^
@@ -40977,6 +41003,7 @@ zzzyk.com###Tinfo
 ||uuoozz.com/L7QQ.js
 ||uuu9.com/photolog.html
 ||uuu9.tieba.com^$subdocument
+||uuuutp.com^
 ||uuuzuu.xyz^
 ||uuvzmba.cn^
 ||uuxfznnf.xyz^
@@ -41444,6 +41471,7 @@ zzzyk.com###Tinfo
 ||vxhtxt.xyz^
 ||vxinzheng.xyz^
 ||vxotu.com/i/*.gif
+||vxpdfb.xyz^
 ||vxvtzx.xyz^
 ||vydbvp.xyz^
 ||vydqknuy.xyz^
@@ -42720,6 +42748,7 @@ zzzyk.com###Tinfo
 ||xn--m7r781dz66a.cn^
 ||xn--qrq171dxpq.com^
 ||xn--swt207gl1hzc.net^
+||xn--w9q675dm1p7em.net^
 ||xn--wgvp78a61swpe6zdozj.cn^
 ||xn--wxtr44c.video^
 ||xn--wxtr9fwyxk9c.xn--fiqs8s^
@@ -42892,6 +42921,7 @@ zzzyk.com###Tinfo
 ||xwuad.com^
 ||xwvnhe.cn^
 ||xww360.com^
+||xx3691b.com^
 ||xxba.cc^
 ||xxcgdq.com^
 ||xxczdfb.cn^
@@ -42928,6 +42958,7 @@ zzzyk.com###Tinfo
 ||xxxnavy.com^$third-party
 ||xxxviijmp.com^
 ||xxxvjmp.com^
+||xxxx68xxxx.com^
 ||xyadtlyy.com^
 ||xybnfn.xyz^
 ||xybnfn.xyz^
@@ -44043,6 +44074,7 @@ zzzyk.com###Tinfo
 ||zkads.cc^
 ||zkbsvx.xyz^
 ||zkfojr.xyz^
+||zkrdzn.xyz^
 ||zkvivi.com/skin/wxc.js
 ||zkzpgz.icu^
 ||zlbcxr.xyz^
@@ -44063,6 +44095,7 @@ zzzyk.com###Tinfo
 ||zlyk.com/Runtime/Js/m_footer_top.js
 ||zlyk.com/Runtime/Js/m_nav_bottom.js
 ||zlyk.com^*/ysapp.
+||zmbmoxij.icu^
 ||zmdjbl.xyz^
 ||zmdjbl.xyz^
 ||zmfcnlvu.xyz^
