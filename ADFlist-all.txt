@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 0+S2dySwbw0LrSO9tt5hMg
+! Checksum: dnzgB/7PS8Yy6d+CQJiD4A
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202406172217
+! Version(Last Modified): 202406182216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -636,7 +636,6 @@
 ##.ggpost-below
 ##.ggtop
 ##.ggw
-##.globalPadding
 ##.global_video_bottom_dbtc
 ##.gnt_xmst
 ##.google-ad2_fixed
@@ -1163,6 +1162,7 @@
 ##[href^='https://xxx.nunxun.com']
 ##[id$="-ad"]
 ##[onclick*="trackEvent', 'ad"]
+##[onclick*='fjbglfrv.com']
 ##[onclick*='https://i.opiwb.com:']
 ##[onclick*='pypyj.com']
 ##[onclick*='www.l4lui.com'],.col-12.position-relative>b
@@ -2442,8 +2442,9 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .cn/sc/*?x=$script,third-party
 .cn/v/*.xmtl?$third-party
 .cn/z.gif?
+.cn:*/d/*?c=*$third-party
+.cn:*/sc/*?n=$third-party
 .cn:*/vh5$third-party
-.cn:8001/*/*?*=$third-party
 .cn:8005/cc/*?is_not=
 .co/js/ads/
 .com*/ps/psCreat.js
@@ -2542,10 +2543,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .com:7891/stats$third-party
 .com:8001/*/*?*=$third-party
 .com:8003/d/*&n=$third-party
-.com:8004/*/*?*=$third-party
 .com:8005/*&n=$third-party
-.com:8007/*/*?*=$third-party
-.com:8008/*/*?*=$third-party
 .com:8008/sc/*?n=$third-party
 .com:8010/cc/
 .com:91/Runtime/js/psCreat.js
@@ -5978,6 +5976,7 @@ amp.n-tv.de##amp-fx-flying-carpet[data-block-on-consent]
 amp.n-tv.de##div[class^="ad-wrapper-"]
 amp.n-tv.de#?#span[itemprop="articleBody"] > amp-fx-flying-carpet:has(> div > div > amp-ad)
 amp.n-tv.de,manager-magazin.de,amp.macwelt.de,tz.de,bgr.in,news.de,boerse.de,gadgetsnow.com,www-firstpost-com.cdn.ampproject.org,firstpost.com,m.economictimes.com,m-economictimes-com.cdn.ampproject.org,hurriyet.com.tr,m.news.de,fr.de,hna.de,abendzeitung-muenchen.de,ingame.de,bollywoodlife.com,digit.in,m.jpnn.com,zeenews-india-com.cdn.ampproject.org,thehindubusinessline.com,zeenews.india.com,thenewsminute.com,thehindu.com,www-thehindu-com.cdn.ampproject.org,m-jatimnow-com.cdn.ampproject.org,bisnis-tempo-co.cdn.ampproject.org##amp-fx-flying-carpet[height="300px"]
+amp.onedio.com##amp-script[script="masthead-ad-script"]
 amp.pcwelt.de###ob_container
 amp.reddit.com##div[class*="__Ad"]
 amp.scmp.com##.inline-advert
@@ -16995,6 +16994,7 @@ recruit.com.hk###topBar
 recruit.com.hk##div[id^="banner"]
 red-forum.com###mobile_banner
 redcafe.net##.adwrap
+redd.tube##.banner300x130
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##.BannerAd__320x50
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##article[id] > a[href^="https://alb.reddit.com/"] ~ *
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion#?#.CommentsPage > article[class][id]:has(> div[class] > a > div[class]:contains(Promoted))
@@ -18025,8 +18025,6 @@ sports.ru##iframe[src^="http://www.sports.ru/desktop/special"]
 sports.sohu.com##.allsee-list > .bd-wrap
 sports.yahoo.co.jp###ad-smon
 sports.yahoo.co.jp###ydn-nm
-sports.yahoo.co.jp##.sn-videoEmbed__banner
-sports.yahoo.co.jp##.sn-videoEmbed__credit
 sports.yahoo.co.jp##[class$="-modAd"]
 sports.yahoo.co.jp##div[class^="rg-modCommon"]:has(> div#ad-mmon)
 sports.yahoo.co.jp##div[class^="yf-modCommon"]
@@ -18827,7 +18825,7 @@ tptoon.com##span[style^="position:fixed; bottom:30vh;"]
 track.sohu.com
 track718.com##.track-adsense-ad
 track718.com##.track-search-ad
-trafficjunky.com$third-party
+trafficjunky.com$third-part
 trailrunner.jp#$#.header .brand { padding-top: 0 !important; }
 trakt.tv##DIV[id$='-wrapper']
 trakt.tv##div#large-banner-ad,div#small-banner-ad,div#large-banner-bottom-ad,div#small-banner-bottom-ad
@@ -20806,6 +20804,8 @@ ya.ru,yandex.*#?#.SearchBlock:has(> div.DirectStripe)
 yaerwen.com##table[height="250"]
 yahoo.co.jp###ad-mmon
 yahoo.co.jp###ad-sult
+yahoo.co.jp##.sn-videoEmbed__banner
+yahoo.co.jp##.sn-videoEmbed__credit
 yahoo.com###ACT_crazy
 yahoo.com###ACT_takeover
 yahoo.com###ACT_takeover2
@@ -27721,6 +27721,7 @@ zzzyk.com###Tinfo
 ||creepingbrings.com^
 ||crf999.cn^
 ||crf999.cn^
+||crfjxfoe.xyz^
 ||crhabkd.cn^
 ||crhyqq.com^
 ||criknudsr.com^
@@ -28043,6 +28044,7 @@ zzzyk.com###Tinfo
 ||dajiazhao.com/login/reg.js
 ||dajkqqpz.top^
 ||dakawm.cc^
+||daksflkalq.top^
 ||daliantong.com.cn^
 ||daliantong.com.cn^$third-party
 ||dalipan.com/api/taobao
@@ -28294,6 +28296,7 @@ zzzyk.com###Tinfo
 ||dftoutiao.com/ssp/
 ||dftoutiao.com^
 ||dfu7.com/JiaYou/sogou
+||dfvmzx.xyz^
 ||dfxvkgz.xyz^
 ||dfxwdc.com^
 ||dg-hospital.com^
@@ -29630,6 +29633,7 @@ zzzyk.com###Tinfo
 ||ffzz71.com^
 ||fg.daochengwowo.top^
 ||fg.yilianqing.com^
+||fgadsqdma.top^
 ||fgcxdr.cn^
 ||fgetmzx.icu^
 ||fgetmzx.icu^
@@ -29697,6 +29701,7 @@ zzzyk.com###Tinfo
 ||fiwyjar.cn^
 ||fix.hpplay.cn^
 ||fj.sina.com.cn/iframe/63/
+||fjbglfrv.com^
 ||fjctlnn.top^
 ||fjdfqy.com^
 ||fjhrq.xyz^
@@ -30950,6 +30955,7 @@ zzzyk.com###Tinfo
 ||hdfdsdaw.com^
 ||hdjthzg.cn^
 ||hdmoli.com/static/js/pop_promotion.js
+||hdoshbu.top^
 ||hdpdrandpd.xyz^
 ||hdpdrandpd.xyz^
 ||hdsky.me/adv/
@@ -33286,6 +33292,7 @@ zzzyk.com###Tinfo
 ||kaoyan.com/school/final_class.html
 ||kaoyan.com/school/js/yz.school.packed.js
 ||kaoyan1v1.com/IAA/
+||kapvu.cn^
 ||kart2ks.icu^
 ||kart2ks.icu^
 ||kasdwergv.com^
@@ -33454,6 +33461,7 @@ zzzyk.com###Tinfo
 ||kjvaqbyebqarl.top^
 ||kjvaqbyebqarl.top^
 ||kk99.co^
+||kkacrgx.icu^
 ||kkbbjtfp.xyz^
 ||kkbiqu2.com/js/one.js
 ||kkbiqu2.com/js/yuedu.js
@@ -39509,6 +39517,7 @@ zzzyk.com###Tinfo
 ||stienlb.top^
 ||stlpnom.xyz^
 ||stmzzs.com^
+||stnew.xyz^
 ||stockstar.com/*DUILIAN&t=
 ||stockstar.com/api/?id=
 ||stockstar.com/info/1200x90/
@@ -42940,6 +42949,7 @@ zzzyk.com###Tinfo
 ||xuzhi.net/uploadfile/poster/960x50.jpg
 ||xv98.com/js/daohang
 ||xv98.com/js/hengfu
+||xvbcjh.xyz^
 ||xvbjctqs.xyz^
 ||xvbnrh.xyz^
 ||xvgrszkg.xyz^
@@ -43487,6 +43497,7 @@ zzzyk.com###Tinfo
 ||ypffkbpq.xyz^
 ||ypgjkk.xyz^
 ||ypkxahje.xyz^
+||ypkxka.xyz^
 ||ypojie.com/wp-content/uploads/*.js
 ||yprdmnlo.xyz^
 ||yptqys.tianqistatic.com^

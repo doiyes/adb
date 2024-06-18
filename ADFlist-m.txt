@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: vVaZxz7wsv05XGeNwugjuw
+! Checksum: MtUOSBwMBo4MQwrZQUB1oA
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202406172217
+! Version(Last Modified): 202406182216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -79,7 +79,6 @@
 ##.fc_foot
 ##.fed-part-advs.fed-text-center.fed-font-xvi
 ##.ff-ads
-##.globalPadding
 ##.gr_slide_car_inner
 ##.mi_btcon.ad
 ##.player_pic_link > [src*='/player.gif']
@@ -331,6 +330,7 @@
 ##[href^='https://xcc.'][href*='cn/']
 ##[href^='https://xxx.nunxun.com']
 ##[onclick*="trackEvent', 'ad"]
+##[onclick*='fjbglfrv.com']
 ##[onclick*='https://i.opiwb.com:']
 ##[onclick*='pypyj.com']
 ##[onclick*='www.l4lui.com'],.col-12.position-relative>b
@@ -643,8 +643,9 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .cn/ack?s=*$third-party
 .cn/bid?url=*$third-party
 .cn/redbaiduct.com?s=$third-party
+.cn:*/d/*?c=*$third-party
+.cn:*/sc/*?n=$third-party
 .cn:*/vh5$third-party
-.cn:8001/*/*?*=$third-party
 .cn:8005/cc/*?is_not=
 .com/adv1/?q=
 .com/c.php?s=*=*=$third-party
@@ -661,10 +662,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 .com:7891/stats$third-party
 .com:8001/*/*?*=$third-party
 .com:8003/d/*&n=$third-party
-.com:8004/*/*?*=$third-party
 .com:8005/*&n=$third-party
-.com:8007/*/*?*=$third-party
-.com:8008/*/*?*=$third-party
 .com:8008/sc/*?n=$third-party
 .com:8010/cc/
 .cyou/redbaiduct.com
@@ -3762,7 +3760,7 @@ toutiao.com##[ad-cursor],[ad_show]
 toutiao.com##[name^="adetail_right*top_"]
 toutiao.com##div.banner-index-bottom,#pagelet-commbox,.feedcomm,#pagelet-iad,#pagelet-btestcommbox,#pagelet-detailadd,[data-tag="ad"],#pagelet-btestad_taobao,#pagelet-adindextop,#detailAd,[data-tag^="ad_"],.J_add,#detailAd2,.adClientFlag,iframe[src^="http://toutiao.com/adsafe/"],.tbanneradd,iframe[src^="http://www.toutiao.com/adsafe/"],[src^="//www.toutiao.com/api/pc/adsafe/"],.carAd,.bonus-wrapper,.icon-container
 touxiang.la##.ad00,.adsbygoogle,.banner
-trafficjunky.com$third-party
+trafficjunky.com$third-part
 trakt.tv##DIV[id$='-wrapper']
 trakt.tv##div#large-banner-ad,div#small-banner-ad,div#large-banner-bottom-ad,div#small-banner-bottom-ad
 trjcn.com##div.bd
@@ -7854,6 +7852,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||fish882.xyz^
 ||fiwyjar.cn^
 ||fix.hpplay.cn^
+||fjbglfrv.com^
 ||fjctlnn.top^
 ||fjdfqy.com^
 ||fjisu.tv/b_1.js?
