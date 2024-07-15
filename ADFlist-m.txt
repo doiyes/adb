@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Q4Pv4gfZH+lg5ITxSPvA1Q
+! Checksum: piXW7hLV41L31I9dwArsww
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202407142222
+! Version(Last Modified): 202407152215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -413,6 +413,8 @@
 ##body > [id][style*='width:100%'][style*='min-height:120px']
 ##body > a[id*='hudie_']
 ##body > div#bottommob.bottommob
+##body#nr_body #appss
+##body#nr_body [onclick='goAppHtml();']
 ##body#nr_body a[href*="/?utm_source="]
 ##body#nr_body div.fixed ~ *
 ##body#nr_body font > [id]
@@ -1516,7 +1518,6 @@ auto.ifeng.com##div.w1000.c-ad,.top-tg
 autofan.com.cn##div.ad_banner,.xf_ad,[class="add width"],[src^="ad/"]
 autohome.com.cn##.game-full-169,[class^="adv0"]
 autohome.com.cn##div#ad_990_tm,div#ad_fbanner_00,div#ad_fbutton_00,div#ad_ic_video,div#advarticles.advarticle,DIV.advbox,div.pop-autoapp,div[id^="ad_960_"],a[href^="http://qr.net/bvJfs"],[class="grid-14 column"],[class="grid-6 column"],[id^="ad_tuwen"],[id^="adBtmBanner"],[id^="ad_fk_"],[class="monkey monkey_box"],.mall-advbar-tab,.ad-top-1111,.hotcar-mall,.monkey_box_big,.monkey__iconmini,.serve-sm,#mall_960_90,[data-adparent=".monkey"],[id^="tmadv"],[class^="advbox"],.article-content__ad,[height="60px"],.union-ad-placeholder,.monkey-row,.monkeyicon-br,.ad-common
-autohome.com.cn##ol > li,.evade-operate
 autohome.com.cn,loveshang.com##.advbox
 autonet.com.tw##[src^="http://www.autonet.com.tw/90/"],[name="ntwad2"]
 av.xxyywo.com###\32 yujiazai
@@ -7533,6 +7534,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||duomeng.org^
 ||dup.baidustatic.com^
 ||duxingangtiaoban.com^
+||duyewnf.icu^
 ||duyixpy.top^
 ||duyvtanrheje.xyz^
 ||dv.amtwcvh.cn^
