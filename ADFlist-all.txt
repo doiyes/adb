@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 4kQD+L2QAwsN9URPaWbDPg
+! Checksum: 8J9+W64ijUAy7Pa98UJPlQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202407192218
+! Version(Last Modified): 202407202215
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1316899192.cos.
@@ -9617,6 +9617,7 @@ exoav.com##+js(abort-on-property-read, exoNoExternalUI38djdkjDDJsio96)
 exoav.com##.place
 exoav.com##.table
 expert.ru##.mobile-subscribe-popup
+exploader.net###firstpop
 express.co.uk##.ampad
 express.co.uk#$?##taboola-mid-article-thumbnails-outstream { remove: true; }
 express.co.uk#$?#div[data-type="article-body"] .text-description > div { remove: true; }
@@ -14336,6 +14337,7 @@ m.winfuture.de##.author ~ .text > a.red[href^="https://winfuture.de/r"][target="
 m.winfuture.de##.mb20[style="min-width: 300px; min-height: 250px;"]
 m.winfuture.de##.rutschdiv
 m.winfuture.de##.teaser:has(> h2 > a[href^="https://m.winfuture.de/special/"][href*="angebote"])
+m.winfuture.de##.teaser_big:has(> .teaser_img > .anzeige)
 m.winfuture.de##.ticker_row:has(> .ticker_headline > .anzeige)
 m.winfuture.de##[id] > h2[style="display: none !important;"] + .teaser
 m.winfuture.de##[id] > h2[style="display: none !important;"] + .teaser + .clearfix
@@ -14346,9 +14348,12 @@ m.winfuture.de##body > div[align="center"]
 m.winfuture.de##body > h2[style="display: none !important;"] + .teaser
 m.winfuture.de##body > h2[style="display: none !important;"] + .teaser + .clearfix
 m.winfuture.de##center > div[style="min-width: 300px; min-height: 250px;"]
+m.winfuture.de##div:has(> .adsbygoogle:only-child)
+m.winfuture.de##div:has(> .adsbygoogle:only-child) + br
 m.winfuture.de##div[id^="div-gpt-ad"]
 m.winfuture.de##iframe[src*="_adcode_"]
 m.winfuture.de##iframe[src^="//j.wfcdn.de/j/iframes/outbrain_"]
+m.winfuture.de##img[alt="test"]
 m.winfuture.de#?##articleBody > .summary_box ~ b:contains(Vergleich)
 m.winfuture.de#?##articleBody > div:has(> div[id^="div-gpt-ad"])
 m.winfuture.de#?##main > h2:has(> a[href*="special/"][href*="/angebote/"])
@@ -14357,12 +14362,9 @@ m.winfuture.de#?##main > h2:has(> a[href="/news/127142"])
 m.winfuture.de#?##main > h2:has(> a[href^="/news"][href*="123690"]) + .teaser
 m.winfuture.de#?#.schiebeleiste > .content:has(> h2 > a:contains(/Deal|MwSt|tark reduziert|Cashback|Nur diese Woche|Black-Friday|(Media Markt)[\s\S]*Gratis-Geschenk|Bestpreis|Sale|Nur (noch heute|heute|für [0-9] Tage)/))
 m.winfuture.de#?#.teaser:has(> a > .anzeige)
-m.winfuture.de#?#.teaser_big:has(> .teaser_img > .anzeige)
 m.winfuture.de#?#body > div.text > .mb20:has(> div[id^="div-gpt-ad"])
 m.winfuture.de#?#body > h2:has( > a[href*="special"][href*="angebote"])
 m.winfuture.de#?#body > h2:has(> a:contains(/Nur heute\:|Nur diese Woche\:|Nur für [0-9]{1,} Tage|Jetzt reduziert\:|Nur noch heute|tark reduziert|eals des Tages|Knaller-Tarif|Top-Preis|kurze Zeit|vorbestellen|Günstige Deals|startet[\s\S]*Launch bei/))
-m.winfuture.de#?#div:has(> .adsbygoogle:only-child)
-m.winfuture.de#?#div:has(> .adsbygoogle:only-child) + br
 m.xcum.com##.mob_ntv_a
 m.xcum.com,m.fanfox.net##.top-banner
 m.xiaomiyoupin.com#@#[style*="mi-img.com"]
@@ -19266,6 +19268,8 @@ uludagsozluk.com##.mobil_bugun > li > a[href^="http://bit.ly/"][rel="nofollow"] 
 uludagsozluk.com##.parallaxYapiskanBanner
 uludagsozluk.com##a[href^="http://bit.ly/"][target="_blank"] > img
 uludagsozluk.com#?#.mobil_bugun > li:has(> a[href^="http://bit.ly/"][rel="nofollow"] + b[style="color: #a09f9f;"]:contains(reklam))
+umamusume.net###ad-first
+umamusume.net##div[style^="margin-bottom: 10px; min-height: 280px;"]
 umatoku.hochi.co.jp##.news-list > li.news-list__item:has(> aside.ad)
 unian.net##.article-column > div[style^="height:"]
 unian.net##.tabs-with-flex > div#tab1
@@ -19908,12 +19912,14 @@ wenkuxiazai.com###ft_hb
 wenmi114.com###xiezuo
 wenxuecity.com###adt
 wenxuecity.com###gg_multitext
+wenxuecity.com###gg_rightside
 wenxuecity.com###marquee
 wenxuecity.com##+js(set-constant, adsbygoogle, noopFunc)
 wenxuecity.com##.otherposts > ul > li > a[target="_blank"]
 wenxuecity.com##.sidebar > .banners
 wenxuecity.com##.topbannerw
 wenxuecity.com##label[style*="darkgrey"]
+wenxuecity.com#?#div[class]:-abp-has(>.adlab_border)
 wenxuecity.com#@#.otherposts
 wenyoutai.com##div.a_mu,div.a_pb,div.a_cb,div#bbs_ad1,div.wp.a_h,div.modify_ad,div.a_pt
 wenzhanghui##[src*="ad"]
@@ -27193,6 +27199,7 @@ zzzyk.com###Tinfo
 ||chaospace.fun/wp-content/uploads/*/%E6%A3%8B%E7%89%8C-
 ||chaospace.fun/wp-content/uploads/*/tg-
 ||chaoxing.com^$domain=igangju.com
+||chaoyumiao.com^
 ||chartbeat.com^
 ||chartboost.com^
 ||chartboosts.com^
@@ -27438,6 +27445,7 @@ zzzyk.com###Tinfo
 ||ckxxbao.com/templets/default/js/wx.js
 ||cl-ad.x-flow.app^
 ||clarins.com.cn^
+||classic.39health.com^
 ||classic.39health.com^
 ||clb.biz/Public/static/js/common-v2.js
 ||clcmdie.com^
@@ -27964,6 +27972,7 @@ zzzyk.com###Tinfo
 ||crsky.com/img/hezi
 ||crsky.com/theme/images/fast_down.
 ||crsky.com/theme/images/rd0
+||crtlisf.top^
 ||crvbnac.xyz^
 ||crwan.applinzi.com^
 ||crwdcntrl.net^
@@ -28119,6 +28128,7 @@ zzzyk.com###Tinfo
 ||d*.wanzhuang.com^
 ||d*.xinshipu.com^
 ||d-load.org^$script,domain=2ch-c.net
+||d-test.39.net^
 ||d-test.39.net^
 ||d.1391.com^
 ||d.13mobi.com^
@@ -28880,6 +28890,7 @@ zzzyk.com###Tinfo
 ||douguo.net/upload/post/d/
 ||doujinnomori.com/ad/
 ||doujs01.xyz^
+||doujs010.xyz^
 ||doujs02.xyz^
 ||doujs03.xyz^
 ||doujs05.xyz^
@@ -29917,6 +29928,7 @@ zzzyk.com###Tinfo
 ||fhglcpf.icu^
 ||fhglcpf.icu^
 ||fhitagd.cn^
+||fhnbrx.xyz^
 ||fhoa365.com^
 ||fhrl2018.com^
 ||fhsmtrnsfnt.com^
@@ -32041,6 +32053,7 @@ zzzyk.com###Tinfo
 ||ie.5500w.com^
 ||ie8eamus.com^
 ||ieapak.xyz^
+||iecmca.xyz^
 ||iee5.com^
 ||ieeod0.com^
 ||ieequd.icu^
@@ -38629,6 +38642,7 @@ zzzyk.com###Tinfo
 ||rntdqwc.xyz^
 ||rnzmynh.cn^
 ||robudpw.cn^
+||rodmfv.xyz^
 ||rofmjd.xyz^
 ||roio.top^
 ||romiyee.icu^
@@ -41153,6 +41167,7 @@ zzzyk.com###Tinfo
 ||u2w95z.xyz^
 ||u33011.com^
 ||u346zd.top^
+||u4ccj.icu^
 ||u55011.com^
 ||u5nvu.xyz^
 ||u68t5.icu^
@@ -41522,6 +41537,7 @@ zzzyk.com###Tinfo
 ||uuzwvqc.cn^
 ||uuzwvqc.cn^
 ||uvcourse.net^
+||uvekyvs.icu^
 ||uvklgw.xyz^
 ||uvnjlm.cn^
 ||uvpqrydt.xyz^
