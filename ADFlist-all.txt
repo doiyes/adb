@@ -1,10 +1,11 @@
 [Adblock Plus 2.0]
-! Checksum: v9WaSIOIhg1CXhw6KTp61Q
+! Checksum: ZsnL1jLg5N1xRoM132zPTA
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202407232217
+! Version(Last Modified): 202407242218
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
+-1321533417.cos.
 -1316899192.cos.
 -1316632262.cos.
 -1688-wp-media/ads/
@@ -1652,6 +1653,7 @@ $script,third-party,domain=torkitty.com|torrentkitty.app|torrentkitty.asia|torre
 $script,third-party,websocket,domain=52codes.net
 $script,third-party,xmlhttprequest,domain=btio.pw
 $third-party,xmlhttprequest,domain=subhd.tv|subhdtw.com|xyg688.com|xyg688.xyz|zzzzz688.com
+$third-party,xmlhttprequest,websocket,domain=qiyoudy2.com|qiyoudy4.com
 $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biqu.ge|biqubao.com|biquduge.com|biqug.org|biquga.com|biquge.info|biquge.tv|biquge001.com|biquge123.com|biquge5200.cc|biqugedu.com|biqugeg.com|biquger.com|biquges.com|biqugewx.com|biqugle.com|biquku.la|biquw.com|biquwu.cc|gebiqu.com|hehuamei.com|ibqg5200.com|m.fengyunok.com|mybooks8.com|shuquge.com|snzb.org|xbiquge.la|xsbiquge.com|xshengyan.com|xswang.com|yiyi120.com|yuanzunxs.cc|zuimeng8.com|zzbiquge.com|75dr.com|bggee.com|biquge96.com|biqugeabc.com|aishu5.com|biquger.net|senwy.com|biqugeso.org|whzh-xs.com|bqg.org|mmbqg.com
 &ad*&puid=*&uid=*=show
 &ad=*&referer=
@@ -7011,9 +7013,11 @@ bilibili.com##.bili-dyn-ads
 bilibili.com##.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__wrap
 bilibili.com##.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
 bilibili.com##.bili-video-card__wrap > a[href^="http"]:not([href*=".bilibili.com/"])
+bilibili.com##.container > div.bili-video-card.is-rcmd:not(:has(> *))
 bilibili.com##.desktop-download-tip
 bilibili.com##.eva-banner
 bilibili.com##.extension-tips
+bilibili.com##.floor-single-card:has(.floor-skeleton):not(:has(> div.bili-video-card__skeleton))
 bilibili.com##.gg-floor-module
 bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
 bilibili.com##.gg-window > .operate-card
@@ -10838,6 +10842,7 @@ haberler.com###video_befor[style^="width:"]:empty
 haberler.com##body > input[type="hidden"] + div[style]
 haberler.com##div[style^="height: 100px; width: 320px;"]
 haberler.com##main > div[style^="width: 320px;"][style*="height: 100px;"]
+habr.com##.banner
 hacg.me###wpd-bubble-wrapper
 hacg.me##article:has-text(神社特惠)
 hacg.me##aside:has-text(神社专享)
@@ -15875,6 +15880,7 @@ olch.biz##.container_banner
 olch.biz##.pla
 ole.com.ar##article > div[class]:has(> div.lazyBanner)
 olehdtv.com##.container > div[class^="B1"]
+olehdtv.com,olevod.eu##.guangao
 olevod.com##.A4R
 olevod.com##.B1L
 olevod.com##.B1R
@@ -15888,7 +15894,6 @@ olevod.com##div.box
 olevod.com##div[class^="ad"][style="margin-top: 0.05rem;"]
 olevod.com##div[style*="%;float: left;"] > a[target="_blank"]
 olevod.com#$?#.swiper-wrapper > li.swiper-slide:has(> a[target="_blank"]:not([href^="/"])) { remove: true; }
-olevod.eu##.guangao
 olevod.eu##a.wbalist_thumb[target="_blank"]
 olevod.tv##a[href^="https://www.yywhale.com"]
 olgame.tw##.nex_floor_banner
@@ -20928,7 +20933,7 @@ xzji.com##.speed
 y4dg.cc##.a_mu,.a_pb,.a_pt,.wp.a_h,.frameBox4,[class^="a_"]
 ya.ru##services-feed div.banner
 ya.ru,yandex.*##.DirectStripe
-ya.ru,yandex.*##div[class^="serp-list"] > div.serp-item:has(> div[data-bem*="organic"] > div[class^="Organic"] > div[class^="VanillaReact"] > a[data-event-required])
+ya.ru,yandex.*##.content__left > ul#search-result > li:has(> div.organic > div.OrganicTitle > a[href^="https://ya.ru/search/_crpd/"])
 ya.ru,yandex.*#$?##search-result > li:has(span:contains(/[PРeеkклaаmмaа]{7}/)) { remove: true; }
 ya.ru,yandex.*#?#.SearchBlock:has(> div.DirectStripe)
 yaerwen.com##table[height="250"]
@@ -26027,6 +26032,7 @@ zzzyk.com###Tinfo
 ||betteredu.net/js/pop_tuiguang_
 ||betway787.com^
 ||betylife.com^
+||bewr1.com^
 ||beyers.cn^
 ||bf99.com/User*/Ad_
 ||bf99.com/User/Images/bg_Blued.jpg
@@ -26546,6 +26552,7 @@ zzzyk.com###Tinfo
 ||bydzfldt.xyz^
 ||byjykj.xyz^
 ||bymahuxv.xyz^
+||byretuv.top^
 ||byscy.cn^$third-party
 ||bytecdn.cn/article/content^
 ||bytecdn.cn/ta/resource/v0/analytics.js
@@ -28577,6 +28584,7 @@ zzzyk.com###Tinfo
 ||dougle.one/wp-content/uploads/*/baner
 ||douguo.net/upload/post/d/
 ||doujinnomori.com/ad/
+||doujs01.shop^
 ||doujs01.xyz^
 ||doujs010.xyz^
 ||doujs02.xyz^
@@ -29167,6 +29175,7 @@ zzzyk.com###Tinfo
 ||entry.baidu.com/rp/home?
 ||entry.baidu.com^
 ||entsnotesq.fun^
+||enuksg.xyz^
 ||enus.douyucdn.cn/venus/release/rn/checkPackage?
 ||enviousinevitable.com^
 ||eo.chaungpin.top^
@@ -29205,6 +29214,7 @@ zzzyk.com###Tinfo
 ||equkgm.xyz^
 ||er.5ykj.cn^
 ||er.5ykj.com^
+||er1h4.icu^
 ||eraaoec.cn^
 ||erabaru.net^
 ||eraygc.xyz^
@@ -30806,6 +30816,7 @@ zzzyk.com###Tinfo
 ||hdzb6.cc^
 ||head4.net/ad_
 ||heapz.cyou^
+||heatherssb.com^
 ||heavy-r.com/js/mobile*.js
 ||hebei.com.cn/eap/
 ||hebei.com.cn/sys/online_calc.js
@@ -31532,6 +31543,7 @@ zzzyk.com###Tinfo
 ||iemwbu.cn^
 ||iephrenhq.com^
 ||iephrenhq.com^
+||ietlwso.top^
 ||ievvo.xyz^
 ||iewtwo.xyz^
 ||ieymhkx.icu^
@@ -32338,6 +32350,7 @@ zzzyk.com###Tinfo
 ||jdcnwd.com^
 ||jdcnwd.com^
 ||jddaw.com^
+||jdfzfd.xyz^
 ||jdh74bf.com^
 ||jdipsuma.top^
 ||jdnlynb.cn^
@@ -36635,6 +36648,7 @@ zzzyk.com###Tinfo
 ||ppedp.cn^
 ||ppenid.xyz^
 ||pphqq.com^
+||pplkrh.xyz^
 ||pplnjoow.com^
 ||ppluoli.xyz^*.gif
 ||ppoi.org^
@@ -37770,6 +37784,7 @@ zzzyk.com###Tinfo
 ||rydzfldt.xyz^
 ||ryhkft.xyz^
 ||ryhuzj.xyz^
+||ryqgdrh.icu^
 ||ryre.cn^
 ||ryrmvd.xyz^
 ||ryvexulg.xyz^
@@ -39731,6 +39746,7 @@ zzzyk.com###Tinfo
 ||trafficjam.cn^$third-party
 ||trafficjunky.net^
 ||trafficjunky.net^
+||trafficmanager.net^
 ||trafficstars.com$third-party
 ||trafficstars.com^
 ||trafforsrv.com^
@@ -42070,6 +42086,7 @@ zzzyk.com###Tinfo
 ||xs177.com/js/dibu.js
 ||xs177.com/js/nei.js
 ||xs177.com/js/shangbu.js
+||xs6po.icu^
 ||xs8.cn/qreport?
 ||xsbiquge.la/js/detail.js
 ||xsfajf.xyz^
@@ -42482,7 +42499,7 @@ zzzyk.com###Tinfo
 ||yin1.zgpingshu.com^
 ||yin1.zgpingshu.com^
 ||yingav.net/images/content/spot01.jpg
-||yinghua8.tv/bar/
+||yinghua8.*/bar/
 ||yinghuavideo.com/bar/
 ||yingnanyqq.com^
 ||yingshidaquan.cc/Templet/js/
@@ -42512,6 +42529,7 @@ zzzyk.com###Tinfo
 ||yizhibo.com/special/h5corner.html
 ||yjbdyjnctgj.top^
 ||yjcf360.com/ad.
+||yje912.cn^
 ||yjnhkd.com^
 ||yjnhkd.com^
 ||yjnhndt.com^
