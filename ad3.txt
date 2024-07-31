@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: /mghnieZ3fPGCOt6pwVjhQ
+! Checksum: sKZHBCqmAQY2wxnSlxlkhQ
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202407302217
-! Last Modified: 202407302217
+! Version: 202407312216
+! Last Modified: 202407312216
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -833,6 +833,8 @@ myqqjd.com##+js(acis, String.fromCharCode, decodeURIComponent)
 new.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 news.163.com###js-cnxh-content~:not(#js-epTabRank)
 news.mydrivers.com##.main_right_div:nth-of-type(4)
+nivod.cc###my_saberfeedback_button
+nivod.cc##.nav-ads:remove()
 nnyy.in##.gm-fp-body video:style(max-height:100%!important)
 ntfsformac.cc
 ntfsformac.cn
@@ -911,11 +913,10 @@ www.douyu.com##.is-fullScreenPage .ToTopBtn, .multiBitRate-da4b60
 www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing],.siye,#leftbannerv2
 www.huya.com###public-screen-ab
+www.huya.com##.huya-ab
 www.huya.com##.player-banner-gift,#player-marquee-wrap
 www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap
 www.huya.com##.sidebar-banner, a.J_g_resource
-www.nivod4.tv###my_saberfeedback_button
-www.nivod4.tv##.nav-ads:remove()
 www.qq.com##.adLeft,.adRight
 www.rjno1.com##body > *:nth-child(-n+5)
 www.ted.com##.gm-fp-body .justify-center.tracking-tightest
@@ -1015,6 +1016,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||caipiao.163.com/$subdocument
 ||cbjs.baidu.com/
 ||cc/scriptAD/$script
+||cdn.aiqingyu1314.com/age/statics/js/notice.js^$script
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
 ||cdn.huya.com/leaf/$xhr
 ||cdn.iciba.com/web/co/ci/$image
@@ -1198,7 +1200,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||news.mydrivers.com/incutf8/HaoWuTuiJianTop6_2023.js$script
 ||news.ssp.qq.com/app
 ||nex.163.com/q?
-||nivod4.tv/image/ad$image
+||nivod.cc/image/ad$image
 ||onetrust.
 ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?
 ||org/ad$image
