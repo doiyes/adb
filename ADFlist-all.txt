@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: U86V1vOHT3XYydOyCyPaLA
+! Checksum: AAimrDtNQ+Kva00YWMiDJA
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202408052216
+! Version(Last Modified): 202408062217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1321533417.cos.
@@ -212,6 +212,7 @@
 ###imgad
 ###imgs5[height="60px"]
 ###index_aside_ad
+###index_banner[src*=".meituan.net"]
 ###index_content_ad
 ###j-new-ad
 ###js-ad-map
@@ -860,6 +861,7 @@
 ##.topbanner + .nav + .banner
 ##.toy52_outer
 ##.toy52apparel_ALL
+##.tp_advertising
 ##.trad3
 ##.twavt-ads
 ##.txp_ad[data-role="txpad-interact-pause"]
@@ -926,9 +928,11 @@
 ##A[href*='-fghhjj.com']
 ##A[href*='//v.wanfumei.net']
 ##A[href*='/adjump/?']
+##A[href*='aducx.com']
 ##A[href*='com:'] > IMG[src],A[href*='cc:'] > IMG[src]
 ##A[href*='ds2f1sd31g.vip']
 ##A[href*='exuvu.com']
+##A[href*='ixeeo.com']
 ##A[href*='jdbfknsbkldns.com']
 ##A[href*='jialu6699h.vip']
 ##A[href*='xzzkx.com']
@@ -963,6 +967,8 @@
 ##A[href^='https://yongle008.com']
 ##A[onclick$='()'][target='_top'][style*='.gif) no-repeat;background-size:100% 100%;']
 ##A[rel='nofollow noopener'][href*='/game/xr/?attributionId=']
+##A[rel='nofollow'][href='/play/player-2-1.php']
+##A[rel='nofollow'][href='/play/tv.php']
 ##A[style='width: 100%;height: 150px;z-index:1000;position: absolute;display:block;top: 0px;'][onclick$=';this.style.display="none";']
 ##A[target='_blank'] > IMG[width='100%'][src*='.gif']
 ##A[target='_blank'][href*='/auth/register?code=']
@@ -1216,6 +1222,7 @@
 ##[style='box-sizing: border-box; position: relative; left: 0px; z-index: 912944; text-indent: -10em;']
 ##[style='display: block; width: 100%; height: 125px; background-size: 100% 100%;']
 ##[style='display: block; width: 100%; left: 0px; position: fixed; z-index: 2147483646; height: 49px; bottom: 132px;']
+##[style='position:absolute !important;padding:0px !important;margin:0px !important;width:100% !important;font-size:0px !important;line-height:0px !important;']
 ##[style='position:relative !important;padding:0px !important;margin:0px !important;line-height:1 !important;']
 ##[style='text-align: center; margin: 40px 0; color: blue; font-size: larger;']
 ##[style='top: 0vw; display: block;']
@@ -1421,6 +1428,7 @@
 ##body > div[style="display:none;"] + div[style="display:none;"] + div[id][class][style^="background-color:"]
 ##body > div[style="width: 100% !important; margin: 0px !important; padding: 0px !important; display: flex !important; flex-flow: row wrap !important; background: rgb(255, 255, 255) !important; color: transparent !important; font-size: 0px !important; text-indent: -10000px !important; line-height: 0px !important;"]
 ##body > style + div[id="ics"]
+##body#chapterbody.novel_chapter [style='padding-top: 150px;']
 ##body#nr_body #appss
 ##body#nr_body [onclick='goAppHtml();']
 ##body#nr_body a[href*="/?utm_source="]
@@ -9344,7 +9352,7 @@ elecinfo.com##div[class$="-advert"]
 element-plus.gitee.io##.sidebar > .page-content
 element-plus.gitee.io##.toc-content > .m-t-16px
 element-plus.gitee.io##aside > .page-content
-element-plus.org##.page-content-main-a
+element-plus.org##.page-content-main-b
 element-plus.org##.toc-content > div[style="margin-top:16px;"]
 element-plus.org##aside > .page-content-main
 elespanol.com###homeMobileAdvertising2
@@ -11089,7 +11097,9 @@ hcbbs.com###framemI4t76
 hcbbs.com###framerG6o99_left
 hcbbs.com###fwin_dialog
 hcbbs.com###portal_block_2652
+hcbbs.com###portal_block_3441
 hcbbs.com##.a_cn_pb
+hcbbs.com##a[href*="&adid="]
 hcbbs.com##table[width="100%"][bordercolor="#CCCCCC"]
 hcbbs.com,isiyuan.net##.ke-zeroborder
 hclips.com##.rek
@@ -11557,6 +11567,7 @@ huya.com###template
 huya.com##+js(set-constant, adInfo, {})
 huya.com##.J_ad
 huya.com##.ab-content
+huya.com##.ab-wrap
 huya.com##.component-ab
 huya.com##.end-ab-banner
 huya.com##.end-ab-banner
@@ -11573,6 +11584,7 @@ huya.com##.tt[style*="1200px"]
 huya.com##A[data-edesc='点击/推荐/左侧导航推荐图']
 huya.com##a[class^="Ad--"]
 huya.com##a[href^="https://wan."]
+huya.com#?#.item-pic:-abp-has(>.img-tips)
 hvg.hu##.rossmann
 hvhbbs.com##.block[data-widget-definition="SwiperWidget"]
 hvhbbs.com##.margin-add > style + div
@@ -13014,6 +13026,7 @@ kdnet.net##a[href*=".tmall.com/?spm="] > img
 kdocs.cn##.business-list-wrap
 kdocs.cn##.business-list-wrap
 kdslife.com###ad_swip
+kdslife.com###mainRightTopAd
 kdslife.com###tao
 kdslife.com###youhui
 kdslife.com##.ad3,.mod_banner,.adsbygoogle
@@ -18209,6 +18222,7 @@ sstv.pw##.container > a > img[style="width: 100%;"]
 ssuip.com###mask
 ssyy.ee##.container > a[target="_blank"] > img
 st.benesse.ne.jp###div-M_UP_bnr_320x50
+st.benesse.ne.jp##.text_c
 stackexchange.com###js-gdpr-consent-banner
 stacknoob.com
 stackoom.com
@@ -18332,6 +18346,7 @@ sunofbeach.net##div[id$="-ad"]
 suopao.org##.t5[style^="margin-top:8px;"]
 suopao.org##.tr3.t_one[onmouseout]
 supercloudsms.com##.container > a[id]
+supercloudsms.com##.container > div > a[id]
 superlife.ca##.sidebar-ad-zone
 superlife.ca##[class*="ad"]
 superluchas.com###AbovePostPlacementWrapper
@@ -18883,6 +18898,7 @@ tmioe.com###custom_html-4
 tmioe.com##.__single_0
 tmioe.com##.ad_single_0
 tmioe.com##.entry-copyright
+tmioe.com##.singlegg
 tmioe.com##a[target="_blank"] > img[src*=".sinaimg.cn"]
 tmtpost.com##.open-app
 to8to.com##.ad-commom
@@ -22454,6 +22470,7 @@ zzzyk.com###Tinfo
 ||2jse6.icu^
 ||2jse6.icu^
 ||2kandy.com/js/123/
+||2lb.cc^
 ||2pogg4c.cn^
 ||2pwja.cn^
 ||2qpqwkx.cn^
@@ -25710,6 +25727,7 @@ zzzyk.com###Tinfo
 ||baijs02.shop^
 ||baijs02.xyz^
 ||baijs03.xyz^
+||baijs04.shop^
 ||baijs05.xyz^
 ||baijs06.xyz^
 ||baijs07.xyz^
@@ -28640,6 +28658,7 @@ zzzyk.com###Tinfo
 ||doujs02.xyz^
 ||doujs03.shop^
 ||doujs03.xyz^
+||doujs04.shop^
 ||doujs05.xyz^
 ||doujs06.xyz^
 ||doujs07.xyz^
@@ -29504,6 +29523,7 @@ zzzyk.com###Tinfo
 ||fbqrt.cn^
 ||fbvskv3.com^
 ||fc-feed.cdn.bcebos.com^
+||fc.3dmgame.com^
 ||fc.gaizong.cn^
 ||fc.tiepan.cn^
 ||fc.zuixinchao.com^
@@ -33513,6 +33533,7 @@ zzzyk.com###Tinfo
 ||kwongwah.com.my/wp-content/plugins/dibs_engine/js/dibs_popup.js
 ||kwqnki.xyz^
 ||kwtgntyu.xyz^
+||kwumme.xyz^
 ||kxcp365.com^
 ||kxcp365.com^
 ||kxd56.com/qq.js
@@ -34775,6 +34796,7 @@ zzzyk.com###Tinfo
 ||mfaec.cn^
 ||mfav88.com/yinzi/
 ||mfe.paqpq.com^
+||mfemiac.icu^
 ||mflybplr.xyz^
 ||mfnfylx.xyz^
 ||mfoevvy.com^
@@ -35342,6 +35364,7 @@ zzzyk.com###Tinfo
 ||mymqcy.xyz^
 ||mypianku.net/ajax/MyJs/
 ||myqcloud.com/ad/
+||myqcloud.com/uploads/m3u8/*.ts$third-party
 ||myqcloud.com/wp-content/uploads/huoxingyun.
 ||myqcloud.com^$domain=hfg.80579.net
 ||myreadcloud.com^
@@ -37024,6 +37047,7 @@ zzzyk.com###Tinfo
 ||qdwnlkdw.com^
 ||qdzilh.cn^
 ||qdzyspjx.com^
+||qedgcxi.cn^
 ||qedvcu.com^
 ||qeedaa.xyz^
 ||qejjhnq.cn^
@@ -37991,6 +38015,7 @@ zzzyk.com###Tinfo
 ||saohu*.com/config/json/cctv.json?
 ||sasadown.cn/ad/
 ||sasadown.cn/source/plugin/drk_ledadv/
+||sascwt.cn^
 ||sasisa.ru/images/*banners
 ||sass.hk/images/hengfu.jpg
 ||sass.hk/js/ggcn.js
@@ -38426,6 +38451,7 @@ zzzyk.com###Tinfo
 ||siguatv.cn^
 ||sihbb.com/yang/
 ||sikapo.top^
+||sikaq.top^
 ||sikaq.top^
 ||silkroad.csdn.net^
 ||siluke.tw/js/count.js
@@ -40244,6 +40270,7 @@ zzzyk.com###Tinfo
 ||ufjslit.top^
 ||uflybplr.xyz^
 ||ufolm.com^$third-party
+||ufvauj.cn^
 ||ufz.doesxyz.com^
 ||ug.snssdk.com^
 ||ugbjqwe.com^
@@ -40255,6 +40282,7 @@ zzzyk.com###Tinfo
 ||ugooo.cc^
 ||ugpibtpk.xyz^
 ||ugtbit.icu^
+||ugugct.xyz^
 ||ugvbsrbht.xyz^
 ||uhjxitn.xyz^
 ||uhwnrfu.cn^
@@ -40940,6 +40968,7 @@ zzzyk.com###Tinfo
 ||w.inews.qq.com^
 ||w.uohz.cn^
 ||w.xiaopiaoyou.com^
+||w0054.com^
 ||w0057.com^
 ||w0079.com^
 ||w0082.com^
@@ -41866,6 +41895,7 @@ zzzyk.com###Tinfo
 ||xdmnlxtu.xyz^
 ||xdnice.com/themes/xdnice/public/assets/images/quna.png
 ||xdnice.com/themes/xdnice/public/assets/images/xdnice.png
+||xdns.asia^
 ||xdolhlwq.xyz^
 ||xdrig.com^
 ||xdrig.com^
@@ -42093,6 +42123,7 @@ zzzyk.com###Tinfo
 ||xliffnsc.xyz^
 ||xlivrdr.com^
 ||xlkdbbvy.xyz^
+||xlmdtiyqbkygtfkh.com^
 ||xlnvvbk.xyz^
 ||xlog.jd.com^
 ||xlplrhum.xyz^
@@ -45306,7 +45337,7 @@ zzzyk.com###Tinfo
 8591.com.tw##div#top-ad,div#active_banner,div[class^="act"],div#ox-md,[class^="ox-ad"]
 8684.cn##DIV[id^="auto"],[id^="adv"]
 8684.cn,8684.com##div[id*="adid"]
-8684.cn,8684.com,iyxdm.net,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
+8684.cn,8684.com,iyxdm.org,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
 9312.net##.pop-up
 9553.com##.high-down
 9553.com##[src^="/kchtml/img/"],article.mg-t5[style],.mg-t10[style]
