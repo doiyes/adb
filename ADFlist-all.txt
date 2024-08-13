@@ -1,10 +1,11 @@
 [Adblock Plus 2.0]
-! Checksum: 9jxks6ZKXU//YEvAO9J8DA
+! Checksum: 3TxdwmJT6SJ8llrb6PFW3w
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202408122220
+! Version(Last Modified): 202408132217
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
+-1325890192.cos.
 -1321533417.cos.
 -1316899192.cos.
 -1316632262.cos.
@@ -2843,6 +2844,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /\/uploads\/\d{4}\/\d{2}\/(?!85466|banner)[_0-9a-zA-Z]+\.(?:gif|jpg)$/$image,~third-party,domain=eromoji.com
 /^(?!.*(authkong.com|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|imgsmail.ru|cloudflare.net|(\/\/|\.)x\.com)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top|634.tv|myhaitang.cc|ckplayer.vip
 /^https?:\/\/m\.anysex\.com\/[a-zA-Z]{1,4}\/[a-zA-Z]+\.php$/$image,script,domain=m.anysex.com
+/_xa/ads
 /_xa/ads?
 /_xa/ads_
 /a-d-s/*
@@ -7068,7 +7070,6 @@ bilibili.com#$?#.bili-video-card > div[class]:only-child:matches-css(before, con
 bilibili.com#$?#.container > div.floor-single-card:has(> div.skeleton) { remove: true; }
 bilibili.com#$?#.ex-card-common:has(.gg-icon) { remove: true; }
 bilibili.com#$?#.van-slide > .item:has(.bypb-icon) { remove: true; }
-bilibili.com#$?#.vui_carousel > .vui_carousel__slides > div[class^="vui_carousel__slide"]:has(> div[class]:only-child a[href^="//cm.bilibili.com/cm/api/"]) { remove: true; }
 bilibili.com#?#.eva-extension-body > .bili-video-card:-abp-has(.bili-video-card__info--ad)
 bilibili.com#?#.video-card-common:-abp-has(>.card-pic>a[href*="cm.bilibili.com"][data-target-url])
 bilibili.com#?#.video-page-special-card-small:-abp-has(>.card-box>.info>a[href^="http"]:not([href*=".bilibili.com/"]))
@@ -8653,6 +8654,7 @@ dexerto.*##div[id^="dex-ad-mobile-"]
 dexerto.*##div[id^="dex-amp-ad"]
 dexerto.*#?#article > div.flex:has(> div:contains(Article continues after ad))
 dexerto.*#?#main.isolate div[data-cy="Container"]:has(> div.col-span-full > div.flex > div.flex > div.top-0 > div[data-ad-unit-id])
+dexerto.com##.flex > div[class^="border"]:has(> div[id^="FooterAd_Mobile"])
 dfpan.com##div[style*="img.com/"]
 dhakatribune.com##reachableclick
 dhaomu.com##.ceo-ad
@@ -10526,6 +10528,7 @@ gfan.com##.downs
 gfan.com##DIV.wp.a_h,div.ad_list,DIV.section.section_ad,div.wpp,div[class^="fter "],.downs,IFRAME[src="plugin.php?id=gfan_viewpic:gfan_adView"],div#sitefocus
 gfan.com##div[style="width:960px;height:90px;margin-top:10px;"]
 gfan.com,gfan.net.cn#@##shareBox
+gfinityesports.com##.article-full__article-content > div[class]:has(> div.htl-inarticle-container)
 gfsoso.99lb.net##center > #logo-gf ~ * h7[style="color: red;"]
 gfsoso.99lb.net##center > #logo-gf ~ h7[style="color: red;"]
 gfsoso.99lb.net##center > a[target="_blank"][rel="nofollow"] > img
@@ -14612,6 +14615,7 @@ maplestage.com##div[class*="-page-module__right"] > div > div[style="margin-bott
 maquia.hpplus.jp##.SP_headerbanner
 marieclaire.com.tw##.adInnerMpu
 mariefrance.fr##.rwad-with-placeholder
+market.yandex.*##div[id="/content/header/headerPromo"]
 mashina.kg##.append-branding-block
 mashina.kg##.mobile-inside-cars
 mashingup.jp##.p-FloatPost
@@ -18947,6 +18951,8 @@ tom.com###popupDivgame
 tom.com##div#popupDivgame,.modad
 tompda.com##A.tsxb,div.shop_right_news2,embed[width="980px"][height="60px"],div[pageid],iframe[src^="http://www.tompda.com/adv/"],iframe#tsdxb_frame
 tomsguide.com##.van_vid_carousel
+tomshw.it###sticky_ads
+tomshw.it##.customads
 tongfengqu.com
 tongren.gov.cn###tanchukuang
 tongxiang.net##.mmver.w-1200
@@ -28792,6 +28798,7 @@ zzzyk.com###Tinfo
 ||dsdydk.com^
 ||dshangyan.com/pc/advertising/
 ||dshapv.xyz^
+||dshjbn.xyz^
 ||dshrx.com^
 ||dsjhcgvhjsvc.com^
 ||dsjkbcjsjkbvs.com^
@@ -33465,6 +33472,7 @@ zzzyk.com###Tinfo
 ||krt.asycxtz.cn^
 ||krtlisd.top^
 ||krutilka.net^
+||krutvncd.top^
 ||krw.yrehdfer.com^
 ||ks66666661.com^
 ||ksadrewrty.com^
@@ -36996,6 +37004,7 @@ zzzyk.com###Tinfo
 ||pxblmj.com^
 ||pxene.com^
 ||pxl2015x1.com^
+||pxqqytk.icu^
 ||pxrs6.cn^
 ||pxtjfmv.xyz^
 ||pxx.tnklrs.cn^$third-party
@@ -38386,6 +38395,7 @@ zzzyk.com###Tinfo
 ||shbzegs.cn^
 ||shbzikj.cn^
 ||shbzjgs.cn^
+||shbzjkj.cn^
 ||shbzkkj.cn^
 ||shbzlkj.cn^
 ||shbzngs.cn^
@@ -39939,6 +39949,7 @@ zzzyk.com###Tinfo
 ||trafficjam.cn^$third-party
 ||trafficjunky.net^
 ||trafficjunky.net^
+||trafficmanager.net^$domain=xpshuku.com
 ||trafficstars.com$third-party
 ||trafficstars.com^
 ||trafforsrv.com^
@@ -40577,6 +40588,7 @@ zzzyk.com###Tinfo
 ||uucm.cn^
 ||uuff.com^
 ||uugtv.com/x/app/videoSpread?
+||uuiaoq.top^
 ||uuishsa.com^
 ||uujhveglpo.xyz^
 ||uum6.com/$third-party,~font,popup
@@ -42090,6 +42102,7 @@ zzzyk.com###Tinfo
 ||ximit8023.maijijo.com^
 ||xin.ycitys.cn/code^
 ||xinbo-lora.cn^
+||xinchl.xyz^
 ||xindream.cn^
 ||xinerdact.com^
 ||xineurope.com/static/image/banner/
@@ -42552,6 +42565,7 @@ zzzyk.com###Tinfo
 ||ycmedia.cn^$third-party
 ||ycmgeb.icu^
 ||ycqbgm.xyz^
+||ycwuoq.xyz^
 ||yd.gxdianhua.com^
 ||yd.linjuyihao.com^
 ||ydazjxso.xyz^
@@ -45440,6 +45454,7 @@ zzzyk.com###Tinfo
 17173.tv.sohu.com##div.list-beauty,div#playAdLeftTop.adbox,DIV.win17173.maximize
 18183.com###gsBtn
 18183.com###leftspringgg,#bottombar,.topwap_frame,.btns,.bottomwap_frame,#bgindex_bgflad,.ad,.ad_top,.ad_min,.ad_long
+18183.com##.ad1
 18183.com##.down_url
 18183.com##.pcBtn > a[href*="@"]
 28188.com##.couplet_ad,img[src^="http://59.36.101.209"]
