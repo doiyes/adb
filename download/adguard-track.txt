@@ -233,7 +233,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||sec.webeyez.com^$third-party
 ||michiganrobotflower.com^
 ||uid.mediacorp.sg^
-||exacttarget.com^
+||exacttarget.com^$~subdocument,third-party
 ||analytics.launch.bz^
 ||qobuz.surveysparrow.com^
 ||srvr.dmvs-apac.com^
@@ -10009,6 +10009,7 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||sc2.constantcontact.com^
 ||sci.intuit.ca^
 ||sci.quickbooks.com^
+||scmetrics.exacttarget.com^
 ||scode.randomhouse.com^
 ||sconnectstats.mckesson.com^
 ||scs.allsecur.nl^
@@ -36648,7 +36649,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||trace.mjyx.com^
 ||event-router.chime.com^
 ||t3.cdnpure.com^
-||counter.wikiwiki.jp^
 ||applytics.nordvpn.com^
 ||d.analyticsmania.com^
 ||gtm.lercio.it^
@@ -37249,7 +37249,6 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 ||storelog.kode.co.kr^
 ||telemetry*.transcend.io^
 ||ampltd2.medal.tv^
-||l.bfmtv.com^
 ||stats.debatdirect.tweedekamer.nl
 ||cologger.shopping.naver.com^
 ||analytics.dugun.com^
@@ -70448,6 +70447,8 @@ zzb.1897pentagram.com$image
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
 !+ NOT_OPTIMIZED
 /.well-known/private-click-measurement
+/modules/kixelltag/views/js/kst-$script
+/modules/opartstat/*
 /wpm/strict/app/web-pixel
 /openrtb2/auction
 /gciaf/prod/*-GCIAF-STANDARD
@@ -71005,6 +71006,8 @@ _tracking.php?b=
 /prod/dfm/fp.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 /prod/dfm/g2i.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
+||a.poki-cdn.com/t2.js
+||up.clickiocdn.com/*/log/$image
 ||letgo.com/chunks/modern/*-FingerPrintWrapper.*.js
 ||api.strats.gg/internal/api/*/visits
 ||cdn.trackcollect.com/metrics/
@@ -71332,8 +71335,6 @@ wanchan.jp##.recommend_header + div[style^="aspect-ratio:"]
 /AppMeasurement_Module_ActivityMap.min.js$domain=petco.com
 ||ancestrycdn.com/webui-unifiedtracking/
 ||csp.godaddy.com/eventbus
-||att.com/scripts/ssaf_universal_client/prod/ssaf-uc.js
-||att.com/scripts/ssaf_universal_client/prod/ssaf-uc.js$script,redirect-rule=noop.js
 ||webapi.wral.com/api/analytics/
 ||api.wral.com/witness/v1/measurement
 ||organiccdn.io/assets/sdk/monitor.unit-sdk.js
@@ -75981,6 +75982,7 @@ inapps.appsflyersdk.com^
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js,domain=expressvpn.com
 !#################
 @@||mc.yandex.ru/metrika/tag.js$domain=banki.ru
+@@||apps.bazaarvoice.com/apps/vendors/bv-ui-core_logger@*_bv_chunk.js$domain=lenovo.com
 @@||tags.bkrtx.com/js/bk-coretag.js$domain=miclaro.com.hn
 !+ PLATFORM(ios, ext_safari, ext_android_cb, ext_ublock)
 @@||s.yimg.com/ss/analytics-*.js$domain=tw.news.yahoo.com|tw.sports.yahoo.com|tw.stock.yahoo.com
