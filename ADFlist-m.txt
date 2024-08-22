@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Xawjho31sR062lhJ14pcSw
+! Checksum: /a1EFWWoEZfIfmE1Z5AsUg
 ! Title: ADFlist-Mobile
 ! Expires: 6 hours
-! Version(Last Modified): 202408212219
+! Version(Last Modified): 202408222219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自AdGuard 移动规则、Hacamer、ADgk、酷安@大萌主等，仅供测试使用！ 
 
@@ -90,6 +90,7 @@
 ##.zozoads
 ##A > IMG[alt][src*='resources/images/']
 ##A#floating-banner
+##A.gotoclick[adv_id]
 ##A.toptxt[target='_blank']
 ##A.wrapper_bg_c.hidden-xs
 ##ASIDE[id^='custom_html-']
@@ -453,6 +454,7 @@
 ##div#hengfu_wap_vod_xia > a
 ##div#liveline > l,div#liveline > ll
 ##div#main.main.read_page [id^="set_adds"]
+##div#notice_container > div.event-notice > div.modal
 ##div#nr_body.nr_all.c_nr div.show-app2
 ##div#page-back DIV.container.clearfix div > A > IMG[src]
 ##div#playlistbtn > A[href='/ht.html']
@@ -1311,6 +1313,8 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||dwstatic.com/b=amkit
 @@||e.crashlytics.com/spi/v2/events$app=com.gedoor.monkeybook
 @@||ecitic.com^
+@@||ecmb.bdimg.com/*.jpg
+@@||ecmb.bdimg.com/*.png
 @@||eiv.baidu.com/fcimg
 @@||exoclick.com/iframe.php?*=2596969&$domain=jav777.cc
 @@||f*.baidu.com/it/u=*,*&fm=$domain=baidu.com
@@ -7635,7 +7639,6 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||eclkspbn.com^
 ||eclmy.vip/static/js/fc.js
 ||eclmy.vip/static/js/xf.js
-||ecmb.bdimg.com^
 ||eco.taobao.com^
 ||ecoefh.com^
 ||ecomgxh.kuwo.cn^

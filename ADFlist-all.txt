@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: CyrIO0h943u1fT53qq9WlA
+! Checksum: 0KTmiteRS/EMGlB1XCx/1A
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202408212219
+! Version(Last Modified): 202408222219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1325890192.cos.
@@ -922,6 +922,7 @@
 ##.zozoads
 ##A > IMG[alt][src*='resources/images/']
 ##A#floating-banner
+##A.gotoclick[adv_id]
 ##A.toptxt[target='_blank']
 ##A.wrapper_bg_c.hidden-xs
 ##ASIDE[id^='custom_html-']
@@ -1474,6 +1475,7 @@
 ##div#hengfu_wap_vod_xia > a
 ##div#liveline > l,div#liveline > ll
 ##div#main.main.read_page [id^="set_adds"]
+##div#notice_container > div.event-notice > div.modal
 ##div#nr_body.nr_all.c_nr div.show-app2
 ##div#page-back DIV.container.clearfix div > A > IMG[src]
 ##div#playlistbtn > A[href='/ht.html']
@@ -4721,6 +4723,8 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||ecitic.com/source/*/pop
 @@||ecitic.com^
 @@||ecma.bdimg.com/holmes/*.svg
+@@||ecmb.bdimg.com/*.jpg
+@@||ecmb.bdimg.com/*.png
 @@||eden.international/script/ad_banner/
 @@||eden.org.tw^*/ad_banner/
 @@||edgesuite.net^*/ad.css?
@@ -5507,7 +5511,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||wl.jd.com/wl.js
 @@||wuyong.fun^$generichide
 @@||wuyou.com.cn/Js/ad.js
-@@||wwads.cn/js/makemoney.js$domain=nodejs.cn
+@@||wwads.cn/js/makemoney.js$domain=baomidou.com|nodejs.cn
 @@||www.avtbf.com/*.css$domain=avtbf.com
 @@||www.bilibili.com/html/iframemessage.html
 @@||www.gamersky.com/gsinc/$subdocument
@@ -7208,8 +7212,8 @@ blog.livedoor.com##.MdAdBox01
 blog.livedoor.com#?#.attention > ul.box > li.large > script:upward(1)
 blog.livedoor.jp###article-contents > a[href^="https://px.a8.net/svt/ejp"][target="_blank"]
 blog.livedoor.jp##.btn-ldb-bottomAdd
-blog.livedoor.jp##.no-pc:has(> iframe[src*="//aladdin.genieesspv.jp/"])
 blog.livedoor.jp##:matches-path(/vtmc49533)#article-contents > img[src^="https://images-na.ssl-images-amazon.com/images/I/"]
+blog.livedoor.jp##iframe[src^="http://aladdin.genieesspv.jp/"]
 blog.reimu.net##div.entry-content > pre:style(display:block !important;)
 blog.sina.cn###pl-ad-after-comments
 blog.sina.cn###pl-adtop-bar
@@ -7992,6 +7996,7 @@ cmsky.com##.textwidget a[href^="http"]:not([href*="cmsky"])
 cn-healthcare.com##.fh_ad_wrap
 cn-healthcare.com##.fh_advent_wrap
 cn.bing.com###footer
+cn.bing.com##.b_bza_pole
 cn.bing.com#?##b_results > li:-abp-has(.b_adProvider)
 cn.bing.com,www.bing.com,www4.bing.com$$div[class="BottomAppPro"]
 cn.msn.com##DIV.topAd.cf,DIV.ad,div.left_Bg,div.right_Bg,div.bottomAd.cf
@@ -10691,6 +10696,7 @@ google.de,spiegel.de,www-spiegel-de.cdn.ampproject.org##amp-layout[width="300"][
 google.de,sueddeutsche.de##amp-ad + div[class^="css-"]
 googleads.g.doubleclick.net###mys-wrapper
 gooooal.com##[id^="ad_"],[class^="ad-"]
+goosedaily.com##.lightboxbnr
 gori.me###primecaster-ad_slot_XaON
 gori.me##.ad-below-single-header
 gori.me##.mobile_adsense_archive
@@ -10763,6 +10769,7 @@ gsxt.gov.cn#@#.ads-right
 gter.net##.bottom
 gtloli.live,gtloli.one##.sd_recpic
 gtloli.one###topbanner
+gtplanet.net##.mobile > a[href*="/out/http"] > img
 gtplanet.net##div[style="text-align:center;margin:30px 0 0;"] > a > img
 gu.qq.com##[boss*="click-ad"]
 guagua.cn###floatRoomDiv
@@ -29130,7 +29137,6 @@ zzzyk.com###Tinfo
 ||eclmy.vip/static/js/xf.js
 ||ecma.bdimg.com^
 ||ecmb.bdimg.com^
-||ecmb.bdimg.com^
 ||ecmwsx.icu^
 ||eco.taobao.com^
 ||ecoefh.com^
@@ -32539,6 +32545,7 @@ zzzyk.com###Tinfo
 ||jessicarace.com^
 ||jetlwsa.top^
 ||jewelryedu.cn^
+||jewruta.top^
 ||jf.10010.com^
 ||jf2v.mnpool.cn^
 ||jfjslia.top^
@@ -33320,6 +33327,7 @@ zzzyk.com###Tinfo
 ||kgidskid.top^
 ||kgimg.com/public/root//images/hardware.jpg
 ||kgqcse.xyz^
+||kgubus.xyz^
 ||khcsvdc.icu^
 ||khgj.cn^
 ||khgjfm16.com^
@@ -37045,6 +37053,7 @@ zzzyk.com###Tinfo
 ||pwbuhb.xyz^
 ||pwcegau.icu^
 ||pwddhc.xyz^
+||pwfqjp.xyz^
 ||pwhkfd.xyz^
 ||pwhtip.icu^
 ||pwuxnr.cn^
@@ -37705,6 +37714,7 @@ zzzyk.com###Tinfo
 ||rdtuijian.com^
 ||rdufuxr.icu^
 ||re.taotaosou.com^
+||reacdf311.cn^
 ||reachableads-av.*.amazonaws.com^
 ||reachmax.cn^
 ||reactor.xingye.work^
@@ -37847,6 +37857,7 @@ zzzyk.com###Tinfo
 ||rkgwzfwjgk.com^
 ||rksnqq.com^
 ||rktddv.xyz^
+||rkwxfi.xyz^
 ||rkxy.com.cn/js/text_
 ||rkzby.cn^
 ||rl.go2yd.com^
@@ -40107,6 +40118,7 @@ zzzyk.com###Tinfo
 ||tubous.fuckandcdn.com/tubous/tubousstatic/ads/mobile/
 ||tudown.com^
 ||tudxhzj.cn^
+||tufzdj.xyz^
 ||tuhzjrr.cn^
 ||tui.cnzz.net^$third-party
 ||tui.gtimg.com//res/
@@ -40394,6 +40406,7 @@ zzzyk.com###Tinfo
 ||ueg.cc^
 ||uejdsw.com^
 ||uekmhvbb.xyz^
+||uerbgnkas.com^
 ||uessnah.icu^
 ||uetlwst.top^
 ||ueumdkc.cn^
@@ -40402,6 +40415,7 @@ zzzyk.com###Tinfo
 ||ufjslit.top^
 ||uflybplr.xyz^
 ||ufolm.com^$third-party
+||uftcfo.xyz^
 ||ufvauj.cn^
 ||ufz.doesxyz.com^
 ||ug.snssdk.com^
@@ -41253,6 +41267,7 @@ zzzyk.com###Tinfo
 ||wdxxx.top^
 ||wdzwd.xyz^
 ||we560.com/js/*.js
+||weacdf211.cn^
 ||weagehn.icu^
 ||weareqy.com^
 ||weather-analytics-events.apple.com^
@@ -43039,6 +43054,7 @@ zzzyk.com###Tinfo
 ||ytelc.com^
 ||ytelc.com^$third-party
 ||ytezym.xyz^
+||ytghtq.xyz^
 ||ytjzqde.xyz^
 ||ytoeyxz.icu^
 ||ytqeavc.icu^
