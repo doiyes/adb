@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: yWXDUmrBxjXeVS63IcKDpA
+! Checksum: YQHOTAnLDmQjFJCq0RfzdA
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202408282217
+! Version(Last Modified): 202408292219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1325890192.cos.
@@ -3915,7 +3915,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /websales_push_*_big.php?id=
 /wejs/sc?gp=
 /widget/spage_game_tab/$domain=tieba.baidu.com
-/widgets/exo$domain=mangapanda.com|memecenter.com|mangareader.net|animeland.tv|agoodanime.co|animeflv.net|toonova.net|gogoanime.in|kiss-anime.me|kimcartoon.me
+/widgets/exo$domain=animeland.tv|aanimeflv.net|kiss-anime.me
 /wiseatom/banner/pack_
 /wp-content/plugins/upprev/*
 /wp-content/themes/iMovies/js/tc_
@@ -4996,7 +4996,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||kfcclub.com.tw/web/*/ad
 @@||kfcorder.com.tw/web/Script/Analytics.js
 @@||kfcorder.com.tw^*/Advert
-@@||kimcartoon.me/ads/fbMob.aspx
 @@||kissjav.com^$generichide
 @@||kk665403.pixnet.net^$generichide
 @@||kocaelibarisgazetesi.com/images/banner/l3oo.jpg
@@ -6056,6 +6055,8 @@ anime2you.de##.td-ss-main-content div[class^="anime-content"]
 animecomic-pass.com###article-contents > div[align="center"] > span[style="font-size: 81.25%;"]
 animego.org##div[class^="mb-"][style="min-height: 210px"]
 animego.org##div[style="min-height: 290px"]
+animeland.tv,animeflv.net,kiss-anime.me##div[class^="ads"]
+animeland.tv,animeflv.net,kiss-anime.me##iframe[src*="/Ads"]
 animetvn.tv,eurogamer.de###mobile-ads
 animewld.club##.header-img
 aniporn.com##.header__item
@@ -7028,6 +7029,7 @@ bilgihanem.com##div[style*="min-height:250px;"][style*="min-width:250px;"][style
 bilibili.com###b_app_link
 bilibili.com###fixed_app_download
 bilibili.com###slide_ad + .ad-report
+bilibili.com##+js(json-prune, data.cm_info.ads)
 bilibili.com##.activity-slider[style="width: 1220px;"]
 bilibili.com##.ad-e1
 bilibili.com##.ad-f
@@ -7226,6 +7228,7 @@ blog.sina.cn##div.item_hide+div,#pl-blog-artad
 blog.sina.com.cn###topAdvertise,DIV#ramdomVisitDiv,DIV[style^="position: fixed; width: 140px; height: 330px; "],#module_1006
 blog.sina.com.cn##div[style*="WiDTH: 200px;"][style$="HeiGHT: 300px"]
 blog.weeiy.com##DIV.widget.d_banner,DIV.banner.banner-post
+blog.with2.net##.adsNative
 blog.zhheo.com#@##footer-banner
 blog47.fc2.com#?##ad_header + center > ins.widget-banner:upward(1)
 blog47.fc2.com#?#.entory_more > center > ins.widget-banner:upward(1)
@@ -8016,6 +8019,9 @@ cnbctv18.com##.amptaboola
 cnbctv18.com##.amptaboolaMid
 cnbctv18.com##.bandavmob
 cnbctv18.com##.below-summary-ad
+cnbctv18.com##.inart-wrp
+cnbctv18.com##.inart-wrp + br
+cnbctv18.com##.taboola_section
 cnbctv18.com#$#.mobile-bottom-nav { bottom: 0 !important; }
 cnbeta.com##.cbv,.tigerstock,div.time,ins.adsbygoogle,[href="http://www.dangbei.com/?cnbeta"],[class="item cooperation"],.cbhelp,[href^="http://click.aliyun.com/m/"],.commt-r,#fixed_area,#aswift_0_expand,.other_news,a[href^="https://www.tigerbrokers.com/market/"],.article-global,.cnbeta-side-sponsor,.cbv810,[id^="dfb-wrapper-"]
 cnbeta.com##.wdj_box
@@ -8720,7 +8726,10 @@ didispace.com##.widget-wrap > p[style="text-align: left;padding-bottom: 20px;lin
 didown.com##[class*="i-gg-"],.program-header
 diediao.com###buffer
 diediao123.com##[class$="_ad"]
+digit.in##.add_box_top
 digit.in##.footerCatfishAdArea
+digit.in##.widget:empty
+digit.in##.wordp-sticky-footer
 digit.in##iframe[src^="/blockarticledetailad/"][title="Advertisement"]
 digit.in#?#body > .text-center.MT20:contains(/^Advertisements$/)
 digitalocean.com#@#.ad-content
@@ -9793,7 +9802,6 @@ feng.com##div[class^="ad_90"]
 fengche530.com##body > div[style="width:100%;height:120px;"]
 fengche530.com##div[id^="show-"]
 fengchedm.com###H_pla1111y2
-fengfuyi.com##body a[target="_blank"] > img
 fenghuage.com###adfdiv,#shp_banner
 fenghuo.in##.mimi
 fenghuozhongwen.com###mi
@@ -13084,7 +13092,7 @@ kinogo.biz#$#body { margin-top: 0 !important; }
 kinonews.ru##.place2
 kinonews.ru##div[style^="max-width:728px"]
 kisscartoon.me##.wrap > [style] > div[style^="height: 250px;"]
-kisscartoon.me,mangapanda.com,memecenter.com,mangareader.net,animeland.tv,goodanime.co,animeflv.net,toonova.net,gogoanime.in,kiss-anime.me###adsFloat1
+kisscartoon.me,animeland.tv,animeflv.net,kiss-anime.me###adsFloat1
 kissjojo99.com###text-16
 kissjojo99.com##.g-adv
 kissjojo99.com##.single-top
@@ -14410,7 +14418,6 @@ m.yahoo.co.jp##.PremiumFirst
 m.yelp.com##div[class*="yelp-ad"]
 m.yeniakit.com.tr##.sticky-mobil-new
 m.yicai.com##.crystalAD
-m.yingshidaquan.cc##.topmessage
 m.ynet.co.il##._adunit_
 m.ynet.co.il##div[id^="GoogleAdStrip"]
 m.youdao.com##div:nth-child(11)
@@ -14546,8 +14553,6 @@ mangabz.com###bb1
 mangabz.com###cc1
 mangabz.com###cc2
 manganelo.com##div[style*="width: 300px;"][style*="height: 250px;"]
-mangapanda.com,memecenter.com,mangareader.net,animeland.tv,goodanime.co,animeflv.net,toonova.net,gogoanime.in,kiss-anime.me##div[class^="ads"]
-mangapanda.com,memecenter.com,mangareader.net,animeland.tv,goodanime.co,animeflv.net,toonova.net,gogoanime.in,kiss-anime.me##iframe[src*="/Ads"]
 mangapark.io##main > div:has(> div.px-3 > a[href][target="_blank"][q\:key="CY_1"])
 mangapedia.com#$##fixed_footer { display: none !important; }
 mangapedia.com#$#.PG_Nkeyword #anchorTop  { bottom: 20px !important; }
@@ -15341,6 +15346,7 @@ mzyz.com###idTransformView2
 n-tv.de##.ems-slot
 n-tv.de##.topbanner-mobile
 naekranie.pl##.screening-mobile
+nagpurtoday.in##.top-mobileadvs
 naifei.im##.tg_w
 naifei.im##div[class^="wp-none"]
 naifei.im##div[style="position: fixed;bottom: -10px;right:0;z-index:999;width:250px"]
@@ -16100,7 +16106,7 @@ osusume.mynavi.jp##div[data-myanalysis="home-widget"]
 osusume.mynavi.jp##div[data-myanalysis="sidemenu-ad"]
 otakotaku.com##div[id^="im-ADS_"]
 otakuma.net##body .banner-adsense
-otakuma.net,nikkan-gendai.com,ranking.goo.ne.jp,m.hellporno.com,topics.smt.docomo.ne.jp,rank-king.jp,kun.uz,m.lenta.ru,m.aydin24haber.com,m.xcum.com,m.alphaporno.com,m.yourlust.com,m.3movs.com,m.sexu.com,m.yingshidaquan.cc##body .banner
+otakuma.net,nikkan-gendai.com,ranking.goo.ne.jp,m.hellporno.com,topics.smt.docomo.ne.jp,rank-king.jp,kun.uz,m.lenta.ru,m.aydin24haber.com,m.xcum.com,m.alphaporno.com,m.yourlust.com,m.3movs.com,m.sexu.com##body .banner
 otona-life.com##.ad_minh_sp
 otonanswer.jp##.side-box-repeat > div[style="min-height: 280px;"]
 otonanswer.jp##.side-box-repeat > div[style="min-height: 315px;"]
@@ -16570,7 +16576,7 @@ porndr.com##div[style="text-align: center; display: block; margin: 0px 0px 10px;
 porner.xxx,fullvideos.xxx,omg.xxx,4kporno.xxx,fullporn.xxx,fullporno.xxx,freepornvideos.xxx##.ft
 pornerbros.com,fux.com##.video-list-top-ad
 pornerbros.com,porntube.com##.interstitial
-porngo.com,xxxfiles.tv##.center-spot
+porngo.com##.center-spot
 pornhat.*##.bn-title-mobile
 pornhd.com###adhesionZone
 pornhd.com##+js(abort-on-property-read, popUnderUrl)
@@ -19682,7 +19688,6 @@ vse-shutochki.ru##body > div[class="hidden-desktop post"]
 vsping.com##.cell > span > a[href]:not([href*=".vsping.com"])
 vsping.com##div[style^="border-radius: 10px; box-shadow"]
 vtc.vn##.sys-ads
-vtuber-matome.com##.AD-frame
 vuejs.org##.text-ad
 vuetifyjs.com##.v-sponsors
 vulture.com##.nym-ad
@@ -21118,14 +21123,6 @@ yaraon-blog.com###widgetarea_underpager_sp
 yaraon-blog.com##.searcharea + p + center
 yaraon-blog.com##[class^="AM"]
 yaraon-blog.com##div[id^="widget_smalist"]
-yasehub.com###app > div.top-banner + fieldset
-yasehub.com##.aasd-text
-yasehub.com##.aasdwa
-yasehub.com##.container > div[class] > div#list_asiall > div a[target="_blank"] > img
-yasehub.com##.container > fieldset[style*="text-align: center; border: 1px solid"]
-yasehub.com##.video-thumb > .video-thumb-image[style^="background-image: url('https://static2.yaseok.com/uploads/"]
-yasehub.com##div[style*="position: absolute;"][style*="text-align: center;"][style*="align-items: center;"]
-yasehub.com#?#.video-list > ul > li.video-item:has(> div[class] > .video-thumb > .video-thumb-image[style^="background-image: url('https://static2.yaseok.com/uploads/"])
 yasem5.com###cdaas-rand
 yasem5.com##a[href*="yasem5.com/go"][target="_blank"]
 yatu.tv###a_d1
@@ -21254,7 +21251,6 @@ youdao.com##.dict-dl
 youdao.com##.sidebar-ft,div#topImgAd
 youdao.com#@#.open-share
 youdao.com#@#.share-text
-youflix.is##main > #detail_main + div[style="margin-bottom:-20px;"] > .content_vlist
 youivr.com##.header-widget-region
 youjizz.com###mobileRollAd
 youjizz.com###underPlayerPr
@@ -24030,6 +24026,7 @@ zzzyk.com###Tinfo
 ||account.wps.cn^$replace=/"has_ad": 1/"has_ad": 0/
 ||acd.op.hicloud.com^$app=com.huawei.hwvplayer.youku
 ||acdf115.cn^
+||acdfwe113.cn^
 ||acdref117.cn^
 ||acdrewrf711.cn^
 ||acdwef114.cn^
@@ -28155,6 +28152,7 @@ zzzyk.com###Tinfo
 ||daima.jiazhao.com^
 ||daima.ssata.cn^
 ||daima.wauee.cc^
+||daima.wenkuwenku.com^
 ||daima.ysdui.com^
 ||daima.yuzhulin.com^
 ||dairzih.com^
@@ -28267,6 +28265,7 @@ zzzyk.com###Tinfo
 ||dc1.networkbench.com^
 ||dceuhnpc57.shop^
 ||dceuhnpc57.shop^
+||dchyjb.xyz^
 ||dciep.xyz^
 ||dclpjx.xyz^
 ||dcms.1688.com^
@@ -29397,6 +29396,7 @@ zzzyk.com###Tinfo
 ||erlpbwy.cn^
 ||erluankuan.com^
 ||ero-advertising.com^
+||erogaroku.com/ad/$domain=bakufu.jp
 ||eroioshiri.blogterest.net/regular/$subdocument
 ||eromanga-castle.com/famsiro1.html
 ||eromanga-musou.com/fammusou1.html
@@ -30158,6 +30158,7 @@ zzzyk.com###Tinfo
 ||gayide.com^
 ||gbc27.online^
 ||gbcnvip15.com^
+||gbfedashb4.fun^
 ||gbitcoin.cn^
 ||gblxtlo.xyz^
 ||gbrtyhnsc.xyz^
@@ -30282,6 +30283,7 @@ zzzyk.com###Tinfo
 ||gg163.net/js/163bbsad.js
 ||gg163.net/js/gg163ad.js
 ||gg2888.com^
+||gg3a.cc^
 ||gg3a.cc^
 ||gg86.pinggu.org^
 ||gg88.bj.bcebos.com^
@@ -30652,6 +30654,7 @@ zzzyk.com###Tinfo
 ||gtpxvpi.cn^
 ||gtrhnhg.cn^
 ||gts-ads.twistbox.com^
+||gtuavqu.icu^
 ||gtxkze.cn^
 ||guahao.cn/blank.gif?
 ||guang.sdsgwy.com^
@@ -35591,6 +35594,7 @@ zzzyk.com###Tinfo
 ||nadvideo.baidu.com^
 ||nadvideo2.baidu.com^
 ||naemailom.fun^
+||nagpurtoday.in/wp-content/uploads/2024/06/Untitled-design-2.gif
 ||nahgvfhs.xyz^
 ||naiep.xyz^
 ||naihyvz.cn^
@@ -36690,6 +36694,7 @@ zzzyk.com###Tinfo
 ||piaohua.com/js/yzz/$script
 ||piaoliang.com/js/all.js
 ||piaoliang.com/js/gg.js
+||piaotia.com/scripts/read/style
 ||pic*.58cdn.com.cn/brandpic/car^$app=com.ss.android.article.news
 ||pic.0597kk.com^
 ||pic.959.cn/media/js/
@@ -40458,6 +40463,7 @@ zzzyk.com###Tinfo
 ||uessnah.icu^
 ||uetlwst.top^
 ||ueumdkc.cn^
+||uewrutt.top^
 ||ufgg55.xyz^
 ||ufile.cc/crod.js
 ||ufjslit.top^
@@ -42974,6 +42980,7 @@ zzzyk.com###Tinfo
 ||ymm19.cc^
 ||ymmiyun.com^
 ||ymniqh.icu^
+||ymwjwe.xyz^
 ||ymyile.xyz^
 ||yncfwy.net^
 ||yncjsc.cn^
@@ -43862,6 +43869,7 @@ zzzyk.com###Tinfo
 ||zzsky.com/images/a_d_
 ||zztongyun.com/static/js/sh.
 ||zztongyun.com/static/js/sh.min.js
+||zztxfj.xyz^
 ||zztxr.cn^
 ||zzxedr.xyz^
 ||zzxlhwyp.com^
@@ -44963,6 +44971,7 @@ zzzyk.com###Tinfo
 163.com##.idx_tonglan_ad
 163.com##.idx_top_ad
 163.com##.imglist-bobo-app
+163.com##.js-open-app
 163.com##.kaola-ad
 163.com##.m-adv
 163.com##.m-slider-footer
