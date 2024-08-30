@@ -673,6 +673,10 @@ ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###resul
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .result ~ div:not([class]):not([style])
 /^(?!.*(authkong.com|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|imgsmail.ru|cloudflare.net|(\/\/|\.)x\.com)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top|634.tv|myhaitang.cc|ckplayer.vip
 $script,third-party,denyallow=authkong.com|rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|cloudflare.net|rabbitstream.net|x.com,_____,domain=wap.dmwenku.com|m.wfxs.tw|h.fkxs.net|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com|qiyoudy2.com|1yydstxt178.com|rouman5.com|feijisu20.com|iqb5.org|wap.xkushu.com|spoilertop.com|booktxts.com|bixia33.com|rouwenwu19.com|91porny.com|yznnw.com|vodtw.la|ckplayer.vip|uuread.tw|fengchedmp.com|aeahsck.cc|xiaoshubao.net
+enews.tw##.gadRightP
+enews.tw##.divADFrame
+enews.tw##div[id^="adFrame"]
+enews.tw##.newsCardForLeftAdGadCode
 bilibili.com##+js(json-prune, data.cm_info.ads)
 ||upload.xchina.biz/ad/
 ||xchina.click/upload/*.webp
@@ -4124,6 +4128,7 @@ newduba.cn###jq_youxi
 ##div[style="position: fixed;top: 60px;right:0;z-index:999;width:250px"]
 ##div[style^="position"][onclick^="window.open"]
 ##dl#listwoBox
+##.playtopad
 ##img#GGADIMG
 ##img#adv1
 ##img[data-link][data-src*="/u/"]:not([data-link*="/i/"])
@@ -4144,6 +4149,7 @@ newduba.cn###jq_youxi
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+###dip[href*=".tmall.com"]
 ###index_banner[src*=".meituan.net"]
 ##script + .header_rmb
 ##script + a[href] > img[src*="lbsugc.cdn.bcebos.com"]
@@ -4172,6 +4178,14 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||koauq.top^
+||ghjedashb6.fun^
+||kyuxym.xyz^
+||acasadf112.cn^
+||pofmnj.xyz^
+||qbsday.xyz^
+||xiuska.top^
+||oewrutk.top^
 ||zztxfj.xyz^
 ||gbfedashb4.fun^
 ||acdfwe113.cn^
@@ -17964,7 +17978,7 @@ weather.com.cn##div[class^="adpos"]
 silver.org.cn##div[class^="ads_"]
 xcar.com.cn##div[class^="adset"]
 hybbs.com##div[class^="adtop"]
-8684.cn,8684.com,iyxdm.org,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
+8684.cn,8684.com,iyxdm.org,iyxdm.one,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
 ifeng.com##div[class^="adv0"]
 ifeng.com##div[class^="adv1"]
 kumi.cn##div[class^="adz"]

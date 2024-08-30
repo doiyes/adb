@@ -36104,6 +36104,8 @@ biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||tags.news.com.au^$~script
 |piwik.
+||x.trvdp.com^
+||collector.superwall.me^
 ||tracker.grupanya.com^
 ||sapi.tremendous.com^
 ||services.haaretz.com^
@@ -68443,6 +68445,8 @@ zoho.alalikexpress.com$image
 zsb.1897pentagram.com$image
 zy.1897pentagram.com$image
 zzb.1897pentagram.com$image
+!+ NOT_PLATFORM(ios, ext_safari)
+/\/\/([0-9a-z]+\.){1,}[0-9a-z]+\.[a-z]{2,}\/[a-z]{8}\.js\?st=[0-9A-Z]{6,8}$/$script,~third-party,match-case
 /\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
 /^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
 /^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
@@ -69007,6 +69011,9 @@ _tracking.php?b=
 /prod/dfm/fp.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 /prod/dfm/g2i.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
 /prod/dfm/t8y9347t.min.js$redirect=noop.txt,important,domain=dailycamera.com,image,media,subdocument,stylesheet,script,xmlhttprequest,other
+||buy-eu.piano.io/checkout/offer/trackShow$domain=lalibre.be
+||static.quiq-cdn.com/chat-ui/plugin-google-analytics-*.js
+||rtings.com/api/event|
 ||ingesteer.services-prod.nsvcs.net/rum_collection|
 ||zoyaporn.com/js/jquery.iframetracker.js
 ||vanilla.futurecdn.net/*/media/shared/js/slide-analytics.*.js
@@ -72926,6 +72933,8 @@ link.gmapp*.net$image
 ||ya.ru/clck/
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 ||bing.com/fd/ls/
+click.contact.kamalaharris.com$image
+email.win.donaldjtrump.com$image
 node.bolt.eu*pixel$image
 click.instahyre.com$image
 referrer.disqus.com$image

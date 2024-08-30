@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: YQHOTAnLDmQjFJCq0RfzdA
+! Checksum: nmIaBo2JLShI47sDRZ/rlA
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202408292219
+! Version(Last Modified): 202408302218
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1325890192.cos.
@@ -162,6 +162,7 @@
 ###dbgg
 ###dgf_pc
 ###diads
+###dip[href*=".tmall.com"]
 ###divExoLayerWrapper
 ###div_top_ads
 ###downapp1
@@ -788,6 +789,7 @@
 ##.player_ggw
 ##.player_pic_link > [src*='/player.gif']
 ##.playtop.col-pd
+##.playtopad
 ##.plc > .a_p
 ##.pop[style="right: 10px;"]
 ##.popup + .shortcuts-m-overlay
@@ -806,6 +808,7 @@
 ##.qpdb + a[href]
 ##.qzdhf
 ##.qzhfaaa
+##.read-container [onclick='goAppHtml();']
 ##.readerListADbox
 ##.readmidad
 ##.recommended-grids > .file[style="margin: 5px 2px 5px 2px;"]
@@ -6031,6 +6034,10 @@ amp2.wiwo.de##div[id^="iqadtile"]
 amp2.wiwo.de#?#body > div > div.container:has(> amp-embed[type="outbrain"])
 amu520.com##[href="http://m.yilingxs.com/"],[href^="http://www.yilingxs.com/"]
 amz123.com##.two-activity-style
+anal.bbsnet.info###lcBox > div.aside:has(> div.asdr > div.siteshokai)
+anal.bbsnet.info###lcBox > h2.colorh2:has(+ div.mainBack > p > a.btn-square-soft2[href*="/go.php?"])
+anal.bbsnet.info###lcBox > h2:has(+ p > a.btn-square-soft[href^="https://ac.cross-system.com"])
+anal.bbsnet.info###lcBox p:has(> a[class^="btn-square"][target="_blank"])
 analdin.com,tubewolf.com##.banner-top
 analteen.pro##.pop-wrap
 ananvod.com##.rbPicAll
@@ -6884,6 +6891,8 @@ bbs.zhongsou.com##div.lt_gg960,div.gg1p6p6,div.marketingad01,div.lt_ggao_wei
 bbs.zol.com.cn##div#bbsAd
 bbs99.club##[class="wp a2_h"],.a_2mu,.ad,.a_pb
 bbsmax.com
+bbsnet.info###ad_carousel
+bbsnet.info##div[id$="Box"] h2:has(+ script + #ad_carousel)
 bbsyl.cn###ggwehaoyi,table[style="width:100%;height:10%;"],[width="980"][height="90"],[src^="/ads/"]
 bbt.tv,btbt.tv,fiime.cn,kims3.xyz,mmiyue.com,qcheng.cc,yii666.com#@#.google-ad
 bcbay.com##.ad_txt_box
@@ -9399,6 +9408,10 @@ en8848.com.cn##.list_adv
 en8848.com.cn#@#.adcenter
 encount.press##.ad--header
 enennsa.gushiwen.cn
+enews.tw##.divADFrame
+enews.tw##.gadRightP
+enews.tw##.newsCardForLeftAdGadCode
+enews.tw##div[id^="adFrame"]
 enewspaper.latimes.com##div[id^="ext-readerbannerad"]
 enfant.living.jp##.ad-inread
 engadget.com###MOBILE-TOP_ATF
@@ -15128,6 +15141,7 @@ mrmad.com.tw#?#div[id^="mrmad-"]:-abp-has(>.adsbygoogle)
 mrmad.com.tw#?#div[id^="mrmad-"][style]:has(> .adsbygoogle)
 mrmoneymustache.com#@#.custom-ad
 mrs.living.jp##.banner-area
+ms.bbsnet.info##div.randambtn001
 mscbsc.com##.bao1
 msdn.hk##[class^="gg"],.adsbygoogle
 mse.360.cn###banner0
@@ -16001,7 +16015,6 @@ oniyomech.livedoor.biz##div[id$="_head_v2"]
 oniyomediary.com,news4wide.net##.advertisement-position
 online-lernen.levrai.de###advertmitlinks
 online-life.cc##.brnding_mob
-online.anidub.com###dle-content > div[style*="width: 300px;"][style*="height: 300px;"]
 online.sh.cn##DIV.adpic,div#ad_top
 onlinedown.net##.g-huodong
 onlinedown.net##.gaosu
@@ -17876,6 +17889,7 @@ smjb.net##div[style*="height: 50%"]
 smm.cn##.ad_front_container
 smm.cn##.common-jinzhu-wrap
 smm.cn##.top_taishan_jinzhu
+smpt.webrental.org##.dendou
 smpt.webrental.org##.toppagefix
 smt.docomo.ne.jp###WrpAd
 smt.docomo.ne.jp##div[data-allox-placement]
@@ -18923,6 +18937,7 @@ tingroom.com##a[href*="weidian.com"]
 tingshuge.com##[class^="banner"],.ad8
 tingshulou.com##[class^="play_ad"],.content_ad200,.channel_ad250
 tipranks.com##.displaynone > div[style="height:100px"]:empty
+tiscali.it###wp-top
 titan007.com###table_live > tbody > tr > td[height="18"] > a
 tkplayer.com###banner
 tktube.com##.content > div.top
@@ -24022,6 +24037,7 @@ zzzyk.com###Tinfo
 ||ac.tc.qq.com/store_file_download?*&dir_path=/admin/swf/
 ||ac1.786ip.com^
 ||ac1.pingpingw.com^
+||acasadf112.cn^
 ||acc.3gbizhi.com^
 ||account.wps.cn^$replace=/"has_ad": 1/"has_ad": 0/
 ||acd.op.hicloud.com^$app=com.huawei.hwvplayer.youku
@@ -30325,6 +30341,7 @@ zzzyk.com###Tinfo
 ||ghghgf.51dongshi.com^
 ||ghghgf.xuexiwa.com^
 ||ghghgf.xuexiwa.com^
+||ghjedashb6.fun^
 ||ghjie.com/JS/youcegg.js
 ||ghjie.com/images/2012/images/bg
 ||ghland.site^
@@ -33498,6 +33515,7 @@ zzzyk.com###Tinfo
 ||knuinws.icu^
 ||ko2v.eiya.net^
 ||ko3aql2d.zczcjx.com^$script
+||koauq.top^
 ||kochava.com^
 ||kocpc.com.tw/adsbyso.js
 ||kodfn.xyz^
@@ -33704,6 +33722,7 @@ zzzyk.com###Tinfo
 ||kytbxcl.cn^
 ||kytesconge.com^
 ||kyuwkbd.top^
+||kyuxym.xyz^
 ||kyxw9itc.xyz^
 ||kyxw9itv.club^
 ||kyzx.xyZ^
@@ -35238,6 +35257,7 @@ zzzyk.com###Tinfo
 ||molimao.top/ad*.js
 ||molimao.top/imp/upload/vod/*.gif
 ||molpmh.xyz^
+||molpmh.xyz|
 ||momoguoji.xyz^
 ||momoshop.com.tw/goods/GoodsDetail.jsp?$subdocument
 ||momoshop.com.tw/league/$domain=beephone.com.tw
@@ -36059,6 +36079,7 @@ zzzyk.com###Tinfo
 ||oehhq.xyz^
 ||oektiu.xyz^
 ||oepce.xyz^
+||oewrutk.top^
 ||oewtuho.cn^
 ||oeya.com/$domain=realtw.com
 ||oeya.com^$domain=myptt.cc
@@ -36218,6 +36239,7 @@ zzzyk.com###Tinfo
 ||oodcd.cn/pan/config/history.
 ||ooejkd.xyz^
 ||oojjsa.com^
+||ooksq.top^
 ||oomyv.com^
 ||oopej.xyz^
 ||ooqiu.com/ad_js/
@@ -36859,6 +36881,7 @@ zzzyk.com###Tinfo
 ||poco.cn/v1_1/rank/get_floating_layer_ad
 ||poco.cn^*_info_banner
 ||poereawer.top^
+||pofmnj.xyz^
 ||pogwua.cn^
 ||pohpll.xyz^
 ||poiful.com/sdk/vrizeadsdk.
@@ -37175,6 +37198,7 @@ zzzyk.com###Tinfo
 ||qbox.me/FnjnjJhJZlKZEGJ7qV1AocqusFbf
 ||qboywc.xyz^
 ||qbreport.html5.qq.com^
+||qbsday.xyz^
 ||qbtd.xyz^
 ||qc1.cheshipin.com^
 ||qcb2xeg.icu^
@@ -39959,6 +39983,7 @@ zzzyk.com###Tinfo
 ||tongj.xilu.com/
 ||tongj.xilu.com^
 ||tongji.info^
+||tongji.trafficmanager.net/?
 ||tongji.xinmin.cn^
 ||tongjiniao.com^
 ||tongjiniao.com^$third-party
@@ -40722,6 +40747,7 @@ zzzyk.com###Tinfo
 ||uucm.cn^
 ||uuff.com^
 ||uugtv.com/x/app/videoSpread?
+||uuiaoq.top^
 ||uuiaoq.top^
 ||uuishsa.com^
 ||uujhveglpo.xyz^
@@ -42310,6 +42336,7 @@ zzzyk.com###Tinfo
 ||xiumb8.com/js/lm_
 ||xiumei.com/yeyou/
 ||xiurenji.cc/heji/
+||xiuska.top^
 ||xiwusn9982.top^
 ||xixianad.com^
 ||xixil.cn^
@@ -45575,7 +45602,7 @@ zzzyk.com###Tinfo
 8591.com.tw##div#top-ad,div#active_banner,div[class^="act"],div#ox-md,[class^="ox-ad"]
 8684.cn##DIV[id^="auto"],[id^="adv"]
 8684.cn,8684.com##div[id*="adid"]
-8684.cn,8684.com,iyxdm.org,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
+8684.cn,8684.com,iyxdm.org,iyxdm.one,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
 9312.net##.pop-up
 9553.com##.high-down
 9553.com##[src^="/kchtml/img/"],article.mg-t5[style],.mg-t10[style]
