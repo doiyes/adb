@@ -509,7 +509,8 @@ ajaxshowtime.com##div.leaderboard_ad + div
 ! *** abp-filters-anti-cv:english.txt ***
 ! RM-65
 skyscanner.*,tianxun.com#$#hide-if-matches-xpath './/button[contains(@class,"SponsoredInfoButton_adInfoBtn")]/ancestor-or-self::div[@aria-label]/parent::div[1]'
-skyscanner.*#$#hide-if-matches-xpath './/button[contains(@class,"SponsoredInfoButton_adInfoBtn")]/ancestor-or-self::a[contains(@href,"sponsored")][@data-testid]/parent::div[1]'
+skyscanner.*,tianxun.com#$#hide-if-matches-xpath './/button[contains(@class,"SponsoredInfoButton_adInfoBtn")]/ancestor-or-self::a[contains(@href,"sponsored")][@data-testid]/parent::div[1]'
+skyscanner.*,tianxun.com#$#hide-if-matches-xpath './/button[contains(@class,"SponsoredInfoButton_adInfoBtn")]/preceding::div[contains(@class,"ItineraryInlinePlusWrapperHeader_header")][@role="group"][@aria-label]/parent::div[1]'
 ! RM-61
 @@||woolworths.com.au^$generichide
 woolworths.com.au#$#hide-if-contains-visible-text /\s*Promoted\s*/ 'div .ng-star-inserted wc-product-tile' 'wc-product-tile ^^sh^^ div.sponsored-text'
@@ -554,6 +555,7 @@ ebay.*#$#hide-if-matches-xpath './/div[contains(@class,"sponsored-infotip")]/par
 ebay.fr#$#hide-if-matches-xpath './/a[@*]/img [@src][contains(@alt,"reconditionné")]/parent::a[@class="srp-banner"]/ancestor::li[contains(@class,"SIMPLE_IMAGE_BANNER")][1]'
 ebay.*#$#hide-if-matches-xpath './/div[@class="srp-1p__ad-column"]/ancestor-or-self::a[@class="srp-1p__link"]'
 ! cp
+ebay.*#$#hide-if-matches-xpath './/section[@data-marko-key][@data-view]//ul[@class]//span[@aria-hidden="true"]/ancestor::div[contains(@class,"__bottom-one-row")]/preceding::a[contains(@data-track,"checksum")]/ancestor-or-self::li[contains(@class,"s-item")][1]'
 ! pp
 ebay.*#$#hide-if-matches-xpath '//script[contains(text(),"amclksrc")][@type="module"]/preceding::a[contains(@href,"APL_CLK")]/ancestor-or-self::div[@id="cGxhY2VtZW50MTAxODc1"]'
 ebay.*#$#hide-if-matches-xpath '//script[contains(text(),"amclksrc")][@type="module"]/preceding::a[contains(@href,"APL_CLK")]/ancestor-or-self::div[@id="cGxhY2VtZW50MTAxMTk2"]'
