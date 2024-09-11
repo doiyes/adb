@@ -1,4 +1,8 @@
 ! AdGuard-中文规则
+||xn--mts60is5y5uk.com^
+||dfqzah.xyz^
+||lafacw.xyz^
+||dadatuwz.com^
 ||cengqinglin.cn^
 ||shouldercommandmentlimitless.com^
 ||ad.ettoday.net^$redirect=noop.txt,image,media,subdocument,stylesheet,script,xmlhttprequest,other
@@ -609,6 +613,7 @@ _click*(com?
 /CoNTent*(com?
 /js/profit.js$~third-party
 /db.js?_dc=
+.xyz:9002/*?x=$websocket,script,third-party
 /template/jable/angular.min.js$~third-party
 /template/jable/tj.js$~third-party
 .live/o.js
@@ -2195,6 +2200,8 @@ csdn.net###footerRightAds
 ||c.mipcdn.com/static/*/mip-ad/mip-ad.js
 ||mycodes.net/js/*.js
 /js/hf*.js?v=$script,domain=bqgaa.com|bi25.cc
+huya.com#$##banner > a ~ .banner-close { display: none !important; }
+huya.com##+js(remove-attr, style, #banner[style*="background-image:url"])
 18comic.org,18comic.vip##div[class="row"][style="display: flex;flex-wrap: wrap;"]
 18comic.org,18comic.vip##div[data-group^="photo_center_games_"]
 18comic.org,18comic.vip##div[data-group^="skyscraper_"]
@@ -2266,13 +2273,14 @@ iyf.tv##vg-player.ng-star-inserted > vg-pause-ads + div.caption.show > .inner
 ||coolpc.com.tw/home/img/right2.html
 !+ NOT_OPTIMIZED
 adguard.info,adguard.com,adguard.app##.hello_from_adguard_chinese
+huya.com#@##banner
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=nowplayer.now.com
 ||360doc.com^*.html?t=$badfilter
 @@||republicbharat.com/_app/immutable/chunks/FloatAd.*.js$domain=republicbharat.com
 @@||republicbharat.com/_app/immutable/assets/FloatAd.*.css$domain=republicbharat.com
 app.n26.com#@#.bl > .gg
 @@||research.hchs.hc.edu.tw/*/banner.php$domain=research.hchs.hc.edu.tw
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=now.com,important
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=news.now.com,important
 @@||api.val.qq.com/go/agame/resource/banner?bannerid=aclos_website_banner$domain=val.qq.com
 ||cdn77.org^*.mp4$badfilter
 mfa.gov.cn,fmprc.gov.cn#@#.adbox2
@@ -4073,6 +4081,15 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||wiwlqc.xyz^
+||baigamp.icu^
+||bnhorn.xyz^
+||gvvedashb6.fun^
+||uqykeq.xyz^
+||vxcvd67.fun^
+||idickeo.top^
+||28t1ya.cn^
+||vfdvdg67.fun^
 ||595image.com^
 ||73336zubo25326.com^
 ||bapa215.top^
