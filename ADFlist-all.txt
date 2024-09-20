@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: sNQiLjQUmk7MDKx3MxYgUw
+! Checksum: NAhIqV0xCfYjR+Xr4VAXTw
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202409192218
+! Version(Last Modified): 202409202219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1325890192.cos.
@@ -1064,6 +1064,7 @@
 ##DIV[style^='width:100%;height:100%;line-height: 100%;overflow:hidden; margin:auto;border:1px #']
 ##I.fa.fa-close
 ##IFRAME[src*="//pos.baidu.com/"]
+##IFRAME[src^='/Banner/index.html'][allowfullscreen='true']
 ##IFRAME[src^='https://mydisplay.ctfile.com/popview.php']
 ##IMG#diads
 ##IMG.cupfox[src$='gif']
@@ -1449,6 +1450,7 @@
 ##body.active > div.myui-panel > DIV#home_slide
 ##body.bg_xin > A[href*='com:'][target='_blank']
 ##body.chapter > div.container div.slide-baidu *
+##body.conch-adjust-fix #component
 ##body.conch-hasone section > span > video
 ##body.desktop[style^="-"] span[class*=" "] > a[href^="http"][rel="nofollow"][target="_blank"]
 ##body.fed-min-width.website-read > [style='bottom: 132px;']
@@ -4961,6 +4963,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 @@||jandan.net^$generichide
 @@||jav777.cc/advertise/
 @@||jav777.xyz/advertise/
+@@||javedit.com/d/js/acmsd/thea0.
 @@||jbprogramnotes.com^$generichide
 @@||jd.com/adclick?$~third-party
 @@||jd.com/setCookie?
@@ -10851,6 +10854,8 @@ guitarchina.com,iqiyi.com##.banner4
 guitarpro.cc
 gulte.com###rw_top_sticky
 gulte.com##.awt_ads
+gulte.com#$##awt_popup_landing { display: none !important; }
+gulte.com#$#body { overflow: auto !important; }
 gumtree.com.au##.header-lite__leaderboard-ad
 guofs.com##.style2
 guofs.com##DIV#header + DIV > DIV:first-child
@@ -15563,6 +15568,10 @@ news.baidu.com#?#.index-list-item:-abp-has(.tip-time:-abp-contains(广告))
 news.biglobe.ne.jp###footer-anchor-banner
 news.china.com.cn##.Wrapper > div[style]
 news.cn2che.com##.banner01
+news.cnyes.com##.content-main > div:empty
+news.cnyes.com##.content-main > div:has(> div[id^="div-gpt-"])
+news.cnyes.com##.section-aside-wrapper ~ div:has(> div[id^="div-gpt-"])
+news.cnyes.com##article > div:has(> div[id^="div-gpt-"])
 news.com.au#?#.news-tops_list > .news-tops_group-rhc > .sticky-wrapper:has(> .sticky-container:only-child > .ad-m-mrec:only-child)
 news.denfaminicogamer.jp###dfng-underarticle-center
 news.denfaminicogamer.jp###sp_article_billboard
@@ -15633,6 +15642,7 @@ news.tv-asahi.co.jp#?##common-header > #adbanner_spheader:upward(1)
 news.tvbs.com.tw##.article_ad_top
 news.tvbs.com.tw##.flexd_bottom_ad
 news.tvbs.com.tw##.sidebar_div:has(> div.nolazydiv)
+news.walla.co.il##aside[style$="background-color: rgb(245, 245, 245);"]
 news.wehefei.com##iframe[src="http://new.wehefei.com/htmlphp/tmall/ad_www.php"]
 news.xfastest.com##.vw-sticky-sidebar-wrapper #custom_html-5
 news.yahoo.co.jp##a[data-cl-params$="cl_link:bnr_b;"]
@@ -21164,7 +21174,7 @@ ydss.cn##.indexAd
 ydt.com.cn##.r_yueyue,.u_yueyue,.adsbygoogle
 ye120.com##.fixed_bottom
 yeah.net##[id$="_dvPrmot"]
-yeeyi.com##div[style="width: 300px; margin-right: -30px; position: relative; top: 0px;"] > a
+yeeyi.com##.js_handle_right
 yelp.be,yelp.ca,yelp.ch,yelp.co.nz,yelp.co.uk,yelp.com,yelp.com.au,yelp.com.sg,yelp.ie##.data-ad-placement
 yemancomic.com##div > center > strong > button[onclick^="window.location.href"]
 yemek-com.cdn.ampproject.org##.recipeContent > .printHidden
@@ -23348,6 +23358,7 @@ zzzyk.com###Tinfo
 ||77xsw.la/novel/js/pagetop.js
 ||77zz7.com^
 ||78.138.126.253/www/
+||786yfvedhcbxjk.top^
 ||787ck.cc/static/js/home.js
 ||788111.com^
 ||789peizi.com^
@@ -24390,6 +24401,7 @@ zzzyk.com###Tinfo
 ||ads-leaseweb.appsgeyser.com^
 ||ads-pixiv.net^
 ||ads-resources.waze.com^
+||ads-router-noneu.truecaller.com^
 ||ads-sdk.mattel163.com^
 ||ads-sdk.nianticlabs.com^
 ||ads-server.mxplay.com^
@@ -24432,6 +24444,7 @@ zzzyk.com###Tinfo
 ||ads.xlxtra.com^
 ||ads.yahoo.com^
 ||ads.yap.yahoo.com^
+||ads.yeeyi.com^
 ||ads.youtube.com^
 ||ads.youtube.com^
 ||ads30.adcolony.com^
@@ -25497,6 +25510,7 @@ zzzyk.com###Tinfo
 ||auisaoa.top^
 ||auislq.top^
 ||aukllsq.cn^
+||aushaq.top^
 ||autchoog.net^
 ||auth.be.sec.miui.com^
 ||auto-online.com.tw/vendor_data/
@@ -26160,6 +26174,7 @@ zzzyk.com###Tinfo
 ||bfugui.com^
 ||bg04y.xyz^
 ||bg4nxu2u5t.com^
+||bgbg00.fun^
 ||bgbqfqwi.xyz^
 ||bgbyzv.xyz^
 ||bgdgpbpm.xyz^
@@ -26329,6 +26344,7 @@ zzzyk.com###Tinfo
 ||black6adv.com^
 ||blciqbk.icu^
 ||bleumzr.icu^
+||blinxmi.icu^
 ||bljlrl.xyz^
 ||blkxszh.com/zj/
 ||blntzf.xyz^
@@ -27870,6 +27886,7 @@ zzzyk.com###Tinfo
 ||csdnimg.cn/passport/login-banner.png$image
 ||csdnimg.cn/public/common/indexSuperise/1.1.1/indexSuperise.js
 ||csdnimg.cn^*#/preview/
+||csdsa22.fun^
 ||csedasdme.xyz^
 ||csg99.com/17mb/script/vcnhitro.js
 ||cshlal.icu^
@@ -28514,6 +28531,7 @@ zzzyk.com###Tinfo
 ||dkhffh.xyz^
 ||dklwddl.cn^
 ||dkqapp.cn^
+||dkstrtss.xyz^
 ||dkvakldvnsv.com^
 ||dkyd6.xyz^
 ||dl.ops.baidu.com^$third-party
@@ -29929,6 +29947,7 @@ zzzyk.com###Tinfo
 ||fwhhcpj.xyz^
 ||fwlrv.cn^
 ||fwmbjrl.cn^
+||fwsfwef2.fun^
 ||fwsir.com/static/cpt/
 ||fwsir.com/templets/img/ms.js
 ||fwwang.cn/templets/fw/js/art
@@ -32018,6 +32037,7 @@ zzzyk.com###Tinfo
 ||imrworldwide.com^
 ||imrworldwide.com^
 ||imtmp.net^
+||imusye.xyz^
 ||imwx.com/mobile/adconfig/
 ||imwxsu.xyz^
 ||imxsvpxe.xyz^
@@ -32376,6 +32396,7 @@ zzzyk.com###Tinfo
 ||jasdz1.cn^
 ||jashautchord.com^
 ||jatfugios.com^
+||jauql.top^
 ||jauql.top^
 ||jav##[id^="divExoLayerWrapper"],[id^="playertopads"],[class*="ui-widget"],[height="60"],.textwidget
 ||jav101.com/img5bbb0096f242f.gif
@@ -33944,6 +33965,7 @@ zzzyk.com###Tinfo
 ||lkdybkwi.xyz^
 ||lkdyft.xyz^
 ||lkenflknkd.com^
+||lkiterl.top^
 ||lkmhn.com^
 ||lknhrnd.com^
 ||lknlkndasda.top^
@@ -35921,6 +35943,7 @@ zzzyk.com###Tinfo
 ||okbmf.com^*950_120
 ||okead.com^
 ||okforwardt.fun^
+||okiterk.top^
 ||okkazeo.com/img/habillage/banner/
 ||okkkk.com^
 ||okmgy.cn^
@@ -36575,6 +36598,7 @@ zzzyk.com###Tinfo
 ||pixoctopus.pixnet.net^
 ||pj3f7.xyz^
 ||pj8.net^$third-party
+||pjaihds.icu^
 ||pjcijbv.icu^
 ||pjcn.org^$third-party
 ||pjdthz.xyz^
@@ -36636,6 +36660,7 @@ zzzyk.com###Tinfo
 ||pmtrkp.icu^
 ||pmvlwjy.cn^
 ||pmxalz.xyz^
+||pmzlnt.xyz^
 ||pnez8.rut6m.xyz^
 ||pnhp3x1.com^
 ||pniao99.com/statics/js/stat.js
@@ -40854,6 +40879,7 @@ zzzyk.com###Tinfo
 ||vuyibsm.icu^
 ||vv.nettierbrakier.com^
 ||vv1.pyhfxdm.cn^
+||vvadz.cc^
 ||vvdzucs.cn^
 ||vvfht.fun^
 ||vvlian.com^
@@ -41302,6 +41328,7 @@ zzzyk.com###Tinfo
 ||wpoarjokzgi.com^
 ||wps.cn/api/pre_download?dist=
 ||wps.cn/wpsv6internet/infos.ads?
+||wpsbaq.xyz^
 ||wpuiuwh.icu^
 ||wpwpquse.cn^
 ||wqcfg.cn^
