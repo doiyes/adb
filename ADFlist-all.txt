@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: PnMYkCXyxtAwUzywHwxyBg
+! Checksum: d91wNnJvuWwpsjuP0bVUvQ
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202409252220
+! Version(Last Modified): 202409262219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1325890192.cos.
@@ -3331,6 +3331,7 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /images/*.gif$domain=maichun5.info|myhhg.com
 /images/*gamble$domain=tvboxnow.com
 /images//ads/*
+/images/adv/*$domain=idkeijiban.com|kakaoid.com|deai.twitterid.net
 /images/content/1436/*$domain=chineseinla.com
 /images/friend/*.webp?$domain=pornbest.org|pornlulu.com
 /images/masha*.gif
@@ -3578,7 +3579,6 @@ $third-party,~image,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biq
 /ntes-ad-cloud.
 /o.js$domain=tptoon.com
 /obj/ad-
-/obj/ad-app-package
 /ojborn.so?$script,third-party
 /opbb/float.js
 /opbb/obpp.tpl
@@ -6552,8 +6552,11 @@ baidu.com##.icon-bdad
 baidu.com##.img-adv-swap1
 baidu.com##.index-module_drawerHand__aRhcO
 baidu.com##.intro-adv
+baidu.com##.invoke-app-floating-tips
+baidu.com##.invoke-app-san-container
 baidu.com##.l-header-ad
 baidu.com##.landrightbanner
+baidu.com##.lianmeng-pause
 baidu.com##.link-banner
 baidu.com##.manual-spread
 baidu.com##.na-ec-waterfall
@@ -7476,6 +7479,7 @@ bunshun.jp#?#aside[role="complementary"] > .block > .block-header > span.title:c
 bushikaku.net##[class^="Search_"][class*="-banner-"]
 bushikaku.net##div[class*="ad-text"]
 business-standard.com##+js(nano-setInterval-booster, (f-1), *, 0.001)
+business-standard.com##.ads-align
 business-standard.com#?#.show-on-mobile:has(> .stryadstp:only-child)
 business-standard.com,navitime.co.jp##.ad-height
 business.nikkei.com##.dag_rectangle
@@ -8657,7 +8661,6 @@ ddys.*,ddrk.me##+js(set-constant, Object.prototype.cnobpreroll_, true)
 ddzimu.com###popup
 ddzzxs.com###inglestore.inglestore
 de.as.pptv.com
-deai.twitterid.net##.adv_tag
 dealmoon.com,weibo.com##.pic_ad
 deavita.com##.single_ads
 deavita.net##.single_ads
@@ -10080,6 +10083,7 @@ forum.golem.de##div[id^="mob_forum"]
 forum.hkgolden.com##div[id^="Super Banner"]
 forum.hkgolden.com#?#body > div[class^="jss"]:has(> div[class][style^="transform"]:only-child > div[class] > div[data-role="ad"])
 forum.lowyat.net###ipbwrapper > div[style="padding:10px 0;min-height:100px;"][align="center"]:not([class]):not([id])
+forum.lowyat.net##center > a[target="_blank"] > img
 forum.portableappc.com##div.topadsense,div.bottomadsense
 forums.androidcentral.com##.adunit
 forums.androidcentral.com##.homeforums > div.forumbit_nopost + div[align="center"]
@@ -11119,6 +11123,7 @@ hao7zhe.com##.a_mu,[width="150"][height="300"],.a_pt,.wp.a_f
 haodf.com##div.closeid,div[class^="index_bottom"]
 haoduoyun.cc#?#.ebookRight > div.tb_cell.mb10:has(> div.listcell > div.lc_head >h2:contains(课本赞助商))
 haojiyou.la##.iqshwad-div
+haokan.baidu.com##.page-top-rightinfo-popover
 haokan5.com##.ad8,.ads
 haokoo.com##[href="http://m.moomcherry.com/jysd/"],[href^="http://item.m.jd.com/product/"]
 haolexiang.com##div.ctrl_ad,div.right_ad2
@@ -11765,6 +11770,7 @@ idanmu.org##.adbox,.ad-container
 idaprikol.ru##+js(remove-attr, data-universal-link, body)
 idaybreak.com##testwidget
 ideco-guide.jp##.sp-foot-banner
+idkeijiban.com,kakaoid.com,deai.twitterid.net##.adv_tag
 idnes.cz##div[data-redistribute="ad"]
 idou.me##.ad__search-infeed-banner
 idownloadblog.com###iDB_Mobile_Below_Content
@@ -15206,12 +15212,17 @@ mse.360.cn##a[id^="banner"]
 msn.cn##+js(json-prune, *, list.*.link.ad list.*.link.kicker)
 msn.cn##+js(json-prune, *.*, adFeedbackData adType adServedUrls)
 msn.cn##+js(json-prune, configs.*.properties.slideshowWCSettings.interstitialNativeAds configs.*.properties.fullScreenSlideshowSettings.interstitialNativeAds properties.componentConfigs.slideshowConfigs.interstitialNativeAds properties.componentConfigs.slideshowConfigs.slideshowSettings.interstitialNativeAds)
+msn.cn##.consumption-page > above-river-block
+msn.cn##.game-advertise-container
 msn.cn##.intra-article-ad-full
 msn.cn##.nativeadserversidecontentmodule
 msn.cn##.rc > a[href^="https://sp.booking.com/"]
+msn.cn##.views-right-rail-top-display
 msn.cn##[class^="articlePage_eoabContent"]
+msn.cn##casual-games-carousel-card
 msn.cn##cs-native-ad-card
 msn.cn##div[class^="nativeAd-DS-card"]
+msn.cn##gaming-discover-strip
 msn.com###displayAdCard
 msn.com###taboola-above-homepage-thumbnails
 msn.com##.end-of-content-block
@@ -15387,6 +15398,7 @@ myexceptions.net
 myfreax.com#?#main > div.w-full:has(> ins.adsbygoogle)
 myhack58.com##.adv32
 myhktv.com###sponsorAdDiv
+myhome.nifty.com##.article-top-smp-adnw-container
 myhomebook.de##.article__content > p > iframe[src^="https://embed.contentverticals.de"]
 myk3.com##a[href*="?aid="]
 mylomza.pl##.kampeki
@@ -17155,6 +17167,7 @@ rambler.ru##div[style="height: 250px; margin-bottom: 20px;"]
 rambler.ru##div[style="height: 250px; margin-top: 20px;"]
 rambler.ru#?#div[class^="container-"]:has(> amp-embed[data-container*="ScriptRoot"])
 rambler.ru#?#main > div[class] ~ div[class] > div[class] div[class] > a[href^="https://prime.rambler.ru/promo"][data-cerber*="mobile"]:upward(2)
+ramendb.supleks.jp##.raytrace-ad-placeholder
 rangcuo.com##.ad250
 rank-king.jp##div[style="height:350px;"]
 rankedboost.com##.top-mob-div-stick
@@ -21757,6 +21770,7 @@ zzkdhb.com##li[style*="important"]
 zzkdhb.com##p[style^="width: 100%; margin: 0px;"]
 zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 zznews.cn#@#.ad-wrapper
+zzz.gamers-luck.com##.gamer-sp_postbottom
 zzzyk.com###Tinfo
 |api.zhihu.com/ad-style-service/request
 |api.zhihu.com/fringe/ad
@@ -28033,6 +28047,7 @@ zzzyk.com###Tinfo
 ||cz.ifeng0.com^
 ||czghjt.com^
 ||czouthy.cn^
+||czpnpjrg.xyz^
 ||czresus.cn^
 ||czsp12.com/api/*=advert&
 ||czsp12.com/api/*=announce&
@@ -28325,7 +28340,6 @@ zzzyk.com###Tinfo
 ||ddxolb.xyz^
 ||de.as.pptv.com^
 ||de.pandora.xiaomi.com^
-||deai.twitterid.net/images/adv/
 ||dealmoon.com/build/js/www/home/activity-pop/index.
 ||dealmoon.com/hotdeals/hotdeals_scroller.php
 ||dealmoon.com/upload/dealmoon_app.jpg
@@ -29916,6 +29930,7 @@ zzzyk.com###Tinfo
 ||freejavbt.com/assets/images/banner
 ||freshmarketer.com^
 ||freychang.fun^
+||frfve33.fun^
 ||frgf99.fun^
 ||frgre33.fun^
 ||friendlyduck.com^
@@ -31646,6 +31661,7 @@ zzzyk.com###Tinfo
 ||ibaglhc.icu^
 ||ibaiducdn.com/Public/Assets/js/hz_
 ||ibf.tw/js/jquery.blockUI.js
+||ibkoiw.xyz^
 ||ibozys.cn^
 ||ibqkjbw.com^
 ||ibqmey.xyz^
@@ -33309,6 +33325,7 @@ zzzyk.com###Tinfo
 ||kggikf.icu^
 ||kgidskid.top^
 ||kgimg.com/public/root//images/hardware.jpg
+||kgipui.xyz^
 ||kgqcse.xyz^
 ||kgubus.xyz^
 ||khcsvdc.icu^
@@ -37279,6 +37296,7 @@ zzzyk.com###Tinfo
 ||qjhlc.com^
 ||qjsp48.xyz^
 ||qjwpy.com^
+||qjwvwu.xyz^
 ||qjxys.cn^
 ||qk6.org/file/script/
 ||qkikkg.xyz^
@@ -40955,6 +40973,7 @@ zzzyk.com###Tinfo
 ||vugjyr.icu^
 ||vuhidf.cn^
 ||vujzkkz.cn^
+||vulitd.xyz^
 ||vulrxr.xyz^
 ||vungle.com^
 ||vupload.duowan.com^
@@ -41227,6 +41246,7 @@ zzzyk.com###Tinfo
 ||weplay.cn/crossdomain.xml$object-subrequest
 ||werois.com^
 ||werssf.com^
+||weryt111.fun^
 ||wesat.cn^
 ||west.bidtellect.com^
 ||west.cn/vcp/getJScode/
@@ -42144,6 +42164,7 @@ zzzyk.com###Tinfo
 ||xkcxh.com^
 ||xkd*.com/layer/layer.js
 ||xkesqbp.icu^
+||xkgttas.icu^
 ||xkjmjj.com^
 ||xklofoz.cn^
 ||xklrsj.icu^
@@ -43218,6 +43239,7 @@ zzzyk.com###Tinfo
 ||zdobdg.fyi^
 ||zdpeanut.com^
 ||zdqx.com/statics/v1/images/gif/
+||zdscdkc.icu^
 ||zdvfpa.xyz^
 ||zdw.w8.com.cn/p.ht?
 ||zdwykjd.icu^
@@ -43476,6 +43498,7 @@ zzzyk.com###Tinfo
 ||zmk.pw/zfb.png
 ||zmklhev.cn^
 ||zmkma.com^
+||zmvopcio.icu^
 ||zn46.com/images/*0x
 ||znchw.com^
 ||zndsssp.dangbei.net^
