@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: d91wNnJvuWwpsjuP0bVUvQ
+! Checksum: iINluOEMG+SKHNQwtPY0ZA
 ! Title: ADFlist-all
 ! Expires: 6 hours
-! Version(Last Modified): 202409262219
+! Version(Last Modified): 202409272219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 -1325890192.cos.
@@ -7722,6 +7722,7 @@ charlieintel.com#?##mvp-content-main > .code-block > .ai-attributes:upward(1)
 charlieintel.com#?##mvp-content-main > .code-block > div > .ai-attributes:upward(2)
 chasedream.com##.a_h,.a_f,[id^="diycd-board"]
 chashebao.com##.ad960
+chat.shalove.net##div[style^="min-height:250px"]
 chat.smaero.jp###ad_mask
 chat.smaero.jp###adsense
 chaturbate.com##.ad,.banner,[href^="/external_link/?"]
@@ -8666,6 +8667,8 @@ deavita.com##.single_ads
 deavita.net##.single_ads
 debulu.org##.banner,.sidead
 deccanherald.com##.container > .hide-desktop
+deccanherald.com##div[class]:has(> div > div.ad-background)
+deccanherald.com#?##container-text:contains(ADVERTISEMENT)
 deccanherald.com#?##topbar  > div[class]:has(> div[class] > div[class] > span:contains(ADVERTISEMENT))
 deccanherald.com#?##topbar > .hide-desktop + div[class] > div[class]:only-child:has(> div[class] > span:contains(/^ADVERTISEMENT$/))
 deccanherald.com#?#.container > div.hide-desktop:has(> div[class] > span + div.ad-background)
@@ -10073,8 +10076,10 @@ fortunechina.com##.pinglunmask
 fortunechina.com##.pinglunwindow
 forum.51nb.com##img[height="90"][width="728"],TABLE.t_rown[width="875"],TABLE.t_rown[width="98%"],DIV.maintable > DIV.right
 forum.donanimhaber.com###primeContainerMobil
+forum.donanimhaber.com###tmAd
 forum.donanimhaber.com##+js(set-session-storage-item, pageCount, $remove$)
 forum.donanimhaber.com##article > div[style]:has(> div[style] > div.empower-ad)
+forum.donanimhaber.com##div[style]:has(> div[style] > .empower-ad)
 forum.donanimhaber.com##div[style^="width: 100%; float: left;"]:has(> div[style] > div.empower-ad)
 forum.donanimhaber.com##div[style^="width: 100%;"][style*="height: auto;"]
 forum.finanzaonline.com###leoskin-content
@@ -14252,10 +14257,14 @@ m.sabah.com.tr###contextual > .textLink > div[data-mbzone-loaded] > div[style^="
 m.sabah.com.tr###id_m_300x250_detay
 m.sabah.com.tr##.adv-content
 m.sabah.com.tr##.advers-box
-m.sabah.com.tr##.promo
 m.sabah.com.tr##.trkvzbnr
 m.sabah.com.tr##a[href^="/haber/advertorial/"]
+m.sabah.com.tr##div[data-mbzone-loaded="728x90"]
+m.sabah.com.tr##div[data-mbzone="AltBant"]
 m.sabah.com.tr##iframe[src^="https://ad01.tmgrup.com.tr/"]
+m.sabah.com.tr#$#.infgaleritrend .frame > .modal-closing > .topDetail > .article-header { margin-top: 60px !important; }
+m.sabah.com.tr#$#.promo + :is(.userPrivate, .container, .manset, #infContentCover, #contextual) { margin-top: 60px !important; }
+m.sabah.com.tr#$#.promo { display: none !important; }
 m.sabah.com.tr#?#.manset > ul > li:has(>a[href^="/haber/advertorial/"])
 m.sadistic.pl##article.images[style="text-align: center"] > a[href][target="_blank"] > img
 m.sahadan.com##[id^="mpuBannerHolder"]
@@ -17167,7 +17176,6 @@ rambler.ru##div[style="height: 250px; margin-bottom: 20px;"]
 rambler.ru##div[style="height: 250px; margin-top: 20px;"]
 rambler.ru#?#div[class^="container-"]:has(> amp-embed[data-container*="ScriptRoot"])
 rambler.ru#?#main > div[class] ~ div[class] > div[class] div[class] > a[href^="https://prime.rambler.ru/promo"][data-cerber*="mobile"]:upward(2)
-ramendb.supleks.jp##.raytrace-ad-placeholder
 rangcuo.com##.ad250
 rank-king.jp##div[style="height:350px;"]
 rankedboost.com##.top-mob-div-stick
@@ -18466,6 +18474,7 @@ supfree.net###header_banner,[id^="templetflash_"],#c001
 supleks.jp###footer-banner
 supleks.jp###shop-body > #btn-post + div[style]
 supleks.jp##+js(abort-current-script, document.getElementsByClassName, adBlocked)
+supleks.jp##.raytrace-ad-placeholder
 supleks.jp##div[class*="_"][data-height]
 supportdap.online##.td-post-content > a[rel="nofollow"] > img
 supremesquirters.com##.ima,.rmedia,.sppc
@@ -19018,6 +19027,7 @@ to8to.com##.whan-ad
 tobosu.com###alert_order
 tobosu.com##.tbs-bottom-order
 tocana.jp##amp-iframe[src^="https://taxel.jp/amp/sponsor.html"]
+today.line.me##.adModule-root
 today.line.me##.midAdModule-root
 today.line.me##div[id^="ad-module-"]
 tofight.ru###cf-bg
@@ -19926,6 +19936,7 @@ webtekno.com##.wt-container > div[class="visible-phone"][style^="min-height:"]
 webtekno.com##body .sticky-ad-container-mobile
 webtekno.com##body > div[class="visible-mobile"][style*="position: fixed;"]
 webtekno.com##div.visible-mobile[style*="min-height"]
+webtekno.com#$##masthead-ad { position: absolute !important; left: -3000px !important; }
 webtor.io##DIV.ad
 webtor.io##IFRAME[scrolling='no']
 webtor.io##[data-element='empty']
@@ -25819,6 +25830,7 @@ zzzyk.com###Tinfo
 ||baifendian.com^
 ||baifendian.com^$third-party
 ||baigamp.icu^
+||baigh8eosmgie01.site^
 ||baihuiad.com^
 ||baihuwang.com^$third-party
 ||baijs010.shop^
@@ -26137,6 +26149,7 @@ zzzyk.com###Tinfo
 ||beatricenba.com^
 ||bebi.com^
 ||bebohjhh.xyz^
+||bebxhcip.icu^
 ||beclsbx.icu^
 ||becode.xiao84.com^
 ||become.songche.net^
@@ -26235,6 +26248,7 @@ zzzyk.com###Tinfo
 ||bhktalt.cn^
 ||bhlianhe.com^
 ||bhlntz.xyz^
+||bhovrath.com^
 ||bhpprfk.cn^
 ||bhulgot.com^
 ||bi.yeshen.com^
@@ -26833,6 +26847,7 @@ zzzyk.com###Tinfo
 ||cai75tp.com^
 ||caibaojian.com/d/uploads/*/atop-
 ||caibaojian.com/d/uploads/*0-
+||caicme.xyz^
 ||caider.fun^
 ||caihongxuan.com^
 ||caikuu.com/ckimages/*_gg
@@ -27993,6 +28008,7 @@ zzzyk.com###Tinfo
 ||cupid.ptqy.gitv.tv/mixer?ap=
 ||cuvtnzv.cn^
 ||cvbjctqs.xyz^
+||cvdfvdfv90.fun^
 ||cvfgere96.cn^
 ||cvftv2.com^
 ||cvgrszkg.xyz^
@@ -28000,6 +28016,7 @@ zzzyk.com###Tinfo
 ||cvsheil.com^
 ||cvtbdap.xyz^
 ||cvudqzoa.xyz^
+||cvujac.xyz^
 ||cw9twua9.shop^
 ||cw9twuas.xyz^
 ||cwandlf.top^
@@ -28369,6 +28386,7 @@ zzzyk.com###Tinfo
 ||demeiguoji.com^
 ||demifa.top^
 ||demizhe.com^
+||denjpl.xyz^
 ||deployads.com^
 ||derew6xbsc.xyz^
 ||dertyhsf.xyz^
@@ -28579,6 +28597,7 @@ zzzyk.com###Tinfo
 ||djv99sxoqpv11.cloudfront.net^
 ||djxpnuo.xyz^
 ||dk45h.icu^
+||dkasdeerw.xyz^
 ||dkhffh.xyz^
 ||dklwddl.cn^
 ||dkqapp.cn^
@@ -29232,6 +29251,7 @@ zzzyk.com###Tinfo
 ||eepw.com.cn/pub/js/TopFullScreen.js
 ||eeqweqw.fun^
 ||eers0cy.com^
+||eeryt111.fun^
 ||eetlwsw.top^
 ||eewrutw.top^
 ||eexlgyn.cn^
@@ -29677,6 +29697,7 @@ zzzyk.com###Tinfo
 ||feesee.com^
 ||feesoon.com/js/cnzz_
 ||fefgvh.xyz^
+||fefwe334.fun^
 ||fehrda.xyz^
 ||feidalu.com^$third-party
 ||feih.com.cn^$third-party
@@ -30334,6 +30355,7 @@ zzzyk.com###Tinfo
 ||ggdm1.nhaidu.net^
 ||ggdrfh5.com^
 ||ggdumze.cn^
+||ggfdgd88.fun^
 ||ggg*.com/static/js/common.js
 ||ggg.
 ||gghhce96.shop^
@@ -30363,6 +30385,7 @@ zzzyk.com###Tinfo
 ||ghghgf.51dongshi.com^
 ||ghghgf.xuexiwa.com^
 ||ghghgf.xuexiwa.com^
+||ghiuge55.fun^
 ||ghjedashb6.fun^
 ||ghjie.com/JS/youcegg.js
 ||ghjie.com/images/2012/images/bg
@@ -31298,6 +31321,7 @@ zzzyk.com###Tinfo
 ||homepage-gw.jd.com/npromotion^$third-party
 ||hongdouav8.com^$script
 ||hongfachn.com^
+||hongi7ie8owiie01.site^
 ||honglingjin.co.uk/wp-content/uploads/*-Homepage-Takeover-BG-
 ||hongmao39.top^
 ||hongteng.xyz^
@@ -32541,6 +32565,7 @@ zzzyk.com###Tinfo
 ||jdfzfd.xyz^
 ||jdh74bf.com^
 ||jdickea.top^
+||jdiekknmcb.com^
 ||jdipsuma.top^
 ||jditera.top^
 ||jdnlynb.cn^
@@ -32721,6 +32746,7 @@ zzzyk.com###Tinfo
 ||jisz9e.cn^
 ||jitapu.com/inc/adv
 ||jitashe.org/template/jitashe/image/bc/3
+||jiuab8eig2oateh01.site^
 ||jiudianhudong.com^
 ||jiuduad.com^
 ||jiujiushishi.com^
@@ -40938,6 +40964,7 @@ zzzyk.com###Tinfo
 ||vrdxznr.xyz^
 ||vreephay.com^
 ||vreqnait.com^
+||vrinqop.icu^
 ||vrivslffndepxqd.xyz^
 ||vrizead.com^
 ||vrlvnz.xyz^
@@ -41464,6 +41491,7 @@ zzzyk.com###Tinfo
 ||wsdfame.com^
 ||wsds.cn^
 ||wsdwbfs.cn^
+||wsgayq.xyz^
 ||wsgwc.com^
 ||wshlcgj.com^
 ||wshufa.com^$third-party
@@ -45300,6 +45328,8 @@ zzzyk.com###Tinfo
 3322.cc##[onclick*=".gsxzq."]
 3464.com##.CommonBody > .CommonListArea:nth-child(3)
 3464.com##.CommonBody > .CommonListArea:nth-child(3) + .CommonListArea
+3751chat.com,chat.luvul.net,chat.shalove.net##div[style*="min-height:100px"][style$="overflow:hidden;"]
+3751chat.com,chat.luvul.net,chat.shalove.net##div[style*="min-height:50px"][style$="overflow:hidden;"]
 3987.com##.bottom_footer,.tables_li_box,.show_pin_top_box,.and_ad_box,.show_btn,.down_show_left_box.mt20,.main_mid_ad,div.banner.fl,div.rightad,div.logo_top,#b_downfile,.topadbox,.tongyixzq,.xiazai_bj,.pic_yd_a_box,.fixd_box
 3987.com##.c-gg
 3987.com##.showdown > .mt20:first-child
