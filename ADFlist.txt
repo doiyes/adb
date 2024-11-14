@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: vjATDVe7TMGWOqkNyVAEsQ
+! Checksum: UB8c2K6fEdS+2MxsrKoG4Q
 ! Title: ADFlist
 ! Expires: 24 hours
-! Version(Last Modified): 202411132219
+! Version(Last Modified): 202411142219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风过滤规则、CJX'sAnnoyance、ADgk、NoCoin adblock list等，仅供测试使用！ 
 # NoCoin filter list optimized for uBlock
@@ -1796,7 +1796,6 @@ neihanshequ.com###pageletTopBanner
 nen.com.cn##.for3gagzy
 nen.com.cn##.w610
 netkao.com
-new.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 news.163.com###js-cnxh-content~:not(#js-epTabRank)
 news.163.com##.mod_netes_origina
 news.163.com##.mod_pageh5
@@ -1807,6 +1806,7 @@ news.baidu.com##.recommend-animate
 news.baidu.com##.recommend-mask
 news.baidu.com##.swipe-backflow-container
 news.mydrivers.com##.main_right_div:nth-of-type(4)
+news.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 news.sina.com.cn##.news_weixin_ercode
 newsmth.net##.Smthtwenty_float
 nfmovies.com##+js(nano-sib)
@@ -2211,9 +2211,10 @@ v.douyu.com##.pop-zoom
 v.douyu.com##.pop-zoom-cover
 v.douyu.com##.pop-zoom-wrap
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
-v.qq.com##+js(no-fetch-if, /(beacon|trace)\.qq\.com/)
 v.qq.com##.quick_games.quick_item, div.game-switch-ad
 v.qq.com##.video-card-module > .card-wrap
+v.qq.com,news.qq.com##+js(no-fetch-if, /(beacon|trace)\.qq\.com/)
+v.qq.com,news.qq.com##+js(no-xhr-if, snowflake.qq.com)
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##.laifeng
 v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
@@ -3483,6 +3484,7 @@ zybang.com##.top_download
 ||record.kuai.xunlei.com^
 ||relive.vodfile.m1905.com/video/qiantie202$media
 ||reportlog.dftoutiao.com^
+||res.ab.qq.com/tab/$script
 ||res.office365.com/*/scripts/microsoft.owa.adsbar.js
 ||res.office365.com/*/scripts/owa.AdsPanel.js
 ||restroomcalf.com
@@ -3566,6 +3568,7 @@ zybang.com##.top_download
 ||soufunimg.com/homepage/new/*/buttomLayer.js
 ||sp.qf.56.com^
 ||ssl.trace.zhiziyun.com^
+||ssp.qq.com/ad^$xhr
 ||ssports.iqiyi.com/app/$media,object-subrequest
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||stat.2u.com.cn/ol_2u.js
@@ -3612,6 +3615,8 @@ zybang.com##.top_download
 ||static.zongheng.com^*/adClickStat.js
 ||static.zongheng.com^*/ad_click.js
 ||static.zongheng.com^*/logger.min.js
+||staticfile.qq.com/datong/$script
+||staticfile.qq.com/qimei/$script
 ||staticwx.cdn.bcebos.com/mini-program%2Fimages%2Ftrans_btn_tag_lhb.png
 ||statis1.mama.cn^
 ||stats.766.com^
@@ -3690,10 +3695,12 @@ zybang.com##.top_download
 ||uuu9.com/photolog.html
 ||uuxs.net^$subdocument
 ||v.qq.com/activity/qqvideo/interact/vod.html^$subdocument
+||v.qq.com/cache/wuji/object^$script
 ||v.qq.com/thumbplayer-offline-log.html^$subdocument
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||valipl.cp31.ott.cibntv.net/$media
 ||vamaker.com/$third-party
+||vfiles.gtimg.cn/tvideo/js/new_ping_video.js^$script
 ||vfiles.gtimg.cn/tvideo/libcocos-frame/$subdocument
 ||video.da.mgtv.com/$media
 ||video.iqiyi.com/ws$websocket

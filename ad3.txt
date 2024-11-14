@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: YMeH5/M17JHobiUXaZzGnw
+! Checksum: wIbXRVWtLHGbBO3nDYLpcg
 ! Title: ad3
 ! Expires: 24 hours
-! Version: 202411132219
-! Last Modified: 202411132219
+! Version: 202411142219
+! Last Modified: 202411142219
 ! Homepage: https://github.com/doiyes/ADFlist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -829,9 +829,9 @@ mycleanmymac.com
 mydrivers.com##+js(set,jQuery.fn.resetIdleTimeup,trueFunc)
 mydrivers.com##.baidu, a[href^=http][target=_blank]
 myqqjd.com##+js(acis, String.fromCharCode, decodeURIComponent)
-new.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 news.163.com###js-cnxh-content~:not(#js-epTabRank)
 news.mydrivers.com##.main_right_div:nth-of-type(4)
+news.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 ntfsformac.cc
 ntfsformac.cn
 olevod.com###adsMaskBox
@@ -889,9 +889,10 @@ u8.hujiang.com
 udiab1.jianshu.com
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box,li.f-single-biz
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
-v.qq.com##+js(no-fetch-if, /(beacon|trace)\.qq\.com/)
 v.qq.com##.quick_games.quick_item, div.game-switch-ad
 v.qq.com##.video-card-module > .card-wrap
+v.qq.com,news.qq.com##+js(no-fetch-if, /(beacon|trace)\.qq\.com/)
+v.qq.com,news.qq.com##+js(no-xhr-if, snowflake.qq.com)
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 v2ex.com##.box:has(.sidebar_compliance)
@@ -1223,6 +1224,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||qzs.qq.com/qzone/biz/
 ||ra.gtimg.com/uv/1712104/index.js
 ||relive.vodfile.m1905.com/video/qiantie202$media
+||res.ab.qq.com/tab/$script
 ||rh.qq.com/
 ||rm.sina.com.cn/$script,subdocument
 ||s1.bdstatic.com/r/www/cache/biz/ecom/common/api/$script
@@ -1249,6 +1251,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||sina.com.cn/litong/
 ||sinaimg.cn/crop.$domain=~video.sina.com.cn|~weibo.com|~mydrivers.com
 ||sinaimg.cn/unipro/$domain=~video.sina.com.cn|~weibo.com
+||ssp.qq.com/ad^$xhr
 ||ssports.iqiyi.com/app/$media,object-subrequest
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||static.cnbetacdn.com/frontend/vipics/$image
@@ -1262,6 +1265,8 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||static.zongheng.com/*/ad$script
 ||static.zongheng.com/upload/*ds/column/$script,image
 ||static.zongheng.com/upload/recommend/game/201$image
+||staticfile.qq.com/datong/$script
+||staticfile.qq.com/qimei/$script
 ||stc.iqiyipic.com/js/sdkpack/barrage
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||swa.gtimg.com/
@@ -1275,10 +1280,12 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||ubmcmm.baidustatic.com/
 ||union.
 ||v.qq.com/activity/qqvideo/interact/vod.html^$subdocument
+||v.qq.com/cache/wuji/object^$script
 ||v.qq.com/thumbplayer-offline-log.html^$subdocument
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||valipl.cp31.ott.cibntv.net/$media
 ||vamaker.com/$third-party
+||vfiles.gtimg.cn/tvideo/js/new_ping_video.js^$script
 ||vfiles.gtimg.cn/tvideo/libcocos-frame/$subdocument
 ||video.da.mgtv.com/$media
 ||video.iqiyi.com/ws$websocket
