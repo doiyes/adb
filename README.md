@@ -18,7 +18,7 @@ AdGuard 移动广告规则: [https://filters.adtidy.org/android/filters/11.txt](
 NoCoin adblock list: [https://github.com/hoshsadiq/adblock-nocoin-list](https://github.com/hoshsadiq/adblock-nocoin-list)  
 anti-AD: [https://github.com/privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)  
 规则加速: [https://github.com/Silentely/AdBlock-Acceleration](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README_CN.md)  
-https://gist.github.com/imba-tjd/2c9817233ac6798d4f2bfe057f781ca5  
+https://github.com/imba-tjd/
 https://github.com/dupontjoy/Customization/tree/main/Rules/uBlock  
 https://github.com/hacamer/AdRule  
 https://github.com/xtoys/AdGuardHome/blob/main/README_CN.md  
