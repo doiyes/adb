@@ -21,7 +21,6 @@ anti-AD: [https://github.com/privacy-protection-tools/anti-AD](https://github.co
 https://github.com/imba-tjd/
 https://github.com/dupontjoy/Customization/tree/main/Rules/uBlock  
 https://github.com/hacamer/AdRule  
-https://github.com/xtoys/AdGuardHome/blob/main/README_CN.md  
 https://github.com/AdguardTeam/FiltersRegistry/tree/master/filters
 
 
