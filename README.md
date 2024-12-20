@@ -13,7 +13,7 @@ cjxlist: [https://github.com/cjx82630/cjxlist](https://github.com/cjx82630/cjxli
 乘风过滤规则: [https://github.com/xinggsf/Adblock-Plus-Rule](https://github.com/xinggsf/Adblock-Plus-Rule)  
 ADgk手机去广告规则: [https://github.com/banbendalao/ADgk](https://github.com/banbendalao/ADgk)  
 AdGuard 移动广告规则: [https://filters.adtidy.org/android/filters/11.txt](https://filters.adtidy.org/android/filters/11.txt)  
-几十KB的轻量规则: [https://github.com/damengzhu/banad](https://github.com/damengzhu/banad)  
+酷安大盟主的轻量规则: [https://github.com/damengzhu/banad](https://github.com/damengzhu/banad)  
 屏蔽Cookie警告: [https://www.i-dont-care-about-cookies.eu/abp/](https://www.i-dont-care-about-cookies.eu/abp/)  
 NoCoin adblock list: [https://github.com/hoshsadiq/adblock-nocoin-list](https://github.com/hoshsadiq/adblock-nocoin-list)  
 anti-AD: [https://github.com/privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)  
